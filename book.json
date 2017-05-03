@@ -1,0 +1,19 @@
+{
+  "title": "Tandem Documentation",
+  "root": "docs",
+  "gitbook": ">=3.2",
+  "language": "en",
+  "plugins": [
+    "anchors",
+    "codesnippet",
+    "edit-link",
+    "toc",
+    "-sharing"
+  ],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/thinktandem/horoscope/edit/master/docs",
+      "label": "Edit Page"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+http://{default}/:
+  type: redirect
+  to: https://{default}/
+https://{default}/:
+  type: upstream
+  upstream: app:http
+  cache:
+    enabled: true
+  ssi:
+    enabled: false

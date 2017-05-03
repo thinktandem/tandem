@@ -1,0 +1,21 @@
+{
+  "name": "tandem-docs",
+  "description": "Some internal docs for Tandem.",
+  "license": "MIT",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thinktandem/horoscope"
+  },
+  "bugs": {
+    "email": "mike@thinktandem.io",
+    "url": "https://github.com/thinktandem/horoscope/issues"
+  },
+  "devDependencies": {
+    "gitbook-cli": "^2.3.0"
+  },
+  "scripts": {
+    "gitbook": "./node_modules/.bin/gitbook install && ./node_modules/.bin/gitbook build",
+    "serve": "lando.dev restart || lando restart || ./node_modules/.bin/gitbook serve"
+  }
+}

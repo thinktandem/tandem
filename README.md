@@ -1,7 +1,7 @@
 Horoscope
 =========
 
-This is a repository that contains non-billable tasks for Tandem. Here is a non-exhaustive list of some task titles that might live here:
+This is a repository that contains non-billable tasks and [internal documentation](https://docs.thinktandem.io) for Tandem. Here is a non-exhaustive list of some task titles that might live here:
 
   1. Spin up a spreadsheet to track productivity
   2. Launch internal documentation site for Tandem
@@ -12,6 +12,43 @@ This is a repository that contains non-billable tasks for Tandem. Here is a non-
   7. Google hangout whiskey tasting?
 
 There is a GitHub issue template that you can follow but at the very least stub out a title.
+
+Documentation
+-------------
+
+Documentation currently lives at [https://docs.thinktandem.io](https://docs.thinktandem.io) and it has user/pass auth:
+
+```bash
+user: tandem
+pass: tandem
+```
+
+### Running Locally
+
+It may be desireable to serve documentation locally so you can check out edits before submitting a pull request. To do so you will want to make sure you are pre-equipped with:
+
+1. [SSH keys to access this repo](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+1. [node/npm](https://nodejs.org/en/)
+2. [lando](http://docs.lndo.io) (optional)
+
+And then the following CLI magix:
+
+```bash
+# Pull repo
+git@github.com:thinktandem/horoscope.git
+cd horoscope
+
+# Install npm dependencies
+npm install
+
+# Install dependencies and build out the GitBook
+npm run-script gitbook
+
+# Serve via lando or fallback to GitBook's native server
+npm run-script serve
+```
+
+**NOTE:** If you rebuild the GitBook you may need to restart Lando for your changes to show up. This is because GitBook removes the entire webroot on a rebuild which causes Lando's file syncing to halt.
 
 Task Workflow
 -------------
