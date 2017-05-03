@@ -35,7 +35,7 @@ And then the following CLI magix:
 
 ```bash
 # Pull repo
-git@github.com:thinktandem/horoscope.git
+git clone git@github.com:thinktandem/horoscope.git
 cd horoscope
 
 # Install npm dependencies

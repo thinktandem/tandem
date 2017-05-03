@@ -2,12 +2,59 @@ body {
   padding-top: 78px;
 }
 
+.panel {
+  border: 0px;
+  border-radius: 0px;
+}
+
+.panel-info > .panel-heading {
+  background-color: #75CAEB;
+}
+
+.panel-primary > .panel-heading {
+  background-color: #1987b3;
+  border-color: #1987b3;
+}
+
+.panel-success > .panel-heading {
+  background-color: #72F0A1;
+}
+
+.panel-success {
+  background-color: #e8fdef;
+}
+
+.panel-warning > .panel-heading {
+  background-color: #FFCC4F;
+}
+
+.panel-warning {
+  background-color: #fff1cc;
+}
+
+.panel-danger > .panel-heading {
+  background-color: #FF8E79;
+}
+
+.panel-quote {
+  border-left: 5px solid #FFCC4F;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 30px;
+  color: #777;
+}
+
+.panel-quote .panel-title {
+  font-size: 100px;
+  color: #4BB5DD;
+}
+
 .markdown-section a {
-  color: #0dbc96;
+  color: #459CE7;
 }
 
 .book-summary ul.summary li.active>a {
-  color: #0ca785;
+  color: #4BB5DD;
 }
 
 .lando-header {
@@ -15,7 +62,7 @@ body {
   box-sizing:border-box;
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.15);
   height: 80px;
-  background-color: #0dbc96;
+  background-color: #72C8E9;
   position: fixed;
   top: 0;
   left: 0;
@@ -38,13 +85,17 @@ body {
 
 .lando-header .lando-header-limiter h1 {
   float: left;
-  font: normal 32px Cookie, Arial, Helvetica, sans-serif;
   line-height: 40px;
   margin: 0;
+  font-weight: 500;
+  font-size: 2.5em;
+  font-family: "Lato", "Helvetica Neue", Arial;
 }
 
 .lando-header .lando-header-limiter h1 span {
-  color: #88f7df;
+  color: #a7dcf1;
+  margin-left: 1.0em;
+  font-size: .75em;
 }
 
 /* The header links */
@@ -55,7 +106,7 @@ body {
 }
 
 .lando-header .lando-header-limiter nav {
-  font:15px Arial, Helvetica, sans-serif;
+  font:15px "Lato", Arial, Helvetica, sans-serif;
   line-height: 40px;
   float: right;
 }
@@ -67,12 +118,8 @@ body {
   text-decoration:none;
   color: #ffffff;
   font-size: 24px;
-  text-transform: uppercase;
   line-height:1;
-}
-
-.lando-header .lando-header-limiter nav a:hover {
-  text-decoration:underline;
+  font-weight: 300;
 }
 
 .lando-header .lando-header-limiter nav a.selected {
