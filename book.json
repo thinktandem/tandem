@@ -5,12 +5,16 @@
   "language": "en",
   "plugins": [
     "anchors",
+    "callouts",
     "codesnippet",
     "edit-link",
     "toc",
     "-sharing"
   ],
   "pluginsConfig": {
+    "callouts": {
+      "showTypeInHeader": false
+    },
     "edit-link": {
       "base": "https://github.com/thinktandem/horoscope/edit/master/docs",
       "label": "Edit Page"
