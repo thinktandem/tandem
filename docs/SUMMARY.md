@@ -28,8 +28,10 @@
 
 ## Sales
 
-* [Something Else](placeholder.md)
-* [Something Else 2](placeholder.md)
+* [Customer Profiles](sales/customer-profiles.md)
+* [Sales Script](sales/sales-script.md)
+* [Email Templates](sales/email-templates.md)
+* [On Rewarming Cold Contacts](sales/rewarming-old-contacts.md)
 
 ## Administration
 
