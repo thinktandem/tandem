@@ -44,7 +44,7 @@ npm install
 # Install dependencies and build out the GitBook
 npm run-script gitbook
 
-# Serve via lando or fallback to GitBook's native server
+# Serve GitBook's native server or fallback to Lando.
 npm run-script serve
 ```
 

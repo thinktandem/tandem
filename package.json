@@ -16,6 +16,6 @@
   },
   "scripts": {
     "gitbook": "./node_modules/.bin/gitbook install && ./node_modules/.bin/gitbook build",
-    "serve": "lando.dev restart || lando restart || ./node_modules/.bin/gitbook serve"
+    "serve": "./node_modules/.bin/gitbook serve || lando.dev restart || lando restart"
   }
 }
