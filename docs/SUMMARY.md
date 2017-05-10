@@ -18,6 +18,7 @@
   * [Peer Programming](placeholder.md)
   * [Training](placeholder.md)
   * [Group QA](placeholder.md)
+  * [Postgres DB on Platform.sh](postgres-platform.md)
 
 ## HR
 
@@ -34,4 +35,3 @@
 
 * [Something Else](placeholder.md)
 * [Something Else 2](placeholder.md)
-
