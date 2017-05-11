@@ -43,6 +43,10 @@ Mike and I have worked with organizations of all size...
 
 ### Your services seem expensive.
 
+#### Value Sell #1
+Focus on total cost: "Let's explore a scope of work that works for your budget."
+
+#### Value Sell #2
 You're right, our rate is higher than an offshoring firm's at first glance, but we've rescued enough projects from offshoring firms/fly-by-night contractors/inexperienced contractors to know that the real cost of hiring the wrong person is much higher.
 
 Our rate is extremely competitive with other firms, infact we'll probably be raising it fairly soon (of course legacy clients can enjoy our current rate...).
