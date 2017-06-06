@@ -1,32 +1,36 @@
 ## Onboarding
 
 * [Getting Started](README.md)
-* [Something Else](placeholder.md)
-* [Something Else 2](placeholder.md)
 
-## Development
+## Meetings
 
-* [Knowledge Share](placeholder.md)
-  * [Peer Programming](placeholder.md)
-  * [Training](placeholder.md)
-  * [Group QA](placeholder.md)
-* [Technical Roadmap](configuration/services.md)
-  * [Peer Programming](placeholder.md)
-  * [Training](placeholder.md)
-  * [Group QA](placeholder.md)
-* [Resources](configuration/app-containers.md)
-  * [Peer Programming](placeholder.md)
-  * [Training](placeholder.md)
-  * [Group QA](placeholder.md)
-  * [Postgres DB on Platform.sh](postgres-platform.md)
+* [Something](placeholder.md)
 
-## HR
+## Writing Code
 
-* [Interview Process](languages/php.md)
-* [Something Else](placeholder.md)
-* [Something Else 2](placeholder.md)
+* [What You Need](placeholder.md)
 
-## Sales
+## Managing Projects
+
+* [Something](placeholder.md)
+
+## Managing People
+
+* [Something](placeholder.md)
+
+## Being Managed
+
+* [Something](placeholder.md)
+
+## Contracting with Tandem
+
+* [Something](placeholder.md)
+
+## Marketing
+
+* [Something](placeholder.md)
+
+## Selling
 
 * [Customer Profiles](sales/customer-profiles.md)
 * [Sales Script](sales/sales-script.md)
@@ -34,7 +38,25 @@
 * [Mass Email Inspiration](sales/mass-email-inspiration.md)
 * [On Rewarming Cold Contacts](sales/rewarming-old-contacts.md)
 
-## Administration
+## Hiring Someone
 
-* [Something Else](placeholder.md)
-* [Something Else 2](placeholder.md)
+* [Something](placeholder.md)
+
+## Administering
+
+* [Something](placeholder.md)
+
+## Offboarding
+
+* [Something](placeholder.md)
+
+## -----------------------------------------------
+
+## Resources
+
+* [Something](placeholder.md)
+
+## Tutorials
+
+* Technical
+  * [Pgsql on Platform.sh](tutorials/postgres-platform.md)
