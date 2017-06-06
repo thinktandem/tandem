@@ -1,32 +1,48 @@
 ## Onboarding
 
 * [Getting Started](README.md)
-* [Something Else](placeholder.md)
-* [Something Else 2](placeholder.md)
+* [Company Overview](placeholder.md)
+* [Getting Paid](placeholder.md)
+* [Benefits](placeholder.md)
+* [Tracking Work](placeholder.md)
 
-## Development
+## Collaborating
 
-* [Knowledge Share](placeholder.md)
-  * [Peer Programming](placeholder.md)
-  * [Training](placeholder.md)
-  * [Group QA](placeholder.md)
-* [Technical Roadmap](configuration/services.md)
-  * [Peer Programming](placeholder.md)
-  * [Training](placeholder.md)
-  * [Group QA](placeholder.md)
-* [Resources](configuration/app-containers.md)
-  * [Peer Programming](placeholder.md)
-  * [Training](placeholder.md)
-  * [Group QA](placeholder.md)
-  * [Postgres DB on Platform.sh](postgres-platform.md)
+* [Meetings](placeholder.md)
+* [Slack](placeholder.md)
+* [Hangouts](placeholder.md)
+* [Organizational Issues](placeholder.md)
+* [Documentation](placeholder.md)
 
-## HR
+## Writing Code
 
-* [Interview Process](languages/php.md)
-* [Something Else](placeholder.md)
-* [Something Else 2](placeholder.md)
+* [What You Need](placeholder.md)
+* [Workflow](placeholder.md)
+* [Quality Control](placeholder.md)
+* [Leveling Up](placeholder.md)
 
-## Sales
+## Managing Projects
+
+* [Agile](placeholder.md)
+
+## Managing People
+
+* [Gusto](placeholder.md)
+
+## Being Managed
+
+* [Roles and Responsibilities](placeholder.md)
+* [Performance Reviews](placeholder.md)
+
+## Contracting with Tandem
+
+* [Something](placeholder.md)
+
+## Marketing
+
+* [Creative Brief](placeholder.md)
+
+## Selling
 
 * [Customer Profiles](sales/customer-profiles.md)
 * [Sales Script](sales/sales-script.md)
@@ -34,7 +50,22 @@
 * [Mass Email Inspiration](sales/mass-email-inspiration.md)
 * [On Rewarming Cold Contacts](sales/rewarming-old-contacts.md)
 
-## Administration
+## Hiring
 
-* [Something Else](placeholder.md)
-* [Something Else 2](placeholder.md)
+* [Interview Process](placeholder.md)
+* [Job Description](placeholder.md)
+
+## Administering
+
+* [Payroll](placeholder.md)
+
+## Offboarding
+
+* [Something](placeholder.md)
+
+## -----------------------------------------------
+
+## Resources
+
+* [GitHub flow](tutorials/postgres-platform.md)
+* [Pgsql on Platform.sh](tutorials/postgres-platform.md)

@@ -1,8 +1,4 @@
 name: docs.tandem
-sharing:
-  appserver:
-    local: _book
-    remote: /usr/share/nginx/html
 proxy:
   appserver:
     - port: 80/tcp
@@ -12,5 +8,6 @@ proxy:
       secure: true
 services:
   appserver:
+    webroot: _book
     type: nginx
     ssl: true
