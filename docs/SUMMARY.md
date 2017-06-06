@@ -1,26 +1,38 @@
 ## Onboarding
 
 * [Getting Started](README.md)
+* [Company Overview](placeholder.md)
+* [Getting Paid](placeholder.md)
+* [Benefits](placeholder.md)
+* [Tracking Work](placeholder.md)
 
-## Meetings
+## Collaborating
 
-* [Something](placeholder.md)
+* [Meetings](placeholder.md)
+* [Slack](placeholder.md)
+* [Hangouts](placeholder.md)
+* [Organizational Issues](placeholder.md)
+* [Documentation](placeholder.md)
 
 ## Writing Code
 
 * [What You Need](placeholder.md)
+* [Workflow](placeholder.md)
+* [Quality Control](placeholder.md)
+* [Leveling Up](placeholder.md)
 
 ## Managing Projects
 
-* [Something](placeholder.md)
+* [Agile](placeholder.md)
 
 ## Managing People
 
-* [Something](placeholder.md)
+* [Gusto](placeholder.md)
 
 ## Being Managed
 
-* [Something](placeholder.md)
+* [Roles and Responsibilities](placeholder.md)
+* [Performance Reviews](placeholder.md)
 
 ## Contracting with Tandem
 
@@ -28,7 +40,7 @@
 
 ## Marketing
 
-* [Something](placeholder.md)
+* [Creative Brief](placeholder.md)
 
 ## Selling
 
@@ -38,13 +50,14 @@
 * [Mass Email Inspiration](sales/mass-email-inspiration.md)
 * [On Rewarming Cold Contacts](sales/rewarming-old-contacts.md)
 
-## Hiring Someone
+## Hiring
 
-* [Something](placeholder.md)
+* [Interview Process](placeholder.md)
+* [Job Description](placeholder.md)
 
 ## Administering
 
-* [Something](placeholder.md)
+* [Payroll](placeholder.md)
 
 ## Offboarding
 
@@ -54,9 +67,5 @@
 
 ## Resources
 
-* [Something](placeholder.md)
-
-## Tutorials
-
-* Technical
-  * [Pgsql on Platform.sh](tutorials/postgres-platform.md)
+* [GitHub flow](tutorials/postgres-platform.md)
+* [Pgsql on Platform.sh](tutorials/postgres-platform.md)
