@@ -16,10 +16,11 @@
 
 ## Writing Code
 
-* [What You Need](placeholder.md)
+* [What You Need](coding/needs.md)
 * [Workflow](placeholder.md)
 * [Quality Control](placeholder.md)
 * [Leveling Up](placeholder.md)
+* [Languages](placeholder.md)
 
 ## Managing Projects
 
@@ -67,5 +68,4 @@
 
 ## Resources
 
-* [GitHub flow](tutorials/postgres-platform.md)
 * [Pgsql on Platform.sh](tutorials/postgres-platform.md)
