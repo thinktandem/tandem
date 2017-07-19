@@ -1,4 +1,4 @@
-Workflow
+Process Workflow
 ========
 
 Tandem's standard project workflow is heavily based upon [Github Flow](https://guides.github.com/introduction/flow/). A "Day in the Life" of a developer looks something like this:
@@ -21,4 +21,5 @@ First things first: make sure you start the Harvest Time Tracker for the issue:
 
 ![Harvest time tracker image](/images/harvest-time-tracking.png "Harvest Time Tracker")
 
-Take a look at the issue. If you have any unresolved questions, reach
+Take a look at the issue. If you have any unresolved questions, reach out to your
+project manager.

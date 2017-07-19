@@ -17,7 +17,8 @@
 ## Writing Code
 
 * [What You Need](coding/needs.md)
-* [Workflow](coding/workflow.md)
+* [Process Workflow](coding/process-workflow.md)
+* [Dev Workflow](coding/dev-workflow.md)
 * [Quality Control](placeholder.md)
 * [Leveling Up](placeholder.md)
 * [Languages](placeholder.md)
