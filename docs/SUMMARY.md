@@ -1,6 +1,7 @@
 ## Onboarding
 
 * [Getting Started](README.md)
+* [Onboarding Checklist](onboarding/onboarding-checklist.md)
 * [Company Overview](placeholder.md)
 * [Getting Paid](placeholder.md)
 * [Benefits](placeholder.md)
@@ -70,3 +71,4 @@
 ## Resources
 
 * [Pgsql on Platform.sh](tutorials/postgres-platform.md)
+* [Laravel Frontend Coding](tutorials/laravel-frontend.md)
