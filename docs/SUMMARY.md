@@ -41,7 +41,7 @@
 * [Something](placeholder.md)
 
 ## Marketing
-
+* [Channels](marketing/marketing-channels.md)
 * [Creative Brief](placeholder.md)
 
 ## Selling
