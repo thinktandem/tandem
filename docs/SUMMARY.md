@@ -56,6 +56,7 @@
 
 * [Interview Process](placeholder.md)
 * [Job Description](placeholder.md)
+* [Checking References](hiring/reference-check.md)
 
 ## Administering
 
