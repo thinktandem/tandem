@@ -1,24 +1,19 @@
 Postgres DB on Platform.sh
 ----
 
-If you need to import a new clean database to a Platform.sh environment (not master); here is how:
+If you need to import a new clean database to any Platform.sh environment, here's how:
 
-* Make a backup of master and {environment}.
-  * Create a restore point through the Platform.sh dashboard
-  * `platform --environment=master --relationship=pgdatabase db:dump`
-  * `platform --environment={environment} --relationship=pgdatabase db:dump`
+* Make a backup of {export-from} and {import-to} environments.
+  * Create restore points through the Platform.sh dashboard
+  * `lando platform db:dump -p {export-from-platform} -e {desired-env} -r pgdatabase -f dump.sql`
+  
+* Move the DB to the {import-to} environment.
+  * `scp dump.sql {import-to-connection}@ssh.us.platform.sh:/app/storage`
+  * Note that `/app/storage` is just any public directory you can write to on Platform.
 
-* Drop the `main` database tables (to start with a clean slate):
-  * `platform --environment={environment} --relationship=pgdatabase sql`
-  * `\c postgres` (just connect to any database besides main)
-  * `drop owned by main` (this will drop the tables not the DB)
-    * NOTE: Dropping the DB will leave you in a bad state; as your user does not
-    have permission to recreate the `main` DB.  If you do get into this state use
-    the restore point you created in the Platform.sh dashboard.
-
-* Import the backup or fresh DB you need.
-  * `platform --environment={environment} --relationship=pgdatabase sql < {eexfnw4wjjady--master--dump}.sql`
-
-If you see tables in the freshly imported data make sure to check your schema
-(in PSequel top left dropdown) and make sure it is set to `automatic` that should
-have the tables you expect.
+* SSH into {import-to} and import the db.
+  * `ssh {import-to-connection@ssh.us.platform.sh`
+  * `cd storage`
+  * `psql --host=pgdatabase.internal --username=main < dump.sql`
+ 
+This seems to avoid permissions issues and other problems that have plagued us in the past, even on the Master environments in Platform.sh.
