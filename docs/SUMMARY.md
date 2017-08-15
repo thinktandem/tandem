@@ -2,10 +2,9 @@
 
 * [Getting Started](README.md)
 * [Onboarding Checklist](onboarding/onboarding-checklist.md)
-* [Company Overview](placeholder.md)
-* [Getting Paid](placeholder.md)
-* [Benefits](placeholder.md)
-* [Tracking Work](placeholder.md)
+* [Getting Paid](onboarding/getting-paid.md)
+* [Benefits](onboarding/benefits.md)
+* [Tracking Work](onboarding/time-tracking.md)
 
 ## Collaborating
 
@@ -27,10 +26,6 @@
 ## Managing Projects
 
 * [Agile](placeholder.md)
-
-## Managing People
-
-* [Gusto](placeholder.md)
 
 ## Being Managed
 
@@ -56,7 +51,6 @@
 ## Hiring
 
 * [Interview Process](placeholder.md)
-* [Job Description](placeholder.md)
 * [Checking References](hiring/reference-check.md)
 
 ## Administering
