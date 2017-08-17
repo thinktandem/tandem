@@ -1,7 +1,8 @@
 Tandem Internal Documentation
 =============================
 
-## Goal
+Goal
+----
 
 As a consultancy, our value is contained within our people and our process. Consistent excellence requires both of these elements working in harmony.
 
@@ -9,17 +10,20 @@ Documentation preserves our process. The goal of this documentation is to make i
 
 > We want to introduce people to Tandem process as quickly as possible.
 
-## Who These Docs Are For
+Who These Docs Are For
+----------------------
 
-1. New, existing, and prospective Tandem team members.
-2. Current and potential clients interested in how we work.
-3. Friends, foes, and future fellows to crib notes ;)
+1.  New, existing, and prospective Tandem team members.
+2.  Current and potential clients interested in how we work.
+3.  Friends, foes, and future fellows to crib notes ;)
 
-## Updating and Contributing to the Docs
+Updating and Contributing to the Docs
+-------------------------------------
 
 All Tandem team members should have access to this Github repository. To contribute simply follow our normal instructions for [contributing code](/coding/dev-workflow.md).
 
-## Why Are These Docs Public?
+Why Are These Docs Public?
+--------------------------
 
 Nope, it isn't an accident. We think this information is very valuable. However, it's the combination of our team with these processes that makes Tandem's secret sauce.
 

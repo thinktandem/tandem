@@ -1,12 +1,14 @@
-# Time Tracking w/Harvest
+Time Tracking w/Harvest
+=======================
 
-As Huey Lewis said, “time ain’t money,” but time entries on an invoice convert pretty quickly into cash, allowing us to go to conferences, work on crazy projects, and get PAID.
+As Huey Lewis said, “time ain’t money,” but time entries on an invoice convert pretty quickly into cash, allowing us to go to conferences, work on crazy projects, and **get PAID**.
 
 Harvest is our time tracking and invoicing application. It's fairly intuitive, but if you'd like a demo, ask a fellow team member or your project manager.
 
 You should received an invite to [our Harvest instance](https://kalabox.harvestapp.com). After you've signed up, follow these 4 Time Tracking Commandments.
 
-## The Four Harvest Commandments
+The Four Harvest Commandments
+-----------------------------
 
 ### 1. Thou Shalt Track EVERYTHING
 
