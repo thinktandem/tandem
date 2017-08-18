@@ -19,8 +19,8 @@ logs
 
 # NPM files
 node_modules
+tmp-*
 
 # gitbooks
 _books
 _book
-

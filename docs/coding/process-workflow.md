@@ -23,3 +23,22 @@ First things first: make sure you start the Harvest Time Tracker for the issue:
 
 Take a look at the issue. If you have any unresolved questions, reach out to your
 project manager.
+
+Horoscope uses [ZenHub](https://www.zenhub.com/) to organize tasks in a nice Kanban style board. Tasks should fit into one of the following colums:
+
+  * **NEW ISSUES:** Task just showed up on the scence (OTS).
+  * **FUTURE CONSIDERATIONS:** Meta task or future food for thought.
+  * **WITHIN THE QUARTER:** Tasks that should be completed within the quarter.
+  * **WITHIN THE MONTH:** Tasks that should be completed within the month.
+  * **IN PROGRESS:** Tasks that are currently being worked on.
+  * **IN REVIEW:** Tasks that are candidates for closure.
+  * **CLOSED:** Tasks that are complete.
+
+Here are some general guidelines for dealing with tasks:
+
+  * Tasks should all receive story point estimates via the ZenHub `Estimate` field.
+  * Tasks do not currently track against milestones.
+  * Tasks can be organized into epics as needed.
+  * Tasks move from NEW ISSUES to CLOSED.
+  * Tasks can be created by any member of the Tandem organization and at any time.
+  * Tasks will be managed and assigned as a team during regularly scheduled standups.

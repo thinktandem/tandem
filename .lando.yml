@@ -1,13 +1,10 @@
-name: docs.tandem
-proxy:
-  appserver:
-    - port: 80/tcp
-      default: true
-    - port: 443/tcp
-      default: true
-      secure: true
-services:
-  appserver:
-    webroot: _book
-    type: nginx
-    ssl: true
+name: tandemdocs
+recipe: mean
+config:
+  node: '6.10'
+  command: ./node_modules/.bin/gitbook --port 80 serve
+tooling:
+  gitbook:
+    service: appserver_cli
+    cmd:
+      - ./node_modules/.bin/gitbook
