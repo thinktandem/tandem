@@ -1,6 +1,11 @@
 Tandem Internal Documentation
 =============================
 
+Thing
+-----
+
+Stuff.
+
 Goal
 ----
 

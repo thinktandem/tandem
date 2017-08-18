@@ -1,0 +1,7 @@
+{
+  "default": true,
+  "header-style": { "style": "setext_with_atx" },
+  "MD007": { "indent": 4 },
+  "no-hard-tabs": true,
+  "whitespace": false
+}

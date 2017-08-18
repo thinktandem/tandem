@@ -8,3 +8,14 @@ tooling:
     service: appserver_cli
     cmd:
       - ./node_modules/.bin/gitbook
+  mdl:
+    service: appserver_cli
+    cmd:
+      - ./node_modules/.bin/markdownlint
+    description: Run markdownlinter
+  test:
+    service: appserver_cli
+    cmd:
+      - npm
+      - test
+    description: Run tests

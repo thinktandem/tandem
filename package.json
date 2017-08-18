@@ -15,6 +15,7 @@
     "gitbook-cli": "^2.3.0"
   },
   "scripts": {
-    "postinstall" : "./node_modules/.bin/gitbook install"
+    "postinstall": "./node_modules/.bin/gitbook install",
+    "test": "./node_modules/.bin/markdownlint docs/**/*.md"
   }
 }

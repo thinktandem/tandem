@@ -49,10 +49,23 @@ lando npm install
 
 # Start up the docs
 lando start
+```
 
+### Watching for Changes
+
+This will allow you to watch for auto reload events when you change a file. The app needs to actually be running first.
+
+```bash
 # Tail the doc logs
-# This will allow you to watch for auto reload events when you change a file
 lando logs -f --services appserver
+```
+
+### Running Tests
+
+Make sure your `*.md` files COMPLY with our standards.
+
+```bash
+lando test || lando npm test
 ```
 
 Inspiration
