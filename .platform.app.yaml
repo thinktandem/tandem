@@ -39,5 +39,5 @@ dependencies:
 hooks:
   build: |
     npm install
-    npm run-script gitbook
+    npm run-script platform
     cp docs/images/favicon.ico _book/gitbook/images/favicon.ico
