@@ -1,4 +1,4 @@
-name: tandemdocs
+name: docs.tandem
 recipe: mean
 config:
   node: '6.10'
@@ -15,7 +15,5 @@ tooling:
     description: Run markdownlinter
   test:
     service: appserver_cli
-    cmd:
-      - npm
-      - test
+    cmd: npm test
     description: Run tests

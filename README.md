@@ -18,9 +18,9 @@ Documentation
 
 Documentation lives at [https://docs.thinktandem.io](https://docs.thinktandem.io) and **IS PUBLIC** so try not to include any potentially sensitive information such as:
 
-*   Client names or information
-*   Employee names or information
-*   Any Tandem related usernames or passwords
+* Client names or information
+* Employee names or information
+* Any Tandem related usernames or passwords
 
 If you aren't sure whether something should be in the docs **ASK SOMEONE!!!**
 

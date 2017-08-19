@@ -17,6 +17,6 @@
   },
   "scripts": {
     "postinstall": "./node_modules/.bin/gitbook install",
-    "test": "./node_modules/.bin/markdownlint docs/**/*.md"
+    "test": "./node_modules/.bin/markdownlint docs/**/*.md docs/*.md"
   }
 }

@@ -13,5 +13,5 @@ before_install:
 
 script:
   - lando npm install
-  - lando start
+  - lando start -- -v
   - lando test

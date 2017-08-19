@@ -1,11 +1,6 @@
 Tandem Internal Documentation
 =============================
 
-Thing
------
-
-Stuff.
-
 Goal
 ----
 
@@ -18,9 +13,9 @@ Documentation preserves our process. The goal of this documentation is to make i
 Who These Docs Are For
 ----------------------
 
-1.  New, existing, and prospective Tandem team members.
-2.  Current and potential clients interested in how we work.
-3.  Friends, foes, and future fellows to crib notes ;)
+* New, existing, and prospective Tandem team members.
+* Current and potential clients interested in how we work.
+* Friends, foes, and future fellows to crib notes.
 
 Updating and Contributing to the Docs
 -------------------------------------

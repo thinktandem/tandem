@@ -20,6 +20,6 @@ Zenefits
 
 [Zenefits](https://www.zenefits.com/) is where you can...
 
--   View your employment documents.
--   View vacation policy and holidays.
--   Request time-off.
+* View your employment documents.
+* View vacation policy and holidays.
+* Request time-off.

@@ -1,4 +1,8 @@
-## Onboarding
+Summary
+=======
+
+Onboarding
+----------
 
 * [Getting Started](README.md)
 * [Onboarding Checklist](onboarding/onboarding-checklist.md)
@@ -6,7 +10,8 @@
 * [Benefits](onboarding/benefits.md)
 * [Tracking Work](onboarding/time-tracking.md)
 
-## Collaborating
+Collaborating
+-------------
 
 * [Meetings](placeholder.md)
 * [Slack](placeholder.md)
@@ -14,7 +19,8 @@
 * [Organizational Issues](placeholder.md)
 * [Documentation](placeholder.md)
 
-## Writing Code
+Writing Code
+------------
 
 * [What You Need](coding/needs.md)
 * [Process Workflow](coding/process-workflow.md)
@@ -23,24 +29,30 @@
 * [Leveling Up](placeholder.md)
 * [Languages](placeholder.md)
 
-## Managing Projects
+Managing Projects
+-----------------
 
 * [Agile](placeholder.md)
 
-## Being Managed
+Being Managed
+-------------
 
 * [Roles and Responsibilities](placeholder.md)
 * [Performance Reviews](placeholder.md)
 
-## Contracting with Tandem
+Contracting with Tandem
+------------------------
 
 * [Something](placeholder.md)
 
-## Marketing
+Marketing
+---------
+
 * [Channels](marketing/marketing-channels.md)
 * [Creative Brief](placeholder.md)
 
-## Selling
+Selling
+-------
 
 * [Customer Profiles](sales/customer-profiles.md)
 * [Sales Script](sales/sales-script.md)
@@ -48,22 +60,24 @@
 * [Mass Email Inspiration](sales/mass-email-inspiration.md)
 * [On Rewarming Cold Contacts](sales/rewarming-old-contacts.md)
 
-## Hiring
+Hiring
+------
 
 * [Interview Process](placeholder.md)
 * [Checking References](hiring/reference-check.md)
 
-## Administering
+Administering
+-------------
 
 * [Payroll](placeholder.md)
 
-## Offboarding
+Offboarding
+-----------
 
 * [Something](placeholder.md)
 
-## -----------------------------------------------
-
-## Resources
+Resources
+---------
 
 * [Pgsql on Platform.sh](tutorials/postgres-platform.md)
 * [Laravel Frontend Coding](tutorials/laravel-frontend.md)

@@ -10,11 +10,11 @@ macOS Computer
 
 Tandem is primarily a macOS based shop. While you can still write the codes with Windows and Linux, these boxes are currently unsupported and [YMMV](http://www.urbandictionary.com/define.php?term=ymmv). We recommend you have a macOS based machine with at least...
 
-  * macOS 10.10+
-  * x64 processor architecture
-  * 4GB RAM
-  * 50GB+ of available disk space
-  * Modern processor (~last 2 years)
+* macOS 10.10+
+* x64 processor architecture
+* 4GB RAM
+* 50GB+ of available disk space
+* Modern processor (~last 2 years)
 
 If you are a Tandem employee or contractor we offer a [tech stipend](#TBD) that can be used to purchase a new machine.
 
@@ -26,14 +26,14 @@ Every Tandem project uses [`git`](https://git-scm.com/) for [version control](ht
 If you are unsure whether `git` is installed on your system please [click here](https://git-scm.com/downloads).
 
 
-**Configuring**
+### Configuring
 
 ```bash
 git config --global user.name "James T. Kirk"
 git config --global user.email kirk@enterprise.mil
 ```
 
-**Common Commands**
+### Common Commands
 
 ```bash
 # Clone the git repository for this documentation using an SSH key (preferred)
@@ -70,9 +70,9 @@ Tandem uses [GitHub](https://github.com) to store and manage its `git` repositor
 
 Before writing code with Tandem make sure you have...
 
-  * [A GitHub Account](https://github.com/join)
-  * Been added to the [Tandem Org](https://github.com/thinktandem) on GitHub
-  * And any other orgs with which Tandem is working.
+* [A GitHub Account](https://github.com/join)
+* Been added to the [Tandem Org](https://github.com/thinktandem) on GitHub
+* And any other orgs with which Tandem is working.
 
 If you are unsure about how to be added to organizations on GitHub please contact your project manager.
 
@@ -81,12 +81,12 @@ ZenHub
 
 Tandem uses [agile](https://en.wikipedia.org/wiki/Agile_software_development) as its development philosophy. Specifically we do regular [stand ups](https://en.wikipedia.org/wiki/Stand-up_meeting) and utilize a [kanban board](https://en.wikipedia.org/wiki/Kanban_board) to track [story points](http://wiki.openbravo.com/wiki/Scrum/Story_points) and project [burndown](https://en.wikipedia.org/wiki/Burn_down_chart). This provides a way to:
 
-  * Create project issues and milestones
-  * Determine the status of particular issues and milestones
-  * Assign issues to particular developers
-  * Communicate between developers, project managers and relevant stakeholders
-  * See which developers are working on which issues
-  * Track the progress of a current [sprint](https://en.wikipedia.org/wiki/Scrum_Sprint)
+* Create project issues and milestones
+* Determine the status of particular issues and milestones
+* Assign issues to particular developers
+* Communicate between developers, project managers and relevant stakeholders
+* See which developers are working on which issues
+* Track the progress of a current [sprint](https://en.wikipedia.org/wiki/Scrum_Sprint)
 
 [ZenHub](https://www.zenhub.com/) provides these tools to GitHub. You will want to [install the browser extension](https://www.zenhub.com/) from the ZenHub site. Once you do so you should see [Board](https://github.com/thinktandem/horoscope#boards) and [Reports](https://github.com/thinktandem/horoscope#reports) tabs on GitHub.
 
