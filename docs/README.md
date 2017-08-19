@@ -8,19 +8,14 @@ As a consultancy, our value is contained within our people and our process. Cons
 
 Documentation preserves our process. The goal of this documentation is to make it as easy as possible to find and store the essential knowledge of our processes. If a team member goes on vacation or decides to join the forest people, we should have documentation that allows us to hire an equally brilliant person and bring them "up-to-speed" on how Tandem operates as quickly as possible.
 
-> We want to introduce people to Tandem process as quickly as possible.
+> We want to introduce people to the Tandem process as quickly as possible.
 
 Who These Docs Are For
 ----------------------
 
-* New, existing, and prospective Tandem team members.
-* Current and potential clients interested in how we work.
-* Friends, foes, and future fellows to crib notes.
-
-Updating and Contributing to the Docs
--------------------------------------
-
-All Tandem team members should have access to this Github repository. To contribute simply follow our normal instructions for [contributing code](/coding/dev-workflow.md).
+1. New, existing, and prospective Tandem team members.
+2. Current and potential clients interested in how we work.
+3. Friends, foes, and future fellows to crib notes.
 
 Why Are These Docs Public?
 --------------------------

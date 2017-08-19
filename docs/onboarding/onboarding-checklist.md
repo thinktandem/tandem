@@ -6,13 +6,16 @@ Hi there! We're very glad you're working with us. Tandem strives to make the wor
 For Admins
 ----------
 
-* [Add to Zenefits](https://www.zenefits.com)
-* [Add to PeopleKeep](https://tandem.peoplekeep.com)*
-* [Add to Gusto](https://www.gusto.com)
 * [Create Google Mail Address](https://admin.google.com/kalabox.io/AdminHome?pli=1&fral=1#UserList:org=3zbo27o3jehmpl)
 * [Create Harvest Account](https://kalabox.harvestapp.com/team)
-* [Add Github Account to Team](https://github.com/orgs/thinktandem/people)
-* Add to [Pantheon](https://pantheon.io) + [Platform.sh](https://platform.sh) teams as needed.
+* [Add to Zenefits](https://www.zenefits.com)
+* [Add to PeopleKeep](https://tandem.peoplekeep.com)
+* [Add to Gusto](https://www.gusto.com)
+* [Add to Slack](https://www.slack.com)
+* [Add Github Account to Tandem](https://github.com/orgs/thinktandem/people)
+* [Add Github Account to Kalabox/Lando](https://github.com/orgs/kalabox/people)
+* Add to [Pantheon](https://pantheon.io) as needed
+* Add to [Platform.sh](https://platform.sh) as needed
 
 For the Employee
 ----------------
