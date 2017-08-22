@@ -5,13 +5,13 @@ This is a repository that contains non-billable tasks and [internal (but public)
 
 1.  Spin up a spreadsheet to track productivity
 2.  Launch internal documentation site for Tandem
-3.  Document roles and responsibilites
+3.  Document roles and responsibilities
 4.  Q2 sales initiatives
-5.  Solctice party planning
-6.  Hiring laravel developer
-7.  Google hangout whiskey tasting?
+5.  Solstice party planning
+6.  Hiring a Laravel developer
+7.  Google Hangout for whiskey tasting?
 
-There is a GitHub issue template that you can follow but at the very least stub out a title.
+There is a GitHub issue template that you can follow, but at the very least, stub out a title.
 
 Documentation
 -------------
@@ -32,12 +32,12 @@ The Tandem [dev workflow](https://docs.thinktandem.io/coding/dev-workflow.html) 
 Development
 -----------
 
-It may be desireable to serve documentation locally so you can check out edits before submitting a pull request. To do so you will want to make sure you are pre-equipped with:
+It may be desirable to browse this documentation locally so that you can review your edits before submitting a pull request. To do so, we recommend that you are equipped with:
 
-1.  [SSH keys to access this repo](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
-2.  [lando](http://docs.lndo.io) (optional)
+1.  [SSH keys - to access this Github repo](https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/)
+2.  [Lando - localhost development environment](http://docs.lndo.io)
 
-### Get Running
+### Get This Site Running Locally
 
 ```bash
 # Pull repo
@@ -51,7 +51,7 @@ lando npm install
 lando start
 ```
 
-### Watching for Changes
+### Watching The Server Logs
 
 This will allow you to watch for auto reload events when you change a file. The app needs to actually be running first.
 
