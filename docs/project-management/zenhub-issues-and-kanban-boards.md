@@ -10,16 +10,17 @@ Zenhub: Github Issues + Kanban Boards
 * Projects functionality is not normally used for client projects, as the main Boards tab can handle all needed Kanban functionality for a single client project.
 * Projects functionality may be used for some internal projects
 
-### Establishment of swimlane needs, called "Pipelines". (Will it be Tandem's standard layout, or will this particular project need a little something extra?)
+### Establishment of Pipelines (swimlanes)
 
-* Typical pipelines for a client project will be:
-  * Backlog
-  * Current Sprint (with start\stop dates)
-  * Needs Client Action (optional)
-  * In Development
-  * In Internal Review/QA (denotes an open pull request, or a need for another pair of eyes)
-  * In Client Review (optional, used to denote issues that the Team has completed, but the Product Owner needs to either accept, or file a bug against)
-  * Closed (means “Done Done", all tests passing, accepted by Client, and deploy-able to production)
+  Will it be Tandem's standard board layout, or will this particular project need a little something extra? In any case, the typical pipelines for a client project are as follows:
+
+* Backlog
+* Current Sprint (with start\stop dates)
+* Needs Client Action (optional)
+* In Development
+* In Internal Review/QA (denotes an open pull request, or a need for another pair of eyes)
+* In Client Review (optional, used to denote issues that the Team has completed, but the Product Owner needs to either accept, or file a bug against)
+* Closed (means “Done Done", all tests passing, accepted by Client, and deploy-able to production)
 
 ### Bug Issues
 
