@@ -29,10 +29,10 @@ Writing Code
 Managing Projects
 -----------------
 
-<!-- * [Our Agile Methodology](project-management/agile-methodology.md) -->
-
+* [Our Agile Methodology](project-management/agile-methodology.md)
 * [Project Lifecycle](project-management/project-lifecycle.md)
 * [ZenHub Kanban Boards](project-management/zenhub-issues-and-kanban-boards.md)
+* [Roles & Responsibilities](project-management/roles-responsibilities.md)
 
 Marketing
 ---------
