@@ -76,24 +76,18 @@ body {
 }
 
 .lando-header {
-  padding: 20px 40px;
+  height: 80px;
+  min-height: 80px;
+  padding: 20px 40px 20px 20px;
   box-sizing:border-box;
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.15);
-  height: 80px;
-  background-color: #47474A;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 2;
-  min-height: 80px;
+  background-color: #47474A;
 }
-
-.lando-header img {
-  margin-left: -20px;
-  margin-top: -10px;
-}
-
 
 .lando-header .lando-header-limiter {
   text-align: center;
@@ -105,33 +99,38 @@ body {
   font-size: 32px;
 }
 
-/* Logo */
+/* Logo and branding */
 
-.lando-header .lando-header-limiter h1 {
+.lando-header .lando-header-limiter .logo {
   float: left;
-  line-height: 40px;
-  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
   font-weight: 500;
-  font-size: 2.5em;
-  font-family: "Montserrat", "Trebuchet", "San Serif";
+  font-family: "Montserrat", "Trebuchet", sans-serif;
 }
 
-.lando-header .lando-header-limiter h1 span {
+.lando-header .lando-header-limiter .logo img {
+  display: block;
+}
+
+.lando-header .lando-header-limiter .logo span.site-description {
+  margin: 5px 0 0 1em;
   color: #a7dcf1;
-  margin-left: 1.0em;
-  font-size: .75em;
+  font-size: 2em;
 }
 
 /* The header links */
 
 .lando-header .lando-header-limiter a {
+  display: inline-block;
   color: #ffffff;
   text-decoration: none;
 }
 
 .lando-header .lando-header-limiter nav {
   font-size: 15px;
-  font-family: "Montserrat", "Trebuchet", "San Serif";
+  font-family: "Montserrat", "Trebuchet", sans-serif;
   line-height: 40px;
   float: right;
 }
