@@ -1,7 +1,7 @@
 Managing Projects
 =================
 
-Zenhub: Github Issues + Kanban Boards
+ZenHub: GitHub Issues + Kanban Boards
 -------------------------------------
 
 ZenHub is a browser plugin that allows GitHub issues to be viewed, organized, and tracked on a agile Kanban Board from within GitHub itself.
