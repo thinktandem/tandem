@@ -1,5 +1,5 @@
-Tandem Internal Documentation
-=============================
+Tandem Documentation
+====================
 
 Goal
 ----

@@ -1,4 +1,4 @@
-name: docs.tandem
+name: docs.thinktandem
 recipe: mean
 config:
   node: '6.10'
