@@ -2,22 +2,40 @@ body {
   padding-top: 78px;
 }
 
+.book-body {
+  font-family: "Montserrat", "Trebuchet", "San Serif";
+  font-weight: 400;
+}
+
+.book-body h1, h2, h3, h4, h5 {
+  font-family: "Montserrat", "Trebuchet", "San Serif";
+  text-transform: uppercase;
+}
+
+.book-body h1 {
+  color: #ED3F7A;
+}
+
+.book-body h2, h3, h4, h5 {
+  color: #035785;
+}
+
 .panel {
   border: 0px;
   border-radius: 0px;
 }
 
 .panel-info > .panel-heading {
-  background-color: #75CAEB;
+  background-color: #69B8E3;
 }
 
 .panel-primary > .panel-heading {
-  background-color: #1987b3;
-  border-color: #1987b3;
+  background-color: #035F91;
+  border-color: #035F91;
 }
 
 .panel-success > .panel-heading {
-  background-color: #72F0A1;
+  background-color: #85D3C9;
 }
 
 .panel-success {
@@ -25,7 +43,7 @@ body {
 }
 
 .panel-warning > .panel-heading {
-  background-color: #FFCC4F;
+  background-color: #FB8666;
 }
 
 .panel-warning {
@@ -33,11 +51,11 @@ body {
 }
 
 .panel-danger > .panel-heading {
-  background-color: #FF8E79;
+  background-color: #AB2500;
 }
 
 .panel-quote {
-  border-left: 5px solid #FFCC4F;
+  border-left: 5px solid #FB8666;
   -webkit-box-shadow: none;
   box-shadow: none;
   padding: 30px;
@@ -50,11 +68,11 @@ body {
 }
 
 .markdown-section a {
-  color: #459CE7;
+  color: #ED3F7A;
 }
 
 .book-summary ul.summary li.active>a {
-  color: #4BB5DD;
+  color: #00A38F;
 }
 
 .lando-header {
@@ -62,7 +80,7 @@ body {
   box-sizing:border-box;
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.15);
   height: 80px;
-  background-color: #72C8E9;
+  background-color: #47474A;
   position: fixed;
   top: 0;
   left: 0;
@@ -70,6 +88,12 @@ body {
   z-index: 2;
   min-height: 80px;
 }
+
+.lando-header img {
+  margin-left: -20px;
+  margin-top: -10px;
+}
+
 
 .lando-header .lando-header-limiter {
   text-align: center;
@@ -89,7 +113,7 @@ body {
   margin: 0;
   font-weight: 500;
   font-size: 2.5em;
-  font-family: "Lato", "Helvetica Neue", Arial;
+  font-family: "Montserrat", "Trebuchet", "San Serif";
 }
 
 .lando-header .lando-header-limiter h1 span {
@@ -106,7 +130,8 @@ body {
 }
 
 .lando-header .lando-header-limiter nav {
-  font:15px "Lato", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-family: "Montserrat", "Trebuchet", "San Serif";
   line-height: 40px;
   float: right;
 }
@@ -120,6 +145,10 @@ body {
   font-size: 24px;
   line-height:1;
   font-weight: 300;
+}
+
+.lando-header .lando-header-limiter nav a:hover {
+  color: #69B8E3;
 }
 
 .lando-header .lando-header-limiter nav a.selected {
