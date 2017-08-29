@@ -40,3 +40,9 @@ Zenhub: Github Issues + Kanban Boards
   * Feature issues must contain a User Story
 
 ### Handling Pull Requests
+
+GitHub Pull Requests (PRs) are created by developers indicating that the code branch they've created and named after their active issue needs to be QA'ed by someone else on the team before being merged back into the code mainline, or "master" branch.
+
+Since Tandem's development best practices dictate that all code improvements or bugfixes should be done in a side branch, away from the mainline, most issues will be awaiting an approval of their PR during this QA stage.
+
+Approval of a PR will indicate to the project manager that an issue has been reviewed and QA'ed by at least two people on the team. Hence the pipeline for "In Client Review" which indicates the development team has finished with an issue and it's ready for the client's eyes.
