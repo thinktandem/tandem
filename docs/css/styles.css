@@ -3,12 +3,12 @@ body {
 }
 
 .book-body {
-  font-family: "Montserrat", "Trebuchet", "San Serif";
+  font-family: "Montserrat", "Trebuchet", sans-serif;
   font-weight: 400;
 }
 
 .book-body h1, h2, h3, h4, h5 {
-  font-family: "Montserrat", "Trebuchet", "San Serif";
+  font-family: "Montserrat", "Trebuchet", sans-serif;
   text-transform: uppercase;
 }
 
@@ -104,35 +104,36 @@ body {
 .lando-header .lando-header-limiter .logo {
   float: left;
   display: flex;
-  align-items: center;
-  margin-top: -10px;
-  font-weight: 500;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: -8px;
   font-family: "Montserrat", "Trebuchet", sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  color: #a7dcf1;
 }
 
 .lando-header .lando-header-limiter .logo img {
   display: block;
 }
 
-.lando-header .lando-header-limiter .logo span.site-description {
-  margin: 5px 0 0 1em;
-  color: #a7dcf1;
-  font-size: 2em;
+.lando-header .lando-header-limiter .logo span {
+  margin-left: 1em;
 }
 
 /* The header links */
 
 .lando-header .lando-header-limiter a {
-  display: inline-block;
+  display: block;
   color: #ffffff;
   text-decoration: none;
 }
 
 .lando-header .lando-header-limiter nav {
-  font-size: 15px;
-  font-family: "Montserrat", "Trebuchet", sans-serif;
-  line-height: 40px;
   float: right;
+  font-family: "Montserrat", "Trebuchet", sans-serif;
+  font-size: 15px;
+  line-height: 40px;
 }
 
 .lando-header .lando-header-limiter nav a {
