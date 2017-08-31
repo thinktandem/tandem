@@ -1,8 +1,8 @@
-Introduction
-============
+Onboarding Introduction
+=======================
 
-Welcome to the team!
---------------------
+Welcome to the team
+-------------------
 
 As a consultancy, our value is contained within our people and our process. Consistent excellence requires both of these elements working in harmony.
 
