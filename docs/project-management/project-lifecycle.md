@@ -6,11 +6,21 @@ Tandem's Expected Project Lifecycle
 
 Our projects may range in size, complexity, and duration, but we try to follow these lifecycle stage best practices.
 
-**A)** New Lead Discovered
+**A)** Potential Client Discovered and Qualified
+
+* The sales process moves into the Account Manager's hands as soon as we've confirmed a possible project fit.
 
 **B)** Creation of Initial Project Brief
 
+* In initial conversations, the Account Manager sketches a preliminary [project brief](templates/project-brief.md) including...
+  * Major stakeholders
+  * Initial client goals/pain points
+  * Existing technologies and potential technical requirements
+
 **C)** Discovery Proposal contract generated and signed
+
+* At this point, the Account Manager hands over the Initial Project Brief to the Project Manager and reviews the project details with them up to that point.
+* The Project Manager will use this to plan and execute the Discovery
 
 **D)** Discovery Phase (generates a technical architecture plan and an estimate)
 
@@ -24,6 +34,9 @@ Our projects may range in size, complexity, and duration, but we try to follow t
   * Presentation of User Personas to client for feedback and acceptance
 
 **E)** Project Plan/Estimation → Revision of Project Brief  (generates a project schedule, developer resource plan, and infrastructure|hosting plan)
+
+* Once the Project Brief has been revised, it is handed back to the Account Manager
+* The Account Manager leads crafting of the proposal and the full contract.
 
 **F)** Full Project Contract Signing
 
