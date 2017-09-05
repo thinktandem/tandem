@@ -27,20 +27,20 @@ Things Everyone Needs
 Have you?
 ---------
 
-[  ] Sent your first message in Tandem’s Slack? (welcome!)
+* Sent your first message in Tandem’s Slack? (welcome!)
 
-[  ] Filled out your Slack profile with full name, email, phone, and timezone?
+* Filled out your Slack profile with full name, email, phone, and timezone?
 
-[  ] Set your @thinktandem.io email address as the default in Gmail? (if more than one)
+* Set your @thinktandem.io email address as the default in Gmail? (if more than one)
 
-[  ] Inserted your W2 or W9 information into Gusto?
+* Inserted your W2 or W9 information into Gusto?
 
-[  ] Submitted all required forms in Zenefits? (employees only)
+* Submitted all required forms in Zenefits? (employees only)
 
-[  ] Submitted appropriate docs in PeopleKeep? (employees only)
+* Submitted appropriate docs in PeopleKeep? (employees only)
 
-[  ] Updated your [Drupal.org profile](https://www.drupal.org/user/login) to connect with [Tandem](https://www.drupal.org/tandem) as a organization?
+* Updated your [Drupal.org profile](https://www.drupal.org/user/login) to connect with [Tandem](https://www.drupal.org/tandem) as a organization?
 
-[  ] Updated your [LinkedIn profile](https://www.linkedin.com/m/login/) to associate with [Tandem](https://www.linkedin.com/company-beta/12898991/)? (please!)
+* Updated your [LinkedIn profile](https://www.linkedin.com/m/login/) to associate with [Tandem](https://www.linkedin.com/company-beta/12898991/)? (please!)
 
-[  ] Updated (or created) your [Docker ID](https://id.docker.com/login/) to associate with Tandem and Lando?
+* Updated (or created) your [Docker ID](https://id.docker.com/login/) to associate with Tandem and Lando?
