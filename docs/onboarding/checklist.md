@@ -7,22 +7,22 @@ Things Everyone Needs
 ---------------------
 
 1. [A new @thinktandem.io Google Mail Address](https://admin.google.com/kalabox.io/AdminHome?pli=1&fral=1#UserList:org=3zbo27o3jehmpl)
-2. [Your new email added to our Harvest account (for time tracking)](https://kalabox.harvestapp.com/team)
-3. [Your new email added to our Gusto service (for getting paid)](https://manage.gusto.com/kalabox-inc)
-4. [Your new email added to our Slack channel(s)](https://thinktandem.slack.com)
+1. [Your new email added to our Harvest account (for time tracking)](https://kalabox.harvestapp.com/team)
+1. [Your new email added to our Gusto service (for getting paid)](https://manage.gusto.com/kalabox-inc)
+1. [Your new email added to our Slack channel(s)](https://thinktandem.slack.com)
 
 ### Things Full-time Employees Need
 
-5. [A Zenefits account created for you (for H.R. stuff)](https://www.zenefits.com)
-6. [A PeopleKeep account created for you (for benefits)](https://tandem.peoplekeep.com)
+1. [A Zenefits account created for you (for H.R. stuff)](https://www.zenefits.com)
+1. [A PeopleKeep account created for you (for benefits)](https://tandem.peoplekeep.com)
 
 ### Things Developers Need
 
-7. [Have your Github Account added to Tandem’s Github](https://github.com/orgs/thinktandem/people)
-8. [Have your Github Account added to Kalabox's Lando repo](https://github.com/orgs/kalabox/people)
-9. Have a TravisCI and/or CircleCI account created for you.
-10. Your new email added to select [Pantheon](https://pantheon.io) projects as needed.
-11. Your new email added to select [Platform.sh](https://platform.sh) projects as needed.
+1. [Have your Github Account added to Tandem’s Github](https://github.com/orgs/thinktandem/people)
+1. [Have your Github Account added to Kalabox's Lando repo](https://github.com/orgs/kalabox/people)
+1. Have a TravisCI and/or CircleCI account created for you.
+1. Your new email added to select [Pantheon](https://pantheon.io) projects as needed.
+1. Your new email added to select [Platform.sh](https://platform.sh) projects as needed.
 
 Have you?
 ---------
