@@ -4,7 +4,7 @@ Summary
 Onboarding
 ----------
 
-* [Checklist](onboarding/onboarding-checklist.md)
+* [Checklist](onboarding/checklist.md)
 * [Getting Paid](onboarding/getting-paid.md)
 * [Benefits](onboarding/benefits.md)
 * [Tracking Work](onboarding/time-tracking.md)
