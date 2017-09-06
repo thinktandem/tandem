@@ -20,9 +20,10 @@ Things Everyone Needs
 
 * [Have your Github Account added to Tandem’s Github](https://github.com/orgs/thinktandem/people)
 * [Have your Github Account added to Kalabox's Lando repo](https://github.com/orgs/kalabox/people)
-* Have a TravisCI and/or CircleCI account created for you.
-* Your new email added to select [Pantheon](https://pantheon.io) projects as needed.
-* Your new email added to select [Platform.sh](https://platform.sh) projects as needed.
+* [Your new email added to select Pantheon projects as needed.](https://pantheon.io)
+* [Your new email added to select Platform.sh projects as needed.](https://platform.sh)
+* A TravisCI and/or CircleCI account created for you.
+* Tandem's per-client password folders shared with your personal LastPass account as needed.
 
 Have you?
 ---------
