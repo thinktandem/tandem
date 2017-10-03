@@ -54,10 +54,10 @@ Hiring
 * [Interview Process](hiring/interviews.md)
 * [Checking References](hiring/reference-check.md)
 
-Offboarding
------------
+Managing
+--------
 
-* [TBD](placeholder.md)
+* [Quarterly Reviews](managing/quarterly-review.md)
 
 Resources
 ---------
