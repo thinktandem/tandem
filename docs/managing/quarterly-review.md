@@ -13,7 +13,7 @@ Peer Review Questions
 
 A week before conducting your review meeting, send an email out to relevant peers of the team member and ask them to answer the following questions about the team member.
 
-### Teamwork
+**Teamwork**
 
 Is this team member meeting relevant deadlines?
 
@@ -27,7 +27,7 @@ How would you recommend this team member improve their interpersonal and relatio
 
 Can you think of an instance where this team member mentored a peer? Please describe.
 
-### Technical
+**Technical**
 
 What tasks are you confident this team member can accomplish? What tasks would you hesitate entrusting to them?
 
@@ -39,7 +39,7 @@ Did this team member bring new technologies, concepts, or other ideas into the t
 
 What blog articles, internal documentation or other content has this team member contributed?
 
-### Motivation + Efficiency
+**Motivation + Efficiency**
 
 Does this team member appear to be motivated by his work-related tasks, job, and relationships?
 
@@ -54,7 +54,7 @@ Manager Review Metrics
 
 The team member's director should help collate the following metrics.
 
-### Metrics
+**Metrics**
 
 Total Hours Worked/Week
 
@@ -69,7 +69,7 @@ Total Project Points Accomplished/Total Project Hours
 * How did this point averages compare with other team members on the same project?
 * What conclusion can we draw from these averages (if any)?
 
-### Sales
+**Sales**
 
 Has this team member referred clients or prospective hires to Tandem?
 
