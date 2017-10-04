@@ -15,7 +15,26 @@
     </nav>
   </div>
 </header>
+{{ super() }}
+
+{% endblock %}
+
+{% block book_inner %}
 
 {{ super() }}
+
+<div class="cta">
+  <div class="cta-inner">
+    <h1>Woah! Why Are These Docs Public?</h1>
+    <p>
+      At Tandem, we believe in having a process transparent
+      to all stakeholders. We've made our internal company documentation public
+      so prospective clients, team members, and even our peers can get an idea of
+      what working with Tandem is like.
+    </p>
+    <p>See something you like or are curious about? Get in touch!</p>
+    <a class="cta-btn" href="https://thinktandem.io/contact/">Let's Talk Process</a>
+  </div>
+</div>
 
 {% endblock %}
