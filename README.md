@@ -48,6 +48,7 @@ cd horoscope
 lando npm install
 
 # Start up the docs
+# NOTE: You may need to run this twice
 lando start
 ```
 

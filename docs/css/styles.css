@@ -190,6 +190,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: #ED3F7A;
   color: #FFF;
+  margin-top: 5em;
 }
 
 .cta h1 {
