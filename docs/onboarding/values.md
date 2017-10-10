@@ -10,11 +10,11 @@ Tandem's Values
 
 As a team, Tandem is...
 
-- **Purpose-driven:** Technology doesn't exist as a brain-teaser for smart people. It's here to do a job and make life easier.
-- **Efficient:** Know what you're trying to do. Measure it. Keep getting better at it.
-- **Transparent:** Everyone should know the important stuff...
-- **Simple:** ...and if it's not important, it's a distraction.
-- **Reproducible:** Good work is unique once. Process and automation make it effortless twice.
+* **Purpose-driven:** Technology doesn't exist as a brain-teaser for smart people. It's here to do a job and make life easier.
+* **Efficient:** Know what you're trying to do. Measure it. Keep getting better at it.
+* **Transparent:** Everyone should know the important stuff...
+* **Simple:** ...and if it's not important, it's a distraction.
+* **Reproducible:** Good work is unique once. Process and automation make it effortless twice.
 
 How We Live Our Values
 ----------------------
@@ -23,12 +23,12 @@ How We Live Our Values
 
 We're talented people, but we can only work so many hours in the day. Encapsulating our knowledge as processes, documentation, and technology products allows many more people to benefit from our experience. That's why we...
 
-- Make [open source contributions](https://github.com/thinktandem).
-- Created [Lando](https://www.github.com/lando/lando), easy local development for WordPress, Drupal, Laravel, and much more.
-- Use a [unified process](coding/process-workflow.md) governing all our projects.
-- Utilize automation
-- Write documentation for all our projects.
-- Made these docs open and public!
+* Make [open source contributions](https://github.com/thinktandem).
+* Created [Lando](https://www.github.com/lando/lando), easy local development for WordPress, Drupal, Laravel, and much more.
+* Use a [unified process](coding/process-workflow.md) governing all our projects.
+* Utilize automation
+* Write documentation for all our projects.
+* Made these docs open and public!
 
 **2. Work with the Best.**
 
