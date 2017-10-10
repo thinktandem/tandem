@@ -4,6 +4,7 @@ Summary
 Onboarding
 ----------
 
+* [Who is Tandem?](onboarding/values.md)
 * [Checklist](onboarding/checklist.md)
 * [Getting Paid](onboarding/getting-paid.md)
 * [Benefits](onboarding/benefits.md)
