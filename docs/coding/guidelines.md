@@ -82,4 +82,11 @@ All Tandem projects should also feature a `README.md` that at the minimum contai
 
 ### Testing
 
-@todo: this might not make sense given we have a QA section?
+At a minimum the developer should:
+
+* Make sure the code works as advertised
+* Meets the requirements of the GitHub issue
+* Passes code linting, standards and functional tests
+
+Once these requirements are met then the developer should move the card into the
+QA column on GitHub and assign to project manager for an internal QA pass.
