@@ -47,7 +47,7 @@ ZenHub
 
 Tandem uses [agile](https://en.wikipedia.org/wiki/Agile_software_development) as its development philosophy. Specifically we do regular [stand ups](https://en.wikipedia.org/wiki/Stand-up_meeting) and utilize a [kanban board](https://en.wikipedia.org/wiki/Kanban_board) to track [story points](http://wiki.openbravo.com/wiki/Scrum/Story_points) and project [burndown](https://en.wikipedia.org/wiki/Burn_down_chart). This provides a way to:
 
-* Create project issues and milestonesf
+* Create project issues and milestones
 * Determine the status of particular issues and milestones
 * Assign issues to particular developers
 * Communicate between developers, project managers and relevant stakeholders
