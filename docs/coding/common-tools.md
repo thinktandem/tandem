@@ -6,12 +6,16 @@ This is a list of core open source dependencies that Tandem has vetted for usage
 Backdrop
 --------
 
-@todo: maybe @geoff can fill this out?
+* [video_embed_field](https://github.com/backdrop-contrib/video_embed_field) - Provide a Video field
+* [googleanalytics](https://github.com/backdrop-contrib/googleanalytics) - Add GA to your site
 
 Composer
 --------
 
-@todo: things like guzzle should go here
+* [guzzlehttp/guzzle](http://docs.guzzlephp.org/en/stable/) - PHP HTTP client that makes it easy to send HTTP requests
+* [squizlabs/php_codesniffer](https://github.com/squizlabs/php_codesniffer) - Static code checking for standards
+* [overtrue/phplint](https://github.com/overtrue/phplint) - Linting of php files
+* [phpunit/phpunit](https://github.com/sebastianbergmann/phpunit) - PHP Unit testing framework
 
 Drupal 7
 --------
@@ -26,7 +30,7 @@ Drupal 8
 Laravel
 -------
 
-@todo: maybe @mike and @alec can fill this out?
+* [maatwebsite/excel](https://github.com/Maatwebsite/Laravel-Excel) - Import and export Excel and CSV files for Laravel
 
 Node
 ----
