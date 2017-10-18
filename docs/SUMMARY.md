@@ -16,16 +16,16 @@ Collaborating
 * [Meetings](collab/meetings.md)
 * [Slack](collab/slack.md)
 * [Hangouts](collab/hangouts.md)
+* [Process Workflow](collab/process-workflow.md)
+* [Dev Workflow](collab/dev-workflow.md)
 
 Writing Code
 ------------
 
 * [What You Need](coding/needs.md)
-* [Process Workflow](coding/process-workflow.md)
-* [Dev Workflow](coding/dev-workflow.md)
-* [Quality Control](placeholder.md)
-* [Leveling Up](placeholder.md)
-* [Languages](placeholder.md)
+* [Guidelines](coding/guidelines.md)
+* [Quality Control](coding/qa.md)
+* [Common Tools](coding/common-tools.md)
 
 Managing Projects
 -----------------

@@ -5,8 +5,10 @@ Tandem standardizes its development around a few core tools. This provides predi
 
  <!-- toc -->
 
-macOS Computer
---------------
+A Good Computer
+---------------
+
+We are only as good as our tools and Tandem is only as good as its people. This means that having a powerful and reliable machine is good not only for you but for the organization as a whole.
 
 Tandem is primarily a macOS based shop. While you can still write the codes with Windows and Linux, these boxes are currently unsupported and [YMMV](http://www.urbandictionary.com/define.php?term=ymmv). We recommend you have a macOS based machine with at least...
 
@@ -16,7 +18,7 @@ Tandem is primarily a macOS based shop. While you can still write the codes with
 * 50GB+ of available disk space
 * Modern processor (~last 2 years)
 
-If you are a Tandem employee or contractor we offer a [tech stipend](#TBD) that can be used to purchase a new machine.
+If you are a Tandem employee or contractor we offer a [tech stipend](./../onboarding/benefits.md#computer--equipment-purchase) that can be used to purchase a new machine.
 
 Git
 ---
@@ -24,42 +26,6 @@ Git
 Every Tandem project uses [`git`](https://git-scm.com/) for [version control](https://en.wikipedia.org/wiki/Version_control). This provides easy collaboration between developers, interfaces well with [GitHub](https://github.com) and keeps a nice record of who has done what. If you are unfamiliar with `git` we recommend [Pro Git](https://git-scm.com/book/en/v2) as a reference.
 
 If you are unsure whether `git` is installed on your system please [click here](https://git-scm.com/downloads).
-
-
-### Configuring
-
-```bash
-git config --global user.name "James T. Kirk"
-git config --global user.email kirk@enterprise.mil
-```
-
-### Common Commands
-
-```bash
-# Clone the git repository for this documentation using an SSH key (preferred)
-git clone git@github.com:thinktandem/horoscope.git
-
-# Clone the git repository for this documentation using user/pass auth (less secure)
-git clone https://github.com/thinktandem/horoscope.git
-
-# Navigate to the working directory for this repo
-cd horoscope
-
-# Fetch all new branches and tags
-git fetch --all
-
-# View all local and remote branches
-git branch -a
-
-# Checkout a new branch
-git checkout -b ISSUENUMBER-DESCRIPTION
-
-# Pull in updates from the default branch (master in this case)
-git pull origin master
-
-# Push updates to your current branch
-git push origin ISSUENUMBER-DESCRIPTION
-```
 
 For other helpful `git` commands we recommend the [our git training](https://docs.google.com/presentation/d/1tPKnFcOC-HBQy9Za8jCyRbXFXxNQUU7xE9JJSIA6a2k/edit?usp=sharing) presentation.
 
@@ -93,14 +59,26 @@ Tandem uses [agile](https://en.wikipedia.org/wiki/Agile_software_development) as
 Lando
 -----
 
-Pantheon
---------
+Tandem uses (and is the creator and maintainer of) [Lando](https://github.com/lando/lando) for local development and DevOps. Lando eliminates the need for managing your own, or multiple versions of, common software packages like `php`, `nodejs`, `apache` or `memcache` and can also:
 
-Platform.sh
+* Easily mimic your production environment locally.
+* Standardize your teams dev environments and tooling on OSX, Windows and Linux.
+* Integrate with hosting providers like Pantheon
+* Store all of the above in a version controlled config file called .lando.yml
+* Easily customize or extend tooling, deployment options and basically any other functionality.
+* Free yourself from the tyranny of inferior local development products.
+
+All project repositories at Tandem should contain a [`.lando.yml`](https://docs.devwithlando.io/config/lando.html) that does the above.
+
+After [installing Lando](https://docs.devwithlando.io/installation/installing.html) we highly recommend doing a pass on the [Lando documentation](https://docs.devwithlando.io/).
+
+Text Editor
 -----------
 
-IDE or Text Editor
-------------------
+A generic text editor that is geared towards writing code is also a good idea. Tandem recommends using one of the following:
 
-CircleCI or Travis (optional)
------------------------------
+* [Atom](https://atom.io/) (We also have our own [theme](https://atom.io/themes/atom-tandemic-syntax))
+* [Sublime Text 2/3](https://www.sublimetext.com/)
+* [Vim](http://www.vim.org/)
+
+*@todo: List of common extensions that are helpful for each.*
