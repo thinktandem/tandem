@@ -65,3 +65,4 @@ Resources
 
 * [Pgsql on Platform.sh](tutorials/postgres-platform.md)
 * [Laravel Frontend Coding](tutorials/laravel-frontend.md)
+* [Platform.sh Enterprise D7 Vanilla Workflow](tutorials/d7-enterprise-platform.md)
