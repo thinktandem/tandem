@@ -26,31 +26,3 @@ Tandem uses a modified [GitHub Flow](https://guides.github.com/introduction/flow
 **NEVER EVER EVER EVER PUSH ANYTHING DIRECTLY TO THE MASTER BRANCH!!!**
 
 Some details may vary on a project to project basis. Every project has a its own documentation typically starting with the README.md and project variances in process will be documented there.  For example for projects using Platform.sh as the host in step 2 you would branch from `test` as `test` is the canonical branch for Platform.sh based projects, where Pantheon uses `master` as canonical.
-
-Tests
------
-
-For PHP/Composer based projects we usually configure the `composer.json` file
-with a `scripts` key to run the test suites.
-
-*   The command `lando composer test` runs:
-*   php linting as configured in `.phplint.yml`
-*   php code style checks against the PSR2 standard
-*   phpunit tests
-
-Setting Up a Project
---------------------
-
-If you are charged with setting up a project we typically want:
-
-* Git repo
-* CI: Usually Travis-CI or CircleCI
-* Githooks to deploy to test envs (CD)
-
-You can look at examples of setting this up for:
-
-* Pantheon: <https://github.com/thinktandem/pantheon-workflow-demo>
-* Platform: <https://github.com/thinktandem/platform-workflow-demo>
-
-The `.travis.yml` or `circle.yml` files will give you an idea of things that are
-needed to provide the automated tests, QC and CD.

@@ -26,6 +26,7 @@ Writing Code
 * [Guidelines](coding/guidelines.md)
 * [Quality Control](coding/qa.md)
 * [Common Tools](coding/common-tools.md)
+* [DevOps](coding/devops.md)
 
 Managing Projects
 -----------------
