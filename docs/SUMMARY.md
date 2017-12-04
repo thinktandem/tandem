@@ -60,6 +60,7 @@ Managing
 --------
 
 * [Quarterly Reviews](managing/quarterly-review.md)
+* [Invoicing](managing/invoicing.md)
 
 Resources
 ---------
