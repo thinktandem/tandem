@@ -49,6 +49,7 @@ Selling
 * [Email Templates](sales/email-templates.md)
 * [Mass Email Inspiration](sales/mass-email-inspiration.md)
 * [On Rewarming Cold Contacts](sales/rewarming-old-contacts.md)
+* [Writing RFPs](sales/rfp-process.md)
 
 Hiring
 ------
