@@ -1,7 +1,9 @@
 Common Tools
 ============
 
-This is a list of core open source dependencies that Tandem has vetted for usage.
+This is a list of core open source dependencies that Tandem has vetted for usage. The goal of the list is to document the Tandem chosen path particularly when there are many (or even a few) modules that do the same or similar things. That means this list is not exhaustive, but is a good place to check if you are tyring to build a robust search for instance.
+
+It is also a living breathing list. If you find good modules or combinations of modules that satisfy a use case add them to the docs via a PR.
 
 Backdrop
 --------
@@ -20,7 +22,10 @@ Composer
 Drupal 7
 --------
 
-@todo: maybe @john/@geoff/@alec can fill this out?
+* [google_analytics](https://www.drupal.org/project/google_analytics) - Connect Drupal to Google Analytics
+* Solr search
+  * [search_api](https://www.drupal.org/project/search_api) - This module provides a framework for easily creating searches on any entity known to Drupal
+  * [search_api_solr](https://www.drupal.org/project/search_api_solr) - This module provides a Solr backend for the Search API module
 
 Drupal 8
 --------
