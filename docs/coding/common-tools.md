@@ -26,11 +26,20 @@ Drupal 7
 * Solr search
   * [search_api](https://www.drupal.org/project/search_api) - This module provides a framework for easily creating searches on any entity known to Drupal
   * [search_api_solr](https://www.drupal.org/project/search_api_solr) - This module provides a Solr backend for the Search API module
+* [paragraphs](https://www.drupal.org/project/paragraphs) - Powerful content / field / entity creation mechanism
+* [metatag](https://www.drupal.org/project/metatag) - Win all the SEO with proper metatags.
+* [JSON+LD](https://github.com/labboy0276/json_ld) - Custom JSON+LD Module that handles content types + views.
 
 Drupal 8
 --------
 
-@todo: maybe @john can fill this out?
+* [config_readonly](https://www.drupal.org/project/config_readonly) - Allows locking down config changes on specified server instances.
+* [config_split](https://www.drupal.org/project/config_split) - Allows from different config on specified server instances.
+* [adminimal_theme](https://www.drupal.org/project/adminimal_theme) - Nice admin theme.
+* [paragraphs](https://www.drupal.org/project/paragraphs) - Powerful content / field / entity creation mechanism
+* [bootstrap](https://www.drupal.org/project/bootstrap) - Utilizes Bootstrap 3 for a nice responsive site.
+* [metatag](https://www.drupal.org/project/metatag) - Win all the SEO with proper metatags.
+* [schema_metatag](https://www.drupal.org/project/schema_metatag) - JSON+LD Module to win more SEO.
 
 Laravel
 -------
