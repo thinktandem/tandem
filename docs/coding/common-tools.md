@@ -19,18 +19,33 @@ Composer
 * [overtrue/phplint](https://github.com/overtrue/phplint) - Linting of php files
 * [phpunit/phpunit](https://github.com/sebastianbergmann/phpunit) - PHP Unit testing framework
 
-Drupal 7
---------
+Drupal 7 & 8
+-------------
 
+* [adminimal_theme](https://www.drupal.org/project/adminimal_theme) - Nice admin theme.
+* [paragraphs](https://www.drupal.org/project/paragraphs) - Powerful content / field / entity creation mechanism
+* [metatag](https://www.drupal.org/project/metatag) - Win all the SEO with proper metatags.
+* [redis](https://www.drupal.org/project/redis) - Powerful in-memory data structure storage mechanims.
+* [bootstrap](https://www.drupal.org/project/bootstrap) - Utilizes Bootstrap 3 for a nice responsive site.
 * [google_analytics](https://www.drupal.org/project/google_analytics) - Connect Drupal to Google Analytics
-* Solr search
-  * [search_api](https://www.drupal.org/project/search_api) - This module provides a framework for easily creating searches on any entity known to Drupal
-  * [search_api_solr](https://www.drupal.org/project/search_api_solr) - This module provides a Solr backend for the Search API module
+* [search_api](https://www.drupal.org/project/search_api) - This module provides a framework for easily creating searches on any entity known to Drupal
+* [search_api_solr](https://www.drupal.org/project/search_api_solr) - This module provides a Solr backend for the Search API module
 
-Drupal 8
---------
+Drupal 7 (only)
+---------------
 
-@todo: maybe @john can fill this out?
+* [apdqc](https://www.drupal.org/project/apdqc) - Uses asynchronous connections & prefetching to speed up cache call.
+* [JSON+LD](https://github.com/labboy0276/json_ld) - Custom JSON+LD Module that handles content types + views.
+* [tracking_code](https://www.drupal.org/project/tracking_code) - Easy way to add tracking code snippets for marketing efforts.
+
+
+Drupal 8 (only)
+---------------
+
+* [config_readonly](https://www.drupal.org/project/config_readonly) - Allows locking down config changes on specified server instances.
+* [config_split](https://www.drupal.org/project/config_split) - Allows from different config on specified server instances.
+* [schema_metatag](https://www.drupal.org/project/schema_metatag) - JSON+LD Module to win more SEO.
+* [asset_injector](https://www.drupal.org/project/asset_injector) - Easy way to add tracking code snippets for marketing efforts.
 
 Laravel
 -------
@@ -56,4 +71,19 @@ Node
 WordPress
 ---------
 
-@todo: maybe @john can fill this out?
+* [Timber](https://github.com/timber/timber) - Converts WordPress Theming to TWIG
+* [Ke$ha: Tandem's Timber Starter Theme feat. Bootstrap 4](https://github.com/thinktandem/kesha) - Name says it all
+* [Advanced Custom Fields PRO](https://www.advancedcustomfields.com/pro/) - Powerful plugin for adding fields to pages, posts, etc.
+* [FooGallery](https://wordpress.org/plugins/foogallery/) - Simple to use gallery plugin.
+* [FooGallery Owl Carousel Template](https://wordpress.org/plugins/foogallery-owl-carousel-template/) - Responsive slider with lots of features.
+* [Ninja Forms](https://wordpress.org/plugins/ninja-forms/) - Simple, extensible forms.
+* [Debug Bar](https://wordpress.org/plugins/debug-bar/) - Easily Debug pages with thsi plugin.
+* [WP-CFM](https://wordpress.org/plugins/wp-cfm/) - Configuration Management for WordPress sites.
+* [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) - Win all the SEO.
+* [WP SEO Structured Data Schema](https://wordpress.org/plugins/wp-seo-structured-data-schema/) - JSON+LD Plugin to win more SEO.
+* [Google Analytics Dashboard for WP (GADWP)](https://wordpress.org/plugins/google-analytics-dashboard-for-wp/)  - Connect WordPress to Google Analytics
+* [WP Redis](https://wordpress.org/plugins/wp-redis) - Powerful in-memory data structure storage mechanims.
+* [Autoptimize](https://wordpress.org/plugins/autoptimize/)
+* [WP Rocket](https://wp-rocket.me/): Caching plugin, most excellent. It is a paid only plugin.
+* [All-in-One WP Migration](https://wordpress.org/plugins/all-in-one-wp-migration/): Great for moving your site around to different instances / servers.
+* [Velvet Blues Update URLs](https://wordpress.org/plugins/velvet-blues-update-urls/): Run this after moving your site around to fix all your urls.
