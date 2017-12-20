@@ -1,3 +1,6 @@
+---
+description: Tandem's standard project workflow is heavily based upon Github Flow.
+---
 Process Workflow
 ================
 
