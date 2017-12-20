@@ -1,3 +1,6 @@
+---
+description: Customer Profiles
+---
 Customer Profiles
 =================
 

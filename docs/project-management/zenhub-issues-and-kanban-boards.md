@@ -1,3 +1,6 @@
+---
+description: ZenHub is a browser plugin that allows GitHub issues to be viewed, organized, and tracked on a agile Kanban Board from within GitHub itself.
+---
 Managing Projects
 =================
 

@@ -1,3 +1,6 @@
+---
+description: All our email templates.
+---
 Rewarming Connection
 ====================
 

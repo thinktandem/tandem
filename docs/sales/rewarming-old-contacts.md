@@ -1,3 +1,6 @@
+---
+description: The best way to get your name back into someone's head is by taking an interest in their work.
+---
 Biz Dev: Rewarming Old Contacts
 ===============================
 

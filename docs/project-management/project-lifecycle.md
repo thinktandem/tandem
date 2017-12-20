@@ -1,3 +1,6 @@
+---
+description: Our projects may range in size, complexity, and duration, but we try to follow these lifecycle stage best practices.
+---
 Managing Projects
 =================
 
