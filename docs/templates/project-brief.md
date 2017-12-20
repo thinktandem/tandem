@@ -1,3 +1,6 @@
+---
+description: Example project briefs for all our client work.
+---
 Example Project Brief: Cloud City Inc. Informational Portal
 ===========================================================
 

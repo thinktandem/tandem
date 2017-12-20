@@ -1,3 +1,6 @@
+---
+description: Laravel 5.3 uses Elixir, a build system abstraction built on top of Gulp, to compile CSS and Javascript.
+---
 Laravel Frontend
 ================
 
