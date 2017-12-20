@@ -1,5 +1,5 @@
 ---
-description: Setting Up a Project: If you are charged with setting up a project we typically want.
+description: Setting Up a Project - If you are charged with setting up a project we typically want.
 ---
 Setting Up a Project
 ====================
