@@ -1,3 +1,6 @@
+---
+description: Every Tandem applicant should be able to provide 2-3 professional references whom they have directly worked with
+---
 Checking References
 ===================
 

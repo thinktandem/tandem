@@ -1,3 +1,6 @@
+---
+description: Each quarter, every Tandem team member should meet with their director. The goals of this meeting are twofold.
+---
 Quarterly Review
 ================
 

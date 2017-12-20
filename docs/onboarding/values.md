@@ -1,3 +1,6 @@
+---
+description: Tandem is a group of craft-focused do-ers who harness technology to eliminate drudgery.
+---
 Who is Tandem?
 ==============
 

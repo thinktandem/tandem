@@ -1,3 +1,6 @@
+---
+description: Whether you're making them or receiving them, no one really loves invoices. That's why we try to...
+---
 Invoicing (For Fun and Profit)
 ==============================
 
