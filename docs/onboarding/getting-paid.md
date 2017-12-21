@@ -1,3 +1,6 @@
+---
+description: We run payroll twice a month (semi-monthly) on the 15th and the last day of the month.
+---
 Getting PAID
 ============
 

@@ -1,3 +1,6 @@
+---
+description: Place to collect any mass marketing emails that might provide inspiration for our campaigns.
+---
 Mass Email Template Inspirations
 ================================
 

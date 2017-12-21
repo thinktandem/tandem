@@ -1,3 +1,6 @@
+---
+description: Tandem is a group of craft-focused do-ers who harness technology to eliminate drudgery.
+---
 Who is Tandem?
 ==============
 
@@ -25,7 +28,7 @@ We're talented people, but we can only work so many hours in the day. Encapsulat
 
 * Make [open source contributions](https://github.com/thinktandem).
 * Created [Lando](https://www.github.com/lando/lando), easy local development for WordPress, Drupal, Laravel, and much more.
-* Use a [unified process](coding/process-workflow.md) governing all our projects.
+* Use a [unified process](https://docs.thinktandem.io/collab/process-workflow.html) governing all our projects.
 * Utilize automation
 * Write documentation for all our projects.
 * Made these docs open and public!

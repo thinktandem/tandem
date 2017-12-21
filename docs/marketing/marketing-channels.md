@@ -1,3 +1,6 @@
+---
+description: Our main marketing presence. Most of our effort should go into making this a succinct statement of why you should work with Tandem.
+---
 Channels
 ========
 

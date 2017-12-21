@@ -1,3 +1,6 @@
+---
+description: Currently we don’t offer a group health plan due to issues getting GREAT access for all our team members across multiple states.
+---
 Benefits
 ========
 

@@ -1,3 +1,6 @@
+---
+description: Our projects may range in size, complexity, and duration, but we try to follow these lifecycle stage best practices.
+---
 Managing Projects
 =================
 
@@ -12,7 +15,7 @@ Our projects may range in size, complexity, and duration, but we try to follow t
 
 **B)** Creation of Initial Project Brief
 
-* In initial conversations, the Account Manager sketches a preliminary [project brief](templates/project-brief.md) including...
+* In initial conversations, the Account Manager sketches a preliminary project brief (located in templates/project-brief.md) including...
   * Major stakeholders
   * Initial client goals/pain points
   * Existing technologies and potential technical requirements

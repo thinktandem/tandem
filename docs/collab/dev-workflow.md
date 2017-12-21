@@ -1,3 +1,6 @@
+---
+description: Tandem uses a modified GitHub Flow development model.
+---
 Development Process and Workflow
 ================================
 

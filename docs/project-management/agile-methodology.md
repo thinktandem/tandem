@@ -1,3 +1,6 @@
+---
+description: Our Agile Methodology.
+---
 Managing Projects
 =================
 

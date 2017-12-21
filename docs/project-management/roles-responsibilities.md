@@ -1,3 +1,6 @@
+---
+description: Roles & Responsibilities for Stakeholder, Product Owner, Account Manager, Technical Lead/Architect, Developer
+---
 Managing Projects
 =================
 

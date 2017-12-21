@@ -1,3 +1,6 @@
+---
+description: Hi there! We're very glad you're working with us. Tandem strives to make the world better by creating simple solutions to BIG, complex problems.
+---
 Onboarding Checklist
 ====================
 

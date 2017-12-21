@@ -1,3 +1,6 @@
+---
+description: Harvest is our time tracking and invoicing application. It's fairly intuitive, but if you'd like a demo, ask a fellow team member.
+---
 Time Tracking w/Harvest
 =======================
 

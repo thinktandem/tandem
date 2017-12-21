@@ -1,3 +1,6 @@
+---
+description: In order for Tandem to quickly and consistently deliver high quality, stable, performant, reproducable, testable and efficient code.
+---
 Guidelines
 ==========
 

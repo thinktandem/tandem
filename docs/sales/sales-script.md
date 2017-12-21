@@ -1,3 +1,6 @@
+---
+description: Basic guide to handling sales conversations, end-to-end.
+---
 Tandem Sales Script
 ===================
 

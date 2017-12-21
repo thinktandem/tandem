@@ -1,3 +1,6 @@
+---
+description: Platform.sh Enterprise Drupal 7 Vanilla Workflow
+---
 Platform.sh Enterprise Drupal 7 Vanilla Workflow
 ================================================
 
