@@ -40,6 +40,7 @@ Marketing
 ---------
 
 * [Channels](marketing/marketing-channels.md)
+* [SEO Tools](marketing/seo-tools.md)
 
 Selling
 -------
