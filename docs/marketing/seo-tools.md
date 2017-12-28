@@ -1,7 +1,6 @@
 ---
 description: List of our commonly used SEO tools for internal use and clients.
 ---
-
 SEO Tools
 =========
 
@@ -27,4 +26,5 @@ Submit Shop
 -----------
 
 [Submit Shop](http://www.submitshop.com/) is an offshored service that helps with some tedious / monotonous white hat SEO tasks.  We currently utilize this service:
+
 * [RSS Feed Submission](http://www.submitshop.com/rss-feed-submission) submits your RSS feed to about 100 directors / aggregators.
