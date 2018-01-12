@@ -17,7 +17,7 @@ Tandem is primarily a macOS based shop. While you can still write the codes with
 
 * macOS 10.10+
 * x64 processor architecture
-* 4GB RAM
+* 4GB+ RAM
 * 50GB+ of available disk space
 * Modern processor (~last 2 years)
 
@@ -67,7 +67,7 @@ Tandem uses (and is the creator and maintainer of) [Lando](https://github.com/la
 * Easily mimic your production environment locally.
 * Standardize your teams dev environments and tooling on OSX, Windows and Linux.
 * Integrate with hosting providers like Pantheon
-* Store all of the above in a version controlled config file called .lando.yml
+* Store all of the above in a version controlled config file called `.lando.yml`
 * Easily customize or extend tooling, deployment options and basically any other functionality.
 * Free yourself from the tyranny of inferior local development products.
 
