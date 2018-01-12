@@ -83,5 +83,5 @@ A generic text editor that is geared towards writing code is also a good idea. T
 * [Atom](https://atom.io/) (We also have our own [theme](https://atom.io/themes/atom-tandemic-syntax))
 * [Sublime Text 2/3](https://www.sublimetext.com/)
 * [Vim](http://www.vim.org/)
+  * [dotfiles](https://github.com/serundeputy/dot-files) ~ a nice `.vimrc` starting point with some great plugins.
 
-*@todo: List of common extensions that are helpful for each.*
