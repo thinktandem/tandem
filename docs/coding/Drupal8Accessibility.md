@@ -2,8 +2,22 @@
 description: WCAG Accessibility requirements and solutions in Drupal 8.
 ---
 
-Drupal WCAG Solutions
-=====================
+Drupal 8 WCAG Solutions
+=======================
+
+1.1 Text Alternatives
+---------------------
+
+### Requirements
+
+1.1.1 Provide text alternatives for any non‐text content.
+
+### Solutions
+
+- core Media module
+
+Alt tag is now required for all media in Drupal 8.
+
 
 1.2: Video, Audio, and other "Time-Based Media"
 -----------------------------------------------
