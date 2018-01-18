@@ -116,7 +116,7 @@ For 1.4.2 any HTML5 video source has the ability to add independent audio contro
 * [WCAG Color Contrast Checker](https://webaim.org/resources/contrastchecker/)
 
 2.1: Keyboard Accessible
-----------------------------
+------------------------
 
 ### 2.1 Requirements
 
@@ -132,3 +132,23 @@ Check the module's issue queues for patches if it fails this.  Worst case scenar
 *AAA requirements include...*
 
 * 2.1.3: All functionality of a site is accessible with a keyboard without requiring specific timing for keystrokes.
+
+2.2: Enough Time to Read and Use Content
+----------------------------------------
+
+### 2.2 Requirements
+
+* 2.2.1: Adjusted timing mechanims on content that is displayed via a time limit.
+* 2.2.2: Mechanisms to stop / pause blinking, scrolling or moving text.
+
+### 2.2 Solutions
+
+This does not really apply to Drupal.  If you do decide to use a contrib module that has anything in 2.2.2, there should be mechanisms to stop / pause.  If not, you will need to craft up a custom JQuery solution.
+
+*AAA requirements include...*
+
+* 2.2.3: No Time Limits on an event / activity.
+* 2.2.4: Interruptions (alerts, page updates, etc.) can be postponed or suppressed by the user.
+* 2.2.5: If an authentication session expires, the user can re-authenticate and continue the activity without losing any data from the current page.
+
+
