@@ -1,7 +1,6 @@
 ---
 description: WCAG Accessibility requirements and solutions in Drupal 8.
 ---
-
 Drupal 8 WCAG Solutions
 =======================
 
@@ -10,13 +9,13 @@ Drupal 8 WCAG Solutions
 1.1 Text Alternatives
 ---------------------
 
-### Requirements
+### 1.1 Requirements
 
 1.1.1 Provide text alternatives for any non‐text content.
 
-### Solutions
+### 1.1 Solutions
 
-- core Media module
+* core Media module
 
 Alt tag is now required for all media in Drupal 8.
 
@@ -24,26 +23,25 @@ Alt tag is now required for all media in Drupal 8.
 1.2: Video, Audio, and other "Time-Based Media"
 -----------------------------------------------
 
-
-### Requirements
+### 1.2 Requirements
 
 In general: your system should be able to provide...
 
-- 1.2.1: Written transcripts and descriptions (A)
-- 1.2.2: Written captions (A)
-- 1.2.3: "Audio Descriptions" of video content (A)
-- 1.2.4: Live Captions (AA)
-- 1.2.5: "Audio Descriptions" w/additional contextual info (AA)
+* 1.2.1: Written transcripts and descriptions (A)
+* 1.2.2: Written captions (A)
+* 1.2.3: "Audio Descriptions" of video content (A)
+* 1.2.4: Live Captions (AA)
+* 1.2.5: "Audio Descriptions" w/additional contextual info (AA)
 
-### Solutions
+### 1.2 Solutions
 
 We find that most of the requirements are addressable by a combination of:
 
-- core Media module
-- File Entity module
-- YouTube embedded videos
-- Audiofield module
-- 3rd party services like CaptionSync for live captioning.
+* core Media module
+* File Entity module
+* YouTube embedded videos
+* Audiofield module
+* 3rd party services like CaptionSync for live captioning.
 
 **Ex: Accessible Video Implementation**
 
@@ -54,14 +52,31 @@ We find that most of the requirements are addressable by a combination of:
 
 AAA requirements include...
 
-- 1.2.6: Sign language
-- 1.2.7: Extended audio descriptions of videos. An extended audio description will pause video playback when necessary to relate what's happening in the video to users that have impaired vision. Note that a transcript combined with a regular audio description satisfies this requirement.  You could also provide multiple videos to emaulate breaks in videos when there is no talking.
-- 1.2.8: For videos that show how to use a product, technology, etc there should be an alternative transcript that describes what they are doing and saying.
-- 1.2.9: Similar to 1.2.4 but is intended for captioning of all live broadcasting Time-Based Media types.
+* 1.2.6: Sign language
+* 1.2.7: Extended audio descriptions of videos. An extended audio description will pause video playback when necessary to relate what's happening in the video to users that have impaired vision. Note that a transcript combined with a regular audio description satisfies this requirement.  You could also provide multiple videos to emaulate breaks in videos when there is no talking.
+* 1.2.8: For videos that show how to use a product, technology, etc there should be an alternative transcript that describes what they are doing and saying.
+* 1.2.9: Similar to 1.2.4 but is intended for captioning of all live broadcasting Time-Based Media types.
 
-### Resources
+### 1.2 Resources
 
-- [What is Audio Description?](https://www.nomensa.com/blog/2010/what-audio-description)
-- [Customizing YouTube Captions](https://support.google.com/youtube/answer/2734705?hl=en)
-- [Section 1194.22 Criteria Review](https://www.newtarget.com/new-target-voluntary-product-accessibility-template-vpat)
-- [Drupal 8 Accessibility Documentation](https://www.drupal.org/docs/8/accessibility)
+* [What is Audio Description?](https://www.nomensa.com/blog/2010/what-audio-description)
+* [Customizing YouTube Captions](https://support.google.com/youtube/answer/2734705?hl=en)
+* [Section 1194.22 Criteria Review](https://www.newtarget.com/new-target-voluntary-product-accessibility-template-vpat)
+* [Drupal 8 Accessibility Documentation](https://www.drupal.org/docs/8/accessibility)
+
+1.3: Adaptable Content
+-----------------------
+
+### 1.3 Requirements
+
+* 1.3.1: All elements should be self describing
+* 1.3.2: Elements should be in a meaningful sequence
+* 1.3.3: Instructions for elements does not solely depend on shape, size, visual location, orientation or sound.
+
+### 1.3 Solutions
+
+Drupal core satisifies 1.3.1 out the box with the exception of some forms.  There is an issue with patches and it should be part of core by 8.5 / 8.6.  [Patch can be found here](https://www.drupal.org/project/drupal/issues/933004).
+
+Drupal has a robost theme API that allows us to modify templates out of the box.  For elements that do not comply, they can be easily changeable as needed.
+
+
