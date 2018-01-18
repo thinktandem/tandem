@@ -7,9 +7,9 @@ Drupal 8 WCAG Solutions
 Resources & Toolings
 --------------------
 
-* [WCAG Quick Reference](https://www.w3.org/WAI/WCAG20/quickref/)
+* [WCAG Quick Referencee](https://www.w3.org/WAI/WCAG20/quickref/)
 * [Tenon.io](https://tenon.io/)
-* [AXe Browser Extention](https://www.deque.com/products/axe/)
+* [AXe Browser Extensionn](https://www.deque.com/products/axe/)
 * [Siteimprove](https://siteimprove.com/)
 * [WAVE](http://wave.webaim.org/)
 
@@ -39,7 +39,7 @@ In general: your system should be able to provide...
 * 1.2.2: Written captions (A)
 * 1.2.3: "Audio Descriptions" of video content (A)
 * 1.2.4: Live Captions (AA)
-* 1.2.5: "Audio Descriptions" w/additional contextual info (AA)
+* 1.2.5: "Audio Descriptions" w/ additional contextual info (AA)
 
 ### 1.2 Solutions
 
@@ -60,7 +60,7 @@ We find that most of the requirements are addressable by a combination of:
 *AAA requirements include...*
 
 * 1.2.6: Sign language
-* 1.2.7: Extended audio descriptions of videos. An extended audio description will pause video playback when necessary to relate what's happening in the video to users that have impaired vision. Note that a transcript combined with a regular audio description satisfies this requirement.  You could also provide multiple videos to emaulate breaks in videos when there is no talking.
+* 1.2.7: Extended audio descriptions of videos. An extended audio description will pause video playback when necessary to relate what's happening in the video to users that have impaired vision. Note that a transcript combined with a regular audio description satisfies this requirement.  You could also provide multiple videos to emulate breaks in videos when there is no talking.
 * 1.2.8: For videos that show how to use a product, technology, etc there should be an alternative transcript that describes what they are doing and saying.
 * 1.2.9: Similar to 1.2.4 but is intended for captioning of all live broadcasting Time-Based Media types.
 
@@ -82,24 +82,24 @@ We find that most of the requirements are addressable by a combination of:
 
 ### 1.3 Solutions
 
-Drupal core satisifies 1.3.1 out the box with the exception of some forms.  There is an issue with patches and it should be part of core by 8.5 / 8.6.  [Patch can be found here](https://www.drupal.org/project/drupal/issues/933004).
+Drupal core satisfies 1.3.1 out the box with the exception of some forms.  There is an issue with patches and it should be part of core by 8.5 / 8.6.  [Patch can be found here](https://www.drupal.org/project/drupal/issues/933004).
 
-Drupal has a robost theme API that allows us to modify templates out of the box.  For elements that do not comply, they can be easily changeable as needed.
+Drupal has a robust theme API that allows us to modify templates out of the box.  For elements that do not comply, they can be easily changeable as needed.
 
 1.4: Distinguishable Content
 ----------------------------
 
 ### 1.4 Requirements
 
-* 1.4.1: Color is not to be used as the sole means to convay information / action.
-* 1.4.2: Ability to pause or stop video audios longer than 3 seconds.  Or have indepedent audio controls.
+* 1.4.1: Color is not to be used as the sole means to convey information / action.
+* 1.4.2: Ability to pause or stop video audios longer than 3 seconds.  Or have independent audio controls.
 * 1.4.3: Contrast ratios.
 * 1.4.4: Text resize up to 200%.
 * 1.4.5: Don't use Images of Texts unless the text is customizable.
 
 ### 1.4 Solutions
 
-Drupal core meets these requirements out of the box except 1.4.2.  For theming purposes, we recommend Bootstrap as it is WCAG Compliant except for 1.4.3.  For whatever theme pallette you use, I recommend using the Color Contrast tool in the resources section.
+Drupal core meets these requirements out of the box except 1.4.2.  For theming purposes, we recommend Bootstrap as it is WCAG Compliant except for 1.4.3.  For whatever theme palette you use, I recommend using the Color Contrast tool in the resources section.
 
 For 1.4.2 any HTML5 video source has the ability to add independent audio controls.
 
@@ -114,3 +114,21 @@ For 1.4.2 any HTML5 video source has the ability to add independent audio contro
 
 * [Bootstrap 4 WCAG Compliance](https://getbootstrap.com/docs/4.0/getting-started/accessibility/)
 * [WCAG Color Contrast Checker](https://webaim.org/resources/contrastchecker/)
+
+2.1: Keyboard Accessible
+----------------------------
+
+### 2.1 Requirements
+
+* 2.1.1: All functionality and content is operable from the keyboard.
+* 2.1.2: There are no keyboard stops to prevent reaching some content.
+
+### 2.1 Solutions
+
+Drupal core handles this pout of the box for the front end.  There are some exception with the editing portion of Drupal.  As seen in this [CKEditor issue](https://www.drupal.org/project/drupal/issues/2905940).
+
+Check the module's issue queues for patches if it fails this.  Worst case scenario you can implement a custom JQuery solution as [seen in this issue comment](https://www.drupal.org/project/tb_megamenu/issues/2046067#comment-10075278).
+
+*AAA requirements include...*
+
+* 2.1.3: All functionality of a site is accessible with a keyboard without requiring specific timing for keystrokes.
