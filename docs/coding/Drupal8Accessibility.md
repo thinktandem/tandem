@@ -152,7 +152,7 @@ This does not really apply to Drupal.  If you do decide to use a contrib module 
 * 2.2.5: If an authentication session expires, the user can re-authenticate and continue the activity without losing any data from the current page.
 
 2.3: Seizures / Flashing Entities
-----------------------------------------
+----------------------------------
 
 ### 2.3 Requirements
 
@@ -165,3 +165,44 @@ This does not really apply to Drupal.  If you do decide to use a contrib module 
 *AAA requirements include...*
 
 * 2.3.2: No entity on the page shall flash more than 3 times / second.
+
+2.4: Navigation
+---------------
+
+### 2.4 Requirements
+
+* 2.4.1: A mechanism to bypass content that repeats and go to the main content.
+* 2.4.2: Page titles.
+* 2.4.3: Elements are navigated sequentially as the appear on the page.
+* 2.4.4: A links purpose.
+* 2.4.5: Multiple Ways to navigate the site.
+* 2.4.6: Descriptive labels.
+* 2.4.7: Focus CSS on all interactive elements.
+
+### 2.4 Solutions
+
+Drupal core handles all of these out of the box.
+
+Some additional notes:
+
+* 2.4.2: You can also use the metatag module.
+* 2.4.3: If needed you can use the tabindex attribute on elements that don't comply.
+* 2.4.4: For image / icon based links use the aria-label to describe what the link is doing.
+* 2.4.5: Enable and setup Search API and install a sitemap module.
+* 2.4.7: Use bootstrap or write your own CSS (see below) as core isn't fully caught up with this yet.
+
+CSS example for 2.4.7:
+
+```css
+a:focus {
+  background: #ffbf47;
+  outline: 3px solid #ffbf47;
+  outline-offset: 0;
+}
+```
+
+*AAA requirements include...*
+
+* 2.4.8: Identify location within site via breadcrumbs
+* 2.4.9: Text only based links
+* 2.4.10: Sequential header tags
