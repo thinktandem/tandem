@@ -151,4 +151,17 @@ This does not really apply to Drupal.  If you do decide to use a contrib module 
 * 2.2.4: Interruptions (alerts, page updates, etc.) can be postponed or suppressed by the user.
 * 2.2.5: If an authentication session expires, the user can re-authenticate and continue the activity without losing any data from the current page.
 
+2.3: Seizures / Flashing Entities
+----------------------------------------
 
+### 2.3 Requirements
+
+* 2.3.1: No entity on the page shall flash more than 3 times / second.  Unless the flash is below the general / red thresholds.
+
+### 2.3 Solutions
+
+This does not really apply to Drupal.  If you do decide to use a contrib module that has flashing text, media, etc.  Make sure that it complies with 2.3.1
+
+*AAA requirements include...*
+
+* 2.3.2: No entity on the page shall flash more than 3 times / second.
