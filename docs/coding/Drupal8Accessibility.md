@@ -5,6 +5,8 @@ description: WCAG Accessibility requirements and solutions in Drupal 8.
 Drupal 8 WCAG Solutions
 =======================
 
+[WCAG Quick Reference](https://www.w3.org/WAI/WCAG20/quickref/)
+
 1.1 Text Alternatives
 ---------------------
 
@@ -32,7 +34,6 @@ In general: your system should be able to provide...
 - 1.2.3: "Audio Descriptions" of video content (A)
 - 1.2.4: Live Captions (AA)
 - 1.2.5: "Audio Descriptions" w/additional contextual info (AA)
--
 
 ### Solutions
 
@@ -53,8 +54,10 @@ We find that most of the requirements are addressable by a combination of:
 
 AAA requirements include...
 
-- Sign language
-- 1.2.7: Extended audio descriptions of videos. An extended audio description will pause video playback when necessary to relate what's happening in the video to users that have impaired vision. Note that a transcript combined with a regular audio description satisfies this requirement.
+- 1.2.6: Sign language
+- 1.2.7: Extended audio descriptions of videos. An extended audio description will pause video playback when necessary to relate what's happening in the video to users that have impaired vision. Note that a transcript combined with a regular audio description satisfies this requirement.  You could also provide multiple videos to emaulate breaks in videos when there is no talking.
+- 1.2.8: For videos that show how to use a product, technology, etc there should be an alternative transcript that describes what they are doing and saying.
+- 1.2.9: Similar to 1.2.4 but is intended for captioning of all live broadcasting Time-Based Media types.
 
 ### Resources
 
