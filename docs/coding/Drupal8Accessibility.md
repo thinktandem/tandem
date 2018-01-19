@@ -4,15 +4,21 @@ description: WCAG Accessibility requirements and solutions in Drupal 8.
 Drupal 8 WCAG Solutions
 =======================
 
-Resources & Toolings
---------------------
+Resources
+---------
 
-* [WCAG Quick Referencee](https://www.w3.org/WAI/WCAG20/quickref/)
+* [WCAG Quick Reference](https://www.w3.org/WAI/WCAG20/quickref/)
+* [WCAG vs Section 508](https://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-ict-refresh/background/comparison-table-of-wcag2-to-existing-508-standards)
+* [D8 WCAG 2.0 Compliance Progress](https://www.drupal.org/node/2034915)
+* [D8 WCAG 2.1 Initiative](https://www.drupal.org/project/ideas/issues/2864791)
+
+Toolings
+--------
+
 * [Tenon.io](https://tenon.io/)
-* [AXe Browser Extensionn](https://www.deque.com/products/axe/)
+* [AXe Browser Extension](https://www.deque.com/products/axe/)
 * [Siteimprove](https://siteimprove.com/)
 * [WAVE](http://wave.webaim.org/)
-
 
 1.1 Text Alternatives
 ---------------------
@@ -138,7 +144,7 @@ Check the module's issue queues for patches if it fails this.  Worst case scenar
 
 ### 2.2 Requirements
 
-* 2.2.1: Adjusted timing mechanims on content that is displayed via a time limit.
+* 2.2.1: Adjusted timing mechanisms on content that is displayed via a time limit.
 * 2.2.2: Mechanisms to stop / pause blinking, scrolling or moving text.
 
 ### 2.2 Solutions
@@ -206,3 +212,26 @@ a:focus {
 * 2.4.8: Identify location within site via breadcrumbs
 * 2.4.9: Text only based links
 * 2.4.10: Sequential header tags
+
+3.1:
+----------------------------------
+
+### 3.1 Requirements
+
+* 3.1.1: Language of Page can be programmatically determined.
+* 3.1.2: Alternative Language links.
+
+### 3.1 Solutions
+
+Drupal core handles 3.1.1 on install.  3.1.2 can be meet with the metatag module or the hreflang module.  There is also an effort to have core handle inline language translation / selection [as seen in this issue](https://www.drupal.org/project/drupal/issues/1323338).
+
+*AAA requirements include...*
+
+* 3.1.3: Provide definition of words used in an unusual way.
+* 3.1.4: Explaining Acronyms
+* 3.1.5: Reading Level on all articles.
+* 3.1.6: Pronunciation of all words on request.
+
+### 3.1 Resources
+
+* [Drupal 8 Multilingual Initiative](http://www.drupal8multilingual.org/)
