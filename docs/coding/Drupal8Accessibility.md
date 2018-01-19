@@ -213,8 +213,8 @@ a:focus {
 * 2.4.9: Text only based links
 * 2.4.10: Sequential header tags
 
-3.1:
-----------------------------------
+3.1: Readablity & Multilingual
+------------------------------
 
 ### 3.1 Requirements
 
@@ -235,3 +235,26 @@ Drupal core handles 3.1.1 on install.  3.1.2 can be meet with the metatag module
 ### 3.1 Resources
 
 * [Drupal 8 Multilingual Initiative](http://www.drupal8multilingual.org/)
+
+3.2: Predictablity
+-------------------
+
+### 3.2 Requirements
+
+* 3.2.1: When a component recieves focus, it does not change the context of the page.
+* 3.2.2: Inputs do not change the context of the page.
+* 3.2.3: Consitent Navigation throughout the site.
+* 3.2.4: All components with similar functionality should be identified the same throughout the site.
+
+### 3.2 Solutions
+
+Drupal should meet this out of the box.
+
+Some additional notes:
+
+* 3.2.1: You can adjust the tabindex of items.  Also, remove Javascript based focus calls.
+* 3.2.3: A few patches may be needed until they get into core: [this ajax one](https://www.drupal.org/project/drupal/issues/1824636) and [this views one](https://www.drupal.org/project/drupal/issues/1848940)
+
+*AAA requirements include...*
+
+* 3.2.5: User can disable a change of context mechanism.
