@@ -258,3 +258,27 @@ Some additional notes:
 *AAA requirements include...*
 
 * 3.2.5: User can disable a change of context mechanism.
+
+3.3: Input Assistance
+-------------------
+
+### 3.3 Requirements
+
+* 3.3.1: Errors are identified and described in user readible text.
+* 3.3.2: Proper labels on input fields.
+* 3.3.3: Proper error suggestions.
+* 3.3.4: Confirmations for Legal, Financial, Data based forms.
+
+### 3.3 Solutions
+
+Drupal meets this out of the box.
+
+Some additional notes:
+
+* 3.3.1: You will need the patch [from this issue](https://www.drupal.org/project/drupal/issues/1797438) to get this to comply until it is in core.
+* 3.3.3: Same as 3.3.1.
+
+*AAA requirements include...*
+
+* 3.3.5: Context‐sensitive help is available.
+* 3.3.6: Error Prevention (All Forms)
