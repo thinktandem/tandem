@@ -25,7 +25,7 @@ Toolings
 
 ### 1.1 Requirements
 
-1.1.1 Provide text alternatives for any non‐text content.
+1.1.1 Provide text alternatives for any non‐text content. (A)
 
 ### 1.1 Solutions
 
@@ -82,9 +82,9 @@ We find that most of the requirements are addressable by a combination of:
 
 ### 1.3 Requirements
 
-* 1.3.1: All elements should be self describing
-* 1.3.2: Elements should be in a meaningful sequence
-* 1.3.3: Instructions for elements does not solely depend on shape, size, visual location, orientation or sound.
+* 1.3.1: All elements should be self describing. (A)
+* 1.3.2: Elements should be in a meaningful sequence. (A)
+* 1.3.3: Instructions for elements does not solely depend on shape, size, visual location, orientation or sound. (A)
 
 ### 1.3 Solutions
 
@@ -97,11 +97,11 @@ Drupal has a robust theme API that allows us to modify templates out of the box.
 
 ### 1.4 Requirements
 
-* 1.4.1: Color is not to be used as the sole means to convey information / action.
-* 1.4.2: Ability to pause or stop video audios longer than 3 seconds.  Or have independent audio controls.
-* 1.4.3: Contrast ratios.
-* 1.4.4: Text resize up to 200%.
-* 1.4.5: Don't use Images of Texts unless the text is customizable.
+* 1.4.1: Color is not to be used as the sole means to convey information / action. (A)
+* 1.4.2: Ability to pause or stop video audios longer than 3 seconds.  Or have independent audio controls. (A)
+* 1.4.3: Contrast ratios. (AA)
+* 1.4.4: Text resize up to 200%. (AA)
+* 1.4.5: Don't use Images of Texts unless the text is customizable. (AA)
 
 ### 1.4 Solutions
 
@@ -126,8 +126,8 @@ For 1.4.2 any HTML5 video source has the ability to add independent audio contro
 
 ### 2.1 Requirements
 
-* 2.1.1: All functionality and content is operable from the keyboard.
-* 2.1.2: There are no keyboard stops to prevent reaching some content.
+* 2.1.1: All functionality and content is operable from the keyboard. (A)
+* 2.1.2: There are no keyboard stops to prevent reaching some content. (A)
 
 ### 2.1 Solutions
 
@@ -144,8 +144,8 @@ Check the module's issue queues for patches if it fails this.  Worst case scenar
 
 ### 2.2 Requirements
 
-* 2.2.1: Adjusted timing mechanisms on content that is displayed via a time limit.
-* 2.2.2: Mechanisms to stop / pause blinking, scrolling or moving text.
+* 2.2.1: Adjusted timing mechanisms on content that is displayed via a time limit. (A)
+* 2.2.2: Mechanisms to stop / pause blinking, scrolling or moving text. (A)
 
 ### 2.2 Solutions
 
@@ -162,7 +162,7 @@ This does not really apply to Drupal.  If you do decide to use a contrib module 
 
 ### 2.3 Requirements
 
-* 2.3.1: No entity on the page shall flash more than 3 times / second.  Unless the flash is below the general / red thresholds.
+* 2.3.1: No entity on the page shall flash more than 3 times / second.  Unless the flash is below the general / red thresholds. (A)
 
 ### 2.3 Solutions
 
@@ -177,13 +177,13 @@ This does not really apply to Drupal.  If you do decide to use a contrib module 
 
 ### 2.4 Requirements
 
-* 2.4.1: A mechanism to bypass content that repeats and go to the main content.
-* 2.4.2: Page titles.
-* 2.4.3: Elements are navigated sequentially as the appear on the page.
-* 2.4.4: A links purpose.
-* 2.4.5: Multiple Ways to navigate the site.
-* 2.4.6: Descriptive labels.
-* 2.4.7: Focus CSS on all interactive elements.
+* 2.4.1: A mechanism to bypass content that repeats and go to the main content. (A)
+* 2.4.2: Page titles. (A)
+* 2.4.3: Elements are navigated sequentially as the appear on the page. (A)
+* 2.4.4: A links purpose. (A)
+* 2.4.5: Multiple Ways to navigate the site. (AA)
+* 2.4.6: Descriptive labels. (AA)
+* 2.4.7: Focus CSS on all interactive elements. (AA)
 
 ### 2.4 Solutions
 
@@ -218,8 +218,8 @@ a:focus {
 
 ### 3.1 Requirements
 
-* 3.1.1: Language of Page can be programmatically determined.
-* 3.1.2: Alternative Language links.
+* 3.1.1: Language of Page can be programmatically determined. (A)
+* 3.1.2: Alternative Language links. (AA)
 
 ### 3.1 Solutions
 
@@ -228,7 +228,7 @@ Drupal core handles 3.1.1 on install.  3.1.2 can be meet with the metatag module
 *AAA requirements include...*
 
 * 3.1.3: Provide definition of words used in an unusual way.
-* 3.1.4: Explaining Acronyms
+* 3.1.4: Explaining Acronyms.
 * 3.1.5: Reading Level on all articles.
 * 3.1.6: Pronunciation of all words on request.
 
@@ -241,10 +241,10 @@ Drupal core handles 3.1.1 on install.  3.1.2 can be meet with the metatag module
 
 ### 3.2 Requirements
 
-* 3.2.1: When a component receives focus, it does not change the context of the page.
-* 3.2.2: Inputs do not change the context of the page.
-* 3.2.3: Consistent Navigation throughout the site.
-* 3.2.4: All components with similar functionality should be identified the same throughout the site.
+* 3.2.1: When a component receives focus, it does not change the context of the page. (A)
+* 3.2.2: Inputs do not change the context of the page. (A)
+* 3.2.3: Consistent Navigation throughout the site. (AA)
+* 3.2.4: All components with similar functionality should be identified the same throughout the site. (AA)
 
 ### 3.2 Solutions
 
@@ -264,10 +264,10 @@ Some additional notes:
 
 ### 3.3 Requirements
 
-* 3.3.1: Errors are identified and described in user readible text.
-* 3.3.2: Proper labels on input fields.
-* 3.3.3: Proper error suggestions.
-* 3.3.4: Confirmations for Legal, Financial, Data based forms.
+* 3.3.1: Errors are identified and described in user readible text. (A)
+* 3.3.2: Proper labels on input fields. (A)
+* 3.3.3: Proper error suggestions. (AA)
+* 3.3.4: Confirmations for Legal, Financial, Data based forms. (AA)
 
 ### 3.3 Solutions
 
@@ -289,8 +289,8 @@ Some additional notes:
 
 ### 4.1 Requirements
 
-* 4.1.1: HTML must pass validation.
-* 4.1.2: Drupal's elements can be determined programmatically
+* 4.1.1: HTML must pass validation. (A)
+* 4.1.2: Drupal's elements can be determined programmatically. (A)
 
 ### 4.1 Solutions
 
