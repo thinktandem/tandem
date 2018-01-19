@@ -1,1 +1,0 @@
-Drupal has validation on all its inputs out of the box.  When a field is required or needs a specific input, failure to meet this will trigger the needed text for this requirement.  Additional information can also be achieved as stated in 3.3.1 via a patch for Drupal core.

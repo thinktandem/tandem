@@ -27,6 +27,7 @@ Writing Code
 * [Quality Control](coding/qa.md)
 * [Common Tools](coding/common-tools.md)
 * [DevOps](coding/devops.md)
+* [Drupal 8 Accessibility](coding/drupal-8-accessibility.md)
 
 Managing Projects
 -----------------
