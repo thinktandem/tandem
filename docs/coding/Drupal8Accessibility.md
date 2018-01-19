@@ -236,14 +236,14 @@ Drupal core handles 3.1.1 on install.  3.1.2 can be meet with the metatag module
 
 * [Drupal 8 Multilingual Initiative](http://www.drupal8multilingual.org/)
 
-3.2: Predictablity
+3.2: Predictability
 -------------------
 
 ### 3.2 Requirements
 
-* 3.2.1: When a component recieves focus, it does not change the context of the page.
+* 3.2.1: When a component receives focus, it does not change the context of the page.
 * 3.2.2: Inputs do not change the context of the page.
-* 3.2.3: Consitent Navigation throughout the site.
+* 3.2.3: Consistent Navigation throughout the site.
 * 3.2.4: All components with similar functionality should be identified the same throughout the site.
 
 ### 3.2 Solutions
@@ -252,7 +252,7 @@ Drupal should meet this out of the box.
 
 Some additional notes:
 
-* 3.2.1: You can adjust the tabindex of items.  Also, remove Javascript based focus calls.
+* 3.2.1: You can adjust the tabindex of items.  Also, remove JavaScript based focus calls.
 * 3.2.3: A few patches may be needed until they get into core: [this ajax one](https://www.drupal.org/project/drupal/issues/1824636) and [this views one](https://www.drupal.org/project/drupal/issues/1848940)
 
 *AAA requirements include...*
@@ -260,7 +260,7 @@ Some additional notes:
 * 3.2.5: User can disable a change of context mechanism.
 
 3.3: Input Assistance
--------------------
+----------------------
 
 ### 3.3 Requirements
 
@@ -282,3 +282,22 @@ Some additional notes:
 
 * 3.3.5: Context‐sensitive help is available.
 * 3.3.6: Error Prevention (All Forms)
+
+
+4.1: Compatibility with user agents
+-----------------------------------
+
+### 4.1 Requirements
+
+* 4.1.1: HTML must pass validation.
+* 4.1.2: Drupal's elements can be determined programmatically
+
+### 4.1 Solutions
+
+It seems with 4.1.1 Drupal meets the H88: Using HTML according to spec requirement to pass.  However, the G134: Validating Web pages, requirement has a [long standing issue](https://www.drupal.org/project/drupal/issues/1333730#comment-11641169).
+
+With 4.1.2, there is a [patch available](https://www.drupal.org/project/drupal/issues/933004) to get this to comply.
+
+### 4.1 Resources
+
+* [W3 Validator](https://validator.w3.org)
