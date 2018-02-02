@@ -28,6 +28,7 @@ Writing Code
 * [Common Tools](coding/common-tools.md)
 * [DevOps](coding/devops.md)
 * [Drupal 8 Accessibility](coding/drupal-8-accessibility.md)
+* [Drupal 8 Migrations](coding/drupal-8-migrations.md)
 
 Managing Projects
 -----------------
