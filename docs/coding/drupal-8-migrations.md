@@ -71,8 +71,8 @@ Lando 2 DB Based Migration
 9. In your D8 site run the following:
 
     ```bash
-    drush migrate-upgrade --legacy-db-key=migrate --configure-only
-    drush config-export --destination=/tmp/migrate
+    lando drush migrate-upgrade --legacy-db-key=migrate --configure-only
+    lando drush config-export --destination=/tmp/migrate
     lando ssh
     cp /tmp/migrate/migrate_plus.* /app/path/to/custom-migrate-module/config/install
     ```
