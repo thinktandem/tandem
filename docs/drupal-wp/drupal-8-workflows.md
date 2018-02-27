@@ -20,6 +20,7 @@ git push
 Then on the dev branch, test, live you will do the following:
 
 ```bash
+composer install
 drush cim -y
 ```
 
@@ -31,6 +32,7 @@ _Note: on platform.sh you can add the drush cim step into your deploy hooks_
 When switching branches, you will need to refresh your config to the new branch.  Just use:
 
 ```bash
+composer install
 drush cim -y
 ```
 
