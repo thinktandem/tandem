@@ -18,9 +18,22 @@ Conferences
 
 As a primarily remote company, Tandem puts a focus on getting the team together for conferences and co-working several times a year.
 
-In the future we'll be developing a more formal plan around conferences, education stipends, and other benefits. However, know that you can expect multiple opportunities to attend (and hopefully speak at) conferences throughout the year with Tandem's sponsorship.
+We give every employee a discretionary budget of $1000 for towards conference fees, accommodations, travel, and travel meals. We know that different events are important to different people, and want to give you flexibility to choose the best event for your continued learning and community engagement.
 
-Computer + Equipment Purchase
------------------------------
+In addition, Tandem typically has at least one annual all-hands "co-location" event, where all available team members gather in one spot for a few days or week. In the past we've organized this around a conference (like the Bay Area Drupal Camp or DrupalCon). For these events Tandem will purchase lodging, travel, conference passes, and some other expenses.
 
-// @todo
+Overall, we encourage you to represent Tandem at high-value business events, so if you're concerned about conference expenses or want to attend more events, let us know.
+
+Equipment + Learning Stipend
+----------------------------
+
+As a fully remote company, we know that different people need different resources to be productive. For that reason, every member of the Tandem team has a $2K annual stipend that can be used to purchase equipment, rent work space, or buy material to continue their professional education.
+
+For new employees, we grant this stipend all at once so you can purchase a new computer if necessary. If you leave the company within 6 months, Tandem will retain ownership of your equipment. For team members who leave after 6 months, we will send you an invoice for $1 (to ensure that your equipment is not considered income for tax purposes) and you will keep the purchased items.
+
+After your first year, the stipend will be granted in monthly allotments of $166.67.
+
+Submitting Expenses for Reimbursement
+-------------------------------------
+
+Always save receipts for expenses of any type. If you have questions about qualifying expenses, let us know!
