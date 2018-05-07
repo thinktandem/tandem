@@ -27,7 +27,8 @@ drush cim -y
 This workflow makes it so you should not be adding config changes on test or live.  If you are using a localhost, then you shouldn't be doing config changes on dev either.
 _Note: on platform.sh you can add the drush cim step into your deploy hooks_
 
-## Switching branches
+Switching Branches
+-------------------
 
 When switching branches, you will need to refresh your config to the new branch.  Just use:
 
