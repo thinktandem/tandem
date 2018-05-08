@@ -5,8 +5,7 @@ Google Meet
 ========
 
 Tandem utilizes [Google Meet](https://meet.google.com/) for our video conferencing. 
-Since we use GSuite, this makes for convenient scheduling of video calls for all meetings, which is
-essential for a 100% remote company.
+Since we use GSuite, this makes for convenient [scheduling of video calls for all meetings](https://support.google.com/a/answer/4362302?hl=en), which is essential for a 100% remote company.
 
 Some general recommendations for using Google Meet:
 
@@ -19,3 +18,4 @@ Some general recommendations for using Google Meet:
 4. Share your screen with the team if you need to show us something
 5. If you are bringing in an outside person to a meeting, try to introduce
    everyone for the benefit of our guest and the team.
+
