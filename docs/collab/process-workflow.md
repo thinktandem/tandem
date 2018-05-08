@@ -59,7 +59,7 @@ Working on an Issue
 
 1.  Choose a ticket or issue from the [ZenHub board](https://github.com/thinktandem/horoscope#boards?repos=88304447) of the project you are working on.
 2. Make sure you start the Harvest Time Tracker for the issue: ![Harvest time tracker image](/images/harvest-time-tracking.png "Harvest Time Tracker")
-3. Take a look at the issue. If you have any unresolved questions, reach out to your project manager. 
+3. Take a look at the issue. If you have any unresolved questions, reach out to your project manager.
 4.  Open a new branch from `master` in the form `ISSUENUMBER-BRIEFDESCRIPTION` to work on that issue
 5.  Add commits to this branch with message form `#ISSUENUMBER: COMMIT DESCRIPTION`
 6.  Push the `git push {REMOTE} {ISSUENUMBER-BRIEFDESCRIPTION}` when work is complete
