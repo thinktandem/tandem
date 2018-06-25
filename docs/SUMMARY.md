@@ -35,6 +35,11 @@ Drupal & WP
 * [Drupal 8 Migrations](drupal-wp/drupal-8-migrations.md)
 * [Drupal 8 Workflows](drupal-wp/drupal-8-workflows.md)
 
+Laravel
+-------
+
+* [Testing](laravel/testing.md)
+
 Managing Projects
 -----------------
 
