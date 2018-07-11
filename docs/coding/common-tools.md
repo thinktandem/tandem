@@ -49,6 +49,7 @@ Drupal 8 (only)
 * [config_split](https://www.drupal.org/project/config_split) - Allows from different config on specified server instances
 * [schema_metatag](https://www.drupal.org/project/schema_metatag) - JSON+LD Module to win more SEO
 * [asset_injector](https://www.drupal.org/project/asset_injector) - Easy way to add tracking code snippets for marketing efforts
+* [Collections](https://github.com/tightenco/collect) - Use Laravel's AWESOME collections in Drupal 8. Clean up those ugly `array_map()` calls. Death to `foreach` an `array_map`! This helps you keep a consistent FP style in Tandem code everywhere.
 
 Laravel
 -------
