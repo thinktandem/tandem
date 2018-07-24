@@ -10,13 +10,12 @@ Things Everyone Needs
 ---------------------
 
 * [A new @thinktandem.io Google Mail Address](https://admin.google.com/kalabox.io/AdminHome?pli=1&fral=1#UserList:org=3zbo27o3jehmpl)
-* [Your new email added to our Harvest account (for time tracking)](https://kalabox.harvestapp.com/team)
+* [Your new email added to our Harvest account (for time tracking)](https://thinktandem.harvestapp.com/team)
 * [Your new email added to our Gusto service (for getting paid)](https://manage.gusto.com/kalabox-inc)
 * [Your new email added to our Slack channel(s)](https://thinktandem.slack.com)
 
 ### Things Full-time Employees Need
 
-* [A Zenefits account created for you (for H.R. stuff)](https://www.zenefits.com)
 * [A PeopleKeep account created for you (for benefits)](https://tandem.peoplekeep.com)
 
 ### Things Developers Need
