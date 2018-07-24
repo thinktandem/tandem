@@ -38,8 +38,6 @@ Have you?
 
 * Inserted your W2 or W9 information into Gusto?
 
-* Submitted all required forms in Zenefits? (employees only)
-
 * Submitted appropriate docs in PeopleKeep? (employees only)
 
 * Updated your [Drupal.org profile](https://www.drupal.org/user/login) to connect with [Tandem](https://www.drupal.org/tandem) as a organization?
