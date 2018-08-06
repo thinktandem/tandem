@@ -98,19 +98,19 @@ Be sure to get email for thank you </li></ol></li></ol></li><li>
 User Testing Services
 -----------------------------------
 <strong>General Services</strong><ul><li>
-Validately</li><li>
-Five Second Test</li><li>
-Usability Hub</li><li>
-Usabilla</li><li>
-TryMyUI</li><li>
-UserTesting</li></ul>
+  <a href="https://validately.com/pricing" target="_blank">Validately</a></li><li>
+<a href="https://usabilityhub.com/product/five-second-tests" target="_blank">Five Second Test</a></li><li>
+<a href="https://usabilityhub.com/product" target="_blank">Usability Hub</a></li><li>
+<a href="https://usabilla.com/products/websites/" target="_blank">Usabilla</a></li><li>
+<a href="https://www.trymyui.com/plans" target="_blank">TryMyUI</a></li><li>
+<a href="http://www.usertesting.com/" target="_blank">UserTesting</a></li></ul>
 
 <strong>Accessibility Included Services</strong><ul><li>
-Loop 11</li><li>
-Perkins School for the Blind</li></ul>
+<a href="https://www.loop11.com/" target="_blank">Loop 11</a></li><li>
+<a href="http://www.perkins.org/solutions/access/digital/services#assess" target="_blank">Perkins School for the Blind</a></li></ul>
 
 <strong>Panel Recruitment</strong><ul><li>
-Fiverr</li></ul>
+<a href="https://www.fiverr.com/categories/programming-tech/user-testing-services/?filter=rating&ref=delivery_time%3A7%7Cis_seller_online%3Atrue%7Cage_range%3Aadult%7Ctesting_platform%3Awebsite_testing%7Clanguage%3Aenglish%7Cpackage_includes%3Asummary_report%7Corigin%3Aheader" target="_blank">Fiverr</a></li></ul>
 
 
 Samples
