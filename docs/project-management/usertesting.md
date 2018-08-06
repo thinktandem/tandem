@@ -20,7 +20,7 @@ If client providing use their list
 </LI><LI>Examples<ol><li>
 Sign up </li><li>
 Contact</li><li>
-Read supportive information</li></ol></li></li>
+Read supportive information</li></ol></li></ol></li>
 <li>
 <strong>Build a Testing Plan</strong><ol><li>
 Include<ol><li>
@@ -69,7 +69,7 @@ Wonderful! Thank you again. Have a great day. Goodbye.</li></ol><li></ol></li><l
 Set up an event</li><li>
 Block off time slots for users to sign up for a session<ol><li>
 Include a 30 minute buffer in case anything goes over</li></ol></li><li>
-Include both URL and call-in information in description</li></ol></li><li>
+  Include both URL and call-in information in description</li></ol></li></ol></li><li>
 <strong>Invite users to test/sign up with Calendly link</strong><ol><li>
 As users sign up check the Google Calendar invite. In some cases there will be two meetup links - confirm there is only one. If more than one is there than remove the extra one and resend out the invitation to avoid confusion. </li></ol></li><li>
 <strong>The day before/morning of:</strong><ol><li>
