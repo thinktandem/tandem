@@ -63,7 +63,7 @@ Before we get started, I’ll quickly review what we’re going to do here today
 Closing Script<ol><li>
 Thank you ___, it’s been a pleasure to speak with you today. Can you please confirm your email address so that a member of the CLIENT team can send you a token of their appreciation?</li><li>
 (moderator record email)</li><li>
-Wonderful! Thank you again. Have a great day. Goodbye.</li></ol><li></ol></li><li>
+Wonderful! Thank you again. Have a great day. Goodbye.</li></ol><li></ol></li></ol></li></ol></li><li>
 <strong>Create a Google Meet URL that can be used for all sessions. Get it and the corresponding call in information.</strong></li></ol></li><li>
 <strong>Set Up Calendly Link that integrates with Tester’s Google Calendar</strong><ol><li>
 Set up an event</li><li>
