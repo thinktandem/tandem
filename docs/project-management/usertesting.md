@@ -79,7 +79,7 @@ Questions you’ll be asking (to record answers on the fly)</li><li>
 URLs to any websites that are to be tested</li><li>
 Any supplemental data or notes you’d like to make before the end of the testing portion of the session</li><li>
 Test recording software (the premium version of screencastify works well)<ol><li>
-Test that it will record their/tab audio too! </li></ol></li></ol></li><li>
+Test that it will record their/tab audio too! </li></ol></li></ol></li></ol></li><li>
 <strong>The Test</strong><ol><li>
 Meet users in the Google Hangout room</li><li>
 Say hello/help them setup if needed</li><li>
