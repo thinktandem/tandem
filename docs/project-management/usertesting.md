@@ -71,7 +71,8 @@ Block off time slots for users to sign up for a session<ol><li>
 Include a 30 minute buffer in case anything goes over</li></ol></li><li>
   Include both URL and call-in information in description</li></ol></li><li>
 <strong>Invite users to test/sign up with Calendly link</strong><ol><li>
-As users sign up check the Google Calendar invite. In some cases there will be two meetup links - confirm there is only one. If more than one is there than remove the extra one and resend out the invitation to avoid confusion. </li></ol></li><li>
+As users sign up check the Google Calendar invite. In some cases there will be two meetup links - confirm there is only one. If more than one is there than remove the extra one and resend out the invitation to avoid confusion. </li>
+  <li>As for both email address and phone number as confirmation</li></ol></li><li>
 <strong>The day before/morning of:</strong><ol><li>
 Drop each participant an email confirmation with both the Meet URL and the associated call in number. </li><li>
 Have a notes document that includes:<ol><li>
