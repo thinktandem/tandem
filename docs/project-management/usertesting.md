@@ -9,7 +9,7 @@ Procedure
 
 User testing is an important stage of a website project as it bridges the gap between research and assumptions, and the actual users experience. Below is the process for performing user testing for our clients.
 
-**1. Identify Test Subject(s)**
+**1. Identify Test Subjects**
     1. If client providing use their list
     2. If outsourcing look below at our resources
 **2. Determine desirable user journeys**
