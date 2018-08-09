@@ -14,48 +14,48 @@ User testing is an important stage of a website project as it bridges the gap be
     2. If outsourcing look below at our resources
 **2. Determine desirable user journeys**
     1. Knowing the goals will enable you to better create an usable test
-    1. Examples
-      * Sign up 
-      * Contact
-      * Read supportive information
- **3. Build a Testing Plan**
+        * Examples
+            * Sign up 
+            * Contact
+            * Read supportive information
+**3. Build a Testing Plan**
     1. Include:
-      * Product to Test
-      * The website
+        * Product to Test
+        * The website
     2. Business Case
-      * Why
+        * Why
     3. Test Objectives
-      * What we hope to learn
+        * What we hope to learn
     4. Equipment/Services Needed
-      * Computer
-      * Internet
-      * etc
+        * Computer
+        * Internet
+        * etc
     5. Participants
-      * Test subject identified above<
+        * Test subject identified above<
     6. Timeline of Events
-      * Map out when Tandem & the client are expected to deliver
+        * Map out when Tandem & the client are expected to deliver
     7. Process
-      1. Example Manual Test
-        * The Tandem team will communicate with users selected for testing in a recorded, moderated session. Each user will be asked to complete a series of tasks as outline below. These questions have been designed to be non-leading requests that emulate aspects of a typical user journey.
-        * Users meet with moderator in a Google Hangouts
-        * User is alerted that the session will be recorded and recording begins
-      2. Welcome script is read and user name and email address are confirmed
-      3. Link is sent to user so that they may access prototypes
-      4. Moderator requests tasks from each user 
-      5. Results are logged in a notes document that will later be used to tally results (after the video has been reexamined)
-      6. The exit script is read to the user
+        1. Example Manual Test
+            * The Tandem team will communicate with users selected for testing in a recorded, moderated session. Each user will be asked to complete a series of tasks as outline below. These questions have been designed to be non-leading requests that emulate aspects of a typical user journey.
+            * Users meet with moderator in a Google Hangouts
+            * User is alerted that the session will be recorded and recording begins
+        2. Welcome script is read and user name and email address are confirmed
+        3. Link is sent to user so that they may access prototypes
+        4. Moderator requests tasks from each user 
+        5. Results are logged in a notes document that will later be used to tally results (after the video has been reexamined)
+        6. The exit script is read to the user
     8. If automated - look to resource provider instructions
 **4. Questions/Tasks**
-      1. Base these off of desired user journey
-      2. Choose ~6 for a 30 minute session with extras available if additional time
-      3. Include open-ended question: What are your thoughts on this web experience?
+    1. Base these off of desired user journey
+    2. Choose ~6 for a 30 minute session with extras available if additional time
+    3. Include open-ended question: What are your thoughts on this web experience?
 **5. Incentives (if any)**
-  1. We recommend client uses Amazon Gift Cards sent via email address
+    1. We recommend client uses Amazon Gift Cards sent via email address
 **6. Moderator Scripts (if applicable)**
     1. Welcome script
-      * Hi (NAME), on behalf of CLIENT I wanted to thank you for taking the time to meet with me today. My name is NAME and I’ll be walking you through the session. We’re going to try to keep our time together to about 25 minutes, but no more than 30. This session will be recorded and other team members may join in the background for part or all of the session to help better understand your experience.  Before we get started, I’ll quickly review what we’re going to do here today and why. …
+        * Hi (NAME), on behalf of CLIENT I wanted to thank you for taking the time to meet with me today. My name is NAME and I’ll be walking you through the session. We’re going to try to keep our time together to about 25 minutes, but no more than 30. This session will be recorded and other team members may join in the background for part or all of the session to help better understand your experience.  Before we get started, I’ll quickly review what we’re going to do here today and why. …
     2. Closing Script
-      * Thank you (NAME), it’s been a pleasure to speak with you today. Can you please confirm your email address so that a member of the CLIENT team can send you a token of their appreciation? (moderator record email) Wonderful! Thank you again. Have a great day. Goodbye.
+        * Thank you (NAME), it’s been a pleasure to speak with you today. Can you please confirm your email address so that a member of the CLIENT team can send you a token of their appreciation? (moderator record email) Wonderful! Thank you again. Have a great day. Goodbye.
 **7. Create a Google Meet URL that can be used for all sessions. Get it and the corresponding call in information**
 **8. Set Up Calendly Link that integrates with Tester’s Google Calendar**
     1. Set up an event
