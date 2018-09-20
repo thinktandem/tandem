@@ -11,7 +11,7 @@ ZenHub is a browser plugin that allows GitHub issues to be viewed, organized, an
 
 ### The Boards tab vs. the Projects tab
 
-* The Projects tab can be though of as a set of sub-boards which can group and track subsets of issues which are already on the main board.
+* The Projects tab can be thought of as a set of sub-boards which can group and track subsets of issues which are already on the main board.
 * Projects functionality is not normally used for client projects, as the main Boards tab can handle all needed Kanban functionality for a single client project.
 * Projects functionality may be used for some internal projects
 
