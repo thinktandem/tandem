@@ -44,13 +44,13 @@ What blog articles, internal documentation or other content has this team member
 
 **Motivation + Efficiency**
 
-Does this team member appear to be motivated by his work-related tasks, job, and relationships?
+Does this team member appear to be motivated by their work-related tasks, job, and relationships?
 
 Have you experienced any difficulties with the level of the employee’s motivation?
 
-Are the employee’s work methods and approach to accomplishing his job effective, efficient, and continuously improving?
+Are the employee’s work methods and approach to accomplishing their job effective, efficient, and continuously improving?
 
-Are there areas of improvement that you would recommend for this employee that would help him accomplish his work more effectively? Or, are there areas of improvement that would help you accomplish your work more effectively?
+Are there areas of improvement that you would recommend for this employee that would help them accomplish their work more effectively? Or, are there areas of improvement that would help you accomplish your work more effectively?
 
 Manager Review Metrics
 ----------------------
