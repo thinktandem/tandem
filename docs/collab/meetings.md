@@ -14,6 +14,7 @@ The following is a non-exhaustive list of principles we follow about meetings:
 
 * Meetings are limited as much as possible
 * Meetings are usually a waste of time
+* No meeting should run over it's scheduled time
 * Meetings should be short and targeted
 * Meetings should be ad-hoc (scheduled as needed, not standing)
 * Meetings should have an agenda
