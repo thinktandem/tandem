@@ -27,6 +27,7 @@ Writing Code
 * [Quality Control](coding/qa.md)
 * [Common Tools](coding/common-tools.md)
 * [DevOps](coding/devops.md)
+* [Styling](coding/styling.md)
 
 Drupal & WP
 -----------
