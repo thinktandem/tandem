@@ -31,7 +31,7 @@ As a fully remote company, we know that different people need different resource
 
 For new employees, we grant this stipend all at once so you can purchase a new computer if necessary. If you leave the company within 6 months, Tandem will retain ownership of your equipment. For team members who leave after 6 months, we will send you an invoice for $1 (to ensure that your equipment is not considered income for tax purposes) and you will keep the purchased items.
 
-After your first year, the stipend will be granted in monthly allotments of $166.67.
+After your first year of employment, the stipend will be granted in monthly allotments of $166.67.
 
 Submitting Expenses for Reimbursement
 -------------------------------------
