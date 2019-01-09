@@ -1,8 +1,23 @@
 ---
-description: Currently we don’t offer a group health plan due to issues getting GREAT access for all our team members across multiple states.
+description: PTO, Health Insurance, Reimbursements...oh my!
 ---
 Benefits
 ========
+
+PTO + Sick Time
+---------------
+
+We're vacation people! We've experimented with unlimited PTO policies, but ultimately found that a set PTO policy encourages team members to take healthy time off by setting expectations shared by the whole team.
+
+Currently we offer both PTO and Sick Leave policies. These allowances change periodically; you can see the most current policy, your current balances and request more time off in your [Gusto dashboard](https://app.gusto.com/login).
+
+PTO is always approved on a case-by-case basis. The primary factor is responsibility to your teammates. The team can adjust if you let them know you'll be out weeks in advance, but if you decide to wander off into the desert during a project launch and let us know at the last-minute, your PM and fellow developers are going to have something to say!
+
+Sick Leave is intended for unexpected emergencies where your wellness are at stake. Our goal in offering a separate policy for this time is to make sure you rest, recover, and get back to being your kickass self.
+
+Because we accrue PTO each pay period, it's common for new employees (who start with a balance of zero) to need time off before they have a sufficient balance. Generally we will accept such cases of *negative PTO* with two caveats: large amounts of PTO may prompt a conversation regarding an unpaid leave of absence, and any team member leaving the company with negative PTO will have that time deducted from their last paycheck.
+
+We believe clarity around PTO encourages people to take more time off. If you have any questions or just have an aspiration for your next vacation, talk to your HR manager (currently Alec Reynolds) to figure out how to make PTO work for you.
 
 Insurance
 ---------
