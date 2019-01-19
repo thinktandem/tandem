@@ -47,6 +47,7 @@ Managing Projects
 * [Project Lifecycle](project-management/project-lifecycle.md)
 * [ZenHub Kanban Boards](project-management/zenhub-issues-and-kanban-boards.md)
 * [Roles & Responsibilities](project-management/roles-responsibilities.md)
+* [User Testing](project-management/usertesting.md)
 
 Marketing
 ---------
