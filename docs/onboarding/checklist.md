@@ -8,6 +8,7 @@ Hi there! We're very glad you're working with us. Tandem strives to make the wor
 
 Things Everyone Needs
 ---------------------
+You should get invites for all applicable services. All Tandem-specific services (ex: Harvest or Slack) will be sent to your new Gmail address, so that's a good place to start. Let us know if something is missing!
 
 * [A new @thinktandem.io Google Mail Address](https://admin.google.com/kalabox.io/AdminHome?pli=1&fral=1#UserList:org=3zbo27o3jehmpl)
 * [Your new email added to our Harvest account (for time tracking)](https://thinktandem.harvestapp.com/team)
@@ -17,6 +18,7 @@ Things Everyone Needs
 ### Things Full-time Employees Need
 
 * [A PeopleKeep account created for you (for benefits)](https://tandem.peoplekeep.com)
+* [An Expensify account for reimbursements](https://www.expensify.com)
 
 ### Things Developers Need
 
