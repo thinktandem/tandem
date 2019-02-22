@@ -19,6 +19,11 @@ Collaborating
 * [Process Workflow](collab/process-workflow.md)
 * [Dev Workflow](collab/dev-workflow.md)
 
+Discovery
+---------
+
+* [Accessibility Checklist](discovery/accessibility-checklist.md)
+
 Writing Code
 ------------
 
