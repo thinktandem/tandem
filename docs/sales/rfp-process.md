@@ -35,12 +35,22 @@ If they are, we create a Github card for each opportunity with...
 
 We also create entries on the RFP Google Calendar for the date we should finish the RFP, the date we should mail it, and the final due date.
 
-Create the Proposal in PandaDoc
+Create the Response
 -------------------------------
 
-RFP Outline in hand, we can translate the requirements into a full proposal using PandaDoc.
+### Research
 
-We have many pieces of pre-made content that can help complete an RFP in PandaDoc. Typically it's best to transpose the structure of the RFP from the RFP Outline as section headers, fill the sections with as much pre-made content as possible, then commence customizing.
+1. Read the Proposal, take notes on questions
+2. Create a [pproject brief]() based on the RFP.
+2. Review [standard Tandem proposal questions](), tailor the list, and submit questions.
+3. Upon receiving answers, update the project brief.
+
+### Proposal Scaffolding
+
+1. Copy the [estimation sheet]() and identify all the services the project needs.
+
+
+### Finalizing the Proposal and Submission
 
 Final Proposal Review
 ---------------------
