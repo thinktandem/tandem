@@ -1,7 +1,7 @@
 name: docs.thinktandem
 recipe: mean
 config:
-  node: '6.10'
+  node: '10'
   command: ./node_modules/.bin/gitbook --port 80 serve
 tooling:
   gitbook:
