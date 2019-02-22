@@ -40,33 +40,3 @@ Does the customer need our services? Can we help them save money or make more of
 
 * Do you have a line item for this project?
 * Are you ok with net 15 terms?
-
-Managing Objections
--------------------
-
-### I don't see a portfolio on your web page, who have you worked for?
-
-Mike and I have worked with organizations of all size...
-
-...making the new publishing and events platform for GreenBiz.com
-...creating the marketing presence for Computerized Structures Inc.
-...writing an application that powers hundreds of websites for Arizona State University
-...helping Outsell Inc.
-
-### Your Services Seem Expensive
-
-#### Value Sell 1
-
-Focus on total cost: "Let's explore a scope of work that works for your budget."
-
-#### Value Sell 2
-
-You're right, our rate is higher than an offshoring firm's at first glance, but we've rescued enough projects from offshoring firms/fly-by-night contractors/inexperienced contractors to know that the real cost of hiring the wrong person is much higher.
-
-Our rate is extremely competitive with other firms, infact we'll probably be raising it fairly soon (of course legacy clients can enjoy our current rate...).
-
-Closing
--------
-
-* What are all the steps I have to make for us to start working together?
-* What is the decision making process in your company? How quickly can we make a decision on this?
