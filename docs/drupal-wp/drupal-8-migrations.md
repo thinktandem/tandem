@@ -63,10 +63,8 @@ Lando 2 DB Based Migration
 8. Import the Drupal 7 DB into your Drupal 8 site with:
 
     ```bash
-    lando db-import dump.sql.gz --host d7db --database drupal7db
+    lando db-import --host=d7db --user=drupal7db dump.sql.gz
     ```
-
-    _Note this is busted as of beta-35, [see this issue](https://github.com/lando/lando/issues/671) for a work around until this is addressed_
 
 9. In your D8 site run the following:
 
