@@ -1,19 +1,29 @@
-name: docs.thinktandem
-recipe: mean
-config:
-  node: '10'
-  command: ./node_modules/.bin/gitbook --port 80 serve
-tooling:
+name: tandem
+#excludes:
+#  - node_modules
+proxy:
   gitbook:
-    service: appserver_cli
-    cmd:
-      - ./node_modules/.bin/gitbook
+    - tandem.lndo.site
+services:
+  gitbook:
+    type: node:10
+    command: yarn gitbook serve --port 80
+    build:
+      - yarn
+      - yarn gitbook install
+tooling:
+  node:
+    service: gitbook
+  yarn:
+    service: gitbook
+  gitbook:
+    service: gitbook
+    cmd: yarn gitbook
   mdl:
-    service: appserver_cli
-    cmd:
-      - ./node_modules/.bin/markdownlint
+    service: gitbook
+    cmd: yarn markdownlint
     description: Run markdownlinter
   test:
-    service: appserver_cli
-    cmd: npm test
+    service: gitbook
+    cmd: yarn test
     description: Run tests

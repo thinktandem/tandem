@@ -1,13 +1,21 @@
 {
-  "title": "Tandem Documentation",
-  "root": "docs",
-  "gitbook": ">=3.2",
+  "title": "Tandemist Manifesto",
+  "root": "./docs",
+  "gitbook": "3.2.2",
   "language": "en",
+  "lunr": {
+    "maxIndexSize": 1000000000
+  },
+  "structure": {
+    "readme":  "README.md",
+    "summary": "SUMMARY.md"
+  },
   "plugins": [
     "anchors",
     "callouts",
     "codesnippet",
     "edit-link",
+    "highlight",
     "toc",
     "-sharing"
   ],

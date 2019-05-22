@@ -1,6 +1,3 @@
----
-description: As a consultancy, our value is contained within our people and our process.
----
 Onboarding Introduction
 =======================
 
