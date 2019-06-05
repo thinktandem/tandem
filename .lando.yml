@@ -1,29 +1,27 @@
-name: tandem
-#excludes:
-#  - node_modules
+name: tandem-docs
+excludes:
+  - node_modules
 proxy:
-  gitbook:
-    - tandem.lndo.site
+  node:
+    - tandem-docs.lndo.site:8080
 services:
-  gitbook:
+  node:
     type: node:10
-    command: yarn gitbook serve --port 80
     build:
-      - yarn
-      - yarn gitbook install
+      - yarn install
+    command: "su - node -c 'cd /app && yarn dev'"
+    port: 8080
 tooling:
   node:
-    service: gitbook
+    service: node
   yarn:
-    service: gitbook
-  gitbook:
-    service: gitbook
-    cmd: yarn gitbook
+    service: node
   mdl:
-    service: gitbook
-    cmd: yarn markdownlint
-    description: Run markdownlinter
+    service: node
+    cmd: markdownlint
+  vuepress:
+    service: node
   test:
-    service: gitbook
+    service: node
     cmd: yarn test
     description: Run tests

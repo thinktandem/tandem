@@ -5,19 +5,19 @@
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thinktandem/horoscope"
+    "url": "https://github.com/thinktandem/tandem"
   },
   "bugs": {
     "email": "mike@thinktandem.io",
-    "url": "https://github.com/thinktandem/horoscope/issues"
+    "url": "https://github.com/thinktandem/tandem/issues"
   },
   "devDependencies": {
-    "gitbook-cli": "^2.3.2",
-    "markdownlint-cli": "^0.3.1"
+    "markdownlint-cli": "^0.3.1",
+    "vuepress": "^0.14.11"
   },
   "scripts": {
-    "dev": "yarn && yarn gitbook serve",
-    "platform": "yarn && yarn gitbook build",
-    "test": "yarn markdownlint docs/**/*.md docs/*.md"
+    "dev": "vuepress dev docs",
+    "platform": "vuepress build docs -d _book",
+    "test": "markdownlint docs/**/*.md docs/*.md"
   }
 }
