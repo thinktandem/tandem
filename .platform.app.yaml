@@ -33,7 +33,6 @@ hooks:
     set -e
     yarn install
     yarn run build
-    cp docs/images/favicon.ico _book/gitbook/images/favicon.ico
     curl -sS https://platform.sh/cli/installer | php
 
 # The configuration of scheduled execution.
