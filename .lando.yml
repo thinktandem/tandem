@@ -23,5 +23,5 @@ tooling:
     service: node
   test:
     service: node
-    cmd: yarn test
+    cmd: yarn run test
     description: Run tests
