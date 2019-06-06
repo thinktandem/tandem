@@ -1,18 +1,20 @@
-Onboarding Introduction
-=======================
-
-Welcome to the team
--------------------
-
-As a consultancy, our value is contained within our people and our process. Consistent excellence requires both of these elements working in harmony.
-
-Documentation preserves process. The goal of this documentation is to make it as easy as possible to find and absorb the essential knowledge of our processes. If a team member goes on vacation or decides to join the forest people, we must have documentation that allows us to hire an equally brilliant person and bring them "up-to-speed" on how Tandem operates as quickly as possible.
-
-> We want to introduce people to the Tandem Process as quickly as possible.
-
-Target Audiencewef wef
----------------
-
-1. New, existing, and prospective Tandem team members.
-2. Current and potential clients interested in how we work.
-3. Friends, foes, and future fellows who want to crib notes.
+---
+home: true
+heroImage: /images/hero.png
+actionText: TELL ME MORE! →
+actionLink: /guide/
+features:
+- title: Simplicity First
+  details: Minimal setup with markdown-centered project structure helps you focus on writing.
+- title: Vue-Powered
+  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
+- title: Performant
+  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+- title: Simplicity First
+  details: Minimal setup with markdown-centered project structure helps you focus on writing.
+- title: Vue-Powered
+  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
+- title: Performant
+  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+footer: Copyright © 2019-present Tandem
+---
