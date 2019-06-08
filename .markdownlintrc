@@ -1,7 +1,8 @@
 {
+  "first-line-h1": false,
   "header-increment": false,
   "header-style": {
-    "style": "setext_with_atx"
+    "style": "atx"
   },
   "ul-style": {
     "style": "asterisk"

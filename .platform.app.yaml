@@ -42,12 +42,12 @@ crons:
     spec: '0 3 * * *'
     cmd: |
       if [ "$PLATFORM_BRANCH" = master ]; then
-          /app/.platformsh/bin/platform snapshot:create --yes --no-wait
+        /app/.platformsh/bin/platform snapshot:create --yes --no-wait
       fi
   renewcert:
     # Force a redeploy at 9 am (UTC) on the 14th of every month.
     spec: '0 9 14 * *'
     cmd: |
       if [ "$PLATFORM_BRANCH" = master ]; then
-          /app/.platformsh/bin/platform redeploy --yes --no-wait
+        /app/.platformsh/bin/platform redeploy --yes --no-wait
       fi

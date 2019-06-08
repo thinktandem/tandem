@@ -1,0 +1,18 @@
+body {
+}
+
+.hero h1 {
+  color: #2c3e50;
+}
+
+h1 {
+  color: #ef3f7a;
+}
+
+h2, h3, h4, h5 {
+  color: #035785;
+}
+
+.home .feature h2 {
+  color: #035785 !important;
+}

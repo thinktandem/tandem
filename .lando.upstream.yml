@@ -1,6 +1,7 @@
 services:
   platform:
     type: php:7.3
+    via: cli
     build:
       - mkdir -p /var/www/.platformsh/bin
       - curl -fsSL -o /var/www/.platformsh/bin/platform https://github.com/platformsh/platformsh-cli/releases/download/v3.40.4/platform.phar
