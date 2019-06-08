@@ -1,36 +1,58 @@
-Tandem
-======
+# Tandem
 
-This repository contains:
-It may be useful to think of it as an "agency-incubator" business seed.
-The purpose of this repository is to
+This repository contains assets to guide the why, what and how of Tandem as an agency-incubator. It may be useful to think of it as an "agency-incubator business" start state.
 
-2. express our values, roadmap, and vibe
-  2. introduce new employees, potential clients, and any other future collaborators to what makes us tick
-  3. remind current employees why and how we do things ;)
+@TODO: improve above to be better, sexier, more feelsy?
 
-1. serve as a single source of truth for all things tandem
-  1. manifesto/docs
-  2. cross-project assets: templates, automation scripts, etc
+Specifically its purpose is to:
 
-3. define a process and provide the mechanisms to update this repository, and by extension advance the company towards its goals
+### 1. Express our mission and core principles
 
-## How is it used?
+introduce new employees, potential clients, and any other future collaborators to what makes us tick. remind current employees why and how we do things ;)
 
-1. documentation is surfaced here:
-2. assets can be pulled down by our start states/projects
-  should we just package up stuff into a zip for now and have projects pull that in?
+### 2. Serve as a single source of truth
+
+manifesto/docs
+cross-project assets: templates, automation scripts, etc
+
+### 3. Define a process to self update
+
+a fair, just and objective-as-possible process to improve the business.. and everything else that we do and the mechanisms to make that process as painless and flow-maximizing as possible
 
 ## Structure
 
-This repository contains
+This repository contains various assets but they can be broken down into four broad categories
 
-1. Documentation
-  a. Our core founding documents, mission statement, roadmap, history
-  b. Our employee handbook and onboarding docs
-  c. Guides that codify our key processes
+### 1. Documentation
 
-2. Templates/Seeds
+Documentation
+
+* Our core founding documents, mission statement, roadmap, history
+* Our employee handbook and onboarding docs
+* Guides that codify our key processes
+
+#### Manifesto
+
+DNA, goals, roadmap, roles, org
+
+what kinds of things go here?
+
+#### Handbook
+
+employee onboarding materials
+
+this is your best chance to improve the docs
+
+#### Guides
+
+these should answer questions like "how do i do X at tandem?"
+
+what about project specific stuff? should that go in our project scaffolding?
+  example: how do i submit code? is it more likely for a developer to see that
+
+where does sales go?
+
+### 2. Templates
 
   SHOULD THIS live in docs/templates so we can have share it between the docs site
   and something we can pull?
@@ -49,44 +71,27 @@ This repository contains
     a. github labels?
     b.
 
-3. Automation scripts
+### 3. Automation scripts
 
-4. Lando plugins?
+### 4. Lando plugins?
 
-what else?
+@TODO: anything else? this seems like a good starting point
 
+## How is it used?
 
-## Documentation
+1. documentation is surfaced here:
+2. assets can be pulled down by our start states/projects should we just package up stuff into a zip for now and have projects pull that in?
 
-1. Manifesto
-
-DNA, goals, roadmap, roles, org
-
-what kinds of things go here?
-
-2. Handbook
-
-employee onboarding materials
-
-this is your best chance to improve the docs
-
-3. Guides
-
-these should answer questions like "how do i do X at tandem?"
-
-what about project specific stuff? should that go in our project scaffolding?
-  example: how do i submit code? is it more likely for a developer to see that
-
-where does sales go?
-
-### Contributing
+## Contributing
 
 what is the process for updating this material? how do we work on advancing the material?
 
 considerations? PR template checklist?
-  1. maintainable?
-  2. have i written docs that already exist in our outside our org? example?
 
+1. maintainable?
+2. have i written docs that already exist in our outside our org? example?
+
+wef
 
 1. everything stems from our values and goals
 2. we propose initiatives and add them to the roadmap
@@ -94,12 +99,6 @@ considerations? PR template checklist?
 4. we dogfood our devops process for this repo
 5. we make use of the issue templates to
 
+wef
 
 1. QA process
-
-
-
-Inspiration
------------
-
-[Click here](https://www.youtube.com/watch?v=gqwuYX3fZZc) for some inspiration on how to slay tasks like a pro.
