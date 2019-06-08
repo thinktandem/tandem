@@ -4,53 +4,58 @@ This repository contains assets to guide the why, what and how of Tandem as an a
 
 @TODO: improve above to be better, sexier, more feelsy?
 
-Specifically its purpose is to:
+## Why does it exist?
 
-### 1. Express our mission and core principles
+This repository exists to:
 
-introduce new employees, potential clients, and any other future collaborators to what makes us tick. remind current employees why and how we do things ;)
+1. Express our mission, goals, values
+2. Serve as a single source of truth
+3. Define a process to self update itself and the mechanisms to do that
 
-### 2. Serve as a single source of truth
-
-manifesto/docs
-cross-project assets: templates, automation scripts, etc
-
-### 3. Define a process to self update
-
-a fair, just and objective-as-possible process to improve the business.. and everything else that we do and the mechanisms to make that process as painless and flow-maximizing as possible
-
-## Structure
+## Cool!, So, how is it structured?
 
 This repository contains various assets but they can be broken down into four broad categories
 
 ### 1. Documentation
 
-Documentation
+First and foremost this repo contains our manifesto, employee handbook and actionable guides to acccomplish specfic things. Let's dive into each part.
 
-* Our core founding documents, mission statement, roadmap, history
-* Our employee handbook and onboarding docs
-* Guides that codify our key processes
+All documentation lives inside of the `docs` folder.
+
+These docs are designed to:
+1. get new employees up to speed on the tandem way
+2. show prospects (new client or employees) what makes us tick
+3. provide guides on how to do tandem-critical things
 
 #### Manifesto
 
-DNA, goals, roadmap, roles, org
+The manifesto should be our most immutable documentation. That is not to say that it should not be modified, but like the Constitution it should require signficant deliberation and consideration before a change should be made.
+
+It should contain:
+
+1. Why we exist and our core missions
+2. Our core values
+3. A roadmap for growth
+4. An overview of how we got here (our history)
+5. Roles and responsibilities for tandem in our three major contexts: company, agency projects, product development
+6. how the above things connect together eg an org chart
 
 what kinds of things go here?
 
 #### Handbook
 
-employee onboarding materials
+The handbook should be the place for all new employees to get spun up and integrated to the tandem way with minimal disruption.
 
-this is your best chance to improve the docs
+It should contain
+
+1. the things an employee needs to do on their first day to get rolling
+2. company policy around benefits, pto, etc
 
 #### Guides
 
-these should answer questions like "how do i do X at tandem?"
+guides should ultimately seek to answer questions like "how do i do X at tandem?". THey are designed to live our value of portability and redundancy. eg a person without a ton of experience should be able to read a guide and at least deliver the bare minimum value for a specific task.
 
-what about project specific stuff? should that go in our project scaffolding?
-  example: how do i submit code? is it more likely for a developer to see that
-
-where does sales go?
+we want to try and keep these guides as high level and company level as we can; there are many guides that might only be relevant to a particular deve use case or project class. lets try to keep those guides in our "templates/start states"
 
 ### 2. Templates
 
@@ -77,12 +82,14 @@ where does sales go?
 
 @TODO: anything else? this seems like a good starting point
 
-## How is it used?
+## Awesome! But how do i use it?
 
 1. documentation is surfaced here:
 2. assets can be pulled down by our start states/projects should we just package up stuff into a zip for now and have projects pull that in?
 
-## Contributing
+## Great! But what if i want to contribute to it?
+
+### proposing changes
 
 what is the process for updating this material? how do we work on advancing the material?
 
@@ -99,6 +106,24 @@ wef
 4. we dogfood our devops process for this repo
 5. we make use of the issue templates to
 
-wef
+### making changes
 
-1. QA process
+make sure you have installed our core tools (link to docs)
+
+@TODO:
+
+### workflow
+
+link to our dev flow docs
+
+### qa
+
+link to our qa docs
+
+### releases
+
+process to run a release
+
+## TODOS
+
+1. where does sales stuff live?
