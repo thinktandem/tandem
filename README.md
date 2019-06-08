@@ -23,6 +23,7 @@ First and foremost this repo contains our manifesto, employee handbook and actio
 All documentation lives inside of the `docs` folder.
 
 These docs are designed to:
+
 1. get new employees up to speed on the tandem way
 2. show prospects (new client or employees) what makes us tick
 3. provide guides on how to do tandem-critical things
