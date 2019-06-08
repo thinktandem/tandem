@@ -1,26 +1,39 @@
 module.exports = {
   title: 'Tandem 2.0',
-  description: 'A secret codex to power agency-incubators that are great to work at.',
+  description: 'An ancient codex to power agency-incubators that are great to work at and with.',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'stylesheet', href: '/styles/overrides.css'}],
   ],
   themeConfig: {
     repo: 'thinktandem/tandem',
-    repoLabel: 'Contribute!',
+    repoLabel: 'GitHub',
     docsDir: 'docs',
     docsBranch: 'master',
     editLinks: true,
-    editLinkText: 'Help us improve this page!',
+    editLinkText: 'Is this doc out of date? Is there something to make it better? Suggest a change!',
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Guide', link: '/placeholder/' },
-      { text: 'External', link: 'https://google.com' },
+      { text: 'Manifesto', link: '/manifesto/' },
+      { text: 'Handbook', link: '/handbook/' },
+      { text: 'Guides', link: '/guides/' },
+      { text: 'Templates', link: '/templates/' },
+      { text: 'Tandem Website', link: 'https://thinktandem.io' },
     ],
     sidebar: {
-      '/placeholder/': [
+      '/manifesto/': [
         '',
-        'rando',
+        'history',
+        'values',
+        'roles',
+        'org',
+      ],
+      '/handbook/': [
+        '',
+        'onboarding',
+        'benefits',
+        'paid',
+        'tracking',
+        'tools',
       ]
     }
   }

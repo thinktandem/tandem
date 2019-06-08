@@ -1,4 +1,5 @@
 {
+  "first-line-h1": false,
   "header-increment": false,
   "header-style": {
     "style": "atx"

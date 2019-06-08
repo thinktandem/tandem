@@ -1,20 +1,24 @@
 ---
 home: true
 heroImage: /images/hero.png
-actionText: TELL ME MORE! →
-actionLink: /guide/
+actionText: OoOoO! TELL ME MORE! →
+actionLink: /manifesto/
 features:
-- title: Simplicity First
-  details: Minimal setup with markdown-centered project structure helps you focus on writing.
-- title: Vue-Powered
-  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
-- title: Performant
-  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-- title: Simplicity First
-  details: Minimal setup with markdown-centered project structure helps you focus on writing.
-- title: Vue-Powered
-  details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
-- title: Performant
-  details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+- title: Core Value 1
+  details: Summary of value that causes the feels
+- title: Core Value 2
+  details: Summary of value that causes the feels
+- title: Core Value 3
+  details: Summary of value that causes the feels
+- title: Core Value 4
+  details: Summary of value that causes the feels
+- title: Core Value 5
+  details: Summary of value that causes the feels
+- title: Core Value 6
+  details: Summary of value that causes the feels
 footer: Copyright © 2019-present Tandem
 ---
+
+# Some catchy overview of Tandem that feels right
+
+@TODO: do we want something more substantial and feelsy here?
