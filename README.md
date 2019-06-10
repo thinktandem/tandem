@@ -1,18 +1,27 @@
-# Tandem
+# Tandem 2.0
 
-This repository contains assets to guide the why, what and how of Tandem as an agency-incubator. It may be useful to think of it as an "agency-incubator business" start state.
+Pretty shortly after we started Tandem we spun up a Git repository named _Horoscope_. It contained our company handbook and the things we wanted to do to build out Tandem as an organization. We'd get together every Friday and talk about problems surfaced in recent client work and how we could improve them. Then we'd set some priorities, assign some tickets and in the downtime between client projects work to improve Tandem as a business.
 
-@TODO: improve above to be better, sexier, more feelsy?
+In the beginning this worked great! We quickly documented our company mission, values, and important processes and procedures. We crafted an employee handbook. We developed some engineering and workflow standards and automated a good deal of our DevOps. However, as is often the case in #agencylyfe, we increasingly had less and less time to dedicate to this cycle of iterative improvement. We become complacent and disorganized. And while we all, to our credit, continued to _build valuable things_ we struggled to incorporate their value back into the "bigger picture". In some cases we even failed to communicate their existence altogether, leading to a lot of duplicate work and uncessarily bloating decision trees; _"Uh, which way should I do this?"_.
 
-## Why does it exist?
-
-This repository exists to:
-
-1. Express our mission, goals, values
-2. Serve as a single source of truth
-3. Define a process to self update itself and the mechanisms to do that
+As a result we ended up with important and valuable assets distributed across the Tandeverse. We had ancient sales wisdom sealed in hidden Google Docs. We had powerful automation robots emtombed in the subdirectories of that repo-of-a-few-projects ago. We had revealed truth on how to run projects better, faster, stonger contained within the gray matter of project managers. This is to say we had a lot of really good insight, work, discoveries and experience just sort of ... laying around.
 
 ## Cool!, So, how is it structured?
+
+To that end the purpose of this repository is to serve as
+
+
+struggled to consistently work on improving the institutions
+
+
+The purpose of this repository is to communicate what Tandem is all about,
+
+1. Communicate what Tandem is all about
+2. Serve as a single source of truth for important Tandem operational assets eg proccesses, procedures,
+3. Define a process of
+
+It may be useful to think of it as an open source "agency-incubator business" seed.
+
 
 This repository contains various assets but they can be broken down into four broad categories
 
