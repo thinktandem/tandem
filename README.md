@@ -2,9 +2,21 @@
 
 Pretty shortly after we started Tandem we spun up a Git repository named _Horoscope_. It contained our company handbook and the things we wanted to do to build out Tandem as an organization. We'd get together every Friday and talk about problems surfaced in recent client work and how we could improve them. Then we'd set some priorities, assign some tickets and in the downtime between client projects work to improve Tandem as a business.
 
-In the beginning this worked great! We quickly documented our company mission, values, and important processes and procedures. We crafted an employee handbook. We developed some engineering and workflow standards and automated a good deal of our DevOps. However, as is often the case in #agencylyfe, we increasingly had less and less time to dedicate to this cycle of iterative improvement. We become complacent and disorganized. And while we all, to our credit, continued to _build valuable things_ we struggled to incorporate their value back into the "bigger picture". In some cases we even failed to communicate their existence altogether, leading to a lot of duplicate work and uncessarily bloating decision trees; _"Uh, which way should I do this?"_.
+In the beginning this worked great! We quickly documented our company mission, values, and important processes and procedures. We crafted an employee handbook. We developed some engineering and workflow standards and automated a good deal of our DevOps. However, as is often the case in #agencylyfe, we increasingly had less and less time to dedicate to this cycle of iterative improvement. We become complacent and disorganized. And while we all, to our credit, continued to _build valuable things_ we struggled to incorporate their value back into the "bigger picture". In some cases we even failed to communicate their existence altogether, leading to a lot of duplicate work and uncessarily bloating decision trees.
 
-As a result we ended up with important and valuable assets distributed across the Tandeverse. We had ancient sales wisdom sealed in hidden Google Docs. We had powerful automation robots emtombed in the subdirectories of that repo-of-a-few-projects ago. We had revealed truth on how to run projects better, faster, stonger contained within the gray matter of project managers. This is to say we had a lot of really good insight, work, discoveries and experience just sort of ... laying around.
+As a result we ended up with important and valuable assets distributed across the Tandeverse. We had ancient sales wisdom sealed in hidden Google Docs. We had powerful automation robots emtombed in the subdirectories of that repo-of-a-few-projects ago. We had revealed truth on how to run projects better, faster, stonger contained within the gray matter of project managers. This is to say we had a lot of really valuable insights, works, discoveries and experiences that should have been immediately injected deep into the Flux Capacitor that powers the Tandem engine instead laying dormat, unused and forgotten.
+
+There was a lot that went very right with _Horoscope_. It was able to power a good deal of our first iteration of Tandem. Looking back though, it's fairly easy to identify three pretty big things that went wrong.
+
+**1. No no no! This one goes there! That one goes there!**
+
+**2. I am a rock. I am an island.**
+
+**2. If you fail to plan; you plan to fail**
+
+This repository seeks to build on the successes of _Horoscope_ while addressing its key weaknesses.
+
+
 
 ## Cool!, So, how is it structured?
 
