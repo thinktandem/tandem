@@ -1,7 +1,7 @@
 # Tandem 2.0
 
 * [History](#why-do-we-need-this)
-* [Purpose](#purpose)
+* [Purpose](#makes-sense-so-now-what)
 * [Structure](#why-do-we-need-this)
 * [Process](#why-do-we-need-this)
 * [Develop](#why-do-we-need-this)
@@ -37,13 +37,26 @@ If someone had a great idea or wanted to surface a bug or prosposal there was no
 
 **This repository seeks to build on the successes of _Horoscope_ while addressing these key weaknesses.**
 
-## Makes sense, so what now?
+## Makes sense, so now what?
 
+The purpose of this repository is to ingest anything and everything that makes Tandem run better, faster and stronger into a well-defined and clear structure, to provide a mechanism that can distribute these materials back into our day to day and to define a mostly asyncronous process that can take our ideas, prioritize them and then translate them into small chunks of work that the entire team can work on when they can.
 
-## Purpose
+This gives Tandem a single source of truth for its most important values, processes, code, etc, makes sure these things do not live in isolation and defines a feedback cycle that is always removing repitition, variables and confusion from our work; increasning our ability to focus on the things that matter.
 
-To that end the purpose of this repository is to serve as
+A more concrete example of how this would work is...
 
+1. Someone notices that a lack of standardized GitHub issue labels is causing undue overhead, confusion and frustration.
+2. They submit an issue to this repository with a proposal on how to address this problem; a common set of defined labels for all our projects
+3. The issue is evaluated based on a TBD list of factors like difficulty and the preceived benefit recieved and then prioritized amongst other issues
+4. The issue is assigned to relevant parties and broken down into small chunks so that it can be slowly advanced over many weeks or months
+5. The issue is completed, QAed, edited and merged into this repository
+6. Downstream projects can run some sort of `setup` and/or `update` command and automatically get set up with the actual labels, as well as the documentation for said labels
+
+The `tl;dr` here is that when someone contributes to this repository they know they are making Tandem better because the respository itself _is_, to a large degree, Tandem.
+
+## Cool, so what kinds of things specifically?
+
+So while _anything and everything that makes Tandem run better, faster stronger_ is our high level
 
 struggled to consistently work on improving the institutions
 
