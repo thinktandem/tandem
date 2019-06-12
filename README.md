@@ -2,6 +2,9 @@
 
 * [History](#why-do-we-need-this)
 * [Purpose](#makes-sense-so-now-what)
+  * [A single source of truth](#)
+  * [Tying things together](#)
+  * [A resilient process](#)
 * [Structure](#why-do-we-need-this)
   * [Manifesto](#manifesto)
   * [Handbook](#handbook)
@@ -12,13 +15,14 @@
 * [Process](#why-do-we-need-this)
 * [Develop](#why-do-we-need-this)
 
+
 ## Why do we need this?
 
 Pretty shortly after we started Tandem we spun up a Git repository named _Horoscope_. It contained our company handbook and the things we wanted to do to build out Tandem as an organization. We'd get together every Friday and talk about problems surfaced in recent client work and how we could improve them. Then we'd set some priorities, assign some tickets and in the downtime between client projects work to improve Tandem as a business.
 
 In the beginning this worked great! We quickly documented our company mission, values, and important processes and procedures. We crafted an employee handbook. We developed some engineering and workflow standards and automated a good deal of our DevOps. However, as is often the case in #agencylyfe, we increasingly had less and less time to dedicate to this cycle of iterative improvement. We became complacent and disorganized. And while we all, to our credit, continued to _build valuable things_ we struggled to incorporate their value back into the "bigger picture". In some cases we even failed to communicate their existence altogether, leading to a lot of duplicate work and unnecessarily bloating decision trees.
 
-As a result we ended up with important and valuable assets distributed across the Tandeverse. We had ancient sales wisdom sealed in hidden Google Docs. We had powerful automation robots entombed in the subdirectories of that repo-of-a-few-projects ago. We had revealed truth on how to run projects better, faster, stronger contained within the gray matter of project managers. This is to say we had a lot of really valuable insights, works, discoveries and experiences that should have been immediately injected deep into the Flux Capacitor that powers the Tandem engine instead laying dormant; unused and forgotten.
+As a result we ended up with important and valuable assets distributed across the Tandeverse. We had ancient sales wisdom sealed in hidden Google Docs. We had powerful automation robots entombed within the subdirectories of that repo-of-a-few-projects ago. We had revealed truth on how to run projects better, faster, stronger contained within the gray matter of project managers. This is to say we had a lot of really valuable insights, works, discoveries and experiences that should have been immediately injected deep into the Flux Capacitor that powers the Tandem engine instead laying dormant; unused and forgotten.
 
 Even still, there was a lot that went very right with _Horoscope_. It was able to power a good deal of our first iteration of Tandem. Looking back though, it's fairly easy to identify three pretty big things that we got wrong.
 
@@ -41,23 +45,58 @@ The final major flaw of _Horoscope_ was in how it figured out what to do next. A
 
 If someone had a great idea or wanted to surface a bug or proposal there was no standardized process to surface, evaluate, prioritize and translate them into reasonable chunks of work that could be done asynchronously over time by the entire team.
 
-**This repository seeks to build on the successes of _Horoscope_ while addressing these key weaknesses.**
+@TODO: move the entire H2 above into our docs somewhere and link to it in the next section?
 
 ## Makes sense, so now what?
 
-On a high level the purpose of this repository is cinquefold...
+This repository seeks to build on the successes of _Horoscope_ while addressing the key weaknesses expressed above. As such, its goal is to improve the business so we can increasingly focus on the things that matter most.
 
-1. To ingest _anything_ that makes Tandem run better, faster and stronger and to fit it into a well-defined and clear structure
-2. To provide a mechanism(s) that can distribute these _things_ back into our day to day so we are living them in all we do
-3. To define a mostly asynchronous process that can take our ideas, prioritize them and then translate them into small and manageable chunks of work
-4. To run the process on inertia
-5. I forgot what this was supposed to be
+This means that someone should be able to come here with an idea and...
 
-This gives Tandem a single source of truth for its most important values, processes, code, etc, makes sure these things do not live in isolation and defines a feedback cycle that is always removing repetition, variables and confusion from our work; increasing our ability to focus on the things that matter.
+1. Put that idea through a standardized vetting, prioritization and refinement process
+2. End up with small and actionable tasks that can be advanced by a team slowly and over weeks
+3. Make contributions into a predefined and obvious structure
+4. Have their contributions automatically deployed to the places where they have the most impact
+5. Improve Tandem by removing repetition, variables and confusion from our work
 
-The `tl;dr` here is that when someone contributes to this repository they know they are making Tandem better because the respository itself _is_, to a large degree, Tandem.
+Specifically this will be accomplished by making the repository be/do the following three things:
 
-It may be useful to think of it as an open source "agency-incubator BizOps" seed.
+### 1. Single source of truth
+
+This repository should hold _anything_ that makes Tandem run better, faster and stronger but it should do so within a well defined structure so its obvious where things should go. In this way it should act as a intuitively organizied single source of truth for our most important assets.
+
+A caveat to this is we don't want to include anything that should _obviously_ be its own repository. For example things like specific project repositories, start states, seeds, modules, plugins, etc should exist on their own but should also be tied to this repository in some way.
+
+Beyond the above caveat its important for this repo to contain _as much stuff as possible_. This reduces cognitive load, increases transparency when important things change and helps maintain company-building momentum.
+
+### 2. Tie things together
+
+Its not enough to have a single source of truth floating in isolation in the aether; it needs to have practical value and be useful. To that end, this repo, like a [good rug to a room](https://www.youtube.com/watch?v=ezQLP1dj_t8), needs to also tie everything we do together. This means that when we add or update this repo with something, that something needs to also surface, ideally via some sort of automation, _someplace else_ where it makes sense and can be put to use.
+
+Here are a few specific examples of how we can tie things together:
+
+* Employee handbook or company documentation changes automatically notify people on Slack
+* Project README template improvements automatically open pull requests on downstream repos
+* Aforementioned README templates link back to helpful documentation stored here
+* Project start states can pull in new scripts and Lando plugins from here
+
+@TODO: Would be great to actually have the above things so we can SHOW instead of TELL
+@TODO: the exact engineering mechanisms around parts of the above of this need to be better deifined and will likely be one of the first things we tackle
+
+It's difficult for a human to consistently remember to come back here for the things they need. Let's use the robots to make sure we are shipping things to the most useful places.
+
+### 3. A resilient process
+
+The final piece of the puzzle here is to define the process someone can use to
+
+This process should
+
+1. be easy to understand,
+2. require minimal oversight, eg be mostly asyncronsous
+3. run on its own inertia
+4. provide some "objective" prioritization mechanism
+5. define actionable tasks in very small chunks
+6. encourage many people work on one thing
 
 ## Cool, so what kinds of things specifically?
 
@@ -146,6 +185,8 @@ we want to try and keep these guides as high level and company level as we can; 
 1. documentation is surfaced here:
 2. assets can be pulled down by our start states/projects should we just package up stuff into a zip for now and have projects pull that in?
 
+
+3. section of proposal should contain something like:
 
 A more concrete example of how this would work is...
 
