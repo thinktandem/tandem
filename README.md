@@ -1,18 +1,115 @@
-# Tandem
+# Tandem 2.0
 
-This repository contains assets to guide the why, what and how of Tandem as an agency-incubator. It may be useful to think of it as an "agency-incubator business" start state.
+* [History](#why-do-we-need-this)
+* [Purpose](#makes-sense-so-now-what)
+  * [A single source of truth](#)
+  * [Tying things together](#)
+  * [A resilient process](#)
+* [Structure](#why-do-we-need-this)
+  * [Manifesto](#manifesto)
+  * [Handbook](#handbook)
+  * [Guides](#guides)
+  * [Templates](#templates)
+  * [Scripts](#scripts)
+  * [Lando](#lando)
+* [Process](#why-do-we-need-this)
+* [Develop](#why-do-we-need-this)
 
-@TODO: improve above to be better, sexier, more feelsy?
 
-## Why does it exist?
+## Why do we need this?
 
-This repository exists to:
+Pretty shortly after we started Tandem we spun up a Git repository named _Horoscope_. It contained our company handbook and the things we wanted to do to build out Tandem as an organization. We'd get together every Friday and talk about problems surfaced in recent client work and how we could improve them. Then we'd set some priorities, assign some tickets and in the downtime between client projects work to improve Tandem as a business.
 
-1. Express our mission, goals, values
-2. Serve as a single source of truth
-3. Define a process to self update itself and the mechanisms to do that
+In the beginning this worked great! We quickly documented our company mission, values, and important processes and procedures. We crafted an employee handbook. We developed some engineering and workflow standards and automated a good deal of our DevOps. However, as is often the case in #agencylyfe, we increasingly had less and less time to dedicate to this cycle of iterative improvement. We became complacent and disorganized. And while we all, to our credit, continued to _build valuable things_ we struggled to incorporate their value back into the "bigger picture". In some cases we even failed to communicate their existence altogether, leading to a lot of duplicate work and unnecessarily bloating decision trees.
 
-## Cool!, So, how is it structured?
+As a result we ended up with important and valuable assets distributed across the Tandeverse. We had ancient sales wisdom sealed in hidden Google Docs. We had powerful automation robots entombed within the subdirectories of that repo-of-a-few-projects ago. We had revealed truth on how to run projects better, faster, stronger contained within the gray matter of project managers. This is to say we had a lot of really valuable insights, works, discoveries and experiences that should have been immediately injected deep into the Flux Capacitor that powers the Tandem engine instead laying dormant; unused and forgotten.
+
+Even still, there was a lot that went very right with _Horoscope_. It was able to power a good deal of our first iteration of Tandem. Looking back though, it's fairly easy to identify three pretty big things that we got wrong.
+
+### 1. No no no! This one goes there! That one goes there! Right?
+
+At it's essence _Horoscope_ was basically a collection of markdown documentation. While not initially designed to be _just_ that, a lack of clear
+guidelines about _what kinds of things_ should live in it greatly hampered its utility and helped cause the aforementioned Diaspora of value.
+
+If someone wanted to contribute important non-documentation assets back into the business it wasn't clear where they should do that.
+
+### 2. I am a rock. I am an island.
+
+That said, and even if we _had_ clearly defined what kinds of things should belong in _Horoscope_ it existed on an island, detached from the day to day hustle of an agency. This meant there was no real way to disseminate materials contained within _Horoscope_ so they were front in center in our most pressing work.
+
+If someone wanted to add a useful cross-project script or guide back to the repo it wasn't clear how that asset could then be distributed to where it needed to go to be useful.
+
+### 3. If you fail to plan; you plan to fail
+
+The final major flaw of _Horoscope_ was in how it figured out what to do next. An everything-goes submit-whatever paradigm was manageable when a decent amount of time was dedicated to sifting through things but it often produced disjointed tasks, impossibly hard to advance tickets like "redo our website" and a fairly subjective prioritization mechanism.
+
+If someone had a great idea or wanted to surface a bug or proposal there was no standardized process to surface, evaluate, prioritize and translate them into reasonable chunks of work that could be done asynchronously over time by the entire team.
+
+@TODO: move the entire H2 above into our docs somewhere and link to it in the next section?
+
+## Makes sense, so now what?
+
+This repository seeks to build on the successes of _Horoscope_ while addressing the key weaknesses expressed above. As such, its goal is to improve the business so we can increasingly focus on the things that matter most.
+
+This means that someone should be able to come here with an idea and...
+
+1. Put that idea through a standardized vetting, prioritization and refinement process
+2. End up with small and actionable tasks that can be advanced by a team slowly and over weeks
+3. Make contributions into a predefined and obvious structure
+4. Have their contributions automatically deployed to the places where they have the most impact
+5. Improve Tandem by removing repetition, variables and confusion from our work
+
+Specifically this will be accomplished by making the repository be/do the following three things:
+
+### 1. Single source of truth
+
+This repository should hold _anything_ that makes Tandem run better, faster and stronger but it should do so within a well defined structure so its obvious where things should go. In this way it should act as a intuitively organizied single source of truth for our most important assets.
+
+A caveat to this is we don't want to include anything that should _obviously_ be its own repository. For example things like specific project repositories, start states, seeds, modules, plugins, etc should exist on their own but should also be tied to this repository in some way.
+
+Beyond the above caveat its important for this repo to contain _as much stuff as possible_. This reduces cognitive load, increases transparency when important things change and helps maintain company-building momentum.
+
+### 2. Tie things together
+
+Its not enough to have a single source of truth floating in isolation in the aether; it needs to have practical value and be useful. To that end, this repo, like a [good rug to a room](https://www.youtube.com/watch?v=ezQLP1dj_t8), needs to also tie everything we do together. This means that when we add or update this repo with something, that something needs to also surface, ideally via some sort of automation, _someplace else_ where it makes sense and can be put to use.
+
+Here are a few specific examples of how we can tie things together:
+
+* Employee handbook or company documentation changes automatically notify people on Slack
+* Project README template improvements automatically open pull requests on downstream repos
+* Aforementioned README templates link back to helpful documentation stored here
+* Project start states can pull in new scripts and Lando plugins from here
+
+@TODO: Would be great to actually have the above things so we can SHOW instead of TELL
+@TODO: the exact engineering mechanisms around parts of the above of this need to be better deifined and will likely be one of the first things we tackle
+
+It's difficult for a human to consistently remember to come back here for the things they need. Let's use the robots to make sure we are shipping things to the most useful places.
+
+### 3. A resilient process
+
+The final piece of the puzzle here is to define the process someone can use to
+
+This process should
+
+1. be easy to understand,
+2. require minimal oversight, eg be mostly asyncronsous
+3. run on its own inertia
+4. provide some "objective" prioritization mechanism
+5. define actionable tasks in very small chunks
+6. encourage many people work on one thing
+
+## Cool, so what kinds of things specifically?
+
+So while _anything and everything that makes Tandem run better, faster stronger_ is our high level metric around
+
+If you've identified something outside of the above that you think _should_ live in here, [open up a ticket](#) because there is a good cahnce you are right!
+
+
+
+
+
+If you contribute to this repository you are contibuting to the long term growth of the business.
+
 
 This repository contains various assets but they can be broken down into four broad categories
 
@@ -88,6 +185,18 @@ we want to try and keep these guides as high level and company level as we can; 
 1. documentation is surfaced here:
 2. assets can be pulled down by our start states/projects should we just package up stuff into a zip for now and have projects pull that in?
 
+
+3. section of proposal should contain something like:
+
+A more concrete example of how this would work is...
+
+1. Someone notices that a lack of standardized GitHub issue labels is causing undue overhead, confusion and frustration.
+2. They submit an issue to this repository with a proposal on how to address this problem; a common set of defined labels for all our projects
+3. The issue is evaluated based on a TBD list of factors like difficulty and the perceived benefit received and then prioritized amongst other issues
+4. The issue is assigned to relevant parties and broken down into small chunks so that it can be slowly advanced over many weeks or months
+5. The issue is completed, QAed, edited and merged into this repository
+6. Downstream projects can run some sort of `setup` and/or `update` command and automatically get set up with the actual labels, as well as the documentation for said labels
+
 ## Great! But what if i want to contribute to it?
 
 ### proposing changes
@@ -124,6 +233,10 @@ link to our qa docs
 ### releases
 
 process to run a release
+
+### management
+
+1. what kinds of meetings, time, procedures are needed to keep advancing the board
 
 ## TODOS
 
