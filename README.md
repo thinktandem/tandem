@@ -16,7 +16,7 @@ It also means that if you contribute to this repository you are contibuting to t
   * [A single source of truth](#1-single-source-of-truth)
   * [Tying things together](#2-tie-things-together)
   * [A resilient process](#3-a-resilient-process)
-* [Structure](#why-do-we-need-this)
+* [Structure](#structure)
   * [Manifesto](#manifesto)
   * [Handbook](#handbook)
   * [Guides](#guides)
@@ -96,11 +96,11 @@ So while _anything and everything that makes Tandem run better, faster stronger_
 
 Note that if you've identified something outside of the above that you think _should_ live in here, open up a ticket to suggest a change to this structure because there is a good change you are right! THere is a good chance this will be in flux a lot early on!
 
-### 1. Documentation
-
 First and foremost this repo contains our manifesto, employee handbook and actionable guides to accomplish specfic things.
 
-#### Manifesto
+### Manifesto
+
+`docs/manifesto`
 
 The manifesto should be our most immutable documentation. That is to say that it should not be modified without significant deliberation and consideration.
 
@@ -113,7 +113,9 @@ It should contain:
 5. Roles and responsibilities for Tandem
 6. How the above things connect together eg an org chart
 
-#### Handbook
+### Handbook
+
+`docs/handbook`
 
 The handbook should be the place for all new employees to get spun up and integrated into the Tandem way with minimal disruption and loss of flow.
 
@@ -122,7 +124,9 @@ It should contain:
 1. The things an employee needs to do on their first day to get rolling
 2. Company policies around benefits, pto, etc
 
-#### Guides
+### Guides
+
+`docs/guides`
 
 Guides should ultimately seek to answer questions like _How do I do X at Tandem?_. They should serve as starting points on the path to increased automation eg we should always be considering how guides can be reduced in size by taking advantage of robots. They should also be written so that if you've never done something before you can still follow them and do a specific task reasonably well.
 
@@ -133,9 +137,11 @@ They should contain things like:
 3. How do I send out invoices?
 4. How do I qualify a sale?
 
-### 2. Templates
+### Templates
 
-Templates, while still living inside of `docs` at `docs/templates` should act as starting points we use in our projects and products. Ideally they can be pulled directly from here and surfaced in downstream repos so we can make changes in one place and then update things downstream.
+`docs/templates`
+
+Templates should act as starting points we use in our projects and products. Ideally they can be pulled directly from here and surfaced in downstream repos so we can make changes in one place and then update things downstream.
 
 While there is no strict rule around what kinds of templates can live here, here are a few examples:
 
@@ -147,17 +153,15 @@ While there is no strict rule around what kinds of templates can live here, here
 
 In the aim of efficiency many templates _should_ try to connect back to other guides contained withint this repo so we can do our best to tie things together.
 
-### 3. Automation scripts
+### Automation scripts
+
+`scripts`
 
 Scripts or Lando automation that can be used on many projects can live here as well. **TODO:** We still need a good delivery mechanism for this but it would be great to centralize and distribute useful things like
 
 1. platform.sh DevOps setup
 2. Project scaffolding scripts eg automatic population of issues, labels, READMEs, etc
 3. Lando commands to pull databases/files from platform.sh
-
-### 4. Lando plugins
-
-@TODO: This needs work still
 
 ## Getting Started
 
