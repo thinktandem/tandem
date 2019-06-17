@@ -1,19 +1,21 @@
 # Tandem 2.0
 
-This repository seeks to build on [lessons learned from _Horoscope_](https://docs.thintandem.io/manifesto/history.html#horoscope). As such, its goal is to improve the business so we can increasingly focus on the things that matter most.
+This repository seeks to build on [lessons learned from _Horoscope_](https://docs.thinktandem.io/manifesto/history.html#horoscope). As such, its goal is to continually, incrementally, and iteratively improve the business so we can increasingly focus on the things that matter most.
 
 This means that someone should be able to come here with an idea and...
 
 1. Put that idea through a standardized vetting, prioritization and refinement process
-2. End up with small and actionable tasks that can be advanced by a team slowly and over weeks
+2. End up with small and actionable tasks that can be advanced by a team slowly and methodically over some time frame
 3. Make contributions into a predefined and obvious structure
 4. Have their contributions automatically deployed to the places where they have the most impact
 5. Improve Tandem by removing repetition, variables and confusion from our work
 
+It also means that if you contribute to this repository you are contibuting to the long term growth of the business.
+
 * [Purpose](#purpose)
-  * [A single source of truth](#single-source-of-truth)
-  * [Tying things together](#tie-things-together)
-  * [A resilient process](#a-resilient-process)
+  * [A single source of truth](#1-single-source-of-truth)
+  * [Tying things together](#2-tie-things-together)
+  * [A resilient process](#3-a-resilient-process)
 * [Structure](#why-do-we-need-this)
   * [Manifesto](#manifesto)
   * [Handbook](#handbook)
@@ -21,12 +23,14 @@ This means that someone should be able to come here with an idea and...
   * [Templates](#templates)
   * [Scripts](#scripts)
   * [Lando](#lando)
-* [Process](#why-do-we-need-this)
-* [Develop](#why-do-we-need-this)
+* [Getting Started](#getting-started)
+  * [Developing](#develop)
+  * [Testing](#test)
+  * [Contributing](#contribute)
 
 ## Purpose
 
-Specifically this will be accomplished by making the repository be/do the following three things:
+Specifically the above will be accomplished by making the repository be/do the following three things:
 
 ### 1. Single source of truth
 
@@ -47,54 +51,65 @@ Here are a few specific examples of how we can tie things together:
 * Aforementioned README templates link back to helpful documentation stored here
 * Project start states can pull in new scripts and Lando plugins from here
 
-@TODO: Would be great to actually have the above things so we can SHOW instead of TELL
-@TODO: the exact engineering mechanisms around parts of the above of this need to be better deifined and will likely be one of the first things we tackle
-
 It's difficult for a human to consistently remember to come back here for the things they need. Let's use the robots to make sure we are shipping things to the most useful places.
+
+**@TODO:** Would be great to actually have the above things so we can SHOW instead of TELL
+
+**@TODO:** the exact engineering mechanisms around parts of the above of this need to be better deifined and will likely be one of the first things we tackle
 
 ### 3. A resilient process
 
-The final piece of the puzzle here is to define the process someone can use to
+The final piece of the puzzle here is to define a resilient process we all can use to surface business improvements. The process should be
 
-This process should
+* Easy to understand and document
+* Require minimal oversight
+* Mostly asynchronous
+* Run on its own inertia.
 
-1. be easy to understand,
-2. require minimal oversight, eg be mostly asyncronsous
-3. run on its own inertia
-4. provide some "objective" prioritization mechanism
-5. define actionable tasks in very small chunks
-6. encourage many people work on one thing
+It should also provide some "objective" prioritization mechanism and encourage tasks be broken into very small chunks that are worked on in teams of two or more.
 
-## Cool, so what kinds of things specifically?
+## Structure
 
-So while _anything and everything that makes Tandem run better, faster stronger_ is our high level metric around
+So while _anything and everything that makes Tandem run better, faster stronger_ is our high level metric around inclusion we _do_ currently have a more concrete and exatant structure.
 
-If you've identified something outside of the above that you think _should_ live in here, open up a ticket because there is a good cahnce you are right!
+```bash
+./
+|-- .platform                         Platform.sh config
+|-- docs                              Docs and templates
+  |-- .vuepress                       Vuepress config
+    |-- components                    Vue components
+    |-- public                        Static assets
+    |-- config.js                     Vuepress config file
+    |-- enhanceApp.js                 App level customization
+    |-- override.styl                 Stylus constant overrides
+    |-- style.styl                    Extra styles
+  |-- guides                          Tandem guides and how-tos
+  |-- handbook                        Tandem employee handbook
+  |-- manifesto                       Tandem manifesto and values
+  |-- templates                       Tandem templates
+  |-- README.md                       Documentation homepage
+|-- scripts                           Helpful Tandem scripts
+|-- src                 Electron app source code
+  |-- main              Electron app main process source code
+  |-- renderer          Electron app renderer process source code
+  |-- index.ejs         Top level HTML entrypoint
+|-- static              Static assets used by thhe electron app
+|-- test                Unit and end to end tests
+|-- .travis.yml         Travis CI config for POSIX unit tests, build and deploy
+|-- appveyor.yml        Appveyor config for Windows unit tests, build and deploy
+|-- config.yml          Default Localdev Lando config
+|-- package.json        Node dependencies and electron build config
+```
 
-
-
-
-
-If you contribute to this repository you are contibuting to the long term growth of the business.
-
-
-This repository contains various assets but they can be broken down into four broad categories
+Note that if you've identified something outside of the above that you think _should_ live in here, open up a ticket to suggest a change to this structure because there is a good change you are right! THere is a good chance this will be in flux a lot early on!
 
 ### 1. Documentation
 
-First and foremost this repo contains our manifesto, employee handbook and actionable guides to acccomplish specfic things. Let's dive into each part.
-
-All documentation lives inside of the `docs` folder.
-
-These docs are designed to:
-
-1. get new employees up to speed on the tandem way
-2. show prospects (new client or employees) what makes us tick
-3. provide guides on how to do tandem-critical things
+First and foremost this repo contains our manifesto, employee handbook and actionable guides to accomplish specfic things.
 
 #### Manifesto
 
-The manifesto should be our most immutable documentation. That is not to say that it should not be modified, but like the Constitution it should require signficant deliberation and consideration before a change should be made.
+The manifesto should be our most immutable documentation. That is not to say that it should not be modified without significant deliberation and consideration.
 
 It should contain:
 
@@ -105,106 +120,62 @@ It should contain:
 5. Roles and responsibilities for tandem in our three major contexts: company, agency projects, product development
 6. how the above things connect together eg an org chart
 
-what kinds of things go here?
-
 #### Handbook
 
-The handbook should be the place for all new employees to get spun up and integrated to the tandem way with minimal disruption.
+The handbook should be the place for all new employees to get spun up and integrated into the Tandem way with minimal disruption and loss of flow.
 
-It should contain
+It should contain:
 
-1. the things an employee needs to do on their first day to get rolling
-2. company policy around benefits, pto, etc
+1. The things an employee needs to do on their first day to get rolling
+2. Company policies around benefits, pto, etc
 
 #### Guides
 
-guides should ultimately seek to answer questions like "how do i do X at tandem?". THey are designed to live our value of portability and redundancy. eg a person without a ton of experience should be able to read a guide and at least deliver the bare minimum value for a specific task.
+Guides should ultimately seek to answer questions like _How do I do X at Tandem?_. They should serve as starting points on the path to increased automation eg we should always be considering how guides can be reduced in size by taking advantage of robots. They should also be written so that if you've never done something before you can still follow them and do a specific task reasonably well.
 
-we want to try and keep these guides as high level and company level as we can; there are many guides that might only be relevant to a particular deve use case or project class. lets try to keep those guides in our "templates/start states"
+They should contain things like:
+
+1. How do I spin up a project?
+2. How do I Tandemize an existing project?
+3. How do I send out invoices?
+4. How do I qualify a sale?
 
 ### 2. Templates
 
-  SHOULD THIS live in docs/templates so we can have share it between the docs site
-  and something we can pull?
+Templates, while still living inside of `docs` at `docs/templates` should act as starting points we use in our projects and products. Ideally they can be pulled directly from here and surfaced in downstream repos so we can make changes in one place and then update things downstream.
 
-  a. README.md and project documentation scaffolding
-    a. readme
-    b. getting started checklist: things that need ot be setup before we start
-    b. dev docs
-    c. project brief
-    d. architectureal plan
-    e. more?
-  b. devops
-    a. github issue/pr templates
-    b. travis/platform/lando seeds
-  c. project management stuff
-    a. github labels?
-    b.
+While there is no strict rule around what kinds of templates can live here, here are a few examples:
+
+1. Project READMEs and related docs eg architectural plans, project briefs, etc.
+2. Project tickets or issues that should exist in all our work
+3. GitHub issue and pull request templates
+4. Metadata for common tags to use across projects
+5. DevOps templates like `.travis.yml`, `.lando.yml` etc
+
+In the aim of efficiency many templates _should_ try to connect back to other guides contained withint this repo so we can do our best to tie things together.
 
 ### 3. Automation scripts
 
-### 4. Lando plugins?
+Scripts or Lando automation that can be used on many projects can live here as well. **TODO:** We still need a good delivery mechanism for this but it would be great to centralize and distribute useful things like
 
-@TODO: anything else? this seems like a good starting point
+1. platform.sh DevOps setup
+2. Project scaffolding scripts eg automatic population of issues, labels, READMEs, etc
+3. Lando commands to pull databases/files from platform.sh
 
-## Awesome! But how do i use it?
+### 4. Lando plugins
 
-1. documentation is surfaced here:
-2. assets can be pulled down by our start states/projects should we just package up stuff into a zip for now and have projects pull that in?
+@TODO: This needs work still
 
+## Getting Started
 
-3. section of proposal should contain something like:
+### Developing
 
-A more concrete example of how this would work is...
+### Testing
 
-1. Someone notices that a lack of standardized GitHub issue labels is causing undue overhead, confusion and frustration.
-2. They submit an issue to this repository with a proposal on how to address this problem; a common set of defined labels for all our projects
-3. The issue is evaluated based on a TBD list of factors like difficulty and the perceived benefit received and then prioritized amongst other issues
-4. The issue is assigned to relevant parties and broken down into small chunks so that it can be slowly advanced over many weeks or months
-5. The issue is completed, QAed, edited and merged into this repository
-6. Downstream projects can run some sort of `setup` and/or `update` command and automatically get set up with the actual labels, as well as the documentation for said labels
+### Contributing
 
-## Great! But what if i want to contribute to it?
+## References
 
-### proposing changes
-
-what is the process for updating this material? how do we work on advancing the material?
-
-considerations? PR template checklist?
-
-1. maintainable?
-2. have i written docs that already exist in our outside our org? example?
-
-wef
-
-1. everything stems from our values and goals
-2. we propose initiatives and add them to the roadmap
-3. we work on x-y number of initatives at the same time, we work on z-zz in a given year, each initiative should last 3 month
-4. we dogfood our devops process for this repo
-5. we make use of the issue templates to
-
-### making changes
-
-make sure you have installed our core tools (link to docs)
-
-@TODO:
-
-### workflow
-
-link to our dev flow docs
-
-### qa
-
-link to our qa docs
-
-### releases
-
-process to run a release
-
-### management
-
-1. what kinds of meetings, time, procedures are needed to keep advancing the board
-
-## TODOS
-
-1. where does sales stuff live?
+* [History of this project](https://docs.thinktandem.io/manifesto/history.html#horoscope)
+* [Lando docs](https://docs.devwithlando.io/)
+* [Vuepress docs](https://vuepress.vuejs.org)
