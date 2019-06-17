@@ -1,6 +1,6 @@
 # Tandem 2.0
 
-This repository seeks to build on [lessons learned from _Horoscope_](https://docs.thinktandem.io/manifesto/history.html#horoscope). As such, its goal is to continually, incrementally, and iteratively improve the business so we can increasingly focus on the things that matter most.
+This repository seeks to build on [lessons learned from _Horoscope_](https://docs.thinktandem.io/manifesto/history.html#horoscope). As such, its goal is to continually, incrementally, and iteratively improve the business so we can increasingly focus on the things that matter most while maximizing our flow.
 
 This means that someone should be able to come here with an idea and...
 
@@ -89,16 +89,9 @@ So while _anything and everything that makes Tandem run better, faster stronger_
   |-- templates                       Tandem templates
   |-- README.md                       Documentation homepage
 |-- scripts                           Helpful Tandem scripts
-|-- src                 Electron app source code
-  |-- main              Electron app main process source code
-  |-- renderer          Electron app renderer process source code
-  |-- index.ejs         Top level HTML entrypoint
-|-- static              Static assets used by thhe electron app
-|-- test                Unit and end to end tests
-|-- .travis.yml         Travis CI config for POSIX unit tests, build and deploy
-|-- appveyor.yml        Appveyor config for Windows unit tests, build and deploy
-|-- config.yml          Default Localdev Lando config
-|-- package.json        Node dependencies and electron build config
+|-- .lando.yml                        The Landofile to power this locally and in CI
+|-- .travis.yml                       Travis CI for build, test and deploy
+|-- package.json                      Node dependencies and config
 ```
 
 Note that if you've identified something outside of the above that you think _should_ live in here, open up a ticket to suggest a change to this structure because there is a good change you are right! THere is a good chance this will be in flux a lot early on!
@@ -109,16 +102,16 @@ First and foremost this repo contains our manifesto, employee handbook and actio
 
 #### Manifesto
 
-The manifesto should be our most immutable documentation. That is not to say that it should not be modified without significant deliberation and consideration.
+The manifesto should be our most immutable documentation. That is to say that it should not be modified without significant deliberation and consideration.
 
 It should contain:
 
-1. Why we exist and our core missions
+1. Why we exist and our mission
 2. Our core values
 3. A roadmap for growth
 4. An overview of how we got here (our history)
-5. Roles and responsibilities for tandem in our three major contexts: company, agency projects, product development
-6. how the above things connect together eg an org chart
+5. Roles and responsibilities for Tandem
+6. How the above things connect together eg an org chart
 
 #### Handbook
 
@@ -168,11 +161,38 @@ Scripts or Lando automation that can be used on many projects can live here as w
 
 ## Getting Started
 
+Before you begin make sure you [have all the things you need](https://docs.thinktandem.io/guides/) and have a decent idea about [how Lando works](https://docs.devwithlando.io/started.html).
+
 ### Developing
+
+You can easily get the site running locally.
+
+```bash
+# Clone this repo
+git clone git@github.com:thinktandem/tandem.git
+
+# Start it up
+cd tandem
+lando start
+
+# Get a helpful list of all your lando commands
+lando
+```
 
 ### Testing
 
+```bash
+# Run the markdown linter
+lando test
+```
+
 ### Contributing
+
+Contributing can be broken down into three guides...
+
+1. [Improving Tandem](https://docs.thinktandem.io/guides/)
+2. [Contributing code](https://docs.thinktandem.io/guides/)
+3. [QAing code](https://docs.thinktandem.io/guides/)
 
 ## References
 
