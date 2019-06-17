@@ -34,6 +34,10 @@ module.exports = {
         'paid',
         'tracking',
         'tools',
+      ],
+      '/guides/': [
+        '',
+        'business',
       ]
     }
   }
