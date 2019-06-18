@@ -10,6 +10,7 @@ In order to do that I need to [request a review](https://help.github.com/en/arti
 
 - [ ] I've read the [Contributing Code Guide](https://docs.thinktandem.io/guides/process.html#contributing-code/)
 - [ ] I've updated this PR with the latest code from `master`
+- [ ] I've made sure my code [fits into the right place](https://github.com/thinktandem/tandem#structure)
 - [ ] I've done a cursory QA pass of my code locally
 - [ ] I've written an acceptance test below for the reviewer
 - [ ] I've ensured all automated tests pass
@@ -39,16 +40,21 @@ Here is a _very simple_ example you can follow
 
 #### Steps to replicate
 
-1. Navigate to the production homepage, see that the background is neon green
+1. Provide a link to the prod or dev site
+2. Navigate to the homepage, see that the background is neon green
 
 #### Fix
 
-1. Navigate to the platform.sh PR environment homepage and see that the background is blue
+1. Provide a link to the QA environment
+2. Navigate to the homepage and see that the background is blue
 
 ### Reviewer checks
 
 I've completed the following tasks and requested changes from the submitter if changes were needed before a :+1: could be given.
 
 - [ ] I've read the [QAing Code Guide](https://docs.thinktandem.io/guides/process.html#qaing-code/)
+- [ ] I've verified the developers QA checklist has been completed
 - [ ] I've manually reviewed the code and it checks out
-- [ ] I've manually validated the acceptance test passes
+- [ ] I've manually validated the acceptance test(s)
+- [ ] I've summoned an additional reviewer if I need a second (or third, or fourth, ... or nth) opinion
+

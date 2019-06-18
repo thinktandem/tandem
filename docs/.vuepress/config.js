@@ -36,9 +36,21 @@ module.exports = {
         'tools',
       ],
       '/guides/': [
-        '',
-        'business',
-        'process',
+        {
+          title: 'Business',
+          collapsable: false,
+          children: [
+            'improve-tandem'
+          ]
+        },
+        {
+          title: 'Code lifecycle',
+          collapsable: false,
+          children: [
+            'contributing-code',
+            'qaing-code'
+          ]
+        },
       ]
     }
   }
