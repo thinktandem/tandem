@@ -1,0 +1,12 @@
+daysUntilStale: 180
+daysUntilClose: 30
+exemptLabels:
+  - manifesto
+  - critical
+staleLabel: wontfix
+markComment: >
+  This issue has been automatically marked as stale because it has not had
+  recent activity. It will be closed if no further activity occurs. Thank you
+  for your contributions and please check out [this](https://github.com/probot/stale#is-closing-stale-issues-really-a-good-idea) if you are
+  wondering why we auto close issues.
+closeComment: false

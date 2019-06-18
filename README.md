@@ -73,6 +73,7 @@ So while _anything and everything that makes Tandem run better, faster stronger_
 
 ```bash
 ./
+|-- .github                           GitHub templates and config
 |-- .platform                         Platform.sh config
 |-- docs                              Docs and templates
   |-- .vuepress                       Vuepress config
