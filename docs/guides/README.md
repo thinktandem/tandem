@@ -2,12 +2,12 @@
 
 ## Business
 
-* [How do I improve Tandem?](./business.md#improving-tandem)
+* [How do I improve Tandem?](./improve-tandem.md)
 
-## Process
+## Code lifecycle
 
-* [How do I contribute code](./process.md#contributing-code)
-* [How do I QA code](./process.md#qaing-code)
+* [How do I contribute code?](./contributing-code.md)
+* [How do I QA and deploy code?](./qaing-code.md)
 
 ## Legacy guides
 

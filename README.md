@@ -194,9 +194,9 @@ lando test
 
 Contributing can be broken down into three guides...
 
-1. [Improving Tandem](https://docs.thinktandem.io/guides/business.html#improving-tandem)
-2. [Contributing code](https://docs.thinktandem.io/guides/process.html#contributing-code/)
-3. [QAing code](https://docs.thinktandem.io/guides/process.html#qaing-code/)
+1. [Improving Tandem](https://docs.thinktandem.io/guides/improve-tandem.html)
+2. [Contributing code](https://docs.thinktandem.io/guides/contributing-code.html)
+3. [QAing code](https://docs.thinktandem.io/guides/qaing-code.html)
 
 ## References
 
