@@ -26,14 +26,6 @@ In order to do that I need to [request a review](https://help.github.com/en/arti
 
 ## For the reviewer
 
-### Reviewer checks
-
-I've completed the following tasks and requested changes from the submitter if changes were needed before a :+1: could be given.
-
-- [ ] I've read the [QAing Code Guide](https://docs.thinktandem.io/guides/process.html#qaing-code/)
-- [ ] I've manually reviewed the code and it checks out
-- [ ] I've manually validated the acceptance test passes
-
 ### Acceptance Test
 
 THE PERSON WHO SUBMITS THE PR SHOULD PUT THEIR ACCEPTANCE TEST HERE.
@@ -52,3 +44,11 @@ Here is a _very simple_ example you can follow
 #### Fix
 
 1. Navigate to the platform.sh PR environment homepage and see that the background is blue
+
+### Reviewer checks
+
+I've completed the following tasks and requested changes from the submitter if changes were needed before a :+1: could be given.
+
+- [ ] I've read the [QAing Code Guide](https://docs.thinktandem.io/guides/process.html#qaing-code/)
+- [ ] I've manually reviewed the code and it checks out
+- [ ] I've manually validated the acceptance test passes
