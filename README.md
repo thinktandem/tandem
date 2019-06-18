@@ -22,7 +22,6 @@ It also means that if you contribute to this repository you are contibuting to t
   * [Guides](#guides)
   * [Templates](#templates)
   * [Scripts](#scripts)
-  * [Lando](#lando)
 * [Getting Started](#getting-started)
   * [Developing](#develop)
   * [Testing](#test)
@@ -165,7 +164,7 @@ Scripts or Lando automation that can be used on many projects can live here as w
 
 ## Getting Started
 
-Before you begin make sure you [have all the things you need](https://docs.thinktandem.io/guides/) and have a decent idea about [how Lando works](https://docs.devwithlando.io/started.html).
+Before you begin make sure you [have all the things you need](https://docs.thinktandem.io/handbook/tools.html/) and have a decent idea about [how Lando works](https://docs.devwithlando.io/started.html).
 
 ### Developing
 
@@ -194,9 +193,9 @@ lando test
 
 Contributing can be broken down into three guides...
 
-1. [Improving Tandem](https://docs.thinktandem.io/guides/)
-2. [Contributing code](https://docs.thinktandem.io/guides/)
-3. [QAing code](https://docs.thinktandem.io/guides/)
+1. [Improving Tandem](https://docs.thinktandem.io/guides/business.html#improving-tandem)
+2. [Contributing code](https://docs.thinktandem.io/guides/process.html#contributing-code/)
+3. [QAing code](https://docs.thinktandem.io/guides/process.html#qaing-code/)
 
 ## References
 
