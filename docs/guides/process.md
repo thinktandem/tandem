@@ -4,9 +4,36 @@ This should contain guides around the Tandem process, specifically around projec
 
 ## Contributing Code
 
-1.  Choose a ticket or issue from the [ZenHub board](https://github.com/thinktandem/horoscope#boards?repos=88304447) of the project you are working on.
-2. Make sure you start the Harvest Time Tracker for the issue: ![Harvest time tracker image](/images/harvest-time-tracking.png "Harvest Time Tracker")
-3. Take a look at the issue. If you have any unresolved questions, reach out to your project manager.
+Tandem follows a slightly modified [GitHub Flow](https://guides.github.com/introduction/flow/) pattern. The basics are
+
+### 1. Open a new branch from master
+
+::: tip Tandem Tip
+Construct your branch as `ISSUENUMBER-BRIEFDESCRIPTION`. For example `10-addHomepage`.
+:::
+
+```bash
+git checkout master && git checkout -b 10-addHomepage
+```
+
+### 2. Add commits and push branch
+
+::: tip Tandem Tip
+Prefix your commits with the issue number and they will automatically be surfaced in the corresponding issue and PR
+:::
+
+```bash
+git add somefile
+git commit -m "#10: Added the file"
+
+git add .
+git commit -m "#10: Refactored code to obey with our code standards"
+```
+
+
+### In Code
+
+
 4.  Open a new branch from `master` in the form `ISSUENUMBER-BRIEFDESCRIPTION` to work on that issue
 5.  Add commits to this branch with message form `#ISSUENUMBER: COMMIT DESCRIPTION`
 6.  Push the `git push {REMOTE} {ISSUENUMBER-BRIEFDESCRIPTION}` when work is complete
@@ -27,6 +54,9 @@ This should contain guides around the Tandem process, specifically around projec
 **NEVER EVER EVER EVER PUSH ANYTHING DIRECTLY TO THE MASTER BRANCH!!!**
 
 Some details may vary on a project to project basis. Every project has a its own documentation typically starting with the README.md and project variances in process will be documented there.  For example for projects using Platform.sh as the host in step 2 you would branch from `test` as `test` is the canonical branch for Platform.sh based projects, where Pantheon uses `master` as canonical.
+
+
+
 
 ## QAing Code
 
