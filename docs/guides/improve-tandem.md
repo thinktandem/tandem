@@ -180,15 +180,15 @@ _Generally_, action items should be able to fit into the following categories
 
 #### Bug or improvement
 
-Should describe steps to replicate and then the proposed "fix" or "improvement"
+A bug/improvement should describe steps to replicate and then the proposed "fix" or "improvement".
 
 #### Discussion
 
-If you need to _talk it out_ before you submit a proposal or if a proposal demands further discussion this is your action item.
+If you need to _talk it out_ before you submit a proposal or if a proposal demands further discussion this is the action item for you.
 
 #### Note
 
-If you just want a public place to dump some notes so that you can use them later for something more concrete.
+If you just want a public place to dump some notes so that you can use them later to populate a more actionable thing this is the action item for you.
 
 ### 2. Proposals
 
@@ -196,8 +196,8 @@ Proposals are generally a way to surface a higher level problem, sketch a rough 
 
 They are differ from [Action Items](#_1-action-items) in that they...
 
-* Could be broken down into many separate action items
-* Require a sustained amount of effort to resolve eg many weeks or months
+* Can be broken down into disctinc action items
+* Should take many weeks or months to fully resolve
 * Require the contribution of many team members
 * Require a more formal prioritization matrix
 
@@ -231,51 +231,47 @@ Operations based proposals are best started as a _Guide_ and then progressively 
 
 ## Managing the process
 
-The management around this process should be relatively low-touch and mostly run on its own inertia. _Generally,_ a few proposals and action items should be selected, advanced and completed over the course of a few months ideally under a single focus like "Improving sales" or "Improving DevOps".
+The formal management around this process should be relatively low-touch and mostly run on its own inertia. _Generally,_ a few proposals and action items should be selected, advanced and completed over the course of a few months ideally under a single focus like "Improving sales" or "Improving DevOps".
 
 Our primary _all hands on deck_ meeting to make this process happen will be at the end of every week eastern time for one hour. The content and agenda of this meeting should change based on where we are in the milestone cycle but should generally follow this pattern:
+
+**@TODO:** This is a rough sketch that needs to be fleshed out over time.
 
 ### 1. Determining focus
 
 **TODO:** In the immediate term ownership might need to set the focus but we should flesh this out.
 
-We likely will have already casually discussed the next focus of our company building activities beforehand but the first meeting of a _new cycle_ should determine a focus, review the spreadsheet and select priority proposals and action items to advance.
+We likely will have casually discussed the next focus of our company building activities beforehand but the first meeting of a _new cycle_ should determine a focus, review the spreadsheet and select priority proposals and action items to advance.
 
-The result of that meeting should be the establishment of a GitHub milestone with a start and due date that details the focus and issues assigned to people.
+The result of that meeting should be...
+
+* A GitHub milestone with a start, due date and details about the agreed upon focus
+* Issues assigned to people
+
+::: tip PRO TIP
+Every proposal and action item should be assigned to at least two people. This should help ensure momentum via redundancy and also makes sure that at least two people know about the thing @TODO: explain this better
+:::
 
 ### 2. Working, collaborating and showing
 
-Once a focus has been established subsequent meetings should focus on progress updates and a show-and-tell of new contributions if applicable. W
+Once a focus has been determined and issues assigned, subsequent meetings should focus on progress updates and a show-and-tell of new contributions if applicable. This should also follow a normal standup format of status checks, unblocking blockers, etc.
 
-Working on a ticket should be done async and with at least someone else and shipped as soon as it passes.
+### 3. Retro and Repopulating
+
+Once the milestone is completed we should take a few weeks to retro and then repopulate the queue with proposals and action items so we can begin anew.
+
+### NON FORMAL MANGEMENT
 
 OTHER THINGS:
 
 * CTO checks in regualrly with people to help them on their assignemnts,
 * "Engineering Managers" meets to discuss stuff
 
-### 3. Retro and Repopulating
+1. friday meeting eventually becomes about showcasing improvements to the business
+2. mike/dustin/meetings ends up being about sprint planning and issue assignment;
+3. mike checkins are about working through assigned issues
+4. update README and other obious material to match new structure
 
-Once the milestone is completed we should take a few weeks to retro and then repopulate the queue with proposals and action items so we can begin anew.
+## Choosing and working on issues
 
-## Choosing an issue
-
-require a "co-sponsor"
-
-
-## OTHER
-
-```bash
-1. Describe the problem and how you think it most impacts Tandem's goals/mission/values
-2. Briefly describe the proposed solution and how you think that makes tandem better
-3. SCOREZ (normal curve, 0-10)
-  1. Urgency
-  2. Alignment with mission, vlaues, etc
-  3. difficulty/time
-  4. benefit
-  5. marketing/sales
-  6. OTHER THINGS?
-4. how can we best distribute this solution so we are living it? how does it tie into otehr things?
-3. generate a rought sketch of action items based on the above
-4. complete the spreadsheet with the dataz
-```
+Generally you should work on an issue assigned to you that fits within the currently agrees upon _focus_. However, _everyone_ should be encouraged to work on _Action Items_ that are outside of the focus if they are blocked on things to focus on.
