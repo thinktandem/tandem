@@ -4,7 +4,7 @@ Tandem follows a slightly modified [GitHub Flow](https://guides.github.com/intro
 
 ## 1. Open a new branch from master
 
-::: tip Tandem Tip
+::: tip PRO TIP
 Construct your branch as `ISSUENUMBER-BRIEFDESCRIPTION`. For example `10-addHomepage`.
 :::
 
@@ -17,7 +17,7 @@ Note that you should **NEVER EVER EVER PUSH ANYTHING DIRECTLY TO `master`!!!**
 
 ## 2. Add commits and push branch
 
-::: tip Tandem Tip
+::: tip PRO TIP
 Prefix your commits with the issue number and they will automatically be surfaced in the corresponding issue and PR
 :::
 

@@ -8,7 +8,7 @@ In order to do that I need to [request a review](https://help.github.com/en/arti
 
 > [What do you think of a person who only does the bare minimum?](https://getyarn.io/yarn-clip/dcf80710-425e-478b-bde1-c107bd11e849)
 
-- [ ] I've read the [Contributing Code Guide](https://docs.thinktandem.io/guides/process.html#contributing-code/)
+- [ ] I've read the [Contributing Code Guide](https://docs.thinktandem.io/guides/contributing-code.html)
 - [ ] I've updated this PR with the latest code from `master`
 - [ ] I've made sure my code [fits into the right place](https://github.com/thinktandem/tandem#structure)
 - [ ] I've done a cursory QA pass of my code locally
@@ -52,7 +52,7 @@ Here is a _very simple_ example you can follow
 
 I've completed the following tasks and requested changes from the submitter if changes were needed before a :+1: could be given.
 
-- [ ] I've read the [QAing Code Guide](https://docs.thinktandem.io/guides/process.html#qaing-code/)
+- [ ] I've read the [QAing Code Guide](https://docs.thinktandem.io/guides/qaing-code.md)
 - [ ] I've verified the developers QA checklist has been completed
 - [ ] I've manually reviewed the code and it checks out
 - [ ] I've manually validated the acceptance test(s)
