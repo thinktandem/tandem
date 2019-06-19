@@ -1,5 +1,5 @@
 ---
-name: Action Item
+name: Bug or improvement
 about: A task that can be resolved or completed within a few hours
 labels: action item
 ---
