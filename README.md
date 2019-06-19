@@ -14,13 +14,13 @@ This means that someone should be able to come here with an idea or suggestion a
 
 Before you begin make sure you...
 
-1. Understand the [purpose](https://docs.thinktandem.io/handbook/tools.html/) of this repo and its history
-2. Understand its structure and contents
-3. Understand how to use its process of self-improvement
-4. [Have all the tools you need to develop](https://docs.thinktandem.io/handbook/tools.html/)
-5. Have a decent idea about [how Lando works](https://docs.devwithlando.io/started.html).
-6. Understand how to contribute code to it
-7. Understand how to QA and deploy said code
+1. Understand the [purpose](https://docs.thinktandem.io/guides/improve-tandem.html#understanding-the-specifics) of this repo and [its history](https://docs.thinktandem.io/manifesto/history.html#horoscope)
+2. Understand its [structure and contents](https://docs.thinktandem.io/guides/improve-tandem.html#understanding-the-structure)
+3. Understand how to use its [process of self-improvement](https://docs.thinktandem.io/guides/improve-tandem.html#suggesting-a-change)
+4. [Have all the tools you need to develop](https://docs.thinktandem.io/handbook/tools.html)
+5. Have a decent idea about [how Lando works](https://docs.devwithlando.io/started.html)
+6. Understand how to [contribute code to it](https://docs.thinktandem.io/guides/contributing-code.html)
+7. Understand how to [QA and deploy](https://docs.thinktandem.io/guides/qaing-code.html) said code
 
 ### Developing
 
