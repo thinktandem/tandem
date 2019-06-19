@@ -4,4 +4,4 @@ about: A place to dump notes for usage later
 labels: note
 ---
 
-@TODO: Flesh this out
+No structure here, add whatever is helpful for you.
