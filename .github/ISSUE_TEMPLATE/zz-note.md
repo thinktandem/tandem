@@ -1,5 +1,5 @@
 ---
-name: Misc - Note
+name: Note
 about: A place to dump notes for usage later
 labels: note
 ---
