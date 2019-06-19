@@ -1,6 +1,6 @@
 ---
-name: Bug
-about: An action item that is reproducable and can be resolved in a few hours
+name: Action Item - Bug
+about: A bug that is reproducable and can be resolved in at most a few hours
 labels: action item, bug
 ---
 

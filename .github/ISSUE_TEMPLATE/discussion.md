@@ -1,13 +1,7 @@
 ---
-name: Discussion
-about: An action item that demands a conversation on how to proceed
+name: Action Item - Discussion
+about: A discussion to help advance a proposal or action item
 labels: action item, discussion
 ---
 
-Please complete the following:
-
-**Link to the page that needs to be updated or changed.**
-https://docs.devwithlando.io/dev/testing.html#functional-tests
-
-**Describe the change you'd like**
-A clear and concise description of what you want to happen.
+@TODO: Flesh this out

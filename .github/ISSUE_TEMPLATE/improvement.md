@@ -1,6 +1,6 @@
 ---
-name: Improvement
-about: An action item that is explainable and can be resolved in a few hours
+name: Action Item - Improvement
+about: An easily explainable improvement that can be implemented in at most a few hours
 labels: action item, improvement
 ---
 
