@@ -17,7 +17,7 @@ Before you begin make sure you...
 1. Understand the [purpose](https://docs.thinktandem.io/guides/improve-tandem.html#understanding-the-specifics) of this repo and [its history](https://docs.thinktandem.io/manifesto/history.html#horoscope)
 2. Understand its [structure and contents](https://docs.thinktandem.io/guides/improve-tandem.html#understanding-the-structure)
 3. Understand how to use its [process of self-improvement](https://docs.thinktandem.io/guides/improve-tandem.html#suggesting-a-change)
-4. Understand how [it is managed](https://tandem-docs.lndo.site/guides/improve-tandem.html#managing-the-process) and how to [choose issues to work on](https://tandem-docs.lndo.site/guides/improve-tandem.html#choosing-an-issue)
+4. Understand how [it is managed](https://docs.thinktandem.io/guides/improve-tandem.html#managing-the-process) and how to [choose issues to work on](https://docs.thinktandem.io/guides/improve-tandem.html#choosing-an-issue)
 5. [Have all the tools you need to develop](https://docs.thinktandem.io/handbook/tools.html)
 6. Have a decent idea about [how Lando works](https://docs.devwithlando.io/started.html)
 7. Understand how to [contribute code to it](https://docs.thinktandem.io/guides/contributing-code.html)
