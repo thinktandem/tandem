@@ -1,5 +1,5 @@
 ---
-name: Proposal - Manifest
+name: Proposal - Manifesto
 about: A proposal to improve our company manifesto
 labels: proposal, manifest
 ---
