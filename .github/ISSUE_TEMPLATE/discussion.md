@@ -1,7 +1,7 @@
 ---
-name: Documentation Change
-about: Create a documentation issue or request
-labels: documentation
+name: Discussion
+about: An action item that demands a conversation on how to proceed
+labels: action item, discussion
 ---
 
 Please complete the following:
