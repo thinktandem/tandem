@@ -14,7 +14,7 @@ This means that _on a high level_ someone should be able to go there with an ide
 2. End up with small and actionable tasks that can be advanced by a team slowly and methodically over some time frame
 3. Make contributions into a predefined and obvious structure
 4. Have their contributions automatically deployed to the places where they have the most impact
-5. Improve Tandem by removing repetition, variables and confusion from our work
+5. Improve Tandem by removing repetition, variables and confusion from our work and processes
 
 ## Understanding the specifics
 
@@ -178,9 +178,20 @@ Immediately actionable means that they should provide enough context and detail 
 
 _Generally_, action items should be able to fit into the following categories
 
-#### Bug or improvement
+#### Bug/Improvement
 
-A bug/improvement should describe steps to replicate and then the proposed "fix" or "improvement".
+A bug/improvement should detail steps to replicate a "problem" and then suggest a "fix" or "improvement".
+
+#### Task
+
+A task is something to be done that does not fit as a bug or an improvement. They follow a much looser structure than `bugs` or `proposals`. They should seek to provide the "minimal amount of information required" so that someone else can _get started_ without requiring a ton of feedback. To that end tasks can take various forms such as ...
+
+* A glorified placeholder with an obvious and simple task so that something can be tracked
+* A user story with a list of action items
+* A feature with a rough sketch of a technical architecture and/or implementation
+* A haiku, limmerick or sonnet
+
+Use your best judgment and do not [choose poorly](https://www.youtube.com/watch?v=Ubw5N8iVDHI).
 
 #### Discussion
 
@@ -188,7 +199,7 @@ If you need to _talk it out_ before you submit a proposal or if a proposal deman
 
 #### Note
 
-If you just want a public place to dump some notes so that you can use them later to populate a more actionable thing this is the action item for you.
+If you just want a public place to dump some notes so that you can use them later to submit a more immediately actionable ticket this is the item for you.
 
 ### 2. Proposals
 
@@ -196,7 +207,7 @@ Proposals are generally a way to surface a higher level problem, sketch a rough 
 
 They are differ from [Action Items](#_1-action-items) in that they...
 
-* Can be broken down into disctinc action items
+* Can be broken down into distinct action items
 * Should take many weeks or months to fully resolve
 * Require the contribution of many team members
 * Require a more formal prioritization matrix
@@ -227,19 +238,23 @@ Operations based proposals are best started as a _Guide_ and then progressively 
 
 #### Its products
 
-**TODO:** TBD
+**@TODO:** TBD
 
 ## Managing the process
 
 The formal management around this process should be relatively low-touch and mostly run on its own inertia. _Generally,_ a few proposals and action items should be selected, advanced and completed over the course of a few months ideally under a single focus like "Improving sales" or "Improving DevOps".
 
-Our primary _all hands on deck_ meeting to make this process happen will be at the end of every week eastern time for one hour. The content and agenda of this meeting should change based on where we are in the milestone cycle but should generally follow this pattern:
+Our primary _all hands on deck_ meeting to make this process happen will be at the end of every week eastern time for one hour. All other collaboration and communication should be async with a sprinkling of ad-hoc meetings as deemed necessary.
+
+The content and agenda of our formale Friday meeting should change based on where we are in the milestone cycle but should generally follow this pattern:
 
 **@TODO:** This is a rough sketch that needs to be fleshed out over time.
 
-### 1. Determining focus
+**@TODO:** Should we add rough agendas to each of the below sections to help keep the person managing the meeting on task?
 
-**TODO:** In the immediate term ownership might need to set the focus but we should flesh this out.
+**@TODO:** Eventually we will have a 'Keeper of the faith' role and said keepers should be responsible for leading this process, ideally there is a "high sparrow" and their acolyte or a Rule of Two "master/apprectice" model where the master leads and the apprentice provides backup, redundancy and keeps the master on their toes
+
+### 1. Determining focus
 
 We likely will have casually discussed the next focus of our company building activities beforehand but the first meeting of a _new cycle_ should determine a focus, review the spreadsheet and select priority proposals and action items to advance.
 
@@ -254,24 +269,14 @@ Every proposal and action item should be assigned to at least two people. This s
 
 ### 2. Working, collaborating and showing
 
-Once a focus has been determined and issues assigned, subsequent meetings should focus on progress updates and a show-and-tell of new contributions if applicable. This should also follow a normal standup format of status checks, unblocking blockers, etc.
+Once a focus has been determined and issues assigned, subsequent meetings should focus on progress updates and a show-and-tell of new contributions if applicable.
+
+This should also include normal standup things like status checks, unblocking blockers, etc.
 
 ### 3. Retro and Repopulating
 
 Once the milestone is completed we should take a few weeks to retro and then repopulate the queue with proposals and action items so we can begin anew.
 
-### NON FORMAL MANGEMENT
-
-OTHER THINGS:
-
-* CTO checks in regualrly with people to help them on their assignemnts,
-* "Engineering Managers" meets to discuss stuff
-
-1. friday meeting eventually becomes about showcasing improvements to the business
-2. mike/dustin/meetings ends up being about sprint planning and issue assignment;
-3. mike checkins are about working through assigned issues
-4. update README and other obious material to match new structure
-
 ## Choosing and working on issues
 
-Generally you should work on an issue assigned to you that fits within the currently agrees upon _focus_. However, _everyone_ should be encouraged to work on _Action Items_ that are outside of the focus if they are blocked on things to focus on.
+Generally you should work on an issue assigned to you that fits within the currently agrees upon _focus_ and cycle. However, _everyone_ should be encouraged to work on any _Action Items_ that are outside of the focus if they are motivated.
