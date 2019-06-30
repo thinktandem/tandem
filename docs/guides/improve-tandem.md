@@ -11,10 +11,10 @@ This repository seeks to build on [the lessons learned from _Horoscope_](https:/
 This means that _on a high level_ someone should be able to go there with an idea or suggestion and...
 
 1. Put it through a standardized vetting, prioritization and refinement process
-2. End up with small and actionable tasks that can be advanced by a team slowly and methodically over some time frame
+2. End up with small, actionable and connected tasks that can be advanced by a team slowly and methodically over some time frame
 3. Make contributions into a predefined and obvious structure
 4. Have their contributions automatically deployed to the places where they have the most impact
-5. Improve Tandem by removing repetition, variables and confusion from our work and processes
+5. Improve Tandem by removing repetition, variables and confusion from our work
 
 ## Understanding the specifics
 
@@ -22,7 +22,7 @@ Specifically the repo...
 
 ### 1. Is a single source of truth
 
-This repository should hold _anything_ that makes Tandem run better, faster and stronger but it should do so within a well defined structure so its obvious where things should go. In this way it should act as a intuitively organizied single source of truth for our most important assets.
+This repository should hold _anything_ that makes Tandem run better, faster and stronger but it should do so within a well defined structure so its obvious where things should go. In this way it should act as an intuitively organizied single source of truth for our most important assets.
 
 A caveat to this is we don't want to include anything that should _obviously_ be its own repository. For example things like specific project repositories, start states, seeds, modules, plugins, etc should exist on their own but should also be tied to this repository in some way.
 
@@ -39,15 +39,14 @@ Here are a few specific examples of how we can tie things together:
 * Aforementioned README templates link back to helpful documentation stored here
 * Project start states can pull in new scripts and Lando plugins from here
 
-It's difficult for a human to consistently remember to come back here for the things they need. Let's use the robots to make sure we are shipping things to the most useful places.
+It's difficult for a human to consistently remember to come back here for the things they need. Let's use the robots to make sure we are shipping things from here to the most useful places.
 
-**@TODO:** Would be great to actually have the above things so we can SHOW instead of TELL
-
-**@TODO:** the exact engineering mechanisms around parts of the above of this need to be better deifined and will likely be one of the first things we tackle
+* **@TODO:** Would be great to actually have the above things so we can SHOW instead of TELL
+* **@TODO:** the exact engineering mechanisms around parts of the above of this need to be better defined and will likely be one of the first things we tackle
 
 ### 3. Provides a resilient process
 
-The final piece of the puzzle here is to define a resilient process we all can use to surface business improvements. The process should be
+The final piece of the puzzle here is to define a resilient process we all can use to surface important issues or questions and then work, ideally together, on improving how we do things. The process should be
 
 * Easy to understand and document
 * Require minimal oversight
@@ -55,6 +54,8 @@ The final piece of the puzzle here is to define a resilient process we all can u
 * Run on its own inertia.
 
 It should also provide some "objective" prioritization mechanism and encourage tasks be broken into very small chunks that are worked on in teams of two or more.
+
+* **@TODO:** This needs to be defined and fleshed out a bit more.
 
 ## Understanding the structure
 
@@ -104,24 +105,31 @@ It should contain:
 
 `docs/handbook`
 
-The handbook should be the place for all new employees to get spun up and integrated into the Tandem way with minimal disruption and loss of flow.
+The handbook should be the place for all new employees to get spun up and integrated into the Tandem way with minimal disruption and loss of flow. It may also store other helpful information about the comapny that does not belong as either a Guide or in the Manifesto. For example an enumeration of our sales channels or how our sales process works might fit best in the handbook.
 
 It should contain:
 
 1. The things an employee needs to do on their first day to get rolling
 2. Company policies around benefits, pto, etc
+3. Other relevant materials that do not fit as Guides or within the manifesto
 
 ### Guides
 
 `docs/guides`
 
-Guides should ultimately seek to answer questions like _How do I do X at Tandem?_. They should serve as starting points on the path to increased automation eg we should always be considering how guides can be reduced in size by taking advantage of robots. They should also be written so that if you've never done something before you can still follow them and do a specific task reasonably well.
+Guides should ultimately seek to answer questions like _How do I do X at Tandem?_. They should be written for people trying to do something for the first time. This maximizes team flow by reducing the time spent showing someone how to do something, allows knowledge to be transferred in a standardized way and builds a more resilient and redundant team that more or less does things the same way.
+
+That said, guides should always be just a _starting point_ in the move towards higher levels of automation. We should constantly and continuously be trying to reduce the size, complexity and time spent going through each guide in favor of the robots. To that end we are advantaged if all our guides follow this "Guide Journey":
+
+1. A rough sketch or outline of a process is created
+2. The sketch is fleshed out with helpful details, scripts, templates, etc
+3. The robots are used so that manual steps like running a script, copying a template or populating a backlog are done automatically
 
 ::: tip PRO TIP
-Guides are best written with a singular and specific focus and container withing a singular markdown file. This helps to minimize overlap and confusion while maximizing portability and ease of writing, amongst other things.
+Guides are best written with a singular and specific focus and contained within a singular markdown file. This helps to minimize overlap and confusion while maximizing portability and ease of writing, amongst other things.
 :::
 
-They should contain things like:
+Some examples of guides are things like:
 
 1. How do I spin up a project?
 2. How do I Tandemize an existing project?
@@ -132,7 +140,7 @@ They should contain things like:
 
 `docs/templates`
 
-Templates should act as starting points we use in our projects and products. Ideally they can be pulled directly from here and surfaced in downstream repos so we can make changes in one place and then update things downstream.
+If Guides serve as a high level view of _how_ something should happen then Templates serve as, at least part of, the _what_. This means that templates should be deployable scaffolding for use in various projects and products. Ideally they can be pulled directly from here and surfaced in downstream repos so we can make changes in one place and then update things downstream.
 
 While there is no strict rule around what kinds of templates can live here, here are a few examples:
 
@@ -142,13 +150,15 @@ While there is no strict rule around what kinds of templates can live here, here
 4. Metadata for common tags to use across projects
 5. DevOps templates like `.travis.yml`, `.lando.yml` etc
 
-In the aim of efficiency many templates _should_ try to connect back to other guides contained withint this repo so we can do our best to tie things together.
+In the aim of efficiency many templates _should_ try to connect back to other guides contained within this repo so we can do our best to tie things together.
 
 ### Automation scripts
 
 `scripts`
 
-Scripts or Lando automation that can be used on many projects can live here as well. **TODO:** We still need a good delivery mechanism for this but it would be great to centralize and distribute useful things like
+Scripts or Lando automation that can be used on many projects can live here as well.
+
+* **TODO:** We still need a good delivery mechanism for this but it would be great to centralize and distribute useful things like
 
 1. platform.sh DevOps setup
 2. Project scaffolding scripts eg automatic population of issues, labels, READMEs, etc
@@ -156,127 +166,109 @@ Scripts or Lando automation that can be used on many projects can live here as w
 
 ## Suggesting a change
 
-Suggesting a change is _very_ straightforward. [Create a new issue](https://github.com/thinktandem/tandem/issues/new/choose) and select the type of thing that best matches your suggestion or idea. Then fill out the pre-populated first comment generated by the [issue template](https://help.github.com/en/articles/creating-issue-templates-for-your-repository). In a nutshell: _**that's it!**_
+Suggesting a change is _very_ straightforward. [Create a new issue](https://github.com/thinktandem/tandem/issues/new/choose) and select the type of thing that best matches what you are trying to do. Then fill out the pre-populated first comment generated by the [issue template](https://help.github.com/en/articles/creating-issue-templates-for-your-repository). In a nutshell: _**that's it!**_
 
 That said, here is a bit more context about the _kinds of things_ you can suggest.
 
+### 1. Discussion
+
+Discussions are a way for individuals to surface problems, concerns or ideas that should be worked on collectively. Ultimately, a discussion that is worth its salt should spawn actionable tasks that will improve the business.
+
+That said not every task needs to be generated from a discussion. _Generally_ discussions can be used to...
+
+1. Verify a problem
+2. Validate an idea
+3. Expand or hone thinking on a particular task under consideration
+4. Clarify an extand policy or procedure that is confusing
+5. Discuss things in a forum-like experience
+
+However, they can and should also be used more broadly for anything that benefits from collective ideation and collaboration.
+
 ::: tip PRO TIP
-Note that while `Proposals` oft spawn most `Action Items` they are not fundamentally coupled. Ergo, feel free to submit either!
+You can prompt a discussion using the template in whatever way you think is best but a good format to follow if you are just starting is something like this.
+
+1. A sentence that best describes how this particular discussion helps advance Tandem
+2. A quick sketch of any initial ideas, solutions, etc you may have
+3. A question to prompt comments or feedback
+
+> Example: It's not been super reliable copying/pasting our standard set of project tickets into each new project. This is at a minimum causing a lot of internal confusion and duplicate work and at a maximum inconsistent (or nonexistant) deliverables to our clients. I'm guessing we could probably automate this process using our internal Tandem Lando plugin. Do you guys agree that is the right approach? Can you think of how we can make this as bulletproof as possible?
+>
 :::
 
-### 1. Action Items
 
-Action items are tasks that can be done to fufill a [Proposal](#_2-proposals) or they can exist on their own. They should be...
+### 2. Task
 
-* Well defined, scoped and easy to understand
-* Require only a few hours of time to complete
-* Immediately actionable
+A task is something that is immediately actionable and _generally_ can be completed in 3 story points or less. They should seek to provide the "minimal amount of information required" so that someone else can at least _get started on_ and at most _complete_ the issue without requiring a ton of feedback.
+
+If applicable, they should be created in pairs and linked together so that there is always a "next task" (or discussion!) to do. This ensures that we can slowly and iteratively chain multiple tasks and discussions together towards bigger goals and so that we don't lose momentum or stop improving things prematurely.
+
+Optionally, if you have the [gift of foresight](https://yarn.co/yarn-clip/bdb49678-d85f-42fb-84cb-f48f2610876c) you should feel free to chain as many tasks together as you think makes sense. This could be 7 fully fleshed out tasks that accomplish a larger goal or it could be the minimum 2 tasks where the second task simply sketches out some _ideas_ for the next task. Caveat here is that each task you add to a chain probably diminishes in actionability and accuracy because it's likely things will change as you go through previous tasks. Try to find a good balance.
 
 ::: tip PRO TIP
 Immediately actionable means that they should provide enough context and detail so that anyone can grab one and see them through to completion with minimal to zero help from others.
 :::
 
-_Generally_, action items should be able to fit into the following categories
-
-#### Bug/Improvement
-
-A bug/improvement should detail steps to replicate a "problem" and then suggest a "fix" or "improvement".
-
-#### Task
-
-A task is something to be done that does not fit as a bug or an improvement. They follow a much looser structure than `bugs` or `proposals`. They should seek to provide the "minimal amount of information required" so that someone else can _get started_ without requiring a ton of feedback. To that end tasks can take various forms such as ...
+To that end tasks can take various forms such as...
 
 * A glorified placeholder with an obvious and simple task so that something can be tracked
 * A user story with a list of action items
 * A feature with a rough sketch of a technical architecture and/or implementation
 * A haiku, limmerick or sonnet
 
-Use your best judgment and do not [choose poorly](https://www.youtube.com/watch?v=Ubw5N8iVDHI).
+They should seek to be...
 
-#### Discussion
+* Well defined, scoped and easy to understand
+* Require only a few hours of time to complete
+* Immediately actionable
 
-If you need to _talk it out_ before you submit a proposal or if a proposal demands further discussion this is the action item for you.
+### 3. Note
 
-#### Note
-
-If you just want a public place to dump some notes so that you can use them later to submit a more immediately actionable ticket this is the item for you.
-
-### 2. Proposals
-
-Proposals are generally a way to surface a higher level problem, sketch a rough solution, engage in debate and describe the value of that solution to the org vis-a-vis its goals, roadmap and priorities.
-
-They are differ from [Action Items](#_1-action-items) in that they...
-
-* Can be broken down into distinct action items
-* Should take many weeks or months to fully resolve
-* Require the contribution of many team members
-* Require a more formal prioritization matrix
-
-_Generally_, they should be used to surface bigger ideas about...
-
-#### The business
-
-* How this [repo](https://github.com/thinktandem/tandem) works
-* Our company [Manifesto](/manifesto/)
-* Our [Employee handbook](/handbook/)
-
-#### Its operations
-
-**TODO:** It would be great if we could link the below to somewhere, or validate the list generally
-
-* Sales
-* Discovery
-* DevOps
-* Design
-* Project Management
-* Engineering
-* Misc
-
-:::tip PRO TIP
-Operations based proposals are best started as a _Guide_ and then progressively automated away.
-:::
-
-#### Its products
-
-**@TODO:** TBD
+If you just want a public place to dump some notes so that you can use them later to whatever ends then spin up a note.
 
 ## Managing the process
 
-The formal management around this process should be relatively low-touch and mostly run on its own inertia. _Generally,_ a few proposals and action items should be selected, advanced and completed over the course of a few months ideally under a single focus like "Improving sales" or "Improving DevOps".
+The formal management around our improvement process should be relatively low-touch and mostly run on its own inertia. It will primarily feature an _all hands on deck_ meeting run by the Keeper(s) of the Faith (@todo: link to this role and who occupies the role) at the end of every week eastern time and it will last for one hour.
 
-Our primary _all hands on deck_ meeting to make this process happen will be at the end of every week eastern time for one hour. All other collaboration and communication should be async with a sprinkling of ad-hoc meetings as deemed necessary.
+All other collaboration and communication should be async with a sprinkling of ad-hoc meetings as deemed necessary. The Keeper(s) of the faith will be primarily responsible for managing the Kanban board and function as "project managers" (@todo also link to this role when its up) of the "Tandem product".
 
-The content and agenda of our formale Friday meeting should change based on where we are in the milestone cycle but should generally follow this pattern:
-
-**@TODO:** This is a rough sketch that needs to be fleshed out over time.
-
-**@TODO:** Should we add rough agendas to each of the below sections to help keep the person managing the meeting on task?
-
-**@TODO:** Eventually we will have a 'Keeper of the faith' role and said keepers should be responsible for leading this process, ideally there is a "high sparrow" and their acolyte or a Rule of Two "master/apprectice" model where the master leads and the apprentice provides backup, redundancy and keeps the master on their toes
+The content and agenda of our the formal Friday meeting will change based on where we are in a given cycle but should generally follow this pattern:
 
 ### 1. Determining focus
 
-We likely will have casually discussed the next focus of our company building activities beforehand but the first meeting of a _new cycle_ should determine a focus, review the spreadsheet and select priority proposals and action items to advance.
+We likely will have casually discussed the next focus or milestone of our company building activities beforehand but the first meeting of a _new cycle_ should determine a focus (or two) to advance.
 
 The result of that meeting should be...
 
-* A GitHub milestone with a start, due date and details about the agreed upon focus
-* Issues assigned to people
-
-::: tip PRO TIP
-Every proposal and action item should be assigned to at least two people. This should help ensure momentum via redundancy and also makes sure that at least two people know about the thing @TODO: explain this better
-:::
+* A GitHub milestone (and/or release?) with a start, due date and details about the agreed upon focus
+* A populated backlog with a reasonable amount of story points for the milestone
+* A few initial issues assigned to everyone
 
 ### 2. Working, collaborating and showing
 
-Once a focus has been determined and issues assigned, subsequent meetings should focus on progress updates and a show-and-tell of new contributions if applicable.
+Once a focus has been determined and issues assigned, subsequent meetings should by run in general standup format until the milestone is completed. This should minimally include normal standup things like progress updates from everyone on in progress issues, unblocking blockers, etc but on occasion it may be appropriate to optionally mix in some combination of these things as well:
 
-This should also include normal standup things like status checks, unblocking blockers, etc.
+* **Milestone management** - Are we on pace to achieve the milestone? Do we need to pivot or alter the plan? Is there another pressing milestone or focus that we need to work on concurrently?
+* **Show and tell** - Are their any big ticket things that have been changed that need to be shared in a lunch-and-learn style format?
+* **Discussion** - Are their any discussion issues that have gotten WAY out of control and could benefit from a group chat?
+
+* **TODO:** should we have formal meeting agendas and/or note taking to help this process since they could differ a lot from meeting to meeting?
 
 ### 3. Retro and Repopulating
 
-Once the milestone is completed we should take a few weeks to retro and then repopulate the queue with proposals and action items so we can begin anew.
+Once the milestone is completed we should perform a retrospective on this process and whether we can improve it. If we can then we should spin up a brief cycle with process improvement as the milestone.
 
-## Choosing and working on issues
+* **@TODO**: agenda for this?
 
-Generally you should work on an issue assigned to you that fits within the currently agrees upon _focus_ and cycle. However, _everyone_ should be encouraged to work on any _Action Items_ that are outside of the focus if they are motivated.
+## Choosing and working on tasks
+
+Generally and ideally you should be working with at least one other person on any task(s) assigned to you that are also associated with an active and in-progress milestone. There are a few things to expect there
+
+### 1. Responsibility
+
+If you are the only person assigned to an issue then you are singularly responsible for completing that task. If you are assigned to a task with more than one person _it is up to all the people on the task to figure out how the work gets divvied up_ but regardless of how that happens you are all _equally responsible_ for getting the task done.
+
+### 2. Staying active
+
+There will be circumstances where you are not assigned to any tasks but you have time to work on stuff. In these situations you should self-assign a ticket within an in-progress milestone. Ideally, you will also find at least one other person to work on the issue with you. Obviously _ask them_ if they want to work on it with you ;)
+
+In some circumstances there will be no tickets in the current milestone(s) that you can advance either because the milestone is almost done or because you are not sure how to advance the task. In these situations you should select _any_ ticket that you feel capable of advancing. Obviously use your best judgment to select a ticket that will bring value to Tandem as soon as possible. Tasks labeled as `one-off` may be great first candidates.
