@@ -1,16 +1,18 @@
 ---
 name: Discussion
-about: A discussion to help advance a proposal or action item
-labels: action item, discussion
+about: Any prompt that kicks off a discussion about a particular issue, problem or idea. It's the starting point on the journey towards converting thoughts to actionable tasks.
+labels: discussion
 ---
 
-Make sure you have read about the [different kinds of tickets](https://tandem-docs.lndo.site/guides/improve-tandem.html#suggesting-a-change) and then complete the following questions
+## Prompt
 
-1. Now [what shall we talk about?](https://www.youtube.com/watch?v=zyZ5GVUSQuU) This is probably best expressed as a simple proposition and then a question. Try to make both as narrowly scoped and simple as possible. Remember that ideally the discussion can be resolved async in this issue and done in less than 3 story points.
+> Example: A lack of standard and well-defined GitHub issues we can share across projects is causing unneeded confusion and overhead. Should we have some standard labels? What should they be?
+>
+> [Here are some good guideliness for writing out discussions](https://docs.thinktandem.io/guides/improve-tandem.html#_1-discussion)
 
-> Example: I'm wondering whether we should change the maximum upperbound on story points for discussions from 3 to 5. But i'm worried that would hurt our througput and slow our intertia. What do you guys think?
+## Ticket Checklist
 
-2. Make sure you complete the following checklist
+Make sure you complete the following checklist
 
-- [ ] I've selected the label that _best_ describes what part of the business this ticket improves eg `sales`, `dev`, etc
-- [ ] I've added a story point estimation. **This should never exceed 3!!!**
+- [ ] I'm aware of [what a discussion actually entails](https://docs.thinktandem.io/guides/improve-tandem.html#suggesting-a-change)
+- [ ] I've selected _at most_ two labels that _best_ describe what part of the business this ticket improves eg `sales`, `dev`, etc
