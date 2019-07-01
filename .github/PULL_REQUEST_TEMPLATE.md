@@ -62,3 +62,9 @@ I've completed the following tasks and requested changes from the submitter if c
 - [ ] I've manually reviewed the code and it checks out
 - [ ] I've manually validated the acceptance test(s)
 - [ ] I've summoned an additional reviewer if I need a second (or third, or fourth, ... or nth) opinion
+
+## For the Keeper(s) of the Faith
+
+- [ ] We've attempted to find a follow up issue if needed and if needed we've requested it be created
+- [ ] We've verified this does not wildly diverge from our mission, goals, roadmap, values etc
+
