@@ -179,7 +179,7 @@ That said not every task needs to be generated from a discussion. _Generally_ di
 1. Verify a problem
 2. Validate an idea
 3. Expand or hone thinking on a particular task under consideration
-4. Clarify an extand policy or procedure that is confusing
+4. Clarify an extant policy or procedure that is confusing
 5. Discuss things in a forum-like experience
 
 However, they can and should also be used more broadly for anything that benefits from collective ideation and collaboration.
