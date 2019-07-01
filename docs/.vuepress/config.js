@@ -21,8 +21,22 @@ module.exports = {
     ],
     sidebar: {
       '/manifesto/': [
-        '',
-        'history',
+        {
+          title: 'Overview',
+          collapsable: false,
+          children: [
+            'mission',
+            'goals',
+            'roadmap'
+          ],
+        },
+        {
+          title: 'History',
+          collapsable: false,
+          children: [
+            'horoscope'
+          ],
+        },
         'values',
         'roles',
         'org',
@@ -41,7 +55,7 @@ module.exports = {
           collapsable: false,
           children: [
             'improve-tandem'
-          ]
+          ],
         },
         {
           title: 'Code lifecycle',
@@ -49,9 +63,9 @@ module.exports = {
           children: [
             'contributing-code',
             'qaing-code'
-          ]
+          ],
         },
-      ]
+      ],
     }
   }
 }

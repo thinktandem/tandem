@@ -1,6 +1,4 @@
-# History
-
-## Horoscope
+# Horoscope
 
 Pretty shortly after we started Tandem we spun up a Git repository named [_Horoscope_](https://github.com/thinktandem/horoscope). It contained our company handbook and the things we wanted to do to build out Tandem as an organization. We'd get together every Friday and talk about problems surfaced in recent client work and how we could improve them. Then we'd set some priorities, assign some tickets and in the downtime between client projects work to improve Tandem as a business.
 
@@ -10,20 +8,20 @@ As a result we ended up with important and valuable assets distributed across th
 
 Even still, there was a lot that went very right with _Horoscope_. It was able to power a good deal of our first iteration of Tandem. Looking back though, it's fairly easy to identify three pretty big things that we got wrong.
 
-### 1. No no no! This one goes there! That one goes there! Right?
+## 1. No no no! This one goes there! That one goes there! Right?
 
 At it's essence _Horoscope_ was basically a collection of markdown documentation. While not initially designed to be _just_ that, a lack of clear
 guidelines about _what kinds of things_ should live in it greatly hampered its utility and helped cause the aforementioned Diaspora of value.
 
 If someone wanted to contribute important non-documentation assets back into the business it wasn't clear where they should do that.
 
-### 2. I am a rock. I am an island
+## 2. I am a rock. I am an island
 
 That said, and even if we _had_ clearly defined what kinds of things should belong in _Horoscope_ it existed on an island, detached from the day to day hustle of an agency. This meant there was no real way to disseminate materials contained within _Horoscope_ so they were front in center in our most pressing work.
 
 If someone wanted to add a useful cross-project script or guide back to the repo it wasn't clear how that asset could then be distributed to where it needed to go to be useful.
 
-### 3. If you fail to plan; you plan to fail
+## 3. If you fail to plan; you plan to fail
 
 The final major flaw of _Horoscope_ was in how it figured out what to do next. An everything-goes submit-whatever paradigm was manageable when a decent amount of time was dedicated to sifting through things but it often produced disjointed tasks, impossibly hard to advance tickets like "redo our website" and a fairly subjective prioritization mechanism.
 

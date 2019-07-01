@@ -18,11 +18,13 @@ labels: task
 - [ ] I've added a story point estimation. **This should never exceed 3!!!**
 - [ ] I've created a follow up task or discussion and linked to it in the section below or labeled this as a "one-off" task if there is no follow up task
 
-## Next task(s)
+## Next steps(s)
 
-Paste in a link to the task/discussion that should be done after this one is merged. You should _always_ try to find a "next thing" that can be done to improve things even more.
+Paste in a link to any tasks or discussions that should be done after this one is merged. You should _always_ try to find a "next thing" (or more) that can be done to continue the chain of progress.
 
 > Example:
-> - [ ] Description of next task 1 #link-to-that task
-
-
+> - [ ] Description of a next ticket #link-to-that-ticket
+> - [ ] Description of another ticket if applicable #link-to-that-ticket
+> - [ ] Description of another ticket if applicable #link-to-that-ticket
+> - [ ] ...
+> - [ ] Description of Nth ticket if applicable #link-to-that-ticket
