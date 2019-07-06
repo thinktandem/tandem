@@ -195,7 +195,6 @@ You can prompt a discussion using the template in whatever way you think is best
 >
 :::
 
-
 ### 2. Task
 
 A task is something that is immediately actionable and _generally_ can be completed in 3 story points or less. They should seek to provide the "minimal amount of information required" so that someone else can at least _get started on_ and at most _complete_ the issue without requiring a ton of feedback.
@@ -245,7 +244,7 @@ The result of that meeting should be...
 
 ### 2. Working, collaborating and showing
 
-Once a focus has been determined and issues assigned, subsequent meetings should by run in general standup format until the milestone is completed. This should minimally include normal standup things like progress updates from everyone on in progress issues, unblocking blockers, etc but on occasion it may be appropriate to optionally mix in some combination of these things as well:
+Once a focus has been determined and _tasks_ assigned, subsequent meetings should by run in general standup format until the milestone is completed. This should minimally include normal standup things like progress updates from everyone on in progress issues, unblocking blockers, etc but on occasion it may be appropriate to optionally mix in some combination of these things as well:
 
 * **Milestone management** - Are we on pace to achieve the milestone? Do we need to pivot or alter the plan? Is there another pressing milestone or focus that we need to work on concurrently?
 * **Show and tell** - Are their any big ticket things that have been changed that need to be shared in a lunch-and-learn style format?

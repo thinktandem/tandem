@@ -15,6 +15,8 @@ labels: discussion
 Make sure you complete the following checklist
 
 - [ ] I'm aware of [what a discussion actually entails](https://docs.thinktandem.io/guides/improve-tandem.html#suggesting-a-change)
+- [ ] I've assigned this task to myself and one of the Keepers of the Faith
+- [ ] I've **not** set a story point estimation
 - [ ] I've selected _at most_ two labels that _best_ describe what part of the business this ticket improves eg `sales`, `dev`, etc
 
 ## Ping some folks!
