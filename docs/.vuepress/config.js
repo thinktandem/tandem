@@ -31,15 +31,21 @@ module.exports = {
           ],
         },
         {
+          title: 'Values',
+          collapsable: false,
+          children: [
+            'values'
+          ],
+        },
+        'roles',
+        'org',
+        {
           title: 'History',
           collapsable: false,
           children: [
             'horoscope'
           ],
         },
-        'values',
-        'roles',
-        'org',
       ],
       '/handbook/': [
         '',
