@@ -15,4 +15,21 @@ labels: discussion
 Make sure you complete the following checklist
 
 - [ ] I'm aware of [what a discussion actually entails](https://docs.thinktandem.io/guides/improve-tandem.html#suggesting-a-change)
+- [ ] I've assigned this task to myself and one of the Keepers of the Faith
+- [ ] I've **not** set a story point estimation
 - [ ] I've selected _at most_ two labels that _best_ describe what part of the business this ticket improves eg `sales`, `dev`, etc
+
+## Ping some folks!
+
+Discussions only work when people _actually discuss_. To aid that process it's worth pinging the people who you think might be most interested in contributing to the discussion. Do that here!
+
+> Example: Hey @person1, @person2, ... and @personN! Tell me what you think!
+
+## Follow up tasks
+
+If this discussion spawns additional tickets it might be worth dropping them here once they are ready to go.
+
+> Example:
+> - [ ] #12
+> - [ ] #48
+

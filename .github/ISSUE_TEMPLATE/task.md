@@ -17,6 +17,7 @@ labels: task
 - [ ] I've selected _at most_ two labels that _best_ describe what part of the business this ticket improves eg `sales`, `dev`, etc
 - [ ] I've added a story point estimation. **This should never exceed 3!!!**
 - [ ] I've created a follow up task or discussion and linked to it in the section below or labeled this as a "one-off" task if there is no follow up task
+- [ ] I've also gone into any applicable follow up tasks and [set this issue as a dependency](https://help.zenhub.com/support/solutions/articles/43000010349-create-github-issue-dependencies)
 
 ## Next steps(s)
 
