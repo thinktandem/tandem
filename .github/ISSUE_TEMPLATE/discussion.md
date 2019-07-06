@@ -22,3 +22,12 @@ Make sure you complete the following checklist
 Discussions only work when people _actually discuss_. To aid that process it's worth pinging the people who you think might be most interested in contributing to the discussion. Do that here!
 
 > Example: Hey @person1, @person2, ... and @personN! Tell me what you think!
+
+## Follow up tasks
+
+If this discussion spawns additional tickets it might be worth dropping them here once they are ready to go.
+
+> Example:
+> - [ ] #12
+> - [ ] #48
+
