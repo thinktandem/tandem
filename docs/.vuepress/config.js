@@ -21,31 +21,13 @@ module.exports = {
     ],
     sidebar: {
       '/manifesto/': [
-        {
-          title: 'Overview',
-          collapsable: false,
-          children: [
-            'mission',
-            'goals',
-            'roadmap'
-          ],
-        },
-        {
-          title: 'Values',
-          collapsable: false,
-          children: [
-            'values'
-          ],
-        },
+        '',
+        'roadmap',
+        'values',
         'roles',
         'org',
-        {
-          title: 'History',
-          collapsable: false,
-          children: [
-            'horoscope'
-          ],
-        },
+        'history',
+        'tandemv1',
       ],
       '/handbook/': [
         '',

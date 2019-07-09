@@ -1,4 +1,4 @@
-# Horoscope
+# Tandem Version 1
 
 Pretty shortly after we started Tandem we spun up a Git repository named [_Horoscope_](https://github.com/thinktandem/horoscope). It contained our company handbook and the things we wanted to do to build out Tandem as an organization. We'd get together every Friday and talk about problems surfaced in recent client work and how we could improve them. Then we'd set some priorities, assign some tickets and in the downtime between client projects work to improve Tandem as a business.
 
