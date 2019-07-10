@@ -32,7 +32,7 @@ Therefore, the more time we can spend on the right things the more we can achiev
 
 We do this by always striving to do the _right amount_ of the _right thing_ at the _right time_ and for the _right reasons_. Doing so greatly reduces collective stress, improve relationships and encourages work-life balance.
 
-We also invest _way_ more time on things that are less likely to change long term instead of [flavors of the week.](https://www.youtube.com/watch?v=uAmINmjpQxw) This is to say we focus on building _robust systems_ and _resilient institutions_ that can stand the test of time instead of the brittle or fickle.
+We also invest _way_ more time on things that are unlikely to change long term instead of [flavors of the week.](https://www.youtube.com/watch?v=uAmINmjpQxw) This is to say we focus on building _robust systems_ and _resilient institutions_ that can stand the test of time instead of the brittle or fickle.
 
 ## Treating people like adults
 
@@ -48,7 +48,7 @@ To facilitate this we've built an environment that encourages honesty, transpare
 
 People are most productive when they are _in the zone_; focused intently on a single thing with minimal, ideally zero, distractions. The more people we keep _in the zone_ the more serious damage we can do as a company.
 
-In order to do this we need a team of autonomous and excellent communicators who understand not only the roles we all play but how those roles come together within a standardized process to reach a clear objective. Perhaps more importanly, it requires _trust_. Trust that more often than not we all _do our jobs._
+In order to do this we need a team of autonomous and excellent communicators who understand not only the roles we all play but how those roles come together within a standardized process to reach a clear objective. Perhaps more importantly, it requires _trust_. Trust that, more often than not, we all _do our jobs._
 
 We also try to maximize flow by minimizing meetings in favor of structured async communication, by sharing knowledge to build redundancy and by continually removing confusion, variables, moving parts and duplication from the equation.
 
