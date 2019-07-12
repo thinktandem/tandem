@@ -18,20 +18,20 @@ And through it all we've had a great time!!!
 
 > [So cool!](https://media1.tenor.com/images/731e2e6f4fa66bb743684245f8f6d25f/tenor.gif?itemid=11811009) but agency-incubators like [37Signals](https://37signals.com/) are not a super unique thing. What makes Tandem different?
 
-Tandem exists as an agency because it believes clients deserve more than an agency doing more billable hours.
+Tandem exists as an agency because it believes clients deserve better than an agency doing more billable hours.
 
 Tandem exists as a product incubator because it believes the best products come from a team doing things on its own terms and not from venture capital overlords.
 
-As both, Tandem believes that client work inspires great product ideas and that clients get more value from great products.
+As both agency and incubator, Tandem believes that client work inspires great product ideas and that clients get more value from great products.
 
-To that end we strive to reach _the singularity_ where our client work and products become indistinguishable from one another.
+To that end we strive to reach [_the singularity_](https://www.youtube.com/watch?v=sgkDoSbHHVU) where our client work and products slowly move towards one another until they eventually combine, go supernova and thereafter become indistinguishable from one another.
 
 ## What do we do?
 
 In order to collapse client work and products into _the singularity_ you need to be slowly removing repeatable parts of client work into turning them into _products_; things that can be done consistently in a given amount of time.
 
-The more you do this the more you can increasingly bill clients for _value_, what they actually get, instead of _time_, how long it took them to get it. As _value_ grows as a larger percentage of the total bill the agency generates higher revenue per hour, and the client sees significantly reduces costs.
+The more you do this the more you can increasingly bill clients for _value_, what they actually get, instead of _time_, how long it took them to get it. As _value_ grows as a larger percentage of the total bill the agency generates higher revenue per hour, and the client sees significantly reduces costs eg _everyone wins._
 
-Higher agency revenue per hour means more time to _make more products_ and a positive feedback loop has been established.
+Higher agency revenue per hour means _more free time_. More free time means _more products_. More products means _higher agency revenue per hour_. Positive feedback loop established.
 
-Of course this process only succeeds if we [take the time and do it right](./values.md).
+Of course this process only succeeds if we [do it right](./values.md).
