@@ -28,38 +28,10 @@ To that end we strive to reach _the singularity_ where our client work and produ
 
 ## What do we do?
 
-In order to collapse client work and products into _the singularity_ you need to be slowly turning repeatable parts of client work into _products_ that can be done consistently in a given amount of time. This allows you to bill for _value_ instead of _time_ which should _always_ deliver lower costs to the client and higher revenue per hour to the agency. This process should continually maximize revenue for the agency and by extension afford it additional time to _make more products_.
+In order to collapse client work and products into _the singularity_ you need to be slowly removing repeatable parts of client work into turning them into _products_; things that can be done consistently in a given amount of time.
 
-nd then
+The more you do this the more you can increasingly bill clients for _value_, what they actually get, instead of _time_, how long it took them to get it. As _value_ grows as a larger percentage of the total bill the agency generates higher revenue per hour, and the client sees significantly reduces costs.
 
-This is mostly possible
+Higher agency revenue per hour means more time to _make more products_ and a positive feedback loop has been established.
 
-Fundamentally, we do it by [living our values]
-
-
-* To build a company that can fund its own "startups" without the mind-forged-manacles of VC money, control our own destiny without losing whats imporant to us
-
-HOW DO WE DO IT
-As an agency we provide maximum value to clients per billable hour. As an incubator it takes the profits from its agency work and "angel funds" _company-agree-upon_ products. It does both _in tandem_. This means that
-
- fast, efficient and high quality agency services
-
-uses agency consulting fees to "angel fund" _company-agree-upon_ product ideas and leverages
-
-been-there-done-it team to incubate company-agree-upon products that both make the agency better but also can be offered as passive revenue generating stand-alone services.
-
-* maximize fees by providing value
-* using those fees to generate products that furthers maximization but also can be sold as stand alone SaaSy services.
-* To deliver maximum value to clients and benefit from that, eg the better we do the more we both make more PER HOUR and get clients shit better, stronger, faster sooner,
-* To build a positive feedback loop between the two things so that agency work gives us clear data about good product ideas and our good product ideas make our agency even better.
-
-### Agency
-
-* full life cycle engagements
-* targeted engagements (geared around products)
-* support
-* drupal (6,7,8, decoupled, progressive), wordpress, laravel, symfony, vue.js
-
-### Product
-
-* thigns that improve agency/dev productivity
+Of course this process only succeeds if we [take the time and do it right](./values.md).
