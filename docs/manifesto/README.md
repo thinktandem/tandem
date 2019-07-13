@@ -18,9 +18,9 @@ And through it all we've had a great time!!!
 
 > [So cool!](https://media1.tenor.com/images/731e2e6f4fa66bb743684245f8f6d25f/tenor.gif?itemid=11811009) but agency-incubators like [37Signals](https://37signals.com/) are not a super unique thing. What makes Tandem different?
 
-Tandem exists as an agency because it believes clients deserve better than an agency doing more billable hours.
+Tandem exists as an agency because it believes clients prefer paying for _value_ instead of _billable hours_. This is to say clients prefer to pay _for stuff_ instead of the _time_ to make said _stuff_.
 
-Tandem exists as a product incubator because it believes the best products come from a team doing things on its own terms and not from venture capital overlords.
+Tandem exists as a product incubator because it believes the _best products_ come from a team doing things on its _own terms_, that _chooses its own destiny_ and is not beholden to the will of venture capital overlords.
 
 As both agency and incubator, Tandem believes that client work inspires great product ideas and that clients get more value from great products.
 
