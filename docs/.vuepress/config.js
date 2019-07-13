@@ -22,8 +22,8 @@ module.exports = {
     sidebar: {
       '/manifesto/': [
         '',
-        'roadmap',
         'values',
+        'roadmap',
         'roles',
         'org',
         'history',
