@@ -47,7 +47,7 @@ Are the employee’s work methods and approach to accomplishing their job effect
 
 Are there areas of improvement that you would recommend for this employee that would help them accomplish their work more effectively? Or, are there areas of improvement that would help you accomplish your work more effectively?
 
-# Manager Review Metrics
+## Manager Review Metrics
 
 The team member's director should help collate the following metrics.
 
