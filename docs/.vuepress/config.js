@@ -42,7 +42,14 @@ module.exports = {
           title: 'Business',
           collapsable: false,
           children: [
-            'improve-tandem'
+            'improve-tandem',
+          ],
+        },
+        {
+          title: 'Sales',
+          collapsable: false,
+          children: [
+            'invoicing',
           ],
         },
         {
@@ -51,6 +58,13 @@ module.exports = {
           children: [
             'contributing-code',
             'qaing-code'
+          ],
+        },
+        {
+          title: 'Hiring',
+          collapsable: false,
+          children: [
+            'reference-check',
           ],
         },
       ],
