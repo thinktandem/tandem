@@ -43,6 +43,7 @@ module.exports = {
           collapsable: false,
           children: [
             'improve-tandem',
+            'quarterly-review',
           ],
         },
         {
