@@ -23,6 +23,7 @@ module.exports = {
       '/manifesto/': [
         '',
         'values',
+        'sins',
         'roadmap',
         'roles',
         'org',
