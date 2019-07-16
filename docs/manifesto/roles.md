@@ -1,9 +1,8 @@
 # Roles and Responsibilities
 
-Here are specific (Project Manager) and generic (Executives) roles and responsibilities across three different spaces.
+Here are the roles we responsibilities we currently have. These can be similar to but are distinct from certain roles you could have on a given project.
 
-@TODO: it might be nice to link to a specific project based roles but im guessing those things would be better served elsewhere?
-currently we've got this [old doc](https://docs.v1.thinktandem.io/project-management/roles-responsibilities.html)
+## Owner
 
 ## CEO
 
@@ -14,6 +13,8 @@ currently we've got this [old doc](https://docs.v1.thinktandem.io/project-manage
 ## Director of Sales
 
 ## Director of Technology
+
+## Director of Marketing
 
 ## Administrative Assistant
 

@@ -4,11 +4,13 @@ Here is a [depth chart](https://en.wikipedia.org/wiki/Depth_chart) of current Ta
 
 | Position                     | Current Holder(s)                      | Backups                               |
 | ------------                 | ------------------                     | ----------------                      |
+| Owner                        | Alec Reynolds <br /> Mike Pirog        | :(                                    |
 | CEO                          | Alec Reynolds                          | Mike Pirog <br /> Dustin LeBlanc      |
 | CTO                          | Mike Pirog                             | Alec Reynolds<br /> Mike Milano       |
 | Director of Operations       | Mike Pirog                             | Dustin LeBlanc                        |
 | Director of Sales            | Alec Reynolds                          | John Ouellet                          |
 | Director of Technology       | Mike Pirog                             | Mike Milano                           |
+| Director of Marketing        | Alec Reynolds                          | Mike Pirog                            |
 | Designer                     | Nica Lorber                            | :(                                    |
 | Strategist                   | Nica Lorber                            | Alec Reynolds                         |
 | Project Manager              | Dustin LeBlanc <br /> Alec Reynolds    | Mike Pirog <br /> Mike Milano         |
