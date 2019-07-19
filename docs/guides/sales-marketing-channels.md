@@ -1,4 +1,4 @@
-# Marketing Channels
+# Sales & Marketing Channels
 
 ## Website
 
@@ -23,6 +23,8 @@ After the homepage, our most popular pieces of content are developer-centric blo
 
 ## Social Media
 
+Find a place online where our target personas gather. Infiltrate it. Ask questions, start conversations, and present our services as solutions.
+
 ### LinkedIn
 
 Where we can share longer-form comments on the things we're reading, thinking, and saying. Professional audience that can potentially include all our target personas. Very little traffic currently.
@@ -31,12 +33,22 @@ Where we can share longer-form comments on the things we're reading, thinking, a
 
 Short-form comments that form our "digital pulse:" shows Tandem is alive and kicking to the world. Engages more with developers and fellow thinkers in our industry. Potential clients will be impressed to see that we're participating in conversation that is relevant to them.
 
-## Outbound Emails
+## Cold Email Campaigns
 
-Reach-out to targeted individuals who may be interested in our services. Best contact is providing a link to a microproduct or blog article that can start delivering value to these people immediately.
+Target audiences based on industry, location, technologies we know they use, interests, etc and reach out to them with relevant emails that start a conversation.
 
 ## Microproducts
 
 Concise products that help our target personas perform needed tasks. These are marketing tools that we can publicize or suggest, allowing potential clients to get immediate value from us and see how a large engagement with Tandem could be beneficial.
 
-Current example is Lando: organizations try out Lando after having it recommended by a partner like Pantheon or by one of their developers. Ideally, they see how engaging with Tandem to improve other pieces of their development process would be advantageous.
+### Lando
+
+Use the trust established by providing Lando to nurture leads through email, events, and other channels.
+
+## Events
+
+Find events where our personas gather. Try to become speakers and influencers at these events. Attend them, gathering lists of attendees before-hand to schedule meetings at the event.
+
+## Community + Partnerships
+
+Get leads from being a partner of specific organizations (hosting companies/CRMs/Etc.) and being leading contributors on projects like Drupal.

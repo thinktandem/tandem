@@ -12,7 +12,8 @@
 ## Sales operations
 
 * [Ultimate Goals](./ultimate-goals.md)
-* [Marketing Channels](./marketing-channels.md)
+* [Sales & Marketing Channels](./sales-marketing-channels.md)
+* [Audiences & Personas](./audiences-personas.md)
 * [Sales Scripts](./sales-scripts.md)
 
 ## Legacy guides

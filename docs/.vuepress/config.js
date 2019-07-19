@@ -59,7 +59,8 @@ module.exports = {
           collapsable: false,
           children: [
             'ultimate-goals',
-            'marketing-channels',
+            'sales-marketing-channels',
+            'audiences-personas',
             'sales-scripts'
           ],
         },
