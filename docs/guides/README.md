@@ -11,6 +11,7 @@
 
 ## Sales operations
 
+* [Ultimate Goals](./ultimate-goals.md)
 * [Marketing Channels](./marketing-channels.md)
 * [Sales Scripts](./sales-scripts.md)
 

@@ -58,6 +58,7 @@ module.exports = {
           title: 'Sales operations',
           collapsable: false,
           children: [
+            'ultimate-goals',
             'marketing-channels',
             'sales-scripts'
           ],
