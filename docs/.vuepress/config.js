@@ -54,6 +54,13 @@ module.exports = {
             'qaing-code'
           ],
         },
+        {
+          title: 'Sales operations',
+          collapsable: false,
+          children: [
+            'marketing-channels'
+          ],
+        },
       ],
     }
   }

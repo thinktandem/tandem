@@ -9,6 +9,10 @@
 * [How do I contribute code?](./contributing-code.md)
 * [How do I QA and deploy code?](./qaing-code.md)
 
+## Sales operations
+
+* [Marketing Channels](./marketing-channels.md)
+
 ## Legacy guides
 
 **@NOTE:** the user/pass for the legacy docs is `tandem:tandem`.
@@ -26,10 +30,10 @@
 * Selecting the right tool for the right job? - <https://docs.v1.thinktandem.io/coding/common-tools.html> - (@todo: change this to be our "tech inventory" eg tools and solutions we use for specific things, eg lando for local, vue for js frontend, vuepress for docs, minimus for d8 start states)
 * Spinning up a new project - <https://docs.v1.thinktandem.io/coding/devops.html> (@todo: this should also include filling out README.md templates/readmes/architecture plan etc)
 * "Managing projects" - <https://docs.v1.thinktandem.io/project-management/project-lifecycle.html> (@todo: guessing we want to break this up into multiple guides client qualification, discovery/requirements gathering, dev design handoff, project estimation, sprint planning, etc)
-* Sales - <https://docs.v1.thinktandem.io/marketing/marketing-channels.html>
+* ~~Sales - <https://docs.v1.thinktandem.io/marketing/marketing-channels.html>~~
 * Identifying prospects - <https://docs.v1.thinktandem.io/sales/customer-profiles.html>
 * Sales calls (scripts) - <https://docs.v1.thinktandem.io/sales/sales-script.html>
-* Writigin FRPs - <https://docs.v1.thinktandem.io/sales/rfp-process.html>
+* Writing FRPs - <https://docs.v1.thinktandem.io/sales/rfp-process.html>
 * Doing potential hire interviews
 * sending invoices - <https://docs.v1.thinktandem.io/managing/invoicing.html>
 * conducting quarterly reviews
