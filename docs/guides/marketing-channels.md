@@ -1,7 +1,6 @@
 # Marketing Channels
 
-Website
--------
+## Website
 
 Our main marketing presence. Most of our effort should go into making this a succinct statement of why you should work with Tandem.
 
@@ -22,8 +21,7 @@ After the homepage, our most popular pieces of content are developer-centric blo
 
 * \# of people following us on Twitter/LinkedIn after visiting
 
-Social Media
-------------
+## Social Media
 
 ### LinkedIn
 
@@ -33,13 +31,11 @@ Where we can share longer-form comments on the things we're reading, thinking, a
 
 Short-form comments that form our "digital pulse:" shows Tandem is alive and kicking to the world. Engages more with developers and fellow thinkers in our industry. Potential clients will be impressed to see that we're participating in conversation that is relevant to them.
 
-Outbound Emails
----------------
+## Outbound Emails
 
 Reach-out to targeted individuals who may be interested in our services. Best contact is providing a link to a microproduct or blog article that can start delivering value to these people immediately.
 
-Microproducts
--------------
+## Microproducts
 
 Concise products that help our target personas perform needed tasks. These are marketing tools that we can publicize or suggest, allowing potential clients to get immediate value from us and see how a large engagement with Tandem could be beneficial.
 

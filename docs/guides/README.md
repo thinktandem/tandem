@@ -12,6 +12,7 @@
 ## Sales operations
 
 * [Marketing Channels](./marketing-channels.md)
+* [Sales Scripts](./sales-scripts.md)
 
 ## Legacy guides
 
@@ -32,7 +33,7 @@
 * "Managing projects" - <https://docs.v1.thinktandem.io/project-management/project-lifecycle.html> (@todo: guessing we want to break this up into multiple guides client qualification, discovery/requirements gathering, dev design handoff, project estimation, sprint planning, etc)
 * ~~Sales - <https://docs.v1.thinktandem.io/marketing/marketing-channels.html>~~
 * Identifying prospects - <https://docs.v1.thinktandem.io/sales/customer-profiles.html>
-* Sales calls (scripts) - <https://docs.v1.thinktandem.io/sales/sales-script.html>
+* ~~Sales calls (scripts) - <https://docs.v1.thinktandem.io/sales/sales-script.html>~~
 * Writing FRPs - <https://docs.v1.thinktandem.io/sales/rfp-process.html>
 * Doing potential hire interviews
 * sending invoices - <https://docs.v1.thinktandem.io/managing/invoicing.html>
