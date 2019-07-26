@@ -32,13 +32,23 @@ The first step in the project lifecycle is doing our due dilligence to ensure th
 
 Before we get into the nitty gritty of making things, we want to get a brief bird's eye view of what the client knows about their needs at the beginning of the enagagement. This should not be the Mona Lisa, this should be a really well thought out napkin sketch. All the pieces we know about should be there, but they can and **should** remain fuzzy. We want to get a sense of:
 
-*   The client's *current* understanding of their requirements
-*   The most significant needs of our engagement.
-*   How much time we have to work (and by extension the budget).
+*   The client's *current* understanding of their requirements, possibly including:
+    -   Who are the system's users?
+    -   What is the brand identity of the organization?
+    -   What actions will users take in the system that we know of?
+    -   What 20% of the potential features look to hold 80% of the value?
+*   How much time we have to work (and by extension the budget). This should inform a good estimate of how much we can accomplish of the current requirements.
 
 Based on the above, if required by the engagement, we should create a project estimate for the client and associated statement of work, etc.
 
 What we **don't** want to do is create detailed designs or requirements documentation. We don't want to skew the iterative process with shiny objects that aren't working usable software. We don't want to invest too much time into requirements that might change after our initial sprints.
+
+Some potential activities of this stage:
+
+*   Creation of user personas to guide further feature discovery
+*   Selection of basic brand elements (typography, color palette) if the client does not have an existing brand (and is not looking to modify it)
+*   Creation of the most important user stories the client can think of, to inform the first few development sprints.
+*   A generalized list of other features that we can see being needed, but we don't know enough about yet to fully sketch out.
 
 ## Getting inside the OODA Loop
 
@@ -52,6 +62,17 @@ This loop is repeated, going down the backlog until one of the following occurs:
 *   The backlog has been exhausted and has not be refilled.
 *   There is a sufficient change to the client's budget or priorities that they need to end the engagement.
 *   The budget or timeline is exhausted.
+
+### An Example sprint
+Tandem is working on the new public site for the University of Portlandia Computer Science department.
+
+The department's biggest pain point is that they often lose bright students to other top teir schools like Stanford. After doing a bit of research, the department has determined that many of these prospective students make their decision based on the stories of legendary graduates of these venerated schools. The CS department feels that spotlighting the success of it's own graduates may help improve the situation.
+
+Tandem's developers and designers meet with the client to flesh out what information the client wants to convey. The types of data like the name of the alumnus, what their job title is, and a long bio/story are discussed, and some preliminary ideas about how to present them are sketched out. The team together goes through a few iterations of the potential fields and layout/interactions with the client, eventually agreeing on a set of fields and visual treatments of the content. The feature is taken from rough sketch to HTML prototype and presented to stakeholders for review. This prototype is fully functional on the front end and can be reviewed with end-users.
+
+Feedback is collected, if the client were comfortable, this could even be deployed before any CMS functionality is handled. Barring production deployment of the static HTML, creation of any unfinished backend work can be completed based on feedback received from the functional front-end.
+
+
 
 ## Great Artists Ship
 
