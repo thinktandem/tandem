@@ -54,6 +54,13 @@ module.exports = {
             'qaing-code'
           ],
         },
+        {
+          title: 'Project Management',
+          collapsable: false,
+          children: [
+            'project-lifecycle'
+          ],
+        },
       ],
     }
   }
