@@ -43,7 +43,19 @@ module.exports = {
           title: 'Business',
           collapsable: false,
           children: [
-            'improve-tandem'
+            'improve-tandem',
+            'quarterly-review',
+          ],
+        },
+        {
+          title: 'Sales',
+          collapsable: false,
+          children: [
+            'ultimate-goals',
+            'sales-marketing-channels',
+            'audiences-personas',
+            'invoicing',
+            'sales-scripts',
           ],
         },
         {
@@ -59,6 +71,13 @@ module.exports = {
           collapsable: false,
           children: [
             'project-lifecycle'
+          ],
+        },
+        {
+          title: 'Hiring',
+          collapsable: false,
+          children: [
+            'reference-check',
           ],
         },
       ],

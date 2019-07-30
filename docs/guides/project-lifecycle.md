@@ -1,4 +1,4 @@
-# Tandem's Expected Project Lifecycle
+# Project Lifecycle
 
 Our projects may range in size, complexity, and duration, but this is our current general framework for the lifecycle of a project.
 
