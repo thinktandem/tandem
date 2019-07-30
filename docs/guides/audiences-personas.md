@@ -4,10 +4,10 @@
 
 While we've worked with a wide-range of industries, most of our portfolio has been in the following verticals:
 
-- Higher Education
-- Healthcare
-- Financial/Insurance
-- Nonprofit/Philanthropic
+* Higher Education
+* Healthcare
+* Financial/Insurance
+* Nonprofit/Philanthropic
 
 ## Personas
 
@@ -19,28 +19,28 @@ Our typical marketing contact is a VP or Director of marketing at a mid-size cor
 
 The fact that the company is large enough to have a VP title is often indicative that they have projects that are complex enough to require our services and the budget to dedicate to them. Other common titles include...
 
-- VP of Marketing
-- Director of Marketing/Communications
+* VP of Marketing
+* Director of Marketing/Communications
 
 **Needs**
 
-- Increase online lead generation.
-- Execute new digital marketing campaigns.
-- Improve overall website performance.
-- Appease internal stakeholders.
-- Find reliable agency for a long term relationship.
-- Digital strategy deliverables like personas, journey maps.
-- Worldclass conversion-oriented design (styleguides, user testing, UX).
+* Increase online lead generation.
+* Execute new digital marketing campaigns.
+* Improve overall website performance.
+* Appease internal stakeholders.
+* Find reliable agency for a long term relationship.
+* Digital strategy deliverables like personas, journey maps.
+* Worldclass conversion-oriented design (styleguides, user testing, UX).
 
 In the private world, we're accustom to seeing additional focus on...
 
-- Personalization.
-- CRM integrations.
+* Personalization.
+* CRM integrations.
 
 In higher education and nonprofits, we've seen...
 
-- Accessibility concerns.
-- Focus on donations (donor management systems and CRMs tailored to fundraising, not sales).
+* Accessibility concerns.
+* Focus on donations (donor management systems and CRMs tailored to fundraising, not sales).
 
 
 ### IT Manager
@@ -49,11 +49,11 @@ Our IT Manager contact has an existing dev team, but it's either too small to ha
 
 Title include...
 
-- CTO
-- IT Director
-- Director of Business Applications
-- Development Manager
-- Web Manager at Financial Institutions
+* CTO
+* IT Director
+* Director of Business Applications
+* Development Manager
+* Web Manager at Financial Institutions
 
 **Needs**
 

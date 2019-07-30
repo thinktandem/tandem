@@ -67,13 +67,6 @@ module.exports = {
           ],
         },
         {
-          title: 'Sales operations',
-          collapsable: false,
-          children: [
-
-          ]
-        },
-        {
           title: 'Hiring',
           collapsable: false,
           children: [
