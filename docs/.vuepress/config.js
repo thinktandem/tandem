@@ -67,6 +67,13 @@ module.exports = {
           ],
         },
         {
+          title: 'Project Management',
+          collapsable: false,
+          children: [
+            'project-lifecycle'
+          ],
+        },
+        {
           title: 'Hiring',
           collapsable: false,
           children: [
