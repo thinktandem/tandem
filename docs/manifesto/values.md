@@ -12,7 +12,7 @@ We put employees first by investing in and encouraging their professional develo
 
 Good companies thrive when they can align the incentives of company, employees, clients and customers across the board. This means tying seemingly unrelated parts of the business together in new and creative ways. Deeper interconnectedness means the benefits of any one thing can ripple-effect to potentially everything else; maximizing impact for all stakeholders.
 
-As an example, agencies typically maximize revenue by billing more hours. Clients generally prefer to bill less. This is bad incentive alignment. Instead, an agency's engineering and sales teams should work together to structure engagements so that when engineering succeeds, clients and agencies do to. This means agencies gets a higher effective hourly rate and the clients get more stuff both sooner and cheaper.
+As an example, agencies typically maximize revenue by billing more hours. Clients generally prefer to be billed less. This is bad incentive alignment. Instead, an agency's engineering and sales teams should work together to structure engagements so that when engineering succeeds, clients and agencies do to. This means agencies gets a higher effective hourly rate and the clients get more stuff both sooner and cheaper.
 
 This incentive alignment also gives employees _more free time_ to spend on our [business improvement process](./../guides/improve-tandem.md), products or other projects; each of which tie back into doing things better, faster, stronger.
 
@@ -30,7 +30,7 @@ Organizations often lose sight of the big picture, do a poor job explaining how 
 
 Therefore, the more time we can spend on the right things the more we can achieve.
 
-We do this by always striving to do the _right amount_ of the _right thing_ at the _right time_ and for the _right reasons_. Doing so greatly reduces collective stress, improve relationships and encourages work-life balance.
+We do this by always striving to do the _right amount_ of the _right thing_ at the _right time_ and for the _right reasons_. Doing so greatly reduces collective stress, improves relationships and encourages work-life balance.
 
 We also invest _way_ more time on things that are unlikely to change long term instead of [flavors of the week.](https://www.youtube.com/watch?v=uAmINmjpQxw) This is to say we focus on building _robust systems_ and _resilient institutions_ that can stand the test of time instead of the brittle or fickle.
 
