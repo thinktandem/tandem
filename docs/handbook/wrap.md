@@ -17,6 +17,7 @@ At this point you should be girded for success so let's [test your metal](https:
 
 ## Have you made made Tandem better?
 
-* Submit a PR adding yourself to the [Tandem website](https://github.com/thinktandem/thinktandem.io)
-* If you cannot do tha above then submit [a task](https://github.com/thinktandem/tandem/issues/new/choose) to get you added to the website.
+* Submit a PR adding yourself to the [Tandem website](https://github.com/thinktandem/thinktandem.io/tree/master/src/content/staff)
+* Submit a PR adding yourself to the [Tandem depth chart](https://github.com/thinktandem/tandem/blob/master/docs/manifesto/org.md)
+* If you cannot do either of the above then submit [a task](https://github.com/thinktandem/tandem/issues/new/choose) to get you added to either/both places.
 * Using the [company improvement process](./../guides/improve-tandem.md) submit [_at least one_](https://github.com/thinktandem/tandem/issues/new/choose) suggested improvement to this handbook.
