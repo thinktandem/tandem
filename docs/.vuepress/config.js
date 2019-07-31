@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Tandem 2.0',
-  description: 'An ancient codex to power agency-incubators that are great to work at and with.',
+  description: 'An ancient codex to power agency-incubators that are magical to work at and with.',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'stylesheet', href: '/styles/overrides.css'}],
