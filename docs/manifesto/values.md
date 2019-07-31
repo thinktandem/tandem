@@ -12,7 +12,7 @@ We put employees first by investing in and encouraging their professional develo
 
 Good companies thrive when they can align the incentives of company, employees, clients and customers across the board. This means tying seemingly unrelated parts of the business together in new and creative ways. Deeper interconnectedness means the benefits of any one thing can ripple-effect to potentially everything else; maximizing impact for all stakeholders.
 
-As an example, agencies typically maximize revenue by billing more hours. Clients generally prefer to bill less. This is bad incentive alignment. Instead, an agency's engineering and sales teams should work together to structure engagements so that when engineering succeeds, clients and agencies do to. This means agencies gets a higher effective hourly rate and the clients get more stuff both sooner and cheaper.
+As an example, agencies typically maximize revenue by billing more hours. Clients generally prefer to be billed less. This is bad incentive alignment. Instead, an agency's engineering and sales teams should work together to structure engagements so that when engineering succeeds, clients and agencies do to. This means agencies gets a higher effective hourly rate and the clients get more stuff both sooner and cheaper.
 
 This incentive alignment also gives employees _more free time_ to spend on our [business improvement process](./../guides/improve-tandem.md), products or other projects; each of which tie back into doing things better, faster, stronger.
 
