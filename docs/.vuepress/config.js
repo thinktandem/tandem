@@ -34,9 +34,8 @@ module.exports = {
         '',
         'onboarding',
         'benefits',
-        'paid',
-        'tracking',
-        'tools',
+        'faq',
+        'wrap',
       ],
       '/guides/': [
         {

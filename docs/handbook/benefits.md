@@ -1,4 +1,4 @@
-# Benefits
+# Understanding Benefits
 
 ## PTO + Sick Time
 
