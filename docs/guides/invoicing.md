@@ -28,7 +28,7 @@ Some clients will request greater detail, which we can provide. However, invoice
 
 **1. Project Manager Reviews Billing Period Hours**
 
-Most Tandem clients are either on a semi-monthly or monthly billing period. Set a recurring calendar event on the day the billing period ends as a reminder to go through all your clients' detailed hour reports in Harvest and make sure...
+Most Tandem clients are billed on a monthly basis. Set a recurring calendar event on the day the billing period ends as a reminder to go through all your clients' detailed hour reports in Harvest and make sure...
 
 * Hours are billed to the correct projects.
 * All hours tracked are associated with a Github issue.
