@@ -1,0 +1,33 @@
+# All Projects
+general:
+  - Perform SEO audit on existing site if any
+  - Perform performance audit on existing site if any
+  - Define and measure (initial) project kpis
+  - Setup project cadence / meetings
+  - Establish Brand Color Palette
+  - Establish Brand Font choices
+  - Create theme/sub-theme (using brand data)
+  - Perform pre-launch SEO check
+  - Perform pre-launch performance check
+  - Ensure measurement of project KPIs works (pre-launch)
+  - Lower DNS TTL
+  - Schedule DNS changes
+  - Discuss post-launch support contract
+
+# Drupal Migration Projects
+migration:
+  - Document current content types & fields
+  - Create migration plan to map ct/fields
+  - Create stories for the creation of new content types / fields
+
+# Drupal 8 Projects
+d8:
+
+# Drupal 7 Projects
+d7:
+
+# Wordpress Projects
+wp:
+
+# Custom Apps (Laravel / Symfony / NodeJS)
+custom:
