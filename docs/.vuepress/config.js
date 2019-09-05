@@ -6,6 +6,7 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: '/styles/overrides.css'}],
   ],
   themeConfig: {
+    ga: 'UA-74237404-2',
     repo: 'thinktandem/tandem',
     repoLabel: 'GitHub',
     docsDir: 'docs',
