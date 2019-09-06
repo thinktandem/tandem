@@ -5,8 +5,8 @@ module.exports = {
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['link', { rel: 'stylesheet', href: '/styles/overrides.css'}],
   ],
+  ga: 'UA-74237404-4',
   themeConfig: {
-    ga: 'UA-74237404-4',
     repo: 'thinktandem/tandem',
     repoLabel: 'GitHub',
     docsDir: 'docs',
