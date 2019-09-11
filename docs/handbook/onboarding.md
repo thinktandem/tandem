@@ -102,6 +102,20 @@ All project repositories at Tandem should contain a [`.lando.yml`](https://docs.
 
 After [installing Lando](https://docs.devwithlando.io/installation/installing.html) we highly recommend doing a pass on the [Lando documentation](https://docs.devwithlando.io/).
 
+### Lando Tandem Plugin
+
+[Plugins](https://docs.lando.dev/contrib/plugins.html) are a way to extend Lando's functionallity. The `lando-tandem` plugin allows us to quickly spin up extant Tandem projects and start new projects from known start states.
+
+You can install the `lando-tandem` plugin with this one-liner:
+
+```bash
+curl -H 'Accept: application/vnd.github.v3.raw' -o /tmp/get-plugin.sh https://api.github.com/repos/thinktandem/lando-tandem/contents/scripts/get-plugin.sh && \
+chmod +x /tmp/get-plugin.sh && \
+/tmp/get-plugin.sh
+```
+
+For more details on the `lando-tandem` plugin visit the repo: [Lando Tandem Plugin](https://github.com/thinktandem/lando-tandem).
+
 ### Text Editor
 
 A generic text editor that is geared towards writing code is also a good idea. Tandem recommends using one of the following:
