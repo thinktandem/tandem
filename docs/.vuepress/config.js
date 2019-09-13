@@ -67,6 +67,13 @@ module.exports = {
           ],
         },
         {
+          title: 'DevOps',
+          collapsable: false,
+          children: [
+            'spinning-up-new-projects'
+          ],
+        },
+        {
           title: 'Project Management',
           collapsable: false,
           children: [
