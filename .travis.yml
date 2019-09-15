@@ -13,4 +13,5 @@ before_install:
   - lando version
 script:
   - lando start
+  - lando lint
   - lando test
