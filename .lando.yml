@@ -21,6 +21,10 @@ tooling:
     cmd: markdownlint
   vuepress:
     service: node
+  lint:
+    service: node
+    cmd: yarn run lint
+    description: Lint the things
   test:
     service: node
     cmd: yarn run test
