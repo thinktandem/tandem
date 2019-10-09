@@ -22,6 +22,10 @@ This is different from the Handbook which is geared around the _people_: employe
 * [How do I contribute code?](./contributing-code.md)
 * [How do I QA and deploy code?](./qaing-code.md)
 
+## DevOps
+
+* [How do I spin up a new project?](./spinning-up-new-projects.md)
+
 ## Project Management
 
 * [What is the usual project lifecycle?](./project-lifecycle.md)

@@ -91,7 +91,7 @@ module.exports = {
           title: 'DevOps',
           collapsable: false,
           children: [
-            'spinning-up-new-projects'
+            'spinning-up-new-projects',
           ],
         },
         {
