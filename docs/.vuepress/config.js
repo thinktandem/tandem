@@ -2,10 +2,31 @@ module.exports = {
   title: 'Tandem 2.0',
   description: 'An ancient codex to power agency-incubators that are magical to work at and with.',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['link', { rel: 'stylesheet', href: '/styles/overrides.css'}],
+    ['link', {rel: 'icon', href: '/favicon.ico'}],
+    ['link', {rel: 'stylesheet', href: '/styles/overrides.css'}],
   ],
-  ga: 'UA-74237404-4',
+  plugins: {
+    '@vuepress/google-analytics': {
+      ga: 'UA-74237404-4',
+    },
+    'autometa': {
+      site: {
+        name: 'Tandem',
+        twitter: 'thinktandem',
+      },
+      canonical_base: 'https://thinktandem.io',
+    },
+    'canonical': {
+      baseURL: 'https://thinktandem.io',
+    },
+    'robots': {
+      host: 'https://thinktandem.io',
+    },
+    'sitemap': {
+      hostname: 'https://thinktandem.io',
+      exclude: ['/404.html'],
+    },
+  },
   themeConfig: {
     repo: 'thinktandem/tandem',
     repoLabel: 'GitHub',
@@ -14,11 +35,11 @@ module.exports = {
     editLinks: true,
     editLinkText: 'Is this doc out of date? Is there something to make it better? Suggest a change!',
     nav: [
-      { text: 'Manifesto', link: '/manifesto/' },
-      { text: 'Handbook', link: '/handbook/' },
-      { text: 'Guides', link: '/guides/' },
-      { text: 'Templates', link: '/templates/' },
-      { text: 'Tandem Website', link: 'https://thinktandem.io' },
+      {text: 'Manifesto', link: '/manifesto/'},
+      {text: 'Handbook', link: '/handbook/'},
+      {text: 'Guides', link: '/guides/'},
+      {text: 'Templates', link: '/templates/'},
+      {text: 'Tandem Website', link: 'https://thinktandem.io'},
     ],
     sidebar: {
       '/manifesto/': [
@@ -63,7 +84,14 @@ module.exports = {
           collapsable: false,
           children: [
             'contributing-code',
-            'qaing-code'
+            'qaing-code',
+          ],
+        },
+        {
+          title: 'DevOps',
+          collapsable: false,
+          children: [
+            'spinning-up-new-projects'
           ],
         },
         {
@@ -71,7 +99,7 @@ module.exports = {
           collapsable: false,
           children: [
             'project-lifecycle',
-            'roles-responsibilities'
+            'roles-responsibilities',
           ],
         },
         {
@@ -82,6 +110,6 @@ module.exports = {
           ],
         },
       ],
-    }
-  }
-}
+    },
+  },
+};
