@@ -1,9 +1,9 @@
-name: tandem-docs
+name: docs-tandem
 excludes:
   - node_modules
 proxy:
   node:
-    - tandem-docs.lndo.site:8080
+    - docs-tandem.lndo.site:8080
 services:
   node:
     type: node:10
@@ -21,6 +21,10 @@ tooling:
     cmd: markdownlint
   vuepress:
     service: node
+  lint:
+    service: node
+    cmd: yarn run lint
+    description: Lint the things
   test:
     service: node
     cmd: yarn run test

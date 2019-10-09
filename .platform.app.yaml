@@ -13,6 +13,7 @@ web:
       index:
         - "index.html"
       expires: 300s
+      passthru: false
       scripts: true
       allow: false
       rules:
@@ -21,6 +22,8 @@ web:
         ^/robots\.txt$:
           allow: true
         search_index\.json$:
+          allow: true
+        ^/sitemap\.xml$:
           allow: true
 disk: 2048
 dependencies:
