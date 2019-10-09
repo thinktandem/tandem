@@ -2,6 +2,13 @@
 
 Here are some of the major goals we have over the coming years and quarters.
 
+## 2020
+
+In 2019 we want to minimally realize our promise as agency-incubator.
+
+This means we should end the year with a well-defined and documented agency operation, a product (Lando) that generates some revenue, and a plan for how we can grow that product so that it not only generates more revenue but also improves our agency.
+
+
 ## 2019
 
 In 2019 we want to minimally realize our promise as agency-incubator.

@@ -1,9 +1,9 @@
-name: tandem-docs
+name: tandem
 excludes:
   - node_modules
 proxy:
   node:
-    - tandem-docs.lndo.site:8080
+    - docs-tandem.lndo.site:8080
 services:
   node:
     type: node:10
