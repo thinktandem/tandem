@@ -8,7 +8,7 @@ In 2019 we want to minimally realize our promise as agency-incubator.
 
 This means we should end the year with a well-defined and documented agency operation, a product (Lando) that generates some revenue, and a plan for how we can grow that product so that it not only generates more revenue but also improves our agency.
 
-### Q3 July - September
+### Q3 July 2019 - September 2019
 
 #### Agency Goal: Get the house in order
 
@@ -38,7 +38,7 @@ Before we invest more time into Lando we need it to start generating some revenu
 * ~~Sign a few long term support deals~~
 * ~~Move docs to [Vuepress](https://github.com/lando/lando/issues/1410)~~
 
-### Q4 October - December
+### Q4 October 2019 - December 2019
 
 ::: tip PRO TIP
 Previously we thought this would be the quarter to _GET RIGHT TO IT_ and start focusing on optimizing our agency operations with Lando-related things while also incubating new things but alas we jumped the gun and we've kicked that initiative to later next year.
@@ -79,14 +79,13 @@ Concrete examples of the above are things like:
 * Expanding our documenation and guides for long tail SEO purposes
 * Increasing user base and ideally ways to get newsletter subscribers
 
-
 ## 2020
 
 In 2020 we want to build out a reliable agency operation and continue to grow Lando users and revenue so we end the year with a solid foundation to move on the incubator part of our vision.
 
 This means we should end the year with a core team that can handle basically _any_ project from sales all the way to launch and long term support. We should also create (and start to implement) a plan for how we can scale and become more efficient so as to start focusing more on our incubator ambitions.
 
-### Q1 January - March
+### Q1 January 2020 - March 2020
 
 #### Agency Goal: Launch Tandem 2.0
 
@@ -111,13 +110,13 @@ For this quarter we need to focus on:
 * Doing a great job posting case studies and other marketing things
 * Consider next big feature
 
-### Q1 April - September
+### Q2 April 2020 - September 2020
 
 ::: tip PRO TIP
 These are some tentative ideas
 :::
 
-#### Agency Goal: Grow our team!
+#### Agency Goal: Grow our team
 
 * Full time designer?
 
@@ -125,7 +124,7 @@ These are some tentative ideas
 
 * Start to build out an awesome new killer feature
 
-### Q3 July - September
+### Q3 July 2020 - September 2020
 
 ::: warning PRO TIP
 These were originally our Q4 2020 goals but are here as a placeholder for now because this might be a better time. To be revisited later.
