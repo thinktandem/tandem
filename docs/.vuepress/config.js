@@ -95,6 +95,14 @@ module.exports = {
           ],
         },
         {
+          title: 'Meetings',
+          collapsable: false,
+          children: [
+            'daily-standups',
+            'eow-meeting',
+          ],
+        },
+        {
           title: 'Project Management',
           collapsable: false,
           children: [
