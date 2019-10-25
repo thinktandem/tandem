@@ -26,6 +26,11 @@ This is different from the Handbook which is geared around the _people_: employe
 
 * [How do I spin up a new project?](./spinning-up-new-projects.md)
 
+## Meetings
+
+* [How do we do standups?](./daily-standups.md)
+* [How do we end the week?](./eow-meeting.md)
+
 ## Project Management
 
 * [What is the usual project lifecycle?](./project-lifecycle.md)
