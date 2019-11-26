@@ -67,7 +67,7 @@ Pseudonymization refers to a privacy-enhancing technique where personal data is 
 
 ## Reporting Concerns + Questions
 
-If [Team Member Name] has any further questions regarding Tandem security practices, GDPR compliance, or other topics related to data privacy immediately contact Management.
+If [Team Member Name] has further questions regarding Tandem security practices, GDPR compliance, or other topics related to data privacy ethics immediately contact Management at any time. 
 
 ## Further Resources/References
 
