@@ -66,6 +66,8 @@ module.exports = {
           children: [
             'improve-tandem',
             'quarterly-review',
+            'security-basics',
+            'security-incident-response',
           ],
         },
         {
@@ -115,6 +117,7 @@ module.exports = {
           collapsable: false,
           children: [
             'reference-check',
+            'offboarding',
           ],
         },
       ],
