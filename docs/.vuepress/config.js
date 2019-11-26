@@ -55,6 +55,7 @@ module.exports = {
       '/handbook/': [
         '',
         'onboarding',
+        'security-training-checklist',
         'benefits',
         'faq',
         'wrap',

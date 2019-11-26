@@ -6,7 +6,14 @@ In order to begin getting yourself oriented within this elite cadre of problem s
 
 [[toc]]
 
-## 1. Setup your Tandem email account
+## 1. Read Guides and Security Training
+
+The "Handbook" and "Guides" sections of this documentation is all the basics you need to know about working at Tandem. They include important information on [benefits](handbook/benefits.md), [security](guides/security-basics.md), and development process.
+
+Once you've digested everything you should be able to sign your Employment Agreement, Confidentiality Agreement, and go through the [Security Training Checklist](handbook/security-training-checklist.md).
+
+
+## 2. Setup your Tandem email account
 
 The first thing you'll want to do is get set up with your Tandem email account since this will be a dependency of subsequent steps. You will have received an email invite for this so just go ahead and follow the instructions there.
 
@@ -14,7 +21,7 @@ The first thing you'll want to do is get set up with your Tandem email account s
 Your Tandem email account will also come with `lando.dev` and `devwithlando.io` aliases
 :::
 
-## 2. Explore the Google Apps
+## 3. Explore the Google Apps
 
 Log in to your new Tandem email account and take a second to [explore the studio space](https://youtu.be/cVsQLlk-T0s?t=105) that is Google Apps. Beyond email you should get familiar with the [calendar](https://calendar.google.com/calendar/r/week) and [drive](https://drive.google.com/drive/my-drive).
 
@@ -22,7 +29,8 @@ The calendar will have all of your and company-wide meetings. You can also add o
 
 The drive contains various company, HR and client materials.
 
-## 3. Get added to Tandem services
+
+## 4. Get added to Tandem services
 
 You should have invites in your new email inbox for the below applicable services. If you do not have invites for the various things then ping someone!
 
@@ -48,7 +56,7 @@ If you are a developer you may also want to set up accounts with your Tandem ema
 
 If you don't do it now you will likely do it later when it inevitably comes up in project work.
 
-## 4. Get the tools you need
+## 5. Get the tools you need
 
 You're here so you've got the talent but now you need [the tools](https://getyarn.io/yarn-clip/0d992b79-8cf0-4da3-8e3b-6cbcdaecf9fb).
 
