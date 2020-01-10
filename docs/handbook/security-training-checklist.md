@@ -6,8 +6,8 @@ This training checklist should be reviewed by every new hire/contractor and annu
 
 [Team Member Name] certifies that they have reviewed required security documentation, including...
 
-1. [Security Basics](guides/security-basics.md)
-2. [Security Incidents + Response](guides/security-incident-response.md)
+1. [Security Basics](/guides/security-basics.md)
+2. [Security Incidents + Response](/guides/security-incident-response.md)
 
 [Team Member Name] certifies that they have followed the security measures detailed in the [Security Basics](guides/security-basics.md) documentation.
 
