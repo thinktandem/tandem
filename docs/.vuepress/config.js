@@ -80,6 +80,7 @@ module.exports = {
             'audiences-personas',
             'invoicing',
             'sales-scripts',
+            'sales-fanatical-prospecting-notes',
           ],
         },
         {
