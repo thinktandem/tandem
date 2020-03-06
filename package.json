@@ -16,8 +16,8 @@
     "build:site": "vuepress build site -d _site",
     "dev:docs": "vuepress dev --temp /tmp/tandem-docs --cache /tmp/tandem-docs-cache --port 8010 docs",
     "dev:site": "vuepress dev --temp /tmp/tandem-site --cache /tmp/tandem-site-cache --port 8011 site",
-    "lint": "eslint  --quiet --ext .js,.vue --no-ignore --config .eslintrc.json docs/.vuepress/**/*.js",
-    "test": "markdownlint README.md docs/**/*.md docs/*.md"
+    "lint:sites": "eslint  --quiet --ext .js,.vue --config .eslintrc.json site/.vuepress docs/.vuepress",
+    "test": "markdownlint README.md docs/**/*.md docs/*.md site/**/*.md site/*.md"
   },
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",

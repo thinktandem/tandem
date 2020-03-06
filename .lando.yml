@@ -47,3 +47,11 @@ tooling:
     service: node
   yarn:
     service: node
+  lint:
+    service: node
+    cmd: yarn run lint:sites
+    description: Lint the things
+  test:
+    service: node
+    cmd: yarn run test
+    description: Run tests
