@@ -49,6 +49,7 @@ module.exports = {
     },
     'robots': {
       host: 'https://thinktandem.io',
+      disallowAll: true,
       sitemap: '/sitemap.xml',
     },
   },
