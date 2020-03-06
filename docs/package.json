@@ -9,7 +9,7 @@
     "url": "https://github.com/thinktandem/tandem/issues"
   },
   "scripts": {
-    "build": "vuepress build ./ -d _book"
+    "build": "vuepress build ./ -d _docs"
   },
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",

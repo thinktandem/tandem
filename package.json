@@ -12,7 +12,7 @@
     "url": "https://github.com/thinktandem/tandem/issues"
   },
   "scripts": {
-    "build:docs": "vuepress build docs -d _book",
+    "build:docs": "vuepress build docs -d _docs",
     "dev:docs": "vuepress dev --temp /tmp/lando-docs --cache /tmp/lando-docs-cache --port 8010 docs",
     "lint": "eslint  --quiet --ext .js,.vue --no-ignore --config .eslintrc.json docs/.vuepress/**/*.js",
     "test": "markdownlint README.md docs/**/*.md docs/*.md"

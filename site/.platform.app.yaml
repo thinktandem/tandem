@@ -23,7 +23,7 @@ web:
     start: sleep infinity
   locations:
     "/":
-      root: "_blog"
+      root: "_site"
       index:
         - "index.html"
       expires: 300s
