@@ -1,5 +1,5 @@
 # Core config
-name: app
+name: docs
 type: nodejs:10
 build:
   flavor: none

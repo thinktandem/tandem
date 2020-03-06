@@ -2,30 +2,42 @@ name: tandem
 excludes:
   - node_modules
 proxy:
-  docs:
-    - docs-tandem.lndo.site:8080
+  cli:
+    - docs-tandem.lndo.site:8010
+    - site-tandem.lndo.site:8011
 services:
-  docs:
+  cli:
     type: node:10
     build:
       - yarn install
-    command: "su - node -c 'cd /app && yarn dev'"
-    port: 8080
+    scanner: false
+    overrides:
+      ports:
+        - '8010:8010'
+        - '8011:8011'
+  platform:
+    type: php:7.3
+    via: cli
+    build:
+      - mkdir -p /var/www/.platformsh/bin
+      - curl -fsSL -o /var/www/.platformsh/bin/platform https://github.com/platformsh/platformsh-cli/releases/download/v3.40.4/platform.phar
+      - chmod ug+x /var/www/.platformsh/bin/platform
 tooling:
+  docs:
+    service: cli
+    cmd: yarn dev:docs
+    description: Launch the documentation site
+  site:
+    service: cli
+    cmd: yarn dev:site
+    description: Launch the marketing site
   node:
-    service: docs
-  yarn:
-    service: docs
-  mdl:
-    service: docs
-    cmd: markdownlint
+    service: cli
+  platform:
+    service: platform
+    description: Run Platform CLI commands
+    cmd: /var/www/.platformsh/bin/platform
   vuepress:
-    service: docs
-  lint:
-    service: docs
-    cmd: yarn run lint
-    description: Lint the things
-  test:
-    service: docs
-    cmd: yarn run test
-    description: Run tests
+    service: cli
+  yarn:
+    service: cli
