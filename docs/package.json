@@ -1,8 +1,5 @@
 {
   "name": "tandem-docs",
-  "description": "Some internal docs for Tandem.",
-  "license": "MIT",
-  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/thinktandem/tandem"
@@ -11,22 +8,15 @@
     "email": "mike@thinktandem.io",
     "url": "https://github.com/thinktandem/tandem/issues"
   },
+  "scripts": {
+    "build": "vuepress build ./ -d _book"
+  },
   "devDependencies": {
     "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
-    "eslint": "^6.1.0",
-    "eslint-config-google": "^0.9.1",
-    "eslint-plugin-vue": "^5.2.3",
-    "markdownlint-cli": "^0.3.1",
     "vuepress": "^1.0.4",
     "vuepress-plugin-autometa": "^0.1.12",
     "vuepress-plugin-canonical": "^1.0.0",
     "vuepress-plugin-robots": "^1.0.1",
     "vuepress-plugin-sitemap": "https://github.com/ekoeryanto/vuepress-plugin-sitemap#dd8b9763b2c7939668a67f2afa34de501dea45d4"
-  },
-  "scripts": {
-    "build:docs": "vuepress build docs -d _book",
-    "dev:docs": "vuepress dev docs",
-    "lint": "eslint  --quiet --ext .js,.vue --no-ignore --config .eslintrc.json docs/.vuepress/**/*.js",
-    "test": "markdownlint README.md docs/**/*.md docs/*.md"
   }
 }
