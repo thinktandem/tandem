@@ -13,7 +13,9 @@
   },
   "scripts": {
     "build:docs": "vuepress build docs -d _docs",
-    "dev:docs": "vuepress dev --temp /tmp/lando-docs --cache /tmp/lando-docs-cache --port 8010 docs",
+    "build:site": "vuepress build site -d _site",
+    "dev:docs": "vuepress dev --temp /tmp/tandem-docs --cache /tmp/tandem-docs-cache --port 8010 docs",
+    "dev:site": "vuepress dev --temp /tmp/tandem-site --cache /tmp/tandem-site-cache --port 8011 site",
     "lint": "eslint  --quiet --ext .js,.vue --no-ignore --config .eslintrc.json docs/.vuepress/**/*.js",
     "test": "markdownlint README.md docs/**/*.md docs/*.md"
   },
