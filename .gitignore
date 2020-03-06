@@ -21,6 +21,19 @@ logs
 node_modules
 tmp-*
 
-# gitbooks
-_books
-_book
+# docs
+_docs
+_site
+docs/examples
+
+# Build dirs
+build
+dist
+
+# coverage reporting
+.nyc_output
+coverage/
+
+# CCI test splitting
+test/split-file.txt
+test/*.func.js

@@ -3,29 +3,47 @@ excludes:
   - node_modules
 proxy:
   docs:
-    - docs-tandem.lndo.site:8080
+    - docs-tandem.lndo.site:8010
+  site:
+    - site-tandem.lndo.site:8011
 services:
   docs:
     type: node:10
     build:
       - yarn install
-    command: "su - node -c 'cd /app && yarn dev'"
-    port: 8080
-tooling:
+    command: yarn run dev:docs
+    port: 8010
+  site:
+    type: node:10
+    build:
+      - yarn install
+    command: yarn run dev:site
+    port: 8011
   node:
+    type: node:10
+  platform:
+    type: php:7.3
+    via: cli
+    build:
+      - mkdir -p /var/www/.platformsh/bin
+      - curl -fsSL -o /var/www/.platformsh/bin/platform https://github.com/platformsh/platformsh-cli/releases/download/v3.40.4/platform.phar
+      - chmod ug+x /var/www/.platformsh/bin/platform
+tooling:
+  docs:
     service: docs
-  yarn:
-    service: docs
-  mdl:
-    service: docs
-    cmd: markdownlint
+    cmd: yarn dev:docs
+    description: Launch the documentation site
+  site:
+    service: site
+    cmd: yarn dev:site
+    description: Launch the marketing site
+  node:
+    service: node
+  platform:
+    service: platform
+    description: Run Platform CLI commands
+    cmd: /var/www/.platformsh/bin/platform
   vuepress:
-    service: docs
-  lint:
-    service: docs
-    cmd: yarn run lint
-    description: Lint the things
-  test:
-    service: docs
-    cmd: yarn run test
-    description: Run tests
+    service: node
+  yarn:
+    service: node

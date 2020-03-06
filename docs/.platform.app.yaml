@@ -1,5 +1,5 @@
 # Core config
-name: app
+name: docs
 type: nodejs:10
 build:
   flavor: none
@@ -9,7 +9,7 @@ web:
     start: sleep infinity
   locations:
     "/":
-      root: "_book"
+      root: "_docs"
       index:
         - "index.html"
       expires: 300s
