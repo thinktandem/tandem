@@ -8,8 +8,6 @@
 4. Enable any "remote erase" (ie Find my Mac) feature your computer might have. You'll sleep better knowing the bad guys only got your computer, not the volumes of personal and client data on it.
 5. Install antivirus software that updates virus definitions at least weekly.
 
-
-
 ## Password and Credential Management
 
 All Tandem team members shall use the designated encrypted password storage utility (currently LastPass) according to the following policies:
@@ -19,22 +17,20 @@ All Tandem team members shall use the designated encrypted password storage util
 3.  Never store credentials in plain text or share them via plain text. Always utilize our password management system. If you share a resource in a public space unintentionally, immediately notify your project manager of the security breach.
 4. Where applications support it, Tandem staff are expected to use two-factor authentication.
 
-
-##   Managing Personal/Confidential Information
+## Managing Personal/Confidential Information
 
 1.  Never download a client database that links sensitive personal information (ex: SSNs, health information, financial information) with personally identifiable information (ex: names, addresses, DoBs). Sanitization functions or dummy data must be used locally (and should be used on all test environments) if a site handles any of these types of data.
-	2. In the case that the client is unable to provide a sanitized data source or when such a data source would be impossible to create, obtain permission from the client to handle this data on your computer. Discuss with your project manager if you have questions.
+    1. In the case that the client is unable to provide a sanitized data source or when such a data source would be impossible to create, obtain permission from the client to handle this data on your computer. Discuss with your project manager if you have questions.
 2.  Consult the project manager before handling ANY sensitive personal information and question its necessity in the project.
 3. Use a secure mechanism to transfer sensitive files. Google Drive data is transmitted over SSL and is protected by a BAA (in the case of health data) that we have with them. Create a shared folder and send it as a link. Be aware of who else has access to the space. Once you have retrieved the file, delete it from Drive unless it is needed.
 
-## For Project Managers:
+## For Project Managers
 
 ### Managing Contractors
 
 When managing contractors, be very aware of the material that you give them access to.
 
 The following clause is included in all Tandem contractor agreements:
-
 
 > Confidentiality and Confidential Materials: Consultant must keep all
 > information, communications, work product, and other materials or

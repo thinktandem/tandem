@@ -1,7 +1,4 @@
-
-
 # Security Incidents + Response
-
 
 ## Introduction
 
@@ -27,26 +24,19 @@ Personally identifiable information allows you to definitively identify a person
 
 Sensitive personal information (ex: SSNs, health information, financial information) is typically separately considered by laws like HIPAA. It's necessary to keep this data secret at all times and is often the target of an attack.
 
-
 ### How to Recognise a Security Incident
 
 A security incident may not be recognised straightaway; however, there may be indicators of a security breach, system compromise, unauthorised activity, or signs of misuse within your environment, or that of your third party service providers.
 
 You need to look out for any indications that a security incident has occurred or may be in progress, some of which are outlined below:
 
--   Monitor excessive or unusual log-in and system activity, in particular from any inactive user IDs (user accounts)
-
--   Watch out for excessive or unusual remote access activity into your business. This could be relating to your staff or your third party providers
-
--   The occurrence of any new wireless (Wi-Fi) networks visible or accessible from your environment
-
--   The presence of or unusual activity in relation to malware (malicious software), suspicious files, or new/unapproved executables and programs. This could be on your networks or systems and includes web-facing systems.
-
--   Hardware or software key-loggers found connected to or installed on systems
-
--   Suspicious or unusual activity on, or behaviour of, Web-facing systems, such on as your ecommerce website
-
--   Lost, stolen, or misplaced computers, laptops, hard drives, or other media devices that contain sensitive data
+* Monitor excessive or unusual log-in and system activity, in particular from any inactive user IDs (user accounts)
+* Watch out for excessive or unusual remote access activity into your business. This could be relating to your staff or your third party providers
+* The occurrence of any new wireless (Wi-Fi) networks visible or accessible from your environment
+* The presence of or unusual activity in relation to malware (malicious software), suspicious files, or new/unapproved executables and programs. This could be on your networks or systems and includes web-facing systems.
+* Hardware or software key-loggers found connected to or installed on systems
+* Suspicious or unusual activity on, or behaviour of, Web-facing systems, such on as your ecommerce website
+* Lost, stolen, or misplaced computers, laptops, hard drives, or other media devices that contain sensitive data
 
 ## Incident Response Plan Steps
 
@@ -58,53 +48,46 @@ There are a number of steps and stages that you must be taken to make sure that 
 
 ### Investigate
 
-2. After being notified of a security incident, the Security Officer will perform an initial investigation and determine the appropriate response, which may be to initiate the Security Incident Response Plan.If the Security Incident Response Plan is initiated, the Security Officer will investigate the incident and initiate actions to limit the exposure of data and in mitigating the risks associated with the incident.
+1. After being notified of a security incident, the Security Officer will perform an initial investigation and determine the appropriate response, which may be to initiate the Security Incident Response Plan.If the Security Incident Response Plan is initiated, the Security Officer will investigate the incident and initiate actions to limit the exposure of data and in mitigating the risks associated with the incident.
 
 ### Initial incident containment and response actions
 
-#### Make sure that no-one can access or alter compromised systems.
+#### Make sure that no-one can access or alter compromised systems
 
--   Isolate compromised systems from your network and unplug any network cables – without turning the systems off.
-
--   If using a wireless network, change the SSID (Service Set Identifier) on the wireless access point and other systems that may be using this wireless network (but not on any of the systems believed to be compromised).
-
--   Preserve all logs and similar electronic evidence, e.g. logs from your firewall, anti-virus tool, access control system, web server, application server, database, etc.
-
--   Perform a back-up of your systems to preserve their current state – this will also facilitate any subsequent investigations.
-
--   Keep a record of all actions you and all members of the team take.
-
--   Stay alert for further indications of compromise or suspicious activity in your environment, or that of your third parties.
-
--   Seek advice before you process any further payment card transactions.
-
--   If you can, gather details of all compromised or potentially compromised data (the ‘accounts at risk’).
+* Isolate compromised systems from your network and unplug any network cables – without turning the systems off.
+* If using a wireless network, change the SSID (Service Set Identifier) on the wireless access point and other systems that may be using this wireless network (but not on any of the systems believed to be compromised).
+* Preserve all logs and similar electronic evidence, e.g. logs from your firewall, anti-virus tool, access control system, web server, application server, database, etc.
+* Perform a back-up of your systems to preserve their current state – this will also facilitate any subsequent investigations.
+* Keep a record of all actions you and all members of the team take.
+* Stay alert for further indications of compromise or suspicious activity in your environment, or that of your third parties.
+* Seek advice before you process any further payment card transactions.
+* If you can, gather details of all compromised or potentially compromised data (the ‘accounts at risk’).
 
 #### Inform
 
-Once the Security Officer has carried out their initial investigation of the security incident:
+1. Once the Security Officer has carried out their initial investigation of the security incident:
 
-3.  The Security Officer will alert senior management.
+2.  The Security Officer will alert senior management.
 
-4.  The Security Officer or other personnel responsible for communications / PR will inform all relevant parties. This includes your acquirer and local law enforcement, and other parties that may be affected by the compromise such as your customers, business partners or suppliers. This also includes the personal data breach notification contacts, as applicable to the incident under investigation.
+3.  The Security Officer or other personnel responsible for communications / PR will inform all relevant parties. This includes your acquirer and local law enforcement, and other parties that may be affected by the compromise such as your customers, business partners or suppliers. This also includes the personal data breach notification contacts, as applicable to the incident under investigation.
 
 #### Maintain Business Continuity
 
-5.  The Security Officer will engage with operational teams in your business to make sure that your business can continue to operate while the security incident is being investigated.
+1.  The Security Officer will engage with operational teams in your business to make sure that your business can continue to operate while the security incident is being investigated.
 
 #### Resolve
 
-6.  The Security Officer will liaise with external parties, including your acquirer, law enforcement, etc., to ensure appropriate incident investigation (which may include on-site forensic investigation) and gathering of evidence, as is required.
+1.  The Security Officer will liaise with external parties, including your acquirer, law enforcement, etc., to ensure appropriate incident investigation (which may include on-site forensic investigation) and gathering of evidence, as is required.
 
-7.  The Security Officer will take action to investigate and resolve the problem to the satisfaction of all parties and stakeholders involved. This will include confirmation that the required controls and security measures are operational.
+2.  The Security Officer will take action to investigate and resolve the problem to the satisfaction of all parties and stakeholders involved. This will include confirmation that the required controls and security measures are operational.
 
-8.  The Security Officer will report the investigation findings and resolution of the security incident to the appropriate parties and stakeholders (including your acquirer, local law enforcement, etc.) as is needed.
+3.  The Security Officer will report the investigation findings and resolution of the security incident to the appropriate parties and stakeholders (including your acquirer, local law enforcement, etc.) as is needed.
 
 #### Recovery
 
-9.  The Security Officer will authorise a return to normal operations once satisfactory resolution is confirmed.
+1.  The Security Officer will authorise a return to normal operations once satisfactory resolution is confirmed.
 
-10.  The Security Officer will notify the rest of the business that normal business operations can resume. Normal operations must adopt any updated processes, technologies or security measures identified and implemented during incident resolution.
+2.  The Security Officer will notify the rest of the business that normal business operations can resume. Normal operations must adopt any updated processes, technologies or security measures identified and implemented during incident resolution.
 
 
 #### Review
@@ -114,13 +97,12 @@ The Security Officer will complete a post-incident review after every security i
 
 Changes and updates that may be required include:
 
--   Updates to the Security Incident Response Plan and associated procedures.
+* Updates to the Security Incident Response Plan and associated procedures.
 
--   Updates to your business’ security or operational policies and procedures.
+* Updates to your business’ security or operational policies and procedures.
 
--   Updates to technologies, security measures or controls (for example, improved measures to inspect payment terminals for card skimmers).
+* Updates to technologies, security measures or controls (for example, improved measures to inspect payment terminals for card skimmers).
 
--   The introduction of additional safeguards in the environment where the incident occurred (for example, more effective malware protection).
+* The introduction of additional safeguards in the environment where the incident occurred (for example, more effective malware protection).
 
-
-11.  The senior management primary contact will ensure that the required updates and changes are adopted or implemented as necessary.
+1.  The senior management primary contact will ensure that the required updates and changes are adopted or implemented as necessary.

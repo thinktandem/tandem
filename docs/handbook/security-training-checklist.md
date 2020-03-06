@@ -71,5 +71,5 @@ If [Team Member Name] has further questions regarding Tandem security practices,
 
 ## Further Resources/References
 
-- [https://gdpr.eu/](https://gdpr.eu/)
-- [Quick Guide to GDPR Concepts](https://blog.f-secure.com/quick-guide-to-gdpr-concepts/)
+* [https://gdpr.eu/](https://gdpr.eu/)
+* [Quick Guide to GDPR Concepts](https://blog.f-secure.com/quick-guide-to-gdpr-concepts/)
