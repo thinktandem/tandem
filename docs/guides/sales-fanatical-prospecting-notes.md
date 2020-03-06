@@ -3,29 +3,34 @@
 **Thesis**: To be successful in sales, you need to be constantly prospecting (finding qualified leads and engaging them) using telephone, email, in-person, social media, and text messaging channels. Over time you will become more efficient at using these channels and prioritizing which ones are most important to your business, but the most important thing is to be persistent in your efforts and continually improving.
 
 ### Chapter 1: The Case for Prospecting
+
 Summary: Prospecting is hard, that's why only the most successful sales people do it.
 
 ### Chapter 2: Seven Mindsets of Fanatical Prospectors
+
 Summary: Fanatical prospectors are optimistic, competitive, confident, relentless, thirsty for knowledge/self-improvement, systematic in their efforts, and adaptable.
 
 ### Chapter 3: To Cold Call or Not to Cold Call
+
 Summary: Sales is about _interrupting_ people. That's why prospecting is hard; we naturally don't like interrupting other people and look for excuses not to do it.
 
 ### Chapter 4: Adopt a Balanced Prospecting Methodology
+
 Summary: Learn to balance the various channels at your disposal for prospecting.
 
 > The relative distribution of your time investment in each prospecting methodology should be based on your unique situation."
 
 This may include factors like...
 
- - Industry vertical
- - How long you've been working the "territory"
- - Resources (premade lists, inbound sources, etc.)
- - Experience level
+* Industry vertical
+* How long you've been working the "territory"
+* Resources (premade lists, inbound sources, etc.)
+* Experience level
 
 > Find out what the top salespeople in your organization are doing to generate qualified prospects.
 
 ### Chapter 5: The More You Prospect, the Luckier You Get
+
 Summary: Consistent prospecting is the most important aspect of sales success and avoiding sales slumps.
 
 **The Universal Law of Need:** the more you need something, the less likely it is that you will get it. Other people can sense your desperation.
@@ -43,6 +48,7 @@ To **escape a sales slump**, start prospecting. "It is far more important that y
 > The more I practice, the luckier I get.
 
 ### Chapter 6: Know Your Numbers
+
 Summary: The better you track your sales activities, the more you can keep yourself honest and improve your outcomes.
 
 > You will never reach peak performance until you know your numbers and use [them] to make directional corrections.
@@ -55,9 +61,11 @@ Efficiency x Effectiveness = Performance
 (Blount says Efficiency + Effectiveness = Performance, but this doesn't really make any mathematical sense. His definitions here are also semantically a bit weird.)
 
 ### Chapter 7: The Three Ps That Are Holding You Back
+
 Summary: Procrastination, perfectionism, and analysis paralysis are holding you back. Now is the time, just do it, don't over think it.
 
 ### Chapter 8: Time (The Great Equalizer of Sales)
+
 Summary: Take responsibility over your time management, use time blocking (dedicate specific hours to specific activities), learn to delegate better, and don't multitask.
 
 **Golden Hours:** Time blocks dedicated to prospecting and customer engagement. Ex: a call block where you dial prospects.
@@ -65,9 +73,10 @@ Summary: Take responsibility over your time management, use time blocking (dedic
 **Platinum Hours:** Time prepping prospecting lists, researching, managing your CRM, and otherwise preparing so you can focus solely on prospecting during your Golden Hours.
 
 **Delegation** relies upon...
- - effective and consistent communication
- - following-up on tasks
- - respecting your support staff (say thanks!)
+
+* effective and consistent communication
+* following-up on tasks
+* respecting your support staff (say thanks!)
 
 Don't fall back into the trap of "if you want it done right, you've got to do it yourself." Calculate your hourly opportunity cost (= income goal/number of yearly Golden Hours) and delegate tasks accordingly.
 
@@ -75,20 +84,21 @@ Don't fall back into the trap of "if you want it done right, you've got to do it
 
 **Multitasking is the devil.** During your call blocks...
 
-- Only focus on dialing.
-- Print your call list and take notes on it instead of logging in your CRM immediately.
-- Turn off all notifications (mobile devices/email/Slack/etc.)
-- Put a sign on your door.
-- Block out your calendar.
-- Do research/set call objectives before the call block.
+* Only focus on dialing.
+* Print your call list and take notes on it instead of logging in your CRM immediately.
+* Turn off all notifications (mobile devices/email/Slack/etc.)
+* Put a sign on your door.
+* Block out your calendar.
+* Do research/set call objectives before the call block.
 
 ### Chapter 9: The Four Objectives of Prospecting
+
 Summary: When prospecting you should be trying to either...
 
-- Set an appointment
-- Gather information/qualify
-- Close a sale
-- Build familiarity
+* Set an appointment
+* Gather information/qualify
+* Close a sale
+* Build familiarity
 
 Don't get distracted from these four goals, since they are the only things that will meaningfully move forward the sales process.
 
@@ -111,10 +121,10 @@ In contrast, in transactional low-risk sales you can focus on closing the sale i
 
 **Qualifying Criteria**
 
- 4. Analyze your company's successful (and failed) deliveries.
- 5. Identify **trigger events** that indicate opening of buying windows
- 6. Create a profile of your ideal long-term, profitable, happy customer
- 7. Develop **qualifying questions** based on this information.
+ 1. Analyze your company's successful (and failed) deliveries.
+ 2. Identify **trigger events** that indicate opening of buying windows
+ 3. Create a profile of your ideal long-term, profitable, happy customer
+ 4. Develop **qualifying questions** based on this information.
 
 **Building Familiarity**
 
@@ -124,6 +134,7 @@ In contrast, in transactional low-risk sales you can focus on closing the sale i
 Familiarity sells. Prospecting activities (calls, voice mails, social media invites/retweets, emails, meeting them in person) will increase familiarity.
 
 ### Chapter 10: Leveraging the Prospecting Pyramid
+
 Summary: The prospecting pyramid runs from a large base of low information/unqualified prospects to a pinnacle of highly qualified and detailed prospects who are in their buying window. Prioritize the top of the pyramid for your lists, but make sure you keep the pyramid proportional (IE keep feeding new prospects into your funnel).
 
 |Level|Goal  |
@@ -136,46 +147,50 @@ Summary: The prospecting pyramid runs from a large base of low information/unqua
 |6. Highly Qualified Prospects in Buying Window|Top of your daily list to get an opportunity into the pipeline.|
 
 ### Chapter 11: Own Your Database (CRM)
+
 Summary: CRMs remember things for you. Use them.
 
 ### Chapter 12: The Law of Familiarity
+
 Summary: Familiarity builds the ground for future sales, so be consistent in these familiarity building activities but balance it appropriately with other prospecting activities.
 
 **Familiarity Threshold:** The point at which a prospect wants to communicate and build a first-name relationship, even when they aren't interested in buying.
 
 Ways to gain familiarity include...
 
- - Consistent prospecting.
- - Referrals/introductions: Ask for referrals from happy customers, friends/family/acquaintances, and professional peers.
- - Networking: let people talk about themselves. Don't pitch them.
+* Consistent prospecting.
+* Referrals/introductions: Ask for referrals from happy customers, friends/family/acquaintances, and professional peers.
+* Networking: let people talk about themselves. Don't pitch them.
 
 > You don't go to networking events to sell...you are there to create connections with other people.
 
-- Company/brand familiarity
-- Personal Branding: speak in public often.
--
+* Company/brand familiarity
+* Personal Branding: speak in public often.
+
 ### Chapter 13: Social Selling
+
 Summary: Modern social channels primarily helps you get sales information and build familiarity en masse. It will likely not GIVE you sales, but will help inform and reinforce your other prospecting activities.
 
 > People don't want to be pitched...on social media. The prefer to **connect, interact, and learn.**
 
 **Tips on Social Media**
 
-- Choose social channels where your prospects hangout and you enjoy engaging them.
-- Make sure your personal branding is enhanced by your social media presence. IE, avoid poorly written profiles/outdated pictures/unprofessional content.
-- Post content that "educates, builds credibility, anchors familiarity, and positions you as an expert who can solve relevant problems."
-- Don't post gated content that requires submitting contact info to access it. Instead, post a link to publicly available info on your site that _includes_ links to gated content.
-- Be consistent.
+* Choose social channels where your prospects hangout and you enjoy engaging them.
+* Make sure your personal branding is enhanced by your social media presence. IE, avoid poorly written profiles/outdated pictures/unprofessional content.
+* Post content that "educates, builds credibility, anchors familiarity, and positions you as an expert who can solve relevant problems."
+* Don't post gated content that requires submitting contact info to access it. Instead, post a link to publicly available info on your site that _includes_ links to gated content.
+* Be consistent.
 
 **Essential Profile Content**
 All this info should be updated regularly:
 
-- Headshot: consistent across all social media channels.
-- Contact Info: phone/email/website/etc.
-- Human-readable URL: on platforms like LinkedIn that don't do this by default.
-- Complete Profile History/Bio
+* Headshot: consistent across all social media channels.
+* Contact Info: phone/email/website/etc.
+* Human-readable URL: on platforms like LinkedIn that don't do this by default.
+* Complete Profile History/Bio
 
 ### Chapter 14: Message Matters
+
 Summary: How to craft a message that uses emotional empathy to tie your prospect's problems to your solutions and make a direct ask for an appointment, introduction, or other prospecting objective in the process.
 
 > Prospects meet with you for their reasons, not yours.
@@ -190,7 +205,7 @@ Your message should be **quick, transparent, and relevant** to your prospect's p
 
 **Differentiation** aka "Why do my customers choose to do business with me?"
 
-### Blount's Messaging Model:
+### Blount's Messaging Model
 
 **Intro**: Hi Prospect, this is Jeb Blount from Sales Gravy. _Quick and declarative identification._
 **Reason**: The reason I am calling is to schedule an appointment with you to show you our new sales onboarding automation software. _Transparent reason for calling._
@@ -209,6 +224,7 @@ After your initial message and ask, **shut up!** You will feel vulnerable, but y
 "Some people count nos. They play a game to see how many nos they can get."
 
 ### Chapter 15: Telephone Prospecting Excellence
+
 Summary: The telephone is the most powerful sales prospecting tool; it allows you to reach more people more quickly than any other method. Some tips on how to adapt the messaging formula to the telephone as a medium.
 
 ### Blount's Five-Step Simple Telephone Prospecting Framework
@@ -228,6 +244,7 @@ Summary: The telephone is the most powerful sales prospecting tool; it allows yo
 **When to leave a voicemail:** "When it matters." Blount emphasizes that you should use it for "high-value prospects," since it adds precious time to your calling, but acknowledges it will depend on your sales campaign.
 
 The structure is essentially the same as the call structure, with some minor differences:
+
 1. Identify yourself: Who you are and your company. "This is Alec from Tandem."
 2. Say your phone number twice.  "My number is 510.463.4193. That's 510.463.4193."
 3. Reason for your call. "The reason for my call is to setup an appointment with you."
@@ -235,4 +252,5 @@ The structure is essentially the same as the call structure, with some minor dif
 5. Repeat your contact info: "Let's get together this week. Again my name is Alec Reynolds, give me a call back at 510.463.4193, that's 510.463.4193."
 
 ### Chapter 16: Turning Around RBOs
+
 Summary: "RBOs" (reflex responses, brush-offs, and objections)
