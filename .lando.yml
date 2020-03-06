@@ -2,19 +2,25 @@ name: tandem
 excludes:
   - node_modules
 proxy:
-  cli:
+  docs:
     - docs-tandem.lndo.site:8010
+  site:
     - site-tandem.lndo.site:8011
 services:
-  cli:
+  docs:
     type: node:10
     build:
       - yarn install
-    scanner: false
-    overrides:
-      ports:
-        - '8010:8010'
-        - '8011:8011'
+    command: yarn run dev:docs
+    port: 8010
+  site:
+    type: node:10
+    build:
+      - yarn install
+    command: yarn run dev:site
+    port: 8011
+  node:
+    type: node:10
   platform:
     type: php:7.3
     via: cli
@@ -24,20 +30,20 @@ services:
       - chmod ug+x /var/www/.platformsh/bin/platform
 tooling:
   docs:
-    service: cli
+    service: docs
     cmd: yarn dev:docs
     description: Launch the documentation site
   site:
-    service: cli
+    service: site
     cmd: yarn dev:site
     description: Launch the marketing site
   node:
-    service: cli
+    service: node
   platform:
     service: platform
     description: Run Platform CLI commands
     cmd: /var/www/.platformsh/bin/platform
   vuepress:
-    service: cli
+    service: node
   yarn:
-    service: cli
+    service: node
