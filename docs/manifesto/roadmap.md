@@ -6,7 +6,7 @@ Here are some of the major goals we have over the coming years and quarters.
 
 In 2020 we want to build out a reliable agency operation and continue to grow Lando users and revenue so we end the year with a solid foundation to move onto the incubator part of our vision.
 
-This means we should end the year with a core team that can handle basically _any_ project from sales all the way to launch and long term support. We should also create (and start to implement) a plan for how we can scale and become more efficient so as to start focusing more on our incubator ambitions.
+This means we should end the year with a core team and solid contractor stable that can handle basically _any_ project from sales all the way to launch and long term support. We should also create (and start to implement) a plan for how we can scale and become more efficient so as to start focusing more on our incubator ambitions.
 
 Here are some of our higher level more strategoc goals for the year, roughly arranged in the order they should be done:
 
@@ -20,7 +20,7 @@ Here are some of our higher level more strategoc goals for the year, roughly arr
 * Develop a good system for sales campaigns that can scale up with automation
 * Acquire one or two more large, stragetic and diversified clients
 * Start to build out a more official support program
-* Start to leverage Lando for sales and hires
+* Start to leverage Lando more for sales and hires
 * Hire a full time designer/strategist
 * Asbolutely dominate one awesome high profile project at a "fuck yah Tandem" level of awesomeness
 
