@@ -23,7 +23,7 @@ Before you begin make sure you...
 
 ### Developing
 
-You can easily get the site running locally.
+You can easily get relevant web properties eg the docs and website running locally.
 
 ```bash
 # Clone this repo
