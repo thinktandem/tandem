@@ -12,13 +12,13 @@ Note that, without an SLA, response to the initial issue is always best-effort. 
 
 ## Priority Levels
 
-### P2: Normal Business Hours Non-Scheduled Work
+### P2 "Standard Emergency Rate": Normal Business Hours Non-Scheduled Work
 
-P2 emergencies are charged at an elevated fee compared to our standard rate (as detailed in our MSA). This is done to cover the costs of additional compensation for our staff to handle these emergencies and also as a means to encourage healthy scheduling expectations. When a client's request pushes into a P2 scenario, Tandem should give written notice of the elevated charges and get confirmation from the client in writing that they accept the charges. The notification could be something like:
+P2 emergencies are charged at an elevated fee compared to our standard rate (as detailed in the applicable SOW). This is done to cover the costs of additional compensation for our staff to handle these emergencies and also as a means to encourage healthy scheduling expectations. When a client's request pushes into a P2 scenario, Tandem should give written notice of the elevated charges and get confirmation from the client in writing that they accept the charges. The notification could be something like:
 
 > Hey Steve! I just wanted to send you a note confirming that we got your request to jump on resolving that issue with the site going down during the sale. We've scrambled the team and they're checking the New Relic data to track down what is slowing things down. As we didn't have any work scheduled this week for your project, we're slotting this in as an emergency which will be at an elevated rate of $XXX. Can you just shoot me back a quick confirmation that you approve? Thanks!
 
-### P1: Non-Business Hours High Priority Emergencies
+### P1 "Off-Hours Emergency Rate": Non-Business Hours High Priority Emergencies
 
 P1 emergencies are any emergency that falls outside of our normal business hours, requiring a team member to work extra time on nights/weekends and taking time away from their loved ones to go above and beyond the call of duty in assisting our customers. Tandem values healthy boundaries between our work and personal lives because we believe it leads to healthier and happier employees (which also translates into better quality work!).
 
