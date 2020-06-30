@@ -18,7 +18,7 @@ Summary: Sales is about _interrupting_ people. That's why prospecting is hard; w
 
 Summary: Learn to balance the various channels at your disposal for prospecting.
 
-> The relative distribution of your time investment in each prospecting methodology should be based on your unique situation."
+> The relative distribution of your time investment in each prospecting methodology should be based on your unique situation.
 
 This may include factors like...
 
