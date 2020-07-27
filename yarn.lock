@@ -8636,7 +8636,7 @@ vuepress-plugin-feed@^0.1.8:
 
 "vuepress-plugin-frontmatters-feed@https://github.com/thinktandem/vuepress-plugin-frontmatters-feed":
   version "0.1.8"
-  resolved "https://github.com/thinktandem/vuepress-plugin-frontmatters-feed#f672fa18420f8e92b7e9140db38b3d53eb97d385"
+  resolved "https://github.com/thinktandem/vuepress-plugin-frontmatters-feed#3087f76a9ef71be7d81453a84a7d00729f085468"
   dependencies:
     feed "2.0.4"
     lodash.defaultsdeep "4.6.1"
