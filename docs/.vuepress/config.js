@@ -69,7 +69,7 @@ module.exports = {
             'quarterly-review',
             'security-basics',
             'security-incident-response',
-            'handling-emergency-requests'
+            'handling-emergency-requests',
           ],
         },
         {
