@@ -15,13 +15,6 @@ module.exports = {
           path: '/',
         },
       ],
-      feed: {
-        canonical_base: 'https://thinktandem.io',
-        feed_options: {
-          favicon: 'https://thinktandem.io/favicon.png',
-          image: 'https://lando.dev/images/logo-pink-small.png',
-        },
-      },
       frontmatters: [
         {
           id: 'industry',
@@ -64,6 +57,14 @@ module.exports = {
         hostname: 'https://thinktandem.io',
       },
     },
+    'vuepress-plugin-frontmatters-feed': {
+      canonical_base: 'https://thinktandem.io',
+      posts_directories: ['/blog/'],
+      feed_options: {
+        favicon: 'https://thinktandem.io/favicon.png',
+        image: 'https://lando.dev/images/logo-pink-small.png',
+      },
+    },
     '@vuepress/google-analytics': {
       ga: 'UA-XXXXXXX',
     },
@@ -87,11 +88,15 @@ module.exports = {
     docsBranch: 'master',
     search: false,
     editLinks: false,
-    // nav: [
-    //   {
-    //     text: 'Case Studies',
-    //     link: '/tag/case-study/',
-    //   },
-    // ],
+    nav: [
+      {
+        text: 'Industry Test',
+        link: '/industry/healthcare/',
+      },
+      {
+        text: 'Technology Test',
+        link: '/technology/drupal/',
+      },
+    ],
   },
 };
