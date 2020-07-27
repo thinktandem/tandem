@@ -43,9 +43,15 @@ web:
           allow: true
         ^/rss\.xml$:
           allow: true
+        ^/feed-.*?\.xml:
+          allow: true
         ^/feed\.atom$:
           allow: true
+        ^/feed-.*?\.atom$:
+          allow: true
         ^/feed\.json$:
+          allow: true
+        ^/feed-.*?\.json$:
           allow: true
 
 # Build time dependencies.
