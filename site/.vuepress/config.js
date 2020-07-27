@@ -24,10 +24,37 @@ module.exports = {
       },
       frontmatters: [
         {
-          id: 'tag',
-          keys: ['tag', 'tags'],
-          path: '/tag/',
-          frontmatter: {title: 'Tag'},
+          id: 'industry',
+          keys: ['industry', 'industries'],
+          path: '/industry/',
+          frontmatter: {title: 'Industry'},
+          pagination: {
+            lengthPerPage: 25,
+          },
+        },
+        {
+          id: 'technology',
+          keys: ['technology', 'technologies'],
+          path: '/technology/',
+          frontmatter: {title: 'Technology'},
+          pagination: {
+            lengthPerPage: 25,
+          },
+        },
+        {
+          id: 'service',
+          keys: ['service', 'services'],
+          path: '/service/',
+          frontmatter: {title: 'Service'},
+          pagination: {
+            lengthPerPage: 25,
+          },
+        },
+        {
+          id: 'type',
+          keys: ['type', 'types'],
+          path: '/type/',
+          frontmatter: {title: 'Type'},
           pagination: {
             lengthPerPage: 25,
           },
