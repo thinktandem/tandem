@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Tandem Named Leading Drupal Developer'
 tags:
     - drupal

@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Migrating a Drupal 7 Body Field to a Drupal 8 Paragraph'
 tags:
     - development

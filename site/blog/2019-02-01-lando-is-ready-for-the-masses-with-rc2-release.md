@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Lando is ready for the masses with RC2 release'
 tags:
     - development

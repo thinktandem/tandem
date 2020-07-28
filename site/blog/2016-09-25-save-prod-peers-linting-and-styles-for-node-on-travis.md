@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Save Prod & Peers: Linting and Styles for Node on Travis'
 tags:
     - deployment

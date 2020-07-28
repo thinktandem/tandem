@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Debugging with New Relic, BlazeMeter, strace & more'
 tags:
     - development

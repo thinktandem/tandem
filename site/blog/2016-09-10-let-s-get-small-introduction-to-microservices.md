@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Let''s Get Small: Introduction to Microservices'
 tags:
     - devops

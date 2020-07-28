@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Preparing for Drupal 9 with Lando + PHPStan'
 tags:
     - development

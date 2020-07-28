@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Lando Share ~ Sharing is Caring'
 tags:
     - development

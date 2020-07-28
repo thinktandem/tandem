@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Changing a Content Type Name During a Drupal 8 Migration'
 tags:
     - development

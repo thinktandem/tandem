@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Journey to Lando: Mistakes, Pivots and Vindication'
 tags:
     - deployment

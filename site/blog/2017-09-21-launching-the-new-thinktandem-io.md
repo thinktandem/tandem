@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Launching the New ThinkTandem.io'
 tags:
     - misc

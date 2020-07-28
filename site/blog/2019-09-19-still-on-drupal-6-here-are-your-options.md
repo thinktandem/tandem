@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Still on Drupal 6? Here are Your Options'
 tags:
     - support

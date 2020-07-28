@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'WordPress Performance Essentials'
 tags:
     - development

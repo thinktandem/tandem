@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Goodbye VirtualBox: Kalabox 2.1.1'
 tags:
     - localdev

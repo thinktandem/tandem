@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Higher Ed Drupal Fun Down on the SiteFarm'
 tags:
     - development

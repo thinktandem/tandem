@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'BADCamp 2017 ~ All the Things'
 tags:
     - development

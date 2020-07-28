@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'How To Write The Best Blog Post For Great SEO In 2018'
 tags:
     - strategy

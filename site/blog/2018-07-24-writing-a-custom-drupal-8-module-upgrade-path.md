@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Writing a Custom Drupal 8 Module Upgrade Path'
 tags:
     - development

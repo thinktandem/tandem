@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Utilizing Wildcard Redirects To Win Broken Backlinks'
 tags:
     - development

@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Lando Night @ DrupalCon 2019 Seattle'
 tags:
     - localdev

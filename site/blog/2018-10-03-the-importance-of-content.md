@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'The Importance of Content'
 tags:
     - digitalstrategy

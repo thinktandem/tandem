@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Lando + BLT + Acquia'
 tags:
     - development

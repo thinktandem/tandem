@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Handling Post Migration Events in Drupal 8'
 tags:
     - development

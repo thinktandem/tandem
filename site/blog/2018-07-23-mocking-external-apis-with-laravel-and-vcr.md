@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Mocking External APIs with Laravel and VCR'
 tags:
     - development

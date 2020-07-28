@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Altering Views Ajax in Drupal 8'
 tags:
     - development

@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Migrating from Toolset Types to Advanced Custom Fields'
 tags:
     - development

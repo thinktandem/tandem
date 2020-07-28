@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'How To Stop An Intelligent Spambot'
 tags:
     - development

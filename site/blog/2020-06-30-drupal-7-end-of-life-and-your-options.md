@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Drupal 7 End of Life and Your Options'
 tags:
     - support

@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Lando Migration Webinar Part 1 Followup'
 tags:
     - development

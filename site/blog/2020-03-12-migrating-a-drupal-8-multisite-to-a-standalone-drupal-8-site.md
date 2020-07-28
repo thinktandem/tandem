@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Migrating a Drupal 8 Multisite to a Standalone Drupal 8 Site'
 tags:
     - development

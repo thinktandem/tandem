@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Using Pantheon''s Nested Docroot with Kalabox'
 tags:
     - localdev

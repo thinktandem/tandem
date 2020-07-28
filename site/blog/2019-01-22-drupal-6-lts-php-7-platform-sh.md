@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Drupal 6 LTS + PHP 7 + Platform.sh'
 tags:
     - development

@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Migrating Drupal 7 Organic Groups to Drupal 8 Group'
 tags:
     - development

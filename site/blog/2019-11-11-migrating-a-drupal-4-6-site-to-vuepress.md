@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Migrating a Drupal 4.6 Site To VuePress'
 tags:
     - drupal

@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Lando + Backdrop + CiviCRM'
 tags:
     - development

@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Higher Ed. & Accessibility'
 tags:
     - accessibility

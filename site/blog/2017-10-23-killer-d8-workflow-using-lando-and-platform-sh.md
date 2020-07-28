@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Killer D8 Workflow Using Lando and Platform.sh'
 tags:
     - deployment

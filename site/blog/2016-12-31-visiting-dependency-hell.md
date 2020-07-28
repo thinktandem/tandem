@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Visiting Dependency Hell'
 tags:
     - deployment

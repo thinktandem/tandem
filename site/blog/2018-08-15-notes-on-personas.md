@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Notes on Personas'
 tags:
     - strategy

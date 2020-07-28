@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Drupal 8 Performance Tips and Tricks for 2020'
 tags:
     - development

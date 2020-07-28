@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Writing a Drupal 8 Table to Table Migration Path'
 tags:
     - development

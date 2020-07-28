@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Migrating a Drupal 7 File To a Drupal 8 Media Entity'
 tags:
     - development

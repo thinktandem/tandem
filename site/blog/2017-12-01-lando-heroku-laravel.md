@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Lando + Heroku + Laravel'
 tags:
     - development

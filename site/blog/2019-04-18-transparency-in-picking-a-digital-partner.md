@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Transparency in Picking a Digital Partner'
 tags:
     - drupal

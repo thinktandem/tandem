@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Apache Tika on Platform.sh'
 tags:
     - development

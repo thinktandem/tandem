@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Lando + Contenta CMS + Nuxt Pt. 2'
 tags:
     - development

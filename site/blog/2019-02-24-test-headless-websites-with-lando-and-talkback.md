@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Test Headless Websites with Lando and Talkback'
 tags:
     - development

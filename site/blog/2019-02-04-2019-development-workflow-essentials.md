@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: '2019 Development Workflow Essentials'
 tags:
     - deployment

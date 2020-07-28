@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'You Might Not Need a Full Blown CMS'
 tags:
     - seo

@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Migrating to a Drupal 8 Date Range'
 tags:
     - development

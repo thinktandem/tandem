@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Devsigner 2017 Takeaways'
 tags:
     - conferences

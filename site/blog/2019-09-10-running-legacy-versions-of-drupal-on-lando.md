@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Running Legacy Versions of Drupal on Lando'
 tags:
     - development

@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'How My Agency uses Kalabox to Win all the Local'
 tags:
     - deployment

@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Handling Dynamic Routes in Drupal 8'
 tags:
     - development

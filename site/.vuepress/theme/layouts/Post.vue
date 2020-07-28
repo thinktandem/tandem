@@ -7,13 +7,8 @@
         :pic="$frontmatter.pic"
         :link="$frontmatter.link"
         :date="$frontmatter.date"
-        :location="$frontmatter.location"
       />
-      <SponsorsList />
-      <CarbonAds />
       <Content />
-      <hr />
-      <Newsletter />
       <PostFooter
         :tags="$frontmatter.tags"
         :original="$frontmatter.original"
@@ -31,7 +26,7 @@ import Toc from '@theme/components/Toc.vue';
 import SponsorsList from '@theme/components/SponsorsList.vue';
 
 export default {
-  components: {CarbonAds, PostHeader, PostFooter, SponsorsList, Toc}, // eslint-disable-line
+  components: {PostHeader, PostFooter, SponsorsList, Toc}, // eslint-disable-line
   mounted() {
     console.log(this);
   },

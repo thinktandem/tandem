@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Drupal 8 Search API Solr + Lando + Platform.sh'
 tags:
     - development

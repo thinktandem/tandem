@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'BADCamp So Good'
 tags:
     - BADCamp

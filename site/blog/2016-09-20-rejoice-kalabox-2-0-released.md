@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Rejoice: Kalabox 2.0 Released'
 tags:
     - deployment

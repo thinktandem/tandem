@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Node Microservices on Docker Cloud'
 tags:
     - devops

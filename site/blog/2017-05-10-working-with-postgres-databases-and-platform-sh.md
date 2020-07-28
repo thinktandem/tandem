@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Working with Postgres Databases and Platform.sh'
 tags:
     - localdev

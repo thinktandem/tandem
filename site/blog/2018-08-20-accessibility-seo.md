@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Accessibility & SEO'
 tags:
     - accessibility

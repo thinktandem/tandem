@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Connecting to a Remote Platform.sh Database'
 tags:
     - localdev

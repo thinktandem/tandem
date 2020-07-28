@@ -1,4 +1,5 @@
 ---
+layout: Post
 title: 'Fixing Stagnant Inline Entity Forms in the Search Index'
 tags:
     - development
