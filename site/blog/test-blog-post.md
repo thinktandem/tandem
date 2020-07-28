@@ -1,10 +1,9 @@
 ---
 metaTitle: Test Blog Post
 pageClass: blog-home
-industry:
-  - healthcare
-technology:
+tags:
   - drupal
+  - healthcare
 ---
 # TEST
 
