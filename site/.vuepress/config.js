@@ -21,7 +21,7 @@ module.exports = {
           itemPermalink: '/careers/:slug',
         },
         {
-          id: 'case-study',
+          id: 'casestudy',
           dirname: 'case-study',
           path: '/case-study/',
           itemPermalink: '/case-study/:slug',
@@ -87,12 +87,8 @@ module.exports = {
     editLinks: false,
     nav: [
       {
-        text: 'Industry Test',
-        link: '/industry/healthcare/',
-      },
-      {
-        text: 'Technology Test',
-        link: '/technology/drupal/',
+        text: 'Blog',
+        link: '/blog/',
       },
     ],
   },
