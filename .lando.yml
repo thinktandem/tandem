@@ -11,12 +11,16 @@ proxy:
 services:
   docs:
     type: node:12
+    ssl: true
+    sslExpose: false
     build:
       - yarn install
     command: yarn run dev:docs
     port: 8010
   site:
     type: node:12
+    ssl: true
+    sslExpose: false
     build:
       - yarn install
     command: yarn run dev:site
