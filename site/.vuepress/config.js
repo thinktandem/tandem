@@ -15,19 +15,39 @@ module.exports = {
           path: '/',
         },
       ],
-      feed: {
-        canonical_base: 'https://thinktandem.io',
-        feed_options: {
-          favicon: 'https://thinktandem.io/favicon.png',
-          image: 'https://lando.dev/images/logo-pink-small.png',
-        },
-      },
       frontmatters: [
         {
-          id: 'tag',
-          keys: ['tag', 'tags'],
-          path: '/tag/',
-          frontmatter: {title: 'Tag'},
+          id: 'industry',
+          keys: ['industry', 'industries'],
+          path: '/industry/',
+          frontmatter: {title: 'Industry'},
+          pagination: {
+            lengthPerPage: 25,
+          },
+        },
+        {
+          id: 'technology',
+          keys: ['technology', 'technologies'],
+          path: '/technology/',
+          frontmatter: {title: 'Technology'},
+          pagination: {
+            lengthPerPage: 25,
+          },
+        },
+        {
+          id: 'service',
+          keys: ['service', 'services'],
+          path: '/service/',
+          frontmatter: {title: 'Service'},
+          pagination: {
+            lengthPerPage: 25,
+          },
+        },
+        {
+          id: 'type',
+          keys: ['type', 'types'],
+          path: '/type/',
+          frontmatter: {title: 'Type'},
           pagination: {
             lengthPerPage: 25,
           },
@@ -35,6 +55,14 @@ module.exports = {
       ],
       sitemap: {
         hostname: 'https://thinktandem.io',
+      },
+    },
+    'vuepress-plugin-frontmatters-feed': {
+      canonical_base: 'https://thinktandem.io',
+      posts_directories: ['/blog/'],
+      feed_options: {
+        favicon: 'https://thinktandem.io/favicon.png',
+        image: 'https://lando.dev/images/logo-pink-small.png',
       },
     },
     '@vuepress/google-analytics': {
@@ -60,11 +88,15 @@ module.exports = {
     docsBranch: 'master',
     search: false,
     editLinks: false,
-    // nav: [
-    //   {
-    //     text: 'Case Studies',
-    //     link: '/tag/case-study/',
-    //   },
-    // ],
+    nav: [
+      {
+        text: 'Industry Test',
+        link: '/industry/healthcare/',
+      },
+      {
+        text: 'Technology Test',
+        link: '/technology/drupal/',
+      },
+    ],
   },
 };
