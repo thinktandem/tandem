@@ -16,7 +16,8 @@
     "build:site": "vuepress build site -d _site",
     "dev:docs": "vuepress dev --temp /tmp/tandem-docs --cache /tmp/tandem-docs-cache --port 8010 docs",
     "dev:site": "vuepress dev --temp /tmp/tandem-site --cache /tmp/tandem-site-cache --port 8011 site",
-    "lint:sites": "eslint  --quiet --ext .js,.vue --config .eslintrc.json site/.vuepress docs/.vuepress",
+    "lint:sites": "eslint --quiet --ext .js,.vue --config .eslintrc.json site/.vuepress docs/.vuepress",
+    "lint:plugins": "eslint --quiet --no-ignore --config .eslintrc.lando.json plugins",
     "test": "markdownlint README.md docs/**/*.md docs/*.md site/**/*.md site/*.md"
   },
   "devDependencies": {
@@ -27,7 +28,7 @@
     "eslint-config-google": "^0.9.1",
     "eslint-plugin-vue": "^5.2.3",
     "markdownlint-cli": "^0.3.1",
-    "vuepress": "^1.0.4",
+    "vuepress": "^1.5.2",
     "vuepress-plugin-autometa": "^0.1.12",
     "vuepress-plugin-canonical": "^1.0.0",
     "vuepress-plugin-frontmatters-feed": "https://github.com/thinktandem/vuepress-plugin-frontmatters-feed",
