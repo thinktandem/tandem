@@ -64,7 +64,7 @@ Configuring Drupal 8 Search API
 
 Setup a Search API server via admin/config/search/search-api as you normally would.  However, select Solr as the backend.  Then you will select Standard under Solr Connector.  Finally, put search as the Solr Host and drupal8 as the Solr Core.  The rest you can leave as is.  Your setup should look like this:
 
-<img src="images/articles/lando-solr/solr-settings.jpg" alt="Drupal 8 Search API Solr Settings" />
+<img src="/images/articles/lando-solr/solr-settings.jpg" alt="Drupal 8 Search API Solr Settings" />
 
 Once you hit save, you may see this message:
 

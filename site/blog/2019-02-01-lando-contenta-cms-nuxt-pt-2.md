@@ -44,7 +44,7 @@ The same goes for the user. Add just like any other Drupal user. Visit:
 `/admin/people` and click the `+ ADD USER` button. When adding the user give it
 the username `vue_user` and check off the rule of `vue_role`.
 
-<img style="width: 100%;" src="images/articles/headless-pt-2/vueUser.png" alt="Screeenshot of add user configuration page"/>
+<img style="width: 100%;" src="/images/articles/headless-pt-2/vueUser.png" alt="Screeenshot of add user configuration page"/>
 
 Save the form.
 
@@ -54,12 +54,12 @@ Save the form.
 Let's set up a consumer called `vue_consumer`. Visit `/admin/config/services/consumer`
 and click the `ADD CONSUMER` button:
 
-<img style="width: 100%;" src="images/articles/headless-pt-2/consumerAdd.png" alt="Screeenshot of add consumer configuration page"/>
+<img style="width: 100%;" src="/images/articles/headless-pt-2/consumerAdd.png" alt="Screeenshot of add consumer configuration page"/>
 
 Fill out the add consumer form and be sure to name the consumer `vue_consumer`,
 give the user `vue_user`, and scope of `vue_role`.
 
-<img style="width: 100%;" src="images/articles/headless-pt-2/vueConsumer.png" alt="Screeenshot of add consumer add form"/>
+<img style="width: 100%;" src="/images/articles/headless-pt-2/vueConsumer.png" alt="Screeenshot of add consumer add form"/>
 
 Save the form.
 
@@ -162,7 +162,7 @@ mkdir pages/posts
 
 So you should end up with a directory structure like this:
 
-<img style="width: 100%;" src="images/articles/headless-pt-2/nuxtPages.png" alt="mynuxt app directory structure"/>
+<img style="width: 100%;" src="/images/articles/headless-pt-2/nuxtPages.png" alt="mynuxt app directory structure"/>
 
 Notice the structure of the `pages/posts/index.vue` file. It has three sections:
 `<template>`, `<script>`, and `<style>`. As you can probably guess `<template>`
@@ -245,7 +245,7 @@ have referenced it the same way we referenced `title`.
 Now visit your page at https://mynuxt.lndo.site and you should see something
 like this:
 
-<img style="width: 100%; border: 1px gray solid;" src="images/articles/headless-pt-2/placeHolderPost.png" alt="Screeenshot of nuxt app with placeholder data"/>
+<img style="width: 100%; border: 1px gray solid;" src="/images/articles/headless-pt-2/placeHolderPost.png" alt="Screeenshot of nuxt app with placeholder data"/>
 
 Now let's replace the placeholder data with real data from `myapi`.
 
@@ -310,7 +310,7 @@ is hardcoded for a specific post.
 Now visiting: https://mynuxt.lndo.site we see real data fetched from Contenta:
 
 
-<img style="width: 100%; border: 1px gray solid;" src="images/articles/headless-pt-2/asyncDataPost.png" alt="Screeenshot of nuxt app with placeholder data"/>
+<img style="width: 100%; border: 1px gray solid;" src="/images/articles/headless-pt-2/asyncDataPost.png" alt="Screeenshot of nuxt app with placeholder data"/>
 
 
 Pro Tip
@@ -322,7 +322,7 @@ webpack process. It also reports out errors caught by eslint and any `console.lo
 output you put in for debugging.
 
 
-<img style="width: 100%; border: 1px gray solid;" src="images/articles/headless-pt-2/logs.png" alt="Screeenshot of terminal top right pane with lando logs"/>
+<img style="width: 100%; border: 1px gray solid;" src="/images/articles/headless-pt-2/logs.png" alt="Screeenshot of terminal top right pane with lando logs"/>
 
 In the top right pane is the output of `lando logs -s appserver -f`.
 

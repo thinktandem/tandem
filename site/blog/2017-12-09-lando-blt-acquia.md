@@ -183,7 +183,7 @@ git:
 Replace the `git` URL with a URL from your Acquia Cloud dashboard.
 
 <center>
-  <img src="images/articles/lando-blt-acquia/acquia-dash.jpg" alt="Acquia Cloud Dashboard Screenshot" />
+  <img src="/images/articles/lando-blt-acquia/acquia-dash.jpg" alt="Acquia Cloud Dashboard Screenshot" />
 </center>
 
 Deploy to Acquia Cloud

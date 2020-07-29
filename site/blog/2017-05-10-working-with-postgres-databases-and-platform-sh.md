@@ -32,7 +32,7 @@ Commands
   * Create a restore point through the Platform.sh dashboard
 
   <center>
-    <img alt="sequel-pro-connection-screen" src="images/articles/platform-restore-point.png" width="433" align="center" />
+    <img alt="sequel-pro-connection-screen" src="/images/articles/platform-restore-point.png" width="433" align="center" />
   </center>
 
 Navigate to your app's Platform.sh dashboard get into the environment you want to replace the DB for, in my case `test`.  Clicking on the `snapshots` icon in the top right of the dashboard will create a snapshot restorable backup point for your app in case something goes horribly wrong ;).
@@ -56,7 +56,7 @@ Here are the `platform` cli commands to make a backup of the databases of the en
     * Be sure to replace `YOUR_PROJECT_ID` with your Platform apps ID.  This should already be in the filename if you are following along!
 
     <center>
-      <img alt="sequel-pro-connection-screen" src="images/articles/psequel-dropdown-schema.png" width="433" align="center" />
+      <img alt="sequel-pro-connection-screen" src="/images/articles/psequel-dropdown-schema.png" width="433" align="center" />
     </center>
 If you see tables in the freshly imported data that don't seem to make sense make sure to check your schema
 (in PSequel top left dropdown) and make sure it is set to the correct schema and that should

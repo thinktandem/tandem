@@ -24,7 +24,7 @@ You will need to install the toolbar for your preferred SEO platform.  This allo
 
 Once you have the toolbar installed, head over to Google and type any search.  I searched for the infamous quote "Shampoo is better" and the results looked like this:
 
-<img src="images/articles/writing-best-seo-post/ahrefs-toolbar-shampoo.jpg" alt="ahrefs Google search toolbar example">
+<img src="/images/articles/writing-best-seo-post/ahrefs-toolbar-shampoo.jpg" alt="ahrefs Google search toolbar example">
 
 As you can see, there are numerous indicators as to why this SEO-friendly content ranks higher than others.  The main factor I usually look at during my research is the DR (Domain Rating) number.  Here is a great blog post on what the [ahrefs Domain Rating](https://ahrefs.com/blog/domain-rating/) is and how to understand the values.  Basically, we only want content from sites that have a higher Domain Rating than 50.  These sites have a good amount of backlinks and ranking power when they get to that level.
 
@@ -67,7 +67,7 @@ Once you have the result from the Keyword Explorer, you need to do the following
 
 Your results should look something like this:
 
-<img src="images/articles/writing-best-seo-post/keyword-ideas.jpg" alt="ahrefs Keyword Explorer example">
+<img src="/images/articles/writing-best-seo-post/keyword-ideas.jpg" alt="ahrefs Keyword Explorer example">
 
 Make sure you are sorting by volume as well.  We want to be picking keywords that have the best SEO results with the lowest competition.  The KD metric is the [Keyword Difficulty](https://ahrefs.com/keyword-difficulty) factor.  The higher the number, the harder it is to rank in Google's top results for that keyword.  We are trying to take the strategic route with this tactic by finding keywords with biggest bang for our buck.
 
@@ -88,7 +88,7 @@ To begin do the following:
 
 Your results should come out like this:
 
-<img src="images/articles/writing-best-seo-post/site-explorer-compressor.jpg" alt="ahrefs Site Explorer example">
+<img src="/images/articles/writing-best-seo-post/site-explorer-compressor.jpg" alt="ahrefs Site Explorer example">
 
 As in our Keyword Explorer step, you want to find the keywords that have the biggest audience with the lowest competition.  The goal of these steps is to have around a dozen keyword phrases / long tail keywords that also contain your main keywords.  This way you can begin to craft your writing sample with metrics I will explain below.
 

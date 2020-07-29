@@ -120,7 +120,7 @@ lando drush cr
 
 Now you can visit your site and you should see something like this:
 
-<img style="width: 100%;" src="images/articles/headless-pt-1/myapi.png" alt="Screeenshot of Fresh APICMS"/>
+<img style="width: 100%;" src="/images/articles/headless-pt-1/myapi.png" alt="Screeenshot of Fresh APICMS"/>
 
 Setup Nuxt App
 --------------
@@ -189,7 +189,7 @@ Now you should be able to visit: https://mynuxt.lndo.site and see something like
 this:
 
 
-<img style="width: 100%;" src="images/articles/headless-pt-1/mynuxt.png" alt="Screeenshot of Fresh Nuxt app"/>
+<img style="width: 100%;" src="/images/articles/headless-pt-1/mynuxt.png" alt="Screeenshot of Fresh Nuxt app"/>
 
 Conclusion
 ----------

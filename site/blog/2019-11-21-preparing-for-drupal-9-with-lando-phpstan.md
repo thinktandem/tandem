@@ -47,7 +47,7 @@ So now all we need to do is find and fix these deprecations within our Drupal 8 
 
 One quick and easy way to identify these deprecations is while you are writing code.  If you are using the Drupal Support plugin for PHPStorm, it will mark deprecations for you like this:
 
-<img src="images/articles/drupal9-phpstan/deprecation-phpstorm.jpg" alt="PHPStorm Deprecation Screenshot" />
+<img src="/images/articles/drupal9-phpstan/deprecation-phpstorm.jpg" alt="PHPStorm Deprecation Screenshot" />
 
 While this is great as you are writing code, it doesn't help too much to find all the deprecations in your code base.  Here at Tandem, we love to automate all the things to make our lives easier.  This is why we created [Lando](https://lando.dev/) and we can use Lando's power to identify all our deprecations.  
 
@@ -118,11 +118,11 @@ That is it, you are now ready to rock and roll and begin testing for all your De
 
 Lets start off by running the default ```lando test``` command on a site with no deprecations:
 
-<img src="images/articles/drupal9-phpstan/depercations-pass.jpg" alt="PHPStorm Lando Test Deprecations Pass" />
+<img src="/images/articles/drupal9-phpstan/depercations-pass.jpg" alt="PHPStorm Lando Test Deprecations Pass" />
 
 Which is great, but let's see what happens when we have a bunch of deprecations.  I will be targeting specific directories using the ```lando phpstan``` command:
 
-<img src="images/articles/drupal9-phpstan/depercations-fail.jpg" alt="PHPStorm Lando Test Deprecations Fail" />
+<img src="/images/articles/drupal9-phpstan/depercations-fail.jpg" alt="PHPStorm Lando Test Deprecations Fail" />
 
 So as you can see, the core Content Moderation module has some deprecations in it still that need to be fixed.  From this point you would go into the code and adjust it as need be per deprecation.  This is the hardest part about this process currently.  Sometimes it is a super simple fix, but every once in awhile, you may have to refactor the code a little bit.  The later is very rare, but it does happen on a more complex code base.
 

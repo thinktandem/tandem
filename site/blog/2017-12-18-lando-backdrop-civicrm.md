@@ -115,7 +115,7 @@ Here is a snippet of the `lando info` command output
 You can see we have two database keys now: `database` and `cividatabase` these contain the info that we need to connect to the respective databases. I've also used the `portforward` key in the `.lando.yml` file to give the databases static external ports of `6618` for the Backdrop database and `6619` for CiviCRM database.
 
 <center>
-  <img alt="Sequel Pro Connection Screen" src="images/articles/lando-backdrop-civicrm/sqlpro-creds.jpg" />
+  <img alt="Sequel Pro Connection Screen" src="/images/articles/lando-backdrop-civicrm/sqlpro-creds.jpg" />
 </center>
 
 Fill out the database creds with the information from the `cividatabase` key in the output of the `lando info` command.

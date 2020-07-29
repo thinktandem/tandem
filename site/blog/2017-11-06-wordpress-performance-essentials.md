@@ -36,7 +36,7 @@ Here are the settings you should have on each of the sections/apps of CloudFlare
   * Click the orange cloud (http proxy) on all A and CNAME records.
   * You should utilize CNAME flattening as well. To do this create a new CNAME record and put www in the name and then @ in the domain name fields.
 
-<img src="images/articles/cname-flat.jpg" alt="Cloudflare DNS Screen - CNAME Flattening">
+<img src="/images/articles/cname-flat.jpg" alt="Cloudflare DNS Screen - CNAME Flattening">
 
 
 ##### **Crypto**
@@ -184,7 +184,7 @@ PHP 7.x
 
 PHP 7 comes with numerous new bells and whistles.  However the hands down best improvement is nearly twice the speed.  As you can see from this infographic below taken from [Zend.com PHP 7 Blog Post](https://www.zend.com/en/resources/php7_infographic):
 
-<img src="images/articles/wp-php-speed.jpg" alt="WordPress PHP 7 Speed Metrics Graph">
+<img src="/images/articles/wp-php-speed.jpg" alt="WordPress PHP 7 Speed Metrics Graph">
 
 On managed hosting platforms like [Pantheon](https://pantheon.io/) and [Platform](https://platform.sh/), there are simple settings to change the PHP version.  However, if you are on your own, then I would do the following to install PHP 7.x:
 
