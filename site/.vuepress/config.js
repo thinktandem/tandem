@@ -15,28 +15,10 @@ module.exports = {
           itemPermalink: '/blog/:year/:month/:day/:slug',
         },
         {
-          id: 'careers',
-          dirname: 'careers',
-          path: '/careers/',
-          itemPermalink: '/careers/:slug',
-        },
-        {
-          id: 'casestudy',
-          dirname: 'case-study',
-          path: '/case-study/',
-          itemPermalink: '/case-study/:slug',
-        },
-        {
-          id: 'service',
-          dirname: 'service',
-          path: '/service/',
-          itemPermalink: '/service/:slug',
-        },
-        {
-          id: 'staff',
-          dirname: 'staff',
-          path: '/staff/',
-          itemPermalink: '/staff/:slug',
+          id: 'casestudies',
+          dirname: 'case-studies',
+          path: '/case-studies/',
+          itemPermalink: '/case-studies/:slug',
         },
       ],
       frontmatters: [
@@ -90,6 +72,11 @@ module.exports = {
         text: 'Blog',
         link: '/blog/',
       },
+      {
+        text: 'Case Studies',
+        link: '/case-studies/',
+      },
     ],
+
   },
 };
