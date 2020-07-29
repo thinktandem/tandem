@@ -19,7 +19,6 @@
 </template>
 
 <script>
-import CarbonAds from '@theme/components/CarbonAds.vue';
 import PostHeader from '@theme/components/PostHeader.vue';
 import PostFooter from '@theme/components/PostFooter.vue';
 import Toc from '@theme/components/Toc.vue';
