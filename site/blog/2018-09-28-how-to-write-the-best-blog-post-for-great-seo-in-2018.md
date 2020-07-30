@@ -7,8 +7,8 @@ tags:
     - support
 author: 'John Ouellet'
 private: false
-mainImage: images/articles/writing-best-seo-post/writing-seo.jpg
-img-src: images/articles/writing-best-seo-post/writing-seo.jpg
+mainImage: /images/articles/writing-best-seo-post/writing-seo.jpg
+img-src: /images/articles/writing-best-seo-post/writing-seo.jpg
 byline: 'Tips and tricks so you get the most out of your blogging efforts.'
 date: '2018-09-28'
 meta:

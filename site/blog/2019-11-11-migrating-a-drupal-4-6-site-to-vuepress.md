@@ -6,8 +6,8 @@ tags:
     - development
 author: 'John Ouellet'
 private: false
-mainImage: images/articles/drupal-vuepress/drupal-vuepress.png
-img-src: images/articles/drupal-vuepress.png
+mainImage: /images/articles/drupal-vuepress/drupal-vuepress.png
+img-src: /images/articles/drupal-vuepress.png
 byline: 'With Lando and Symfony Console, migrating this legacy Drupal 4.6 site to VuePress was fairly straightforward.'
 date: '2019-11-11'
 meta:

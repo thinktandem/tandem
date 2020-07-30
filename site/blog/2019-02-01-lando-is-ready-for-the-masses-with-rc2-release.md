@@ -11,8 +11,8 @@ tags:
     - testing
 author: 'Mike Pirog'
 private: false
-mainImage: images/articles/lando-space.jpg
-img-src: images/articles/lando-space.jpg
+mainImage: /images/articles/lando-space.jpg
+img-src: /images/articles/lando-space.jpg
 byline: 'We''ve waited, we''ve bided our time, we''ve gathered data and now we are ready to smite traditional local dev to ruin by unleashing the true power of Lando'
 date: '2019-02-01'
 meta:

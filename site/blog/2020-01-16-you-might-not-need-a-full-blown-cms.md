@@ -5,8 +5,8 @@ tags:
     - seo
 author: 'Mike Milano'
 private: false
-mainImage: images/articles/cms-vs-static/cms-vs-static.jpg
-img-src: images/articles/cms-vs-static/cms-vs-static.jpg
+mainImage: /images/articles/cms-vs-static/cms-vs-static.jpg
+img-src: /images/articles/cms-vs-static/cms-vs-static.jpg
 byline: 'A case for static sites'
 date: '2020-01-16'
 meta:

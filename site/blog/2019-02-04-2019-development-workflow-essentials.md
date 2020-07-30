@@ -8,8 +8,8 @@ tags:
     - devops
 author: 'Alec Reynolds'
 private: false
-mainImage: images/articles/workflow.jpg
-img-src: images/articles/workflow.jpg
+mainImage: /images/articles/workflow.jpg
+img-src: /images/articles/workflow.jpg
 byline: 'Don''t get caught wearing last year''s dev workflow, see all the essentials for 2019.'
 date: '2019-02-04'
 meta:

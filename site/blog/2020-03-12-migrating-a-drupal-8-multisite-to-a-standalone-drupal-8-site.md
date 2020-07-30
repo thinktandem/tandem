@@ -6,8 +6,8 @@ tags:
     - drupal
 author: 'John Ouellet'
 private: false
-mainImage: images/articles/drupal-migration.jpg
-img-src: images/articles/drupal-migration.jpg
+mainImage: /images/articles/drupal-migration.jpg
+img-src: /images/articles/drupal-migration.jpg
 byline: 'A straighforward guide to doing a  Drupal 8 to Drupal 8 migration.'
 date: '2020-03-12'
 meta:

@@ -7,8 +7,8 @@ tags:
     - drupal
 author: 'Geoff St. Pierre'
 private: false
-mainImage: images/articles/tika/tika-platform.jpg
-img-src: images/articles/tika/tika-platform.jpg
+mainImage: /images/articles/tika/tika-platform.jpg
+img-src: /images/articles/tika/tika-platform.jpg
 byline: 'Apache Tika allows you to index PDF docs for searching with Solr.'
 date: '2017-11-10'
 meta:

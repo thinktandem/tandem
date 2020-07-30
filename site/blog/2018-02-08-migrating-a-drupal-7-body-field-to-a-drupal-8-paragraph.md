@@ -6,8 +6,8 @@ tags:
     - drupal
 author: 'John Ouellet'
 private: false
-mainImage: images/articles/d7-d8.jpg
-img-src: images/articles/d7-d8.jpg
+mainImage: /images/articles/d7-d8.jpg
+img-src: /images/articles/d7-d8.jpg
 byline: 'Migrating A Drupal 7 long text field to a Drupal 8 nested text field in a paragraph is a two step process.  It is quick and easy once you get the basic grasp of the mechanisms involved.'
 date: '2018-02-08'
 meta:

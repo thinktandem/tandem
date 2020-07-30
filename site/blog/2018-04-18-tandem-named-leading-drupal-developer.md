@@ -6,8 +6,8 @@ tags:
     - development
 author: 'Alec Reynolds'
 private: false
-mainImage: images/articles/clutch-sf-2018.jpg
-img-src: images/articles/clutch-sf-2018.jpg
+mainImage: /images/articles/clutch-sf-2018.jpg
+img-src: /images/articles/clutch-sf-2018.jpg
 byline: 'Clutch has named Tandem one of the leading Drupal development agencies in SF for 2018.'
 date: '2018-04-18'
 meta:

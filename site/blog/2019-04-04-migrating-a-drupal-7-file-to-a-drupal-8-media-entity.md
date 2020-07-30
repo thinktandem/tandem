@@ -6,8 +6,8 @@ tags:
     - drupal
 author: 'John Ouellet'
 private: false
-mainImage: images/articles/d7-d8.jpg
-img-src: images/articles/d7-d8.jpg
+mainImage: /images/articles/d7-d8.jpg
+img-src: /images/articles/d7-d8.jpg
 byline: 'Media has been in core since 8.3.  As of this blog post, no migration path exists yet for a Drupal 7 File to a Drupal 8 Media Entity.'
 date: '2019-04-04'
 meta:

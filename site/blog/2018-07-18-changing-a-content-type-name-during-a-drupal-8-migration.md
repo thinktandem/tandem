@@ -6,8 +6,8 @@ tags:
     - drupal
 author: 'John Ouellet'
 private: false
-mainImage: images/articles/drupal-migration.jpg
-img-src: images/articles/drupal-migration.jpg
+mainImage: /images/articles/drupal-migration.jpg
+img-src: /images/articles/drupal-migration.jpg
 byline: 'Changing a content type machine name during a Drupal Migration requires a little bit of migration knowledge, but is fairly straight forward to do.'
 date: '2018-07-18'
 meta:

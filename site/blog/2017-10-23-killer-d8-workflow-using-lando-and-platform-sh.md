@@ -10,8 +10,8 @@ tags:
     - drupal
 author: 'Mike Pirog'
 private: false
-mainImage: images/articles/platformlando.png
-img-src: images/articles/platformlando.png
+mainImage: /images/articles/platformlando.png
+img-src: /images/articles/platformlando.png
 byline: 'Leverage the ease of Lando, Platform.sh, GitHub and Travis to quickly spin up an ultra pro workflow'
 date: '2017-10-23'
 meta:

@@ -9,8 +9,8 @@ tags:
     - HigherEducation
 author: 'Donna Bungard'
 private: false
-mainImage: images/articles/badcamp.jpg
-img-src: images/articles/badcamp.jpg
+mainImage: /images/articles/badcamp.jpg
+img-src: /images/articles/badcamp.jpg
 byline: 'A retrospective on my first BADCamp.'
 date: '2018-11-20'
 meta:

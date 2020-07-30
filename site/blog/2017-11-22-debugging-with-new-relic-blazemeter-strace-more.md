@@ -7,8 +7,8 @@ tags:
     - drupal
 author: 'John Ouellet'
 private: false
-mainImage: images/articles/debugging-with-stuff/debugging-journey.jpg
-img-src: images/articles/debugging-with-stuff/debugging-journey.jpg
+mainImage: /images/articles/debugging-with-stuff/debugging-journey.jpg
+img-src: /images/articles/debugging-with-stuff/debugging-journey.jpg
 byline: 'This is a start to finish mini case study surrounding a site crashing bug.  I will detail how I found the problems and then how I fixed them.'
 date: '2017-11-22'
 meta:

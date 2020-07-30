@@ -6,8 +6,8 @@ tags:
     - ux
 author: 'Alec Reynolds'
 private: false
-mainImage: 'https://thinktandem.io/images/articles/new-tandem-website.jpg'
-img-src: 'https://thinktandem.io/images/articles/new-tandem-website.jpg'
+mainImage: 'https://thinktandem.io//images/articles/new-tandem-website.jpg'
+img-src: 'https://thinktandem.io//images/articles/new-tandem-website.jpg'
 byline: 'Take a fresh look at what defines Tandem as a bold new digital agency.'
 date: '2017-09-21'
 meta:

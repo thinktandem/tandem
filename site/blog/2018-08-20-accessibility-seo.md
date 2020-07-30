@@ -8,8 +8,8 @@ tags:
     - marketing
 author: 'Donna Bungard'
 private: false
-mainImage: images/articles/a11yseo1.png
-img-src: images/articles/a11yseo1.png
+mainImage: /images/articles/a11yseo1.png
+img-src: /images/articles/a11yseo1.png
 date: '2018-08-20'
 meta:
     - { name: description, content: 'Accessibility & SEO' }

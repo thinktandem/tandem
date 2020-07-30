@@ -6,8 +6,8 @@ tags:
     - devops
 author: 'Geoff St. Pierre'
 private: false
-mainImage: 'https://thinktandem.io/images/articles/postgres-platform.png'
-img-src: 'https://thinktandem.io/images/articles/postgres-platform.png'
+mainImage: 'https://thinktandem.io//images/articles/postgres-platform.png'
+img-src: 'https://thinktandem.io//images/articles/postgres-platform.png'
 byline: 'How to work with Postgres Databases on Platform.sh'
 date: '2017-05-10'
 meta:

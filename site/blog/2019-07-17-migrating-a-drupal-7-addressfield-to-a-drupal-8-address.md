@@ -6,8 +6,8 @@ tags:
     - drupal
 author: 'John Ouellet'
 private: false
-mainImage: images/articles/d7-d8.jpg
-img-src: images/articles/d7-d8.jpg
+mainImage: /images/articles/d7-d8.jpg
+img-src: /images/articles/d7-d8.jpg
 byline: 'Migrating to a Drupal 8 address field is a lot simplier than it seems.'
 date: '2019-07-17'
 meta:

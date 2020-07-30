@@ -6,8 +6,8 @@ tags:
     - misc
 author: 'Alec Reynolds'
 private: false
-mainImage: /images/articles/tandem-clutch2019.jpg
-img-src: /images/articles/tandem-clutch2019.jpg
+mainImage: //images/articles/tandem-clutch2019.jpg
+img-src: //images/articles/tandem-clutch2019.jpg
 byline: 'Why we use services like Clutch.co to help you pick a digital partner faster.'
 date: '2019-04-18'
 meta:

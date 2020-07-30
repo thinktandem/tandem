@@ -8,8 +8,8 @@ tags:
     - javascript
 author: 'Dustin LeBlanc'
 private: false
-mainImage: images/articles/headless-testing/headless_horseman.jpg
-img-src: images/articles/headless-testing/headless_horseman.jpg
+mainImage: /images/articles/headless-testing/headless_horseman.jpg
+img-src: /images/articles/headless-testing/headless_horseman.jpg
 byline: 'Run end to end javascript tests on a decoupled frontend'
 date: '2019-02-24'
 meta:

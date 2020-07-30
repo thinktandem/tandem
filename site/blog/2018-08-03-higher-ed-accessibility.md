@@ -7,8 +7,8 @@ tags:
     - highereducation
 author: 'Donna Bungard'
 private: false
-mainImage: images/articles/a11yHigherEd.png
-img-src: images/articles/a11yHigherEd.png
+mainImage: /images/articles/a11yHigherEd.png
+img-src: /images/articles/a11yHigherEd.png
 byline: 'And how to make it a little easier to manage'
 date: '2018-08-03'
 meta:

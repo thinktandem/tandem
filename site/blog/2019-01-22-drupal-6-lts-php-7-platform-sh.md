@@ -7,8 +7,8 @@ tags:
     - drupal
 author: 'John Ouellet'
 private: false
-mainImage: images/articles/drupal.jpg
-img-src: images/articles/drupal.jpg
+mainImage: /images/articles/drupal.jpg
+img-src: /images/articles/drupal.jpg
 byline: 'A quick and easy guide to getting Drupal 6 sites on a stable and secure platform'
 date: '2019-01-22'
 meta:

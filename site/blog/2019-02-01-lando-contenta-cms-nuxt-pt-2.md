@@ -8,8 +8,8 @@ tags:
     - javascript
 author: 'Geoff St. Pierre'
 private: false
-mainImage: images/articles/headless-pt-1/landoContentaNuxt.png
-img-src: images/articles/headless-pt-1/landoContentaNuxt.png
+mainImage: /images/articles/headless-pt-1/landoContentaNuxt.png
+img-src: /images/articles/headless-pt-1/landoContentaNuxt.png
 byline: 'Configure Contenta CMS and Nuxt to communicate'
 date: '2019-02-01'
 meta:

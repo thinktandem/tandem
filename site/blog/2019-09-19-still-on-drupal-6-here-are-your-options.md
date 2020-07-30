@@ -6,8 +6,8 @@ tags:
     - drupal
 author: 'John Ouellet'
 private: false
-mainImage: images/articles/drupal.jpg
-img-src: images/articles/drupal.jpg
+mainImage: /images/articles/drupal.jpg
+img-src: /images/articles/drupal.jpg
 byline: 'An informative guide for sites still on Drupal 6'
 date: '2019-09-19'
 meta:

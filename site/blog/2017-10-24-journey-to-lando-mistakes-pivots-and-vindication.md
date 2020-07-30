@@ -9,8 +9,8 @@ tags:
     - testing
 author: 'Mike Pirog'
 private: false
-mainImage: images/articles/lando-space.jpg
-img-src: images/articles/lando-space.jpg
+mainImage: /images/articles/lando-space.jpg
+img-src: /images/articles/lando-space.jpg
 byline: 'After a Kickstarter campaign, two major versions, tons of feedback, broken promises, blood, sweat, tears and years of making Kalabox 2 we''ve finally made local dev great again with Lando'
 date: '2017-10-24'
 meta:

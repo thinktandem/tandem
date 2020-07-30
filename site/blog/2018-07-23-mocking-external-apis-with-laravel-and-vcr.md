@@ -6,8 +6,8 @@ tags:
     - laravel
 author: 'Dustin LeBlanc'
 private: false
-mainImage: images/articles/api-testing/vcr.jpg
-img-src: images/articles/api-testing/vcr.jpg
+mainImage: /images/articles/api-testing/vcr.jpg
+img-src: /images/articles/api-testing/vcr.jpg
 byline: 'Winning unit tests with PHP VCR and Laravel'
 date: '2018-07-23'
 meta:

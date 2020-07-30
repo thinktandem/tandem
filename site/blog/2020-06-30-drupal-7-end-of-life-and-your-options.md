@@ -6,8 +6,8 @@ tags:
     - drupal
 author: 'Alec Reynolds'
 private: false
-mainImage: images/articles/d7-eol.jpg
-img-src: images/articles/d7-eol.jpg
+mainImage: /images/articles/d7-eol.jpg
+img-src: /images/articles/d7-eol.jpg
 byline: 'A guide to Drupal 7 end of life and your options.'
 date: '2020-06-30'
 meta:

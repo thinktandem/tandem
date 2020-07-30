@@ -7,8 +7,8 @@ tags:
     - SEO
 author: 'Donna Bungard'
 private: false
-mainImage: images/articles/contentpersonasseo.png
-img-src: images/articles/contentpersonasseo.png
+mainImage: /images/articles/contentpersonasseo.png
+img-src: /images/articles/contentpersonasseo.png
 byline: 'Personas, Search Engines & Coffee'
 date: '2018-10-03'
 meta:

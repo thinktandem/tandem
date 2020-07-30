@@ -8,8 +8,8 @@ tags:
     - laravel
 author: 'Geoff St. Pierre'
 private: false
-mainImage: images/articles/envoy-linode/lando-y-envoy-y-linode.jpg
-img-src: images/articles/envoy-linode/lando-y-envoy-y-linode.jpg
+mainImage: /images/articles/envoy-linode/lando-y-envoy-y-linode.jpg
+img-src: /images/articles/envoy-linode/lando-y-envoy-y-linode.jpg
 byline: 'Learn to automate deploy steps with envoy on affordable hosting.'
 date: '2018-08-03'
 meta:

@@ -8,8 +8,8 @@ tags:
     - Learning
 author: 'Alec Reynolds'
 private: false
-mainImage: images/articles/dcsea.jpg
-img-src: images/articles/dcsea.jpg
+mainImage: /images/articles/dcsea.jpg
+img-src: /images/articles/dcsea.jpg
 byline: 'Peace, love, and Lando.'
 date: '2019-04-09'
 meta:

@@ -8,8 +8,8 @@ tags:
     - javascript
 author: 'Geoff St. Pierre'
 private: false
-mainImage: images/articles/headless-pt-1/landoContentaNuxt.png
-img-src: images/articles/headless-pt-1/landoContentaNuxt.png
+mainImage: /images/articles/headless-pt-1/landoContentaNuxt.png
+img-src: /images/articles/headless-pt-1/landoContentaNuxt.png
 byline: 'Set up a headless Drupal architecture in Lando'
 date: '2019-01-25'
 meta:

@@ -5,8 +5,8 @@ tags:
     - devops
 author: 'Alec Reynolds'
 private: false
-mainImage: 'https://thinktandem.io/images/articles/node-microservices-docker-cloud/node-microservices-docker-cloud.png'
-img-src: 'https://thinktandem.io/images/articles/node-microservices-docker-cloud/node-microservices-docker-cloud.png'
+mainImage: 'https://thinktandem.io//images/articles/node-microservices-docker-cloud/node-microservices-docker-cloud.png'
+img-src: 'https://thinktandem.io//images/articles/node-microservices-docker-cloud/node-microservices-docker-cloud.png'
 byline: 'How to run small NodeJS in an efficient, inexpensive, and scalable manner using Docker Cloud.'
 date: '2016-09-23'
 meta:
