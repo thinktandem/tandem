@@ -26,11 +26,13 @@
     "eslint": "^6.1.0",
     "eslint-config-google": "^0.9.1",
     "eslint-plugin-vue": "^5.2.3",
+    "vue-jsonld": "^1.0.1",
     "vuepress": "^1.5.2",
     "vuepress-plugin-autometa": "https://github.com/thinktandem/vuepress-plugin-autometa",
     "vuepress-plugin-canonical": "^1.0.0",
     "vuepress-plugin-frontmatters-feed": "https://github.com/thinktandem/vuepress-plugin-frontmatters-feed",
     "vuepress-plugin-robots": "^1.0.1",
     "vuepress-plugin-sitemap": "https://github.com/ekoeryanto/vuepress-plugin-sitemap#dd8b9763b2c7939668a67f2afa34de501dea45d4"
-  }
+  },
+  "dependencies": {}
 }
