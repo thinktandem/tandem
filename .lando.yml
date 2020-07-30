@@ -57,7 +57,3 @@ tooling:
       - yarn run lint:sites
       - yarn run lint:plugins
     description: Lint the things
-  test:
-    service: docs
-    cmd: yarn run test
-    description: Run tests

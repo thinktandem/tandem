@@ -13,4 +13,3 @@ before_install:
 script:
   - lando start
   - lando lint
-  - lando test

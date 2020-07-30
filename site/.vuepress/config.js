@@ -9,45 +9,24 @@ module.exports = {
     '@vuepress/blog': {
       directories: [
         {
-          title: 'Home',
-          id: 'posts',
-          dirname: 'posts',
-          path: '/',
+          id: 'blog',
+          dirname: 'blog',
+          path: '/blog/',
+          itemPermalink: '/blog/:year/:month/:day/:slug',
+        },
+        {
+          id: 'casestudies',
+          dirname: 'case-studies',
+          path: '/case-studies/',
+          itemPermalink: '/case-studies/:slug',
         },
       ],
       frontmatters: [
         {
-          id: 'industry',
-          keys: ['industry', 'industries'],
-          path: '/industry/',
-          frontmatter: {title: 'Industry'},
-          pagination: {
-            lengthPerPage: 25,
-          },
-        },
-        {
-          id: 'technology',
-          keys: ['technology', 'technologies'],
-          path: '/technology/',
-          frontmatter: {title: 'Technology'},
-          pagination: {
-            lengthPerPage: 25,
-          },
-        },
-        {
-          id: 'service',
-          keys: ['service', 'services'],
-          path: '/service/',
-          frontmatter: {title: 'Service'},
-          pagination: {
-            lengthPerPage: 25,
-          },
-        },
-        {
-          id: 'type',
-          keys: ['type', 'types'],
-          path: '/type/',
-          frontmatter: {title: 'Type'},
+          id: 'tags',
+          keys: ['tags'],
+          path: '/',
+          frontmatter: {title: 'Tags'},
           pagination: {
             lengthPerPage: 25,
           },
@@ -90,13 +69,14 @@ module.exports = {
     editLinks: false,
     nav: [
       {
-        text: 'Industry Test',
-        link: '/industry/healthcare/',
+        text: 'Blog',
+        link: '/blog/',
       },
       {
-        text: 'Technology Test',
-        link: '/technology/drupal/',
+        text: 'Case Studies',
+        link: '/case-studies/',
       },
     ],
+
   },
 };
