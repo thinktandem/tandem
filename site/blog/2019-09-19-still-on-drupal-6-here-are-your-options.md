@@ -10,6 +10,9 @@ mainImage: images/articles/drupal.jpg
 img-src: images/articles/drupal.jpg
 byline: 'An informative guide for sites still on Drupal 6'
 date: '2019-09-19'
+meta:
+    - { name: description, content: 'An informative guide for sites still on Drupal 6' }
+    - { name: keywords, content: 'support,drupal' }
 ---
 
 Overview

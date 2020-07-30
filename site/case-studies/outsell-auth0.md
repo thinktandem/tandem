@@ -26,6 +26,9 @@ tags:
     - corporate
     - strategy
     - rescue
+meta:
+    - { name: description, content: 'We helped <strong>Outsell Inc.</strong> move from a legacy SSO provider to Auth0 while reducing the complexity of their authentication logic and providing a tight Salesforce integration.' }
+    - { name: keywords, content: 'nodejs,drupal,startups,corporate,strategy,rescue,' }
 ---
 
 Outsell Inc. was looking to migrate from a costly, proprietary and hard-to-maintain single sign-on solution that made it difficult to alter existing web properties and introduce new ones.

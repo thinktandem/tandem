@@ -28,6 +28,9 @@ tags:
     - startups
     - development
     - devops
+meta:
+    - { name: description, content: 'How we built <strong>Lando</strong>, an open source local development tool to empower developers and bring more value to clients by saving their time.' }
+    - { name: keywords, content: 'docker,nodejs,drupal,wordpress,laravel,startups,development,devops,' }
 ---
 
 [Lando](http://github.com/lando/lando) is the culmination of many years of work trying to create an easy, powerful and comprehensive local development and DevOps tool. It is designed to work with most major programming languages, frameworks and services and provides an easy way for users to specify simple or complex development requirements for their projects. This means that Lando can be used to specify things like `apache` or `memcache` but also things like `drush` or `pip`.

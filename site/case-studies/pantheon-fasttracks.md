@@ -27,6 +27,9 @@ tags:
     - agencies
     - training
     - devops
+meta:
+    - { name: description, content: 'We traveled the US training digital agencies on Pantheon, Kalabox and good DevOps as part of <strong>Pantheon Systems''</strong> Fast Track program.' }
+    - { name: keywords, content: 'drupal,wordpress,startups,agencies,training,devops,' }
 ---
 
 We've been working with Pantheon since they were 8 people in an office under the Bay Bridge. As a result we know their product, platform and team better than most. So, when Pantheon asked us to provide some extra bandwidth for their [Fast Track](https://pantheon.io/agencies/fast-track) training program, we immediately said *"We've got you!"*.

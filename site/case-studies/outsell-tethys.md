@@ -28,6 +28,9 @@ tags:
     - strategy
     - development
     - devops
+meta:
+    - { name: description, content: 'We helped <strong>Outsell Inc.</strong> eliminate dependency on a third-party vendor by creating a new <strong>Laravel</strong>-powered API to feed an ecosystem of <strong>Drupal</strong> sites.' }
+    - { name: keywords, content: 'drupal,laravel,startups,corporate,rescue,strategy,development,devops,' }
 ---
 
 Ben Sampson had a problem. As Head of Product, Ben was in charge of Outsell’s Intelligence Platform, where clients can browse the treasure trove of Outsell’s research data. However, despite being a core Outsell service, the Intelligence Platform relied upon a proprietary platform from a 3rd party vendor, which made it hard to add new features and troubleshoot issues.

@@ -12,6 +12,9 @@ mainImage: images/articles/drupal-migration.jpg
 img-src: images/articles/drupal-migration.jpg
 byline: 'This webinar dove into Source, Process, & Destination Plugins for Drupal 8/9 Migrations.'
 date: '2020-05-12'
+meta:
+    - { name: description, content: 'This webinar dove into Source, Process, & Destination Plugins for Drupal 8/9 Migrations.' }
+    - { name: keywords, content: 'development,drupal,localdev,devops' }
 ---
 
 ## Recap

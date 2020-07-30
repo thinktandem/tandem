@@ -11,6 +11,9 @@ mainImage: images/articles/stop-spam.jpg
 img-src: images/articles/stop-spam.jpg
 byline: 'Most sites are susceptible to spam bot attacks regardless of what you may have installed.  This little trick will aid in preventing bots from swarming your site.'
 date: '2017-12-27'
+meta:
+    - { name: description, content: 'Most sites are susceptible to spam bot attacks regardless of what you may have installed.  This little trick will aid in preventing bots from swarming your site.' }
+    - { name: keywords, content: 'development,support,drupal' }
 ---
 
 _This article focuses primarily on stopping spammers via PHP and Drupal.  However, the same principle can be applied to any language and CMS._

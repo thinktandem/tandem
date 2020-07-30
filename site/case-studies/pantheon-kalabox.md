@@ -26,6 +26,9 @@ tags:
     - wordpress
     - startups
     - development
+meta:
+    - { name: description, content: 'We built <strong>Pantheon Systems</strong> an integration for our Kalabox GUI that allows their users to easily clone their sites onto their computer.' }
+    - { name: keywords, content: 'docker,nodejs,drupal,wordpress,startups,development,' }
 ---
 
 Pantheon was looking for a local development environment that, like Pantheon itself, was able to take a complicated problem and make it easily accessible to a wide set of users. Our [Kalabox](http://kalabox.io) GUI and CLI product fit the bill nicely.

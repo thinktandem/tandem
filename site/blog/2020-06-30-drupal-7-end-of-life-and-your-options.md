@@ -10,6 +10,9 @@ mainImage: images/articles/d7-eol.jpg
 img-src: images/articles/d7-eol.jpg
 byline: 'A guide to Drupal 7 end of life and your options.'
 date: '2020-06-30'
+meta:
+    - { name: description, content: 'A guide to Drupal 7 end of life and your options.' }
+    - { name: keywords, content: 'support,drupal' }
 ---
 
 The end is near! Drupal 7's official end of life date is November 2022, and if you're one of the over [750,000 Drupal site owners](https://www.drupal.org/project/usage/drupal) who haven't made the leap to Drupal 8/9, you're probably wondering what the next step for your Drupal 7 site should be.

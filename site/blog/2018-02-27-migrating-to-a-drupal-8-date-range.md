@@ -10,6 +10,9 @@ mainImage: images/articles/migrate-dates.jpg
 img-src: images/articles/migrate-dates.jpg
 byline: 'Migrating a date range to Drupal 8 is a lot easier now than it was a year ago.  Below I will show you how to transform the data to get the date ranges to migrate to Drupal 8 properly.'
 date: '2018-02-27'
+meta:
+    - { name: description, content: 'Migrating a date range to Drupal 8 is a lot easier now than it was a year ago.  Below I will show you how to transform the data to get the date ranges to migrate to Drupal 8 properly.' }
+    - { name: keywords, content: 'development,drupal' }
 ---
 
 The Situation before us

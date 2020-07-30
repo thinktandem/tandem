@@ -11,6 +11,9 @@ mainImage: images/articles/thomas-schweighofer-5dB9WGpJbFc-unsplash.jpg
 img-src: images/articles/thomas-schweighofer-5dB9WGpJbFc-unsplash.jpg
 byline: 'NERD Summit, Amherst, MA to MidCamp, Chicago, IL and back again virtual events in the covid-19 era.'
 date: '2020-03-27'
+meta:
+    - { name: description, content: 'NERD Summit, Amherst, MA to MidCamp, Chicago, IL and back again virtual events in the covid-19 era.' }
+    - { name: keywords, content: 'development,devops,drupal' }
 ---
 
 Covid-19

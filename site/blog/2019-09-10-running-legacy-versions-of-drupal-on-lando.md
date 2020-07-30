@@ -10,6 +10,9 @@ mainImage: images/articles/lando-space.jpg
 img-src: images/articles/lando-space.jpg
 byline: 'This guide is how we got a Drupal 4.6 Site to run on Lando.  You can use this as a guide to run any legacy architecture as well.'
 date: '2019-09-10'
+meta:
+    - { name: description, content: 'This guide is how we got a Drupal 4.6 Site to run on Lando.  You can use this as a guide to run any legacy architecture as well.' }
+    - { name: keywords, content: 'development,drupal' }
 ---
 
 Use Case

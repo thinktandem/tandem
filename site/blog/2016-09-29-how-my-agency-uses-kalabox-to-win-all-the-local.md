@@ -11,6 +11,9 @@ mainImage: 'https://thinktandem.io/images/articles/digital-agency-onboarding-wit
 img-src: 'https://thinktandem.io/images/articles/digital-agency-onboarding-with-kalabox/pairodime_x_kalabox.png'
 byline: 'Onboarding new team members to your web project can be complicated with even the most integrated DevOps team. Say hello to Kalabox.'
 date: '2016-09-29'
+meta:
+    - { name: description, content: 'Onboarding new team members to your web project can be complicated with even the most integrated DevOps team. Say hello to Kalabox.' }
+    - { name: keywords, content: 'deployment,localdev,testing' }
 ---
 
 ## The Woes of Local Web Development

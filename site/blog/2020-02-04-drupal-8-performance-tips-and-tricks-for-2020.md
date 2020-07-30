@@ -11,6 +11,9 @@ mainImage: images/articles/drupal.jpg
 img-src: images/articles/drupal.jpg
 byline: 'Outlining some of the tried and tested performance enhancements that will lead you to victory in Drupal 8, Drupal 9, and beyond.'
 date: '2020-02-04'
+meta:
+    - { name: description, content: 'Outlining some of the tried and tested performance enhancements that will lead you to victory in Drupal 8, Drupal 9, and beyond.' }
+    - { name: keywords, content: 'development,drupal,support' }
 ---
 
 ## Overview

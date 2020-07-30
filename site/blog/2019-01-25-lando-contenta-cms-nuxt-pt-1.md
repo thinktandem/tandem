@@ -12,6 +12,9 @@ mainImage: images/articles/headless-pt-1/landoContentaNuxt.png
 img-src: images/articles/headless-pt-1/landoContentaNuxt.png
 byline: 'Set up a headless Drupal architecture in Lando'
 date: '2019-01-25'
+meta:
+    - { name: description, content: 'Set up a headless Drupal architecture in Lando' }
+    - { name: keywords, content: 'development,api,drupal,javascript' }
 ---
 
 Why?

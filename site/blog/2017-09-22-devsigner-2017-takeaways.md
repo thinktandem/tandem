@@ -9,6 +9,9 @@ mainImage: 'https://thinktandem.io/images/articles/devsigner-2017.jpg'
 img-src: 'https://thinktandem.io/images/articles/devsigner-2017.jpg'
 byline: 'Highlights from Portland''s Devsigner Conference.'
 date: '2017-09-22'
+meta:
+    - { name: description, content: 'Highlights from Portland''s Devsigner Conference.' }
+    - { name: keywords, content: conferences }
 ---
 
 The following are notes from the 2017 Devsigner Conference in Portland. We're updating this live as we attend sessions.

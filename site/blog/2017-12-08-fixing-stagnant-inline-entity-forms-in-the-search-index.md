@@ -11,6 +11,9 @@ mainImage: images/articles/inline-search.jpg
 img-src: images/articles/inline-search.jpg
 byline: 'When using inline entity form to render nodes on a parent node, it can pose a minor problem with the Search API.'
 date: '2017-12-08'
+meta:
+    - { name: description, content: 'When using inline entity form to render nodes on a parent node, it can pose a minor problem with the Search API.' }
+    - { name: keywords, content: 'development,support,drupal' }
 ---
 
 The Issue Before Us

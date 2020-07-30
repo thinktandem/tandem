@@ -11,6 +11,9 @@ mainImage: images/articles/ajax.jpg
 img-src: images/articles/ajax.jpg
 byline: 'A straight forward guide on how to have your JavaScript fire after each Drupal 8 Views AJAX call is made.'
 date: '2020-04-23'
+meta:
+    - { name: description, content: 'A straight forward guide on how to have your JavaScript fire after each Drupal 8 Views AJAX call is made.' }
+    - { name: keywords, content: 'development,drupal,support' }
 ---
 
 ## Overview

@@ -21,4 +21,7 @@ private: true
 date: '2018-01-23'
 slug: pantheon-lando-gui
 tags: {  }
+meta:
+    - { name: description, content: 'Building <strong>Pantheon System''s</strong> official desktop application.' }
+    - { name: keywords, content: '' }
 ---

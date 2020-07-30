@@ -10,6 +10,9 @@ mainImage: images/articles/lando-solr/solr-lando-psh.jpg
 img-src: images/articles/lando-solr/solr-lando-psh.jpg
 byline: 'Setting up Solr is quick and fairly painless with Lando. This guide shall bring you to the promise land.'
 date: '2019-08-02'
+meta:
+    - { name: description, content: 'Setting up Solr is quick and fairly painless with Lando. This guide shall bring you to the promise land.' }
+    - { name: keywords, content: 'development,drupal' }
 ---
 
 Why Use Solr?

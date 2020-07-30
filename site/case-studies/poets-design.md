@@ -22,6 +22,9 @@ tags:
     - non-profit
     - strategy
     - design
+meta:
+    - { name: description, content: '<strong>The Academy of American Poets</strong> needed a refreshed design that respected their time-honored brand.' }
+    - { name: keywords, content: 'drupal,non-profit,strategy,design,' }
 ---
 
 Poets.org is a elegant resource that connects users to over a million poets, poems, educational resources, event and more. With a large member-base and many more casual visitors, the site needs to be able to reach a huge audience, keeping our focus on user experience, accessibility and on brand representation.

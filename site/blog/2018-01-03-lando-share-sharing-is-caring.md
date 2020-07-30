@@ -13,6 +13,9 @@ mainImage: images/articles/lando-share/ipad-lappy-phone.jpg
 img-src: images/articles/lando-share/ipad-lappy-phone.jpg
 byline: 'Use the `lando share` command to expose a URL of your local Lando site. For example to view it on actual mobile devices for browser testing before you release it to the world!'
 date: '2018-01-03'
+meta:
+    - { name: description, content: 'Use the `lando share` command to expose a URL of your local Lando site. For example to view it on actual mobile devices for browser testing before you release it to the world!' }
+    - { name: keywords, content: 'development,localdev,testing,drupal,wordpress' }
 ---
 
 Why?

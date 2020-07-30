@@ -14,6 +14,9 @@ mainImage: images/articles/platformlando.png
 img-src: images/articles/platformlando.png
 byline: 'Leverage the ease of Lando, Platform.sh, GitHub and Travis to quickly spin up an ultra pro workflow'
 date: '2017-10-23'
+meta:
+    - { name: description, content: 'Leverage the ease of Lando, Platform.sh, GitHub and Travis to quickly spin up an ultra pro workflow' }
+    - { name: keywords, content: 'deployment,development,devops,localdev,testing,drupal' }
 ---
 
 At Tandem we are super serious about designing (and using) best-practice development worklows that:

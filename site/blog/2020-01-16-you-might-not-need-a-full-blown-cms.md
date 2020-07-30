@@ -9,6 +9,9 @@ mainImage: images/articles/cms-vs-static/cms-vs-static.jpg
 img-src: images/articles/cms-vs-static/cms-vs-static.jpg
 byline: 'A case for static sites'
 date: '2020-01-16'
+meta:
+    - { name: description, content: 'A case for static sites' }
+    - { name: keywords, content: seo }
 ---
 
 Before deciding on a Content Mangement System (CMS) like [Wordpress](https://wordpress.com/) or 

@@ -11,6 +11,9 @@ mainImage: images/articles/a11yHigherEd.png
 img-src: images/articles/a11yHigherEd.png
 byline: 'And how to make it a little easier to manage'
 date: '2018-08-03'
+meta:
+    - { name: description, content: 'And how to make it a little easier to manage' }
+    - { name: keywords, content: 'accessibility,a11y,highereducation' }
 ---
 
 So do you want the good news or bad news first? Bad news first, you’ve got it! 
