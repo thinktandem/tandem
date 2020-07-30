@@ -22,41 +22,40 @@
 import PostHeader from '@theme/components/PostHeader.vue';
 import PostFooter from '@theme/components/PostFooter.vue';
 import Toc from '@theme/components/Toc.vue';
-import SponsorsList from '@theme/components/SponsorsList.vue';
 
 export default {
-  components: {PostHeader, PostFooter, SponsorsList, Toc},
+  components: {PostHeader, PostFooter, Toc},
   jsonld() {
     return {
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://thinktandem.io" + this.$page.path,
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      'mainEntityOfPage': {
+        '@type': 'WebPage',
+        '@id': 'https://thinktandem.io' + this.$page.path,
       },
-      "name": this.$title,
-      "headline": this.$title,
-      "about": [
-        this.$page.summary
+      'name': this.$title,
+      'headline': this.$title,
+      'about': [
+        this.$page.summary,
       ],
-      "image": [
-        "https://thinktandem.io" + this.$frontmatter.mainImage
+      'image': [
+        'https://thinktandem.io' + this.$frontmatter.mainImage,
       ],
-      "datePublished": this.$frontmatter.date,
-      "dateModified": this.$frontmatter.date,
-      "author": {
-        "@type": "Person",
-        "name": this.$frontmatter.author
+      'datePublished': this.$frontmatter.date,
+      'dateModified': this.$frontmatter.date,
+      'author': {
+        '@type': 'Person',
+        'name': this.$frontmatter.author,
       },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Tandem",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://thinktandem.io/images/logo.png"
-        }
-      }
-    }
+      'publisher': {
+        '@type': 'Organization',
+        'name': 'Tandem',
+        'logo': {
+          '@type': 'ImageObject',
+          'url': 'https://thinktandem.io/images/logo.png',
+        },
+      },
+    };
   },
   mounted() {
     console.log(this);
