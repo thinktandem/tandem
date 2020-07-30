@@ -6,10 +6,13 @@ tags:
     - drupal
 author: 'John Ouellet'
 private: false
-mainImage: images/articles/drupal-migration.jpg
-img-src: images/articles/drupal-migration.jpg
+mainImage: /images/articles/drupal-migration.jpg
+img-src: /images/articles/drupal-migration.jpg
 byline: 'Drupal 9 is right around the corner.  It is very easy to get your sites ready with Lando + PHPStan.'
 date: '2019-11-21'
+meta:
+    - { name: description, content: 'Drupal 9 is right around the corner.  It is very easy to get your sites ready with Lando + PHPStan.' }
+    - { name: keywords, content: 'development,drupal' }
 ---
 
 ## Overview

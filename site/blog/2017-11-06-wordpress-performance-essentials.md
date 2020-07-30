@@ -8,10 +8,13 @@ tags:
     - wordpress
 author: 'John Ouellet'
 private: false
-mainImage: images/articles/wordpress-performance-essentials.jpg
-img-src: images/articles/wordpress-performance-essentials.jpg
+mainImage: /images/articles/wordpress-performance-essentials.jpg
+img-src: /images/articles/wordpress-performance-essentials.jpg
 byline: 'How to make WordPress run fast and smooth.  A few tips and tricks to make sure your visitors don''t get frustrated waiting on pages to load.'
 date: '2017-11-06'
+meta:
+    - { name: description, content: 'How to make WordPress run fast and smooth.  A few tips and tricks to make sure your visitors don''t get frustrated waiting on pages to load.' }
+    - { name: keywords, content: 'development,devops,support,wordpress' }
 ---
 
 Making Your WordPress Site Super Duper Fast

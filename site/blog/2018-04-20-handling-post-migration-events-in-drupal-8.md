@@ -6,10 +6,13 @@ tags:
     - drupal
 author: 'John Ouellet'
 private: false
-mainImage: images/articles/drupal-migration.jpg
-img-src: images/articles/drupal-migration.jpg
+mainImage: /images/articles/drupal-migration.jpg
+img-src: /images/articles/drupal-migration.jpg
 byline: 'Sometimes we need to alter data after a Drupal 8 migration has finished.  With the migration events system, you can easily accomplish this.'
 date: '2018-04-20'
+meta:
+    - { name: description, content: 'Sometimes we need to alter data after a Drupal 8 migration has finished.  With the migration events system, you can easily accomplish this.' }
+    - { name: keywords, content: 'development,drupal' }
 ---
 
 Why We need to do this

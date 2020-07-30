@@ -7,10 +7,13 @@ tags:
     - drupal
 author: 'Alec Reynolds'
 private: false
-mainImage: images/articles/site-farm-intro.jpg
-img-src: images/articles/site-farm-intro.jpg
+mainImage: /images/articles/site-farm-intro.jpg
+img-src: /images/articles/site-farm-intro.jpg
 byline: 'Why you should pay attention to this new higher education Drupal distribution gaining traction in the University of California system.'
 date: '2017-10-27'
+meta:
+    - { name: description, content: 'Why you should pay attention to this new higher education Drupal distribution gaining traction in the University of California system.' }
+    - { name: keywords, content: 'development,conferences,drupal' }
 ---
 
 Chaos on the Campus

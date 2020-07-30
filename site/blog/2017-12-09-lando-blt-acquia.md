@@ -7,10 +7,13 @@ tags:
     - drupal
 author: 'Geoff St. Pierre'
 private: false
-mainImage: images/articles/lando-blt-acquia/lando-blt-acquia.jpg
-img-src: images/articles/lando-blt-acquia/lando-blt-acquia.jpg
+mainImage: /images/articles/lando-blt-acquia/lando-blt-acquia.jpg
+img-src: /images/articles/lando-blt-acquia/lando-blt-acquia.jpg
 byline: 'Pro workflow with Lando, BLT, and Acquia cloud.'
 date: '2017-12-09'
+meta:
+    - { name: description, content: 'Pro workflow with Lando, BLT, and Acquia cloud.' }
+    - { name: keywords, content: 'development,devops,drupal' }
 ---
 
 Introduction

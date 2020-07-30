@@ -8,10 +8,13 @@ tags:
     - devops
 author: 'John Ouellet'
 private: false
-mainImage: images/articles/drupal-migration.jpg
-img-src: images/articles/drupal-migration.jpg
+mainImage: /images/articles/drupal-migration.jpg
+img-src: /images/articles/drupal-migration.jpg
 byline: 'This webinar shows how to setup and debug a Drupal 8/9 Migration with Lando.'
 date: '2020-04-28'
+meta:
+    - { name: description, content: 'This webinar shows how to setup and debug a Drupal 8/9 Migration with Lando.' }
+    - { name: keywords, content: 'development,drupal,localdev,devops' }
 ---
 
 ## Recap

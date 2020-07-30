@@ -24,6 +24,9 @@ slug: usf-redirect-rescue
 dark: false
 private: false
 date: '2017-09-25'
+meta:
+    - { name: description, content: 'We quickly fixed a mission critical bug causing periodic downtime to <strong>University of San Francisco''s</strong> main marketing site.' }
+    - { name: keywords, content: 'drupal,highereducation,rescue,' }
 ---
 
 For months the University of San Francisco was consistently, but seemingly randomly experiencing major downtime on their main [marketing site](http://usfca.edu). After many frustrating days of troubleshooting, they called on Tandem to isolate and resolve the underlying issue.

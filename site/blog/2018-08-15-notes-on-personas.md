@@ -6,9 +6,12 @@ tags:
     - marketing
 author: 'Donna Bungard'
 private: false
-mainImage: images/articles/personas1.png
-img-src: images/articles/personas1.png
+mainImage: /images/articles/personas1.png
+img-src: /images/articles/personas1.png
 date: '2018-08-15'
+meta:
+    - { name: description, content: 'Notes on Personas' }
+    - { name: keywords, content: 'strategy,marketing' }
 ---
 
 The Strategic Cornerstones

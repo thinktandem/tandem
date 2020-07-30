@@ -11,10 +11,13 @@ tags:
     - devops
 author: 'Alec Reynolds'
 private: false
-mainImage: 'https://thinktandem.io/images/articles/kalabox-released.png'
-img-src: 'https://thinktandem.io/images/articles/kalabox-released.png'
+mainImage: 'https://thinktandem.io//images/articles/kalabox-released.png'
+img-src: 'https://thinktandem.io//images/articles/kalabox-released.png'
 byline: 'Proudly announcing the release of Kalabox 2.0, our open-source Docker-powered local development tool that provides the fastest way to develop WordPress and Drupal applications.'
 date: '2016-09-20'
+meta:
+    - { name: description, content: 'Proudly announcing the release of Kalabox 2.0, our open-source Docker-powered local development tool that provides the fastest way to develop WordPress and Drupal applications.' }
+    - { name: keywords, content: 'deployment,localdev,misc,support,training,testing,devops' }
 ---
 
 Today we released Kalabox 2.0. If you're not familiar with Kalabox, welcome! Kalabox is an open source project created by Tandem to provide WordPress and Drupal developers the fastest way to develop, test, and deploy websites while working on their own computers.

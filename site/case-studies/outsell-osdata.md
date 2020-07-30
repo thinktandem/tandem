@@ -24,6 +24,9 @@ tags:
     - corporate
     - strategy
     - development
+meta:
+    - { name: description, content: 'We helped <strong>Outsell Inc.</strong> increase their data collection abilities by an order of magnitude with Laravel.' }
+    - { name: keywords, content: 'laravel,corporate,strategy,development,' }
 ---
 
 Outsell Inc. has maintained a large database businesses in the data, information and technology sectors for over twenty years. However, while the value of their insights had grown, Outsell’s ability to collect and maintain data was bottlenecked by a legacy data entry application.

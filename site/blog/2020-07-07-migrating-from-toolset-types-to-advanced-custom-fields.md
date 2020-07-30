@@ -6,10 +6,13 @@ tags:
     - wordpress
 author: 'John Ouellet'
 private: false
-mainImage: images/articles/toolset-acf-wp.jpg
-img-src: images/articles/toolset-acf-wp.jpg
+mainImage: /images/articles/toolset-acf-wp.jpg
+img-src: /images/articles/toolset-acf-wp.jpg
 byline: 'A straight forward guide on moving your fields data from Toolset to ACF.'
 date: '2020-07-07'
+meta:
+    - { name: description, content: 'A straight forward guide on moving your fields data from Toolset to ACF.' }
+    - { name: keywords, content: 'development,wordpress' }
 ---
 
 ## Overview

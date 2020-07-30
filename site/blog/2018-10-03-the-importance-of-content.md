@@ -7,10 +7,13 @@ tags:
     - SEO
 author: 'Donna Bungard'
 private: false
-mainImage: images/articles/contentpersonasseo.png
-img-src: images/articles/contentpersonasseo.png
+mainImage: /images/articles/contentpersonasseo.png
+img-src: /images/articles/contentpersonasseo.png
 byline: 'Personas, Search Engines & Coffee'
 date: '2018-10-03'
+meta:
+    - { name: description, content: 'Personas, Search Engines & Coffee' }
+    - { name: keywords, content: 'digitalstrategy,personas,SEO' }
 ---
 
 It’s likely that you’ve read a trillion posts about the importance of your content by now, and really, the coffee was the only reason you’re here but hey, that’s okay too. No, not for the analytics bump but because your content strategy really is key to the success of your website and covering some of these basics can enhance your website copy, blog development, and so on. So, no matter why you started reading, I’m glad you’re here. 

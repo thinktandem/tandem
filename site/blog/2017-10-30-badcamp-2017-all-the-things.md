@@ -7,10 +7,13 @@ tags:
     - drupal
 author: 'Geoff St. Pierre'
 private: false
-mainImage: images/articles/badcamp-hp-bg-image.jpg
-img-src: images/articles/badcamp-hp-bg-image.jpg
+mainImage: /images/articles/badcamp-hp-bg-image.jpg
+img-src: /images/articles/badcamp-hp-bg-image.jpg
 byline: 'BADCamp 2017 was packed with fun, sessions, and glory.'
 date: '2017-10-30'
+meta:
+    - { name: description, content: 'BADCamp 2017 was packed with fun, sessions, and glory.' }
+    - { name: keywords, content: 'development,conferences,drupal' }
 ---
 
 BADCamp 2017 ~ All the Things

@@ -22,6 +22,9 @@ slug: platinum-edge-content-strategy
 dark: false
 private: false
 date: '2018-09-25'
+meta:
+    - { name: description, content: 'We developed an editorial calendar aimed at <strong>Platinum Edge''s</strong> key audiences.' }
+    - { name: keywords, content: 'drupal,corporate,strategy,' }
 ---
 
 Platinum Edge literally wrote the book on SCRUM project management methodology...in fact, several books! With training and classes offered nationwide, these experts are as busy as they are knowledgeable. Our team needed to find a content strategy that would allow their team to grow their news/blog despite strict time constraints.

@@ -21,6 +21,9 @@ tags:
     - drupal
     - corporate
     - strategy
+meta:
+    - { name: description, content: '<strong>TwinStar Credit Union</strong> needed our team to bring their user research together with our technical recommendations to plan out the evolution of their site.' }
+    - { name: keywords, content: 'drupal,corporate,strategy,' }
 ---
 
 TwinStar continually looks to understand the needs of their members. With a watchful eye to both improve their members’ experience as well as website management they are embarking on a several phase update to their website. 

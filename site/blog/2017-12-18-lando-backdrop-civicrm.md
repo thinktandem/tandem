@@ -7,10 +7,13 @@ tags:
     - backdrop
 author: 'Geoff St. Pierre'
 private: false
-mainImage: images/articles/lando-backdrop-civicrm/lando-backdrop-civicrm.jpg
-img-src: images/articles/lando-backdrop-civicrm/lando-backdrop-civicrm.jpg
+mainImage: /images/articles/lando-backdrop-civicrm/lando-backdrop-civicrm.jpg
+img-src: /images/articles/lando-backdrop-civicrm/lando-backdrop-civicrm.jpg
 byline: 'Managing multiple databases and dev tooling with Lando'
 date: '2017-12-18'
+meta:
+    - { name: description, content: 'Managing multiple databases and dev tooling with Lando' }
+    - { name: keywords, content: 'development,devops,backdrop' }
 ---
 
 Introduction

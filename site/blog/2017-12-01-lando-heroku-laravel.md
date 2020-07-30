@@ -6,10 +6,13 @@ tags:
     - devops
 author: 'Geoff St. Pierre'
 private: false
-mainImage: images/articles/lando-heroku/lando-heroku-laravel.jpg
-img-src: images/articles/lando-heroku/lando-heroku-laravel.jpg
+mainImage: /images/articles/lando-heroku/lando-heroku-laravel.jpg
+img-src: /images/articles/lando-heroku/lando-heroku-laravel.jpg
 byline: '🚀 ∞ Lando + Heroku + Laravel: take your dev to the next level.  📦 ☄️'
 date: '2017-12-01'
+meta:
+    - { name: description, content: '🚀 ∞ Lando + Heroku + Laravel: take your dev to the next level.  📦 ☄️' }
+    - { name: keywords, content: 'development,devops' }
 ---
 
 Lando + Heroku Workflow

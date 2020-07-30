@@ -21,6 +21,9 @@ tags:
     - drupal
     - non-profit
     - development
+meta:
+    - { name: description, content: 'Tandem helped <strong>The Academy of American Poets</strong> centralize their Blackbaud-powered fundraising efforts on their Drupal website.' }
+    - { name: keywords, content: 'drupal,non-profit,development,' }
 ---
 
 The Academy of American Poets had been utilizing various Blackbaud products for well over a decade. The academy’s internal staff had the diligent task of maintaining all records within Blackbaud. This ate up considerable time and they needed to find a better way.  

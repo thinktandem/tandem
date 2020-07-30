@@ -8,10 +8,13 @@ tags:
     - Learning
 author: 'Alec Reynolds'
 private: false
-mainImage: images/articles/dcsea.jpg
-img-src: images/articles/dcsea.jpg
+mainImage: /images/articles/dcsea.jpg
+img-src: /images/articles/dcsea.jpg
 byline: 'Peace, love, and Lando.'
 date: '2019-04-09'
+meta:
+    - { name: description, content: 'Peace, love, and Lando.' }
+    - { name: keywords, content: 'localdev,Drupal,Community,Learning' }
 ---
 
 Our team is having a great time in Seattle for DrupalCon, and if you're here, we want you to share in the fun!

@@ -21,6 +21,9 @@ tags:
     - drupal
     - highereducation
     - development
+meta:
+    - { name: description, content: 'Performance issues plagued <strong>USF’s</strong> Drupal 7 intranet and it was time for a better solution.  Tandem helped USF migrate their intranet and redid all of their custom functionality.' }
+    - { name: keywords, content: 'drupal,highereducation,development,' }
 ---
 
 The University of San Francisco (USF) intranet was functional but possessed many issues with usability, performance, extensibility, and maintainability.  The intranet was originally built off of Open Atrium in Drupal 7 and had been continually tweaked and added onto. This lead to shortcuts being taken, pieces of functionality started to be built but never worked right, and all in all a bad user experience.  USF needed to take a step back and reevaluate what the intranet and how they could fix it.
