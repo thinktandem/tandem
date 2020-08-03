@@ -166,6 +166,7 @@ export default {
     font-size 1.314em
     a
       color #fff
+      text-decoration none
     a:hover
       color #fff
     .written-by

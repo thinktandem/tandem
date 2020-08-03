@@ -41,18 +41,18 @@ export default {
 
 <style lang="stylus">
 #post
-  border: 1px dashed #ccc
-  padding: 2em
-  margin-top: 1em
-  margin-bottom: 1em
-  font-family: "GalaxieCopernicus", PT Serif, Serif"
+  border 1px dashed #ccc
+  padding 2em
+  margin-top 1em
+  margin-bottom 1em
+  font-family "GalaxieCopernicus", PT Serif, Serif"
   .post-title
-    padding-bottom: 1em
+    padding-bottom 1em
     a
-      font-size: 2em
-      color: $landoBlue
-      text-decoration: none
+      font-size 2em
+      color $landoBlue
+      text-decoration none
   .post-meta
-    font-size: 1.2em
+    font-size 1.2em
 
 </style>
