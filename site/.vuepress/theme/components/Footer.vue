@@ -48,12 +48,12 @@ export default {};
     padding-bottom: 2em
     a
       color: $landoGrey
-      font-family: PT Serif, Serif
+      font-family: "GalaxieCopernicus", PT Serif, Serif
   .footer-copyright
     background-color: lighten($landoGrey, 95%)
     color: lighten($landoGrey, 30%)
     padding: 1em
     margin: auto
     text-align: center
-    font-family: PT Serif, Serif
+    font-family: "GalaxieCopernicus", PT Serif, Serif
 </style>
