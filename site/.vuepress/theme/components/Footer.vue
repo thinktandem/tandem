@@ -3,21 +3,20 @@
     <div class="footer-top">
       <div class="inner">
         <div class="footer-image">
-          <img src="/images/logo-pink-small.png" alt="lando logo">
+          <svg version="1.1"
+            baseProfile="full"
+            xmlns="http://www.w3.org/2000/svg"
+            height="200" width="200">
+            <circle cx="100" cy="100" r="50" fill="#ed3f7a"></circle>
+          </svg>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <div>
-        <a target="_blank" href="https://docs.lando.dev/contrib/team.html">Contributors</a>
-      </div>
-      <div>
-        <a target="_blank" href="https://twitter.com/devwithlando">Follow us</a> |
-        <a target="_blank" href="https://github.com/lando/lando">GitHub</a> |
-        <a target="_blank" href="https://docs.lando.dev">Documentation</a> |
-        <a target="_blank" href="https://events.lando.dev/">Events & Meetups</a> |
-        <a target="_blank" href="https://lando.dev/sponsor">Sponsor</a> |
-        <a target="_blank" href="https://lando.dev/join">Join the Alliance</a>
+        <a target="_blank" href="https://twitter.com/thinktandem">Follow us</a> |
+        <a target="_blank" href="https://github.com/thinktandem">GitHub</a> |
+        <a target="_blank" href="https://docs.thinktandem.io">Documentation</a>
       </div>
       <div>
         <a href="/terms/">Terms</a> |
