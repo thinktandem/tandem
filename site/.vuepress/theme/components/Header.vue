@@ -21,7 +21,6 @@
               <NavLink :link="item.link">{{ item.text }}</NavLink>
             </li>
           </ul>
-          <SearchBox />
           <Feed />
         </div>
       </div>
@@ -30,11 +29,10 @@
 </template>
 
 <script>
-import SearchBox from '@SearchBox';
 import Feed from '@parent-theme/components/Feed';
 
 export default {
-  components: {SearchBox, Feed},
+  components: {Feed},
 };
 </script>
 

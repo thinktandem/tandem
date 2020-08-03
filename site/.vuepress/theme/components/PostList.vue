@@ -6,7 +6,6 @@
         We share things about tech, DevOps, workflows and doing the developments because it makes other developers lives easier.
       </div>
     </div>
-    <CarbonAds :class="{'carbon-ads-home': isHome}"/>
     <hr v-if="isHome" />
     <h1 v-if="!isHome">{{ title }}</h1>
     <div :class="tagClass">
@@ -33,7 +32,6 @@
 </template>
 
 <script>
-import CarbonAds from '@theme/components/CarbonAds.vue';
 import Vue from 'vue';
 import {
   Pagination,
@@ -42,7 +40,7 @@ import {
 import PostSummary from '@theme/components/PostSummary';
 
 export default {
-  components: {CarbonAds, PostSummary},
+  components: {PostSummary},
 
   props: {
     title: {
