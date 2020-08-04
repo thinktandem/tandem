@@ -1,5 +1,5 @@
 <template>
-  <div id="vuepress-theme-blog__post-layout" class="post-content">
+  <div id="vuepress-theme-blog__post-layout" class="case-study-content content-wrapper-tandem">
     <div class="vuepress-blog-theme-content">
       <h1 class="post-title">{{ $frontmatter.title }}</h1>
       <PostHeader

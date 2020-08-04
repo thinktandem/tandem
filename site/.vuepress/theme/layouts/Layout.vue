@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content-wrapper-tandem">
     <PostList
       :title="tagTitle"
       v-if="$pagination"

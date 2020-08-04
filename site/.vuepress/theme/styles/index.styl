@@ -18,6 +18,28 @@ body
   font-family GalaxieCopernicus, PT Serif, serif
   font-weight 300
 
+.content-wrapper
+  padding 0
+  min-height calc(100vh - 80px - 60px - 160px)
+  max-width none
+  margin 0 auto
+
+  @media (max-width: $MQMobile)
+    &
+      padding 0
+      min-height calc(100vh - 20px - 60px - 100px)
+
+.content-wrapper-tandem
+  padding 160px 15px 80px 15px
+  min-height calc(100vh - 80px - 60px - 160px)
+  max-width $contentWidth
+  margin 0 auto
+
+  @media (max-width: $MQMobile)
+    &
+      padding 100px 15px 20px 15px
+      min-height calc(100vh - 20px - 60px - 100px)
+
 h1,
 h2,
 h3,

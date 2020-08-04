@@ -45,8 +45,8 @@ export default {
   top 0
   width 100vw
   box-sizing border-box
-  background-color $headerBgColor
-  padding 20px 32px 20px
+  background-color transparent
+  padding 20px
   margin auto
   transition all 1s cubic-bezier(0.25, 0.8, 0.25, 1)
 
@@ -54,9 +54,6 @@ export default {
     list-style none
     margin 0
     padding 0
-
-  &:hover
-    box-shadow 0 5px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.1)
 
 // border-bottom 5px solid lighten(#3eaf7c, 50%)
 .header-wrapper
