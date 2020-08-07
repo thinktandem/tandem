@@ -1,6 +1,6 @@
 <template>
-  <div id="vuepress-theme-blog__post-layout" class="case-study-content content-wrapper-tandem">
-    <div class="vuepress-blog-theme-content">
+  <div id="tandem-content" ref="content" class="case-study-layout content-wrapper-tandem">
+    <div class="case-study-theme-content">
       <h1 class="post-title">{{ $frontmatter.title }}</h1>
       <PostHeader
         :name="$frontmatter.author"
@@ -65,23 +65,6 @@ export default {
 
 <style lang="stylus">
 .post-content
-  .carbon-ads
-    position: fixed
-    max-height: 100vh
-    max-width: 320px
-    overflow-y: auto
-    padding-top: 8em
-    top: 0
-    right: 10px
-    box-sizing: border-box
-    z-index: 0
-  #special_sponsors
-    opacity .8
-    position: fixed
-    padding-top: 8em
-    top: 0
-    left 0
-    z-index: 0
   .vuepress-toc
     padding-top: 250px
     max-width: 295px
@@ -99,7 +82,7 @@ export default {
     &.thumbnail
       border: 1px dashed #ccc
       padding: 1em
-.vuepress-blog-theme-content
+.case-study-theme-content
   font-size 16px
   letter-spacing 0px
   font-family "GalaxieCopernicus", PT Serif, Serif
@@ -107,20 +90,8 @@ export default {
   position relative
   .post-title
     padding-top 0
-@media (max-width: $MQSmall)
-  .post-content
-    .carbon-ads
-      position: relative
-      float: right
-      padding: 2em
-      max-height: 100vh
-      max-width: 300px
-      overflow-y: auto
-      z-index: 0
-      border: 1px solid lighten($landoGrey, 90%)
-      margin: 2em
 @media (max-width: $MQMobile)
-  .vuepress-blog-theme-content
+  .case-study-theme-content
     padding-top 0
   .post-title
     margin-top 0

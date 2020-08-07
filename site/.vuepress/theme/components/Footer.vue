@@ -1,5 +1,5 @@
 <template>
-  <div id="footer">
+  <footer id="footer">
     <div class="footer-top">
       <div class="inner">
         <div class="footer-image">
@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="footer-copyright">Copyright © 2016-present Tandem</div>
-  </div>
+  </footer>
 </template>
 
 <script>

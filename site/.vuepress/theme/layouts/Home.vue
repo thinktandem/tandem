@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="tandem-content" ref="content" class="home-page-layout">
     <full-page ref="fullpage" :options="options" id="fullpage">
       <div class="section">
         First section ...

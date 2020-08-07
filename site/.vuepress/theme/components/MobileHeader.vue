@@ -1,0 +1,223 @@
+<template>
+  <header id="header">
+    <nav id="nav" :class="{ open: isOpen }">
+      <button
+        id="nav_toggle"
+        type="button"
+        aria-label="Toggle navigation"
+        class="toggle collapsed"
+        @click="$emit('toggle-sidebar')"
+        aria-expanded="false"
+        aria-controls="nav-collapse">
+        <img
+          v-if="$site.themeConfig.logo"
+          class="logo"
+          :src="$withBase($site.themeConfig.logo)"
+          :alt="$siteTitle"
+        >
+      </button>
+      <div class="left-title">
+        <NavLink link="/" class="home-link">{{ $site.title }} </NavLink>
+      </div>
+      <div id="menu" class="menu">
+        <ul v-if="$themeConfig.nav" class="nav">
+          <li
+            v-for="item in $themeConfig.nav"
+            :key="item.text"
+            class="nav-item"
+          >
+            <NavLink :link="item.link">{{ item.text }}</NavLink>
+            {{ item.stuff }}
+          </li>
+        </ul>
+      </div>
+      <div class="right-title">
+        <NavLink link="/" class="home-link">{{ $site.title }} </NavLink>
+      </div>
+    </nav>
+  </header>
+</template>
+
+<script>
+
+export default {
+  props: {
+    isOpen: {
+      type: Boolean,
+      required: true,
+    },
+  },
+  data() {
+    return {
+      lastScrollPos: window.pageYOffset,
+      navFade: 50,
+    };
+  },
+  beforeDestroy() {
+    // Remove the scroll event
+    window.removeEventListener('scroll', this.onScroll);
+  },
+  mounted() {
+    // @TODO: do not do this on the homepage
+    // Add a scroll watcher
+    window.addEventListener('scroll', this.onScroll);
+  },
+  methods: {
+    onScroll(e) {
+      // Fade out header after 50
+      if (window.top.scrollY > 50) {
+        this.classChange('header', ['fadeout'], ['fadein', 'show']);
+      // Reset to normal "top" of page configuration
+      } else {
+        this.classChange('header', ['fadein'], ['fadeout']);
+        this.classChange('nav_toggle', [], ['fadeout', 'fadein']);
+      }
+
+      // Handle the menu toggle UX after 100 px
+      if (window.top.scrollY > 100) {
+        // Make header and toggle visible even though they are hidden so we can
+        // fade them in nicely
+        this.classChange('header', ['show']);
+        // Show navtoggle on scroll up
+        if (this.lastScrollPos > window.pageYOffset) {
+          this.classChange('nav_toggle', ['fadein'], ['fadeout']);
+        // And hide on scroll down
+        } else {
+          this.classChange('nav_toggle', ['fadeout'], ['fadein']);
+        }
+      }
+
+      // Reset the previous position
+      this.lastScrollPos = window.pageYOffset;
+    },
+    classChange(id, add = [], remove = []) {
+      const element = document.getElementById(id);
+      element.classList.add(...add);
+      element.classList.remove(...remove);
+    },
+    toggleMenu() {
+      console.log();
+    },
+  },
+};
+</script>
+
+<style lang="stylus" scoped>
+@import '~@app/style/config';
+
+.fadeout
+  visibility hidden
+  opacity 0
+  margin-top -100px
+  transition visibility 0s 0.25s, opacity 0.25s linear, margin-top 0.5s
+  -webkit-transition  visibility 0s 0.25s, opacity 0.25s linear, margin-top 0.5s
+.fadein
+  display block
+  visibility visible
+  opacity 1
+  margin-top 0
+  transition opacity 0.5s linear, margin-top 0.5s
+.show
+  visibility visible
+  opacity 1
+
+button
+  border 0
+  background-color transparent
+  outline none
+  padding 0
+  margin 0
+  cursor pointer
+  img
+    height 50px
+    width 50px
+    margin-right 0
+    margin-top -3px
+  &.fadeout
+    visibility hidden
+    opacity 0
+    margin-top 0px
+    transition visibility 0s 0.25s, opacity 0.25s linear, margin-top 0.5s
+    -webkit-transition  visibility 0s 0.25s, opacity 0.25s linear, margin-top 0.5s
+  &.fadein
+    visibility visible
+    opacity 1
+    margin-top 100px
+    transition opacity 0.5s linear, margin-top 0.5s
+
+
+header
+  z-index 100
+  position fixed
+  width 100vw
+  top 0
+  box-sizing border-box
+  background-color transparent
+  padding 20px
+  margin auto
+  transition all 1s cubic-bezier(0.25, 0.8, 0.25, 1)
+
+nav
+  display flex
+  line-height 40px
+  height 40px
+
+  ol, ul
+    list-style none
+    margin 0
+    padding 0
+  .left-title, .right-title
+    font-size 30px
+    letter-spacing 2px
+    display block
+    text-transform uppercase
+
+    a
+      color $darkTextColor
+      font-weight bold
+      font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+      text-decoration none
+
+  .right-title
+    display none
+  .menu
+    flex 1
+    display flex
+    justify-content flex-end
+    align-items center
+
+    .nav
+      flex 0 0 auto
+      display flex
+      margin 0
+
+      .nav-item
+        margin-left 20px
+
+        a
+          font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+          // color lighten(#3eaf7c, 30%)
+          font-size: 20px;
+          text-decoration: none;
+          letter-spacing: -1.67px;
+  .open
+    .right-title
+      display none
+
+@media (max-width: $MQMobile)
+  header
+    padding 10px
+  nav
+    .menu
+      display none
+    .left-title
+      display none
+    .right-title
+      flex 1
+      display flex
+      justify-content flex-end
+      align-items center
+  button
+    &.toggle
+      display flex
+</style>
