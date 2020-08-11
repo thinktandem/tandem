@@ -1,19 +1,5 @@
 // .vuepress/style.styl, your extra styles.
 
-@font-face
-  font-family GalaxieCopernicus
-  src url("/fonts/GalaxieCopernicus-Book.eot")
-  src url("/fonts/GalaxieCopernicus-Book.woff") format("woff"),url("/fonts/GalaxieCopernicus-Book.woff2") format("woff2")
-  font-style normal
-  font-weight 300
-
-@font-face
-  font-family GalaxieCopernicus
-  src url("/fonts/GalaxieCopernicus-Medium.eot")
-  src url("/fonts/GalaxieCopernicus-Medium.woff") format("woff"),url("/fonts/GalaxieCopernicus-Medium.woff2") format("woff2")
-  font-style normal
-  font-weight 400
-
 body
   font-family GalaxieCopernicus, PT Serif, serif
   font-weight 300
@@ -44,27 +30,3 @@ blockquote
   background lighten($landoBlue, 99%)
   font-style italic
 
-#mobile-header
-  display none
-
-.content-wrapper
-  padding 0
-  min-height calc(100vh - 80px - 60px - 160px)
-  max-width none
-  margin 0 auto
-
-  @media (max-width: $MQMobile)
-    &
-      padding 0
-      min-height calc(100vh - 20px - 60px - 100px)
-
-.content-wrapper-tandem
-  padding 160px 15px 80px 15px
-  min-height calc(100vh - 80px - 60px - 160px)
-  max-width $contentWidth
-  margin 0 auto
-
-  @media (max-width: $MQMobile)
-    &
-      padding 100px 15px 20px 15px
-      min-height calc(100vh - 20px - 60px - 100px)
