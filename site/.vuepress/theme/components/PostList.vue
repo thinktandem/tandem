@@ -33,10 +33,7 @@
 
 <script>
 import Vue from 'vue';
-import {
-  Pagination,
-  SimplePagination,
-} from '@vuepress/plugin-blog/lib/client/components';
+import {Pagination, SimplePagination} from '@vuepress/plugin-blog/lib/client/components';
 import PostSummary from '@theme/components/PostSummary';
 
 export default {

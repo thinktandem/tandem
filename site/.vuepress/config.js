@@ -7,7 +7,14 @@ module.exports = {
     ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Poppins:wght@600;900'}],
   ],
   plugins: {
-    '@vuepress/blog': {
+    'autometa': {
+      site: {
+        name: 'Tandem',
+        twitter: 'ThinkTandem',
+      },
+      canonical_base: 'https://thinktandem.io',
+    },
+    'blog': {
       directories: [
         {
           id: 'blog',
@@ -37,6 +44,14 @@ module.exports = {
         hostname: 'https://thinktandem.io',
       },
     },
+    'google-analytics': {
+      ga: 'UA-XXXXXXX',
+    },
+    'robots': {
+      host: 'https://thinktandem.io',
+      disallowAll: true,
+      sitemap: '/sitemap.xml',
+    },
     'vuepress-plugin-frontmatters-feed': {
       canonical_base: 'https://thinktandem.io',
       posts_directories: ['/blog/'],
@@ -44,21 +59,6 @@ module.exports = {
         favicon: 'https://thinktandem.io/favicon.png',
         image: 'https://thinktandem.io/images/hero-tandem-pink.png',
       },
-    },
-    '@vuepress/google-analytics': {
-      ga: 'UA-XXXXXXX',
-    },
-    'autometa': {
-      site: {
-        name: 'Tandem',
-        twitter: 'ThinkTandem',
-      },
-      canonical_base: 'https://thinktandem.io',
-    },
-    'robots': {
-      host: 'https://thinktandem.io',
-      disallowAll: true,
-      sitemap: '/sitemap.xml',
     },
   },
   theme: '@vuepress/theme-blog',

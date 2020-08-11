@@ -89,7 +89,7 @@ Continuous integration is the creation of a system where code is constantly merg
 
 As a development philosophy, continuous integration knits together most of the tools and concepts we've just talked about. It requires a single repository that everyone merges into. Every team member must be able to have individual local environments and shared test environments that are duplicates of the production environment to adequately test code. When code is pushed to any of these environments, a "build" occurs that pulls together dependencies with NPM/Composer/other package manager. During the build, automated tests will also run; if the tests fail, the build should fail and someone has to get back to work!
 
-Like more development workflow philosophies, continuous integration is applied slightly differently by different teams. You can see the rough outline of a basic continuous integration workflow in our article about creating a [Killer D8 Workflow Using Lando and Platform.sh](/blog/2017/10/23/killer-d8-workflow-using-lando-and-platform-sh/).
+Like more development workflow philosophies, continuous integration is applied slightly differently by different teams. You can see the rough outline of a basic continuous integration workflow in our article about creating a [Killer D8 Workflow Using Lando and Platform.sh](/blog/2017-10-23-killer-d8-workflow-using-lando-and-platform-sh.md).
 
 ## Is Your Team Headed the Right Way?
 
