@@ -56,7 +56,7 @@ export default {
   data() {
     return {
       navFade: 50,
-      lastScrollPos: window.pageYOffset,
+      lastScrollPos: 0
     };
   },
   beforeDestroy() {
@@ -66,6 +66,8 @@ export default {
   mounted() {
     // Add a scroll watcher
     window.addEventListener('scroll', this.onScroll);
+    // Set to window.pageYOffset
+    this.lastScrollPos = window.pageYOffset;
   },
   methods: {
     expandMenu() {

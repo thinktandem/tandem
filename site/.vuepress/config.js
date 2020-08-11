@@ -4,17 +4,11 @@ module.exports = {
   head: [
     ['link', {rel: 'icon', href: '/favicon.png'}],
     ['link', {rel: 'stylesheet', href: '/styles/overrides.css'}],
+    ['link', {rel: 'stylesheet', href: '//unpkg.com/fullpage.js/dist/fullpage.min.css'}],
     ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Poppins:wght@600;900'}],
   ],
   plugins: {
-    'autometa': {
-      site: {
-        name: 'Tandem',
-        twitter: 'ThinkTandem',
-      },
-      canonical_base: 'https://thinktandem.io',
-    },
-    'blog': {
+    '@vuepress/blog': {
       directories: [
         {
           id: 'blog',
@@ -33,7 +27,7 @@ module.exports = {
         {
           id: 'tags',
           keys: ['tags'],
-          path: '/tag/',
+          path: '/about/',
           frontmatter: {title: 'Tags'},
           pagination: {
             lengthPerPage: 25,
@@ -44,8 +38,15 @@ module.exports = {
         hostname: 'https://thinktandem.io',
       },
     },
-    'google-analytics': {
+    '@vuepress/google-analytics': {
       ga: 'UA-XXXXXXX',
+    },
+    'autometa': {
+      site: {
+        name: 'Tandem',
+        twitter: 'ThinkTandem',
+      },
+      canonical_base: 'https://thinktandem.io',
     },
     'robots': {
       host: 'https://thinktandem.io',
