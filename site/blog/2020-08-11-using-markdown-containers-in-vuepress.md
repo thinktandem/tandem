@@ -57,7 +57,7 @@ You may also noticed the key of defaultTitle in our setup.  You can define a tit
 
 ```bash
 ::: quote Hello there
-- Obi-Wan Kenobi
+~ Obi-Wan Kenobi
 :::
 ```
 
@@ -66,11 +66,19 @@ The output of this would be:
 ```html
 <div class="custom-block quote">
   <p class="custom-block-title">Hello there</p>
-  <p>- Obi-Wan Kenobi</p>
+  <p>~ Obi-Wan Kenobi</p>
 </div>
 ```
 
-What this does is allow us to add a special ```<p>``` tag wrapper on the title so we can style it differently.  That pretty much summarizes a very straightforward and easy to use example.  Let's dive in to more advanced techniques now.  
+What this does is allow us to add a special ```<p>``` tag wrapper on the title so we can style it differently.  This is how ti looks on this site with our stylings:
+
+::: quote Hello there
+~ Obi-Wan Kenobi
+:::
+
+That pretty much summarizes a very straightforward and easy to use example.  Let's dive in to more advanced techniques now.  
+
+
 
 ## Advanced Example
 
