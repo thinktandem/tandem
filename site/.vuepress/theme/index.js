@@ -14,16 +14,20 @@ module.exports = {
       defaultTitle: '',
     }],
     ['container', {
-      type: 'tip',
-      defaultTitle: 'TIP',
+      type: 'col-wrapper',
+      defaultTitle: '',
     }],
     ['container', {
-      type: 'warning',
-      defaultTitle: 'WARNING',
+      type: 'col-full',
+      defaultTitle: '',
     }],
     ['container', {
-      type: 'danger',
-      defaultTitle: 'DANGER!',
+      type: 'col-half',
+      defaultTitle: '',
+    }],
+    ['container', {
+      type: 'col-third',
+      defaultTitle: '',
     }],
   ],
 };
