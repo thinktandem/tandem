@@ -9,6 +9,8 @@
         :date="$frontmatter.date"
       />
       <Content />
+      <hr />
+      <Newsletter />
       <PostFooter
         :tags="$frontmatter.tags"
         :original="$frontmatter.original"

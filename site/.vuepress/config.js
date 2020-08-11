@@ -82,7 +82,7 @@ module.exports = {
       },
       {
         text: 'About',
-        link: '/about/',
+        link: '/stuff/',
         desc: 'Who we are.',
       },
       {
