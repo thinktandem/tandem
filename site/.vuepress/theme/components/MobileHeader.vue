@@ -1,6 +1,6 @@
 <template>
   <header id="header">
-    <nav id="nav" :class="{ open: isOpen }">
+    <nav id="nav">
       <button
         id="nav_toggle"
         type="button"
@@ -23,6 +23,9 @@
       <div class="left-title">
         <NavLink link="/" class="home-link">{{ $site.title }} </NavLink>
       </div>
+      <div class="right-title">
+        <NavLink link="/" class="home-link">{{ $site.title }} </NavLink>
+      </div>
       <div id="menu" class="menu">
         <ul v-if="$themeConfig.nav" class="nav">
           <li
@@ -31,12 +34,9 @@
             class="nav-item"
           >
             <NavLink :link="item.link">{{ item.text }}</NavLink>
-            {{ item.stuff }}
+            <div v-if="isOpen" class="nav-item-desc">{{ item.desc }}</div>
           </li>
         </ul>
-      </div>
-      <div class="right-title">
-        <NavLink link="/" class="home-link">{{ $site.title }} </NavLink>
       </div>
     </nav>
   </header>
@@ -64,19 +64,19 @@ export default {
     window.removeEventListener('scroll', this.onScroll);
   },
   mounted() {
-    console.log(this);
-    // @TODO: do not do this on the homepage
     // Add a scroll watcher
     window.addEventListener('scroll', this.onScroll);
   },
   methods: {
+    expandMenu() {
+      this.classChange('header', ['open']);
+    },
     hideHeader() {
-      this.classChange('header', ['fadeout'], ['fadein']);
-      this.classChange('header', [], ['dehamburger']);
+      this.classChange('header', ['fadeout'], ['fadein', 'dehamburger']);
     },
     resetHeader(toggleable = false) {
       this.classChange('header', ['fadein'], ['fadeout']);
-      if (!this.isOpen) this.classChange('header', ['dehamburger']);
+      if (!this.isOpen) this.classChange('header', ['dehamburger'], ['open']);
     },
     hideToggle() {
       this.classChange('nav_toggle', ['toggleout'], ['togglein']);
@@ -113,6 +113,7 @@ export default {
   watch: {
     isOpen() {
       if (this.isOpen) {
+        this.expandMenu();
         this.resetHeader();
       }
       else {
@@ -137,7 +138,7 @@ header
   margin auto
   transition all 1s cubic-bezier(0.25, 0.8, 0.25, 1)
   &.fadeout
-    margin-top -100px
+    margin-top -600px
     transition margin-top 0.5s
     -webkit-transition  margin-top 0.5s
   &.fadein
@@ -149,7 +150,6 @@ header
         margin-top 0
   &.dehamburger
     button
-      disable true
       cursor pointer
       pointer-events none
       svg
@@ -157,6 +157,32 @@ header
         color $tandemPink
         transition color 0.5s
         -webkit-transition  color 0.5s
+  &.open
+    nav
+      height 400px
+      background-color transparent
+      flex-wrap wrap
+      button, .left-title, .right-title
+        width 100%
+      .home-link
+        background-color #ffffff
+        padding 5px
+      .menu
+        margin-top 50px
+        width 100vw
+        background-color $lightGrey
+        ul
+          margin auto
+          padding 100px 90px
+          text-align center
+          .nav-item
+            margin 20px
+            a
+              font-size 1.67em
+              letter-spacing -2.54px
+              font-weight 600
+            .nav-item-desc
+              letter-spacing -1.04px
 
 button
   border 0
@@ -164,7 +190,7 @@ button
   outline none
   padding 0
   margin 0
-  position relative
+  position absolute
   display flex
   svg
     height 50px
@@ -182,11 +208,11 @@ button
       left 10px
       display none
   &.toggleout
-    margin-top -100px
+    margin-top -600px
     transition margin-top 0.5s
     -webkit-transition  margin-top 0.5s
   &.togglein
-    margin-top 100px
+    margin-top 600px
     transition margin-top 0.5s
     -webkit-transition  margin-top 0.5s
     svg
@@ -215,6 +241,7 @@ nav
   .right-title
     display none
   .left-title
+    position absolute
     margin-left 50px
   .menu
     flex 1
@@ -233,15 +260,38 @@ nav
           font-size: 20px;
           text-decoration: none;
           letter-spacing: -1.67px;
-  &.open
-    button
-      svg
-        &.menu-toggle
-          display block
+
+@media (min-width: $MQSmall)
+  header
+    &.open
+      nav
+        .menu
+          ul
+            .nav-item
+              margin 32px
+              a
+                font-size 2.5em
 
 @media (max-width: $MQMobile)
   header
     padding 10px
+    &.dehamburger
+      button
+        pointer-events all
+        svg
+        .menu-toggle
+          color #ffffff
+    &.open
+      nav
+        .right-title
+          flex none
+        .menu
+          display flex
+          margin-top 10px
+          ul
+            flex-direction column
+            padding 50px 20px
+
   nav
     .menu
       display none
@@ -257,4 +307,7 @@ nav
       display flex
       svg.menu-toggle
         display block
+
+
+
 </style>
