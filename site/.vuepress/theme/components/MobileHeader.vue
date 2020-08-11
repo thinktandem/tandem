@@ -115,8 +115,7 @@ export default {
       if (this.isOpen) {
         this.expandMenu();
         this.resetHeader();
-      }
-      else {
+      } else {
         this.hideHeader();
       }
     },
@@ -140,11 +139,11 @@ header
   &.fadeout
     margin-top -600px
     transition margin-top 0.5s
-    -webkit-transition  margin-top 0.5s
+    -webkit-transition margin-top 0.5s
   &.fadein
     margin-top 0
     transition margin-top 0.5s
-    -webkit-transition  margin-top 0.5s
+    -webkit-transition margin-top 0.5s
     button
       &.togglein
         margin-top 0
@@ -156,7 +155,7 @@ header
       .menu-toggle
         color $tandemPink
         transition color 0.5s
-        -webkit-transition  color 0.5s
+        -webkit-transition color 0.5s
   &.open
     nav
       height 400px
@@ -165,7 +164,7 @@ header
       button, .left-title, .right-title
         width 100%
       .home-link
-        background-color #ffffff
+        background-color $lightGrey
         padding 5px
       .menu
         margin-top 50px
@@ -197,6 +196,9 @@ button
     width 50px
     margin-right 0
     margin-top -3px
+    circle
+      transition fill 0.5s
+      -webkit-transition fill 0.5s
     &.logo, &.menu-toggle
       position absolute
     &.menu-toggle
@@ -207,17 +209,28 @@ button
       top 10px
       left 10px
       display none
+      transition color 0.5s, color 0.5s
+      -webkit-transition color 0.5s, color 0.5s
   &.toggleout
     margin-top -600px
     transition margin-top 0.5s
-    -webkit-transition  margin-top 0.5s
+    -webkit-transition margin-top 0.5s
   &.togglein
     margin-top 600px
     transition margin-top 0.5s
-    -webkit-transition  margin-top 0.5s
+    -webkit-transition margin-top 0.5s
     svg
       &.menu-toggle
         display block
+
+.fp-enabled
+  .greybeard
+    svg
+      circle
+        fill $lightGrey
+      &.menu-toggle
+        color black
+
 nav
   display flex
   line-height 40px
@@ -307,7 +320,5 @@ nav
       display flex
       svg.menu-toggle
         display block
-
-
 
 </style>

@@ -72,7 +72,7 @@ module.exports = {
       {
         text: 'Home',
         link: '/',
-        desc: 'Take me home.',
+        desc: 'Take it home.',
       },
       {
         text: 'Work',
