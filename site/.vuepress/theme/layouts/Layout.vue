@@ -1,5 +1,5 @@
 <template>
-  <div id="tandem-content" ref="content" class="layout-layout content-wrapper-tandem">
+  <div>
     <PostList
       :title="tagTitle"
       v-if="$pagination"
@@ -10,7 +10,6 @@
 
 <script>
 import PostList from '@theme/components/PostList.vue';
-
 export default {
   components: {PostList},
   computed: {
