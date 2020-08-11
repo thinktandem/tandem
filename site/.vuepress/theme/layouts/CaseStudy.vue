@@ -19,9 +19,9 @@
 </template>
 
 <script>
-import PostHeader from '@app/components/PostHeader.vue';
-import PostFooter from '@app/components/PostFooter.vue';
-import Toc from '@app/components/Toc.vue';
+import PostHeader from '@theme/components/PostHeader.vue';
+import PostFooter from '@theme/components/PostFooter.vue';
+import Toc from '@theme/components/Toc.vue';
 
 export default {
   components: {PostHeader, PostFooter, Toc},
