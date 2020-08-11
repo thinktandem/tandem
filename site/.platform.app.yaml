@@ -5,7 +5,7 @@
 name: site
 
 # The toolstack used to build the application.
-type: nodejs:14
+type: nodejs:10
 build:
   flavor: none
 

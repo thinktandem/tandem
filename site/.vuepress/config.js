@@ -4,8 +4,6 @@ module.exports = {
   head: [
     ['link', {rel: 'icon', href: '/favicon.png'}],
     ['link', {rel: 'stylesheet', href: '/styles/overrides.css'}],
-    ['link', {rel: 'stylesheet', href: '//unpkg.com/fullpage.js/dist/fullpage.min.css'}],
-    ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Poppins:wght@600;900'}],
   ],
   plugins: {
     '@vuepress/blog': {
@@ -27,7 +25,7 @@ module.exports = {
         {
           id: 'tags',
           keys: ['tags'],
-          path: '/about/',
+          path: '/',
           frontmatter: {title: 'Tags'},
           pagination: {
             lengthPerPage: 25,
