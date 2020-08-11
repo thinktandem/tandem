@@ -104,7 +104,5 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper
-  padding 0
-  max-width none
+
 </style>

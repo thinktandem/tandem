@@ -56,7 +56,7 @@ export default {
   data() {
     return {
       navFade: 50,
-      lastScrollPos: 0
+      lastScrollPos: 0,
     };
   },
   beforeDestroy() {
@@ -125,7 +125,7 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 @import '~@app/style/config';
 
 header
