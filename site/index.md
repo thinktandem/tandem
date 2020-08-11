@@ -1,3 +1,0 @@
----
-metaTitle: Home | Tandem
----

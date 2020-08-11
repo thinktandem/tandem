@@ -36,6 +36,14 @@ module.exports = {
         hostname: 'https://thinktandem.io',
       },
     },
+    'vuepress-plugin-frontmatters-feed': {
+      canonical_base: 'https://thinktandem.io',
+      posts_directories: ['/blog/'],
+      feed_options: {
+        favicon: 'https://thinktandem.io/favicon.png',
+        image: 'https://lando.dev/images/logo-pink-small.png',
+      },
+    },
     '@vuepress/google-analytics': {
       ga: 'UA-XXXXXXX',
     },
@@ -51,48 +59,24 @@ module.exports = {
       disallowAll: true,
       sitemap: '/sitemap.xml',
     },
-    'vuepress-plugin-frontmatters-feed': {
-      canonical_base: 'https://thinktandem.io',
-      posts_directories: ['/blog/'],
-      feed_options: {
-        favicon: 'https://thinktandem.io/favicon.png',
-        image: 'https://thinktandem.io/images/hero-tandem-pink.png',
-      },
-    },
   },
   theme: '@vuepress/theme-blog',
   themeConfig: {
-    logo: '/images/logo-tandem-svg.svg',
+    logo: '/images/logo-pink-small.png',
     docsDir: 'site',
     docsBranch: 'master',
     search: false,
     editLinks: false,
     nav: [
       {
-        text: 'Home',
-        link: '/',
-        desc: 'Take it home.',
-      },
-      {
-        text: 'Work',
-        link: '/work/',
-        desc: 'What we\'ve done.',
-      },
-      {
-        text: 'About',
-        link: '/stuff/',
-        desc: 'Who we are.',
-      },
-      {
         text: 'Blog',
         link: '/blog/',
-        desc: 'Our thoughts.',
       },
       {
-        text: 'Contact',
-        link: '/contact/',
-        desc: 'Get in touch!',
+        text: 'Case Studies',
+        link: '/case-studies/',
       },
     ],
+
   },
 };
