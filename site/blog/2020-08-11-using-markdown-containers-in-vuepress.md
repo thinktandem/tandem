@@ -102,38 +102,40 @@ module.exports = {
 };
 ```
 
-
-Now to put a container within a container via markdown, here are a few examples:
+When you have just one container within a container, you can use the following syntax:
 
 ```bash
-::::: col-wrapper
-  ::: col-full
-  Full column
-  :::
-:::::
+::: col-wrapper
+::: col-full
+Full column
+:::
+```
 
+However, if you have more than one container within a container.  Then you need to use a slightly different syntax like this:
+
+```bash
 :::::: col-wrapper
-  ::: col-half
-  Half column
-  :::
-  
-  ::: col-half
-  Half column
-  :::
+::: col-half
+Half column
+:::
+
+::: col-half
+Half column
+:::
 :::::::::
 
 :::::: col-wrapper
-  ::: col-third
-  Third column
-  :::
-  
-  ::: col-third
-  Third column
-  :::
+::: col-third
+Third column
+:::
 
-  ::: col-third
-  Third column
-  :::
+::: col-third
+Third column
+:::
+
+::: col-third
+Third column
+:::
 ::::::
 ```
 
