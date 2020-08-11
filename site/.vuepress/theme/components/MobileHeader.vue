@@ -126,8 +126,6 @@ export default {
 </script>
 
 <style lang="stylus">
-@import '~@app/style/config';
-
 header
   z-index 100
   position fixed
