@@ -160,7 +160,69 @@ For the half column container, the HTML would render like this:
 </div>
 ```
 
-Pretty cool and easy to use.  Then just use whatever styling you need to to wrap that is up nice and you win.
+Now to put this all together, in our index.styl I am putting the following CSS:
+
+```stylus
+.custom-block
+  &.col-wrapper
+    @media (min-width: 992px)
+      &
+        display flex
+
+  &.col-full
+    width 100%
+
+    @media (min-width: 992px)
+      &
+        flex 0 0 100%
+        max-width 100%
+
+  &.col-half
+    width 100%
+
+    @media (min-width: 992px)
+      &
+        flex 0 0 50%
+        max-width 50%
+
+  &.col-third
+    width 100%
+
+    @media (min-width: 992px)
+      &
+        flex 0 0 33.333333%
+        max-width 33.333333%
+```
+
+The half column will now render like this:
+
+:::::: col-wrapper
+::: col-half
+Half column
+:::
+
+::: col-half
+Half column
+:::
+:::::::::
+
+The thirds column will render like this:
+
+:::::: col-wrapper
+::: col-third
+Third column
+:::
+
+::: col-third
+Third column
+:::
+
+::: col-third
+Third column
+:::
+::::::
+
+Pretty cool and easy to use.
 
 ## Conclusion
 
