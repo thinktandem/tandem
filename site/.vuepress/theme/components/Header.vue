@@ -80,7 +80,7 @@ export default {
     a
       color $darkTextColor
       font-weight bold
-      font-family PT Serif, Serif
+      font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
       text-decoration none
 
   .header-right-wrap
@@ -98,14 +98,14 @@ export default {
         margin-left 20px
 
         a
-          font-family PT Serif, Serif
-          font-size 20px
+          font-family "Poppins", "Helvetica Neue", Arial, sans-serif
           // color lighten(#3eaf7c, 30%)
-          text-decoration none
-          transition color 0.3s
+          font-size: 20px;
+          text-decoration: none;
+          letter-spacing: -1.67px;
 
     .search-box
-      font-family PT Serif, Serif
+      font-family "GalaxieCopernicus", PT Serif, Serif
       margin-left 20px
 
       input
