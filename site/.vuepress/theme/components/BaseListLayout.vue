@@ -95,23 +95,20 @@
       </article>
     </div>
 
-    <component
-      :is="paginationComponent"
-      v-if="$pagination.length > 1 && paginationComponent"
-    />
+    <button
+      class="btn btn-load-more"
+      v-if="(this.$pagination.paginationIndex + 1) < Object.keys(this.$pagination._paginationPages).length"
+      @click="more"
+    >
+      Load More
+    </button>
   </div>
 </template>
 
 <script>
-/* global THEME_BLOG_PAGINATION_COMPONENT */
 
-import Vue from 'vue';
 import dayjs from 'dayjs';
 import {NavigationIcon, ClockIcon, TagIcon} from 'vue-feather-icons';
-import {
-  Pagination,
-  SimplePagination,
-} from '@vuepress/plugin-blog/lib/client/components';
 
 export default {
   components: {NavigationIcon, ClockIcon, TagIcon},
@@ -119,31 +116,22 @@ export default {
   data() {
     return {
       paginationComponent: null,
+      pages: [],
     };
   },
 
-  computed: {
-    pages() {
-      return this.$pagination.pages;
-    },
-  },
-
-  created() {
-    this.paginationComponent = this.getPaginationComponent();
+  mounted() {
+    this.pages = this.$pagination.pages;
   },
 
   methods: {
-    getPaginationComponent() {
-      const n = THEME_BLOG_PAGINATION_COMPONENT;
-      if (n === 'Pagination') {
-        return Pagination;
+    more() {
+      this.$pagination.paginationIndex++;
+      let next = this.$pagination._paginationPages[this.$pagination.paginationIndex];
+      let nextPages = this.$pagination._matchedPages.slice(next.interval[0], next.interval[1] + 1);
+      for (let i = 0; i < nextPages.length; i++) {
+        this.pages.push(nextPages[i]);
       }
-
-      if (n === 'SimplePagination') {
-        return SimplePagination;
-      }
-
-      return Vue.component(n) || Pagination;
     },
 
     resolvePostDate(date) {
