@@ -63,7 +63,7 @@ Improvise Into the Unknown
 Onto keynote at NERDS: [Improvise Into the Unknown](https://nerdsummit.org/#16) by [@pamvictor](https://twitter.com/pamvictor). Pam is a great story teller and I was glad to recieve this message. She reminded me to breathe, take my time, and produce my best work. Enough of me blabbing about though here is the vid:
 
 <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/D0l2Nm1kg1M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><Paste>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D0l2Nm1kg1M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </center>
 
 My main take aways:

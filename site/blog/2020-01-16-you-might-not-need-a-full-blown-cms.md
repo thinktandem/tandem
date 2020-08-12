@@ -14,7 +14,7 @@ meta:
     - { name: keywords, content: seo }
 ---
 
-Before deciding on a Content Mangement System (CMS) like [Wordpress](https://wordpress.com/) or 
+Before deciding on a Content Mangement System (CMS) like [Wordpress](https://wordpress.com/) or
 [Drupal](https://www.drupal.org/), you should first make sure you require a CMS at all.
 
 Wordpress has become the ubiquitous blogging platform. Likewise, Drupal has become a quite popular CMS for
@@ -60,7 +60,7 @@ Consider for a moment maintaining, and improving each of these properties.
 </table>
 
 No doubt *Estate De La CMS* will be a handful to maintain. With more plumbing comes
-more potential for leaks. More doors and windows makes for more points of entry 
+more potential for leaks. More doors and windows makes for more points of entry
 to secure. Water, power, resources... all much higher than the track home.
 
 The cost/effort of building *Estate De La CMS* is significantly higher than the *Track Home on Static Circle*.
@@ -68,7 +68,7 @@ The cost/effort of building *Estate De La CMS* is significantly higher than the 
 This would typically be a barrier to entry for anyone not up to the task however the
 <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">Free
 Open Source Software (FOSS)</a> licenses make it as if *Estate De La CMS* was passed down to you
-by a rich uncle. It comes with great responsibility and if you slack on maintenance, there will be 
+by a rich uncle. It comes with great responsibility and if you slack on maintenance, there will be
 many more problems to come.
 
 Ok, let's get back to web applications...
@@ -77,10 +77,10 @@ Ok, let's get back to web applications...
 
 Static websites are a lightweight alternative to a full blown CMS. They run entirely in the user's browser, without the
  need for a database or server-side rendering. They are made up of HTML, CSS, and JavaScript.
- 
+
 If you don't require users logging in to create or modify content, and your content doesn't change that often,
  you may reduce risk and cost by going with a static website.
- 
+
 These days we have many tools to choose from for developing static websites. These frameworks are called
 *Static Generators*, and they have come a long way over the years...
 
@@ -111,7 +111,7 @@ from around the web.
 Static Generators provide standards and flexibility to write clean code with a surprising amount
 of dynamics for a web application that isn't using server side processing or a back-end database.
 
-Even though the process of development is robust and sophisticated, the product of these frameworks 
+Even though the process of development is robust and sophisticated, the product of these frameworks
 are a static site.
 
 ### How is a Static Site Significant?
@@ -134,12 +134,12 @@ to hackers. This is why it is especially important to take CMS maintenance serio
 
 Let's take a look at the infrastructure and maintenance required to run a static website vs a CMS like Drupal or Wordpress:
 
-<h4>Static vs CMS Hosting and Maintenance Requirements</h3>
+<h4>Static vs CMS Hosting and Maintenance Requirements</h4>
 
 <style>
     #static-vs-cms-table {
         margin: 0 auto;
-        width: 80%; 
+        width: 80%;
         border: 1px solid #ccc;
     }
     #static-vs-cms-table {
@@ -159,7 +159,7 @@ Let's take a look at the infrastructure and maintenance required to run a static
     #static-vs-cms-table td.value {
         text-align: center;
     }
-    
+
 </style>
 
 <table id="static-vs-cms-table">

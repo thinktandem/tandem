@@ -45,7 +45,7 @@ export default {
   padding: 2em
   margin-top: 1em
   margin-bottom: 1em
-  font-family: "PT Serif, Serif"
+  font-family: "GalaxieCopernicus", PT Serif, Serif"
   .post-title
     padding-bottom: 1em
     a

@@ -4,6 +4,7 @@ module.exports = {
   head: [
     ['link', {rel: 'icon', href: '/favicon.png'}],
     ['link', {rel: 'stylesheet', href: '/styles/overrides.css'}],
+    ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Poppins:600'}],
   ],
   plugins: {
     '@vuepress/blog': {
@@ -25,7 +26,7 @@ module.exports = {
         {
           id: 'tags',
           keys: ['tags'],
-          path: '/',
+          path: '/tag/',
           frontmatter: {title: 'Tags'},
           pagination: {
             lengthPerPage: 25,
@@ -41,7 +42,7 @@ module.exports = {
       posts_directories: ['/blog/'],
       feed_options: {
         favicon: 'https://thinktandem.io/favicon.png',
-        image: 'https://lando.dev/images/logo-pink-small.png',
+        image: 'https://thinktandem.io/images/hero-tandem-pink.png',
       },
     },
     '@vuepress/google-analytics': {
@@ -62,21 +63,32 @@ module.exports = {
   },
   theme: '@vuepress/theme-blog',
   themeConfig: {
-    logo: '/images/logo-pink-small.png',
+    logo: '/images/logo-tandem-svg.svg',
     docsDir: 'site',
     docsBranch: 'master',
     search: false,
     editLinks: false,
     nav: [
       {
+        text: 'Home',
+        link: '/',
+      },
+      {
+        text: 'Work',
+        link: '/work/',
+      },
+      {
+        text: 'About',
+        link: '/about/',
+      },
+      {
         text: 'Blog',
         link: '/blog/',
       },
       {
-        text: 'Case Studies',
-        link: '/case-studies/',
+        text: 'Contact',
+        link: '/contact/',
       },
     ],
-
   },
 };

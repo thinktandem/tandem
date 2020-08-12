@@ -72,21 +72,21 @@ Lando spins up local development environments using Docker. Mike showed what a t
 
 A basic way of doing this is accomplished with *recipes*, which are pre-defined sets of infrastructure for common usecases, like running a Drupal application, a WordPress application, a generic LAMP stack, and many more options. A .lando.yml file using a recipe looks something like this:
 
-<div><pre><code class="language-bash">
+```bash
 name: mysite
 recipe: lamp
-</pre></code></div>
+```
 
 Further customizations can be made to match the versions of services on your production environment:
 
-<div><pre><code class="language-bash">
+```bash
 name: mysite
 recipe: lamp
 config:
 	php: 5.6
 	webroot: web
 	database: mariadb:10.0
-</pre></code></div>
+```
 
 There are many more options available to customize available tooling, infrastructure, and even build-steps to automate the setup of your app.
 

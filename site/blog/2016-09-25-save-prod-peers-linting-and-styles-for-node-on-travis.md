@@ -84,18 +84,18 @@ We want to set up some basic checks on our new [metalsmith-swig-helpers](https:/
 
 #### 1. Get the project
 
-<div><pre><code class="language-bash">
+```bash
 # Clone the codes
 git clone git@github.com:thinktandem/metalsmith-swig-helpers.git && \
   cd metalsmith-swig-helpers
 
 # Install the deps
 npm install
-</pre></code></div>
+```
 
 #### 2. Install Grunt and the needed code linting and styling tasks
 
-<div><pre><code class="language-bash">
+```bash
 # Install the grunt-cli globally if you haven't already
 npm install -g grunt-cli
 
@@ -109,7 +109,7 @@ npm install jshint-stylish --save-dev
 
 # This helps us load grunt tasks
 npm install matchdep --save-dev
-</pre></code></div>
+```
 
 **NOTE:** Make sure you are setup to [install node modules globally without sudo](https://docs.npmjs.com/getting-started/fixing-npm-permissions).
 
@@ -119,7 +119,7 @@ If you are unfamiliar with setting up the `Gruntfile` please check out [the docu
 
 Here is a basic `Gruntfile.js` that does not do anything.
 
-<div><pre><code class="language-javascript">
+```js
 module.exports = function(grunt) {
 
   // Load all grunt plugins
@@ -138,11 +138,11 @@ module.exports = function(grunt) {
   grunt.registerTask('default', []);
 
 };
-</pre></code></div>
+```
 
 Here is a `Gruntfile.js` task that checks your code for syntax errors. Please refer to the documentation on the [`grunt-contrib-jshint`](https://github.com/gruntjs/grunt-contrib-jshint) plugin. Notice that we are delegating our linting rules to the `.jshintrc` file. You can read more about the rules of this file [here](http://jshint.com/docs/options/).
 
-<div><pre><code class="language-yaml">
+```yaml
 jshint: {
   options: {
 
@@ -159,11 +159,11 @@ jshint: {
     'lib/\*.js'
   ]
 }
-</pre></code></div>
+```
 
 Here is a `Gruntfile.js` task that makes sure we are following NodeJS coding standards. Please refer to the documentation on the [`grunt-jscs`](https://github.com/jscs-dev/grunt-jscs) plugin. Notice that we are delegating our linting rules to the `.jscsrc` file. You can read more about the rules of this file [here](http://jscs.info/overview).
 
-<div><pre><code class="language-yaml">
+```yaml
 jscs: {
 
   # Use a config file for our code standards config
@@ -177,11 +177,11 @@ jscs: {
     'lib/\*.js'
   ]
 }
-</pre></code></div>
+```
 
 Here is a complete `Gruntfile.js` that defines checks for basic syntax errors and adherence to code standards laid out in `jscsrc` (Google standards in this case). We also register a task called `grunt test` that will check these things.
 
-<div><pre><code class="language-javascript">
+```js
 module.exports = function(grunt) {
 
   // Load all grunt plugins
@@ -226,11 +226,11 @@ module.exports = function(grunt) {
   grunt.registerTask('test', ['jshint', 'jscs']);
 
 };
-</pre></code></div>
+```
 
 Now you should be able to run the linting and standards enforcement locally with `grunt test`.
 
-<div><pre><code class="language-bash">
+```bash
 grunt test
 Running "jshint:files" (jshint) task
 
@@ -270,7 +270,7 @@ validateIndentation: Expected indentation of 10 characters at lib/index.js :
 Warning: Task "jscs:files" failed. Use --force to continue.
 
 Aborted due to warnings.
-</pre></code></div>
+```
 
 Obey the suggestions in the run output to achieve code cleanliness.
 
@@ -278,7 +278,7 @@ Obey the suggestions in the run output to achieve code cleanliness.
 
 Here is a basic `.travis.yml` file that you can drop in your projects root directory. This will automate the testing of your code. If you are interested in learning more about configuring this file you should check out the [Travis Starter Guide](https://docs.travis-ci.com/user/getting-started/).
 
-<div><pre><code class="language-yaml">
+```yaml
 language: node_js
 node_js:
 - '4'
@@ -291,16 +291,16 @@ cache:
   - assets/vendor
 notifications:
   email: dukat@freebajor.org
-</pre></code></div>
+```
 
 #### 5. Push your code, fix your errors and profit
 
-<div><pre><code class="language-bash">
+```bash
 # Commit and push code that fails grunt test
 git add .
 git commit -m "LINTER IS COMING"
 git push origin nuclearLinter
-</pre></code></div>
+```
 
 Here is a closed pull request that goes from a failed build to happy.
 https://github.com/thinktandem/metalsmith-swig-helpers/pull/1

@@ -38,7 +38,7 @@ Start by creating your Pantheon site on Kalabox normally.
 
 If you are using another `git remote` as the canonical upstream (eg GitHub) now is the time to swap out the `code` directory's Pantheon upstream for your remote.
 
-<div><pre><code class="language-bash">
+```bash
 # Navigate to your Kalabox app
 cd /path/to/app
 
@@ -48,13 +48,13 @@ rm -rf code/*
 
 # Add the canonical upstream
 git clone git@myrepo.git code
-</pre></code></div>
+```
 
 ### 2. Run any relevant build steps (optional)
 
 If you are using `composer` to build out your nested docroot, you'll want to run that (and any other build steps like `npm install`).
 
-<div><pre><code class="language-bash">
+```bash
 # Navigate to your Kalabox app's code directory
 cd /path/to/app/code
 
@@ -67,7 +67,7 @@ composer install
 # Optionally run other build steps
 npm install
 gulp sassmebro
-</pre></code></div>
+```
 
 Once this step has completed you should be able to visit your site at `https://mysite.kbox.site/web` although don't get too excited because it's not full functional yet. Also note that it might take a few moments to sync all your build deps into Kalabox.
 
@@ -77,7 +77,7 @@ You will need to apply the following changes relative to your Kalabox app's root
 
 These changes should not only get your site to load but will also allow built in commands like `kbox drush` to function correctly, push/pull operations to succeed and other webroot location specific tasks to succeed.
 
-<div><pre><code class="language-diff">
+```diff
 diff --git a/config/drush/aliases.drushrc.php b/config/drush/aliases.drushrc.php
 index df65354..c2823ff 100644
 --- a/config/drush/aliases.drushrc.php
@@ -340,11 +340,11 @@ index 03c8450..def1653 100644
      TERM: xterm-color
      COLUMNS: 150
      HOME: /home/$KALABOX_ENGINE_ID
-</pre></code></div>
+```
 
 Now, in order to seal the deal you will want to restart your app with Kalabox.
 
-<div><pre><code class="language-bash">
+```bash
 # Navigate to your Kalabox app's code directory
 cd /path/to/app/code
 
@@ -353,7 +353,7 @@ kbox restart
 
 # Clear any relevant caches
 kbox drush cr || kbox drush cc all
-</pre></code></div>
+```
 
 ### 4. Visit your site in the browser
 
