@@ -102,7 +102,7 @@ export default {
 .vuepress-blog-theme-content
   font-size 16px
   letter-spacing 0px
-  font-family "GalaxieCopernicus", PT Serif, Serif
+  font-family PT Serif, Serif
   color $textColor
   position relative
   .post-title
