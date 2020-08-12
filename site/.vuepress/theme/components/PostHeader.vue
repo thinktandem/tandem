@@ -38,6 +38,7 @@ export default {
     },
     date: {
       type: String,
+      default: dayjs(),
     },
     location: {
       type: String,

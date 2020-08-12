@@ -17,10 +17,10 @@ module.exports = {
           itemPermalink: '/blog/:year/:month/:day/:slug',
         },
         {
-          id: 'casestudies',
-          dirname: 'case-studies',
-          path: '/case-studies/',
-          itemPermalink: '/case-studies/:slug',
+          id: 'work',
+          dirname: 'work',
+          path: '/work/',
+          itemPermalink: '/work/:slug',
         },
       ],
       frontmatters: [
@@ -82,7 +82,7 @@ module.exports = {
       },
       {
         text: 'About',
-        link: '/stuff/',
+        link: '/about/',
         desc: 'Who we are.',
       },
       {

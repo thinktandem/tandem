@@ -41,6 +41,7 @@ export default {
     },
     tags: {
       type: [Array, String],
+      default: () => ([]),
     },
   },
   computed: {

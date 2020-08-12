@@ -4,12 +4,12 @@
 
 import VueJsonLD from 'vue-jsonld';
 
-export default ({ Vue, options, router, siteData }) => { // eslint-disable-line
+export default ({ Vue, options, router, siteData, isServer }) => { // eslint-disable-line
   // Load in JSONLD
   Vue.use(VueJsonLD);
-  // @NOTE: no idea why we need to do below
+
+  // We have to do this non-import to obey eslint and also
   // https://github.com/alvarotrigo/vue-fullpage.js/issues/126
-  import('vue-fullpage.js').then(module => {
-    Vue.use(module.default)
-  });
+  const VueFullpage = require('vue-fullpage.js').default;
+  Vue.use(VueFullpage);
 };
