@@ -111,7 +111,7 @@ export default {
   .home-header-byline
     font-size: 1.8em
     letter-spacing: 0px
-    font-family: PT Serif, Serif
+    font-family: "GalaxieCopernicus", PT Serif, Serif
     color: lighten($landoGrey, 20%)
     padding-bottom: 2em
   .carbon-ads
