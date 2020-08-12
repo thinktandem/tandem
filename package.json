@@ -16,23 +16,27 @@
     "build:site": "vuepress build site -d _site",
     "dev:docs": "vuepress dev --temp /tmp/tandem-docs --cache /tmp/tandem-docs-cache --port 8010 docs",
     "dev:site": "vuepress dev --temp /tmp/tandem-site --cache /tmp/tandem-site-cache --port 8011 site",
-    "lint:sites": "eslint --quiet --ext .js,.vue --config .eslintrc.json site/.vuepress docs/.vuepress",
-    "lint:plugins": "eslint --quiet --no-ignore --config .eslintrc.lando.json plugins"
+    "lint:docs": "eslint --ext .js,.vue --config .eslintrc.json docs/.vuepress",
+    "lint:site": "eslint --ext .js,.vue --config .eslintrc.json site/.vuepress",
+    "lint:plugins": "eslint --no-ignore --config .eslintrc.lando.json plugins"
   },
   "devDependencies": {
+    "@vuepress/plugin-blog": "^1.9.2",
     "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
     "@vuepress/theme-blog": "^2.0.0",
     "axios": "^0.19.0",
     "eslint": "^6.1.0",
     "eslint-config-google": "^0.9.1",
     "eslint-plugin-vue": "^5.2.3",
+    "eslint-plugin-vue-scoped-css": "^1.0.0",
+    "vue-fullpage.js": "^0.1.5",
     "vue-jsonld": "^1.0.1",
     "vuepress": "^1.5.2",
     "vuepress-plugin-autometa": "https://github.com/thinktandem/vuepress-plugin-autometa",
     "vuepress-plugin-canonical": "^1.0.0",
+    "vuepress-plugin-container": "^2.1.2",
     "vuepress-plugin-frontmatters-feed": "https://github.com/thinktandem/vuepress-plugin-frontmatters-feed",
     "vuepress-plugin-robots": "^1.0.1",
     "vuepress-plugin-sitemap": "https://github.com/ekoeryanto/vuepress-plugin-sitemap#dd8b9763b2c7939668a67f2afa34de501dea45d4"
-  },
-  "dependencies": {}
+  }
 }

@@ -5,6 +5,7 @@
   },
   "extends": [
     "plugin:vue/recommended",
+    "plugin:vue-scoped-css/all",
     "google"
   ],
   "rules": {
@@ -15,6 +16,7 @@
     "max-len": ["error", {
       "code": 12000,
       "ignoreComments": true
-    }]
+    }],
+    "vue-scoped-css/require-scoped": 0
   }
 }

@@ -30,11 +30,11 @@ In 2016, setting up your local computer to create apps with NodeJS and Docker is
 
 For demonstration purposes, our first "microservice" will be a tiny NodeJS app tasked with the vital function of keeping track of our strategic beer reserve. Grab the app and run it:
 
-<pre><code class="language-bash">
+```bash
 git clone git@github.com:thinktandem/99beers-demo.git && cd 99beers-demo
 npm install
 node index.js
-</pre></code>
+```
 
 Now you can visit http://localhost in your favorite browser to access the app.
 
@@ -46,7 +46,7 @@ Running the app via Node on our local machine may be easy, but we need to guaran
 
 The Dockerfile included with the 99beers-demo app creates a simple, reusable structure:
 
-<pre><code class="language-docker">
+```docker
 FROM node:argon
 \# Create app directory
 RUN mkdir -p /usr/src/app
@@ -58,7 +58,7 @@ RUN npm install
 COPY . /usr/src/app
 EXPOSE 80
 CMD [ "node", "index.js" ]
-</pre></code>
+```
 
 The "FROM" keyword allows us to inherit all of the configuration from the official NodeJS docker image. This gives us all the tools we need in a tiny virtualized Linux environment.
 
@@ -68,10 +68,10 @@ Finally, we use the "EXPOSE" keyword to specify the port we want our container t
 
 To see this all in action, you'll need to build the Docker image locally and run it. Remember to insert your Docker Hub username in the code below:
 
-<pre><code class="language-bash">
+```bash
 docker build -t [DOCKER_HUB_USERNAME]/99beers-demo .
 docker run -p 8080:80 [DOCKER_HUB_USERNAME]/99beers-demo
-</pre></code>
+```
 
 
 Note the -p tag on the `docker run` command. This specifies the port mapping, linking port 80 on the container to be available on port 8080 on your local machine. To access the running docker app, you can visit http://localhost:8080.
@@ -82,9 +82,9 @@ Docker Hub is kind of like Github for Docker images. Deploying your Docker image
 
 In our case, we particularly want our Docker image on Docker Hub so we can use it in Docker Cloud. To push it to Docker Cloud, simply run the `docker push` command:
 
-<pre><code class="language-bash">
+```bash
 docker push [DOCKER_HUB_USERNAME]/99beers-demo
-</pre></code>
+```
 
 ## 5. Create a Docker Cloud Node
 

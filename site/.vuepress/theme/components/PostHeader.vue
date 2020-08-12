@@ -1,9 +1,18 @@
 <template>
   <div class="written-by">
-    <a :href="link" target="_blank">{{ name }}</a>
+    <a
+      :href="link"
+      target="_blank"
+    >{{ name }}</a>
     from <NavigationIcon /> {{ location }}
     on <ClockIcon /> {{ resolvedDate }}
-    <a :href="link" target="_blank"><img :src="pic" :alt="name" /></a>
+    <a
+      :href="link"
+      target="_blank"
+    ><img
+      :src="pic"
+      :alt="name"
+    ></a>
   </div>
 </template>
 
@@ -12,8 +21,8 @@ import dayjs from 'dayjs';
 import {ClockIcon, NavigationIcon} from 'vue-feather-icons';
 
 export default {
-  components: {ClockIcon, NavigationIcon},
   name: 'PostHeader',
+  components: {ClockIcon, NavigationIcon},
   props: {
     name: {
       type: String,
@@ -29,6 +38,7 @@ export default {
     },
     date: {
       type: String,
+      default: dayjs(),
     },
     location: {
       type: String,

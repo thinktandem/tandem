@@ -4,6 +4,8 @@ module.exports = {
   head: [
     ['link', {rel: 'icon', href: '/favicon.png'}],
     ['link', {rel: 'stylesheet', href: '/styles/overrides.css'}],
+    ['link', {rel: 'stylesheet', href: '//unpkg.com/fullpage.js/dist/fullpage.min.css'}],
+    ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Poppins:wght@600;900'}],
   ],
   plugins: {
     '@vuepress/blog': {
@@ -15,17 +17,17 @@ module.exports = {
           itemPermalink: '/blog/:year/:month/:day/:slug',
         },
         {
-          id: 'casestudies',
-          dirname: 'case-studies',
-          path: '/case-studies/',
-          itemPermalink: '/case-studies/:slug',
+          id: 'work',
+          dirname: 'work',
+          path: '/work/',
+          itemPermalink: '/work/:slug',
         },
       ],
       frontmatters: [
         {
           id: 'tags',
           keys: ['tags'],
-          path: '/',
+          path: '/about/',
           frontmatter: {title: 'Tags'},
           pagination: {
             lengthPerPage: 25,
@@ -34,14 +36,6 @@ module.exports = {
       ],
       sitemap: {
         hostname: 'https://thinktandem.io',
-      },
-    },
-    'vuepress-plugin-frontmatters-feed': {
-      canonical_base: 'https://thinktandem.io',
-      posts_directories: ['/blog/'],
-      feed_options: {
-        favicon: 'https://thinktandem.io/favicon.png',
-        image: 'https://lando.dev/images/logo-pink-small.png',
       },
     },
     '@vuepress/google-analytics': {
@@ -59,24 +53,48 @@ module.exports = {
       disallowAll: true,
       sitemap: '/sitemap.xml',
     },
+    'vuepress-plugin-frontmatters-feed': {
+      canonical_base: 'https://thinktandem.io',
+      posts_directories: ['/blog/'],
+      feed_options: {
+        favicon: 'https://thinktandem.io/favicon.png',
+        image: 'https://thinktandem.io/images/hero-tandem-pink.png',
+      },
+    },
   },
   theme: '@vuepress/theme-blog',
   themeConfig: {
-    logo: '/images/logo-pink-small.png',
+    logo: '/images/logo-tandem-svg.svg',
     docsDir: 'site',
     docsBranch: 'master',
     search: false,
     editLinks: false,
     nav: [
       {
-        text: 'Blog',
-        link: '/blog/',
+        text: 'Home',
+        link: '/',
+        desc: 'Take it home.',
       },
       {
-        text: 'Case Studies',
-        link: '/case-studies/',
+        text: 'Work',
+        link: '/work/',
+        desc: 'What we\'ve done.',
+      },
+      {
+        text: 'About',
+        link: '/about/',
+        desc: 'Who we are.',
+      },
+      {
+        text: 'Blog',
+        link: '/blog/',
+        desc: 'Our thoughts.',
+      },
+      {
+        text: 'Contact',
+        link: '/contact/',
+        desc: 'Get in touch!',
       },
     ],
-
   },
 };

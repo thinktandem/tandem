@@ -64,9 +64,9 @@ First let me say, I do not claim to be an expert on how Kalabox works. Although 
 * Kalabox (along side VirtualBox) creates a shared folder for you to interact with the code in your containers
 * On a Mac, the default shared folder is located:
 
-  <div><pre><code class="language-bash">
-  /Users/yournamehere/.kalabox/apps/
-  </pre></code></div>
+```bash
+/Users/yournamehere/.kalabox/apps/
+```
 
 * You can now edit files in your apps `/code/` directory
 * Kalabox utilizes [Unison](https://www.cis.upenn.edu/~bcpierce/unison/) in combination with VirtualBox shared file system to synchronize the file changes between the virtual machine and your local machine (at a rate of about 1 second)
@@ -90,55 +90,55 @@ This works well for your average brochure website. However, many of our brand we
 * Many of our fresh install apps with a handul of updates take less than 1 minute to push code, database and files back up to Pantheon.
 * If you are going to be pulling a larger website on Pantheon and want to get working right away - choose to NOT download database and files when using the GUI or...
 
-  <div><pre><code class="language-bash">
-  # If using Kalabox CLI
-  $ kbox create pantheon -- -v \
-    --site=big-brand-here \
-    --env=dev \
-    --nodb \
-    --nofiles \
-    --name=big-brand-here \
-    --dir=/Users/yournamehere/.kalabox/apps
+```bash
+# If using Kalabox CLI
+$ kbox create pantheon -- -v \
+  --site=big-brand-here \
+  --env=dev \
+  --nodb \
+  --nofiles \
+  --name=big-brand-here \
+  --dir=/Users/yournamehere/.kalabox/apps
 
-  # Or to place the App in your Mac OS Sierra 'Documents' Cloud Storage
-  $ kbox create pantheon -- -v \
-    --site=big-brand-here \
-    --env=dev \
-    --nodb \
-    --nofiles \
-    --name=big-brand-here \
-    --dir=/Users/yournamehere/Documents/Sites
-  </pre></code></div>
+# Or to place the App in your Mac OS Sierra 'Documents' Cloud Storage
+$ kbox create pantheon -- -v \
+  --site=big-brand-here \
+  --env=dev \
+  --nodb \
+  --nofiles \
+  --name=big-brand-here \
+  --dir=/Users/yournamehere/Documents/Sites
+```
 
 
 * Instead, take advantage of Pantheon's built in backup system and download your database and files as archives and extract them into your app manually
 
-  <div><pre><code class="language-bash">
-  # By default here
-  /Users/yournamehere/.kalabox/apps/files/...
-  </pre></code></div>
+```bash
+# By default here
+/Users/yournamehere/.kalabox/apps/files/...
+```
 
 * After you download your large database from Pantheon, you will need to manually upload into your local Kalabox database
 * You can easily get all your Kalabox database connection information from the Kalabox GUI by clicking 'connection info' or using the Kalabox CLI
 
-  <div><pre><code class="language-bash">
-  # Change directory into your app
-  $ cd /Users/yournamehere/.kalabox/apps/big-brand-here/
-  # Get a list of services and connection information for your app
-  $ kbox services
-  # ex:
-  {
-    "name": "db",
-    "project": "big-brand-here",
-    "external_connection_info": {
-      "database": "pantheon",
-      "user": "pantheon",
-      "password": "pantheon",
-      "host": "big-brand-here.kbox",
-      "port": "32810" # THIS IS THE IMPORTANT INFO!!!
-    }
+```bash
+# Change directory into your app
+$ cd /Users/yournamehere/.kalabox/apps/big-brand-here/
+# Get a list of services and connection information for your app
+$ kbox services
+# ex:
+{
+  "name": "db",
+  "project": "big-brand-here",
+  "external_connection_info": {
+    "database": "pantheon",
+    "user": "pantheon",
+    "password": "pantheon",
+    "host": "big-brand-here.kbox",
+    "port": "32810" # THIS IS THE IMPORTANT INFO!!!
   }
-  </pre></code></div>
+}
+```
 
 * Pay close attention to the database port number as this changes everytime you start your app
 * You can now use this information in a third party database client like [Sequal Pro](https://www.sequelpro.com/) -> Import DB
@@ -161,35 +161,35 @@ Every time a change is made to 1 of those files Unison, VirtualBox and Kalabox p
 * Fortunately we can tune Kalabox to not only look for changes in certain file paths, but also exclude certain files such as those used by front end development tools such as the `/node_modules/` in our theme directory or `/vendor/` for Composer deps.
 * Simply edit your app's `kalabox.yml` - look for the 'sharing' section and edit these lines
 
-  <div><pre><code class="language-yaml">
-  sharing:
-      share: 'data:/code'
-      ignore:
-        - Name sites/default/files
-        - Name \*node_modules\*
-        - Name \*bower_components\*
-        - Name \*vendor\*
-        - Name \*build\*
-      paths:
-        - sites/all/modules/custom
-        - sites/all/themes/big-brand-theme
-  </pre></code></div>
+```yaml
+sharing:
+    share: 'data:/code'
+    ignore:
+      - Name sites/default/files
+      - Name \*node_modules\*
+      - Name \*bower_components\*
+      - Name \*vendor\*
+      - Name \*build\*
+    paths:
+      - sites/all/modules/custom
+      - sites/all/themes/big-brand-theme
+```
 
 * If you really want to speed up your app creation process - stop your newly created Kalabox app as soon as it is created by pressing the stop button on the GUI or
 
-  <div><pre><code class="language-bash">
-  # From the Kalabox CLI
-  $ kbox stop
-  </pre></code></div>
+```bash
+# From the Kalabox CLI
+$ kbox stop
+```
 
 * This will in effect stop Kalabox from trying to sync all your files from virtual machine to your local shared files directory
 * Make sure you tune your app's `kalabox.yml` as described above
 * Turn your Kalabox app back on using the power button on the GUI or
 
-  <div><pre><code class="language-bash">
-  # From the Kalabox CLI
-  $ kbox start
-  </pre></code></div>
+```bash
+# From the Kalabox CLI
+$ kbox start
+```
 
 * You will now notice your apps file structure just got a lot smaller, by only synchronizing your allowed paths from the `kalabox.yml`
 * This keeps your code base lean and your dev team can focus on their given feature or theme development
@@ -200,10 +200,10 @@ There is a bit of a gingerly dance at play here. We are tuning our `kalabox.yml`
 
 Luckily, Kalabox has some awesome built-in dev tools that work directly on the virtual machine such as: git, bower, gulp and drush ([full list of Pantheon Dev tools here](http://pantheon.kalabox.io/en/stable/users/tooling/)). Lets say you wanted to use drush to download and install the `admin_menu` module:
 
-  <div><pre><code class="language-bash">
-  # From the Kalabox CLI
-  $ kbox drush en -y admin_menu
-  </pre></code></div>
+```bash
+# From the Kalabox CLI
+$ kbox drush en -y admin_menu
+```
 
 At this point your Kalabox app will have downloaded and installed the `admin_module` directly to the `/sites/all/modules/contrib/` folder in your virtual machine. The best part here is we don't need to wait for those files to be scynchronized back out to our local before the module will work because `kbox drush` puts them directly into the virtual machine. Drush is amazingly fast, so just wait till it's done and refresh your app in the browser. BOOM! It just works.
 
@@ -213,17 +213,17 @@ If you do in fact need to patch that contrib module, you have a few more options
 
 1. Update your `kalabox.yml` to include the exact path to your module then restart your app
 
-  <div><pre><code class="language-bash">
-  # From the Kalabox CLI
-  $ kbox restart
-  </pre></code></div>
+```bash
+# From the Kalabox CLI
+$ kbox restart
+```
 
 2. You can also choose to use Pantheon's built in SFTP connection and upload files like settings files, contrib modules and libraries directly to the server then do a quick pull of those changes back into your local Kalabox app
 
-  <div><pre><code class="language-bash">
-  # From the Kalabox CLI
-  $ kbox git pull
-  </pre></code></div>
+```bash
+# From the Kalabox CLI
+$ kbox git pull
+```
 
 Most of the time we don't ever change the code of these type of files so we found that it was easier to by-pass file synchronization and just let the virtual machine handle those files. This is also a great way to prevent someone from hacking core or contrib modules!
 
