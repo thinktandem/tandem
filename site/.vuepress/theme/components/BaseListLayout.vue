@@ -95,7 +95,11 @@
       </article>
     </div>
 
-    <button @click="more">
+    <button
+      class="btn btn-load-more"
+      v-if="(this.$pagination.paginationIndex + 1) < Object.keys(this.$pagination._paginationPages).length"
+      @click="more"
+    >
       Load More
     </button>
   </div>
@@ -118,10 +122,6 @@ export default {
 
   mounted() {
     this.pages = this.$pagination.pages;
-  },
-
-  created() {
-    this.paginationComponent = this.getPaginationComponent();
   },
 
   methods: {
