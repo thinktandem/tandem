@@ -341,6 +341,8 @@ nav
           ul
             flex-direction column
             padding 50px 20px
+            .nav-item
+              margin 10px
 
   nav
     .menu

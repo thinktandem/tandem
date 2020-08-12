@@ -42,7 +42,13 @@ export default {
   data() {
     return {
       lastScroll: 0,
-      options: {},
+      options: {
+        licenseKey: '405018B1-CE12431F-9F1B1D09-898738E4',
+        autoScrolling: true,
+        fitToSection: true,
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+        sectionsColor: ['#fffff', '#41b883', '#ff5f45', '#0798ec', '#c0ffee'],
+      },
     };
   },
   computed: {
@@ -56,15 +62,12 @@ export default {
     toggle.classList.remove('greybeard');
 
     // Set the full options for fullpagejs
+    /*
     this.options = {
-      autoScrolling: true,
-      fitToSection: true,
-      afterLoad: this.afterLoad,
-      onLeave: this.onLeave,
-      anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-      licenseKey: '405018B1-CE12431F-9F1B1D09-898738E4',
-      sectionsColor: ['#fffff', '#41b883', '#ff5f45', '#0798ec', '#c0ffee'],
+      // afterLoad: this.afterLoad,
+      // onLeave: this.onLeave,
     };
+    */
     // Init fullpage
     this.$refs.fullpage.init();
   },
