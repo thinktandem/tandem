@@ -72,3 +72,53 @@ article
     &
       padding 100px 15px 20px 15px
       min-height calc(100vh - 20px - 60px - 100px)
+
+.custom-block
+  &.caption
+    background-color: #f8f8f8
+    padding: .1em 1em
+    color: $textColor
+    font-size: .8em
+    font-weight: 700
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
+
+  &.thumbnail
+    border: 1px dashed #ccc
+    padding: 1em
+
+  &.quote
+    padding 1.5rem 0 1.5rem 1.5rem
+    font-size 1.3rem
+    color lighten($landoPink, 25%)
+    border-left 3px solid lighten($landoGrey, 50%)
+    background lighten($landoBlue, 99%)
+    font-style italic
+
+  &.col-wrapper
+    @media (min-width: $MQMobile)
+      &
+        display flex
+
+  &.col-full
+    width 100%
+
+    @media (min-width: $MQMobile)
+      &
+        flex 0 0 100%
+        max-width 100%
+
+  &.col-half
+    width 100%
+
+    @media (min-width: $MQMobile)
+      &
+        flex 0 0 50%
+        max-width 50%
+
+  &.col-third
+    width 100%
+
+    @media (min-width: $MQMobile)
+      &
+        flex 0 0 33.333333%
+        max-width 33.333333%
