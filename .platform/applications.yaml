@@ -1,0 +1,139 @@
+
+# Handbook
+- name: docs
+  source:
+    root: "."
+
+  # App config
+  type: nodejs:12
+  build:
+    flavor: none
+  web:
+    commands:
+      # Run a no-op process that uses no CPU resources, since this is a static site.
+      start: sleep infinity
+    locations:
+      "/":
+        root: "_docs"
+        index:
+          - "index.html"
+        expires: 300s
+        passthru: false
+        scripts: true
+        allow: false
+        rules:
+          \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|svg?)$:
+            allow: true
+          ^/robots\.txt$:
+            allow: true
+          search_index\.json$:
+            allow: true
+          ^/sitemap\.xml$:
+            allow: true
+  disk: 2048
+  dependencies:
+    nodejs:
+      yarn: "*"
+
+  # Build
+  hooks:
+    build: |
+      set -e
+      yarn install
+      yarn build:docs
+      curl -sS https://platform.sh/cli/installer | php
+
+  # Cron
+  crons:
+    snapshot:
+      # Take a snapshot automatically every night at 3 am (UTC).
+      spec: '0 3 * * *'
+      cmd: |
+        if [ "$PLATFORM_BRANCH" = master ]; then
+          /app/.platformsh/bin/platform snapshot:create --yes --no-wait
+        fi
+    renewcert:
+      # Force a redeploy at 9 am (UTC) on the 14th of every month.
+      spec: '0 9 14 * *'
+      cmd: |
+        if [ "$PLATFORM_BRANCH" = master ]; then
+          /app/.platformsh/bin/platform redeploy --yes --no-wait
+        fi
+
+- # Tandem website
+  name: site
+  source:
+    root: "."
+
+  # App config
+  type: nodejs:14
+  build:
+    flavor: none
+  web:
+    commands:
+      start: sleep infinity
+    locations:
+      "/":
+        root: "_site"
+        index:
+          - "index.html"
+        expires: 300s
+        passthru: false
+        scripts: true
+        allow: false
+        rules:
+          \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|svg?)$:
+            allow: true
+          ^/robots\.txt$:
+            allow: true
+          ^/ads\.txt$:
+            allow: true
+          search_index\.json$:
+            allow: true
+          ^/sitemap\.xml$:
+            allow: true
+          ^/rss\.xml$:
+            allow: true
+          ^/feed-.*?\.xml:
+            allow: true
+          ^/feed\.atom$:
+            allow: true
+          ^/feed-.*?\.atom$:
+            allow: true
+          ^/feed\.json$:
+            allow: true
+          ^/feed-.*?\.json$:
+            allow: true
+  disk: 1000
+  mounts:
+    run:
+      source: local
+      source_path: run
+  dependencies:
+    nodejs:
+      yarn: "*"
+
+  # Automation
+  hooks:
+    build: |
+      set -e
+      yarn install
+      yarn build:site
+      curl -sS https://platform.sh/cli/installer | php
+
+  # Crons
+  crons:
+    snapshot:
+      # Take a snapshot automatically every night at 3 am (UTC).
+      spec: '0 3 * * *'
+      cmd: |
+        if [ "$PLATFORM_BRANCH" = master ]; then
+          /app/.platformsh/bin/platform snapshot:create --yes --no-wait
+        fi
+    renewcert:
+      # Force a redeploy at 9 am (UTC) on the 14th of every month.
+      spec: '0 9 14 * *'
+      cmd: |
+        if [ "$PLATFORM_BRANCH" = master ]; then
+          /app/.platformsh/bin/platform redeploy --yes --no-wait
+        fi
