@@ -17,7 +17,7 @@
     "dev:docs": "vuepress dev --temp /tmp/tandem-docs --cache /tmp/tandem-docs-cache --port 8010 docs",
     "dev:site": "vuepress dev --temp /tmp/tandem-site --cache /tmp/tandem-site-cache --port 8011 site",
     "lint:docs": "eslint --ext .js,.vue --config .eslintrc.json docs/.vuepress",
-    "lint:sites": "eslint --ext .js,.vue --config .eslintrc.json site/.vuepress",
+    "lint:site": "eslint --ext .js,.vue --config .eslintrc.json site/.vuepress",
     "lint:plugins": "eslint --no-ignore --config .eslintrc.lando.json plugins"
   },
   "devDependencies": {

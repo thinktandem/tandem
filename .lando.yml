@@ -55,6 +55,6 @@ tooling:
     service: docs
     cmd:
       - yarn run lint:docs
-      - yarn run lint:sites
+      - yarn run lint:site
       - yarn run lint:plugins
     description: Lint the things
