@@ -2,7 +2,7 @@
 # Handbook
 - name: docs
   source:
-    root: "."
+    root: "/"
 
   # App config
   type: nodejs:12
@@ -63,7 +63,7 @@
 - # Tandem website
   name: site
   source:
-    root: "."
+    root: "/"
 
   # App config
   type: nodejs:14
