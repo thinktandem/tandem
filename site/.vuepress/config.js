@@ -4,6 +4,7 @@ module.exports = {
   head: [
     ['link', {rel: 'icon', href: '/favicon.png'}],
     ['link', {rel: 'stylesheet', href: '/styles/overrides.css'}],
+    ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css?family=Poppins:600'}],
   ],
   plugins: {
     '@vuepress/blog': {
