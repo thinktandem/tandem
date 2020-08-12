@@ -96,8 +96,8 @@
     </div>
 
     <button
-      class="btn btn-load-more"
       v-if="(this.$pagination.paginationIndex + 1) < Object.keys(this.$pagination._paginationPages).length"
+      class="btn btn-load-more"
       @click="more"
     >
       Load More
