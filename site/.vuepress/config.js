@@ -13,21 +13,31 @@ module.exports = {
         {
           id: 'blog',
           dirname: 'blog',
-          path: '/blog/',
           itemPermalink: '/blog/:year/:month/:day/:slug',
+          itemLayout: 'Post',
+          layout: 'Blog',
         },
         {
           id: 'work',
           dirname: 'work',
-          path: '/work/',
           itemPermalink: '/work/:slug',
+          itemLayout: 'CaseStudy',
+          layout: 'Work',
+        },
+        {
+          id: 'pages',
+          dirname: 'pages',
+          path: '/about/',
+          itemPermalink: '/:slug',
+          itemLayout: 'Page',
+          layout: 'About',
         },
       ],
       frontmatters: [
         {
           id: 'tags',
           keys: ['tags'],
-          path: '/about/',
+          path: '/tag/',
           frontmatter: {title: 'Tags'},
           pagination: {
             lengthPerPage: 25,
