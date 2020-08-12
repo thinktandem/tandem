@@ -4,28 +4,29 @@
     ref="content"
     class="home-page-layout"
   >
-    <full-page
-      id="fullpage"
-      ref="fullpage"
-      :skip-init="true"
-      :options="options"
-    >
-      <div class="section">
-        First section ...
-      </div>
-      <div class="section">
-        Second section ...
-      </div>
-      <div class="section">
-        thd section ...
-      </div>
-      <div class="section">
-        thd section ...
-      </div>
-      <div class="section">
-        thd section ...
-      </div>
-    </full-page>
+    <ClientOnly>
+      <full-page
+        id="fullpage"
+        ref="fullpage"
+        :options="options"
+      >
+        <div class="section">
+          First section ...
+        </div>
+        <div class="section">
+          Second section ...
+        </div>
+        <div class="section">
+          thd section ...
+        </div>
+        <div class="section">
+          thd section ...
+        </div>
+        <div class="section">
+          thd section ...
+        </div>
+      </full-page>
+    </ClientOnly>
     <Content />
   </div>
 </template>
@@ -48,6 +49,8 @@ export default {
         fitToSection: true,
         anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
         sectionsColor: ['#fffff', '#41b883', '#ff5f45', '#0798ec', '#c0ffee'],
+        afterLoad: this.afterLoad,
+        onLeave: this.onLeave,
       },
     };
   },
@@ -60,16 +63,6 @@ export default {
     // If we start at the top make sure we pink
     const toggle = document.getElementById('nav_toggle');
     toggle.classList.remove('greybeard');
-
-    // Set the full options for fullpagejs
-    /*
-    this.options = {
-      // afterLoad: this.afterLoad,
-      // onLeave: this.onLeave,
-    };
-    */
-    // Init fullpage
-    this.$refs.fullpage.init();
   },
   methods: {
     afterLoad(origin, destination, direction) {
