@@ -10,6 +10,8 @@ export default ({ Vue, options, router, siteData, isServer }) => { // eslint-dis
 
   // We have to do this non-import to obey eslint and also
   // https://github.com/alvarotrigo/vue-fullpage.js/issues/126
-  const VueFullpage = require('vue-fullpage.js').default;
-  Vue.use(VueFullpage);
+  if (!isServer && window) {
+    const VueFullpage = require('vue-fullpage.js').default;
+    Vue.use(VueFullpage);
+  }
 };
