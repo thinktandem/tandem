@@ -1,7 +1,9 @@
 <template>
   <div id="post">
     <div class="post-title">
-      <NavLink :link="post.path">{{ post.title }}</NavLink>
+      <NavLink :link="post.path">
+        {{ post.title }}
+      </NavLink>
     </div>
 
     <div class="post-meta">
@@ -15,13 +17,14 @@
     </div>
 
     <p class="post-summary">
-      {{ post.frontmatter.description || post.description || post.frontmatter.summary || post.summary  }}
+      {{ post.frontmatter.description || post.description || post.frontmatter.summary || post.summary }}
     </p>
 
     <p class="post-summary">
-      <NavLink :link="post.path">Read More</NavLink>
+      <NavLink :link="post.path">
+        Read More
+      </NavLink>
     </p>
-
   </div>
 </template>
 

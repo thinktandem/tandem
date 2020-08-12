@@ -1,24 +1,46 @@
 <template>
-  <div id="base-list-layout" :class="{'posts-list-wrapper': true, 'blog-home': isHome}">
-    <div v-if="isHome" class="home-header">
+  <div
+    id="base-list-layout"
+    :class="{'posts-list-wrapper': true, 'blog-home': isHome}"
+  >
+    <div
+      v-if="isHome"
+      class="home-header"
+    >
       <h1>The tech blog by and for professional developers</h1>
       <div class="home-header-byline">
         We share things about tech, DevOps, workflows and doing the developments because it makes other developers lives easier.
       </div>
     </div>
-    <hr v-if="isHome" />
-    <h1 v-if="!isHome">{{ title }}</h1>
+    <hr v-if="isHome">
+    <h1 v-if="!isHome">
+      {{ title }}
+    </h1>
     <div :class="tagClass">
-      <div v-if="featured" class="posts-featured">
+      <div
+        v-if="featured"
+        class="posts-featured"
+      >
         <PostSummary :post="featured" />
       </div>
-      <div v-if="secondary" class="posts-featured-secondary">
-        <div v-for="page in secondary" :key="page.key" class="ui-post">
+      <div
+        v-if="secondary"
+        class="posts-featured-secondary"
+      >
+        <div
+          v-for="page in secondary"
+          :key="page.key"
+          class="ui-post"
+        >
           <PostSummary :post="page" />
         </div>
       </div>
       <div class="posts-tertiary">
-        <div v-for="page in pages" :key="page.key" class="ui-post">
+        <div
+          v-for="page in pages"
+          :key="page.key"
+          class="ui-post"
+        >
           <PostSummary :post="page" />
         </div>
       </div>
@@ -26,7 +48,7 @@
     <component
       :is="paginationComponent"
       v-if="$pagination.length > 1 && paginationComponent"
-    ></component>
+    />
     <Newsletter />
   </div>
 </template>

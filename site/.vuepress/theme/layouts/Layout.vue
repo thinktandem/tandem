@@ -1,8 +1,12 @@
 <template>
-  <div id="tandem-content" ref="content" class="layout-layout content-wrapper-tandem">
+  <div
+    id="tandem-content"
+    ref="content"
+    class="layout-layout content-wrapper-tandem"
+  >
     <PostList
-      :title="tagTitle"
       v-if="$pagination"
+      :title="tagTitle"
     />
     <Content v-else />
   </div>

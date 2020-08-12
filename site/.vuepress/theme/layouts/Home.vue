@@ -1,6 +1,14 @@
 <template>
-  <div id="tandem-content" ref="content" class="home-page-layout">
-    <full-page ref="fullpage" :options="options" id="fullpage">
+  <div
+    id="tandem-content"
+    ref="content"
+    class="home-page-layout"
+  >
+    <full-page
+      id="fullpage"
+      ref="fullpage"
+      :options="options"
+    >
       <div class="section">
         First section ...
       </div>
@@ -13,7 +21,7 @@
       <div class="section">
         thd section ...
       </div>
-        <div class="section">
+      <div class="section">
         thd section ...
       </div>
     </full-page>

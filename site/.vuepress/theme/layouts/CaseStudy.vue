@@ -1,7 +1,13 @@
 <template>
-  <div id="tandem-content" ref="content" class="case-study-layout content-wrapper-tandem">
+  <div
+    id="tandem-content"
+    ref="content"
+    class="case-study-layout content-wrapper-tandem"
+  >
     <div class="case-study-theme-content">
-      <h1 class="post-title">{{ $frontmatter.title }}</h1>
+      <h1 class="post-title">
+        {{ $frontmatter.title }}
+      </h1>
       <PostHeader
         :name="$frontmatter.author"
         :pic="$frontmatter.pic"

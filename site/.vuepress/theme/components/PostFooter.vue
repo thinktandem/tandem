@@ -1,12 +1,26 @@
 <template>
   <div class="originally-appeared post-meta">
-    <div class="original-rule"></div>
-    <ul v-if="tags" class="post-meta-tags">
-      <PostTag v-for="tag in resolvedTags" :class="tag" :key="tag" :tag="tag" />
+    <div class="original-rule" />
+    <ul
+      v-if="tags"
+      class="post-meta-tags"
+    >
+      <PostTag
+        v-for="tag in resolvedTags"
+        :key="tag"
+        :class="tag"
+        :tag="tag"
+      />
     </ul>
     <hr>
-    <div class="original-post" v-if="original">
-      This content is adapted from other content. If you are interested in the original then <a target="_blank" :href="original">check it out here</a>.
+    <div
+      v-if="original"
+      class="original-post"
+    >
+      This content is adapted from other content. If you are interested in the original then <a
+        target="_blank"
+        :href="original"
+      >check it out here</a>.
     </div>
     <div class="original-post">
       Want to contribute content here? <a href="https://docs.lando.dev/contrib/blogging-intro.html"> Learn how!</a>
@@ -18,8 +32,8 @@
 import PostTag from '@theme/components/PostTag.vue';
 
 export default {
-  components: {PostTag},
   name: 'PostFooter',
+  components: {PostTag},
   props: {
     original: {
       type: String,

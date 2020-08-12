@@ -7,34 +7,71 @@
         aria-label="Toggle navigation"
         class="toggle collapsed"
         aria-expanded="false"
-        aria-controls="nav-collapse">
-        <svg version="1.1"
+        aria-controls="nav-collapse"
+      >
+        <svg
+          version="1.1"
           class="logo"
           baseProfile="full"
           xmlns="http://www.w3.org/2000/svg"
-          role="img" :aria-label="`${$siteTitle}: ${$site.description}`"
-          height="100" width="100">
+          role="img"
+          :aria-label="`${$siteTitle}: ${$site.description}`"
+          height="100"
+          width="100"
+        >
           <title>{{ $siteTitle }}</title>
           <desc>{{ $site.description }}</desc>
-          <circle cx="25" cy="25" r="20" fill="#ed3f7a"></circle>
+          <circle
+            cx="25"
+            cy="25"
+            r="20"
+            fill="#ed3f7a"
+          />
         </svg>
-        <component class="menu-toggle" :is="isOpen ? 'XIcon' : 'MenuIcon'" @click="$emit('toggle-sidebar')" />
+        <component
+          :is="isOpen ? 'XIcon' : 'MenuIcon'"
+          class="menu-toggle"
+          @click="$emit('toggle-sidebar')"
+        />
       </button>
       <div class="left-title">
-        <NavLink link="/" class="home-link">{{ $site.title }} </NavLink>
+        <NavLink
+          link="/"
+          class="home-link"
+        >
+          {{ $site.title }}
+        </NavLink>
       </div>
       <div class="right-title">
-        <NavLink link="/" class="home-link">{{ $site.title }} </NavLink>
+        <NavLink
+          link="/"
+          class="home-link"
+        >
+          {{ $site.title }}
+        </NavLink>
       </div>
-      <div id="menu" class="menu">
-        <ul v-if="$themeConfig.nav" class="nav">
+      <div
+        id="menu"
+        class="menu"
+      >
+        <ul
+          v-if="$themeConfig.nav"
+          class="nav"
+        >
           <li
             v-for="item in $themeConfig.nav"
             :key="item.text"
             class="nav-item"
           >
-            <NavLink :link="item.link">{{ item.text }}</NavLink>
-            <div v-if="isOpen" class="nav-item-desc">{{ item.desc }}</div>
+            <NavLink :link="item.link">
+              {{ item.text }}
+            </NavLink>
+            <div
+              v-if="isOpen"
+              class="nav-item-desc"
+            >
+              {{ item.desc }}
+            </div>
           </li>
         </ul>
       </div>
@@ -58,6 +95,16 @@ export default {
       navFade: 50,
       lastScrollPos: 0,
     };
+  },
+  watch: {
+    isOpen() {
+      if (this.isOpen) {
+        this.expandMenu();
+        this.resetHeader();
+      } else {
+        this.hideHeader();
+      }
+    },
   },
   beforeDestroy() {
     // Remove the scroll event
@@ -110,16 +157,6 @@ export default {
       const element = document.getElementById(id);
       element.classList.add(...add);
       element.classList.remove(...remove);
-    },
-  },
-  watch: {
-    isOpen() {
-      if (this.isOpen) {
-        this.expandMenu();
-        this.resetHeader();
-      } else {
-        this.hideHeader();
-      }
     },
   },
 };

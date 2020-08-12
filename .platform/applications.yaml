@@ -40,6 +40,7 @@
     build: |
       set -e
       yarn install
+      yarn lint:docs
       yarn build:docs
       curl -sS https://platform.sh/cli/installer | php
 
@@ -118,6 +119,7 @@
     build: |
       set -e
       yarn install
+      yarn lint:site
       yarn build:site
       curl -sS https://platform.sh/cli/installer | php
 
