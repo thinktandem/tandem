@@ -1,15 +1,31 @@
 <template>
-  <div :class="{ subscribe: true, 'subscribe-dark': theme === 'dark' }" :style="customStyles">
-    <script src="//cdn.jsdelivr.net/npm/canvas-confetti@1.0.1/dist/confetti.browser.min.js"></script>
+  <div
+    :class="{ subscribe: true, 'subscribe-dark': theme === 'dark' }"
+    :style="customStyles"
+  >
+    <script src="//cdn.jsdelivr.net/npm/canvas-confetti@1.0.1/dist/confetti.browser.min.js" />
     <h3>{{ title }}</h3>
-    <form id="subscribe-user" @submit.prevent="subscribe" class="subscribe-form">
-      <div v-if="showAlliance" class="subscribe-alliance">
-        <div v-for="(description, key) in allianceRoles" :key="key" class="subscribe-alliance-wrapper">
+    <form
+      id="subscribe-user"
+      class="subscribe-form"
+      @submit.prevent="subscribe"
+    >
+      <div
+        v-if="showAlliance"
+        class="subscribe-alliance"
+      >
+        <div
+          v-for="(description, key) in allianceRoles"
+          :key="key"
+          class="subscribe-alliance-wrapper"
+        >
           <input
+            :id="key"
+            v-model="userGroups"
             type="checkbox"
             class="subscribe-alliance-checkbox"
-            :id="key"
-            :value="uppercase(key)" v-model="userGroups">
+            :value="uppercase(key)"
+          >
           <label :for="key">{{ uppercase(key) }} - </label><small>{{ description }}</small>
         </div>
         <input
@@ -17,79 +33,147 @@
           class="hidden-field"
           name="alliance_role"
           type="text"
-          :value="getAllianceGroupList()" />
-        <input disabled="true" class="hidden-field" name="alliance_member" type="text" :value="true" />
-        <input disabled="true" class="hidden-field" name="alliance_joined" type="text" :value="today()" />
+          :value="getAllianceGroupList()"
+        >
+        <input
+          disabled="true"
+          class="hidden-field"
+          name="alliance_member"
+          type="text"
+          :value="true"
+        >
+        <input
+          disabled="true"
+          class="hidden-field"
+          name="alliance_joined"
+          type="text"
+          :value="today()"
+        >
       </div>
 
-      <div v-if="showSponsors" class="subscribe-sponsors">
-        <div v-for="(description, key) in sponsorRoles" :key="key" class="subscribe-sponsors-wrapper">
+      <div
+        v-if="showSponsors"
+        class="subscribe-sponsors"
+      >
+        <div
+          v-for="(description, key) in sponsorRoles"
+          :key="key"
+          class="subscribe-sponsors-wrapper"
+        >
           <input
+            :id="key"
+            v-model="sponsor"
             type="radio"
             class="subscribe-sponsors-radio"
-            :id="key"
-            :value="uppercase(key)" v-model="sponsor">
+            :value="uppercase(key)"
+          >
           <label :for="key">{{ uppercase(key) }} - </label><small>{{ description }}</small>
         </div>
-        <input disabled="true" class="hidden-field" name="sponsorship_level" type="text" :value="sponsor" />
-        <input disabled="true" class="hidden-field" name="verified_sponsor" type="text" :value="true" />
-        <input disabled="true" class="hidden-field" name="sponsor_joined" type="text" :value="today()" />
-        <p>Check out <a href="https://github.com/sponsors/lando" target="_blank">https://github.com/sponsors/lando</a> if you are unclear
-          on how to match up the sponsorship levels. Email <strong>sponsorships@lando.dev</strong> if things don't seem to match up anymore.</p>
+        <input
+          disabled="true"
+          class="hidden-field"
+          name="sponsorship_level"
+          type="text"
+          :value="sponsor"
+        >
+        <input
+          disabled="true"
+          class="hidden-field"
+          name="verified_sponsor"
+          type="text"
+          :value="true"
+        >
+        <input
+          disabled="true"
+          class="hidden-field"
+          name="sponsor_joined"
+          type="text"
+          :value="today()"
+        >
+        <p>
+          Check out <a
+            href="https://github.com/sponsors/lando"
+            target="_blank"
+          >https://github.com/sponsors/lando</a> if you are unclear
+          on how to match up the sponsorship levels. Email <strong>sponsorships@lando.dev</strong> if things don't seem to match up anymore.
+        </p>
       </div>
 
-      <input v-if="passcode"
+      <input
+        v-if="passcode"
+        v-model="pw"
         type="password"
         class="subscribe-input"
-        v-model="pw"
         placeholder="Authorization code"
-        name="passcode" />
+        name="passcode"
+      >
 
       <input
+        v-model="email"
         :disabled="buttonDisabled"
         type="email"
-        v-model="email"
         placeholder="Email"
         name="email"
-        :class="{ 'subscribe-input': true, disabled: buttonDisabled }" />
+        :class="{ 'subscribe-input': true, disabled: buttonDisabled }"
+      >
 
-      <div v-if="showDevNetwork" class="subscribe-devnetwork">
+      <div
+        v-if="showDevNetwork"
+        class="subscribe-devnetwork"
+      >
         <div class="subscribe-devnetwork-checkbox">
           <input
-            type="checkbox"
             id="WORK"
-            value="LOOKING FOR WORK" v-model="userGroups">
+            v-model="userGroups"
+            type="checkbox"
+            value="LOOKING FOR WORK"
+          >
           <label for="WORK">I'm a developer looking for contract work, full time employment or other opportunities</label>
           <input
             disabled="true"
             class="hidden-field"
             name="available_for_contract_work"
             type="text"
-            :value="lookingWork" />
+            :value="lookingWork"
+          >
         </div>
         <div class="subscribe-devnetwork-checkbox">
           <input
-            type="checkbox"
             id="HIRE"
-            value="LOOKING TO HIRE" v-model="userGroups">
+            v-model="userGroups"
+            type="checkbox"
+            value="LOOKING TO HIRE"
+          >
           <label for="HIRE">I'm an employer looking to hire contractors or employees</label>
           <input
             disabled="true"
             class="hidden-field"
             name="looking_for_developers_for_contract_or_hire"
             type="text"
-            :value="lookingHire" />
+            :value="lookingHire"
+          >
         </div>
       </div>
 
-      <div v-if="error" class="subscribe-error">{{ error }}. Try again!</div>
-      <div v-if="success" class="subscribe-success">{{ success }}</div>
+      <div
+        v-if="error"
+        class="subscribe-error"
+      >
+        {{ error }}. Try again!
+      </div>
+      <div
+        v-if="success"
+        class="subscribe-success"
+      >
+        {{ success }}
+      </div>
       <input
         :class="{ button: true, disabled: buttonDisabled || !email }"
         :disabled="buttonDisabled || !email"
         type="submit"
         :value="buttonLabel"
-        name="subscribe" />
+        name="subscribe"
+      >
     </form>
   </div>
 </template>
@@ -187,6 +271,20 @@ export default {
       return this.userGroups.includes('LOOKING FOR WORK');
     },
   },
+  watch: {
+    '$route.path': function() {
+      this.clear();
+    },
+    'pw': function() {
+      this.encrypt(this.pw).then(hash => {
+        if (hash === this.passcode) {
+          this.buttonDisabled = this.buttonDisabled && false;
+        } else {
+          this.buttonDisabled = true;
+        }
+      });
+    },
+  },
   methods: {
     clear() {
       this.buttonDisabled = this.passcode;
@@ -275,20 +373,6 @@ export default {
     },
     uppercase(string) {
       return string.toUpperCase();
-    },
-  },
-  watch: {
-    '$route.path': function() {
-      this.clear();
-    },
-    'pw': function() {
-      this.encrypt(this.pw).then(hash => {
-        if (hash === this.passcode) {
-          this.buttonDisabled = this.buttonDisabled && false;
-        } else {
-          this.buttonDisabled = true;
-        }
-      });
     },
   },
 };

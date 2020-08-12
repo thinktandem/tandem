@@ -1,16 +1,32 @@
 <template>
-  <div id="tandem-content" ref="content" class="home-page-layout">
-    <full-page ref="fullpage" :options="options" id="fullpage">
-      <div class="section">
-        First section ...
-      </div>
-      <div class="section">
-        Second section ...
-      </div>
-      <div class="section">
-        thd section ...
-      </div>
-    </full-page>
+  <div
+    id="tandem-content"
+    ref="content"
+    class="home-page-layout"
+  >
+    <ClientOnly>
+      <full-page
+        id="fullpage"
+        ref="fullpage"
+        :options="options"
+      >
+        <div class="section">
+          First section ...
+        </div>
+        <div class="section">
+          Second section ...
+        </div>
+        <div class="section">
+          thd section ...
+        </div>
+        <div class="section">
+          thd section ...
+        </div>
+        <div class="section">
+          thd section ...
+        </div>
+      </full-page>
+    </ClientOnly>
     <Content />
   </div>
 </template>
@@ -28,12 +44,13 @@ export default {
     return {
       lastScroll: 0,
       options: {
+        licenseKey: '405018B1-CE12431F-9F1B1D09-898738E4',
         autoScrolling: true,
         fitToSection: true,
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+        sectionsColor: ['#fffff', '#41b883', '#ff5f45', '#0798ec', '#c0ffee'],
         afterLoad: this.afterLoad,
-        anchors: ['page1', 'page2', 'page3'],
-        licenseKey: '405018B1-CE12431F-9F1B1D09-898738E4',
-        sectionsColor: ['#41b883', '#ff5f45', '#0798ec'],
+        onLeave: this.onLeave,
       },
     };
   },
@@ -42,7 +59,38 @@ export default {
       return window.scrollY < this.lastScroll;
     },
   },
+  mounted() {
+    // If we start at the top make sure we pink
+    const toggle = document.getElementById('nav_toggle');
+    toggle.classList.remove('greybeard');
+  },
   methods: {
+    afterLoad(origin, destination, direction) {
+      // Handle breaking free of the prison of FULLPAGE.js
+      if (destination.isLast && direction === 'down') {
+        this.breakFree(destination);
+      } else if (origin.isLast && direction === null) {
+        this.breakFree(origin);
+      } else {
+        this.options.autoScrolling = true;
+        this.options.fitToSection = true;
+      }
+    },
+    onLeave(origin, destination, direction) {
+      // Smooth out the header animation
+      const header = document.getElementById('header');
+      const toggle = document.getElementById('nav_toggle');
+      if (!destination.isFirst) {
+        header.classList.add('fadeout');
+        toggle.classList.add('togglein', 'greybeard');
+        header.classList.remove('fadein', 'dehamburger');
+      } else {
+        header.classList.add('dehamburger', 'fadein');
+        header.classList.remove('fadeout', 'open');
+        header.classList.remove('not-first');
+        toggle.classList.remove('greybeard');
+      }
+    },
     breakFree() {
       setTimeout(() => {
         this.options.autoScrolling = false;
@@ -59,23 +107,11 @@ export default {
         };
       }, 500);
     },
-    afterLoad(origin, destination, direction) {
-      if (destination.isLast && direction === 'down') {
-        this.breakFree(destination);
-      } else if (origin.isLast && direction === null) {
-        this.breakFree(origin);
-      } else {
-        this.options.autoScrolling = true;
-        this.options.fitToSection = true;
-      }
-    },
   },
 };
 
 </script>
 
 <style lang="stylus">
-.content-wrapper
-  padding 0
-  max-width none
+
 </style>

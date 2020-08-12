@@ -1,9 +1,9 @@
 <template>
-  <div></div>
+  <div />
 </template>
 
 <script>
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 </style>

@@ -461,7 +461,7 @@ lando start
 
 ### Environment Files
 
-You now have to explicitly set the top level [`env_file`](./../config/env.md#environment-files) if you want to load a `env` file.
+You now have to explicitly set the top level [`env_file`](https://lando.dev/config/env.md#environment-files) if you want to load a `env` file.
 
 **old**
 

@@ -1,7 +1,13 @@
 <template>
-  <div id="tandem-content" ref="content" class="post-layout content-wrapper-tandem">
+  <div
+    id="tandem-content"
+    ref="content"
+    class="post-layout content-wrapper-tandem"
+  >
     <div class="post-theme-content">
-      <h1 class="post-title">{{ $frontmatter.title }}</h1>
+      <h1 class="post-title">
+        {{ $frontmatter.title }}
+      </h1>
       <PostHeader
         :name="$frontmatter.author"
         :pic="$frontmatter.pic"
@@ -9,6 +15,8 @@
         :date="$frontmatter.date"
       />
       <Content />
+      <hr>
+      <Newsletter />
       <PostFooter
         :tags="$frontmatter.tags"
         :original="$frontmatter.original"
