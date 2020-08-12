@@ -39,9 +39,7 @@ module.exports = {
           keys: ['tags'],
           path: '/tag/',
           frontmatter: {title: 'Tags'},
-          pagination: {
-            lengthPerPage: 25,
-          },
+          scopeLayout: 'Tag',
         },
       ],
       sitemap: {
