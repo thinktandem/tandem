@@ -38,7 +38,6 @@ module.exports = {
           id: 'tags',
           keys: ['tags'],
           path: '/tag/',
-          frontmatter: {title: 'Tags'},
           scopeLayout: 'Tag',
         },
       ],
@@ -104,5 +103,17 @@ module.exports = {
         desc: 'Get in touch!',
       },
     ],
+    tags: {
+      drupal: {
+        title: 'DIZZZRUPPAL',
+        byline: 'man so many things.',
+        pic: 'https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb',
+      },
+      johno: {
+        title: 'I dominate',
+        byline: 'CRUSH CRUSH CRUSH',
+        pic: 'https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb',
+      },
+    },
   },
 };

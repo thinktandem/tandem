@@ -5,7 +5,6 @@
       itemscope
       itemtype="http://schema.org/Blog"
     >
-      um whatever man
       <article
         v-for="page in pages"
         :key="page.key"
@@ -16,16 +15,26 @@
       >
         <meta
           itemprop="mainEntityOfPage"
-          :content="page.path"
+          :content="resolveLink(page)"
         >
 
         <header
           class="ui-post-title"
           itemprop="name headline"
         >
-          <NavLink :link="page.path">
+          <NavLink :link="resolveLink(page)">
             {{ page.title }}
           </NavLink>
+          <PostMeta
+            v-if="page.frontmatter.author"
+            :id="page.frontmatter.id"
+            :name="page.frontmatter.author"
+            :date="page.frontmatter.date"
+            :link="page.frontmatter.link"
+            :location="page.frontmatter.location"
+            :pic="page.frontmatter.pic"
+            pic-align="left"
+          />
         </header>
 
         <client-only v-if="page.excerpt">
@@ -47,37 +56,6 @@
 
         <footer>
           <div
-            v-if="page.frontmatter.author"
-            class="ui-post-meta ui-post-author"
-            itemprop="publisher author"
-            itemtype="http://schema.org/Person"
-            itemscope
-          >
-            <NavigationIcon />
-            <span itemprop="name">{{ page.frontmatter.author }}</span>
-            <span
-              v-if="page.frontmatter.location"
-              itemprop="address"
-            >
-              &nbsp; in {{ page.frontmatter.location }}
-            </span>
-          </div>
-
-          <div
-            v-if="page.frontmatter.date"
-            class="ui-post-meta ui-post-date"
-          >
-            <ClockIcon />
-            <time
-              pubdate
-              itemprop="datePublished"
-              :datetime="page.frontmatter.date"
-            >
-              {{ resolvePostDate(page.frontmatter.date) }}
-            </time>
-          </div>
-
-          <div
             v-if="page.frontmatter.tags"
             class="ui-post-meta ui-post-tag"
             itemprop="keywords"
@@ -95,35 +73,38 @@
       </article>
     </div>
 
-    <button
-      class="btn btn-load-more"
+    <div
       v-if="(this.$pagination.paginationIndex + 1) < this.$pagination.length"
+      class="load-more"
       @click="more"
     >
-      Load More
-    </button>
+      <button
+        class="btn btn-load-more"
+      >
+        Load more content
+      </button>
+    </div>
   </div>
 </template>
 
 <script>
-
-import dayjs from 'dayjs';
-import {NavigationIcon, ClockIcon, TagIcon} from 'vue-feather-icons';
+import {TagIcon} from 'vue-feather-icons';
+import PostMeta from '@theme/components/PostMeta.vue';
 
 export default {
-  components: {NavigationIcon, ClockIcon, TagIcon},
-
+  components: {PostMeta, TagIcon},
   data() {
     return {
       paginationComponent: null,
       pages: [],
     };
   },
-
   mounted() {
     this.pages = this.$pagination.pages;
+    this.$router.afterEach(() => {
+      if (this.$pagination) this.pages = this.$pagination.pages;
+    });
   },
-
   methods: {
     more() {
       this.$pagination.paginationIndex++;
@@ -133,53 +114,76 @@ export default {
         this.pages.push(nextPages[i]);
       }
     },
-
-    resolvePostDate(date) {
-      return dayjs(date).format(
-        this.$themeConfig.dateFormat || 'ddd MMM DD YYYY'
-      );
+    resolveLink(page) {
+      return (page.frontmatter.link2Original) ? page.frontmatter.originalLink : page.path;
     },
-
     resolvePostTags(tags) {
       if (!tags || Array.isArray(tags)) return tags;
       return [tags];
     },
   },
+
 };
 </script>
 
 <style lang="stylus">
+.load-more
+  text-align center
+  background $lightGrey
+  padding 1em
+  color $darkTextColort
+  margin 2em 0em
+  cursor pointer
+  font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+  button
+    all unset
 .common-layout
   .content-wrapper
     padding-bottom 80px
 
 .ui-post
   padding-bottom 25px
-  margin-bottom 25px
-  border-bottom 1px solid $borderColor
+  margin-bottom 50px
+  padding-top 50px
+  margin-top 50px
+  border-top 1px solid $borderColor
 
   &:last-child
-    border-bottom 0px
+    border-botton 1px solid $borderColor
     margin-bottom 0px
+  .written-by
+    border 0
+    margin-top 15px
+  svg
+    color lighten($landoBlue, 50%)
 
 .ui-post-title
-  font-family PT Serif, Serif
-  font-size 28px
-  border-bottom 0
-
+  .nav-link
+    font-size 2.57em
+    font-weight 600
+    letter-spacing -0.0987654321em
+    margin-top 0
+    border-bottom 0
+    font-family "Poppins", "Helvetica Neue", Arial, sans-seri
+    color $textColor
   a
     cursor pointer
-    color $darkTextColor
+    color $accentColor
     transition all 0.2s
     text-decoration none
 
     &:hover
-      text-decoration underline
+      color $accentColor
+      text-decoration none
 
 .ui-post-summary
   font-size 14px
-  color rgba($darkTextColor, 0.54)
-  font-weight 200
+  color $landoGrey
+  font-weight 300
+  font-size 1.14rem
+  line-height 2
+  letter-spacing -1.04px
+  margin-bottom 2em
 
 .ui-post-meta
   display inline-flex
@@ -213,7 +217,8 @@ export default {
 .ui-post-tag
   color rgba($darkTextColor, 0.54)
   font-weight 200
-
+  font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+  font-size 1.1
   a
     color inherit
     font-weight 200
