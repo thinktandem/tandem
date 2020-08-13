@@ -126,7 +126,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .load-more
   text-align center
   background $lightGrey

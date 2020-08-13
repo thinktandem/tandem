@@ -100,7 +100,7 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .written-by
   font-size .85em
   padding-bottom: 1rem
