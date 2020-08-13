@@ -73,13 +73,17 @@
       </article>
     </div>
 
-    <button
+    <div
       v-if="(this.$pagination.paginationIndex + 1) < this.$pagination.length"
-      class="btn btn-load-more"
+      class="load-more"
       @click="more"
     >
-      Load More
-    </button>
+      <button
+        class="btn btn-load-more"
+      >
+        Load more content
+      </button>
+    </div>
   </div>
 </template>
 
@@ -123,6 +127,16 @@ export default {
 </script>
 
 <style lang="stylus">
+.load-more
+  text-align center
+  background $lightGrey
+  padding 1em
+  color $darkTextColort
+  margin 2em 0em
+  cursor pointer
+  font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+  button
+    all unset
 .common-layout
   .content-wrapper
     padding-bottom 80px

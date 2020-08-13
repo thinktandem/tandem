@@ -1,6 +1,11 @@
 <template>
   <div class="section-header">
     <div class="section-header-left">
+      <img
+        v-if="pic"
+        :alt="title"
+        :src="pic"
+      >
       <h1>{{ title }}</h1>
     </div>
     <div class="section-header-right">
@@ -17,6 +22,10 @@ export default {
       type: String,
       required: true,
       default: 'Title',
+    },
+    pic: {
+      type: String,
+      default: null,
     },
   },
 };
@@ -46,6 +55,11 @@ h2
   .section-header-left
     margin-right 100px
     width 20%
+    img
+      width 100px
+      border-radius: 100%
+      position relative
+      bottom: 6px
   .section-header-right
     color black
     font-weight 300
