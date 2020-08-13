@@ -1,16 +1,22 @@
 ---
-layout: Post
-title: 'Using Markdown Containers in VuePress'
+title: "Using Markdown Containers in VuePress"
+summary: "When using the vuepress-plugin-container plugin for VuePress, you can easily add themed content without using HTML or components."
+
+id: "johno"
+author: "John Ouellet"
+pic: "https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb"
+link: "https://twitter.com/pirogcommamike"
+location: "Flo Rida"
+
+date: "2020-08-11"
+
 tags:
-    - development
-    - vuepress
-author: 'John Ouellet'
-private: false
-byline: 'How to quickly and easily handle Markdown Containers in VuePress'
-date: '2020-08-11'
-meta:
-    - { name: description, content: 'How to quickly and easily handle Markdown Containers in VuePress' }
-    - { name: keywords, content: 'development,vuepress' }
+  - development
+  - vuepress
+  - johno
+
+originalLink: https://google.com
+link2Original: true
 ---
 
 ## Overview
@@ -19,7 +25,7 @@ When using the ```vuepress-plugin-container``` plugin for [VuePress](https://vue
 
 ## Basic Example
 
-Your containers will be defined in your index.js within your VuePress theme.  Technically you could put this in your config.js as well.  However, putting it in index.js is cleaner and easier to read.  
+Your containers will be defined in your index.js within your VuePress theme.  Technically you could put this in your config.js as well.  However, putting it in index.js is cleaner and easier to read.
 
 The [config for the container plugin](https://vuepress.github.io/en/plugins/container/#usage) is very simple and straight forward.  So, let's get started with a very basic example:
 
@@ -76,7 +82,7 @@ What this does is allow us to add a special ```<p>``` tag wrapper on the title s
 ~ Obi-Wan Kenobi
 :::
 
-That pretty much summarizes a very straightforward and easy to use example.  Let's dive in to more advanced techniques now.  
+That pretty much summarizes a very straightforward and easy to use example.  Let's dive in to more advanced techniques now.
 
 
 
@@ -153,7 +159,7 @@ For the half column container, the HTML would render like this:
 <div class="custom-block col-wrapper">
   <div class="custom-block col-half">
     <p>Half column</p>
-  </div> 
+  </div>
   <div class="custom-block col-half">
     <p>Half column</p>
   </div>
@@ -226,4 +232,4 @@ Pretty cool and easy to use.
 
 ## Conclusion
 
-Containers within VuePress is a straight forward and easy to use feature that make your markdown look much cleaner.  It is also an easy way to have consistent component usage within your content.  
+Containers within VuePress is a straight forward and easy to use feature that make your markdown look much cleaner.  It is also an easy way to have consistent component usage within your content.

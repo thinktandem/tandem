@@ -5,7 +5,6 @@
       itemscope
       itemtype="http://schema.org/Blog"
     >
-      um whatever man
       <article
         v-for="page in pages"
         :key="page.key"
@@ -54,12 +53,12 @@
             itemscope
           >
             <NavigationIcon />
-            <span itemprop="name">{{ page.frontmatter.author }}</span>
+            <span itemprop="name">{{ page.frontmatter.author.name }}</span>
             <span
-              v-if="page.frontmatter.location"
+              v-if="page.frontmatter.author.location"
               itemprop="address"
             >
-              &nbsp; in {{ page.frontmatter.location }}
+              &nbsp;in {{ page.frontmatter.author.location }}
             </span>
           </div>
 

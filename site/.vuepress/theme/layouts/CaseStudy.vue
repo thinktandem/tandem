@@ -8,7 +8,7 @@
       <h1 class="post-title">
         {{ $frontmatter.title }}
       </h1>
-      <PostHeader
+      <PostMeta
         :name="$frontmatter.author"
         :pic="$frontmatter.pic"
         :link="$frontmatter.link"
@@ -25,12 +25,12 @@
 </template>
 
 <script>
-import PostHeader from '@theme/components/PostHeader.vue';
+import PostMeta from '@theme/components/PostMeta.vue';
 import PostFooter from '@theme/components/PostFooter.vue';
 import Toc from '@theme/components/Toc.vue';
 
 export default {
-  components: {PostHeader, PostFooter, Toc},
+  components: {PostMeta, PostFooter, Toc},
   jsonld() {
     return {
       '@context': 'https://schema.org',

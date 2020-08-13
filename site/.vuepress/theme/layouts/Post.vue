@@ -4,35 +4,52 @@
     ref="content"
     class="post-layout content-wrapper-tandem"
   >
-    <div class="post-theme-content">
-      <h1 class="post-title">
-        {{ $frontmatter.title }}
-      </h1>
-      <PostHeader
-        :name="$frontmatter.author"
-        :pic="$frontmatter.pic"
-        :link="$frontmatter.link"
-        :date="$frontmatter.date"
+    <article
+      class="vuepress-blog-theme-content"
+      itemscope
+      itemtype="https://schema.org/BlogPosting"
+    >
+      <header class="post-theme-content">
+        <h1
+          class="post-title"
+          itemprop="name headline"
+        >
+          {{ $frontmatter.title }}
+        </h1>
+        <PostMeta
+          :id="$frontmatter.id"
+          :name="$frontmatter.author"
+          :date="$frontmatter.date"
+          :link="$frontmatter.link"
+          :location="$frontmatter.location"
+          :pic="$frontmatter.pic"
+          pic-align="right"
+        />
+      </header>
+      <Content
+        class="content"
+        itemprop="articleBody"
       />
-      <Content />
       <hr>
-      <Newsletter />
-      <PostFooter
-        :tags="$frontmatter.tags"
-        :original="$frontmatter.original"
-      />
-    </div>
-    <Toc />
+      <footer>
+        <Newsletter />
+        <PostFooter
+          :tags="$frontmatter.tags"
+          :original="$frontmatter.original"
+        />
+      </footer>
+      <Toc />
+    </article>
   </div>
 </template>
 
 <script>
-import PostHeader from '@theme/components/PostHeader.vue';
+import PostMeta from '@theme/components/PostMeta.vue';
 import PostFooter from '@theme/components/PostFooter.vue';
 import Toc from '@theme/components/Toc.vue';
 
 export default {
-  components: {PostHeader, PostFooter, Toc},
+  components: {PostMeta, PostFooter, Toc},
   jsonld() {
     return {
       '@context': 'https://schema.org',
@@ -65,31 +82,27 @@ export default {
       },
     };
   },
-  mounted() {
-    console.log(this);
-  },
 };
 </script>
 
 <style lang="stylus">
-.post-content
-  .vuepress-toc
-    padding-top: 250px
-    max-width: 295px
-    width: 295px
-  hr
-    border-top: 1px dotted #ddd
-  .custom-block
-    &.caption
-      background-color: #f8f8f8
-      padding: .1em 1em
-      color: $landoBlue
-      font-size: .8em
-      font-weight: 700
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
-    &.thumbnail
-      border: 1px dashed #ccc
-      padding: 1em
+.content
+  margin-top 3.14em
+.post-layout
+  h1
+    font-size 4.57em
+    font-weight 600
+    letter-spacing -0.0987654321em
+    margin-top 0
+  h2
+    font-size 2.5em
+    font-weight 600
+    letter-spacing -0.0987654321em
+  p
+    font-weight 300
+    line-height 1.712
+    letter-spacing -0.56px
+    font-size 1.0987654321em
 .post-theme-content
   font-size 16px
   letter-spacing 0px
@@ -98,6 +111,10 @@ export default {
   position relative
   .post-title
     padding-top 0
+.vuepress-toc
+  right 5%
+  margin-top 120px
+  font-family "Poppins", "Helvetica Neue", Arial, sans-serif
 @media (max-width: $MQMobile)
   .post-theme-content
     padding-top 0
