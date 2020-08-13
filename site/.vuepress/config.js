@@ -38,7 +38,6 @@ module.exports = {
           id: 'tags',
           keys: ['tags'],
           path: '/tag/',
-          frontmatter: {title: 'Tags'},
           scopeLayout: 'Tag',
         },
       ],

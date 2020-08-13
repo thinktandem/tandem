@@ -1,5 +1,10 @@
 <template>
-  <div>
+  <div class="content-wrapper-tandem">
+    <SectionHeader :title="`${title}.`">
+      <h2>
+        We know {{ title }}.
+      </h2>
+    </SectionHeader>
     <BaseListLayout v-if="$pagination" />
     <Content v-else />
   </div>
@@ -7,10 +12,13 @@
 
 <script>
 import BaseListLayout from '@theme/components/BaseListLayout';
+import SectionHeader from '@theme/components/SectionHeader';
 export default {
-  components: {BaseListLayout},
-  mounted() {
-    console.log(this);
+  components: {BaseListLayout, SectionHeader},
+  computed: {
+    title() {
+      return this.$currentTags.key;
+    },
   },
 };
 </script>

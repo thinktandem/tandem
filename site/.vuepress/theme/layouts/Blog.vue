@@ -5,7 +5,7 @@
         A <em>content</em> focus demands a simple design. Like this.
       </h2>
       <div>
-        <p>Articles, webinars, events, podcasts, trainings and technical guides. We've done all the media all over the world.</p>
+        <p>Articles, webinars, events, podcasts, trainings, work, case studies and technical guides. We've done all the media all over the world.</p>
       </div>
     </SectionHeader>
     <BaseListLayout v-if="$pagination" />
@@ -21,5 +21,5 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 </style>

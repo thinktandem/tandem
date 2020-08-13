@@ -57,10 +57,11 @@ export default {
     id: {
       type: String,
       required: true,
+      default: '../',
     },
     name: {
       type: String,
-      default: 'Team Lando',
+      default: 'Team Tandem',
     },
     date: {
       type: String,
@@ -76,7 +77,7 @@ export default {
     },
     pic: {
       type: String,
-      default: 'https://www.gravatar.com/avatar/db2470075fb67c330c155cab9698826f',
+      default: '/images/logo-tandem-svg.svg',
     },
     picAlign: {
       type: String,
@@ -103,7 +104,7 @@ export default {
 .written-by
   font-size .85em
   padding-bottom: 1rem
-  border-bottom 1px solid rgba(0,0,0,0.05)
+  border-bottom 1px solid $borderColor
   img
     width 24px
     border-radius: 100%
@@ -119,6 +120,9 @@ export default {
     margin-right: 3px
 .pic-left
   float left
+  margin-right 10px
+  position relative
+  top 5px
 .pic-right
   float right
 </style>
