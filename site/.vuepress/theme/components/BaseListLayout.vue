@@ -95,7 +95,7 @@
     </div>
 
     <button
-      v-if="(this.$pagination.paginationIndex + 1) < Object.keys(this.$pagination._paginationPages).length"
+      v-if="(this.$pagination.paginationIndex + 1) < this.$pagination.length"
       class="btn btn-load-more"
       @click="more"
     >
