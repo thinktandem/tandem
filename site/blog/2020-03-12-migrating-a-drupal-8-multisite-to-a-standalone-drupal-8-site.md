@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Migrating a Drupal 8 Multisite to a Standalone Drupal 8 Site'
 tags:
     - development
     - drupal
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/drupal-migration.jpg
-img-src: /images/articles/drupal-migration.jpg
-byline: 'A straighforward guide to doing a  Drupal 8 to Drupal 8 migration.'
 date: '2020-03-12'
-meta:
-    - { name: description, content: 'A straighforward guide to doing a  Drupal 8 to Drupal 8 migration.' }
-    - { name: keywords, content: 'development,drupal' }
+summary: 'A straighforward guide to doing a  Drupal 8 to Drupal 8 migration.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 ## Overview

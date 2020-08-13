@@ -1,19 +1,16 @@
 ---
-layout: Post
 title: 'Drupal 8 Performance Tips and Tricks for 2020'
 tags:
     - development
     - drupal
     - support
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/drupal.jpg
-img-src: /images/articles/drupal.jpg
-byline: 'Outlining some of the tried and tested performance enhancements that will lead you to victory in Drupal 8, Drupal 9, and beyond.'
 date: '2020-02-04'
-meta:
-    - { name: description, content: 'Outlining some of the tried and tested performance enhancements that will lead you to victory in Drupal 8, Drupal 9, and beyond.' }
-    - { name: keywords, content: 'development,drupal,support' }
+summary: 'Outlining some of the tried and tested performance enhancements that will lead you to victory in Drupal 8, Drupal 9, and beyond.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 ## Overview

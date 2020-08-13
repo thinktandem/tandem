@@ -1,17 +1,14 @@
 ---
-layout: Post
 title: 'You Might Not Need a Full Blown CMS'
 tags:
     - seo
+    - mikem
 author: 'Mike Milano'
-private: false
-mainImage: /images/articles/cms-vs-static/cms-vs-static.jpg
-img-src: /images/articles/cms-vs-static/cms-vs-static.jpg
-byline: 'A case for static sites'
 date: '2020-01-16'
-meta:
-    - { name: description, content: 'A case for static sites' }
-    - { name: keywords, content: seo }
+summary: 'A case for static sites'
+id: mikem
+pic: 'https://www.gravatar.com/avatar/80b0826906351617efdd8dbdf3cee68b'
+location: California
 ---
 
 Before deciding on a Content Mangement System (CMS) like [Wordpress](https://wordpress.com/) or

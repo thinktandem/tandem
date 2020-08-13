@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Transparency in Picking a Digital Partner'
 tags:
     - drupal
     - misc
+    - alecr
 author: 'Alec Reynolds'
-private: false
-mainImage: //images/articles/tandem-clutch2019.jpg
-img-src: //images/articles/tandem-clutch2019.jpg
-byline: 'Why we use services like Clutch.co to help you pick a digital partner faster.'
 date: '2019-04-18'
-meta:
-    - { name: description, content: 'Why we use services like Clutch.co to help you pick a digital partner faster.' }
-    - { name: keywords, content: 'drupal,misc' }
+summary: 'Why we use services like Clutch.co to help you pick a digital partner faster.'
+id: alecr
+pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+location: California
 ---
 
 Picking a digital partner is hard. What firm can understand your strategy, translate that into conversion-increasing design, and then develop a website on your chosen technology platform? After reading multiple proposals and sifting through digital agency websites you can feel trapped in a web of buzzwords, less sure than when you started.

@@ -1,19 +1,16 @@
 ---
-layout: Post
 title: 'Debugging with New Relic, BlazeMeter, strace & more'
 tags:
     - development
     - support
     - drupal
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/debugging-with-stuff/debugging-journey.jpg
-img-src: /images/articles/debugging-with-stuff/debugging-journey.jpg
-byline: 'This is a start to finish mini case study surrounding a site crashing bug.  I will detail how I found the problems and then how I fixed them.'
 date: '2017-11-22'
-meta:
-    - { name: description, content: 'This is a start to finish mini case study surrounding a site crashing bug.  I will detail how I found the problems and then how I fixed them.' }
-    - { name: keywords, content: 'development,support,drupal' }
+summary: 'This is a start to finish mini case study surrounding a site crashing bug.  I will detail how I found the problems and then how I fixed them.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 The Issue Before Us

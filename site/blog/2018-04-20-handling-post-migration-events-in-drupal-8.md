@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Handling Post Migration Events in Drupal 8'
 tags:
     - development
     - drupal
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/drupal-migration.jpg
-img-src: /images/articles/drupal-migration.jpg
-byline: 'Sometimes we need to alter data after a Drupal 8 migration has finished.  With the migration events system, you can easily accomplish this.'
 date: '2018-04-20'
-meta:
-    - { name: description, content: 'Sometimes we need to alter data after a Drupal 8 migration has finished.  With the migration events system, you can easily accomplish this.' }
-    - { name: keywords, content: 'development,drupal' }
+summary: 'Sometimes we need to alter data after a Drupal 8 migration has finished.  With the migration events system, you can easily accomplish this.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 Why We need to do this

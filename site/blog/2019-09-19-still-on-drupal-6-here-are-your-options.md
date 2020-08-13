@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Still on Drupal 6? Here are Your Options'
 tags:
     - support
     - drupal
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/drupal.jpg
-img-src: /images/articles/drupal.jpg
-byline: 'An informative guide for sites still on Drupal 6'
 date: '2019-09-19'
-meta:
-    - { name: description, content: 'An informative guide for sites still on Drupal 6' }
-    - { name: keywords, content: 'support,drupal' }
+summary: 'An informative guide for sites still on Drupal 6'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 Overview

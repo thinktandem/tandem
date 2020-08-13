@@ -1,20 +1,17 @@
 ---
-layout: Post
 title: '2019 Development Workflow Essentials'
 tags:
     - deployment
     - development
     - localdev
     - devops
+    - alecr
 author: 'Alec Reynolds'
-private: false
-mainImage: /images/articles/workflow.jpg
-img-src: /images/articles/workflow.jpg
-byline: 'Don''t get caught wearing last year''s dev workflow, see all the essentials for 2019.'
 date: '2019-02-04'
-meta:
-    - { name: description, content: 'Don''t get caught wearing last year''s dev workflow, see all the essentials for 2019.' }
-    - { name: keywords, content: 'deployment,development,localdev,devops' }
+summary: 'Don''t get caught wearing last year''s dev workflow, see all the essentials for 2019.'
+id: alecr
+pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+location: California
 ---
 
 ## SVN is so 2009.

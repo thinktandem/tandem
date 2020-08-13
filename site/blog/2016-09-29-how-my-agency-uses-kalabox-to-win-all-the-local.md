@@ -1,19 +1,16 @@
 ---
-layout: Post
 title: 'How My Agency uses Kalabox to Win all the Local'
 tags:
     - deployment
     - localdev
     - testing
-author: 'Brian Gonzales'
-private: false
-mainImage: 'https://thinktandem.io//images/articles/digital-agency-onboarding-with-kalabox/pairodime_x_kalabox.png'
-img-src: 'https://thinktandem.io//images/articles/digital-agency-onboarding-with-kalabox/pairodime_x_kalabox.png'
-byline: 'Onboarding new team members to your web project can be complicated with even the most integrated DevOps team. Say hello to Kalabox.'
+    - alecr
+author: 'Alec Reynolds'
 date: '2016-09-29'
-meta:
-    - { name: description, content: 'Onboarding new team members to your web project can be complicated with even the most integrated DevOps team. Say hello to Kalabox.' }
-    - { name: keywords, content: 'deployment,localdev,testing' }
+summary: 'Onboarding new team members to your web project can be complicated with even the most integrated DevOps team. Say hello to Kalabox.'
+id: alecr
+pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+location: California
 ---
 
 ## The Woes of Local Web Development

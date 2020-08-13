@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Mocking External APIs with Laravel and VCR'
 tags:
     - development
     - laravel
+    - dustinl
 author: 'Dustin LeBlanc'
-private: false
-mainImage: /images/articles/api-testing/vcr.jpg
-img-src: /images/articles/api-testing/vcr.jpg
-byline: 'Winning unit tests with PHP VCR and Laravel'
 date: '2018-07-23'
-meta:
-    - { name: description, content: 'Winning unit tests with PHP VCR and Laravel' }
-    - { name: keywords, content: 'development,laravel' }
+summary: 'Winning unit tests with PHP VCR and Laravel'
+id: dustinl
+pic: 'https://www.gravatar.com/avatar/09ac95f34d11ec00cfd5a26c521d58c5'
+location: 'New York'
 ---
 
 Development of multi-service applications is a complex task. Outside of the potential technical difficulties and inherent complexity of wiring up multiple isolated and discrete applications to communicate in production and staging, you also have to replicate that setup in your development environment (we use [Lando](https://docs.devwithlando.io) for that!) and find a way to handle these dependencies in your testing environment as well.

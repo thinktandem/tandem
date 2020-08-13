@@ -1,20 +1,17 @@
 ---
-layout: Post
 title: 'Lando + Envoy'
 tags:
     - development
     - drupal
     - wordpress
     - laravel
+    - geoffs
 author: 'Geoff St. Pierre'
-private: false
-mainImage: /images/articles/envoy-linode/lando-y-envoy-y-linode.jpg
-img-src: /images/articles/envoy-linode/lando-y-envoy-y-linode.jpg
-byline: 'Learn to automate deploy steps with envoy on affordable hosting.'
 date: '2018-08-03'
-meta:
-    - { name: description, content: 'Learn to automate deploy steps with envoy on affordable hosting.' }
-    - { name: keywords, content: 'development,drupal,wordpress,laravel' }
+summary: 'Learn to automate deploy steps with envoy on affordable hosting.'
+id: geoffs
+pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+location: Massachusetts
 ---
 
 Why Envoy

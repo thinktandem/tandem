@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Connecting to a Remote Platform.sh Database'
 tags:
     - localdev
     - devops
+    - geoffs
 author: 'Geoff St. Pierre'
-private: false
-mainImage: 'https://thinktandem.io//images/articles/connect-to-sequel-pro.png'
-img-src: 'https://thinktandem.io//images/articles/connect-to-sequel-pro.png'
-byline: 'Connecting to a remote Database on platform.sh is simple (when you know how)!'
 date: '2017-03-03'
-meta:
-    - { name: description, content: 'Connecting to a remote Database on platform.sh is simple (when you know how)!' }
-    - { name: keywords, content: 'localdev,devops' }
+summary: 'Connecting to a remote Database on platform.sh is simple (when you know how)!'
+id: geoffs
+pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+location: Massachusetts
 ---
 
 It's not complicated to connect to a platform.sh database; here's how!

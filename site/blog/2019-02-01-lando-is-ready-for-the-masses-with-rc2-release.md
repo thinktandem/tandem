@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: 'Lando is ready for the masses with RC2 release'
 tags:
     - development
@@ -9,15 +8,13 @@ tags:
     - localdev
     - wordpress
     - testing
+    - mikep
 author: 'Mike Pirog'
-private: false
-mainImage: /images/articles/lando-space.jpg
-img-src: /images/articles/lando-space.jpg
-byline: 'We''ve waited, we''ve bided our time, we''ve gathered data and now we are ready to smite traditional local dev to ruin by unleashing the true power of Lando'
 date: '2019-02-01'
-meta:
-    - { name: description, content: 'We''ve waited, we''ve bided our time, we''ve gathered data and now we are ready to smite traditional local dev to ruin by unleashing the true power of Lando' }
-    - { name: keywords, content: 'development,devops,api,drupal,localdev,wordpress,testing' }
+summary: 'We''ve waited, we''ve bided our time, we''ve gathered data and now we are ready to smite traditional local dev to ruin by unleashing the true power of Lando'
+id: mikep
+pic: 'https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb'
+location: 'New Hampshire'
 ---
 
 Holla!!! We are super pumped to announce the release of [Lando 3.0.0-rc.2](https://github.com/lando/lando/releases)!.

@@ -1,20 +1,17 @@
 ---
-layout: Post
 title: 'Lando Night @ DrupalCon 2019 Seattle'
 tags:
     - localdev
     - Drupal
     - Community
     - Learning
+    - alecr
 author: 'Alec Reynolds'
-private: false
-mainImage: /images/articles/dcsea.jpg
-img-src: /images/articles/dcsea.jpg
-byline: 'Peace, love, and Lando.'
 date: '2019-04-09'
-meta:
-    - { name: description, content: 'Peace, love, and Lando.' }
-    - { name: keywords, content: 'localdev,Drupal,Community,Learning' }
+summary: 'Peace, love, and Lando.'
+id: alecr
+pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+location: California
 ---
 
 Our team is having a great time in Seattle for DrupalCon, and if you're here, we want you to share in the fun!

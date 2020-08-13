@@ -1,17 +1,14 @@
 ---
-layout: Post
 title: 'Devsigner 2017 Takeaways'
 tags:
     - conferences
+    - alecr
 author: 'Alec Reynolds'
-private: false
-mainImage: 'https://thinktandem.io//images/articles/devsigner-2017.jpg'
-img-src: 'https://thinktandem.io//images/articles/devsigner-2017.jpg'
-byline: 'Highlights from Portland''s Devsigner Conference.'
 date: '2017-09-22'
-meta:
-    - { name: description, content: 'Highlights from Portland''s Devsigner Conference.' }
-    - { name: keywords, content: conferences }
+summary: 'Highlights from Portland''s Devsigner Conference.'
+id: alecr
+pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+location: California
 ---
 
 The following are notes from the 2017 Devsigner Conference in Portland. We're updating this live as we attend sessions.

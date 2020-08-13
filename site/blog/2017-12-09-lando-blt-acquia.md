@@ -1,19 +1,16 @@
 ---
-layout: Post
 title: 'Lando + BLT + Acquia'
 tags:
     - development
     - devops
     - drupal
+    - geoffs
 author: 'Geoff St. Pierre'
-private: false
-mainImage: /images/articles/lando-blt-acquia/lando-blt-acquia.jpg
-img-src: /images/articles/lando-blt-acquia/lando-blt-acquia.jpg
-byline: 'Pro workflow with Lando, BLT, and Acquia cloud.'
 date: '2017-12-09'
-meta:
-    - { name: description, content: 'Pro workflow with Lando, BLT, and Acquia cloud.' }
-    - { name: keywords, content: 'development,devops,drupal' }
+summary: 'Pro workflow with Lando, BLT, and Acquia cloud.'
+id: geoffs
+pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+location: Massachusetts
 ---
 
 Introduction
