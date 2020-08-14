@@ -108,9 +108,9 @@ module.exports = {
     ],
     tags: {
       drupal: {
-        title: 'DIZZZRUPPAL',
-        byline: 'man so many things.',
-        pic: 'https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb',
+        title: '10+ years of Drupal Expertise',
+        byline: 'We have seen and done it all in Drupal on sites of every size and complexity.  Let our years or experience help bring your Drupal project to the next level.',
+        pic: '/images/tags/drupal-logo.png',
       },
       johno: {
         title: 'I dominate',
