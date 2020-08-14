@@ -15,7 +15,6 @@
     components: {ContactForm},
     computed: {
       path() {
-        console.log(this);
         return this.$page.path.replace(/\//g, '').toLowerCase();
       },
     },
