@@ -30,6 +30,9 @@
         itemprop="articleBody"
       />
       <hr>
+      <h3>Let's Talk!</h3>
+      <SupportForm />
+      <hr>
       <footer>
         <Newsletter />
         <PostFooter
@@ -46,9 +49,9 @@
 import PostMeta from '@theme/components/PostMeta.vue';
 import PostFooter from '@theme/components/PostFooter.vue';
 import Toc from '@theme/components/Toc.vue';
-
+import SupportForm from '@theme/components/SupportForm';
 export default {
-  components: {PostMeta, PostFooter, Toc},
+  components: {PostMeta, PostFooter, Toc, SupportForm},
   jsonld() {
     return {
       '@context': 'https://schema.org',
