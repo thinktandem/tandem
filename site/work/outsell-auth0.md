@@ -6,12 +6,14 @@ image: /images/case-studies/outsell-auth0.png
 challenge: "Replace a legacy SSO provider with complex Salesforce logic spread over multiple client websites."
 solution: "Use Auth0 to set up custom rules that handle the Salesforce logic in a single place for all clients."
 impact: "Cheaper and better maintained SSO solution, unified and well tested auth logic that is shared across clients old and new."
-quote:
-    - { content: "Where there is unity there is always victory.", author: "Publilius Syrus" }
+
 metrics:
-    - { key: Users, value: "65,000+" }
-    - { key: "Clients Apps", value: 5 }
-    - { key: "Testing Coverage", value: 100% }
+    - key: Users
+      value: "65,000+"
+    - key: "Clients Apps"
+      value: 5
+    - key: "Testing Coverage"
+      value: 100%
 background: 8CC63E
 slug: outsell-auth0
 date: "2017-03-24"
@@ -24,6 +26,7 @@ tags:
     - rescue
 summary: "We helped <strong>Outsell Inc.</strong> move from a legacy SSO provider to Auth0 while reducing the complexity of their authentication logic and providing a tight Salesforce integration."
 client: "Outsell Inc"
+site: "https://www.outsellinc.com/"
 ---
 
 Outsell Inc. was looking to migrate from a costly, proprietary and hard-to-maintain single sign-on solution that made it difficult to alter existing web properties and introduce new ones.

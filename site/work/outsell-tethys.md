@@ -9,12 +9,13 @@ image: /images/case-studies/osdata.png
 challenge: "Remove Outsell's dependency on a costly and limiting third-party API."
 solution: "Use the Laravel-powered DreamFactory API with custom Drupal modules to distribute data."
 impact: "Eliminate a costly ongoing contract and allow Outsell to pursue new development directions with in-house resources."
-quote:
-    - { content: "Tandem has been instrumental in helping us find a better path forward with our technology.", author: "Ben Sampson, Head of Product at Outsell Inc." }
 metrics:
-    - { key: "Plug-and-play API", value: DreamFactory }
-    - { key: "Content Migrated", value: "30K+ articles" }
-    - { key: "Powered Content Management", value: Drupal }
+    - key: "Plug-and-play API"
+      value: DreamFactory
+    - key: "Content Migrated"
+      value: "30K+ articles"
+    - key: "Powered Content Management"
+      value: Drupal
 tags:
     - drupal
     - laravel
@@ -26,6 +27,7 @@ tags:
     - devops
 summary: "We helped <strong>Outsell Inc.</strong> eliminate dependency on a third-party vendor by creating a new <strong>Laravel</strong>-powered API to feed an ecosystem of <strong>Drupal</strong> sites."
 client: "Outsell Inc"
+site: "https://www.outsellinc.com/"
 ---
 
 Ben Sampson had a problem. As Head of Product, Ben was in charge of Outsell’s Intelligence Platform, where clients can browse the treasure trove of Outsell’s research data. However, despite being a core Outsell service, the Intelligence Platform relied upon a proprietary platform from a 3rd party vendor, which made it hard to add new features and troubleshoot issues.

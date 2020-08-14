@@ -7,9 +7,12 @@ challenge: "Create an integration between Blackbaud and Drupal 7/8 as none exist
 solution: "Created a Drupal contrib module and an extensive custom framework to update, manage and display information between the two systems."
 impact: "Increased donations and better usability for internal staff and constituents."
 metrics:
-    - { key: Framework, value: "Drupal 7/8" }
-    - { key: "Users Intergrated", value: 38k }
-    - { key: "Contrib Modules Created", value: 1 }
+    - key: Framework
+      value: "Drupal 7/8"
+    - key: "Users Intergrated"
+      value: 38k
+    - key: "Contrib Modules Created"
+      value: 1
 background: 0093d6
 slug: poets-blackbaud-integration
 date: "2018-08-28"
@@ -19,6 +22,7 @@ tags:
     - development
 summary: "Tandem helped <strong>The Academy of American Poets</strong> centralize their Blackbaud-powered fundraising efforts on their Drupal website."
 client: "Academy of American Poets"
+site: "https://poets.org"
 ---
 
 The Academy of American Poets had been utilizing various Blackbaud products for well over a decade. The academy’s internal staff had the diligent task of maintaining all records within Blackbaud. This ate up considerable time and they needed to find a better way.  
