@@ -48,22 +48,22 @@
           />
         </header>
 
-        <client-only v-if="page.excerpt">
+        <client-only>
           <!-- eslint-disable vue/no-v-html -->
           <p
+            v-if="page.excerpt"
             class="post-summary"
             itemprop="description"
             v-html="page.excerpt"
           />
+          <p
+            v-else
+            class="post-summary"
+            itemprop="description"
+            v-html="page.frontmatter.summary || page.summary"
+          />
           <!-- eslint-enable vue/no-v-html -->
         </client-only>
-        <p
-          v-else
-          class="post-summary"
-          itemprop="description"
-        >
-          {{ page.frontmatter.summary || page.summary }}
-        </p>
 
         <footer>
           <div
