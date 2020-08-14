@@ -117,10 +117,20 @@ module.exports = {
         byline: 'We have migrated dozens of sites for our clients over the years.  We are a little strange in the fact that we love handling complex migration situations.',
         pic: '/images/tags/double-arrows.png',
       },
+      wordpress: {
+        title: 'Title about WordPress',
+        byline: 'Words about WordPress.',
+        pic: '/images/tags/wordpress-logo.png',
+      },
       vuepress: {
-        title: 'Static site magic.',
-        byline: 'Static site generations with vue.',
-        pic: 'https://vuepress.vuejs.org/hero.png',
+        title: 'Title about VuePress',
+        byline: 'Words about VuePress.',
+        pic: '/images/tags/vuepress-logo.png',
+      },
+      laravel: {
+        title: 'Title about Laravel',
+        byline: 'Words about laravel.',
+        pic: '/images/tags/laravel-logo.png',
       },
       johno: {
         title: 'I dominate',
