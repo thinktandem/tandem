@@ -69,6 +69,7 @@ h2
 
 @media (max-width: $MQMobile)
   .section-header
+    text-align center
     flex-direction column
     .section-header-left, .section-header-right
       width 100%

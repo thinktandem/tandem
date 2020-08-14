@@ -9,7 +9,10 @@
         <p>{{ byline }}</p>
       </div>
     </SectionHeader>
-    <BlogListLayout v-if="$pagination" />
+    <BlogListLayout
+      v-if="$pagination"
+      :sort-order="sortOrder"
+    />
     <Content v-else />
   </div>
 </template>
@@ -19,6 +22,11 @@ import BlogListLayout from '@theme/components/BlogListLayout';
 import SectionHeader from '@theme/components/SectionHeader';
 export default {
   components: {BlogListLayout, SectionHeader},
+  data() {
+    return {
+      sortOrder: ['work', 'blog'],
+    };
+  },
   computed: {
     byline() {
       return this.$themeConfig.tags[this.tag].byline;

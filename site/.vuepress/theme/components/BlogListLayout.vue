@@ -40,6 +40,12 @@
             :pic="page.frontmatter.pic"
             pic-align="left"
           />
+          <WorkMeta
+            v-else-if="page.frontmatter.org || page.frontmatter.client"
+            :id="page.frontmatter.org || page.frontmatter.client"
+            :name="page.frontmatter.org || page.frontmatter.client"
+            :link="page.frontmatter.link"
+          />
         </header>
 
         <client-only v-if="page.excerpt">
@@ -95,9 +101,16 @@
 <script>
 import {TagIcon} from 'vue-feather-icons';
 import PostMeta from '@theme/components/PostMeta.vue';
+import WorkMeta from '@theme/components/WorkMeta.vue';
 
 export default {
-  components: {PostMeta, TagIcon},
+  components: {PostMeta, TagIcon, WorkMeta},
+  props: {
+    sortOrder: {
+      type: Array,
+      default: () => ([]),
+    },
+  },
   data() {
     return {
       paginationComponent: null,
@@ -105,9 +118,9 @@ export default {
     };
   },
   mounted() {
-    this.pages = this.$pagination.pages;
+    this.pages = this.sort(this.$pagination.pages);
     this.$router.afterEach(() => {
-      if (this.$pagination) this.pages = this.$pagination.pages;
+      if (this.$pagination) this.pages = this.sort(this.$pagination.pages);
     });
   },
   methods: {
@@ -116,7 +129,7 @@ export default {
       let next = this.$pagination._paginationPages[this.$pagination.paginationIndex];
       let nextPages = this.$pagination._matchedPages.slice(next.interval[0], next.interval[1] + 1);
       for (let i = 0; i < nextPages.length; i++) {
-        this.pages.push(nextPages[i]);
+        this.sort(this.pages.push(nextPages[i]));
       }
     },
     resolveLink(page) {
@@ -125,6 +138,18 @@ export default {
     resolvePostTags(tags) {
       if (!tags || Array.isArray(tags)) return tags;
       return [tags];
+    },
+    sortByType(a, b) {
+      if (this.sortOrder.indexOf(a.id) > this.sortOrder.indexOf(b.id)) {
+        return 1;
+      } else if (this.sortOrder.indexOf(a.id) < this.sortOrder.indexOf(b.id)) {
+        return -1;
+      } else {
+        return 0;
+      }
+    },
+    sort(data) {
+      return data.sort(this.sortByType);
     },
   },
 
@@ -225,6 +250,6 @@ export default {
       &:hover
         color $accentColor
 
-  .written-by
+  .written-by, .work-for
     border 0
 </style>
