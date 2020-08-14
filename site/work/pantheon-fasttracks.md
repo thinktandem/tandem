@@ -1,25 +1,21 @@
 ---
-title: 'Fast Track Trainings'
+title: "Fast Track Trainings"
 logo: /images/clients/pantheon/pantheon.png
-org: 'Pantheon Systems'
-byline: 'We traveled the US training digital agencies on Pantheon, Kalabox and good DevOps as part of <strong>Pantheon Systems''</strong> Fast Track program.'
+org: "Pantheon Systems"
 image: /images/case-studies/fasttrack-training.jpg
-challenge: 'Get digital agencies up to speed on the best DevOps practices, workflows and optimizations to use with Pantheon.'
-solution: 'Two days of on-site, in-your-agency trainings featuring rich presentation material, interactive workshops and lots of coffee.'
-impact: 'Agencies got up to speed on the latest and greatest features of Pantheon and streamlined their internal workflows, supercharging all the dev.'
+challenge: "Get digital agencies up to speed on the best DevOps practices, workflows and optimizations to use with Pantheon."
+solution: "Two days of on-site, in-your-agency trainings featuring rich presentation material, interactive workshops and lots of coffee."
+impact: "Agencies got up to speed on the latest and greatest features of Pantheon and streamlined their internal workflows, supercharging all the dev."
 quote:
-    - { content: 'Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime.', author: 'Who Knows At This Point' }
+    - { content: "Give a man a fish, and you feed him for a day. Teach a man to fish, and you feed him for a lifetime.", author: "Who Knows At This Point" }
 metrics:
-    - { key: 'Agencies Trained', value: 7 }
-    - { key: 'AA Miles', value: '23,507' }
-    - { key: 'SPG Nights', value: 23 }
-    - { key: 'Level Up', value: '1 Big' }
+    - { key: "Agencies Trained", value: 7 }
+    - { key: "AA Miles", value: "23,507" }
+    - { key: "SPG Nights", value: 23 }
+    - { key: "Level Up", value: "1 Big" }
 background: EFD01B
-layout: CaseStudy
 slug: pantheon-fasttracks
-dark: true
-private: false
-date: '2017-01-28'
+date: "2017-01-28"
 tags:
     - drupal
     - wordpress
@@ -27,9 +23,8 @@ tags:
     - agencies
     - training
     - devops
-meta:
-    - { name: description, content: 'We traveled the US training digital agencies on Pantheon, Kalabox and good DevOps as part of <strong>Pantheon Systems''</strong> Fast Track program.' }
-    - { name: keywords, content: 'drupal,wordpress,startups,agencies,training,devops,' }
+summary: "We traveled the US training digital agencies on Pantheon, Kalabox and good DevOps as part of <strong>Pantheon Systems'</strong> Fast Track program."
+client: "Pantheon Systems"
 ---
 
 We've been working with Pantheon since they were 8 people in an office under the Bay Bridge. As a result we know their product, platform and team better than most. So, when Pantheon asked us to provide some extra bandwidth for their [Fast Track](https://pantheon.io/agencies/fast-track) training program, we immediately said *"We've got you!"*.

@@ -1,24 +1,20 @@
 ---
-title: 'Pantheon on Kalabox'
+title: "Pantheon on Kalabox"
 logo: /images/clients/pantheon/pantheon.png
-org: 'Pantheon Systems'
-byline: 'We built <strong>Pantheon Systems</strong> an integration for our Kalabox GUI that allows their users to easily clone their sites onto their computer.'
+org: "Pantheon Systems"
 image: /images/case-studies/kalabox.png
-challenge: 'Provide a one-click, push-button solution that gets a user developing their Pantheon site locally in a matter of minutes.'
-solution: 'Use Kalabox and Docker technology to replicate the Pantheon development environment locally.'
-impact: 'Allow users of all skill levels to start developing a Pantheon-hosted site almost instantly.'
+challenge: "Provide a one-click, push-button solution that gets a user developing their Pantheon site locally in a matter of minutes."
+solution: "Use Kalabox and Docker technology to replicate the Pantheon development environment locally."
+impact: "Allow users of all skill levels to start developing a Pantheon-hosted site almost instantly."
 quote:
-    - { content: 'A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.', author: 'Douglas Adams' }
+    - { content: "A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.", author: "Douglas Adams" }
 metrics:
-    - { key: 'Active Monthly Users', value: 1500+ }
-    - { key: 'Spin Up Time', value: '5 Minutes' }
-    - { key: 'You Bet!', value: 'Cross Platfrom' }
+    - { key: "Active Monthly Users", value: 1500+ }
+    - { key: "Spin Up Time", value: "5 Minutes" }
+    - { key: "You Bet!", value: "Cross Platfrom" }
 background: EFD01B
-layout: CaseStudy
 slug: pantheon-kalabox
-dark: true
-private: false
-date: '2013-09-22'
+date: "2013-09-22"
 tags:
     - docker
     - nodejs
@@ -26,9 +22,8 @@ tags:
     - wordpress
     - startups
     - development
-meta:
-    - { name: description, content: 'We built <strong>Pantheon Systems</strong> an integration for our Kalabox GUI that allows their users to easily clone their sites onto their computer.' }
-    - { name: keywords, content: 'docker,nodejs,drupal,wordpress,startups,development,' }
+summary: "We built <strong>Pantheon Systems</strong> an integration for our Kalabox GUI that allows their users to easily clone their sites onto their computer."
+client: "Pantheon Systems"
 ---
 
 Pantheon was looking for a local development environment that, like Pantheon itself, was able to take a complicated problem and make it easily accessible to a wide set of users. Our [Kalabox](http://kalabox.io) GUI and CLI product fit the bill nicely.
