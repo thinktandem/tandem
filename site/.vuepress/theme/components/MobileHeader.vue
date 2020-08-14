@@ -125,6 +125,7 @@ export default {
     },
     resetHeader(toggleable = false) {
       this.classChange('header', ['fadein'], ['fadeout']);
+      this.classChange('nav_toggle', [], ['toggleout']);
       if (!this.isOpen) this.classChange('header', ['dehamburger'], ['open']);
     },
     hideToggle() {

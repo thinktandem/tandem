@@ -49,7 +49,6 @@ h2
   display flex
   justify-content center
   margin-bottom 2em
-  border-bottom 1px solid rgba(0,0,0,0.05)
   .section-header-left, .section-header-right
     display inline-block
   .section-header-left
@@ -70,6 +69,7 @@ h2
 
 @media (max-width: $MQMobile)
   .section-header
+    text-align center
     flex-direction column
     .section-header-left, .section-header-right
       width 100%

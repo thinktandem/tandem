@@ -4,14 +4,14 @@
     class="blog-list-layout"
   >
     <div
-      class="ui-posts"
+      class="posts"
       itemscope
       itemtype="http://schema.org/Blog"
     >
       <article
         v-for="page in pages"
         :key="page.key"
-        class="ui-post"
+        class="post"
         itemprop="blogPost"
         itemscope
         itemtype="https://schema.org/BlogPosting"
@@ -22,10 +22,12 @@
         >
 
         <header
-          class="ui-post-title"
           itemprop="name headline"
         >
-          <NavLink :link="resolveLink(page)">
+          <NavLink
+            class="post-title"
+            :link="resolveLink(page)"
+          >
             {{ page.title }}
           </NavLink>
           <PostMeta
@@ -38,29 +40,35 @@
             :pic="page.frontmatter.pic"
             pic-align="left"
           />
+          <WorkMeta
+            v-else-if="page.frontmatter.org || page.frontmatter.client"
+            :id="page.frontmatter.org || page.frontmatter.client"
+            :name="page.frontmatter.org || page.frontmatter.client"
+            :link="page.frontmatter.link"
+          />
         </header>
 
-        <client-only v-if="page.excerpt">
+        <client-only>
           <!-- eslint-disable vue/no-v-html -->
           <p
-            class="ui-post-summary"
+            v-if="page.excerpt"
+            class="post-summary"
             itemprop="description"
             v-html="page.excerpt"
           />
+          <p
+            v-else
+            class="post-summary"
+            itemprop="description"
+            v-html="page.frontmatter.summary || page.summary"
+          />
           <!-- eslint-enable vue/no-v-html -->
         </client-only>
-        <p
-          v-else
-          class="ui-post-summary"
-          itemprop="description"
-        >
-          {{ page.frontmatter.summary || page.summary }}
-        </p>
 
         <footer>
           <div
             v-if="page.frontmatter.tags"
-            class="ui-post-meta ui-post-tag"
+            class="post-meta post-tag"
             itemprop="keywords"
           >
             <TagIcon />
@@ -93,9 +101,16 @@
 <script>
 import {TagIcon} from 'vue-feather-icons';
 import PostMeta from '@theme/components/PostMeta.vue';
+import WorkMeta from '@theme/components/WorkMeta.vue';
 
 export default {
-  components: {PostMeta, TagIcon},
+  components: {PostMeta, TagIcon, WorkMeta},
+  props: {
+    sortOrder: {
+      type: Array,
+      default: () => ([]),
+    },
+  },
   data() {
     return {
       paginationComponent: null,
@@ -103,9 +118,9 @@ export default {
     };
   },
   mounted() {
-    this.pages = this.$pagination.pages;
+    this.pages = this.sort(this.$pagination.pages);
     this.$router.afterEach(() => {
-      if (this.$pagination) this.pages = this.$pagination.pages;
+      if (this.$pagination) this.pages = this.sort(this.$pagination.pages);
     });
   },
   methods: {
@@ -114,7 +129,7 @@ export default {
       let next = this.$pagination._paginationPages[this.$pagination.paginationIndex];
       let nextPages = this.$pagination._matchedPages.slice(next.interval[0], next.interval[1] + 1);
       for (let i = 0; i < nextPages.length; i++) {
-        this.pages.push(nextPages[i]);
+        this.sort(this.pages.push(nextPages[i]));
       }
     },
     resolveLink(page) {
@@ -124,6 +139,18 @@ export default {
       if (!tags || Array.isArray(tags)) return tags;
       return [tags];
     },
+    sortByType(a, b) {
+      if (this.sortOrder.indexOf(a.id) > this.sortOrder.indexOf(b.id)) {
+        return 1;
+      } else if (this.sortOrder.indexOf(a.id) < this.sortOrder.indexOf(b.id)) {
+        return -1;
+      } else {
+        return 0;
+      }
+    },
+    sort(data) {
+      return data.sort(this.sortByType);
+    },
   },
 
 };
@@ -131,6 +158,8 @@ export default {
 
 <style lang="stylus">
 .blog-list-layout
+  .section-header
+    border 0
   .load-more
     text-align center
     background $lightGrey
@@ -142,7 +171,7 @@ export default {
     button
       all unset
 
-  .ui-post
+  .post
     padding-bottom 25px
     margin-bottom 50px
     padding-top 50px
@@ -153,26 +182,23 @@ export default {
       border-botton 1px solid $borderColor
       margin-bottom 0px
 
-  .ui-post-title
-    .nav-link
-      font-size 2.57em
-      font-weight 600
-      letter-spacing -0.0987654321em
-      margin-top 0
-      border-bottom 0
-      font-family "Poppins", "Helvetica Neue", Arial, sans-seri
-      color $textColor
-    a
-      cursor pointer
+  .post-title
+    font-size 2.57em
+    font-weight 600
+    letter-spacing -0.0987654321em
+    margin-top 0
+    border-bottom 0
+    font-family "Poppins", "Helvetica Neue", Arial, sans-seri
+    color $textColor
+    cursor pointer
+    transition all 0.2s
+    text-decoration none
+
+    &:hover
       color $accentColor
-      transition all 0.2s
       text-decoration none
 
-      &:hover
-        color $accentColor
-        text-decoration none
-
-  .ui-post-summary
+  .post-summary
     font-size 14px
     color $landoGrey
     font-weight 300
@@ -181,7 +207,7 @@ export default {
     letter-spacing -1.04px
     margin-bottom 2em
 
-  .ui-post-meta
+  .post-meta
     display inline-flex
     align-items center
     font-size 12px
@@ -202,15 +228,15 @@ export default {
       &:not(:last-child)
         margin-bottom 10px
 
-  .ui-post-author
+  .post-author
     color rgba($darkTextColor, 0.84)
     font-weight 400
 
-  .ui-post-date
+  .post-date
     color rgba($darkTextColor, 0.54)
     font-weight 200
 
-  .ui-post-tag
+  .post-tag
     color rgba($darkTextColor, 0.54)
     font-weight 200
     font-family "Poppins", "Helvetica Neue", Arial, sans-serif
@@ -223,4 +249,7 @@ export default {
 
       &:hover
         color $accentColor
+
+  .written-by, .work-for
+    border 0
 </style>
