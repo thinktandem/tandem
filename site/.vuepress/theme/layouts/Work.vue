@@ -1,7 +1,7 @@
 <template>
   <div>
     WORK
-    <Content v-else />
+    <Content />
   </div>
 </template>
 

@@ -1,5 +1,8 @@
 <template>
-  <div id="blog-list-layout" class="blog-list-layout">
+  <div
+    id="blog-list-layout"
+    class="blog-list-layout"
+  >
     <div
       class="ui-posts"
       itemscope
