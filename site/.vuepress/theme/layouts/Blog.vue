@@ -8,16 +8,16 @@
         <p>Articles, webinars, events, podcasts, trainings, work, case studies and technical guides. We've done all the media all over the world.</p>
       </div>
     </SectionHeader>
-    <BaseListLayout v-if="$pagination" />
+    <BlogListLayout v-if="$pagination" />
     <Content v-else />
   </div>
 </template>
 
 <script>
-import BaseListLayout from '@theme/components/BaseListLayout';
+import BlogListLayout from '@theme/components/BlogListLayout';
 import SectionHeader from '@theme/components/SectionHeader';
 export default {
-  components: {BaseListLayout, SectionHeader},
+  components: {BlogListLayout, SectionHeader},
 };
 </script>
 

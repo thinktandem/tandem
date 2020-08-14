@@ -1,5 +1,5 @@
 <template>
-  <div id="base-list-layout">
+  <div id="blog-list-layout" class="blog-list-layout">
     <div
       class="ui-posts"
       itemscope
@@ -126,105 +126,98 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
-.load-more
-  text-align center
-  background $lightGrey
-  padding 1em
-  color $darkTextColort
-  margin 2em 0em
-  cursor pointer
-  font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-  button
-    all unset
-.common-layout
-  .content-wrapper
-    padding-bottom 80px
-
-.ui-post
-  padding-bottom 25px
-  margin-bottom 50px
-  padding-top 50px
-  margin-top 50px
-  border-top 1px solid $borderColor
-
-  &:last-child
-    border-botton 1px solid $borderColor
-    margin-bottom 0px
-  .written-by
-    border 0
-    margin-top 15px
-  svg
-    color lighten($landoBlue, 50%)
-
-.ui-post-title
-  .nav-link
-    font-size 2.57em
-    font-weight 600
-    letter-spacing -0.0987654321em
-    margin-top 0
-    border-bottom 0
-    font-family "Poppins", "Helvetica Neue", Arial, sans-seri
-    color $textColor
-  a
+<style lang="stylus">
+.blog-list-layout
+  .load-more
+    text-align center
+    background $lightGrey
+    padding 1em
+    color $darkTextColort
+    margin 2em 0em
     cursor pointer
-    color $accentColor
-    transition all 0.2s
-    text-decoration none
+    font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+    button
+      all unset
 
-    &:hover
+  .ui-post
+    padding-bottom 25px
+    margin-bottom 50px
+    padding-top 50px
+    margin-top 50px
+    border-top 1px solid $borderColor
+
+    &:last-child
+      border-botton 1px solid $borderColor
+      margin-bottom 0px
+
+  .ui-post-title
+    .nav-link
+      font-size 2.57em
+      font-weight 600
+      letter-spacing -0.0987654321em
+      margin-top 0
+      border-bottom 0
+      font-family "Poppins", "Helvetica Neue", Arial, sans-seri
+      color $textColor
+    a
+      cursor pointer
       color $accentColor
+      transition all 0.2s
       text-decoration none
 
-.ui-post-summary
-  font-size 14px
-  color $landoGrey
-  font-weight 300
-  font-size 1.14rem
-  line-height 2
-  letter-spacing -1.04px
-  margin-bottom 2em
+      &:hover
+        color $accentColor
+        text-decoration none
 
-.ui-post-meta
-  display inline-flex
-  align-items center
-  font-size 12px
-  line-height 12px
+  .ui-post-summary
+    font-size 14px
+    color $landoGrey
+    font-weight 300
+    font-size 1.14rem
+    line-height 2
+    letter-spacing -1.04px
+    margin-bottom 2em
 
-  &:not(:last-child)
-    margin-bottom 3px
-    margin-right 20px
-
-  svg
-    margin-right 5px
-    width 14px
-    height 14px
-
-  @media (max-width: $MQMobile)
-    display flex
+  .ui-post-meta
+    display inline-flex
+    align-items center
+    font-size 12px
+    line-height 12px
 
     &:not(:last-child)
-      margin-bottom 10px
+      margin-bottom 3px
+      margin-right 20px
 
-.ui-post-author
-  color rgba($darkTextColor, 0.84)
-  font-weight 400
+    svg
+      margin-right 5px
+      width 14px
+      height 14px
 
-.ui-post-date
-  color rgba($darkTextColor, 0.54)
-  font-weight 200
+    @media (max-width: $MQMobile)
+      display flex
 
-.ui-post-tag
-  color rgba($darkTextColor, 0.54)
-  font-weight 200
-  font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-  font-size 1.1
-  a
-    color inherit
+      &:not(:last-child)
+        margin-bottom 10px
+
+  .ui-post-author
+    color rgba($darkTextColor, 0.84)
+    font-weight 400
+
+  .ui-post-date
+    color rgba($darkTextColor, 0.54)
     font-weight 200
-    text-decoration none
-    margin-right 5px
 
-    &:hover
-      color $accentColor
+  .ui-post-tag
+    color rgba($darkTextColor, 0.54)
+    font-weight 200
+    font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+    font-size 1.1
+    a
+      color inherit
+      font-weight 200
+      text-decoration none
+      margin-right 5px
+
+      &:hover
+        color $accentColor
 </style>

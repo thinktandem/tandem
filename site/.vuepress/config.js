@@ -114,6 +114,11 @@ module.exports = {
         byline: 'CRUSH CRUSH CRUSH',
         pic: 'https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb',
       },
+      vuepress: {
+        title: 'Static site magic.',
+        byline: 'Static site generations with vue.',
+        pic: 'https://vuepress.vuejs.org/hero.png',
+      },
     },
   },
 };

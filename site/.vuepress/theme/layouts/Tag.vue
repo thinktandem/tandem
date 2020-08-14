@@ -9,16 +9,16 @@
         <p>{{ byline }}</p>
       </div>
     </SectionHeader>
-    <BaseListLayout v-if="$pagination" />
+    <BlogListLayout v-if="$pagination" />
     <Content v-else />
   </div>
 </template>
 
 <script>
-import BaseListLayout from '@theme/components/BaseListLayout';
+import BlogListLayout from '@theme/components/BlogListLayout';
 import SectionHeader from '@theme/components/SectionHeader';
 export default {
-  components: {BaseListLayout, SectionHeader},
+  components: {BlogListLayout, SectionHeader},
   computed: {
     byline() {
       return this.$themeConfig.tags[this.tag].byline;
