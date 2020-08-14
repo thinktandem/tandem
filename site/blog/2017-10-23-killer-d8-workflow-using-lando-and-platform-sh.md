@@ -7,11 +7,11 @@ tags:
     - localdev
     - testing
     - drupal
-    - mikep
+    - pirog
 author: 'Mike Pirog'
 date: '2017-10-23'
 summary: 'Leverage the ease of Lando, Platform.sh, GitHub and Travis to quickly spin up an ultra pro workflow'
-id: mikep
+id: pirog
 pic: 'https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb'
 location: 'New Hampshire'
 ---

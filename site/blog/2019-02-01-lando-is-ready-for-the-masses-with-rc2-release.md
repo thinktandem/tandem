@@ -8,11 +8,11 @@ tags:
     - localdev
     - wordpress
     - testing
-    - mikep
+    - pirog
 author: 'Mike Pirog'
 date: '2019-02-01'
 summary: 'We''ve waited, we''ve bided our time, we''ve gathered data and now we are ready to smite traditional local dev to ruin by unleashing the true power of Lando'
-id: mikep
+id: pirog
 pic: 'https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb'
 location: 'New Hampshire'
 ---

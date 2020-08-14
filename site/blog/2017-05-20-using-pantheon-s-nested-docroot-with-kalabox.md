@@ -3,11 +3,11 @@ title: 'Using Pantheon''s Nested Docroot with Kalabox'
 tags:
     - localdev
     - support
-    - mikep
+    - pirog
 author: 'Mike Pirog'
 date: '2017-05-20'
 summary: 'Learn how to use composer-based workflows with your Pantheon site on Kalabox so you can dev like it''s 2017.'
-id: mikep
+id: pirog
 pic: 'https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb'
 location: 'New Hampshire'
 ---

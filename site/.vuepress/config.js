@@ -112,7 +112,7 @@ module.exports = {
       johno: {
         title: 'I dominate',
         byline: 'CRUSH CRUSH CRUSH',
-        pic: 'https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb',
+        pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33',
       },
       vuepress: {
         title: 'Static site magic.',
