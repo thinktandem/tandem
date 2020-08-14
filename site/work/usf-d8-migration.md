@@ -20,6 +20,7 @@ tags:
     - drupal
     - highereducation
     - development
+    - migration
 summary: "Performance issues plagued <strong>USF’s</strong> Drupal 7 intranet and it was time for a better solution.  Tandem helped USF migrate their intranet and redid all of their custom functionality."
 client: "University of San Francisco"
 site: "https://www.usfca.edu"
