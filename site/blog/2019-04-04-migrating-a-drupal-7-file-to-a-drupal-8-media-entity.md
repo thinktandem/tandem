@@ -3,6 +3,7 @@ title: "Migrating a Drupal 7 File To a Drupal 8 Media Entity"
 tags:
     - development
     - drupal
+    - migration
     - johno
 author: "John Ouellet"
 date: "2019-04-04"

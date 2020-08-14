@@ -3,6 +3,7 @@ title: "Migrating a Drupal 7 Body Field to a Drupal 8 Paragraph"
 tags:
     - development
     - drupal
+    - migration
     - johno
 author: "John Ouellet"
 date: "2018-02-08"

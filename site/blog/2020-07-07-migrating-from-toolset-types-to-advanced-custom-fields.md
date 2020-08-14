@@ -3,6 +3,7 @@ title: "Migrating from Toolset Types to Advanced Custom Fields"
 tags:
     - development
     - wordpress
+    - migration
     - johno
 author: "John Ouellet"
 date: "2020-07-07"

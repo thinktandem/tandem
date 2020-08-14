@@ -3,6 +3,7 @@ title: "Writing a Custom Drupal 8 Module Upgrade Path"
 tags:
     - development
     - drupal
+    - migration
     - johno
 author: "John Ouellet"
 date: "2018-07-24"

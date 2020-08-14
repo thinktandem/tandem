@@ -3,6 +3,7 @@ title: "Changing a Content Type Name During a Drupal 8 Migration"
 tags:
     - development
     - drupal
+    - migration
     - johno
 author: "John Ouellet"
 date: "2018-07-18"

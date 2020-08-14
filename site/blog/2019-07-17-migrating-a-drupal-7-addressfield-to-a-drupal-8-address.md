@@ -3,6 +3,7 @@ title: "Migrating a Drupal 7 AddressField To a Drupal 8 Address"
 tags:
     - development
     - drupal
+    - migration
     - johno
 author: "John Ouellet"
 date: "2019-07-17"

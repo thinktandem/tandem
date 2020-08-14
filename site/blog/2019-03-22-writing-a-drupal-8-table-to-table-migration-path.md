@@ -3,6 +3,7 @@ title: "Writing a Drupal 8 Table to Table Migration Path"
 tags:
     - development
     - drupal
+    - migration
     - johno
 author: "John Ouellet"
 date: "2019-03-22"

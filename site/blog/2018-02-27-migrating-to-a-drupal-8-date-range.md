@@ -3,6 +3,7 @@ title: "Migrating to a Drupal 8 Date Range"
 tags:
     - development
     - drupal
+    - migration
     - johno
 author: "John Ouellet"
 date: "2018-02-27"

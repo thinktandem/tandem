@@ -3,6 +3,8 @@ title: "Migrating a Drupal 4.6 Site To VuePress"
 tags:
     - drupal
     - development
+    - vuepress
+    - migration
     - johno
 author: "John Ouellet"
 date: "2019-11-11"

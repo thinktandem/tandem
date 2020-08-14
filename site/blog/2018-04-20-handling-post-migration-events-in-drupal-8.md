@@ -3,6 +3,7 @@ title: "Handling Post Migration Events in Drupal 8"
 tags:
     - development
     - drupal
+    - migration
     - johno
 author: "John Ouellet"
 date: "2018-04-20"
