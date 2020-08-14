@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Preparing for Drupal 9 with Lando + PHPStan'
 tags:
     - development
     - drupal
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/drupal-migration.jpg
-img-src: /images/articles/drupal-migration.jpg
-byline: 'Drupal 9 is right around the corner.  It is very easy to get your sites ready with Lando + PHPStan.'
 date: '2019-11-21'
-meta:
-    - { name: description, content: 'Drupal 9 is right around the corner.  It is very easy to get your sites ready with Lando + PHPStan.' }
-    - { name: keywords, content: 'development,drupal' }
+summary: 'Drupal 9 is right around the corner.  It is very easy to get your sites ready with Lando + PHPStan.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 ## Overview

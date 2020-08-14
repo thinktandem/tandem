@@ -1,19 +1,16 @@
 ---
-layout: Post
 title: 'Lando + Backdrop + CiviCRM'
 tags:
     - development
     - devops
     - backdrop
+    - geoffs
 author: 'Geoff St. Pierre'
-private: false
-mainImage: /images/articles/lando-backdrop-civicrm/lando-backdrop-civicrm.jpg
-img-src: /images/articles/lando-backdrop-civicrm/lando-backdrop-civicrm.jpg
-byline: 'Managing multiple databases and dev tooling with Lando'
 date: '2017-12-18'
-meta:
-    - { name: description, content: 'Managing multiple databases and dev tooling with Lando' }
-    - { name: keywords, content: 'development,devops,backdrop' }
+summary: 'Managing multiple databases and dev tooling with Lando'
+id: geoffs
+pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+location: Massachusetts
 ---
 
 Introduction

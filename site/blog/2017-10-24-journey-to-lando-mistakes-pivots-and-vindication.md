@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: 'Journey to Lando: Mistakes, Pivots and Vindication'
 tags:
     - deployment
@@ -7,15 +6,13 @@ tags:
     - devops
     - localdev
     - testing
+    - pirog
 author: 'Mike Pirog'
-private: false
-mainImage: /images/articles/lando-space.jpg
-img-src: /images/articles/lando-space.jpg
-byline: 'After a Kickstarter campaign, two major versions, tons of feedback, broken promises, blood, sweat, tears and years of making Kalabox 2 we''ve finally made local dev great again with Lando'
 date: '2017-10-24'
-meta:
-    - { name: description, content: 'After a Kickstarter campaign, two major versions, tons of feedback, broken promises, blood, sweat, tears and years of making Kalabox 2 we''ve finally made local dev great again with Lando' }
-    - { name: keywords, content: 'deployment,development,devops,localdev,testing' }
+summary: 'After a Kickstarter campaign, two major versions, tons of feedback, broken promises, blood, sweat, tears and years of making Kalabox 2 we''ve finally made local dev great again with Lando'
+id: pirog
+pic: 'https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb'
+location: 'New Hampshire'
 ---
 
 The Journey

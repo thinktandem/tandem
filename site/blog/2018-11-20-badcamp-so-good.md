@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: 'BADCamp So Good'
 tags:
     - BADCamp
@@ -7,15 +6,13 @@ tags:
     - Community
     - Learning
     - HigherEducation
+    - donnab
 author: 'Donna Bungard'
-private: false
-mainImage: /images/articles/badcamp.jpg
-img-src: /images/articles/badcamp.jpg
-byline: 'A retrospective on my first BADCamp.'
 date: '2018-11-20'
-meta:
-    - { name: description, content: 'A retrospective on my first BADCamp.' }
-    - { name: keywords, content: 'BADCamp,Drupal,Community,Learning,HigherEducation' }
+summary: 'A retrospective on my first BADCamp.'
+id: donnab
+pic: 'https://www.gravatar.com/avatar/80b0826906351617efdd8dbdf3cee68b'
+location: 'New Hampshire'
 ---
 
 My Twitter feed seems full of different retrospectives on this year’s Bay Area Drupal Camp (BADCamp), held in Berkeley a few weeks back. I love hearing the different perspectives and lessons learned by my peers. And, of course, not to go unheard, I wanted to share my own thoughts as I look back upon my time in San Francisco.

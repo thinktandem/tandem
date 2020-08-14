@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Working with Postgres Databases and Platform.sh'
 tags:
     - localdev
     - devops
+    - geoffs
 author: 'Geoff St. Pierre'
-private: false
-mainImage: 'https://thinktandem.io//images/articles/postgres-platform.png'
-img-src: 'https://thinktandem.io//images/articles/postgres-platform.png'
-byline: 'How to work with Postgres Databases on Platform.sh'
 date: '2017-05-10'
-meta:
-    - { name: description, content: 'How to work with Postgres Databases on Platform.sh' }
-    - { name: keywords, content: 'localdev,devops' }
+summary: 'How to work with Postgres Databases on Platform.sh'
+id: geoffs
+pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+location: Massachusetts
 ---
 
 Sharpen your tools!

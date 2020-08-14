@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Migrating Drupal 7 Organic Groups to Drupal 8 Group'
 tags:
     - development
     - drupal
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/migrate-group.jpg
-img-src: /images/articles/migrate-group.jpg
-byline: 'Migrating Drupal 7 Organic Groups to Drupal 8 Group takes a little bit of effort and migration elbow grease.'
 date: '2018-03-30'
-meta:
-    - { name: description, content: 'Migrating Drupal 7 Organic Groups to Drupal 8 Group takes a little bit of effort and migration elbow grease.' }
-    - { name: keywords, content: 'development,drupal' }
+summary: 'Migrating Drupal 7 Organic Groups to Drupal 8 Group takes a little bit of effort and migration elbow grease.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 Use Case for this Migration

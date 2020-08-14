@@ -1,20 +1,17 @@
 ---
-layout: Post
 title: 'WordPress Performance Essentials'
 tags:
     - development
     - devops
     - support
     - wordpress
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/wordpress-performance-essentials.jpg
-img-src: /images/articles/wordpress-performance-essentials.jpg
-byline: 'How to make WordPress run fast and smooth.  A few tips and tricks to make sure your visitors don''t get frustrated waiting on pages to load.'
 date: '2017-11-06'
-meta:
-    - { name: description, content: 'How to make WordPress run fast and smooth.  A few tips and tricks to make sure your visitors don''t get frustrated waiting on pages to load.' }
-    - { name: keywords, content: 'development,devops,support,wordpress' }
+summary: 'How to make WordPress run fast and smooth.  A few tips and tricks to make sure your visitors don''t get frustrated waiting on pages to load.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 Making Your WordPress Site Super Duper Fast

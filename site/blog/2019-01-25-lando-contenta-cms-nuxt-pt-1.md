@@ -1,20 +1,17 @@
 ---
-layout: Post
 title: 'Lando + Contenta CMS + Nuxt Pt. 1'
 tags:
     - development
     - api
     - drupal
     - javascript
+    - geoffs
 author: 'Geoff St. Pierre'
-private: false
-mainImage: /images/articles/headless-pt-1/landoContentaNuxt.png
-img-src: /images/articles/headless-pt-1/landoContentaNuxt.png
-byline: 'Set up a headless Drupal architecture in Lando'
 date: '2019-01-25'
-meta:
-    - { name: description, content: 'Set up a headless Drupal architecture in Lando' }
-    - { name: keywords, content: 'development,api,drupal,javascript' }
+summary: 'Set up a headless Drupal architecture in Lando'
+id: geoffs
+pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+location: Massachusetts
 ---
 
 Why?

@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Drupal 8 Search API Solr + Lando + Platform.sh'
 tags:
     - development
     - drupal
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/lando-solr/solr-lando-psh.jpg
-img-src: /images/articles/lando-solr/solr-lando-psh.jpg
-byline: 'Setting up Solr is quick and fairly painless with Lando. This guide shall bring you to the promise land.'
 date: '2019-08-02'
-meta:
-    - { name: description, content: 'Setting up Solr is quick and fairly painless with Lando. This guide shall bring you to the promise land.' }
-    - { name: keywords, content: 'development,drupal' }
+summary: 'Setting up Solr is quick and fairly painless with Lando. This guide shall bring you to the promise land.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 Why Use Solr?

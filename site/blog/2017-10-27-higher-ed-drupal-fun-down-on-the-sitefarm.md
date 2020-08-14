@@ -1,19 +1,16 @@
 ---
-layout: Post
 title: 'Higher Ed Drupal Fun Down on the SiteFarm'
 tags:
     - development
     - conferences
     - drupal
+    - alecr
 author: 'Alec Reynolds'
-private: false
-mainImage: /images/articles/site-farm-intro.jpg
-img-src: /images/articles/site-farm-intro.jpg
-byline: 'Why you should pay attention to this new higher education Drupal distribution gaining traction in the University of California system.'
 date: '2017-10-27'
-meta:
-    - { name: description, content: 'Why you should pay attention to this new higher education Drupal distribution gaining traction in the University of California system.' }
-    - { name: keywords, content: 'development,conferences,drupal' }
+summary: 'Why you should pay attention to this new higher education Drupal distribution gaining traction in the University of California system.'
+id: alecr
+pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+location: California
 ---
 
 Chaos on the Campus

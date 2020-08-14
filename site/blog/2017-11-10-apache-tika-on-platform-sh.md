@@ -1,19 +1,16 @@
 ---
-layout: Post
 title: 'Apache Tika on Platform.sh'
 tags:
     - development
     - devops
     - drupal
+    - geoffs
 author: 'Geoff St. Pierre'
-private: false
-mainImage: /images/articles/tika/tika-platform.jpg
-img-src: /images/articles/tika/tika-platform.jpg
-byline: 'Apache Tika allows you to index PDF docs for searching with Solr.'
 date: '2017-11-10'
-meta:
-    - { name: description, content: 'Apache Tika allows you to index PDF docs for searching with Solr.' }
-    - { name: keywords, content: 'development,devops,drupal' }
+summary: 'Apache Tika allows you to index PDF docs for searching with Solr.'
+id: geoffs
+pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+location: Massachusetts
 ---
 
 Apache Tika on Platform.sh

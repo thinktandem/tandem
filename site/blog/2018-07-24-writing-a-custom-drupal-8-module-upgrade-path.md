@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Writing a Custom Drupal 8 Module Upgrade Path'
 tags:
     - development
     - drupal
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/d7-d8.jpg
-img-src: /images/articles/d7-d8.jpg
-byline: 'There are a few occasions where a contrib module may not have an upgrade path written yet in Drupal 8.  It is a fairly easy and straight forward task to create these to win all your migration efforts.'
 date: '2018-07-24'
-meta:
-    - { name: description, content: 'There are a few occasions where a contrib module may not have an upgrade path written yet in Drupal 8.  It is a fairly easy and straight forward task to create these to win all your migration efforts.' }
-    - { name: keywords, content: 'development,drupal' }
+summary: 'There are a few occasions where a contrib module may not have an upgrade path written yet in Drupal 8.  It is a fairly easy and straight forward task to create these to win all your migration efforts.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 Migrating The Workflow Module

@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: 'Lando Share ~ Sharing is Caring'
 tags:
     - development
@@ -7,15 +6,13 @@ tags:
     - testing
     - drupal
     - wordpress
+    - geoffs
 author: 'Geoff St. Pierre'
-private: false
-mainImage: /images/articles/lando-share/ipad-lappy-phone.jpg
-img-src: /images/articles/lando-share/ipad-lappy-phone.jpg
-byline: 'Use the `lando share` command to expose a URL of your local Lando site. For example to view it on actual mobile devices for browser testing before you release it to the world!'
 date: '2018-01-03'
-meta:
-    - { name: description, content: 'Use the `lando share` command to expose a URL of your local Lando site. For example to view it on actual mobile devices for browser testing before you release it to the world!' }
-    - { name: keywords, content: 'development,localdev,testing,drupal,wordpress' }
+summary: 'Use the `lando share` command to expose a URL of your local Lando site. For example to view it on actual mobile devices for browser testing before you release it to the world!'
+id: geoffs
+pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+location: Massachusetts
 ---
 
 Why?

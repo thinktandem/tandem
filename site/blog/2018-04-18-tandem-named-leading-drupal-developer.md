@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Tandem Named Leading Drupal Developer'
 tags:
     - drupal
     - development
+    - alecr
 author: 'Alec Reynolds'
-private: false
-mainImage: /images/articles/clutch-sf-2018.jpg
-img-src: /images/articles/clutch-sf-2018.jpg
-byline: 'Clutch has named Tandem one of the leading Drupal development agencies in SF for 2018.'
 date: '2018-04-18'
-meta:
-    - { name: description, content: 'Clutch has named Tandem one of the leading Drupal development agencies in SF for 2018.' }
-    - { name: keywords, content: 'drupal,development' }
+summary: 'Clutch has named Tandem one of the leading Drupal development agencies in SF for 2018.'
+id: alecr
+pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+location: California
 ---
 
 Last month, the B2B ratings and reviews platform Clutch named the top San Francisco agencies and developers in 2018. We are proud to announce that Tandem was recognized for our expertise and made [the list](https://clutch.co/developers/drupal/san-francisco)!

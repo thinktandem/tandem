@@ -1,11 +1,10 @@
 <template>
   <div
-    id="tandem-content"
+    id="tandem-content_post"
     ref="content"
     class="post-layout content-wrapper-tandem"
   >
     <article
-      class="vuepress-blog-theme-content"
       itemscope
       itemtype="https://schema.org/BlogPosting"
     >
@@ -85,24 +84,23 @@ export default {
 };
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
 .content
   margin-top 3.14em
-.post-layout
-  h1
-    font-size 4.57em
-    font-weight 600
-    letter-spacing -0.0987654321em
-    margin-top 0
-  h2
-    font-size 2.5em
-    font-weight 600
-    letter-spacing -0.0987654321em
-  p
-    font-weight 300
-    line-height 1.712
-    letter-spacing -0.56px
-    font-size 1.0987654321em
+h1
+  font-size 4.57em
+  font-weight 600
+  letter-spacing -0.0987654321em
+  margin-top 0
+h2
+  font-size 2.5em
+  font-weight 600
+  letter-spacing -0.0987654321em
+p
+  font-weight 300
+  line-height 1.712
+  letter-spacing -0.56px
+  font-size 1.0987654321em
 .post-theme-content
   font-size 16px
   letter-spacing 0px
@@ -120,4 +118,9 @@ export default {
     padding-top 0
   .post-title
     margin-top 0
+@media (max-width: $MQMobileNarrow)
+  .content
+    margin-top 2em
+  h1
+    font-size 3em
 </style>

@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: 'Save Prod & Peers: Linting and Styles for Node on Travis'
 tags:
     - deployment
@@ -7,15 +6,13 @@ tags:
     - localdev
     - support
     - testing
+    - pirog
 author: 'Mike Pirog'
-private: false
-mainImage: 'https://thinktandem.io//images/articles/linter-is-coming/linteriscoming.jpeg'
-img-src: 'https://thinktandem.io//images/articles/linter-is-coming/linteriscoming.jpeg'
-byline: 'Don''t be the person that breaks production because of a typo or searches endlessly for that missing closing bracket. Level up with Travis, grunt and node.'
 date: '2016-09-25'
-meta:
-    - { name: description, content: 'Don''t be the person that breaks production because of a typo or searches endlessly for that missing closing bracket. Level up with Travis, grunt and node.' }
-    - { name: keywords, content: 'deployment,development,localdev,support,testing' }
+summary: 'Don''t be the person that breaks production because of a typo or searches endlessly for that missing closing bracket. Level up with Travis, grunt and node.'
+id: pirog
+pic: 'https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb'
+location: 'New Hampshire'
 ---
 
 A Variation on a Theme

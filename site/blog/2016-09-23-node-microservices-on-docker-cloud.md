@@ -1,17 +1,14 @@
 ---
-layout: Post
 title: 'Node Microservices on Docker Cloud'
 tags:
     - devops
+    - alecr
 author: 'Alec Reynolds'
-private: false
-mainImage: 'https://thinktandem.io//images/articles/node-microservices-docker-cloud/node-microservices-docker-cloud.png'
-img-src: 'https://thinktandem.io//images/articles/node-microservices-docker-cloud/node-microservices-docker-cloud.png'
-byline: 'How to run small NodeJS in an efficient, inexpensive, and scalable manner using Docker Cloud.'
 date: '2016-09-23'
-meta:
-    - { name: description, content: 'How to run small NodeJS in an efficient, inexpensive, and scalable manner using Docker Cloud.' }
-    - { name: keywords, content: devops }
+summary: 'How to run small NodeJS in an efficient, inexpensive, and scalable manner using Docker Cloud.'
+id: alecr
+pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+location: California
 ---
 
 If you're read my [previous article](/blog/2016/09/10/let-s-get-small-introduction-to-microservices) introducing the idea of microservices and discussing why NodeJS and Docker are ideal tools to implement microservices with, then you're probably hungry for some action!

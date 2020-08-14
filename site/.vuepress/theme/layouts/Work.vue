@@ -1,15 +1,12 @@
 <template>
   <div>
     WORK
-    <BaseListLayout v-if="$pagination" />
-    <Content v-else />
+    <Content />
   </div>
 </template>
 
 <script>
-import BaseListLayout from '@theme/components/BaseListLayout';
 export default {
-  components: {BaseListLayout},
 };
 </script>
 

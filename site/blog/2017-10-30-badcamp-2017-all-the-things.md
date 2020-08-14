@@ -1,19 +1,16 @@
 ---
-layout: Post
 title: 'BADCamp 2017 ~ All the Things'
 tags:
     - development
     - conferences
     - drupal
+    - geoffs
 author: 'Geoff St. Pierre'
-private: false
-mainImage: /images/articles/badcamp-hp-bg-image.jpg
-img-src: /images/articles/badcamp-hp-bg-image.jpg
-byline: 'BADCamp 2017 was packed with fun, sessions, and glory.'
 date: '2017-10-30'
-meta:
-    - { name: description, content: 'BADCamp 2017 was packed with fun, sessions, and glory.' }
-    - { name: keywords, content: 'development,conferences,drupal' }
+summary: 'BADCamp 2017 was packed with fun, sessions, and glory.'
+id: geoffs
+pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+location: Massachusetts
 ---
 
 BADCamp 2017 ~ All the Things

@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Migrating a Drupal 4.6 Site To VuePress'
 tags:
     - drupal
     - development
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/drupal-vuepress/drupal-vuepress.png
-img-src: /images/articles/drupal-vuepress.png
-byline: 'With Lando and Symfony Console, migrating this legacy Drupal 4.6 site to VuePress was fairly straightforward.'
 date: '2019-11-11'
-meta:
-    - { name: description, content: 'With Lando and Symfony Console, migrating this legacy Drupal 4.6 site to VuePress was fairly straightforward.' }
-    - { name: keywords, content: 'drupal,development' }
+summary: 'With Lando and Symfony Console, migrating this legacy Drupal 4.6 site to VuePress was fairly straightforward.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 Overview

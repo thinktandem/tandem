@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Migrating a Drupal 7 AddressField To a Drupal 8 Address'
 tags:
     - development
     - drupal
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/d7-d8.jpg
-img-src: /images/articles/d7-d8.jpg
-byline: 'Migrating to a Drupal 8 address field is a lot simplier than it seems.'
 date: '2019-07-17'
-meta:
-    - { name: description, content: 'Migrating to a Drupal 8 address field is a lot simplier than it seems.' }
-    - { name: keywords, content: 'development,drupal' }
+summary: 'Migrating to a Drupal 8 address field is a lot simplier than it seems.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 Why I Am Writing This
