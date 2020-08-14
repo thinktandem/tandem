@@ -1,20 +1,17 @@
 ---
-layout: Post
 title: 'Utilizing Wildcard Redirects To Win Broken Backlinks'
 tags:
     - development
     - support
     - drupal
     - wordpress
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/redirect-404.jpg
-img-src: /images/articles/redirect-404.jpg
-byline: 'Fixing legacy urls for older domains is crucial to keeping your ranking healthy on search engines.  I will show you how to do this via PHP, but this can be applied to any language.'
 date: '2017-11-29'
-meta:
-    - { name: description, content: 'Fixing legacy urls for older domains is crucial to keeping your ranking healthy on search engines.  I will show you how to do this via PHP, but this can be applied to any language.' }
-    - { name: keywords, content: 'development,support,drupal,wordpress' }
+summary: 'Fixing legacy urls for older domains is crucial to keeping your ranking healthy on search engines.  I will show you how to do this via PHP, but this can be applied to any language.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 Why are we doing this?

@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Using Pantheon''s Nested Docroot with Kalabox'
 tags:
     - localdev
     - support
+    - mikep
 author: 'Mike Pirog'
-private: false
-mainImage: 'https://thinktandem.io//images/articles/pantheon-nested-doc.png'
-img-src: 'https://thinktandem.io//images/articles/pantheon-nested-doc.png'
-byline: 'Learn how to use composer-based workflows with your Pantheon site on Kalabox so you can dev like it''s 2017.'
 date: '2017-05-20'
-meta:
-    - { name: description, content: 'Learn how to use composer-based workflows with your Pantheon site on Kalabox so you can dev like it''s 2017.' }
-    - { name: keywords, content: 'localdev,support' }
+summary: 'Learn how to use composer-based workflows with your Pantheon site on Kalabox so you can dev like it''s 2017.'
+id: mikep
+pic: 'https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb'
+location: 'New Hampshire'
 ---
 
 Background

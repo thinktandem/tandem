@@ -1,20 +1,17 @@
 ---
-layout: Post
 title: 'Lando Migration Webinar Part 2 Followup'
 tags:
     - development
     - drupal
     - localdev
     - devops
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/drupal-migration.jpg
-img-src: /images/articles/drupal-migration.jpg
-byline: 'This webinar dove into Source, Process, & Destination Plugins for Drupal 8/9 Migrations.'
 date: '2020-05-12'
-meta:
-    - { name: description, content: 'This webinar dove into Source, Process, & Destination Plugins for Drupal 8/9 Migrations.' }
-    - { name: keywords, content: 'development,drupal,localdev,devops' }
+summary: 'This webinar dove into Source, Process, & Destination Plugins for Drupal 8/9 Migrations.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 ## Recap

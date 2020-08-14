@@ -1,20 +1,17 @@
 ---
-layout: Post
 title: 'Test Headless Websites with Lando and Talkback'
 tags:
     - development
     - api
     - drupal
     - javascript
+    - dustinl
 author: 'Dustin LeBlanc'
-private: false
-mainImage: /images/articles/headless-testing/headless_horseman.jpg
-img-src: /images/articles/headless-testing/headless_horseman.jpg
-byline: 'Run end to end javascript tests on a decoupled frontend'
 date: '2019-02-24'
-meta:
-    - { name: description, content: 'Run end to end javascript tests on a decoupled frontend' }
-    - { name: keywords, content: 'development,api,drupal,javascript' }
+summary: 'Run end to end javascript tests on a decoupled frontend'
+id: dustinl
+pic: 'https://www.gravatar.com/avatar/09ac95f34d11ec00cfd5a26c521d58c5'
+location: 'New York'
 ---
 
 Building on Geoff's posts about [setting up Lando, Contenta, and Nuxt](/blog/2019/01/25/lando-contenta-cms-nuxt-pt-1/), and subsequently [fetching resources](/blog/2019/02/01/lando-contenta-cms-nuxt-pt-2/), today we're going to take a look at ensuring this process works and continues to work for the rest of the development project by writing some automated tests for the front end. **Warning:** I'm assuming prior knowledge of Lando, Nuxt, and general "decoupled" architecture. If those words sound like something a Star Trek writer made up, read the aforementioned posts!

@@ -1,20 +1,17 @@
 ---
-layout: Post
 title: 'Lando + Contenta CMS + Nuxt Pt. 2'
 tags:
     - development
     - api
     - drupal
     - javascript
+    - geoffs
 author: 'Geoff St. Pierre'
-private: false
-mainImage: /images/articles/headless-pt-1/landoContentaNuxt.png
-img-src: /images/articles/headless-pt-1/landoContentaNuxt.png
-byline: 'Configure Contenta CMS and Nuxt to communicate'
 date: '2019-02-01'
-meta:
-    - { name: description, content: 'Configure Contenta CMS and Nuxt to communicate' }
-    - { name: keywords, content: 'development,api,drupal,javascript' }
+summary: 'Configure Contenta CMS and Nuxt to communicate'
+id: geoffs
+pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+location: Massachusetts
 ---
 
 Why?

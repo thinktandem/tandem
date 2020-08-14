@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Launching the New ThinkTandem.io'
 tags:
     - misc
     - ux
+    - alecr
 author: 'Alec Reynolds'
-private: false
-mainImage: 'https://thinktandem.io//images/articles/new-tandem-website.jpg'
-img-src: 'https://thinktandem.io//images/articles/new-tandem-website.jpg'
-byline: 'Take a fresh look at what defines Tandem as a bold new digital agency.'
 date: '2017-09-21'
-meta:
-    - { name: description, content: 'Take a fresh look at what defines Tandem as a bold new digital agency.' }
-    - { name: keywords, content: 'misc,ux' }
+summary: 'Take a fresh look at what defines Tandem as a bold new digital agency.'
+id: alecr
+pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+location: California
 ---
 
 A few months ago we realized something: our website didn't reflect the work we were doing at Tandem.

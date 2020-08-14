@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Handling Dynamic Routes in Drupal 8'
 tags:
     - development
     - drupal
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/dynamic-routes.jpg
-img-src: /images/articles/dynamic-routes.jpg
-byline: 'Handling a dynamic route in Drupal 8 is much different than it was in previous versions of Drupal.  A little more foot work is needed since the routing layer is now Symphony based.'
 date: '2017-12-03'
-meta:
-    - { name: description, content: 'Handling a dynamic route in Drupal 8 is much different than it was in previous versions of Drupal.  A little more foot work is needed since the routing layer is now Symphony based.' }
-    - { name: keywords, content: 'development,drupal' }
+summary: 'Handling a dynamic route in Drupal 8 is much different than it was in previous versions of Drupal.  A little more foot work is needed since the routing layer is now Symphony based.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 The issue I faced with my module

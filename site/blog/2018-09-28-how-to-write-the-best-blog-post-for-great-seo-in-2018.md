@@ -1,19 +1,16 @@
 ---
-layout: Post
 title: 'How To Write The Best Blog Post For Great SEO In 2018'
 tags:
     - strategy
     - misc
     - support
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/writing-best-seo-post/writing-seo.jpg
-img-src: /images/articles/writing-best-seo-post/writing-seo.jpg
-byline: 'Tips and tricks so you get the most out of your blogging efforts.'
 date: '2018-09-28'
-meta:
-    - { name: description, content: 'Tips and tricks so you get the most out of your blogging efforts.' }
-    - { name: keywords, content: 'strategy,misc,support' }
+summary: 'Tips and tricks so you get the most out of your blogging efforts.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 Before diving in, I strongly recommend you have either a paid [ahrefs](https://ahrefs.com), [Moz](https://moz.com/), or [SEMrush](https://www.semrush.com/) account.  Each platform gives you a number of robust SEO tools that are well documented and easy to use. They are crucial for any SEO writing effort.

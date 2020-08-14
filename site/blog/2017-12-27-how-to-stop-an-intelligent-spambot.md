@@ -1,19 +1,16 @@
 ---
-layout: Post
 title: 'How To Stop An Intelligent Spambot'
 tags:
     - development
     - support
     - drupal
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/stop-spam.jpg
-img-src: /images/articles/stop-spam.jpg
-byline: 'Most sites are susceptible to spam bot attacks regardless of what you may have installed.  This little trick will aid in preventing bots from swarming your site.'
 date: '2017-12-27'
-meta:
-    - { name: description, content: 'Most sites are susceptible to spam bot attacks regardless of what you may have installed.  This little trick will aid in preventing bots from swarming your site.' }
-    - { name: keywords, content: 'development,support,drupal' }
+summary: 'Most sites are susceptible to spam bot attacks regardless of what you may have installed.  This little trick will aid in preventing bots from swarming your site.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 _This article focuses primarily on stopping spammers via PHP and Drupal.  However, the same principle can be applied to any language and CMS._

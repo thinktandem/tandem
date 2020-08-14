@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Visiting Dependency Hell'
 tags:
     - deployment
     - localdev
+    - alecr
 author: 'Alec Reynolds'
-private: false
-mainImage: 'https://thinktandem.io//images/articles/dependency-hell/inferno.jpg'
-img-src: 'https://thinktandem.io//images/articles/dependency-hell/inferno.jpg'
-byline: 'A brief vacation to one of software development''s notorious infernos reminded me why containers, Docker, and Kalabox are the way to manage development dependencies.'
 date: '2016-12-31'
-meta:
-    - { name: description, content: 'A brief vacation to one of software development''s notorious infernos reminded me why containers, Docker, and Kalabox are the way to manage development dependencies.' }
-    - { name: keywords, content: 'deployment,localdev' }
+summary: 'A brief vacation to one of software development''s notorious infernos reminded me why containers, Docker, and Kalabox are the way to manage development dependencies.'
+id: alecr
+pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+location: California
 ---
 
 Last night I was (trying) to install a Laravel project (DreamFactory) for evaluation. Normally I'm using Kalabox, a Docker-based project we created to help people quickly start developing and evaluating software. However, we didn't have an app configuration for Laravel. In my haste to "get things moving," I threw caution to the wind and began installing dependencies to run the project locally.

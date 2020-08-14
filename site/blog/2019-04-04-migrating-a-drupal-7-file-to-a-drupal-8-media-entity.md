@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Migrating a Drupal 7 File To a Drupal 8 Media Entity'
 tags:
     - development
     - drupal
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/d7-d8.jpg
-img-src: /images/articles/d7-d8.jpg
-byline: 'Media has been in core since 8.3.  As of this blog post, no migration path exists yet for a Drupal 7 File to a Drupal 8 Media Entity.'
 date: '2019-04-04'
-meta:
-    - { name: description, content: 'Media has been in core since 8.3.  As of this blog post, no migration path exists yet for a Drupal 7 File to a Drupal 8 Media Entity.' }
-    - { name: keywords, content: 'development,drupal' }
+summary: 'Media has been in core since 8.3.  As of this blog post, no migration path exists yet for a Drupal 7 File to a Drupal 8 Media Entity.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 Use Case

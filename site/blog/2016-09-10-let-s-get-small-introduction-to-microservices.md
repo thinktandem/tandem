@@ -1,17 +1,14 @@
 ---
-layout: Post
 title: 'Let''s Get Small: Introduction to Microservices'
 tags:
     - devops
+    - alecr
 author: 'Alec Reynolds'
-private: false
-mainImage: 'https://thinktandem.io//images/articles/microservices.png'
-img-src: 'https://thinktandem.io//images/articles/microservices.png'
-byline: 'In software development, things change. Learn how a microservice architecture can help you adapt to changing requirements and scale applications in the cloud.'
 date: '2016-09-10'
-meta:
-    - { name: description, content: 'In software development, things change. Learn how a microservice architecture can help you adapt to changing requirements and scale applications in the cloud.' }
-    - { name: keywords, content: devops }
+summary: 'In software development, things change. Learn how a microservice architecture can help you adapt to changing requirements and scale applications in the cloud.'
+id: alecr
+pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+location: California
 ---
 
 Let's repeat a mantra together: "change" is the essence of web application development. No sooner have we developed a "complete" web project than does our API datasource change, our business needs grow, or (the best possible problem) our userbase swells beyond the capacity of our system.

@@ -1,19 +1,16 @@
 ---
-layout: Post
 title: 'There and Back Again'
 tags:
     - development
     - devops
     - drupal
+    - geoffs
 author: 'Geoff St. Pierre'
-private: false
-mainImage: /images/articles/thomas-schweighofer-5dB9WGpJbFc-unsplash.jpg
-img-src: /images/articles/thomas-schweighofer-5dB9WGpJbFc-unsplash.jpg
-byline: 'NERD Summit, Amherst, MA to MidCamp, Chicago, IL and back again virtual events in the covid-19 era.'
 date: '2020-03-27'
-meta:
-    - { name: description, content: 'NERD Summit, Amherst, MA to MidCamp, Chicago, IL and back again virtual events in the covid-19 era.' }
-    - { name: keywords, content: 'development,devops,drupal' }
+summary: 'NERD Summit, Amherst, MA to MidCamp, Chicago, IL and back again virtual events in the covid-19 era.'
+id: geoffs
+pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+location: Massachusetts
 ---
 
 Covid-19

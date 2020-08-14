@@ -1,18 +1,15 @@
 ---
-layout: Post
 title: 'Writing a Drupal 8 Table to Table Migration Path'
 tags:
     - development
     - drupal
+    - johno
 author: 'John Ouellet'
-private: false
-mainImage: /images/articles/d7-d8.jpg
-img-src: /images/articles/d7-d8.jpg
-byline: 'Occasionally there may be times where you need to migrate a contrib module''s database table or your own schema''s data to Drupal 8.'
 date: '2019-03-22'
-meta:
-    - { name: description, content: 'Occasionally there may be times where you need to migrate a contrib module''s database table or your own schema''s data to Drupal 8.' }
-    - { name: keywords, content: 'development,drupal' }
+summary: 'Occasionally there may be times where you need to migrate a contrib module''s database table or your own schema''s data to Drupal 8.'
+id: johno
+pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+location: Florida
 ---
 
 Use Case For This Effort

@@ -5,7 +5,7 @@ summary: "When using the vuepress-plugin-container plugin for VuePress, you can 
 id: "johno"
 author: "John Ouellet"
 pic: "https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb"
-location: "Flo Rida"
+location: "Florida"
 
 date: "2020-08-11"
 
