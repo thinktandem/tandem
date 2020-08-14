@@ -112,15 +112,20 @@ module.exports = {
         byline: 'We have seen and done it all in Drupal on sites of every size and complexity.  Let our years or experience help bring your Drupal project to the next level.',
         pic: '/images/tags/drupal-logo.png',
       },
-      johno: {
-        title: 'I dominate',
-        byline: 'CRUSH CRUSH CRUSH',
-        pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33',
+      migration: {
+        title: 'Masters of Migrating Data',
+        byline: 'We have migrated dozens of sites for our clients over the years.  We are a little strange in the fact that we love handling complex migration situations.',
+        pic: '/images/tags/double-arrows.png',
       },
       vuepress: {
         title: 'Static site magic.',
         byline: 'Static site generations with vue.',
         pic: 'https://vuepress.vuejs.org/hero.png',
+      },
+      johno: {
+        title: 'I dominate',
+        byline: 'CRUSH CRUSH CRUSH',
+        pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33',
       },
     },
   },
