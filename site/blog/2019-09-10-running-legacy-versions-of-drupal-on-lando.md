@@ -1,14 +1,14 @@
 ---
-title: 'Running Legacy Versions of Drupal on Lando'
+title: "Running Legacy Versions of Drupal on Lando"
 tags:
     - development
     - drupal
     - johno
-author: 'John Ouellet'
-date: '2019-09-10'
-summary: 'This guide is how we got a Drupal 4.6 Site to run on Lando.  You can use this as a guide to run any legacy architecture as well.'
+author: "John Ouellet"
+date: "2019-09-10"
+summary: "This guide is how we got a Drupal 4.6 Site to run on Lando.  You can use this as a guide to run any legacy architecture as well."
 id: johno
-pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
 location: Florida
 ---
 

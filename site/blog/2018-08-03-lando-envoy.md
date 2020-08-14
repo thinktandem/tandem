@@ -1,16 +1,16 @@
 ---
-title: 'Lando + Envoy'
+title: "Lando + Envoy"
 tags:
     - development
     - drupal
     - wordpress
     - laravel
     - geoffs
-author: 'Geoff St. Pierre'
-date: '2018-08-03'
-summary: 'Learn to automate deploy steps with envoy on affordable hosting.'
+author: "Geoff St. Pierre"
+date: "2018-08-03"
+summary: "Learn to automate deploy steps with envoy on affordable hosting."
 id: geoffs
-pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
 location: Massachusetts
 ---
 

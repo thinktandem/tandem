@@ -1,16 +1,16 @@
 ---
-title: 'Accessibility & SEO'
+title: "Accessibility & SEO"
 tags:
     - accessibility
     - seo
     - strategy
     - marketing
     - donnab
-author: 'Donna Bungard'
-date: '2018-08-20'
+author: "Donna Bungard"
+date: "2018-08-20"
 id: donnab
-pic: 'https://www.gravatar.com/avatar/80b0826906351617efdd8dbdf3cee68b'
-location: 'New Hampshire'
+pic: "https://www.gravatar.com/avatar/80b0826906351617efdd8dbdf3cee68b"
+location: "New Hampshire"
 ---
 
 A few years ago, when I was starting to go deeper into Accessibility, a dear friend drilled into me **“a search engine optimized site may not be more accessible, but an accessible site is more search engine friendly.”** Truth is, that simple line stuck with me because what an easy way to optimize the work I was doing as both a strategist and an accessibility professional. This should resonate with other professionals too - from marketing stakeholders to content editors; it’s just the easiest way to reach the greatest number of users. 

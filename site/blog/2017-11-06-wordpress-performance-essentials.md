@@ -1,16 +1,16 @@
 ---
-title: 'WordPress Performance Essentials'
+title: "WordPress Performance Essentials"
 tags:
     - development
     - devops
     - support
     - wordpress
     - johno
-author: 'John Ouellet'
-date: '2017-11-06'
-summary: 'How to make WordPress run fast and smooth.  A few tips and tricks to make sure your visitors don''t get frustrated waiting on pages to load.'
+author: "John Ouellet"
+date: "2017-11-06"
+summary: "How to make WordPress run fast and smooth.  A few tips and tricks to make sure your visitors don't get frustrated waiting on pages to load."
 id: johno
-pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
 location: Florida
 ---
 

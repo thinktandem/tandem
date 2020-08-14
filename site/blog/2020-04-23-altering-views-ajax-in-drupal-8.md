@@ -1,15 +1,15 @@
 ---
-title: 'Altering Views Ajax in Drupal 8'
+title: "Altering Views Ajax in Drupal 8"
 tags:
     - development
     - drupal
     - support
     - johno
-author: 'John Ouellet'
-date: '2020-04-23'
-summary: 'A straight forward guide on how to have your JavaScript fire after each Drupal 8 Views AJAX call is made.'
+author: "John Ouellet"
+date: "2020-04-23"
+summary: "A straight forward guide on how to have your JavaScript fire after each Drupal 8 Views AJAX call is made."
 id: johno
-pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
 location: Florida
 ---
 

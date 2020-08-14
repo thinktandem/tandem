@@ -1,13 +1,13 @@
 ---
-title: 'Node Microservices on Docker Cloud'
+title: "Node Microservices on Docker Cloud"
 tags:
     - devops
     - alecr
-author: 'Alec Reynolds'
-date: '2016-09-23'
-summary: 'How to run small NodeJS in an efficient, inexpensive, and scalable manner using Docker Cloud.'
+author: "Alec Reynolds"
+date: "2016-09-23"
+summary: "How to run small NodeJS in an efficient, inexpensive, and scalable manner using Docker Cloud."
 id: alecr
-pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
 location: California
 ---
 

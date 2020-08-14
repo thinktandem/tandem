@@ -1,5 +1,5 @@
 ---
-title: 'Lando Share ~ Sharing is Caring'
+title: "Lando Share ~ Sharing is Caring"
 tags:
     - development
     - localdev
@@ -7,11 +7,11 @@ tags:
     - drupal
     - wordpress
     - geoffs
-author: 'Geoff St. Pierre'
-date: '2018-01-03'
-summary: 'Use the `lando share` command to expose a URL of your local Lando site. For example to view it on actual mobile devices for browser testing before you release it to the world!'
+author: "Geoff St. Pierre"
+date: "2018-01-03"
+summary: "Use the `lando share` command to expose a URL of your local Lando site. For example to view it on actual mobile devices for browser testing before you release it to the world!"
 id: geoffs
-pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
 location: Massachusetts
 ---
 

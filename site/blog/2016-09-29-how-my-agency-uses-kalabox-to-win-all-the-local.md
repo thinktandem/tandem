@@ -1,15 +1,15 @@
 ---
-title: 'How My Agency uses Kalabox to Win all the Local'
+title: "How My Agency uses Kalabox to Win all the Local"
 tags:
     - deployment
     - localdev
     - testing
     - alecr
-author: 'Alec Reynolds'
-date: '2016-09-29'
-summary: 'Onboarding new team members to your web project can be complicated with even the most integrated DevOps team. Say hello to Kalabox.'
+author: "Alec Reynolds"
+date: "2016-09-29"
+summary: "Onboarding new team members to your web project can be complicated with even the most integrated DevOps team. Say hello to Kalabox."
 id: alecr
-pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
 location: California
 ---
 

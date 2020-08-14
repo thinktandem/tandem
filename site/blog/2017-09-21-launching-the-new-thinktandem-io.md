@@ -1,14 +1,14 @@
 ---
-title: 'Launching the New ThinkTandem.io'
+title: "Launching the New ThinkTandem.io"
 tags:
     - misc
     - ux
     - alecr
-author: 'Alec Reynolds'
-date: '2017-09-21'
-summary: 'Take a fresh look at what defines Tandem as a bold new digital agency.'
+author: "Alec Reynolds"
+date: "2017-09-21"
+summary: "Take a fresh look at what defines Tandem as a bold new digital agency."
 id: alecr
-pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
 location: California
 ---
 

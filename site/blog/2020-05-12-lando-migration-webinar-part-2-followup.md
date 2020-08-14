@@ -1,16 +1,16 @@
 ---
-title: 'Lando Migration Webinar Part 2 Followup'
+title: "Lando Migration Webinar Part 2 Followup"
 tags:
     - development
     - drupal
     - localdev
     - devops
     - johno
-author: 'John Ouellet'
-date: '2020-05-12'
-summary: 'This webinar dove into Source, Process, & Destination Plugins for Drupal 8/9 Migrations.'
+author: "John Ouellet"
+date: "2020-05-12"
+summary: "This webinar dove into Source, Process, & Destination Plugins for Drupal 8/9 Migrations."
 id: johno
-pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
 location: Florida
 ---
 

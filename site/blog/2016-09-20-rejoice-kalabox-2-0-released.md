@@ -1,5 +1,5 @@
 ---
-title: 'Rejoice: Kalabox 2.0 Released'
+title: "Rejoice: Kalabox 2.0 Released"
 tags:
     - deployment
     - localdev
@@ -9,11 +9,11 @@ tags:
     - testing
     - devops
     - alecr
-author: 'Alec Reynolds'
-date: '2016-09-20'
-summary: 'Proudly announcing the release of Kalabox 2.0, our open-source Docker-powered local development tool that provides the fastest way to develop WordPress and Drupal applications.'
+author: "Alec Reynolds"
+date: "2016-09-20"
+summary: "Proudly announcing the release of Kalabox 2.0, our open-source Docker-powered local development tool that provides the fastest way to develop WordPress and Drupal applications."
 id: alecr
-pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
 location: California
 ---
 

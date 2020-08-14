@@ -1,14 +1,14 @@
 ---
-title: 'Still on Drupal 6? Here are Your Options'
+title: "Still on Drupal 6? Here are Your Options"
 tags:
     - support
     - drupal
     - johno
-author: 'John Ouellet'
-date: '2019-09-19'
-summary: 'An informative guide for sites still on Drupal 6'
+author: "John Ouellet"
+date: "2019-09-19"
+summary: "An informative guide for sites still on Drupal 6"
 id: johno
-pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
 location: Florida
 ---
 

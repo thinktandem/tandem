@@ -1,14 +1,14 @@
 ---
-title: 'Changing a Content Type Name During a Drupal 8 Migration'
+title: "Changing a Content Type Name During a Drupal 8 Migration"
 tags:
     - development
     - drupal
     - johno
-author: 'John Ouellet'
-date: '2018-07-18'
-summary: 'Changing a content type machine name during a Drupal Migration requires a little bit of migration knowledge, but is fairly straight forward to do.'
+author: "John Ouellet"
+date: "2018-07-18"
+summary: "Changing a content type machine name during a Drupal Migration requires a little bit of migration knowledge, but is fairly straight forward to do."
 id: johno
-pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
 location: Florida
 ---
 

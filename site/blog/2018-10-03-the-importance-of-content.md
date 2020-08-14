@@ -1,16 +1,16 @@
 ---
-title: 'The Importance of Content'
+title: "The Importance of Content"
 tags:
     - digitalstrategy
     - personas
     - SEO
     - donnab
-author: 'Donna Bungard'
-date: '2018-10-03'
-summary: 'Personas, Search Engines & Coffee'
+author: "Donna Bungard"
+date: "2018-10-03"
+summary: "Personas, Search Engines & Coffee"
 id: donnab
-pic: 'https://www.gravatar.com/avatar/80b0826906351617efdd8dbdf3cee68b'
-location: 'New Hampshire'
+pic: "https://www.gravatar.com/avatar/80b0826906351617efdd8dbdf3cee68b"
+location: "New Hampshire"
 ---
 
 It’s likely that you’ve read a trillion posts about the importance of your content by now, and really, the coffee was the only reason you’re here but hey, that’s okay too. No, not for the analytics bump but because your content strategy really is key to the success of your website and covering some of these basics can enhance your website copy, blog development, and so on. So, no matter why you started reading, I’m glad you’re here. 

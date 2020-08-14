@@ -1,14 +1,14 @@
 ---
-title: 'Lando + Heroku + Laravel'
+title: "Lando + Heroku + Laravel"
 tags:
     - development
     - devops
     - geoffs
-author: 'Geoff St. Pierre'
-date: '2017-12-01'
-summary: '🚀 ∞ Lando + Heroku + Laravel: take your dev to the next level.  📦 ☄️'
+author: "Geoff St. Pierre"
+date: "2017-12-01"
+summary: "🚀 ∞ Lando + Heroku + Laravel: take your dev to the next level.  📦 ☄️"
 id: geoffs
-pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
 location: Massachusetts
 ---
 

@@ -1,14 +1,14 @@
 ---
-title: 'Notes on Personas'
+title: "Notes on Personas"
 tags:
     - strategy
     - marketing
     - donnab
-author: 'Donna Bungard'
-date: '2018-08-15'
+author: "Donna Bungard"
+date: "2018-08-15"
 id: donnab
-pic: 'https://www.gravatar.com/avatar/80b0826906351617efdd8dbdf3cee68b'
-location: 'New Hampshire'
+pic: "https://www.gravatar.com/avatar/80b0826906351617efdd8dbdf3cee68b"
+location: "New Hampshire"
 ---
 
 The Strategic Cornerstones

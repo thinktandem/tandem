@@ -1,14 +1,14 @@
 ---
-title: 'Visiting Dependency Hell'
+title: "Visiting Dependency Hell"
 tags:
     - deployment
     - localdev
     - alecr
-author: 'Alec Reynolds'
-date: '2016-12-31'
-summary: 'A brief vacation to one of software development''s notorious infernos reminded me why containers, Docker, and Kalabox are the way to manage development dependencies.'
+author: "Alec Reynolds"
+date: "2016-12-31"
+summary: "A brief vacation to one of software development's notorious infernos reminded me why containers, Docker, and Kalabox are the way to manage development dependencies."
 id: alecr
-pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
 location: California
 ---
 

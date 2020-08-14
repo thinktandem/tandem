@@ -1,14 +1,14 @@
 ---
-title: 'Connecting to a Remote Platform.sh Database'
+title: "Connecting to a Remote Platform.sh Database"
 tags:
     - localdev
     - devops
     - geoffs
-author: 'Geoff St. Pierre'
-date: '2017-03-03'
-summary: 'Connecting to a remote Database on platform.sh is simple (when you know how)!'
+author: "Geoff St. Pierre"
+date: "2017-03-03"
+summary: "Connecting to a remote Database on platform.sh is simple (when you know how)!"
 id: geoffs
-pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
 location: Massachusetts
 ---
 
