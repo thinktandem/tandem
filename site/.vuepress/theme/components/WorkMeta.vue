@@ -17,7 +17,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'WorkMeta',
   props: {
@@ -38,9 +37,6 @@ export default {
       type: String,
       default: 'Awesome work done with',
     },
-  },
-  mounted() {
-
   },
 };
 </script>

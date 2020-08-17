@@ -1,5 +1,5 @@
 <template>
-  <div id="vuepress-theme-blog__global-layout">
+  <div id="vuepress-theme-blog__global-layout" :style="theme">
     <Header
       :is-open="isMobileHeaderOpen"
       @toggle-sidebar="isMobileHeaderOpen = !isMobileHeaderOpen"
@@ -27,11 +27,20 @@ export default {
   data() {
     return {
       isMobileHeaderOpen: false,
+      theme: {
+        background: 'blue',
+      },
     };
+  },
+  created() {
+    this.$themeListener(theme => {
+      this.theme = Object.assign(this.theme, theme);
+    });
   },
   mounted() {
     this.$router.afterEach(() => {
       this.isMobileHeaderOpen = false;
+      this.$updateTheme({background: 'blue'});
     });
   },
 };
