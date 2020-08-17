@@ -1,23 +1,23 @@
 <template>
   <div
-    id="mauticform_wrapper_contactrequest"
+    id="mauticform_wrapper_contactrequestnew"
     class="mauticform_wrapper"
   >
     <form
-      id="mauticform_contactrequest"
+      id="mauticform_contactrequestnew"
       autocomplete="false"
       role="form"
       method="post"
-      action="https://mautic.thinktandem.io/form/submit?formId=3"
-      data-mautic-form="contactrequest"
+      action="https://mautic.thinktandem.io/form/submit?formId=4"
+      data-mautic-form="contactrequestnew"
       enctype="multipart/form-data"
     >
       <div
-        id="mauticform_contactrequest_error"
+        id="mauticform_contactrequestnew_error"
         class="mauticform-error"
       />
       <div
-        id="mauticform_contactrequest_message"
+        id="mauticform_contactrequestnew_message"
         class="mauticform-message"
       />
       <div class="mauticform-innerform">
@@ -26,18 +26,18 @@
           data-mautic-form-page="1"
         >
           <div
-            id="mauticform_contactrequest_first_name"
+            id="mauticform_contactrequestnew_first_name"
             data-validate="first_name"
             data-validation-type="text"
             class="mauticform-row mauticform-text mauticform-field-1 mauticform-required"
           >
             <label
-              id="mauticform_label_contactrequest_first_name"
-              for="mauticform_input_contactrequest_first_name"
+              id="mauticform_label_contactrequestnew_first_name"
+              for="mauticform_input_contactrequestnew_first_name"
               class="mauticform-label"
             >Name</label>
             <input
-              id="mauticform_input_contactrequest_first_name"
+              id="mauticform_input_contactrequestnew_first_name"
               name="mauticform[first_name]"
               value=""
               class="mauticform-input"
@@ -50,18 +50,18 @@
           </div>
 
           <div
-            id="mauticform_contactrequest_email"
+            id="mauticform_contactrequestnew_email"
             data-validate="email"
             data-validation-type="email"
             class="mauticform-row mauticform-email mauticform-field-2 mauticform-required"
           >
             <label
-              id="mauticform_label_contactrequest_email"
-              for="mauticform_input_contactrequest_email"
+              id="mauticform_label_contactrequestnew_email"
+              for="mauticform_input_contactrequestnew_email"
               class="mauticform-label"
             >Email</label>
             <input
-              id="mauticform_input_contactrequest_email"
+              id="mauticform_input_contactrequestnew_email"
               name="mauticform[email]"
               value=""
               class="mauticform-input"
@@ -74,16 +74,16 @@
           </div>
 
           <div
-            id="mauticform_contactrequest_how_can_we_help_you"
+            id="mauticform_contactrequestnew_how_can_we_help_you"
             class="mauticform-row mauticform-text mauticform-field-3"
           >
             <label
-              id="mauticform_label_contactrequest_how_can_we_help_you"
-              for="mauticform_input_contactrequest_how_can_we_help_you"
+              id="mauticform_label_contactrequestnew_how_can_we_help_you"
+              for="mauticform_input_contactrequestnew_how_can_we_help_you"
               class="mauticform-label"
             >How Can We Help You?</label>
             <textarea
-              id="mauticform_input_contactrequest_how_can_we_help_you"
+              id="mauticform_input_contactrequestnew_how_can_we_help_you"
               name="mauticform[how_can_we_help_you]"
               class="mauticform-textarea"
             />
@@ -93,40 +93,33 @@
             />
           </div>
 
-
-          <div
-            id="mauticform_contactrequest_recaptcha1"
-            class="mauticform-row mauticform-div-wrapper mauticform-field-4"
-          >
-            <div class="g-recaptcha" data-sitekey="6LeUAsAZAAAAAChIMA5d2cEasDMvv7ellEqQf-Ai" data-callback="verifyCallback_de0e4ae0b290a7a2957082b8f73caf3b"></div>
-            <input id="mauticform_input_contactrequest_recaptcha" name="mauticform[recaptcha]" value="" class="mauticform-input" type="hidden">
-            <span class="mauticform-errormsg" style="display: none;"></span>
-          </div>
-
           <input
-            id="mauticform_input_contactrequest_lead_source"
+            id="mauticform_input_contactrequestnew_lead_source"
             name="mauticform[lead_source]"
             value="Contact Form"
             class="mauticform-hidden"
             type="hidden"
           >
           <input
-            id="mauticform_input_contactrequest_lead_status"
+            id="mauticform_input_contactrequestnew_lead_status"
             name="mauticform[lead_status]"
             value="In Progress"
             class="mauticform-hidden"
             type="hidden"
           >
           <div
-            id="mauticform_contactrequest_submit"
-            class="mauticform-row mauticform-button-wrapper mauticform-field-7"
+            id="mauticform_contactrequestnew_submit"
+            class="mauticform-row mauticform-button-wrapper mauticform-field-6"
           >
             <button
-              id="mauticform_input_contactrequest_submit"
+              id="mauticform_input_contactrequestnew_submit"
               type="submit"
               name="mauticform[submit]"
               value=""
-              class="btn btn-primary"
+              class="btn btn-primary g-recaptcha"
+              data-sitekey="6LeUAsAZAAAAAChIMA5d2cEasDMvv7ellEqQf-Ai"
+              data-callback="onSubmit"
+              data-action="submit"
             >
               Submit
             </button>
@@ -135,48 +128,48 @@
       </div>
 
       <input
-        id="mauticform_contactrequest_id"
+        id="mauticform_contactrequestnew_id"
         type="hidden"
         name="mauticform[formId]"
-        value="3"
+        value="4"
       >
       <input
-        id="mauticform_contactrequest_return"
+        id="mauticform_contactrequestnew_return"
         type="hidden"
         name="mauticform[return]"
         value=""
       >
       <input
-        id="mauticform_contactrequest_name"
+        id="mauticform_contactrequestnew_name"
         type="hidden"
         name="mauticform[formName]"
-        value="contactrequest"
+        value="contactrequestnew"
       >
     </form>
     <script type="text/javascript">
       /** This section is only needed once per page if manually copying **/
       if (typeof MauticSDKLoaded == 'undefined') {
-        var MauticSDKLoaded = true;
-        var head            = document.getElementsByTagName('head')[0];
-        var script          = document.createElement('script');
-        script.type         = 'text/javascript';
-        script.src          = 'https://mautic.thinktandem.io/media/js/mautic-form.js';
-        script.onload       = function() {
-          MauticSDK.onLoad();
-        };
-        head.appendChild(script);
-        var MauticDomain = 'https://mautic.thinktandem.io';
-        var MauticLang   = {
-          'submittingMessage': "Please wait..."
-        }
+      var MauticSDKLoaded = true;
+      var head            = document.getElementsByTagName('head')[0];
+      var script          = document.createElement('script');
+      script.type         = 'text/javascript';
+      script.src          = 'https://mautic.thinktandem.io/media/js/mautic-form.js';
+      script.onload       = function() {
+      MauticSDK.onLoad();
+      };
+      head.appendChild(script);
+      var MauticDomain = 'https://mautic.thinktandem.io';
+      var MauticLang   = {
+      'submittingMessage': "Please wait..."
+      }
       }
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" />
     <script type="text/javascript">
-      function verifyCallback_de0e4ae0b290a7a2957082b8f73caf3b( response ) {
-        document.getElementById("mauticform_input_contactrequest_recaptcha").value = response;
+      function onSubmit(token) {
+      document.getElementById("contactrequestnew").submit();
       }
     </script>
-    <script src="https://www.google.com/recaptcha/api.js"></script>
   </div>
 </template>
 

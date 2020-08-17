@@ -130,38 +130,15 @@
             />
           </div>
 
-
-          <div
-            id="mauticform_supportrequest_recaptcha1"
-            class="mauticform-row mauticform-div-wrapper mauticform-field-5"
-          >
-            <div
-              class="g-recaptcha"
-              data-sitekey="6LeUAsAZAAAAAChIMA5d2cEasDMvv7ellEqQf-Ai"
-              data-callback="verifyCallback_9c8f67dabc286dec24681e670cee0eb3"
-            />
-            <input
-              id="mauticform_input_supportrequest_recaptcha"
-              name="mauticform[recaptcha]"
-              value=""
-              class="mauticform-input"
-              type="hidden"
-            >
-            <span
-              class="mauticform-errormsg"
-              style="display: none;"
-            />
-          </div>
-
           <input
-            id="mauticform_input_contactrequest_lead_source"
+            id="mauticform_input_supportrequest_lead_source"
             name="mauticform[lead_source]"
             value="Support Form"
             class="mauticform-hidden"
             type="hidden"
           >
           <input
-            id="mauticform_input_contactrequest_lead_status"
+            id="mauticform_input_supportrequest_lead_status"
             name="mauticform[lead_status]"
             value="In Progress"
             class="mauticform-hidden"
@@ -169,14 +146,17 @@
           >
           <div
             id="mauticform_supportrequest_submit"
-            class="mauticform-row mauticform-button-wrapper mauticform-field-6"
+            class="mauticform-row mauticform-button-wrapper mauticform-field-7"
           >
             <button
               id="mauticform_input_supportrequest_submit"
               type="submit"
               name="mauticform[submit]"
               value=""
-              class="btn btn-primary"
+              class="btn btn-primary g-recaptcha"
+              data-sitekey="6LeUAsAZAAAAAChIMA5d2cEasDMvv7ellEqQf-Ai"
+              data-callback="onSubmit"
+              data-action="submit"
             >
               Submit
             </button>
@@ -221,12 +201,12 @@
       }
       }
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" />
     <script type="text/javascript">
-      function verifyCallback_9c8f67dabc286dec24681e670cee0eb3( response ) {
-      document.getElementById("mauticform_input_supportrequest_recaptcha").value = response;
+      function onSubmit(token) {
+      document.getElementById("mauticform_supportrequest").submit();
       }
     </script>
-    <script src="https://www.google.com/recaptcha/api.js" />
   </div>
 </template>
 
