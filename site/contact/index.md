@@ -5,3 +5,5 @@ layout: Page
 ---
 
 # Contact Us
+
+<ContactForm />
