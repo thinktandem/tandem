@@ -98,22 +98,9 @@
             id="mauticform_contactrequest_recaptcha1"
             class="mauticform-row mauticform-div-wrapper mauticform-field-4"
           >
-            <div
-              class="g-recaptcha"
-              data-sitekey="6Ldi0MMUAAAAAARYg2LvrR-8DB44Z2JWwyGDms8-"
-              data-callback="verifyCallback_de0e4ae0b290a7a2957082b8f73caf3b"
-            />
-            <input
-              id="mauticform_input_contactrequest_recaptcha1"
-              name="mauticform[recaptcha1]"
-              value=""
-              class="mauticform-input"
-              type="hidden"
-            >
-            <span
-              class="mauticform-errormsg"
-              style="display: none;"
-            />
+            <div class="g-recaptcha" data-sitekey="6LeUAsAZAAAAAChIMA5d2cEasDMvv7ellEqQf-Ai" data-callback="verifyCallback_de0e4ae0b290a7a2957082b8f73caf3b"></div>
+            <input id="mauticform_input_contactrequest_recaptcha" name="mauticform[recaptcha]" value="" class="mauticform-input" type="hidden">
+            <span class="mauticform-errormsg" style="display: none;"></span>
           </div>
 
           <input
@@ -169,27 +156,27 @@
     <script type="text/javascript">
       /** This section is only needed once per page if manually copying **/
       if (typeof MauticSDKLoaded == 'undefined') {
-      var MauticSDKLoaded = true;
-      var head            = document.getElementsByTagName('head')[0];
-      var script          = document.createElement('script');
-      script.type         = 'text/javascript';
-      script.src          = 'https://mautic.thinktandem.io/media/js/mautic-form.js';
-      script.onload       = function() {
-      MauticSDK.onLoad();
-      };
-      head.appendChild(script);
-      var MauticDomain = 'https://mautic.thinktandem.io';
-      var MauticLang   = {
-      'submittingMessage': "Please wait..."
-      }
+        var MauticSDKLoaded = true;
+        var head            = document.getElementsByTagName('head')[0];
+        var script          = document.createElement('script');
+        script.type         = 'text/javascript';
+        script.src          = 'https://mautic.thinktandem.io/media/js/mautic-form.js';
+        script.onload       = function() {
+          MauticSDK.onLoad();
+        };
+        head.appendChild(script);
+        var MauticDomain = 'https://mautic.thinktandem.io';
+        var MauticLang   = {
+          'submittingMessage': "Please wait..."
+        }
       }
     </script>
     <script type="text/javascript">
       function verifyCallback_de0e4ae0b290a7a2957082b8f73caf3b( response ) {
-      document.getElementById("mauticform_input_contactrequest_recaptcha1").value = response;
+        document.getElementById("mauticform_input_contactrequest_recaptcha").value = response;
       }
     </script>
-    <script src="https://www.google.com/recaptcha/api.js" />
+    <script src="https://www.google.com/recaptcha/api.js"></script>
   </div>
 </template>
 

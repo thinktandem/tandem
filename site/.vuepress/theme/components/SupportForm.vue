@@ -137,12 +137,12 @@
           >
             <div
               class="g-recaptcha"
-              data-sitekey="6Ldi0MMUAAAAAARYg2LvrR-8DB44Z2JWwyGDms8-"
+              data-sitekey="6LeUAsAZAAAAAChIMA5d2cEasDMvv7ellEqQf-Ai"
               data-callback="verifyCallback_9c8f67dabc286dec24681e670cee0eb3"
             />
             <input
-              id="mauticform_input_supportrequest_recaptcha1"
-              name="mauticform[recaptcha1]"
+              id="mauticform_input_supportrequest_recaptcha"
+              name="mauticform[recaptcha]"
               value=""
               class="mauticform-input"
               type="hidden"
@@ -223,7 +223,7 @@
     </script>
     <script type="text/javascript">
       function verifyCallback_9c8f67dabc286dec24681e670cee0eb3( response ) {
-      document.getElementById("mauticform_input_supportrequest_recaptcha1").value = response;
+      document.getElementById("mauticform_input_supportrequest_recaptcha").value = response;
       }
     </script>
     <script src="https://www.google.com/recaptcha/api.js" />
