@@ -3,7 +3,7 @@ title: "Brand-friendly Redesign"
 logo: "/images/clients/poets/poets.png"
 client:  "Academy of American Poets"
 org: "Academy of American Poets"
-summary: "<strong>The Academy of American Poets</strong> needed a refreshed design that respected their time-honored brand."
+summary: "The Academy of American Poets needed a refreshed design that respected their time-honored brand."
 link: "https://poets.org/"
 
 image: "/images/case-studies/poets-design.jpg"

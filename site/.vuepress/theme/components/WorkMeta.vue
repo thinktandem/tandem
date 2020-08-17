@@ -7,7 +7,7 @@
     itemscope
   >
     <div class="work-for">
-      Awesome stuff done for <a
+      {{ prefix }}<a
         :href="link"
         target="_blank"
         itemprop="name"
@@ -34,6 +34,13 @@ export default {
       type: String,
       default: null,
     },
+    prefix: {
+      type: String,
+      default: 'Awesome work done with',
+    },
+  },
+  mounted() {
+
   },
 };
 </script>
