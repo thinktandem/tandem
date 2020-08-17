@@ -1,6 +1,12 @@
 <template>
   <header id="header">
     <nav id="nav">
+      <style v-if="!isOpen">
+        .nav-link {color: {{ color }};}
+        .nav-link:hover {color: {{ hover }};}
+        .nav-link.router-link-active {color: {{ active }};}
+        .home-link {color: {{ color }};}
+      </style>
       <button
         id="nav_toggle"
         type="button"
@@ -88,6 +94,18 @@ export default {
     isOpen: {
       type: Boolean,
       required: true,
+    },
+    active: {
+      type: String,
+      default: '#ed3f7a',
+    },
+    color: {
+      type: String,
+      default: '#000000',
+    },
+    hover: {
+      type: String,
+      default: '#ed3f7a',
     },
   },
   data() {
@@ -284,7 +302,6 @@ nav
     display block
     text-transform uppercase
     a
-      color $darkTextColor
       font-weight bold
       font-family -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
       text-decoration none

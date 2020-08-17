@@ -11,6 +11,15 @@
 <script>
 export default {
   name: 'CaseStudy',
+  mounted() {
+    this.$updateTheme({
+      background: '#4d9bf3',
+      headerColor: 'white',
+      headerActive: 'pink',
+      headerHover: 'pink',
+      text: 'red',
+    });
+  },
 };
 </script>
 

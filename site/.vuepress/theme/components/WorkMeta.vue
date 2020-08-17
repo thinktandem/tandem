@@ -7,7 +7,7 @@
     itemscope
   >
     <div class="work-for">
-      {{ prefix }}<a
+      {{ prefix }} <a
         :href="link"
         target="_blank"
         itemprop="name"
