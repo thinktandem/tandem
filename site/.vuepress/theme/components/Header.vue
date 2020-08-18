@@ -97,15 +97,15 @@ export default {
     },
     active: {
       type: String,
-      default: '#ed3f7a',
+      default: 'ed3f7a',
     },
     color: {
       type: String,
-      default: '#000000',
+      default: '000000',
     },
     hover: {
       type: String,
-      default: '#ed3f7a',
+      default: 'ed3f7a',
     },
   },
   data() {

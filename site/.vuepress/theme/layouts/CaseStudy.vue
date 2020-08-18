@@ -4,6 +4,9 @@
     ref="content"
     class="case-study-layout content-wrapper-tandem"
   >
+    <style>
+      .content-wrapper {color: {{ textColor }};}
+    </style>
     <Content itemprop="articleBody" />
   </div>
 </template>
@@ -11,14 +14,23 @@
 <script>
 export default {
   name: 'CaseStudy',
+  data() {
+    return {
+      theme: {},
+    };
+  },
+  computed: {
+    textColor() {
+      return this.theme.text ? this.theme.text : '#47474a';
+    },
+  },
   mounted() {
-    this.$updateTheme({
-      background: '#4d9bf3',
-      headerColor: 'white',
-      headerActive: 'pink',
-      headerHover: 'pink',
-      text: 'red',
-    });
+    // Merge in the frontmatter theme if we have it
+    if (this.$page.frontmatter.theme) {
+      this.theme = Object.assign({}, this.$page.frontmatter.theme);
+    }
+    // Update the critical parent theme pathz
+    this.$updateTheme(this.theme);
   },
 };
 </script>

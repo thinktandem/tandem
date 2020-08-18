@@ -1,16 +1,22 @@
 ---
 title: "Brand-friendly Redesign"
 id: poets
-logo: "/images/clients/poets/poets.png"
+logo: /images/clients/poets/poets.png
 client:  "Academy of American Poets"
 org: "Academy of American Poets"
 summary: "The Academy of American Poets needed a refreshed design that respected their time-honored brand."
-link: "https://poets.org/"
+link: https://poets.org/
 
 theme:
-  background: red
+  background: "#4d9bf3"
+  headerColor: white
+  headerHover: pink
+  headerActive: pink
+  text: white
 
 image: "/images/case-studies/poets-design.jpg"
+
+
 challenge: "Poets.org needed a modernized platform and a refreshed look."
 solution: "Tandem developed an elegant brand representation that paid homage to what was familiar while enhancing the overall look."
 impact: "The new design was created and the site is expected to launch Spring 2019"
@@ -22,7 +28,6 @@ metrics:
   - key: "Mobile-First Mockups"
     value: "Designed with the user in mind"
 
-background: "0093d6"
 slug: "poets-redesign"
 date: "2019-11-15"
 tags:
