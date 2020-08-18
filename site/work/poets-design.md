@@ -2,10 +2,19 @@
 title: "Brand-friendly Redesign"
 id: poets
 logo: /images/clients/poets/poets.png
-client:  "Academy of American Poets"
-org: "Academy of American Poets"
+client: Poets.org
 summary: "The Academy of American Poets needed a refreshed design that respected their time-honored brand."
 link: https://poets.org/
+
+header:
+  title: "Rebuilding<br /> poetry's home on <br />the internet"
+  image: /images/poets.png
+  background:
+    background-image: url(/images/poets-bg.png)
+    background-position: 100% 20%
+    background-size: auto
+    background-repeat: no-repeat
+  link: https://poets.org
 
 theme:
   background: "#4d9bf3"
