@@ -6,7 +6,6 @@ module.exports = {
     ['link', {rel: 'stylesheet', href: '/styles/overrides.css'}],
     ['link', {rel: 'stylesheet', href: '//unpkg.com/fullpage.js/dist/fullpage.min.css'}],
     ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap'}],
-    ['script', {src: '//www.google.com/recaptcha/api.js'}],
     ['script', {src: '//js.hs-scripts.com/6864374.js'}],
     ['script', {src: '/js/mautic-tracking.js'}],
   ],
