@@ -2,7 +2,7 @@ module.exports = {
   extend: '@vuepress/theme-blog',
   plugins: [
     ['container', {
-      type: 'thumbnail',
+      type: 'big',
       defaultTitle: '',
     }],
     ['container', {
@@ -10,7 +10,19 @@ module.exports = {
       defaultTitle: '',
     }],
     ['container', {
-      type: 'quote',
+      type: 'important',
+      defaultTitle: '',
+    }],
+    ['container', {
+      type: 'point',
+      defaultTitle: 'Point.',
+    }],
+    ['container', {
+      type: 'thumbnail',
+      defaultTitle: '',
+    }],
+    ['container', {
+      type: 'col-third',
       defaultTitle: '',
     }],
     ['container', {
@@ -23,10 +35,6 @@ module.exports = {
     }],
     ['container', {
       type: 'col-half',
-      defaultTitle: '',
-    }],
-    ['container', {
-      type: 'col-third',
       defaultTitle: '',
     }],
   ],

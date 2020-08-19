@@ -92,7 +92,7 @@
       <button
         class="btn btn-load-more"
       >
-        Load more content
+        Load more <strong>stuff</strong>
       </button>
     </div>
   </div>
