@@ -1,14 +1,14 @@
 ---
-title: 'Drupal 8 Search API Solr + Lando + Platform.sh'
+title: "Drupal 8 Search API Solr + Lando + Platform.sh"
 tags:
     - development
     - drupal
     - johno
-author: 'John Ouellet'
-date: '2019-08-02'
-summary: 'Setting up Solr is quick and fairly painless with Lando. This guide shall bring you to the promise land.'
+author: "John Ouellet"
+date: "2019-08-02"
+summary: "Setting up Solr is quick and fairly painless with Lando. This guide shall bring you to the promise land."
 id: johno
-pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
 location: Florida
 ---
 

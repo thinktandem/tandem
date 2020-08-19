@@ -1,29 +1,28 @@
 ---
-title: 'STREAMLINED DISCOVERY'
+title: "STREAMLINED DISCOVERY"
 logo: /images/clients/twinstar/twinstar.png
-org: 'TwinStar Credit Union'
-byline: '<strong>TwinStar Credit Union</strong> needed our team to bring their user research together with our technical recommendations to plan out the evolution of their site.'
+org: "TwinStar Credit Union"
 image: /images/case-studies/twinstar-cycle.jpg
-challenge: 'TwinStar is ready to modernize the UX and scalability of their site, a plan was needed to perform these tasks effectively.'
-solution: 'Tandem gathered the intelligence necessary to build a roadmap that will address the most immediate needs while laying the groundwork for planned future enhancements.'
-impact: 'A plan was created and Phase 1s efforts are expected to launch July 2019.'
+challenge: "TwinStar is ready to modernize the UX and scalability of their site, a plan was needed to perform these tasks effectively."
+solution: "Tandem gathered the intelligence necessary to build a roadmap that will address the most immediate needs while laying the groundwork for planned future enhancements."
+impact: "A plan was created and Phase 1s efforts are expected to launch July 2019."
 metrics:
-    - { key: KPIs, value: 'We defined success' }
-    - { key: Navigation, value: 'Streamlined UX' }
-    - { key: 'Technical Audit', value: 'Planning out what will work for TwinStar' }
+    - key: KPIs
+      value: "We defined success"
+    - key: Navigation
+      value: "Streamlined UX"
+    - key: "Technical Audit"
+      value: "Planning out what will work for TwinStar"
 background: 0046AD
-layout: CaseStudy
 slug: twinstar-credit-union-discovery
-dark: false
-private: false
-date: '2019-01-15'
+date: "2019-01-15"
 tags:
     - drupal
     - corporate
     - strategy
-meta:
-    - { name: description, content: '<strong>TwinStar Credit Union</strong> needed our team to bring their user research together with our technical recommendations to plan out the evolution of their site.' }
-    - { name: keywords, content: 'drupal,corporate,strategy,' }
+summary: "<strong>TwinStar Credit Union</strong> needed our team to bring their user research together with our technical recommendations to plan out the evolution of their site."
+client: "TwinStar Credit Union"
+site: "https://www.twinstarcu.com"
 ---
 
 TwinStar continually looks to understand the needs of their members. With a watchful eye to both improve their members’ experience as well as website management they are embarking on a several phase update to their website. 

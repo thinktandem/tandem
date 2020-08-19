@@ -1,14 +1,14 @@
 ---
-title: 'Transparency in Picking a Digital Partner'
+title: "Transparency in Picking a Digital Partner"
 tags:
     - drupal
     - misc
     - alecr
-author: 'Alec Reynolds'
-date: '2019-04-18'
-summary: 'Why we use services like Clutch.co to help you pick a digital partner faster.'
+author: "Alec Reynolds"
+date: "2019-04-18"
+summary: "Why we use services like Clutch.co to help you pick a digital partner faster."
 id: alecr
-pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
 location: California
 ---
 

@@ -1,16 +1,16 @@
 ---
-title: 'Lando + Contenta CMS + Nuxt Pt. 1'
+title: "Lando + Contenta CMS + Nuxt Pt. 1"
 tags:
     - development
     - api
     - drupal
     - javascript
     - geoffs
-author: 'Geoff St. Pierre'
-date: '2019-01-25'
-summary: 'Set up a headless Drupal architecture in Lando'
+author: "Geoff St. Pierre"
+date: "2019-01-25"
+summary: "Set up a headless Drupal architecture in Lando"
 id: geoffs
-pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
 location: Massachusetts
 ---
 

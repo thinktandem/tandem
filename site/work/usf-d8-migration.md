@@ -1,29 +1,29 @@
 ---
-title: 'MIGRATED INTRANET TO DRUPAL 8'
+title: "MIGRATED INTRANET TO DRUPAL 8"
 logo: /images/clients/usf/usf.png
-org: 'University of San Francisco'
-byline: 'Performance issues plagued <strong>USF’s</strong> Drupal 7 intranet and it was time for a better solution.  Tandem helped USF migrate their intranet and redid all of their custom functionality.'
+org: "University of San Francisco"
 image: /images/case-studies/usf-d8.png
-challenge: 'Create an intranet that is performant, easy to maintain and uses the best practices of Drupal.'
-solution: 'Migrate Organic Groups to Group, evaluate and eliminate redundant and unused functionality, rebuild custom functionality.'
-impact: 'Significant improvements on performance and usability of the intranet.'
+challenge: "Create an intranet that is performant, easy to maintain and uses the best practices of Drupal."
+solution: "Migrate Organic Groups to Group, evaluate and eliminate redundant and unused functionality, rebuild custom functionality."
+impact: "Significant improvements on performance and usability of the intranet."
 metrics:
-    - { key: Framework, value: 'Drupal 8' }
-    - { key: 'Project Time', value: '6 months' }
-    - { key: 'Entities Migrated', value: 250k }
+    - key: Framework
+      value: "Drupal 8"
+    - key: "Project Time"
+      value: "6 months"
+    - key: "Entities Migrated"
+      value: 250k
 background: 00574D
-layout: CaseStudy
 slug: usf-d8-migration
-dark: false
-private: false
-date: '2018-10-31'
+date: "2018-10-31"
 tags:
     - drupal
     - highereducation
     - development
-meta:
-    - { name: description, content: 'Performance issues plagued <strong>USF’s</strong> Drupal 7 intranet and it was time for a better solution.  Tandem helped USF migrate their intranet and redid all of their custom functionality.' }
-    - { name: keywords, content: 'drupal,highereducation,development,' }
+    - migration
+summary: "Performance issues plagued <strong>USF’s</strong> Drupal 7 intranet and it was time for a better solution.  Tandem helped USF migrate their intranet and redid all of their custom functionality."
+client: "University of San Francisco"
+site: "https://www.usfca.edu"
 ---
 
 The University of San Francisco (USF) intranet was functional but possessed many issues with usability, performance, extensibility, and maintainability.  The intranet was originally built off of Open Atrium in Drupal 7 and had been continually tweaked and added onto. This lead to shortcuts being taken, pieces of functionality started to be built but never worked right, and all in all a bad user experience.  USF needed to take a step back and reevaluate what the intranet and how they could fix it.

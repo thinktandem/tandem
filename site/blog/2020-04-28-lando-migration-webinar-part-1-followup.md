@@ -1,16 +1,17 @@
 ---
-title: 'Lando Migration Webinar Part 1 Followup'
+title: "Lando Migration Webinar Part 1 Followup"
 tags:
     - development
     - drupal
     - localdev
     - devops
+    - migration
     - johno
-author: 'John Ouellet'
-date: '2020-04-28'
-summary: 'This webinar shows how to setup and debug a Drupal 8/9 Migration with Lando.'
+author: "John Ouellet"
+date: "2020-04-28"
+summary: "This webinar shows how to setup and debug a Drupal 8/9 Migration with Lando."
 id: johno
-pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
 location: Florida
 ---
 

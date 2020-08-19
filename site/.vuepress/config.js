@@ -5,7 +5,9 @@ module.exports = {
     ['link', {rel: 'icon', href: '/favicon.png'}],
     ['link', {rel: 'stylesheet', href: '/styles/overrides.css'}],
     ['link', {rel: 'stylesheet', href: '//unpkg.com/fullpage.js/dist/fullpage.min.css'}],
-    ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Poppins:wght@600;900'}],
+    ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap'}],
+    ['script', {src: '//js.hs-scripts.com/6864374.js'}],
+    ['script', {src: '/js/mautic-tracking.js'}],
   ],
   plugins: {
     '@vuepress/blog': {
@@ -105,19 +107,34 @@ module.exports = {
     ],
     tags: {
       drupal: {
-        title: 'DIZZZRUPPAL',
-        byline: 'man so many things.',
-        pic: 'https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb',
+        title: '10+ years of Drupal Expertise',
+        byline: 'We have seen and done it all in Drupal on sites of every size and complexity.  Let our years or experience help bring your Drupal project to the next level.',
+        pic: '/images/tags/drupal-logo.png',
+      },
+      migration: {
+        title: 'Masters of Migrating Data',
+        byline: 'We have migrated dozens of sites for our clients over the years.  We are a little strange in the fact that we love handling complex migration situations.',
+        pic: '/images/tags/double-arrows.png',
+      },
+      wordpress: {
+        title: 'Title about WordPress',
+        byline: 'Words about WordPress.',
+        pic: '/images/tags/wordpress-logo.png',
+      },
+      vuepress: {
+        title: 'Title about VuePress',
+        byline: 'Words about VuePress.',
+        pic: '/images/tags/vuepress-logo.png',
+      },
+      laravel: {
+        title: 'Title about Laravel',
+        byline: 'Words about laravel.',
+        pic: '/images/tags/laravel-logo.png',
       },
       johno: {
         title: 'I dominate',
         byline: 'CRUSH CRUSH CRUSH',
         pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33',
-      },
-      vuepress: {
-        title: 'Static site magic.',
-        byline: 'Static site generations with vue.',
-        pic: 'https://vuepress.vuejs.org/hero.png',
       },
     },
   },

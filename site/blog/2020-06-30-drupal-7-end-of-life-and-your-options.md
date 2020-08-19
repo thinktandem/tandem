@@ -1,14 +1,14 @@
 ---
-title: 'Drupal 7 End of Life and Your Options'
+title: "Drupal 7 End of Life and Your Options"
 tags:
     - support
     - drupal
     - alecr
-author: 'Alec Reynolds'
-date: '2020-06-30'
-summary: 'A guide to Drupal 7 end of life and your options.'
+author: "Alec Reynolds"
+date: "2020-06-30"
+summary: "A guide to Drupal 7 end of life and your options."
 id: alecr
-pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
 location: California
 ---
 

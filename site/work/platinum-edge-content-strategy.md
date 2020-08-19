@@ -1,30 +1,28 @@
 ---
-title: 'Content Strategy'
+title: "Content Strategy"
 logo: /images/clients/pe/pe.png
-org: 'Platinum Edge'
-byline: 'We developed an editorial calendar aimed at <strong>Platinum Edge''s</strong> key audiences.'
-challenge: 'Platinum Edge needed engaging content that spoke to its specialized user base.'
-solution: 'Tandem developed an editorial calendar that would set the Platinum Edge team up for success.'
-impact: 'Content is regularly being produced and shared!'
-quote:
-    - { content: 'I have one speed. I have one gear: GO', author: 'Charlie Sheen' }
+org: "Platinum Edge"
+challenge: "Platinum Edge needed engaging content that spoke to its specialized user base."
+solution: "Tandem developed an editorial calendar that would set the Platinum Edge team up for success."
+impact: "Content is regularly being produced and shared!"
+
 metrics:
-    - { key: 'Increase in Content Production', value: ~300% }
-    - { key: 'Increase in Mobile Traffic', value: 15% }
-    - { key: 'Increase in Facebook Referrals', value: 40% }
+    - key: "Increase in Content Production"
+      value: ~300%
+    - key: "Increase in Mobile Traffic"
+      value: 15%
+    - key: "Increase in Facebook Referrals"
+      value: 40%
 tags:
     - drupal
     - corporate
     - strategy
 background: 4C4C4C
-layout: CaseStudy
 slug: platinum-edge-content-strategy
-dark: false
-private: false
-date: '2018-09-25'
-meta:
-    - { name: description, content: 'We developed an editorial calendar aimed at <strong>Platinum Edge''s</strong> key audiences.' }
-    - { name: keywords, content: 'drupal,corporate,strategy,' }
+date: "2018-09-25"
+summary: "We developed an editorial calendar aimed at <strong>Platinum Edge's</strong> key audiences."
+client: "Platinum Edge"
+site: "https://platinumedge.com"
 ---
 
 Platinum Edge literally wrote the book on SCRUM project management methodology...in fact, several books! With training and classes offered nationwide, these experts are as busy as they are knowledgeable. Our team needed to find a content strategy that would allow their team to grow their news/blog despite strict time constraints.

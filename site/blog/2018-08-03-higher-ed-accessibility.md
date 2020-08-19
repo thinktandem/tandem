@@ -1,16 +1,16 @@
 ---
-title: 'Higher Ed. & Accessibility'
+title: "Higher Ed. & Accessibility"
 tags:
     - accessibility
     - a11y
     - highereducation
     - donnab
-author: 'Donna Bungard'
-date: '2018-08-03'
-summary: 'And how to make it a little easier to manage'
+author: "Donna Bungard"
+date: "2018-08-03"
+summary: "And how to make it a little easier to manage"
 id: donnab
-pic: 'https://www.gravatar.com/avatar/80b0826906351617efdd8dbdf3cee68b'
-location: 'New Hampshire'
+pic: "https://www.gravatar.com/avatar/80b0826906351617efdd8dbdf3cee68b"
+location: "New Hampshire"
 ---
 
 So do you want the good news or bad news first? Bad news first, you’ve got it!

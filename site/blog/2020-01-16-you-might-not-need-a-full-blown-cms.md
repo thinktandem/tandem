@@ -1,13 +1,13 @@
 ---
-title: 'You Might Not Need a Full Blown CMS'
+title: "You Might Not Need a Full Blown CMS"
 tags:
     - seo
     - mikem
-author: 'Mike Milano'
-date: '2020-01-16'
-summary: 'A case for static sites'
+author: "Mike Milano"
+date: "2020-01-16"
+summary: "A case for static sites"
 id: mikem
-pic: 'https://www.gravatar.com/avatar/80b0826906351617efdd8dbdf3cee68b'
+pic: "https://www.gravatar.com/avatar/80b0826906351617efdd8dbdf3cee68b"
 location: California
 ---
 

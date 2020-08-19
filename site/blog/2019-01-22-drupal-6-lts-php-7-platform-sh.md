@@ -1,15 +1,15 @@
 ---
-title: 'Drupal 6 LTS + PHP 7 + Platform.sh'
+title: "Drupal 6 LTS + PHP 7 + Platform.sh"
 tags:
     - development
     - support
     - drupal
     - johno
-author: 'John Ouellet'
-date: '2019-01-22'
-summary: 'A quick and easy guide to getting Drupal 6 sites on a stable and secure platform'
+author: "John Ouellet"
+date: "2019-01-22"
+summary: "A quick and easy guide to getting Drupal 6 sites on a stable and secure platform"
 id: johno
-pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33'
+pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
 location: Florida
 ---
 

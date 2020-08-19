@@ -46,7 +46,6 @@
 import PostMeta from '@theme/components/PostMeta.vue';
 import PostFooter from '@theme/components/PostFooter.vue';
 import Toc from '@theme/components/Toc.vue';
-
 export default {
   components: {PostMeta, PostFooter, Toc},
   jsonld() {

@@ -1,15 +1,15 @@
 ---
-title: 'BADCamp 2017 ~ All the Things'
+title: "BADCamp 2017 ~ All the Things"
 tags:
     - development
     - conferences
     - drupal
     - geoffs
-author: 'Geoff St. Pierre'
-date: '2017-10-30'
-summary: 'BADCamp 2017 was packed with fun, sessions, and glory.'
+author: "Geoff St. Pierre"
+date: "2017-10-30"
+summary: "BADCamp 2017 was packed with fun, sessions, and glory."
 id: geoffs
-pic: 'https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9'
+pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
 location: Massachusetts
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: 'Let''s Get Small: Introduction to Microservices'
+title: "Let's Get Small: Introduction to Microservices"
 tags:
     - devops
     - alecr
-author: 'Alec Reynolds'
-date: '2016-09-10'
-summary: 'In software development, things change. Learn how a microservice architecture can help you adapt to changing requirements and scale applications in the cloud.'
+author: "Alec Reynolds"
+date: "2016-09-10"
+summary: "In software development, things change. Learn how a microservice architecture can help you adapt to changing requirements and scale applications in the cloud."
 id: alecr
-pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
 location: California
 ---
 

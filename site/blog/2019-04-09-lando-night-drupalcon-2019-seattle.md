@@ -1,16 +1,16 @@
 ---
-title: 'Lando Night @ DrupalCon 2019 Seattle'
+title: "Lando Night @ DrupalCon 2019 Seattle"
 tags:
     - localdev
     - Drupal
     - Community
     - Learning
     - alecr
-author: 'Alec Reynolds'
-date: '2019-04-09'
-summary: 'Peace, love, and Lando.'
+author: "Alec Reynolds"
+date: "2019-04-09"
+summary: "Peace, love, and Lando."
 id: alecr
-pic: 'https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5'
+pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
 location: California
 ---
 
