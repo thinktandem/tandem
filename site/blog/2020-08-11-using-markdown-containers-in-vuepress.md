@@ -29,7 +29,7 @@ module.exports = {
   extend: '@vuepress/theme-blog',
   plugins: [
     ['container', {
-      type: 'quote',
+      type: 'important',
       defaultTitle: '',
     }],
   ],
@@ -39,7 +39,7 @@ module.exports = {
 The only required key for this plugin is the type key.  What this key does is generate a CSS class with that type in it.  We then call the container in markdown with 3 colons like this:
 
 ```bash
-::: quote
+::: important
 Hello there
 :::
 ```
@@ -47,7 +47,7 @@ Hello there
 This will inturn render a HTML component that looks like:
 
 ```html
-<div class="custom-block quote">
+<div class="custom-block important">
   <p>Hello there</p>
 </div>
 ```
@@ -57,28 +57,30 @@ You may also noticed the key of defaultTitle in our setup.  You can define a tit
 
 
 ```bash
-::: quote Hello there
-~ Obi-Wan Kenobi
+::: important Hello there
+Obi-Wan Kenobi
 :::
 ```
 
 The output of this would be:
 
 ```html
-<div class="custom-block quote">
+<div class="custom-block important">
   <p class="custom-block-title">Hello there</p>
-  <p>~ Obi-Wan Kenobi</p>
+  <p>Obi-Wan Kenobi</p>
 </div>
 ```
 
 What this does is allow us to add a special ```<p>``` tag wrapper on the title so we can style it differently.  This is how ti looks on this site with our stylings:
 
-::: quote Hello there
-~ Obi-Wan Kenobi
+::: important Hello there
+Obi-Wan Kenobi
 :::
 
 That pretty much summarizes a very straightforward and easy to use example.  Let's dive in to more advanced techniques now.
 
+> Hello there
+> - Benny K
 
 
 ## Advanced Example
@@ -198,11 +200,11 @@ Now to put this all together, in our index.styl I am putting the following CSS:
 The half column will now render like this:
 
 :::::: col-wrapper
-::: col-half
+::: col-half One
 Half column
 :::
 
-::: col-half
+::: col-half Two
 Half column
 :::
 :::::::::
@@ -210,15 +212,15 @@ Half column
 The thirds column will render like this:
 
 :::::: col-wrapper
-::: col-third
+::: col-third One
 Third column
 :::
 
-::: col-third
+::: col-third Two
 Third column
 :::
 
-::: col-third
+::: col-third Three
 Third column
 :::
 ::::::

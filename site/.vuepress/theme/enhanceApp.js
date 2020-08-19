@@ -14,4 +14,11 @@ export default ({ Vue, options, router, siteData, isServer }) => { // eslint-dis
     const VueFullpage = require('vue-fullpage.js').default;
     Vue.use(VueFullpage);
   }
+
+  // Provide mechanisms for passing around global stylingz
+  Vue.use({install: Vue => {
+    const EventBus = new Vue();
+    Vue.prototype.$themeListener = handler => EventBus.$on('update-theme', handler);
+    Vue.prototype.$updateTheme = data => EventBus.$emit('update-theme', data);
+  }});
 };

@@ -6,7 +6,14 @@
         :alt="title"
         :src="pic"
       >
-      <h1>{{ title }}</h1>
+      <a
+        v-if="link"
+        :href="link"
+        target="_blank"
+      ><h1>{{ title }}</h1></a>
+      <h1 v-else>
+        {{ title }}
+      </h1>
     </div>
     <div class="section-header-right">
       <slot />
@@ -22,6 +29,10 @@ export default {
       type: String,
       required: true,
       default: 'Title',
+    },
+    link: {
+      type: String,
+      default: null,
     },
     pic: {
       type: String,
