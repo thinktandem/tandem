@@ -7,7 +7,7 @@
     itemscope
   >
     <div class="work-for">
-      Awesome stuff done for <a
+      {{ prefix }} <a
         :href="link"
         target="_blank"
         itemprop="name"
@@ -17,7 +17,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'WorkMeta',
   props: {
@@ -33,6 +32,10 @@ export default {
     link: {
       type: String,
       default: null,
+    },
+    prefix: {
+      type: String,
+      default: 'Awesome work done with',
     },
   },
 };

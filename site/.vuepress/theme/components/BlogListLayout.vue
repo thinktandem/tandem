@@ -92,7 +92,7 @@
       <button
         class="btn btn-load-more"
       >
-        Load more content
+        Load more <strong>stuff</strong>
       </button>
     </div>
   </div>
@@ -128,9 +128,8 @@ export default {
       this.$pagination.paginationIndex++;
       let next = this.$pagination._paginationPages[this.$pagination.paginationIndex];
       let nextPages = this.$pagination._matchedPages.slice(next.interval[0], next.interval[1] + 1);
-      for (let i = 0; i < nextPages.length; i++) {
-        this.sort(this.pages.push(nextPages[i]));
-      }
+      for (let i = 0; i < nextPages.length; i++) this.pages.push(nextPages[i]);
+      this.pages = this.sort(this.pages);
     },
     resolveLink(page) {
       return (page.frontmatter.link2Original) ? page.frontmatter.originalLink : page.path;
