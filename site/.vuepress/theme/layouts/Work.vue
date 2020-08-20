@@ -8,16 +8,18 @@
         <p>Articles, webinars, events, podcasts, trainings, work, case studies and technical guides. We've done all the media all over the world.</p>
       </div>
     </SectionHeader>
+    <BlogListLayout v-if="$pagination" />
     <Content />
   </div>
 </template>
 
 <script>
 import SectionHeader from '@theme/components/SectionHeader';
+import BlogListLayout from '@theme/components/BlogListLayout';
 export default {
-  components: {SectionHeader},
+  components: {SectionHeader, BlogListLayout},
   mounted() {
-    this.$updateTheme({background: 'black', headerColor: 'white'});
+    this.$updateTheme({background: 'white', headerColor: 'black'});
   },
 };
 </script>
