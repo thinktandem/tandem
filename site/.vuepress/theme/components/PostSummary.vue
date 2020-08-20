@@ -1,69 +1,73 @@
 <template>
-  <article
-    class="post"
-    itemprop="blogPost"
-    itemscope
-    itemtype="https://schema.org/BlogPosting"
+  <NavLink
+    :link="resolveLink(page)"
   >
-    <meta
-      itemprop="mainEntityOfPage"
-      :content="resolveLink(page)"
+    <article
+      class="post"
+      itemprop="blogPost"
+      itemscope
+      itemtype="https://schema.org/BlogPosting"
     >
-
-    <header
-      itemprop="name headline"
-    >
-      <NavLink
-        class="post-title"
-        :link="resolveLink(page)"
+      <meta
+        itemprop="mainEntityOfPage"
+        :content="resolveLink(page)"
       >
-        {{ page.title }}
-      </NavLink>
-      <PostMeta
-        :id="page.frontmatter.id"
-        :name="page.frontmatter.author"
-        :date="page.frontmatter.date"
-        :link="page.frontmatter.link"
-        :location="page.frontmatter.location"
-        :pic="page.frontmatter.pic"
-        pic-align="left"
-      />
-    </header>
 
-    <client-only>
-      <!-- eslint-disable vue/no-v-html -->
-      <p
-        v-if="page.excerpt"
-        class="post-summary"
-        itemprop="description"
-        v-html="page.excerpt"
-      />
-      <p
-        v-else
-        class="post-summary"
-        itemprop="description"
-        v-html="page.frontmatter.summary || page.summary"
-      />
-      <!-- eslint-enable vue/no-v-html -->
-    </client-only>
-
-    <footer>
-      <div
-        v-if="page.frontmatter.tags"
-        class="post-meta post-tag"
-        itemprop="keywords"
+      <header
+        itemprop="name headline"
       >
-        <TagIcon />
-        <router-link
-          v-for="tag in resolveTags(page.frontmatter.tags)"
-          :key="tag"
-          :to="'/tag/' + tag"
+        <NavLink
+          class="post-title"
+          :link="resolveLink(page)"
         >
-          {{ tag }}
-        </router-link>
-      </div>
-    </footer>
-  </article>
+          {{ page.title }}
+        </NavLink>
+        <PostMeta
+          :id="page.frontmatter.id"
+          :name="page.frontmatter.author"
+          :date="page.frontmatter.date"
+          :link="page.frontmatter.link"
+          :location="page.frontmatter.location"
+          :pic="page.frontmatter.pic"
+          pic-align="left"
+        />
+      </header>
+
+      <client-only>
+        <!-- eslint-disable vue/no-v-html -->
+        <p
+          v-if="page.excerpt"
+          class="post-summary"
+          itemprop="description"
+          v-html="page.excerpt"
+        />
+        <p
+          v-else
+          class="post-summary"
+          itemprop="description"
+          v-html="page.frontmatter.summary || page.summary"
+        />
+        <!-- eslint-enable vue/no-v-html -->
+      </client-only>
+
+      <footer>
+        <div
+          v-if="page.frontmatter.tags"
+          class="post-meta post-tag"
+          itemprop="keywords"
+        >
+          <TagIcon />
+          <router-link
+            v-for="tag in resolveTags(page.frontmatter.tags)"
+            :key="tag"
+            :to="'/tag/' + tag"
+          >
+            {{ tag }}
+          </router-link>
+        </div>
+      </footer>
+    </article>
+  </NavLink>
 </template>
 
 <script>
@@ -92,85 +96,41 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.post
-  padding-bottom 25px
-  margin-bottom 50px
-  padding-top 50px
-  margin-top 50px
-  border-top 1px solid $borderColor
-
-  &:last-child
-    border-botton 1px solid $borderColor
-    margin-bottom 0px
-
-.post-title
-  font-size 2.57em
-  font-weight 600
-  letter-spacing -0.0987654321em
-  margin-top 0
-  border-bottom 0
-  font-family "Poppins", "Helvetica Neue", Arial, sans-seri
-  color $textColor
-  cursor pointer
-  transition all 0.2s
+a
   text-decoration none
-
-  &:hover
-    color $accentColor
-    text-decoration none
-
-.post-summary
-  font-size 14px
-  color $landoGrey
-  font-weight 300
-  font-size 1.14rem
-  line-height 2
-  letter-spacing -1.04px
+.post
   margin-bottom 2em
+  position relative
+  border 1px solid #CCCCCC
+  padding 4em 4em
 
-.post-meta
-  display inline-flex
-  align-items center
-  font-size 12px
-  line-height 12px
-
-  &:not(:last-child)
-    margin-bottom 3px
-    margin-right 20px
-
-  svg
-    margin-right 5px
-    width 14px
-    height 14px
-
-  @media (max-width: $MQMobile)
-    display flex
-
-    &:not(:last-child)
-      margin-bottom 10px
-
-.post-author
-  color rgba($darkTextColor, 0.84)
-  font-weight 400
-
-.post-date
-  color rgba($darkTextColor, 0.54)
-  font-weight 200
-
-.post-tag
-  color rgba($darkTextColor, 0.54)
-  font-weight 200
-  font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-  font-size 1.1
-  a
-    color inherit
-    font-weight 200
+  .post-title
+    font-size 2.18em
+    font-weight 600
+    letter-spacing -0.0987654321em
+    margin-top 0
+    border-bottom 0
+    font-family "Poppins", "Helvetica Neue", Arial, sans-seri
+    color $textColor
+    cursor pointer
+    transition all 0.2s
     text-decoration none
-    margin-right 5px
 
     &:hover
       color $accentColor
+      text-decoration none
 
-.written-by, .work-for
-  border 0
+  .post-summary
+    font-size 14px
+    color $landoGrey
+    font-weight 300
+    font-size 1.17rem
+    line-height 2
+    letter-spacing -1.04px
+
+  .post-meta-author
+    margin-top 1em
+  footer
+    opacity 0
+    height 0
 </style>

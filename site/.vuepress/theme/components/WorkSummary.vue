@@ -1,72 +1,77 @@
 <template>
-  <article
-    class="work"
-    :style="bgImgStylez"
-    itemprop="blogPost"
-    itemscope
-    itemtype="https://schema.org/BlogPosting"
+  <NavLink
+    class="work-title"
+    :link="resolveLink(page)"
   >
-    <style>
-      .work .work-title {color: {{ textColor }};}
-      .work .work-logo.{{ page.key }} img {filter: {{ logoChanger }};}
-    </style>
-    <div
-      class="work-wrapper"
-      :style="bgStylez"
+    <article
+      class="work"
+      :style="bgImgStylez"
+      itemprop="blogPost"
+      itemscope
+      itemtype="https://schema.org/BlogPosting"
     >
-      <meta
-        itemprop="mainEntityOfPage"
-        :content="resolveLink(page)"
+      <style>
+        .work .work-title {color: {{ textColor }};}
+        .work .work-logo.{{ page.key }} img {filter: {{ logoChanger }};}
+      </style>
+      <div
+        class="work-wrapper"
+        :style="bgStylez"
       >
-
-      <header
-        itemprop="name headline"
-      >
-        <NavLink
-          class="work-title"
-          :link="resolveLink(page)"
+        <meta
+          itemprop="mainEntityOfPage"
+          :content="resolveLink(page)"
         >
-          {{ page.title }}
-        </NavLink>
-      </header>
 
-      <client-only>
-        <!-- eslint-disable vue/no-v-html -->
-        <p
-          v-if="page.excerpt"
-          class="work-summary"
-          itemprop="description"
-          v-html="page.excerpt"
-        />
-        <p
-          v-else
-          class="work-summary"
-          itemprop="description"
-          v-html="page.frontmatter.summary || page.summary"
-        />
-        <!-- eslint-enable vue/no-v-html -->
-      </client-only>
-
-      <div :class="logoClasses">
-        <img src="/images/logos/poets.png">
-      </div>
-      <footer>
-        <div
-          v-if="page.frontmatter.tags"
-          class="work-meta work-tag"
-          itemprop="keywords"
+        <header
+          itemprop="name headline"
         >
-          <router-link
-            v-for="tag in resolveTags(page.frontmatter.tags)"
-            :key="tag"
-            :to="'/tag/' + tag"
+          <NavLink
+            class="work-title"
+            :link="resolveLink(page)"
           >
-            {{ tag }}
-          </router-link>
+            {{ page.title }}
+          </NavLink>
+        </header>
+
+        <client-only>
+          <!-- eslint-disable vue/no-v-html -->
+          <p
+            v-if="page.excerpt"
+            class="work-summary"
+            itemprop="description"
+            v-html="page.excerpt"
+          />
+          <p
+            v-else
+            class="work-summary"
+            itemprop="description"
+            v-html="page.frontmatter.summary || page.summary"
+          />
+          <!-- eslint-enable vue/no-v-html -->
+        </client-only>
+
+        <div :class="logoClasses">
+          <img src="/images/logos/poets.png">
         </div>
-      </footer>
-    </div>
-  </article>
+        <footer>
+          <div
+            v-if="page.frontmatter.tags"
+            class="work-meta work-tag"
+            itemprop="keywords"
+          >
+            <router-link
+              v-for="tag in resolveTags(page.frontmatter.tags)"
+              :key="tag"
+              :to="'/tag/' + tag"
+            >
+              {{ tag }}
+            </router-link>
+          </div>
+        </footer>
+      </div>
+    </article>
+  </NavLink>
 </template>
 
 <script>
@@ -126,6 +131,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+a
+  text-decoration none
 .work
   margin-bottom 2em
   position relative
