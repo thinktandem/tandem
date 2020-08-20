@@ -7,7 +7,7 @@
   >
     <meta
       itemprop="mainEntityOfPage"
-      :content="resolveLink(data)"
+      :content="resolveLink(page)"
     >
 
     <header
@@ -15,17 +15,17 @@
     >
       <NavLink
         class="post-title"
-        :link="resolveLink(data)"
+        :link="resolveLink(page)"
       >
-        {{ data.title }}
+        {{ page.title }}
       </NavLink>
       <PostMeta
-        :id="data.frontmatter.id"
-        :name="data.frontmatter.author"
-        :date="data.frontmatter.date"
-        :link="data.frontmatter.link"
-        :location="data.frontmatter.location"
-        :pic="data.frontmatter.pic"
+        :id="page.frontmatter.id"
+        :name="page.frontmatter.author"
+        :date="page.frontmatter.date"
+        :link="page.frontmatter.link"
+        :location="page.frontmatter.location"
+        :pic="page.frontmatter.pic"
         pic-align="left"
       />
     </header>
@@ -33,29 +33,29 @@
     <client-only>
       <!-- eslint-disable vue/no-v-html -->
       <p
-        v-if="data.excerpt"
+        v-if="page.excerpt"
         class="post-summary"
         itemprop="description"
-        v-html="data.excerpt"
+        v-html="page.excerpt"
       />
       <p
         v-else
         class="post-summary"
         itemprop="description"
-        v-html="data.frontmatter.summary || data.summary"
+        v-html="page.frontmatter.summary || page.summary"
       />
       <!-- eslint-enable vue/no-v-html -->
     </client-only>
 
     <footer>
       <div
-        v-if="data.frontmatter.tags"
+        v-if="page.frontmatter.tags"
         class="post-meta post-tag"
         itemprop="keywords"
       >
         <TagIcon />
         <router-link
-          v-for="tag in resolveTags(data.frontmatter.tags)"
+          v-for="tag in resolveTags(page.frontmatter.tags)"
           :key="tag"
           :to="'/tag/' + tag"
         >
@@ -75,7 +75,7 @@ export default {
   name: 'PostSummary',
   components: {PostMeta, TagIcon},
   props: {
-    data: {
+    page: {
       type: Object,
       required: true,
     },

@@ -7,7 +7,7 @@
       :is="page.id === 'work' ? 'WorkSummary' : 'PostSummary'"
       v-for="page in pages"
       :key="page.key"
-      :data="page"
+      :page="page"
       itemprop="blogPost"
       itemscope
       itemtype="https://schema.org/BlogPosting"
