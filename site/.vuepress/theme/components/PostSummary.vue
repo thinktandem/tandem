@@ -55,7 +55,7 @@
       >
         <TagIcon />
         <router-link
-          v-for="tag in resolvePostTags(data.frontmatter.tags)"
+          v-for="tag in resolveTags(data.frontmatter.tags)"
           :key="tag"
           :to="'/tag/' + tag"
         >
@@ -69,6 +69,7 @@
 <script>
 import {TagIcon} from 'vue-feather-icons';
 import PostMeta from '@theme/components/PostMeta.vue';
+import utils from '@theme/utils.js';
 
 export default {
   name: 'PostSummary',
@@ -81,11 +82,10 @@ export default {
   },
   methods: {
     resolveLink(page) {
-      return (page.frontmatter.link2Original) ? page.frontmatter.originalLink : page.path;
+      return utils.resolveLink(page);
     },
-    resolvePostTags(tags) {
-      if (!tags || Array.isArray(tags)) return tags;
-      return [tags];
+    resolveTags(tags) {
+      return utils.resolveTags(tags);
     },
   },
 };

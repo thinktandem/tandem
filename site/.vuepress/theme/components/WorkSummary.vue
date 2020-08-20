@@ -14,7 +14,7 @@
       itemprop="name headline"
     >
       <NavLink
-        class="post-title"
+        class="work-title"
         :link="resolveLink(data)"
       >
         {{ data.title }}
@@ -30,13 +30,13 @@
       <!-- eslint-disable vue/no-v-html -->
       <p
         v-if="data.excerpt"
-        class="post-summary"
+        class="work-summary"
         itemprop="description"
         v-html="data.excerpt"
       />
       <p
         v-else
-        class="post-summary"
+        class="work-summary"
         itemprop="description"
         v-html="data.frontmatter.summary || data.summary"
       />
@@ -46,12 +46,11 @@
     <footer>
       <div
         v-if="data.frontmatter.tags"
-        class="post-meta post-tag"
+        class="work-meta work-tag"
         itemprop="keywords"
       >
-        <TagIcon />
         <router-link
-          v-for="tag in resolvePostTags(data.frontmatter.tags)"
+          v-for="tag in resolveTags(data.frontmatter.tags)"
           :key="tag"
           :to="'/tag/' + tag"
         >
@@ -63,12 +62,12 @@
 </template>
 
 <script>
-import {TagIcon} from 'vue-feather-icons';
 import WorkMeta from '@theme/components/WorkMeta.vue';
+import utils from '@theme/utils.js';
 
 export default {
   name: 'WorkSummary',
-  components: {WorkMeta, TagIcon},
+  components: {WorkMeta},
   props: {
     data: {
       type: Object,
@@ -77,18 +76,17 @@ export default {
   },
   methods: {
     resolveLink(page) {
-      return (page.frontmatter.link2Original) ? page.frontmatter.originalLink : page.path;
+      return utils.resolveLink(page);
     },
-    resolvePostTags(tags) {
-      if (!tags || Array.isArray(tags)) return tags;
-      return [tags];
+    resolveTags(tags) {
+      return utils.resolveTags(tags);
     },
   },
 };
 </script>
 
 <style lang="stylus" scoped>
-.post
+.work
   padding-bottom 25px
   margin-bottom 50px
   padding-top 50px
@@ -99,7 +97,7 @@ export default {
     border-botton 1px solid $borderColor
     margin-bottom 0px
 
-.post-title
+.work-title
   font-size 2.57em
   font-weight 600
   letter-spacing -0.0987654321em
@@ -115,7 +113,7 @@ export default {
     color $accentColor
     text-decoration none
 
-.post-summary
+.work-summary
   font-size 14px
   color $landoGrey
   font-weight 300
@@ -124,7 +122,7 @@ export default {
   letter-spacing -1.04px
   margin-bottom 2em
 
-.post-meta
+.work-meta
   display inline-flex
   align-items center
   font-size 12px
@@ -145,15 +143,15 @@ export default {
     &:not(:last-child)
       margin-bottom 10px
 
-.post-author
+.work-author
   color rgba($darkTextColor, 0.84)
   font-weight 400
 
-.post-date
+.work-date
   color rgba($darkTextColor, 0.54)
   font-weight 200
 
-.post-tag
+.work-tag
   color rgba($darkTextColor, 0.54)
   font-weight 200
   font-family "Poppins", "Helvetica Neue", Arial, sans-serif
@@ -167,6 +165,9 @@ export default {
     &:hover
       color $accentColor
 
-.written-by, .work-for
+.work-for
   border 0
+footer
+  opacity 0
+  height 0
 </style>

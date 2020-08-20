@@ -90,4 +90,6 @@ export default {
     font-family "Poppins", "Helvetica Neue", Arial, sans-serif
     button
       all unset
+  .written-by, .work-for
+    border 0
 </style>
