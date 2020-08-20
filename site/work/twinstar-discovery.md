@@ -20,12 +20,12 @@ tags:
     - drupal
     - corporate
     - strategy
-summary: "<strong>TwinStar Credit Union</strong> needed our team to bring their user research together with our technical recommendations to plan out the evolution of their site."
+summary: "<strong>TwinStar Credit Union</strong> needed our with our technical recommendations to plan out the evolution of their site."
 client: "TwinStar Credit Union"
 site: "https://www.twinstarcu.com"
 ---
 
-TwinStar continually looks to understand the needs of their members. With a watchful eye to both improve their members’ experience as well as website management they are embarking on a several phase update to their website. 
+TwinStar continually looks to understand the needs of their members. With a watchful eye to both improve their members’ experience as well as website management they are embarking on a several phase update to their website.
 
 To prepare for this the Tandem team needed to work closely with TwinStar to understand their unique member base. Combining research previously compiled, analytics, competition, and goal setting our strategy team took a dive into the who the members are and why they turned to TwinStar. Our technical lead analyzed the technologies used and those available. Through this understanding, we were able to:
 - help them to identify key performance indicators (KPI) and record their current standing
@@ -33,5 +33,5 @@ To prepare for this the Tandem team needed to work closely with TwinStar to unde
 - perform an analysis of the technologies used and their ease of migration to a newer platform
 - planed out next steps with a focus on the initial phase with timeline and budget
 
-With the development expected to kick off in February 2019, this Discovery has given us the groundwork to make educated decisions as TwinStar’s site continues to evolve. 
+With the development expected to kick off in February 2019, this Discovery has given us the groundwork to make educated decisions as TwinStar’s site continues to evolve.
 
