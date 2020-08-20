@@ -57,12 +57,20 @@ Poetry lovers everywhere, rejoice: your home on the internet just got a lot bett
 :::
 
 :::::: col-wrapper
-::: col-half Tech
-Third column
+::: col-half Strategy & Design
+- Industry Research
+- Analytics Review
+- Persona Development
+- Mobile & Desktop Mockups
+- Invision Prototypes
 :::
 
-::: col-half Tech
-Third column
+::: col-half Complex Migration
+- Drupal 7 to Decoupled Drupal 8
+- Tens of Thousands of Nodes and Users
+- Removed Unused / Duplicate Data
+- Rearchitected Content Types
+- Blackbaud API Integration
 ![Walt Whitman](https://i.pinimg.com/originals/2b/7e/02/2b7e02ed7453da00e776bd594a6d4e3c.png)
 :::
 ::::::

@@ -155,7 +155,7 @@ export default {
           font-weight 900
       img
         position absolute
-        bottom -3.5em
+        bottom -5em
         right 0
         opacity .08
         z-index 0
@@ -172,4 +172,8 @@ export default {
         margin-top 25px
         h2, .h2
           font-size 2.33em
+    .custom-block
+      &.col-full, &.col-half, &.col-third
+        img
+          bottom -1.2em
 </style>
