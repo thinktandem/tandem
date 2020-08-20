@@ -4,11 +4,13 @@ id: poets
 client: Poets.org
 summary: "The Academy of American Poets needed a refreshed design that respected their time-honored brand."
 link: https://poets.org/
+logo: /images/logos/poets.png
 
 header:
   title: "Rebuilding<br /> poetry's home on <br />the internet"
   image: /images/poets.png
   background:
+    background-color: "#4d9bf3"
     background-image: url(/images/poets-bg.png)
     background-position: 100% 20%
     background-size: auto

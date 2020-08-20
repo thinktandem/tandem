@@ -9,7 +9,7 @@
         <p>{{ byline }}</p>
       </div>
     </SectionHeader>
-    <BlogListLayout
+    <ContentList
       v-if="$pagination"
       :sort-order="sortOrder"
     />
@@ -18,10 +18,10 @@
 </template>
 
 <script>
-import BlogListLayout from '@theme/components/BlogListLayout';
+import ContentList from '@theme/components/ContentList';
 import SectionHeader from '@theme/components/SectionHeader';
 export default {
-  components: {BlogListLayout, SectionHeader},
+  components: {ContentList, SectionHeader},
   data() {
     return {
       sortOrder: ['work', 'blog'],

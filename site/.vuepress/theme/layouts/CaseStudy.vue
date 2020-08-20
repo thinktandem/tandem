@@ -35,6 +35,7 @@
 
 <script>
 import SectionHeader from '@theme/components/SectionHeader';
+import utils from '@theme/utils.js';
 
 export default {
   name: 'CaseStudy',
@@ -47,10 +48,10 @@ export default {
   },
   computed: {
     bgStylez() {
-      return this.topper.background ? this.topper.background : {};
+      return utils.getWorkBackgroundStyles(this.topper);
     },
     textColor() {
-      return this.theme.text ? this.theme.text : '#47474a';
+      return utils.getWorkTextColor(this.theme);
     },
   },
   mounted() {
@@ -65,21 +66,7 @@ export default {
   },
   methods: {
     getTopper() {
-      // Get the frontmatter
-      const frontmatter = this.$page.frontmatter || {};
-      // Get the defaults
-      const defaults = {
-        client: frontmatter.client || frontmatter.org,
-        image: frontmatter.image,
-        link: frontmatter.link,
-        title: frontmatter.summary || frontmatter.byline || frontmatter.title,
-      };
-      // Merge in new header key if we have it
-      if (frontmatter.header) {
-        Object.assign(defaults, this.$page.frontmatter.header);
-      }
-      // Return
-      return defaults;
+      return utils.parseWorkFrontMatter(this.$page.frontmatter);
     },
   },
 };
