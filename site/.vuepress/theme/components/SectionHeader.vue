@@ -103,6 +103,8 @@ h2
         width 200px
         position relative
         bottom: 6px
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
   .section-header-right
     color black
     font-weight 300
