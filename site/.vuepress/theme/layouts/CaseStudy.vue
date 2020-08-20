@@ -17,6 +17,18 @@
     </style>
     <div class="content-wrapper-tandem case-study-layout">
       <SectionHeader
+        v-if="topper.logo"
+        :logo="topper.logo"
+        :title="topper.client"
+        :link="topper.link"
+      >
+        <h1
+          class="h2"
+          v-html="topper.title"
+        />
+      </SectionHeader>
+      <SectionHeader
+        v-else
         :title="topper.client"
         :link="topper.link"
       >
@@ -69,6 +81,7 @@ export default {
       const frontmatter = this.$page.frontmatter || {};
       // Get the defaults
       const defaults = {
+        logo: frontmatter.logo,
         client: frontmatter.client || frontmatter.org,
         image: frontmatter.image,
         link: frontmatter.link,
@@ -96,15 +109,21 @@ export default {
   .section-header
     .section-header-left
       margin-right 175px
+      &.logo
+        margin-top 15px
+        margin-right 150px
       a, h1
         font-weight 600
         text-decoration none
     .section-header-right
-      h2
+      h2, .h2
         font-family "Poppins", "Helvetica Neue", Arial, sans-serif
         line-height 1.04
         font-size 3.33em
         font-weight 700
+        letter-spacing -.19rem
+        text-decoration none
+        margin-top: 0;
   .showcase
     text-align center
     margin-bottom 4em
@@ -145,11 +164,12 @@ export default {
   .content-wrapper-tandem.case-study-layout
     .showcase
       img
-        max-width 100vw
+        max-width 100%
         margin-left -20px
         margin-right -20px
     .section-header
       .section-header-right
-        h2
+        margin-top 25px
+        h2, .h2
           font-size 2.33em
 </style>

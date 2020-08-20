@@ -1,6 +1,29 @@
 <template>
   <div class="section-header">
-    <div class="section-header-left">
+    <div
+      v-if="logo"
+      class="section-header-left logo"
+    >
+      <a
+        v-if="link"
+        :href="link"
+        target="_blank"
+      >
+        <img
+          :alt="title"
+          :src="logo"
+        >
+      </a>
+      <img
+        v-else
+        :alt="title"
+        :src="logo"
+      >
+    </div>
+    <div
+      v-else
+      class="section-header-left reg"
+    >
       <img
         v-if="pic"
         :alt="title"
@@ -38,6 +61,10 @@ export default {
       type: String,
       default: null,
     },
+    logo: {
+      type: String,
+      default: null,
+    },
   },
 };
 </script>
@@ -63,13 +90,19 @@ h2
   .section-header-left, .section-header-right
     display inline-block
   .section-header-left
-    margin-right 100px
-    width 20%
-    img
-      width 100px
-      border-radius: 100%
-      position relative
-      bottom: 6px
+    &.reg
+      margin-right 100px
+      width 20%
+      img
+        width 100px
+        border-radius: 100%
+        position relative
+        bottom: 6px
+    &.logo
+      img
+        width 200px
+        position relative
+        bottom: 6px
   .section-header-right
     color black
     font-weight 300
