@@ -36,6 +36,19 @@
         ><img :src="topper.image"></a>
       </div>
       <Content itemprop="articleBody" />
+      <div
+        v-if="$page.frontmatter.tags"
+        class="work-meta work-tag"
+        itemprop="keywords"
+      >
+        <router-link
+          v-for="tag in resolveTags($page.frontmatter.tags)"
+          :key="tag"
+          :to="'/tag/' + tag"
+        >
+          {{ tag }}
+        </router-link>
+      </div>
     </div>
   </div>
 </template>
@@ -84,6 +97,9 @@ export default {
   methods: {
     getTopper() {
       return utils.parseWorkFrontMatter(this.$page.frontmatter);
+    },
+    resolveTags(tags) {
+      return utils.resolveTags(tags);
     },
   },
 };
