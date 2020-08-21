@@ -25,6 +25,7 @@ const parseWorkFrontMatter = (frontmatter = {}) => {
     image: frontmatter.image,
     link: frontmatter.link,
     title: frontmatter.summary || frontmatter.byline || frontmatter.title,
+    logo: frontmatter.logo,
   };
   // Merge in new header key if we have it
   if (frontmatter.header) {

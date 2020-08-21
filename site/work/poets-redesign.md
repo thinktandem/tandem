@@ -9,6 +9,7 @@ logo: /images/logos/poets.png
 header:
   title: "Rebuilding<br /> poetry's home on <br />the internet"
   image: /images/poets.png
+  logo: /images/logos/poets.png
   background:
     background-color: "#4d9bf3"
     background-image: url(/images/poets-bg.png)

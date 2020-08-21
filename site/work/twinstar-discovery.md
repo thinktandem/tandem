@@ -1,6 +1,5 @@
 ---
 title: "STREAMLINED DISCOVERY"
-logo: /images/clients/twinstar/twinstar.png
 org: "TwinStar Credit Union"
 image: /images/case-studies/twinstar-cycle.jpg
 challenge: "TwinStar is ready to modernize the UX and scalability of their site, a plan was needed to perform these tasks effectively."
@@ -20,7 +19,7 @@ tags:
     - drupal
     - corporate
     - strategy
-summary: "<strong>TwinStar Credit Union</strong> needed our with our technical recommendations to plan out the evolution of their site."
+summary: "<strong>TwinStar Credit Union</strong> needed our team to bring their user research together with our technical recommendations to plan out the evolution of their site."
 client: "TwinStar Credit Union"
 site: "https://www.twinstarcu.com"
 ---

@@ -7,11 +7,11 @@
         :src="pic"
       >
       <a
-        v-if="link"
+        v-if="link && !picOnly"
         :href="link"
         target="_blank"
       ><h1>{{ title }}</h1></a>
-      <h1 v-else>
+      <h1 v-else-if="!link && !picOnly">
         {{ title }}
       </h1>
     </div>
@@ -35,6 +35,10 @@ export default {
       default: null,
     },
     pic: {
+      type: String,
+      default: null,
+    },
+    picOnly: {
       type: String,
       default: null,
     },

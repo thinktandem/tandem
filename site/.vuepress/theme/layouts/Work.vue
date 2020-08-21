@@ -2,7 +2,7 @@
   <div class="content-wrapper-tandem content-wrapper-work">
     <SectionHeader title="Work.">
       <h2>
-        Black background. White text. <br> Wider container. <br>
+        Black background. <br> White text. <br> Wider container. <br>
       </h2>
       <div>
         <p>These are the things you want for a showcase of work.</p>

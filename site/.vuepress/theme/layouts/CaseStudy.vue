@@ -7,6 +7,7 @@
   >
     <style>
       h1 {color: {{ textColor }};}
+      .content-wrapper-tandem.case-study-layout .section-header .section-header-left img {filter: {{ logoChanger }};}
       .section-header .section-header-right h2 {color: {{ textColor }};}
       .content-wrapper {color: {{ textColor }}; border-color: {{ textColor }};}
       blockquote {border-top: 1px solid {{ textColor }};}
@@ -18,9 +19,11 @@
     <div class="content-wrapper-tandem case-study-layout">
       <SectionHeader
         :title="topper.client"
+        :pic="topper.logo"
+        :pic-only="topper.logo"
         :link="topper.link"
       >
-        <h2 v-html="topper.title" />
+        <h1 v-html="topper.title" />
       </SectionHeader>
       <div class="showcase">
         <a
@@ -49,6 +52,9 @@ export default {
   computed: {
     bgStylez() {
       return utils.getWorkBackgroundStyles(this.topper);
+    },
+    logoChanger() {
+      return utils.getColorFilter(this.theme.text).filter;
     },
     textColor() {
       return utils.getWorkTextColor(this.theme);
@@ -86,12 +92,19 @@ export default {
       a, h1
         font-weight 600
         text-decoration none
+      img
+        all unset
+        height 27px
+        margin-top 27px
     .section-header-right
-      h2
-        font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      h1
+        font-family Poppins, Helvetica Neue, Arial, sans-serif
         line-height 1.04
         font-size 3.33em
         font-weight 700
+        margin 0 0 1em
+        letter-spacing -.19rem
+        text-decoration none
   .showcase
     text-align center
     margin-bottom 4em

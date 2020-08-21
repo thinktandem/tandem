@@ -51,8 +51,11 @@
           <!-- eslint-enable vue/no-v-html -->
         </client-only>
 
-        <div :class="logoClasses">
-          <img src="/images/logos/poets.png">
+        <div
+          v-if="page.frontmatter.logo"
+          :class="logoClasses"
+        >
+          <img :src="page.frontmatter.logo">
         </div>
         <footer>
           <div
