@@ -8,16 +8,16 @@
         <p>These are the things you want for a showcase of work.</p>
       </div>
     </SectionHeader>
-    <ContentList
-      v-if="$pagination"
-      class="work-grid"
-    />
-    <Content v-else />
     <div class="custom-block important">
       <p class="custom-block-title">
         Ageless poetry. No boundaries.
       </p> <p>Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better.</p>
     </div>
+    <ContentList
+      v-if="$pagination"
+      class="work-grid"
+    />
+    <Content v-else />
   </div>
 </template>
 
@@ -28,7 +28,6 @@ import SectionHeader from '@theme/components/SectionHeader';
 export default {
   components: {ContentList, SectionHeader},
   mounted() {
-    this.$updateTheme({background: 'black', headerColor: 'white', text: 'white'});
   },
 };
 </script>
@@ -39,7 +38,7 @@ export default {
     max-width 1140px
     .section-header
       h1, h2, p
-        color white
+        color black
       .section-header-right
         text-align right
         @media (max-width: $MQMobile)
@@ -62,11 +61,11 @@ export default {
         font-weight 300
         font-size 1.33rem
         letter-spacing -1.04px
-        color white
+        color black
       &.important
         padding 7em 0
-        border-top 1px solid white
-        border-bottom 1px solid white
+        border-top 1px solid black
+        border-bottom 1px solid black
         p
           &.custom-block-title
             font-size 3.64em

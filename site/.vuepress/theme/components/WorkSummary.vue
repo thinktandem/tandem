@@ -145,7 +145,7 @@ a
   position relative
   .work-wrapper
     opacity .86
-    padding 4em 4em
+    padding 4em
 
   .work-title
     font-size 2.57em
@@ -179,4 +179,19 @@ a
   footer
     opacity 0
     height 0
+@media (max-width: $MQMobile)
+  .work
+    margin-bottom 1em
+    .work-wrapper
+      padding 1em
+  .content-wrapper-tandem.content-wrapper-work,
+  .content-wrapper-tandem.content-wrapper-tag
+    .work-title
+      font-size 1.68em
+    .work-summary
+      font-size .76em
+      margin-bottom 3em
+    .work-logo
+      right .4em
+      bottom .4em
 </style>

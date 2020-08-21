@@ -8,64 +8,68 @@
       itemscope
       itemtype="https://schema.org/BlogPosting"
     >
-      <meta
-        itemprop="mainEntityOfPage"
-        :content="resolveLink(page)"
+      <div
+        class="post-wrapper"
       >
-
-      <header
-        itemprop="name headline"
-      >
-        <NavLink
-          class="post-title"
-          :link="resolveLink(page)"
+        <meta
+          itemprop="mainEntityOfPage"
+          :content="resolveLink(page)"
         >
-          {{ page.title }}
-        </NavLink>
-        <PostMeta
-          :id="page.frontmatter.id"
-          :name="page.frontmatter.author"
-          :date="page.frontmatter.date"
-          :link="page.frontmatter.link"
-          :location="page.frontmatter.location"
-          :pic="page.frontmatter.pic"
-          pic-align="left"
-        />
-      </header>
 
-      <client-only>
-        <!-- eslint-disable vue/no-v-html -->
-        <p
-          v-if="page.excerpt"
-          class="post-summary"
-          itemprop="description"
-          v-html="page.excerpt"
-        />
-        <p
-          v-else
-          class="post-summary"
-          itemprop="description"
-          v-html="page.frontmatter.summary || page.summary"
-        />
-        <!-- eslint-enable vue/no-v-html -->
-      </client-only>
-
-      <footer>
-        <div
-          v-if="page.frontmatter.tags"
-          class="post-meta post-tag"
-          itemprop="keywords"
+        <header
+          itemprop="name headline"
         >
-          <TagIcon />
-          <router-link
-            v-for="tag in resolveTags(page.frontmatter.tags)"
-            :key="tag"
-            :to="'/tag/' + tag"
+          <NavLink
+            class="post-title"
+            :link="resolveLink(page)"
           >
-            {{ tag }}
-          </router-link>
-        </div>
-      </footer>
+            {{ page.title }}
+          </NavLink>
+          <PostMeta
+            :id="page.frontmatter.id"
+            :name="page.frontmatter.author"
+            :date="page.frontmatter.date"
+            :link="page.frontmatter.link"
+            :location="page.frontmatter.location"
+            :pic="page.frontmatter.pic"
+            pic-align="left"
+          />
+        </header>
+
+        <client-only>
+          <!-- eslint-disable vue/no-v-html -->
+          <p
+            v-if="page.excerpt"
+            class="post-summary"
+            itemprop="description"
+            v-html="page.excerpt"
+          />
+          <p
+            v-else
+            class="post-summary"
+            itemprop="description"
+            v-html="page.frontmatter.summary || page.summary"
+          />
+          <!-- eslint-enable vue/no-v-html -->
+        </client-only>
+
+        <footer>
+          <div
+            v-if="page.frontmatter.tags"
+            class="post-meta post-tag"
+            itemprop="keywords"
+          >
+            <TagIcon />
+            <router-link
+              v-for="tag in resolveTags(page.frontmatter.tags)"
+              :key="tag"
+              :to="'/tag/' + tag"
+            >
+              {{ tag }}
+            </router-link>
+          </div>
+        </footer>
+      </div>
     </article>
   </NavLink>
 </template>
@@ -103,9 +107,12 @@ a
   position relative
   border 1px solid #CCCCCC
   padding 4em 4em
+  .post-wrapper
+    opacity .86
+    padding 4em
 
   .post-title
-    font-size 2.18em
+    font-size 3.18em
     font-weight 600
     letter-spacing -0.0987654321em
     margin-top 0
@@ -124,7 +131,7 @@ a
     font-size 14px
     color $landoGrey
     font-weight 300
-    font-size 1.17rem
+    font-size 1.68rem
     line-height 2
     letter-spacing -1.04px
 
@@ -133,4 +140,20 @@ a
   footer
     opacity 0
     height 0
+@media (max-width: $MQMobile)
+  .post
+    padding 1em
+    margin-bottom 1em
+    .post-wrapper
+      padding 1em
+  .content-wrapper-tandem.content-wrapper-blog,
+  .content-wrapper-tandem.content-wrapper-tag
+    .post-title
+      font-size 2em
+    .post-summary
+      font-size 1.2em
+      margin-bottom 3em
+    .post-logo
+      right .4em
+      bottom .4em
 </style>
