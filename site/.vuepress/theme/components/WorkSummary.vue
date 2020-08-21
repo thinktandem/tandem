@@ -12,7 +12,7 @@
     >
       <style>
         .work .work-title {color: {{ textColor }};}
-        .work .work-logo.{{ page.key }} img {filter: {{ logoChanger }};}
+        .work .work-logo.{{ page.key }} img {filter: {{ logoChanger }}; height: {{ logoHeight }}px;}
       </style>
       <div
         class="work-wrapper"
@@ -101,14 +101,18 @@ export default {
     bgImgStylez() {
       return utils.getWorkBackgroundStyles(this.topper);
     },
-    textColor() {
-      return utils.getWorkTextColor(this.theme);
+    logoChanger() {
+      return utils.getColorFilter(this.theme.text).filter;
     },
     logoClasses() {
       return `work-logo ${this.page.key}`;
     },
-    logoChanger() {
-      return utils.getColorFilter(this.theme.text).filter;
+    logoHeight() {
+      const factor = this.page.frontmatter.logoHeight ? this.page.frontmatter.logoHeight : 1;
+      return factor * 25;
+    },
+    textColor() {
+      return utils.getWorkTextColor(this.theme);
     },
   },
   mounted() {
@@ -171,8 +175,6 @@ a
     position absolute
     right 1em
     bottom 1em
-    img
-      height 25px
 
   footer
     opacity 0

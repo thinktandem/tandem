@@ -7,7 +7,11 @@
   >
     <style>
       h1 {color: {{ textColor }};}
-      .content-wrapper-tandem.case-study-layout .section-header .section-header-left img {filter: {{ logoChanger }};}
+      .content-wrapper-tandem.case-study-layout .section-header .section-header-left img {
+      filter: {{ logoChanger }};
+      height: {{ logoHeight }}px;
+      margin-top: {{ logoMargin }}px;
+      }
       .section-header .section-header-right h2 {color: {{ textColor }};}
       .content-wrapper {color: {{ textColor }}; border-color: {{ textColor }};}
       blockquote {border-top: 1px solid {{ textColor }};}
@@ -56,6 +60,13 @@ export default {
     logoChanger() {
       return utils.getColorFilter(this.theme.text).filter;
     },
+    logoHeight() {
+      const factor = this.$page.frontmatter.logoHeight ? this.$page.frontmatter.logoHeight : 1;
+      return factor * 27;
+    },
+    logoMargin() {
+      return this.$page.frontmatter.logoMargin ? this.$page.frontmatter.logoMargin : 27;
+    },
     textColor() {
       return utils.getWorkTextColor(this.theme);
     },
@@ -94,8 +105,6 @@ export default {
         text-decoration none
       img
         all unset
-        height 27px
-        margin-top 27px
     .section-header-right
       h1
         font-family Poppins, Helvetica Neue, Arial, sans-serif

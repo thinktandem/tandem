@@ -40,17 +40,22 @@ export default {
     .section-header
       h1, h2, p
         color white
+      .section-header-right
+        text-align right
+        @media (max-width: $MQMobile)
+          text-align center
     .work-grid
       display flex-grid
       article
-        width 50%
-        height 50%
+        width 100%
+        height 500px
         display inline-flex
-
         @media (max-width: $MQMobile)
           width 100%
           height 100%
           display block
+    .work-title
+      font-size 2em
 
     .custom-block
       p
