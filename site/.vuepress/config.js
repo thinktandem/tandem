@@ -18,6 +18,9 @@ module.exports = {
           itemPermalink: '/blog/:year/:month/:day/:slug',
           itemLayout: 'Post',
           layout: 'Blog',
+          pagination: {
+            lengthPerPage: 10,
+          },
         },
         {
           id: 'work',
@@ -25,6 +28,9 @@ module.exports = {
           itemPermalink: '/work/:slug',
           itemLayout: 'CaseStudy',
           layout: 'Work',
+          pagination: {
+            lengthPerPage: 5,
+          },
         },
         {
           id: 'pages',
@@ -41,6 +47,9 @@ module.exports = {
           keys: ['tags'],
           path: '/tag/',
           scopeLayout: 'Tag',
+          pagination: {
+            lengthPerPage: 10,
+          },
         },
       ],
       sitemap: {

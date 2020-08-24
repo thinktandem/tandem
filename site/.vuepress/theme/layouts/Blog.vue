@@ -2,7 +2,7 @@
   <div class="content-wrapper-tandem content-wrapper-blog">
     <SectionHeader title="LeBlog.">
       <h2>
-        A <em>content</em> focus demands a simple design. Like this.
+        A <em>content</em> focus demands <br>a simple design. <br>Like this.
       </h2>
       <div>
         <p>Articles, webinars, events, podcasts, trainings, work, case studies and technical guides. We've done all the media all over the world.</p>

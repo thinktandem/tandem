@@ -57,7 +57,6 @@ export default {
       let next = this.$pagination._paginationPages[this.$pagination.paginationIndex];
       let nextPages = this.$pagination._matchedPages.slice(next.interval[0], next.interval[1] + 1);
       for (let i = 0; i < nextPages.length; i++) this.pages.push(nextPages[i]);
-      this.pages = this.sort(this.pages);
     },
     sortByType(a, b) {
       if (this.sortOrder.indexOf(a.id) > this.sortOrder.indexOf(b.id)) {
