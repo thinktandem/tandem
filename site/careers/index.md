@@ -1,7 +1,7 @@
 ---
 metaTitle: Contact | Tandem
 pageClass: contact-page
-layout: Contact
+layout: Page
 ---
 
 <SectionHeader title="Contact Us.">
@@ -13,4 +13,9 @@ layout: Contact
   </div>
 </SectionHeader>
 
+::: important Heyo!
+Here's some of the learning we've been doing lately
+:::
+
 <ContactForm />
+

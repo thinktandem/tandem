@@ -2,12 +2,17 @@
   <div class="content-wrapper-tandem content-wrapper-blog">
     <SectionHeader title="LeBlog.">
       <h2>
-        A <em>content</em> focus demands <br>a simple design. <br>Like this.
+        Content demands. <br>A simple design. <br>Like this.
       </h2>
       <div>
-        <p>Articles, webinars, events, podcasts, trainings, work, case studies and technical guides. We've done all the media all over the world.</p>
+        <p>Here's some of the learning we've been doing lately.</p>
       </div>
     </SectionHeader>
+    <div class="custom-block important">
+      <p class="custom-block-title">
+        All the media. All over the world.
+      </p> <p>Articles, webinars, events, podcasts, trainings, work, case studies and technical guides. <br> We've done all the media all over the world.</p>
+    </div>
     <ContentList v-if="$pagination" />
     <Content v-else />
   </div>
@@ -53,8 +58,9 @@ export default {
         color black
       &.important
         padding 7em 0
-        border-top 1px solid black
-        border-bottom 1px solid black
+        border-top 1px solid $borderColor
+        border-bottom 1px solid $borderColor
+        margin-bottom 2em
         p
           &.custom-block-title
             font-size 3.64em

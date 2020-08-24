@@ -21,6 +21,7 @@ module.exports = {
           pagination: {
             lengthPerPage: 10,
           },
+          title: 'Blog',
         },
         {
           id: 'work',
@@ -31,6 +32,7 @@ module.exports = {
           pagination: {
             lengthPerPage: 5,
           },
+          title: 'Work',
         },
         {
           id: 'pages',
@@ -39,6 +41,7 @@ module.exports = {
           itemPermalink: '/:slug',
           itemLayout: 'Page',
           layout: 'About',
+          title: 'About',
         },
       ],
       frontmatters: [
