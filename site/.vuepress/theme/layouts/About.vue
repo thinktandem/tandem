@@ -2,7 +2,7 @@
   <div class="content-wrapper-tandem content-wrapper-about">
     <SectionHeader title="About.">
       <h2>
-        We get it done. <br> & do it right. <br> To build our best. <br>
+        We get it done. <br> & do it right. <br> To build your best. <br>
       </h2>
       <div>
         <p>We focus on what's important </p>

@@ -1,8 +1,8 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-about">
-    <SectionHeader title="About.">
+    <SectionHeader title="Contact Us.">
       <h2>
-        We get it done. <br> & do it right. <br> To build our best. <br>
+        U.S. Coast to coast. <br> and travelling. <br> around the world. <br>
       </h2>
       <div>
         <p>We focus on what's important </p>
@@ -13,35 +13,18 @@
         Care. And. Communicate.
       </p> <p>Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better.</p>
     </div>
-    <div class="custom-block point">
-      <p class="custom-block-title">
-        1. Focus on important.
-      </p> <p>Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better.</p>
-    </div>
-    <div class="custom-block point">
-      <p class="custom-block-title">
-        2. Keep it simple.
-      </p> <p>Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better.</p>
-    </div>
-    <div class="custom-block point">
-      <p class="custom-block-title">
-        3. Build it to last.
-      </p> <p>Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better.</p>
-    </div>
-    <div class="custom-block point">
-      <p class="custom-block-title">
-        4. Give a shit.
-      </p> <p>Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better.</p>
-    </div>
+    <ContactForm />
   </div>
 </template>
 
 <script>
+import ContactForm from '@theme/components/ContactForm';
 import SectionHeader from '@theme/components/SectionHeader';
 
 export default {
-  components: {SectionHeader},
+  components: {ContactForm, SectionHeader},
   mounted() {
+    console.log(navigator);
   },
 };
 </script>

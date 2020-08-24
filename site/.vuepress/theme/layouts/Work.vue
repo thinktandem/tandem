@@ -8,26 +8,37 @@
         <p>These are the things you want for a showcase of work.</p>
       </div>
     </SectionHeader>
-    <div class="custom-block important">
+
+    <div class="custom-block point">
       <p class="custom-block-title">
-        Ageless poetry. No boundaries.
-      </p> <p>Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better.</p>
+        Featured Clients.
+      </p>
+      <ClientGrid :clients="featuredClients" />
     </div>
-    <ContentList
-      v-if="$pagination"
-      class="work-grid"
-    />
-    <Content v-else />
+
+    <ContentList class="work-grid" />
   </div>
 </template>
 
 <script>
+import ClientGrid from '@theme/components/ClientGrid';
 import ContentList from '@theme/components/ContentList';
 import SectionHeader from '@theme/components/SectionHeader';
 
 export default {
-  components: {ContentList, SectionHeader},
+  components: {ClientGrid, ContentList, SectionHeader},
+  data() {
+    return {
+      clients: [
+        {name: 'Academy of American Poets', link: '/work/poets-redesign/', logo: '/images/logos/poets.png'},
+        {name: 'Amazee.io', logo: '/images/logos/amazeeio_right.png'},
+        {name: 'University of San Francisco', link: '/work/usf-d8-migration/', logo: '/images/logos/usf.png'},
+      ],
+      featuredClients: [],
+    };
+  },
   mounted() {
+    this.featuredClients = this.clients.sort(() => Math.random() - 0.5).slice(0, 3);
   },
 };
 </script>
@@ -55,21 +66,16 @@ export default {
           display block
     .work-title
       font-size 2em
-
     .custom-block
       p
         font-weight 300
         font-size 1.33rem
         letter-spacing -1.04px
         color black
-      &.important
-        padding 7em 0
-        border-top 1px solid $borderColor
+      &.point
         border-bottom 1px solid $borderColor
         margin-bottom 2em
-        p
-          &.custom-block-title
-            font-size 3.64em
-            font-family GalaxieCopernicus, PT Serif, serif
+        border-top 1px solid $borderColor
+        padding 2em 0
 
 </style>
