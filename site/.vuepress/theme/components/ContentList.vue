@@ -83,7 +83,7 @@ export default {
     text-align center
     background $lightGrey
     padding 1em
-    color $darkTextColort
+    color $darkTextColor
     margin 2em 0em
     cursor pointer
     font-family "Poppins", "Helvetica Neue", Arial, sans-serif

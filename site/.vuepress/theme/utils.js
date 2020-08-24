@@ -7,15 +7,16 @@ import {hexToCSSFilter} from 'hex-to-css-filter';
 
 // Defaults
 const defaultDark = '#47474a';
+const defaultPink = '#ed3f7a';
 
 // Get color filter
 const getColorFilter = (color = defaultDark) => hexToCSSFilter(convertCssColorNameToHex(color));
 
 // Get case study background style
-const getWorkBackgroundStyles = topper => topper.background ? topper.background : {};
+const getWorkBackgroundStyles = topper => topper.background ? topper.background : {background: defaultPink};
 
 // Get case study text color
-const getWorkTextColor = theme => theme.text ? theme.text : defaultDark;
+const getWorkTextColor = theme => theme.text ? theme.text : 'white';
 
 // Parse case study front matter
 const parseWorkFrontMatter = (frontmatter = {}) => {
@@ -26,6 +27,13 @@ const parseWorkFrontMatter = (frontmatter = {}) => {
     link: frontmatter.link,
     title: frontmatter.summary || frontmatter.byline || frontmatter.title,
     logo: frontmatter.logo,
+    theme: {
+      background: '#ed3f7a',
+      text: '#fff',
+      headerActive: 'white',
+      headerHover: 'white',
+      headerColor: 'white',
+    },
   };
   // Merge in new header key if we have it
   if (frontmatter.header) {

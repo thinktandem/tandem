@@ -64,8 +64,9 @@ export default {
         color black
       &.important
         padding 7em 0
-        border-top 1px solid black
-        border-bottom 1px solid black
+        border-top 1px solid $borderColor
+        border-bottom 1px solid $borderColor
+        margin-bottom 2em
         p
           &.custom-block-title
             font-size 3.64em

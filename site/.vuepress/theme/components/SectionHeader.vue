@@ -55,7 +55,7 @@ h1
 h2
   color black
   font-family GalaxieCopernicus, PT Serif, serif
-  font-weight 300
+  font-weight 500
   line-height 1.33
   margin 0
   margin-bottom 1em

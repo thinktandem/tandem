@@ -24,7 +24,6 @@ theme:
   headerActive: "#00543C"
   text: "#00543C"
 
-
 date: "2018-10-31"
 tags:
   - drupal

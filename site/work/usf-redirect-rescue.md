@@ -1,31 +1,34 @@
 ---
-title: "USF Performance Rescue"
-logo: /images/clients/usf/usf.png
-org: "University of San Francisco"
-image: /images/case-studies/usf-rescue.jpg
-challenge: "Find and eliminate a bug causing frequent downtime to USF's primary marketing site."
-solution: "Employ a custom debugging module, BlazeMeter and NewRelic to locate and squash bug."
-impact: "Consistent uptime. Peace of mind for USF staff. Less code to manage going forward."
+title: "Performance Rescue"
+id: usf
+client: "University of San Francisco"
+summary: "We quickly fixed a mission critical bug causing periodic downtime to University of San Francisco's main marketing site."
+link: "https://www.usfca.edu"
+logo: /images/logos/usf.png
+logoHeight: 2
+logoMargin: 15
 
-metrics:
-    - key: "Solved In"
-      value: "72 hours"
-    - key: BlazeMeter
-      value: 75rpm
-    - key: Framework
-      value: "Drupal 7"
-    - key: Profiling
-      value: NewRelic
+header:
+  title: "Building for<br/>the future"
+  image: /images/case-studies/usf-d8.png
+  background:
+    background-color: "#FDBB30"
+    background-position: 100% 20%
+    background-size: auto
+    background-repeat: no-repeat
+
+theme:
+  background: "#FDBB30"
+  headerColor: "#00543C"
+  headerHover: "#00543C"
+  headerActive: "#00543C"
+  text: "#00543C"
+
+date: "2017-09-25"
 tags:
     - drupal
     - highereducation
     - rescue
-background: 00574D
-slug: usf-redirect-rescue
-date: "2017-09-25"
-summary: "We quickly fixed a mission critical bug causing periodic downtime to <strong>University of San Francisco's</strong> main marketing site."
-client: "University of San Francisco"
-site: "https://www.usfca.edu/"
 ---
 
 For months the University of San Francisco was consistently, but seemingly randomly experiencing major downtime on their main [marketing site](http://usfca.edu). After many frustrating days of troubleshooting, they called on Tandem to isolate and resolve the underlying issue.

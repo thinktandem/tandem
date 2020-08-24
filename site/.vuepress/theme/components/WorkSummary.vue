@@ -4,15 +4,18 @@
     :link="resolveLink(page)"
   >
     <article
-      class="work"
+      :class="wrapperClasses"
       :style="bgImgStylez"
       itemprop="blogPost"
       itemscope
       itemtype="https://schema.org/BlogPosting"
     >
       <style>
-        .work .work-title {color: {{ textColor }};}
-        .work .work-logo.{{ page.key }} img {filter: {{ logoChanger }}; height: {{ logoHeight }}px;}
+        .work.{{ page.key }} .work-title {color: {{ textColor }};}
+        .work.{{ page.key }} .work-logo img {filter: {{ logoChanger }}; height: {{ logoHeight }}px;}
+        .work.{{ page.key }}:hover img {filter: {{ logoHover }}; height: {{ logoHeight }}px;}
+        .work.{{ page.key }}:hover .work-title {color: {{ theme.headerHover }};}
+        .work.{{ page.key }}:hover .work-summary {color: {{ theme.headerHover }};}
       </style>
       <div
         class="work-wrapper"
@@ -52,10 +55,15 @@
         </client-only>
 
         <div
-          v-if="page.frontmatter.logo"
-          :class="logoClasses"
+          class="work-logo"
         >
-          <img :src="page.frontmatter.logo">
+          <img
+            v-if="page.frontmatter.logo"
+            :src="page.frontmatter.logo"
+          >
+          <div v-else>
+            {{ page.frontmatter.client }}
+          </div>
         </div>
         <footer>
           <div
@@ -104,8 +112,8 @@ export default {
     logoChanger() {
       return utils.getColorFilter(this.theme.text).filter;
     },
-    logoClasses() {
-      return `work-logo ${this.page.key}`;
+    logoHover() {
+      return utils.getColorFilter(this.theme.headerHover).filter;
     },
     logoHeight() {
       const factor = this.page.frontmatter.logoHeight ? this.page.frontmatter.logoHeight : 1;
@@ -113,6 +121,9 @@ export default {
     },
     textColor() {
       return utils.getWorkTextColor(this.theme);
+    },
+    wrapperClasses() {
+      return `work ${this.page.key}`;
     },
   },
   mounted() {
@@ -147,7 +158,7 @@ a
     opacity .86
     padding 4em
 
-  .work-title
+  .work-title, .work-logo
     font-size 2.57em
     font-weight 600
     letter-spacing -0.0987654321em
@@ -156,11 +167,11 @@ a
     font-family "Poppins", "Helvetica Neue", Arial, sans-seri
     color inherit
     cursor pointer
-    transition all 0.2s
+    transition none
     text-decoration none
 
     &:hover
-      color $accentColor
+      color inherit
       text-decoration none
 
   .work-summary
@@ -175,6 +186,7 @@ a
     position absolute
     right 1em
     bottom 1em
+    font-size .8em
 
   footer
     opacity 0

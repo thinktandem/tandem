@@ -1,10 +1,24 @@
 ---
 title: "Content Strategy"
-logo: /images/clients/pe/pe.png
 org: "Platinum Edge"
 challenge: "Platinum Edge needed engaging content that spoke to its specialized user base."
 solution: "Tandem developed an editorial calendar that would set the Platinum Edge team up for success."
 impact: "Content is regularly being produced and shared!"
+
+header:
+  title: "Building for<br/>the future"
+  image: /images/twinstar.png
+  background:
+    background-color: "#83BCFF"
+    background-position: 100% 20%
+    background-size: auto
+    background-repeat: no-repeat
+
+theme:
+  headerColor: white
+  headerHover: white
+  headerActive: white
+  text: white
 
 metrics:
     - key: "Increase in Content Production"
