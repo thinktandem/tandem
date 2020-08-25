@@ -9,7 +9,7 @@
       </div>
     </SectionHeader>
 
-    <div class="custom-block point">
+    <div class="custom-block point clients">
       <p class="custom-block-title">
         Featured Clients.
       </p>
@@ -18,8 +18,44 @@
 
     <ContentList
       class="work-grid"
-      more-text="Show more work"
+      more-text="Show more recent work"
     />
+
+    <div class="custom-block point tags">
+      <p class="custom-block-title">
+        Explore<br> other work.
+      </p>
+      <div class="tag-wrapper">
+        <div class="custom-block col-wrapper">
+          <div class="custom-block col-third">
+            <p class="custom-block-title">
+              Strategy
+            </p>
+            <p>Half column</p>
+          </div>
+          <div class="custom-block col-third">
+            <p class="custom-block-title">
+              Strategy
+            </p>
+            <p>Half column</p>
+          </div>
+          <div class="custom-block col-third">
+            <p class="custom-block-title">
+              Strategy
+            </p>
+            <p>Half column</p>
+          </div>
+        </div>
+        <div class="custom-block col-wrapper">
+          <div class="custom-block col-full">
+            <p class="custom-block-title">
+              Strategy
+            </p>
+            <p>Half column</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -67,6 +103,8 @@ export default {
           width 100%
           height 100%
           display block
+      .load-more
+        margin-bottom 2em
 
     .work-title
       font-size 2em
@@ -81,5 +119,11 @@ export default {
         margin-bottom 2em
         border-top 1px solid $borderColor
         padding 2em 0
+        &.tags
+          border-bottom 0
 
+    .tag-wrapper
+      .custom-block
+        background $lightGrey
+        margin 1em
 </style>

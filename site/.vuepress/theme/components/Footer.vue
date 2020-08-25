@@ -100,22 +100,32 @@ export default {};
           margin-left 30px
     .menu-secondary
       margin-top .5em
+      margin-right -12px
       a
-        font-size .86em
+        font-size .76em
         text-transform uppercase
-        margin-left 1em
+        margin-left 0em
         color lighten($darkTextColor, 15%);
+        &:after
+          content '\00a0\00a0'
+        &:before
+          content '\00a0\00a0'
         &:hover
           color $tandemPink
+          &:after
+            content: " ]"
+          &:before
+            content: "[ "
 @media (max-width $MQMobile)
   .footer-container
     flex-direction column-reverse
-
     .footer-copyright, .footer-links
       flex 1 1
       text-align center
       margin auto
       padding 1em 2em
+    .footer-copyright
+      width 75%
     .footer-links
       .menu-primary
         ul
