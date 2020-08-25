@@ -1,47 +1,49 @@
 <template>
   <footer id="footer">
-    <div class="footer-top">
-      <div class="inner">
-        <div class="footer-image">
-          <svg
-            version="1.1"
-            baseProfile="full"
-            xmlns="http://www.w3.org/2000/svg"
-            height="200"
-            width="200"
+    <div class="footer-container">
+      <div class="footer-copyright">
+        <span class="copyright">© 2020</span> TANDEM
+      </div>
+      <div class="footer-links">
+        <div
+          class="menu-primary"
+        >
+          <ul
+            v-if="$themeConfig.nav"
           >
-            <circle
-              cx="100"
-              cy="100"
-              r="50"
-              fill="#ed3f7a"
-            />
-          </svg>
+            <li
+              v-for="item in $themeConfig.nav"
+              :key="item.text"
+            >
+              <NavLink :link="item.link">
+                {{ item.text }}
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="menu-secondary"
+        >
+          <NavLink link="/careers/">
+            Careers
+          </NavLink>
+          <NavLink link="https://handbook.thinktandem.io">
+            Handbook
+          </NavLink>
+          <NavLink link="https://twitter.com/thinktandem">
+            Twitter
+          </NavLink>
+          <NavLink link="https://github.com/thinktandem">
+            GitHub
+          </NavLink>
+          <NavLink link="/terms/">
+            Terms of Use
+          </NavLink>
+          <NavLink link="/privacy/">
+            Privacy Policy
+          </NavLink>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <div>
-        <a
-          target="_blank"
-          href="https://twitter.com/thinktandem"
-        >Follow us</a> |
-        <a
-          target="_blank"
-          href="https://github.com/thinktandem"
-        >GitHub</a> |
-        <a
-          target="_blank"
-          href="https://docs.thinktandem.io"
-        >Documentation</a>
-      </div>
-      <div>
-        <a href="/terms/">Terms</a> |
-        <a href="/privacy/">Privacy Policy</a>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      Copyright © 2016-present Tandem
     </div>
   </footer>
 </template>
@@ -52,27 +54,73 @@ export default {};
 
 <style lang="stylus">
 #footer
-  background-color: white
-  text-align: center
-  .footer-top
-    padding: 2em
-    border-top: 1px dashed lighten($landoGrey, 80%)
-    max-width: $contentWidth
-    margin: auto
-    background-color: white
-  .footer-bottom
-    max-width: $contentWidth
-    margin: auto
-    text-align: center
-    padding-bottom: 2em
-    a
-      color: $landoGrey
-      font-family: "GalaxieCopernicus", PT Serif, Serif
+  background-color white
+.footer-container
+  padding 3em 0em
+  display flex
+  max-width 1140px
+  margin auto
+  border-top 1px solid $borderColor
+  background-color white
+  .footer-copyright, .footer-links
+    padding 0
+    margin 0
   .footer-copyright
-    background-color: lighten($landoGrey, 95%)
-    color: lighten($landoGrey, 30%)
-    padding: 1em
-    margin: auto
-    text-align: center
-    font-family: "GalaxieCopernicus", PT Serif, Serif
+    width 32%
+    text-align left
+    font-family "GalaxieCopernicus", PT Serif, Serif
+    color $tandemGrey
+    font-size .8em
+    align-self center
+    .copyright
+      color $tandemPink
+      font-weight 900
+  .footer-links
+    width 70%
+    text-align right
+    a
+      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      text-decoration none
+
+    .menu-primary
+      a
+        font-size 20px
+        letter-spacing -1.67px
+        color $tandemGrey
+        &:hover
+          color $tandemPink
+      ol, ul
+        list-style none
+        margin 0
+        padding 0
+      ul
+        display flex
+        justify-content flex-end
+        li
+          margin-left 30px
+    .menu-secondary
+      margin-top .5em
+      a
+        font-size .86em
+        text-transform uppercase
+        margin-left 1em
+        color lighten($darkTextColor, 15%);
+        &:hover
+          color $tandemPink
+@media (max-width $MQMobile)
+  .footer-container
+    flex-direction column-reverse
+
+    .footer-copyright, .footer-links
+      flex 1 1
+      text-align center
+      margin auto
+      padding 1em 2em
+    .footer-links
+      .menu-primary
+        ul
+          justify-content center
+          margin-left -20px
+          li
+            margin-left 20px
 </style>

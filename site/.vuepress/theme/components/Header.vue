@@ -363,13 +363,12 @@ nav
         margin-left 20px
         a
           font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-          // color lighten(#3eaf7c, 30%)
-          font-size: 20px;
-          text-decoration: none;
-          letter-spacing: -1.67px;
+          font-size 20px
+          text-decoration none
+          letter-spacing -1.67px
 
 
-@media (min-width: $MQSmall)
+@media (min-width $MQSmall)
   header
     &.open
       nav
@@ -380,7 +379,7 @@ nav
               a
                 font-size 2.5em
 
-@media (max-width: $MQMobile)
+@media (max-width $MQMobile)
   header
     padding 10px
     &.dehamburger

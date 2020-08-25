@@ -107,7 +107,7 @@ export default {
 
 <style lang="stylus">
 .content-wrapper-tandem.case-study-layout
-  max-width 940px
+  max-width 1140px
   blockquote
     background transparent
     border-left 0
