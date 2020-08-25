@@ -175,6 +175,6 @@ export default {
         margin-right -20px
     .section-header
       .section-header-right
-        h2
+        h1
           font-size 2.33em
 </style>

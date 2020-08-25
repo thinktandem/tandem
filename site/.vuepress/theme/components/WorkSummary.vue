@@ -154,6 +154,7 @@ a
 .work
   margin-bottom 2em
   position relative
+
   .work-wrapper
     opacity .86
     padding 4em
@@ -191,6 +192,7 @@ a
   footer
     opacity 0
     height 0
+    display none
 @media (max-width: $MQMobile)
   .work
     margin-bottom 1em

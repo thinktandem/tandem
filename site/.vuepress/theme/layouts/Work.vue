@@ -16,7 +16,10 @@
       <ClientGrid :clients="featuredClients" />
     </div>
 
-    <ContentList class="work-grid" />
+    <ContentList
+      class="work-grid"
+      more-text="Show more work"
+    />
   </div>
 </template>
 
@@ -64,6 +67,7 @@ export default {
           width 100%
           height 100%
           display block
+
     .work-title
       font-size 2em
     .custom-block

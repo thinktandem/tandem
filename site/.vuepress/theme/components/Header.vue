@@ -80,6 +80,25 @@
             </div>
           </li>
         </ul>
+        <div
+          id="menu-secondary"
+          class="menu-secondary"
+        >
+          <div class="links">
+            <NavLink link="/careers/">
+              Careers
+            </NavLink>
+            <NavLink link="https://handbook.thinktandem.io">
+              Handbook
+            </NavLink>
+            <NavLink link="https://twitter.com/thinktandem">
+              Twitter
+            </NavLink>
+            <NavLink link="https://github.com/thinktandem">
+              GitHub
+            </NavLink>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -226,6 +245,7 @@ header
         margin-top 50px
         width 100vw
         background-color $lightGrey
+        flex-direction column
         ul
           margin auto
           padding 100px 90px
@@ -238,6 +258,23 @@ header
               font-weight 600
             .nav-item-desc
               letter-spacing -1.04px
+        .menu-secondary
+          display flex
+          flex 1 100%
+          flex-direction column
+          .links
+            padding 1em
+            border-top 1px solid $borderColor
+            flex 1 100%
+            a
+              text-decoration none
+              font-size .86em
+              font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+              text-transform uppercase
+              margin-left 1em
+              color lighten($darkTextColor, 15%);
+              &:hover
+                color $tandemPink
 
 button
   border 0
@@ -316,6 +353,8 @@ nav
     display flex
     justify-content flex-end
     align-items center
+    .menu-secondary
+      display none
     .nav
       flex 0 0 auto
       display flex
@@ -328,6 +367,7 @@ nav
           font-size: 20px;
           text-decoration: none;
           letter-spacing: -1.67px;
+
 
 @media (min-width: $MQSmall)
   header
@@ -356,6 +396,7 @@ nav
         .menu
           display flex
           margin-top 10px
+          flex-direction column
           ul
             flex-direction column
             padding 50px 20px

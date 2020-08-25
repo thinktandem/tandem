@@ -20,7 +20,7 @@
       <button
         class="btn btn-load-more"
       >
-        Load more <strong>stuff</strong>
+        {{ moreText }}
       </button>
     </div>
   </div>
@@ -37,6 +37,10 @@ export default {
     sortOrder: {
       type: Array,
       default: () => ([]),
+    },
+    moreText: {
+      type: String,
+      default: 'Load more stuff',
     },
   },
   data() {
@@ -84,7 +88,7 @@ export default {
     background $lightGrey
     padding 1em
     color $darkTextColor
-    margin 2em 0em
+    margin 0em
     cursor pointer
     font-family "Poppins", "Helvetica Neue", Arial, sans-serif
     button
