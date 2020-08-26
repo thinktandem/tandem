@@ -105,7 +105,7 @@ export default {};
         font-size .76em
         text-transform uppercase
         margin-left 0em
-        color lighten($darkTextColor, 15%);
+        color $middleGrey
         &:after
           content '\00a0\00a0'
         &:before

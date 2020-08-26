@@ -33,14 +33,16 @@
         4. Give a shit.
       </p> <p>Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better.</p>
     </div>
+    <TagGrid />
   </div>
 </template>
 
 <script>
 import SectionHeader from '@theme/components/SectionHeader';
+import TagGrid from '@theme/components/TagGrid';
 
 export default {
-  components: {SectionHeader},
+  components: {SectionHeader, TagGrid},
   mounted() {
   },
 };

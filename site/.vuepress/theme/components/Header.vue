@@ -264,7 +264,7 @@ header
           flex-direction column
           .links
             padding 1em
-            border-top 1px solid $borderColor
+            border-top 1px solid #d3d3d3
             flex 1 100%
             a
               text-decoration none
@@ -272,7 +272,7 @@ header
               font-family "Poppins", "Helvetica Neue", Arial, sans-serif
               text-transform uppercase
               margin-left 1em
-              color lighten($darkTextColor, 15%);
+              color $middleGrey
               &:hover
                 color $tandemPink
 

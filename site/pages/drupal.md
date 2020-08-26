@@ -1,6 +1,7 @@
 ---
 title: Drupal
 slug: drupal
+# replaceTag: drupal
 related:
   - docker
   - nodejs

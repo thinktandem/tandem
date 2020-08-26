@@ -25,36 +25,7 @@
       <p class="custom-block-title">
         Explore<br> other work.
       </p>
-      <div class="tag-wrapper">
-        <div class="custom-block col-wrapper">
-          <div class="custom-block col-third">
-            <p class="custom-block-title">
-              Strategy
-            </p>
-            <p>Half column</p>
-          </div>
-          <div class="custom-block col-third">
-            <p class="custom-block-title">
-              Strategy
-            </p>
-            <p>Half column</p>
-          </div>
-          <div class="custom-block col-third">
-            <p class="custom-block-title">
-              Strategy
-            </p>
-            <p>Half column</p>
-          </div>
-        </div>
-        <div class="custom-block col-wrapper">
-          <div class="custom-block col-full">
-            <p class="custom-block-title">
-              Strategy
-            </p>
-            <p>Half column</p>
-          </div>
-        </div>
-      </div>
+      <TagGrid />
     </div>
   </div>
 </template>
@@ -63,9 +34,10 @@
 import ClientGrid from '@theme/components/ClientGrid';
 import ContentList from '@theme/components/ContentList';
 import SectionHeader from '@theme/components/SectionHeader';
+import TagGrid from '@theme/components/TagGrid';
 
 export default {
-  components: {ClientGrid, ContentList, SectionHeader},
+  components: {ClientGrid, ContentList, SectionHeader, TagGrid},
   data() {
     return {
       clients: [
