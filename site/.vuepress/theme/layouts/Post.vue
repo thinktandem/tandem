@@ -51,33 +51,67 @@ export default {
   jsonld() {
     return {
       '@context': 'https://schema.org',
-      '@type': 'Article',
-      'mainEntityOfPage': {
-        '@type': 'WebPage',
-        '@id': 'https://thinktandem.io' + this.$page.path,
-      },
-      'name': this.$title,
-      'headline': this.$title,
-      'about': [
-        this.$page.summary,
-      ],
-      'image': [
-        'https://thinktandem.io' + this.$frontmatter.mainImage,
-      ],
-      'datePublished': this.$frontmatter.date,
-      'dateModified': this.$frontmatter.date,
-      'author': {
-        '@type': 'Person',
-        'name': this.$frontmatter.author,
-      },
-      'publisher': {
-        '@type': 'Organization',
-        'name': 'Tandem',
-        'logo': {
-          '@type': 'ImageObject',
-          'url': 'https://thinktandem.io/images/logo.png',
+      "@graph": [
+        {
+          '@type': 'Article',
+          'mainEntityOfPage': {
+            '@type': 'WebPage',
+            '@id': 'https://thinktandem.io' + this.$page.path,
+          },
+          'name': this.$title,
+          'headline': this.$title,
+          'about': [
+            this.$page.summary,
+          ],
+          'image': [
+            'https://thinktandem.io' + this.$frontmatter.mainImage,
+          ],
+          'datePublished': this.$frontmatter.date,
+          'dateModified': this.$frontmatter.date,
+          'author': {
+            '@type': 'Person',
+            'name': this.$frontmatter.author,
+          },
+          'publisher': {
+            '@type': 'Organization',
+            'name': 'Tandem',
+            'logo': {
+              '@type': 'ImageObject',
+              'url': 'https://thinktandem.io/images/logo.png',
+            },
+          },
         },
-      },
+        {
+          "@type": "WebSite",
+          "@id":"https://thinktandem.io",
+          "url":"https://thinktandem.io",
+          "name":"Tandem",
+          "publisher":{
+            "@id":"https://thinktandem.io"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id":"https://thinktandem.io",
+          "name":"Tandem",
+          "url":"https://thinktandem.io",
+          "logo":{
+            "@type":"imageObject",
+            'url': 'https://thinktandem.io/images/logo.png',
+            "caption":"Tandem Logo"
+          },
+          "sameAs":[
+            "https://twitter.com/thinktandem",
+            "https://github.com/thinktandem",
+            "https://www.linkedin.com/company/12898991/admin/",
+          ],
+          "contactPoint":{
+            "@type":"ContactPoint",
+            "email":"sales@thinktandem.io",
+            "contactType":"customer service"
+          }
+        },
+      ]
     };
   },
 };

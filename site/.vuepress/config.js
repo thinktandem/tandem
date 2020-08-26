@@ -71,8 +71,15 @@ module.exports = {
     },
     'robots': {
       host: 'https://thinktandem.io',
-      disallowAll: true,
       sitemap: '/sitemap.xml',
+      policies: [
+        {
+          userAgent: '*',
+          disallow: [
+            '/tag/*',
+          ]
+        }
+      ]
     },
     'vuepress-plugin-frontmatters-feed': {
       canonical_base: 'https://thinktandem.io',

@@ -60,6 +60,72 @@ import utils from '@theme/utils.js';
 export default {
   name: 'CaseStudy',
   components: {SectionHeader},
+  jsonld() {
+    return {
+      '@context': 'https://schema.org',
+      "@graph": [
+        {
+          '@type': 'Article',
+          'mainEntityOfPage': {
+            '@type': 'WebPage',
+            '@id': 'https://thinktandem.io' + this.$page.path,
+          },
+          'name': this.$title,
+          'headline': this.$title,
+          'about': [
+            this.$page.summary,
+          ],
+          'image': [
+            'https://thinktandem.io' + this.$frontmatter.logo,
+          ],
+          'datePublished': this.$frontmatter.date,
+          'dateModified': this.$frontmatter.date,
+          'author': {
+            '@type': 'Person',
+            'name': 'Tandem',
+          },
+          'publisher': {
+            '@type': 'Organization',
+            'name': 'Tandem',
+            'logo': {
+              '@type': 'ImageObject',
+              'url': 'https://thinktandem.io/images/logo.png',
+            },
+          },
+        },
+        {
+          "@type": "WebSite",
+          "@id":"https://thinktandem.io",
+          "url":"https://thinktandem.io",
+          "name":"Tandem",
+          "publisher":{
+            "@id":"https://thinktandem.io"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id":"https://thinktandem.io",
+          "name":"Tandem",
+          "url":"https://thinktandem.io",
+          "logo":{
+            "@type":"imageObject",
+            'url': 'https://thinktandem.io/images/logo.png',
+            "caption":"Tandem Logo"
+          },
+          "sameAs":[
+            "https://twitter.com/thinktandem",
+            "https://github.com/thinktandem",
+            "https://www.linkedin.com/company/12898991/admin/",
+          ],
+          "contactPoint":{
+            "@type":"ContactPoint",
+            "email":"sales@thinktandem.io",
+            "contactType":"customer service"
+          }
+        },
+      ]
+    };
+  },
   data() {
     return {
       theme: {},

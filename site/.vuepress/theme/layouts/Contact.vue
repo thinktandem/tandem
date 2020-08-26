@@ -23,6 +23,43 @@ import SectionHeader from '@theme/components/SectionHeader';
 
 export default {
   components: {ContactForm, SectionHeader},
+  jsonld() {
+    return {
+      '@context': 'https://schema.org',
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id":"https://thinktandem.io",
+          "url":"https://thinktandem.io",
+          "name":"Tandem",
+          "publisher":{
+            "@id":"https://thinktandem.io"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id":"https://thinktandem.io",
+          "name":"Tandem",
+          "url":"https://thinktandem.io",
+          "logo":{
+            "@type":"imageObject",
+            'url': 'https://thinktandem.io/images/logo.png',
+            "caption":"Tandem Logo"
+          },
+          "sameAs":[
+            "https://twitter.com/thinktandem",
+            "https://github.com/thinktandem",
+            "https://www.linkedin.com/company/12898991/admin/",
+          ],
+          "contactPoint":{
+            "@type":"ContactPoint",
+            "email":"sales@thinktandem.io",
+            "contactType":"customer service"
+          }
+        },
+      ]
+    };
+  },
   mounted() {
     console.log(navigator);
   },
