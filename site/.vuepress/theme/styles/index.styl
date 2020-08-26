@@ -74,6 +74,42 @@ article
     &
       padding 100px 15px 20px 15px
       min-height calc(100vh - 20px - 60px - 100px)
+ul
+  &.tags, &.post-meta-tags
+    @media (max-width: $MQMobile)
+      display block
+  li
+    &.post-tag
+      &.tag
+        height inherit
+      a
+        border-radius 0
+        background $lightGrey
+        font-weight 300
+        font-size 1.13rem
+        letter-spacing -1.44px
+        padding 1em 2em
+        transition none
+        span
+          color black
+          margin-left -.5em
+          margin-right .5em
+        &:hover
+          transition none
+        &:before
+          all unset
+        &:after
+          border-bottom 1.725em solid transparent
+          border-left 1.725em solid $lightGrey
+          border-top 1.725em solid transparent
+        @media (max-width: $MQMobile)
+          padding 1em 1em
+          margin 0
+          margin-bottom 1em
+          span
+            margin 0
+          &:after
+            border 0
 
 .custom-block
   position relative

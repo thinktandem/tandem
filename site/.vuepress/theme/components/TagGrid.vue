@@ -135,7 +135,7 @@ export default {
           {name: 'Node', tag: 'node'},
           {name: 'Vue', tag: 'vue'},
           {name: 'Nuxt', tag: 'nuxt'},
-          {name: 'Electron', tag: 'electorn'},
+          {name: 'Electron', tag: 'electron'},
         ],
         [
           {name: 'DevOps', tag: 'devops'},

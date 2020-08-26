@@ -54,48 +54,6 @@ export default {
 </script>
 
 <style lang="stylus">
-.post-meta-tags
-  .post-tag
-    &.lando
-      background-color $landoPink
-      a
-        color lighten($landoPink, 95%)
-      a:hover
-        font-weight 900
-      &::after
-        border-left 10px solid $landoPink
-    &.devops
-      background-color $landoBlue
-      a
-        color lighten($landoBlue, 95%)
-      a:hover
-        font-weight 900
-      &::after
-        border-left 10px solid $landoBlue
-    &.development
-      background-color $landoGreen
-      a
-        color lighten($landoGreen, 95%)
-      a:hover
-        font-weight 900
-      &::after
-        border-left 10px solid $landoGreen
-    &.case-study
-      background-color $landoOrange
-      a
-        color lighten($landoOrange, 95%)
-      a:hover
-        font-weight 900
-      &::after
-        border-left 10px solid $landoOrange
-    &.workflows
-      background-color $landoGrey
-      a
-        color lighten($landoGrey, 95%)
-      a:hover
-        font-weight 900
-      &::after
-        border-left 10px solid $landoGrey
 .originally-appeared
   img
     width 24px

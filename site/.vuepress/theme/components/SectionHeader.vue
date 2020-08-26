@@ -48,7 +48,7 @@ export default {
 
 <style lang="stylus" scoped>
 h1
-  font-size 28px
+  font-size 30px
   font-weight 900
   letter-spacing -2.32px
   text-decoration underline
@@ -60,6 +60,7 @@ h2
   margin 0
   margin-bottom 1em
   letter-spacing -0.19rem
+  font-size 2em
 .section-header
   display flex
   justify-content center
@@ -83,6 +84,8 @@ h2
     display inline-block
 
 @media (max-width: $MQMobile)
+  h2
+    font-size 1.4em
   .section-header
     text-align center
     flex-direction column

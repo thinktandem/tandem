@@ -5,7 +5,7 @@
         Simple or complex. <br>Big or small. <br>We've seen it all. <br>
       </h2>
       <div>
-        <p>Our team has helped re-design large non-profits, developed native desktop applications, trained other worldclass agencies and built some really cool sites. <br><strong>We've done it all.</strong></p>
+        <p>Our team has helped re-design large non-profits, developed native desktop applications, created popular open source projects, trained worldclass agencies and built some really cool websites for some really cool brands. <br><strong>We've done it all.</strong></p>
       </div>
     </SectionHeader>
 
