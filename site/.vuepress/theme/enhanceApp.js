@@ -22,18 +22,25 @@ export default ({ Vue, options, router, siteData, isServer }) => { // eslint-dis
     Vue.prototype.$updateTheme = data => EventBus.$emit('update-theme', data);
   }});
 
-  // Redirects tags to landing pages if they exist
-  router.beforeEach((to, from, next) => {
-    // If this is not movement to a tag then just continue
-    if (!to.meta || to.meta.pid !== 'tags') next();
+  // Check whether route exists or not
+  const hasRoute = (path, routes = []) => {
+    return routes.some(route => {
+      return route.path.toLowerCase() === path.toLowerCase();
+    });
+  };
 
-    // Otherwise either go to the tag or the landing page if its there
+  // Redirect non-existent routes to tag pages if they exist
+  router.beforeEach((to, from, next) => {
+    const {routes} = router.options;
+
+    // If routes already exist then dont redirect
+    if (hasRoute(to.path, routes)) next();
+    else if (hasRoute(`${to.path}/`, routes)) next();
+    else if (hasRoute(`${to.path}.html`, routes)) next();
+
+    // Otherwise lets try to route to a tag if that exists
     else {
-      const tag = to.meta.id;
-      const landingPage = siteData.pages.find(page => {
-        return page.id === 'pages' && page.frontmatter.replaceTag === tag;
-      });
-      if (landingPage) next(landingPage.path);
+      if (hasRoute(`/tag${to.path}/`, routes)) next(`/tag${to.path}`);
       else next();
     }
   });

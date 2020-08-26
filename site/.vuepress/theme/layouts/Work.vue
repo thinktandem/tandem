@@ -5,7 +5,7 @@
         Black background. <br> White text. <br> Wider container. <br>
       </h2>
       <div>
-        <p>These are the things you want for a showcase of work.</p>
+        <p>These are the things you want for a showcase of work. These are the things you want for a showcase of work. These are the things you want for a showcase of work. These are the things you want for a showcase of work.</p>
       </div>
     </SectionHeader>
 
