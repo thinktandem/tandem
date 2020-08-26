@@ -77,9 +77,9 @@ module.exports = {
           userAgent: '*',
           disallow: [
             '/tag/*',
-          ]
-        }
-      ]
+          ],
+        },
+      ],
     },
     'vuepress-plugin-frontmatters-feed': {
       canonical_base: 'https://thinktandem.io',

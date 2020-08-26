@@ -51,7 +51,7 @@ export default {
   jsonld() {
     return {
       '@context': 'https://schema.org',
-      "@graph": [
+      '@graph': [
         {
           '@type': 'Article',
           'mainEntityOfPage': {
@@ -82,36 +82,36 @@ export default {
           },
         },
         {
-          "@type": "WebSite",
-          "@id":"https://thinktandem.io",
-          "url":"https://thinktandem.io",
-          "name":"Tandem",
-          "publisher":{
-            "@id":"https://thinktandem.io"
-          }
+          '@type': 'WebSite',
+          '@id': 'https://thinktandem.io',
+          'url': 'https://thinktandem.io',
+          'name': 'Tandem',
+          'publisher': {
+            '@id': 'https://thinktandem.io',
+          },
         },
         {
-          "@type": "Organization",
-          "@id":"https://thinktandem.io",
-          "name":"Tandem",
-          "url":"https://thinktandem.io",
-          "logo":{
-            "@type":"imageObject",
+          '@type': 'Organization',
+          '@id': 'https://thinktandem.io',
+          'name': 'Tandem',
+          'url': 'https://thinktandem.io',
+          'logo': {
+            '@type': 'imageObject',
             'url': 'https://thinktandem.io/images/logo.png',
-            "caption":"Tandem Logo"
+            'caption': 'Tandem Logo',
           },
-          "sameAs":[
-            "https://twitter.com/thinktandem",
-            "https://github.com/thinktandem",
-            "https://www.linkedin.com/company/12898991/admin/",
+          'sameAs': [
+            'https://twitter.com/thinktandem',
+            'https://github.com/thinktandem',
+            'https://www.linkedin.com/company/12898991/admin/',
           ],
-          "contactPoint":{
-            "@type":"ContactPoint",
-            "email":"sales@thinktandem.io",
-            "contactType":"customer service"
-          }
+          'contactPoint': {
+            '@type': 'ContactPoint',
+            'email': 'sales@thinktandem.io',
+            'contactType': 'customer service',
+          },
         },
-      ]
+      ],
     };
   },
 };
