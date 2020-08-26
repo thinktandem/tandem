@@ -1,7 +1,7 @@
 <template>
   <div class="tag-container">
     <div class="tag-item tag-third">
-      <a href="/strategy"><h2>Strategy.</h2></a>
+      <a :href="`${prefix}strategy`"><h2>Strategy.</h2></a>
       <ul
         v-for="(tagGroup, index) in strategy"
         :key="index"
@@ -9,12 +9,12 @@
         <a
           v-for="tag in tagGroup"
           :key="tag.tag"
-          :href="`/${tag.tag}`"
+          :href="`${prefix}${tag.tag}`"
         ><li>{{ tag.name }}</li></a>
       </ul>
     </div>
     <div class="tag-item tag-third">
-      <a href="/design"><h2>Design.</h2></a>
+      <a :href="`${prefix}design`"><h2>Design.</h2></a>
       <ul
         v-for="(tagGroup, index) in design"
         :key="index"
@@ -22,60 +22,61 @@
         <a
           v-for="tag in tagGroup"
           :key="tag.tag"
-          :href="`/${tag.tag}`"
+          :href="`${prefix}${tag.tag}`"
         ><li>{{ tag.name }}</li></a>
       </ul>
     </div>
     <div class="tag-item tag-third">
-      <a href="/development"><h2>Development.</h2></a>
-      <ul>
-        <li>Performance</li>
-        <li>Security</li>
-        <li>Migrations</li>
-        <li>Support</li>
-        <li>Training</li>
-      </ul>
-    </div>
-    <div class="tag-item tag-full-columns">
-      <h2>Technology.</h2>
-      <ul>
-        <li>PHP</li>
-        <a href="/drupal"><li>Drupal</li></a>
-        <li>WordPress</li>
-        <li>Laravel</li>
-        <li>Symfony</li>
-      </ul>
-      <ul>
-        <li>Javascript</li>
-        <li>Node</li>
-        <li>Vue</li>
-        <li>Nuxt</li>
-        <li>Electron</li>
-      </ul>
-      <ul>
-        <li>DevOps</li>
-        <li>Docker</li>
-        <li>Lando</li>
+      <a :href="`${prefix}development`"><h2>Development.</h2></a>
+      <ul
+        v-for="(tagGroup, index) in development"
+        :key="index"
+      >
+        <a
+          v-for="tag in tagGroup"
+          :key="tag.tag"
+          :href="`${prefix}${tag.tag}`"
+        ><li>{{ tag.name }}</li></a>
       </ul>
     </div>
     <div class="tag-item tag-full">
       <h2>Industry.</h2>
-      <ul>
-        <li>Finance</li>
-        <li>Healthcare</li>
-        <li>Higher Ed</li>
-        <li>Tech</li>
-        <li>Media</li>
-        <li>Non Profit</li>
+      <ul
+        v-for="(tagGroup, index) in industry"
+        :key="index"
+      >
+        <a
+          v-for="tag in tagGroup"
+          :key="tag.tag"
+          :href="`${prefix}${tag.tag}`"
+        ><li>{{ tag.name }}</li></a>
       </ul>
     </div>
+    <div class="tag-item tag-full-columns">
+      <h2>Technology.</h2>
+      <ul
+        v-for="(tagGroup, index) in technology"
+        :key="index"
+      >
+        <a
+          v-for="tag in tagGroup"
+          :key="tag.tag"
+          :href="`${prefix}${tag.tag}`"
+        ><li>{{ tag.name }}</li></a>
+      </ul>
+    </div>
+
     <div class="tag-item tag-full">
       <h2>Other.</h2>
-      <ul>
-        <li>Training</li>
-        <li>Support</li>
-        <li>Business</li>
-        <li>Thing</li>
+      <ul
+        v-for="(tagGroup, index) in other"
+        :key="index"
+      >
+        <a
+          v-for="tag in tagGroup"
+          :key="tag.tag"
+          :href="`${prefix}${tag.tag}`"
+        ><li>{{ tag.name }}</li></a>
       </ul>
     </div>
   </div>
@@ -85,6 +86,12 @@
 
 export default {
   name: 'TagGrid',
+  props: {
+    prefix: {
+      type: String,
+      default: '/tag/',
+    },
+  },
   data() {
     return {
       strategy: [[
@@ -95,55 +102,49 @@ export default {
         {name: 'SEO', tag: 'seo'},
       ]],
       design: [[
-        {name: 'Accessibility', tag: 'business'},
-        {name: 'Responsive', tag: 'branding'},
-        {name: 'Wireframes', tag: 'user-research'},
-        {name: 'Styleguides', tag: 'content-strategy'},
-        {name: 'Protyping', tag: 'seo'},
+        {name: 'Accessibility', tag: 'accessibility'},
+        {name: 'Responsive', tag: 'responsive'},
+        {name: 'Wireframes', tag: 'wireframes'},
+        {name: 'Styleguides', tag: 'styleguides'},
+        {name: 'Protyping', tag: 'protyping'},
       ]],
       development: [[
-        {name: 'Performance', tag: 'business'},
-        {name: 'Branding', tag: 'branding'},
-        {name: 'User Research', tag: 'user-research'},
-        {name: 'Content Strategy', tag: 'content-strategy'},
-        {name: 'SEO', tag: 'seo'},
+        {name: 'Performance', tag: 'performance'},
+        {name: 'Security', tag: 'security'},
+        {name: 'Migrations', tag: 'migrations'},
+        {name: 'Support', tag: 'support'},
+        {name: 'Training', tag: 'training'},
+      ]],
+      industry: [[
+        {name: 'Finance', tag: 'finance'},
+        {name: 'Healthcare', tag: 'healthcare'},
+        {name: 'Higher Ed', tag: 'higher-ed'},
+        {name: 'Media', tag: 'media'},
+        {name: 'Nonprofit', tag: 'non-profit'},
+        {name: 'Tech', tag: 'tech'},
       ]],
       technology: [
         [
-          {name: 'Business', tag: 'business'},
-          {name: 'Branding', tag: 'branding'},
-          {name: 'User Research', tag: 'user-research'},
-          {name: 'Content Strategy', tag: 'content-strategy'},
-          {name: 'SEO', tag: 'seo'},
+          {name: 'PHP', tag: 'php'},
+          {name: 'Drupal', tag: 'drupal'},
+          {name: 'WordPress', tag: 'wordpress'},
+          {name: 'Laravel', tag: 'laravel'},
         ],
         [
-          {name: 'Business', tag: 'business'},
-          {name: 'Branding', tag: 'branding'},
-          {name: 'User Research', tag: 'user-research'},
-          {name: 'Content Strategy', tag: 'content-strategy'},
-          {name: 'SEO', tag: 'seo'},
+          {name: 'Javascript', tag: 'javascript'},
+          {name: 'Node', tag: 'node'},
+          {name: 'Vue', tag: 'vue'},
+          {name: 'Nuxt', tag: 'nuxt'},
+          {name: 'Electron', tag: 'electorn'},
         ],
         [
-          {name: 'Business', tag: 'business'},
-          {name: 'Branding', tag: 'branding'},
-          {name: 'User Research', tag: 'user-research'},
-          {name: 'Content Strategy', tag: 'content-strategy'},
-          {name: 'SEO', tag: 'seo'},
+          {name: 'DevOps', tag: 'devops'},
+          {name: 'Docker', tag: 'docker'},
+          {name: 'Lando', tag: 'lando'},
         ],
       ],
-      industry: [[
-        {name: 'Business', tag: 'business'},
-        {name: 'Branding', tag: 'branding'},
-        {name: 'User Research', tag: 'user-research'},
-        {name: 'Content Strategy', tag: 'content-strategy'},
-        {name: 'SEO', tag: 'seo'},
-      ]],
       other: [[
-        {name: 'Business', tag: 'business'},
-        {name: 'Branding', tag: 'branding'},
-        {name: 'User Research', tag: 'user-research'},
-        {name: 'Content Strategy', tag: 'content-strategy'},
-        {name: 'SEO', tag: 'seo'},
+        {name: 'Magic', tag: 'magic'},
       ]],
     };
   },
@@ -176,12 +177,12 @@ export default {
       padding 0em .5em
       a
         text-decoration none
-        border-bottom solid 1px darken($borderColor, 10%)
+        border-bottom solid 1px $borderColor
         :hover
           color $tandemPink
           transition all .2s
       li
-        border-bottom solid 1px darken($borderColor, 10%)
+        border-bottom solid 1px $borderColor
         margin 1.5em 2em
         font-weight 300
         font-size 1.13rem
@@ -209,18 +210,27 @@ export default {
         ul
           display block
           text-align left
+          li
+            margin 1.5em 1em
+            margin-right 30px
+
     &.tag-full
       ul
         justify-content flex-end
+        a
+          border none
         li
           margin-right 10px
           border none
+          text-decoration none
       h2
         align-self center
       @media (max-width: $MQMobile)
         ul
           li
-            border-bottom solid 1px darken($borderColor, 10%)
+            margin 1.5em 1em
+            margin-right 30px
+            border-bottom solid 1px $borderColor
     &.tag-full-columns
       ul
         display block

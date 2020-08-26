@@ -264,7 +264,7 @@ header
           flex-direction column
           .links
             padding 1em
-            border-top 1px solid #d3d3d3
+            border-top 1px solid $borderColor
             flex 1 100%
             a
               text-decoration none
