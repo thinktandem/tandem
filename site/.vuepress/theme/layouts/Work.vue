@@ -2,10 +2,10 @@
   <div class="content-wrapper-tandem content-wrapper-work">
     <SectionHeader title="Work.">
       <h2>
-        Black background. <br> White text. <br> Wider container. <br>
+        Simple or complex. <br>Big or small. <br>We've seen it all. <br>
       </h2>
       <div>
-        <p>These are the things you want for a showcase of work. These are the things you want for a showcase of work. These are the things you want for a showcase of work. These are the things you want for a showcase of work.</p>
+        <p>Our team has helped re-design large non-profits, developed native desktop applications, trained other worldclass agencies and built some really cool sites. <br><strong>We've done it all.</strong></p>
       </div>
     </SectionHeader>
 
