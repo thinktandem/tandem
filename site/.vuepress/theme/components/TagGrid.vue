@@ -163,6 +163,7 @@ export default {
     text-align left
     padding 0
     a
+      text-decoration none
       :hover
         color $tandemPink
         transition all .2s

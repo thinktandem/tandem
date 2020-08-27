@@ -1,5 +1,5 @@
 <template>
-  <div class="content-wrapper-tandem content-wrapper-about">
+  <div class="content-wrapper-tandem content-wrapper-contact">
     <SectionHeader title="Contact Us.">
       <h2>
         U.S. Coast to coast. <br> and travelling. <br> around the world. <br>
@@ -68,7 +68,7 @@ export default {
 
 <style lang="stylus">
 .content-wrapper-tandem
-  &.content-wrapper-about
+  &.content-wrapper-contact
     max-width 1140px
     .section-header
       h1, h2, p

@@ -105,8 +105,8 @@ a
 .post
   margin-bottom 2em
   position relative
-  border 1px solid #CCCCCC
   padding 4em 4em
+  background $lightGrey
   .post-wrapper
     opacity .86
     padding 4em
