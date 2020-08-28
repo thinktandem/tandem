@@ -18,6 +18,10 @@ module.exports = {
           itemPermalink: '/blog/:year/:month/:day/:slug',
           itemLayout: 'Post',
           layout: 'Blog',
+          pagination: {
+            lengthPerPage: 5,
+          },
+          title: 'Blog',
         },
         {
           id: 'work',
@@ -25,6 +29,10 @@ module.exports = {
           itemPermalink: '/work/:slug',
           itemLayout: 'CaseStudy',
           layout: 'Work',
+          pagination: {
+            lengthPerPage: 3,
+          },
+          title: 'Work',
         },
         {
           id: 'pages',
@@ -33,6 +41,7 @@ module.exports = {
           itemPermalink: '/:slug',
           itemLayout: 'Page',
           layout: 'About',
+          title: 'About',
         },
       ],
       frontmatters: [
@@ -41,6 +50,9 @@ module.exports = {
           keys: ['tags'],
           path: '/tag/',
           scopeLayout: 'Tag',
+          pagination: {
+            lengthPerPage: 5,
+          },
         },
       ],
       sitemap: {
@@ -59,8 +71,15 @@ module.exports = {
     },
     'robots': {
       host: 'https://thinktandem.io',
-      disallowAll: true,
       sitemap: '/sitemap.xml',
+      policies: [
+        {
+          userAgent: '*',
+          disallow: [
+            '/tag/*',
+          ],
+        },
+      ],
     },
     'vuepress-plugin-frontmatters-feed': {
       canonical_base: 'https://thinktandem.io',
