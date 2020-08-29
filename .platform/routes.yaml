@@ -11,6 +11,9 @@ https://{default}/:
 https://docs.v2.thinktandem.io/:
   type: redirect
   to: https://{default}/
+https://handbook.thinktandem.io/:
+  type: redirect
+  to: https://{default}/
 
 # New Beta Site
 http://beta.thinktandem.io/:

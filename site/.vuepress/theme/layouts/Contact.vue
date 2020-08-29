@@ -2,10 +2,12 @@
   <div class="content-wrapper-tandem content-wrapper-contact">
     <SectionHeader title="Contact Us.">
       <h2>
-        U.S. Coast to coast. <br> and travelling. <br> around the world. <br>
+        Primarily remote.
+        <br>Primarily USA.
+        <br>Prone to wanderlust.
       </h2>
       <div>
-        <p>We focus on what's important </p>
+        <p>We have a distributed team that is primarily located in the United States</p>
       </div>
     </SectionHeader>
     <div class="custom-block important">
