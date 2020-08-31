@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-about">
-    <SectionHeader title="About.">
+    <SectionHeader title="Careers.">
       <h2>
         Let us build.<br>Something great.<br>Together.<br>
       </h2>
@@ -30,13 +30,13 @@
         The above four. In four sentences.
       </p>
       <p>
-        Working closely together means allows us to distill your goals into their most important components.
+        Working closely together means we can distill your goals into their most important components.
 
         Knowing what's important means we can craft a solution that minimizes moving parts while maximizing impact.
 
         Combining expertise with the right tool means a solution that lasts over time.
 
-        Caring about the outcome means even if everything else goes astray we still get it done.
+        Caring about the outcome means if everything else goes astray we will still get it done.
       </p>
     </div>
 
