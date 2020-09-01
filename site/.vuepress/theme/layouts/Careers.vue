@@ -81,7 +81,7 @@
           Oh yah! And definitely check out our <a
             href="https://handbook.thinktandem.io"
             target="_blank"
-          >Handbook</a> in the meantime!
+          >Handbook</a> in the meantime for more details on our policies, benefits, etc.
         </p>
       </div>
     </div>
@@ -113,7 +113,7 @@ export default {
   mounted() {
     this.vibes = this.$themeConfig.vibes;
     this.locations = this.$themeConfig.locations;
-    this.featuredVibes = this.vibes.sort(() => Math.random() - 0.5).slice(0, 8);
+    this.featuredVibes = this.vibes.sort(() => Math.random() - 0.5).slice(0, 16);
   },
   jsonld() {
     return {
