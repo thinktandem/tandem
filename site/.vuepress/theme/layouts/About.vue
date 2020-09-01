@@ -22,7 +22,10 @@
         >This.</a>
         <br>Is how we do it.
       </p>
-      <ValuesGrid :items="values" />
+      <ValuesGrid
+        id="work-values"
+        :items="values"
+      />
     </div>
 
     <div class="custom-block important values-text">
@@ -74,6 +77,7 @@
         Some current team vibes.
       </p>
       <ValuesGrid
+        id="team-values"
         :items="featuredVibes"
         :columns="4"
       />
@@ -98,42 +102,13 @@ export default {
         'Built to last <strong>craftsmanship</strong>',
         'Do it with <strong>passion</strong>',
       ],
-      locations: [
-        {airport: 'OAK', name: 'Oakland', email: 'oak@thinktandem.io', background: '#EFB21E', text: '#003831'},
-        {airport: 'BOS', name: 'Boston', email: 'bos@thinktandem.io', background: '#BD3039', text: '#0C2340'},
-        {airport: 'SRQ', name: 'Sarasota', email: 'srq@thinktandem.io', background: '#8FBCE6', text: '#092C5C'},
-        {airport: 'DCA', name: 'DC', email: 'dc@thinktandem.io', background: '#AB0003', text: '#14225A'},
-        {airport: 'SAN', name: 'San Diego', email: 'san@thinktandem.io', background: '#FFC425', text: '#2F241D'},
-      ],
-      vibes: [
-        'Budweiser in a can',
-        'Swimming in lake baikal',
-        'Miley Cyrus',
-        'Nightclubs in Belarus',
-        'Retro gaming',
-        'Vivaldi',
-        'Christopher Hitchens',
-        'Sour beers',
-        'The larch',
-        'Todd Snider',
-        'The Scream',
-        'Miracle',
-        'Wayne White',
-        'Bertrand Russell',
-        'Super Mario Bros.',
-        'The Badlands',
-        'String instruments',
-        'Sturgill Simpson',
-        'homebrewed cider',
-        'The Englischer Garten',
-        'Wallace Stegner',
-        'Lawrence Halprin',
-        'Orchard planting',
-      ],
+      locations: [],
+      vibes: [],
     };
   },
-
   mounted() {
+    this.vibes = this.$themeConfig.vibes;
+    this.locations = this.$themeConfig.locations;
     this.featuredVibes = this.vibes.sort(() => Math.random() - 0.5).slice(0, 8);
   },
   jsonld() {

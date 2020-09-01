@@ -1,5 +1,5 @@
 ---
-metaTitle: Contact | Tandem
-pageClass: contact-page
+metaTitle: Careers | Tandem
+pageClass: careers-page
 layout: Careers
 ---

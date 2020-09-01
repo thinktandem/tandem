@@ -1,58 +1,49 @@
 <template>
-  <div class="content-wrapper-tandem content-wrapper-about">
+  <div class="content-wrapper-tandem content-wrapper-careers">
     <SectionHeader title="Careers.">
       <h2>
-        Let us build.<br>Something great.<br>Together.<br>
+        Always looking.<br>For another.<br>Great teammate.<br>
       </h2>
       <div>
         <p>
-          We love achieving great things by working together.<br>
-          Combine your goals with our experience, expertise and passion and<br>
-          <strong>Let's build your best.</strong>
+          Join our group of diverse thinkers.
+          <br>Level up your skills by learning a bunch of awesome stuff and doing a bunch of great work. Oh, and have fun doing it.
+          <br><strong>Join our team!.</strong>
         </p>
       </div>
     </SectionHeader>
 
     <div class="custom-block point values">
       <p class="custom-block-title">
-        <a
-          class="hidden-link"
-          target="_blank"
-          href="https://www.youtube.com/watch?v=0hiUuL5uTKc"
-        >This.</a>
-        <br>Is how we do it.
+        Our team<br> values.
       </p>
-      <ValuesGrid :items="values" />
+      <ValuesGrid
+        id="team-values"
+        :items="values"
+        :columns="5"
+      />
     </div>
 
     <div class="custom-block important values-text">
       <p class="custom-block-title">
-        The above four. In four sentences.
+        The above five. In five sentences.
       </p>
       <p>
-        Working closely together means we can distill your goals into their most important components.
-
-        Knowing what's important means we can craft a solution that minimizes moving parts while maximizing impact.
-
-        Combining expertise with the right tool means a solution that lasts over time.
-
-        Caring about the outcome means if everything else goes astray we will still get it done.
-      </p>
-    </div>
-
-    <div class="custom-block point what-we-do">
-      <p class="custom-block-title">
-        What we do.
-      </p>
-      <p>
-        We offer <strong>strategy</strong>, <strong>design</strong> and <strong>development</strong> services across industries and using a wide array of tech.
+        1. Putting employees first means investing in their success and well being so they can invest the same in our clients.
         <br>
         <br>
-        Read more about each below.
+        2. Building common purpose means more than just rowing in the same direction it means committing to one another even if you disagree.
+        <br>
+        <br>
+        3. Maximizing flow means limiting distractions like unneccesary meetings so you can focus on what matters: <em>the actual work.</em>
+        <br>
+        <br>
+        4. Acting like an adult means giving people the benefit of the doubt, speaking honestly and directly with another and apologizing when you've made a mistake.
+        <br>
+        <br>
+        5. Giving a shit means taking pride in your work and pulling your own weight while also helping others who are having an off-day.
       </p>
     </div>
-
-    <TagGrid prefix="/" />
 
     <div class="custom-block important remote-team">
       <p class="custom-block-title">
@@ -74,9 +65,25 @@
         Some current team vibes.
       </p>
       <ValuesGrid
+        id="team-vibes"
         :items="featuredVibes"
         :columns="4"
       />
+    </div>
+
+    <div class="custom-block point connect-jobs">
+      <p class="custom-block-title">
+        Get in touch.
+      </p>
+      <div class="get-in-touch">
+        <p>We are always looking to meet new people so drop us an email at <a href="mailto:jobs@thinktandem.io">jobs@thinktandem.io</a> and let's set up a time to talk!</p>
+        <p>
+          Oh yah! And definitely check out our <a
+            href="https://handbook.thinktandem.io"
+            target="_blank"
+          >Handbook</a> in the meantime!
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -84,56 +91,28 @@
 <script>
 import LocationGrid from '@theme/components/LocationGrid';
 import SectionHeader from '@theme/components/SectionHeader';
-import TagGrid from '@theme/components/TagGrid';
 import ValuesGrid from '@theme/components/ValuesGrid';
 
 export default {
-  components: {LocationGrid, SectionHeader, TagGrid, ValuesGrid},
+  components: {LocationGrid, SectionHeader, ValuesGrid},
   data() {
     return {
       featuredVibes: [],
       values: [
-        'Focus on <strong>important</strong>',
-        'Keep things <strong>simple</strong>',
-        'Built to last <strong>craftsmanship</strong>',
-        'Do it with <strong>passion</strong>',
+        'Employees <strong>first</strong>',
+        'Common <strong>purpose</strong>',
+        'Maximize <strong>flow</strong>',
+        'Act like <strong>adults</strong>',
+        'Give a <strong>shit</strong>',
       ],
-      locations: [
-        {airport: 'OAK', name: 'Oakland', email: 'oak@thinktandem.io', background: '#EFB21E', text: '#003831'},
-        {airport: 'BOS', name: 'Boston', email: 'bos@thinktandem.io', background: '#BD3039', text: '#0C2340'},
-        {airport: 'SRQ', name: 'Sarasota', email: 'srq@thinktandem.io', background: '#8FBCE6', text: '#092C5C'},
-        {airport: 'DCA', name: 'DC', email: 'dc@thinktandem.io', background: '#AB0003', text: '#14225A'},
-        {airport: 'SAN', name: 'San Diego', email: 'san@thinktandem.io', background: '#FFC425', text: '#2F241D'},
-      ],
-      vibes: [
-        'Budweiser in a can',
-        'Swimming in lake baikal',
-        'Miley Cyrus',
-        'Nightclubs in Belarus',
-        'Retro gaming',
-        'Vivaldi',
-        'Christopher Hitchens',
-        'Sour beers',
-        'The larch',
-        'Todd Snider',
-        'The Scream',
-        'Miracle',
-        'Wayne White',
-        'Bertrand Russell',
-        'Super Mario Bros.',
-        'The Badlands',
-        'String instruments',
-        'Sturgill Simpson',
-        'homebrewed cider',
-        'The Englischer Garten',
-        'Wallace Stegner',
-        'Lawrence Halprin',
-        'Orchard planting',
-      ],
+      locations: [],
+      vibes: [],
     };
   },
 
   mounted() {
+    this.vibes = this.$themeConfig.vibes;
+    this.locations = this.$themeConfig.locations;
     this.featuredVibes = this.vibes.sort(() => Math.random() - 0.5).slice(0, 8);
   },
   jsonld() {
@@ -178,7 +157,7 @@ export default {
 
 <style lang="stylus">
 .content-wrapper-tandem
-  &.content-wrapper-about
+  &.content-wrapper-careers
     max-width 1140px
     .section-header
       h1, h2, p
@@ -192,6 +171,12 @@ export default {
       text-decoration none
     .location-container
       margin-top 2em
+    .get-in-touch
+      width 100%
+      font-size 1.33rem
+      letter-spacing -1.04px
+      p
+        width 100%
     .custom-block
       p
         font-weight 300
@@ -208,7 +193,7 @@ export default {
             font-family GalaxieCopernicus, PT Serif, serif
         &.remote-team
           margin-top 2em
-          border-top 1px solid $borderColor
+          border-top 0
           border-bottom 0
       &.point
         border-bottom 1px solid $borderColor
@@ -220,4 +205,6 @@ export default {
           border-bottom 0
         &.what-we-do
           border 0
+        &.connect-jobs
+          border-bottom 0
 </style>

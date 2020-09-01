@@ -7,7 +7,10 @@
         <br>And work together.
       </h2>
       <div>
-        <p>We have a distributed team that is primarily located in the United States</p>
+        <p>
+          We have a distributed team that is primarily located in the United States but we would love to connect any time, place or timezone. Let's connect and do great things together.
+          <br><strong>Let's talk!</strong>
+        </p>
       </div>
     </SectionHeader>
 
@@ -50,14 +53,11 @@ export default {
   components: {ContactForm, DispatchPigeon, LocationGrid, SectionHeader},
   data() {
     return {
-      locations: [
-        {airport: 'OAK', name: 'Oakland', email: 'oak@thinktandem.io', background: '#EFB21E', text: '#003831'},
-        {airport: 'BOS', name: 'Boston', email: 'bos@thinktandem.io', background: '#BD3039', text: '#0C2340'},
-        {airport: 'SRQ', name: 'Sarasota', email: 'srq@thinktandem.io', background: '#8FBCE6', text: '#092C5C'},
-        {airport: 'DCA', name: 'DC', email: 'dc@thinktandem.io', background: '#AB0003', text: '#14225A'},
-        {airport: 'SAN', name: 'San Diego', email: 'san@thinktandem.io', background: '#FFC425', text: '#2F241D'},
-      ],
+      locations: [],
     };
+  },
+  mounted() {
+    this.locations = this.$themeConfig.locations;
   },
   jsonld() {
     return {

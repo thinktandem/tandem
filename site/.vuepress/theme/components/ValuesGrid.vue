@@ -1,7 +1,7 @@
 <template>
-  <div class="values-container">
+  <div :class="`values-container ${id}`">
     <style>
-      .values-container .values-item {width: {{ columnWidth }}%;}
+      .{{ id }} .values-item {width: {{ columnWidth }}%;}
     </style>
     <div
       v-for="item in items"
@@ -18,6 +18,10 @@
 export default {
   name: 'ValuesGrid',
   props: {
+    id: {
+      type: String,
+      default: 'values-grid',
+    },
     items: {
       type: Array,
       required: true,
