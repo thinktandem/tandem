@@ -11,8 +11,8 @@ author: "Mike Pirog"
 date: "2016-09-25"
 summary: "Don't be the person that breaks production because of a typo or searches endlessly for that missing closing bracket. Level up with Travis, grunt and node."
 id: pirog
-pic: "https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb"
-location: "New Hampshire"
+pic: "/images/people/pirog.jpg"
+location: "San Francisco"
 ---
 
 A Variation on a Theme

@@ -13,8 +13,8 @@ author: "Mike Pirog"
 date: "2019-02-01"
 summary: "We've waited, we've bided our time, we've gathered data and now we are ready to smite traditional local dev to ruin by unleashing the true power of Lando"
 id: pirog
-pic: "https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb"
-location: "New Hampshire"
+pic: "/images/people/pirog.jpg"
+location: "Boston"
 ---
 
 Holla!!! We are super pumped to announce the release of [Lando 3.0.0-rc.2](https://github.com/lando/lando/releases)!.

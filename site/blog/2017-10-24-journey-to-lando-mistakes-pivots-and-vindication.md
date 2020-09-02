@@ -11,8 +11,8 @@ author: "Mike Pirog"
 date: "2017-10-24"
 summary: "After a Kickstarter campaign, two major versions, tons of feedback, broken promises, blood, sweat, tears and years of making Kalabox 2 we've finally made local dev great again with Lando"
 id: pirog
-pic: "https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb"
-location: "New Hampshire"
+pic: "/images/people/pirog.jpg"
+location: "DC"
 ---
 
 The Journey

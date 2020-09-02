@@ -1,14 +1,14 @@
 ---
 title: "Rejoice: Kalabox 2.0 Released"
 tags:
-    - deployment
-    - localdev
-    - misc
-    - support
-    - training
-    - testing
-    - devops
-    - alecr
+  - deployment
+  - localdev
+  - misc
+  - support
+  - training
+  - testing
+  - devops
+  - alecr
 author: "Alec Reynolds"
 date: "2016-09-20"
 summary: "Proudly announcing the release of Kalabox 2.0, our open-source Docker-powered local development tool that provides the fastest way to develop WordPress and Drupal applications."

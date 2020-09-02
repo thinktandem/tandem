@@ -135,17 +135,32 @@ module.exports = {
       alecr: {
         title: 'Alec Reynolds',
         byline: 'CEO, Co-Founder',
-        pic: '/images/people/alecr.png',
+        pic: '/images/people/alec-sm.jpg',
       },
       drupal: {
         title: '10+ years of Drupal Expertise',
         byline: 'We have seen and done it all in Drupal on sites of every size and complexity.  Let our years or experience help bring your Drupal project to the next level.',
         pic: '/images/tags/drupal-logo.png',
       },
+      johno: {
+        title: 'I dominate',
+        byline: 'CRUSH CRUSH CRUSH',
+        pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33',
+      },
+      laravel: {
+        title: 'Title about Laravel',
+        byline: 'Words about laravel.',
+        pic: '/images/tags/laravel-logo.png',
+      },
       migration: {
         title: 'Masters of Migrating Data',
         byline: 'We have migrated dozens of sites for our clients over the years.  We are a little strange in the fact that we love handling complex migration situations.',
         pic: '/images/tags/double-arrows.png',
+      },
+      pirog: {
+        title: 'Mike Pirog',
+        byline: 'CTO, Co-Founder',
+        pic: '/images/people/mike-sm.jpg',
       },
       wordpress: {
         title: 'Title about WordPress',
@@ -156,16 +171,6 @@ module.exports = {
         title: 'Title about VuePress',
         byline: 'Words about VuePress.',
         pic: '/images/tags/vuepress-logo.png',
-      },
-      laravel: {
-        title: 'Title about Laravel',
-        byline: 'Words about laravel.',
-        pic: '/images/tags/laravel-logo.png',
-      },
-      johno: {
-        title: 'I dominate',
-        byline: 'CRUSH CRUSH CRUSH',
-        pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33',
       },
     },
     vibes: [

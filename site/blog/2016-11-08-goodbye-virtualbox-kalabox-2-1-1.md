@@ -9,8 +9,8 @@ author: "Mike Pirog"
 date: "2016-11-08"
 summary: "With our newest version of Kalabox, we say goodbye to VirtualBox and hello to better performance and stability with Docker for Mac and Windows."
 id: pirog
-pic: "https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb"
-location: "New Hampshire"
+pic: "/images/people/pirog.jpg"
+location: "San Francisco"
 ---
 
 It's appropriate that today is Election Day in the US because after a few months of shakedown on Kalabox 2.0.x we feel like the **PEOPLE HAVE SPOKEN**:
