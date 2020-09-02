@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Tandem',
-  description: 'Tandem uses open-source tools like Drupal, Laravel, and Docker to transform your complex workflows and technical debt into elegant web applications.',
+  description: 'Tandem is a full service digital agency that works closely with you to get shit done and get it done right.',
   head: [
     ['link', {rel: 'icon', href: '/favicon.png'}],
     ['link', {rel: 'stylesheet', href: '/styles/overrides.css'}],
