@@ -13,7 +13,7 @@ author: "Alec Reynolds"
 date: "2016-09-20"
 summary: "Proudly announcing the release of Kalabox 2.0, our open-source Docker-powered local development tool that provides the fastest way to develop WordPress and Drupal applications."
 id: alecr
-pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
+pic: "/images/people/alecr.png"
 location: California
 ---
 

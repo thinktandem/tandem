@@ -7,7 +7,7 @@ author: "Alec Reynolds"
 date: "2016-09-23"
 summary: "How to run small NodeJS in an efficient, inexpensive, and scalable manner using Docker Cloud."
 id: alecr
-pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
+pic: "/images/people/alecr.png"
 location: California
 ---
 

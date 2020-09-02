@@ -8,7 +8,7 @@ author: "Alec Reynolds"
 date: "2018-04-18"
 summary: "Clutch has named Tandem one of the leading Drupal development agencies in SF for 2018."
 id: alecr
-pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
+pic: "/images/people/alecr.png"
 location: California
 ---
 

@@ -10,7 +10,7 @@ author: "Alec Reynolds"
 date: "2019-02-04"
 summary: "Don't get caught wearing last year's dev workflow, see all the essentials for 2019."
 id: alecr
-pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
+pic: "/images/people/alecr.png"
 location: California
 ---
 

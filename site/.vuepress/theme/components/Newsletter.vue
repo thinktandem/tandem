@@ -68,7 +68,7 @@ export default {
     contactUs() {
       // Busy UX
       this.busy = true;
-      this.buttonText = 'Sending...';
+      this.buttonText = 'Subscribing...';
       this.error = [];
 
       // Add in tags if we can

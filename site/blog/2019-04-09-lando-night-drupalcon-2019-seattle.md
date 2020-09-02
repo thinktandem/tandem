@@ -10,7 +10,7 @@ author: "Alec Reynolds"
 date: "2019-04-09"
 summary: "Peace, love, and Lando."
 id: alecr
-pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
+pic: "/images/people/alecr.png"
 location: California
 ---
 

@@ -132,6 +132,11 @@ module.exports = {
       {airport: 'SAN', name: 'San Diego', email: 'san@thinktandem.io', background: '#FFC425', text: '#2F241D'},
     ],
     tags: {
+      alecr: {
+        title: 'Alec Reynolds',
+        byline: 'CEO, Co-Founder',
+        pic: '/images/people/alecr.png',
+      },
       drupal: {
         title: '10+ years of Drupal Expertise',
         byline: 'We have seen and done it all in Drupal on sites of every size and complexity.  Let our years or experience help bring your Drupal project to the next level.',

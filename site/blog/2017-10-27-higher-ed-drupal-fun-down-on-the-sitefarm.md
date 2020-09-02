@@ -9,7 +9,7 @@ author: "Alec Reynolds"
 date: "2017-10-27"
 summary: "Why you should pay attention to this new higher education Drupal distribution gaining traction in the University of California system."
 id: alecr
-pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
+pic: "/images/people/alecr.png"
 location: California
 ---
 

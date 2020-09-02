@@ -8,7 +8,7 @@ author: "Alec Reynolds"
 date: "2017-09-21"
 summary: "Take a fresh look at what defines Tandem as a bold new digital agency."
 id: alecr
-pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
+pic: "/images/people/alecr.png"
 location: California
 ---
 
