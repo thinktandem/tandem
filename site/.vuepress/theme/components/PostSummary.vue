@@ -25,15 +25,6 @@
           >
             {{ page.title }}
           </NavLink>
-          <PostMeta
-            :id="page.frontmatter.id"
-            :name="page.frontmatter.author"
-            :date="page.frontmatter.date"
-            :link="page.frontmatter.link"
-            :location="page.frontmatter.location"
-            :pic="page.frontmatter.pic"
-            pic-align="left"
-          />
         </header>
 
         <client-only>
@@ -52,7 +43,15 @@
           />
           <!-- eslint-enable vue/no-v-html -->
         </client-only>
-
+        <PostMeta
+          :id="page.frontmatter.id"
+          :name="page.frontmatter.author"
+          :date="page.frontmatter.date"
+          :link="page.frontmatter.link"
+          :location="page.frontmatter.location"
+          :pic="page.frontmatter.pic"
+          pic-align="left"
+        />
         <footer>
           <div
             v-if="page.frontmatter.tags"
@@ -107,6 +106,12 @@ a
   position relative
   padding 4em 4em
   background $lightGrey
+  &:hover
+    color $tandemPink
+    .post-summary, .post-title, .written-by
+      color $tandemPink
+      text-decoration none
+      transition none
   .post-wrapper
     opacity .86
     padding 4em
@@ -120,16 +125,12 @@ a
     font-family "Poppins", "Helvetica Neue", Arial, sans-seri
     color $textColor
     cursor pointer
-    transition all 0.2s
+    transition none
     text-decoration none
-
-    &:hover
-      color $accentColor
-      text-decoration none
 
   .post-summary
     font-size 14px
-    color $landoGrey
+    color $tandemGrey
     font-weight 300
     font-size 1.68rem
     line-height 2

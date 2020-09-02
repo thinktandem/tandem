@@ -2,7 +2,7 @@
   <div
     id="tandem-content_post"
     ref="content"
-    class="post-layout content-wrapper-tandem"
+    class="post-layout content-wrapper-tandem content-wrapper-post"
   >
     <article
       itemscope
@@ -26,16 +26,37 @@
         />
       </header>
       <Content
-        class="content"
+        class="post-content"
         itemprop="articleBody"
       />
       <hr>
       <footer>
-        <Newsletter />
-        <PostFooter
-          :tags="$frontmatter.tags"
-          :original="$frontmatter.original"
-        />
+        <div class="custom-block point newsletter">
+          <p class="custom-block-title">
+            Subscribe.<br>
+            <small>Get updates for new and similiar content.</small>
+          </p>
+          <Newsletter />
+        </div>
+
+        <div class="custom-block point tagz">
+          <p class="custom-block-title">
+            Learn more about.
+          </p>
+          <div class="post-tags">
+            <ul
+              v-if="tags"
+              class="tags"
+            >
+              <PostTag
+                v-for="tag in tags"
+                :key="tag.name"
+                class="tag"
+                :tag="tag.name"
+              />
+            </ul>
+          </div>
+        </div>
       </footer>
       <Toc />
     </article>
@@ -43,11 +64,22 @@
 </template>
 
 <script>
+import Newsletter from '@theme/components/Newsletter.vue';
 import PostMeta from '@theme/components/PostMeta.vue';
-import PostFooter from '@theme/components/PostFooter.vue';
+import PostTag from '@theme/components/PostTag.vue';
 import Toc from '@theme/components/Toc.vue';
 export default {
-  components: {PostMeta, PostFooter, Toc},
+  components: {Newsletter, PostMeta, PostTag, Toc},
+  data() {
+    return {
+      tags: [],
+    };
+  },
+  mounted() {
+    this.tags = [...this.$tags.list].filter(tag => {
+      return this.$frontmatter.tags.includes(tag.name);
+    });
+  },
   jsonld() {
     return {
       '@context': 'https://schema.org',
@@ -117,31 +149,74 @@ export default {
 };
 </script>
 
-<style lang="stylus" scoped>
-.content
-  margin-top 3.14em
-h1
-  font-size 4.57em
-  font-weight 600
-  letter-spacing -0.0987654321em
-  margin-top 0
-h2
-  font-size 2.5em
-  font-weight 600
-  letter-spacing -0.0987654321em
-p
-  font-weight 300
-  line-height 1.712
-  letter-spacing -0.56px
-  font-size 1.0987654321em
+<style lang="stylus">
+.content-wrapper-tandem
+  &.content-wrapper-about
+  .post-content
+    margin-top 3.14em
+    margin-bottom 3.14em
 .post-theme-content
   font-size 16px
   letter-spacing 0px
   font-family "GalaxieCopernicus", PT Serif, Serif
   color $textColor
   position relative
+  h1
+    font-size 4.57em
+    font-weight 600
+    letter-spacing -0.0987654321em
+    margin-top 0
+    margin-bottom .5em
+  h2
+    font-size 2.5em
+    font-weight 600
+    letter-spacing -0.0987654321em
+  p
+    font-weight 300
+    line-height 1.712
+    letter-spacing -0.56px
+    font-size 1.0987654321em
+  footer
+    margin-bottom 2em
   .post-title
     padding-top 0
+  .post-meta-data
+    border-bottom 1px solid $borderColor
+    justify-content space-between
+
+.custom-block
+  &.point
+    border-bottom 1px solid $borderColor
+    border-top 0
+    padding 2em 0
+    &.tagz
+      margin-bottom 0
+      margin-top 0
+      border-bottom 0
+      .post-tags
+        width 100%
+        ul
+          margin 0
+          list-style none
+          display flex
+          margin 0
+          padding 0
+          flex-wrap wrap
+          @media (max-width: $MQMobile)
+            justify-content center
+          li
+            margin-bottom 1em
+    p
+      &.custom-block-title
+        font-weight 300
+        font-size 1.33rem
+        letter-spacing -1.04px
+        color black
+        small
+          font-size .75em
+          color $darkTextColor
+          font-family "GalaxieCopernicus", PT Serif, Serif
+
 .vuepress-toc
   right 5%
   margin-top 120px
@@ -152,8 +227,9 @@ p
   .post-title
     margin-top 0
 @media (max-width: $MQMobileNarrow)
-  .content
+  .post-content
     margin-top 2em
-  h1
-    font-size 3em
+  .post-theme-content
+    h1
+      font-size 3em
 </style>
