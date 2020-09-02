@@ -8,13 +8,13 @@ author: "John Ouellet"
 date: "2019-11-21"
 summary: "Drupal 9 is right around the corner.  It is very easy to get your sites ready with Lando + PHPStan."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 
 ## Overview
 
-Drupal 9 will be [released on June 3, 2020](https://www.drupal.org/docs/9).  It is crazy to think that because it feels like Drupal 8 just came out.  A lot has changed in the Drupal universe since the release of Drupal 8.  Mainly the framework on which Drupal is built.  No longer will it costs tens of thousands of dollars to upgrade Drupal to the next major version.  This is a huge relief for many organizations that have chosen Drupal as their platform.  Getting your Drupal 8 site ready for Drupal 9 is a very easy process.  
+Drupal 9 will be [released on June 3, 2020](https://www.drupal.org/docs/9).  It is crazy to think that because it feels like Drupal 8 just came out.  A lot has changed in the Drupal universe since the release of Drupal 8.  Mainly the framework on which Drupal is built.  No longer will it costs tens of thousands of dollars to upgrade Drupal to the next major version.  This is a huge relief for many organizations that have chosen Drupal as their platform.  Getting your Drupal 8 site ready for Drupal 9 is a very easy process.
 
 Drupal 8.8 should be released on December 4, 2019.  This version of Drupal 8 will contain the final deprecations for Drupal 9.  With that said, this gives you a solid 6 months to get all your sites ready. So, let's dive right in and talk about deprecated code then how to test for it and fix it.
 
@@ -41,7 +41,7 @@ abstract class DatabaseWebTestBase extends WebTestBase { }
 function node_load_multiple(array $nids = NULL, $reset = FALSE) {}
 ```
 
-So now all we need to do is find and fix these deprecations within our Drupal 8 site and we will be good to go.  
+So now all we need to do is find and fix these deprecations within our Drupal 8 site and we will be good to go.
 
 ### PHPStorm
 
@@ -49,7 +49,7 @@ One quick and easy way to identify these deprecations is while you are writing c
 
 <img src="/images/articles/drupal9-phpstan/deprecation-phpstorm.jpg" alt="PHPStorm Deprecation Screenshot" />
 
-While this is great as you are writing code, it doesn't help too much to find all the deprecations in your code base.  Here at Tandem, we love to automate all the things to make our lives easier.  This is why we created [Lando](https://lando.dev/) and we can use Lando's power to identify all our deprecations.  
+While this is great as you are writing code, it doesn't help too much to find all the deprecations in your code base.  Here at Tandem, we love to automate all the things to make our lives easier.  This is why we created [Lando](https://lando.dev/) and we can use Lando's power to identify all our deprecations.
 
 ## Lando + PHPStan
 
@@ -78,7 +78,7 @@ parameters:
 includes:
   - vendor/mglaman/phpstan-drupal/extension.neon
   - vendor/phpstan/phpstan-deprecation-rules/rules.neon
-``` 
+```
 
 And that is it really.  PHPStan is technically setup on your local environment, now all we need to do is hook this all into Lando.
 
@@ -110,7 +110,7 @@ tooling:
       - appserver: /app/vendor/bin/phpstan analyse web/modules/custom web/themes/custom
 ```
 
-So basically this Drupal 8 Lando setup runs composer install on build, then creates 2 tooling commands: ```lando phpstan``` and ```lando test```.  The first command ```lando phpstan``` allows us to call PHPStan on whatever we want.  While the second command is a default command we usually use to test all the custom development we are usually doing on the site.  You can obviously tweak the paths as need be.  
+So basically this Drupal 8 Lando setup runs composer install on build, then creates 2 tooling commands: ```lando phpstan``` and ```lando test```.  The first command ```lando phpstan``` allows us to call PHPStan on whatever we want.  While the second command is a default command we usually use to test all the custom development we are usually doing on the site.  You can obviously tweak the paths as need be.
 
 That is it, you are now ready to rock and roll and begin testing for all your Deprecations.
 
@@ -132,6 +132,6 @@ While I have not tried this myself yet, there is hope.  [Drupal 8 Rector](https:
 
 ## Conclusion
 
-Getting your code base ready for Drupal 9 is super simple with Lando + PHPStan.  Within a few minutes, you can setup your local development environment to start testing away.  You can easily plug this tooling into any CI testing process you may use as well.  
+Getting your code base ready for Drupal 9 is super simple with Lando + PHPStan.  Within a few minutes, you can setup your local development environment to start testing away.  You can easily plug this tooling into any CI testing process you may use as well.
 
 If you need help with setting up your Drupal 9 deprecation workflow, fill out the form below and we can go from there.

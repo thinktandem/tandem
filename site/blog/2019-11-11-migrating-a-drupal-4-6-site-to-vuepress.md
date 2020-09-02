@@ -10,7 +10,7 @@ author: "John Ouellet"
 date: "2019-11-11"
 summary: "With Lando and Symfony Console, migrating this legacy Drupal 4.6 site to VuePress was fairly straightforward."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 
@@ -27,7 +27,7 @@ After looking through the site, we decided to move the site to [VuePress](https:
 Getting Drupal 4.6 Working Locally
 -----------------
 
-The legacy Drupal 4.6 site ran on PHP 4.x and MySQL 4.x.  Currently, [Lando](https://lando.dev/) has the option to do [php 5.3](https://docs.lando.dev/config/php.html#legacy-versions) and [MySQL 5.7](https://docs.lando.dev/config/mysql.html#patch-versions) out of the box. So I knew we would have to use a [custom compose services](https://docs.lando.dev/config/compose.html#compose) of Lando to get this site to work correctly.  
+The legacy Drupal 4.6 site ran on PHP 4.x and MySQL 4.x.  Currently, [Lando](https://lando.dev/) has the option to do [php 5.3](https://docs.lando.dev/config/php.html#legacy-versions) and [MySQL 5.7](https://docs.lando.dev/config/mysql.html#patch-versions) out of the box. So I knew we would have to use a [custom compose services](https://docs.lando.dev/config/compose.html#compose) of Lando to get this site to work correctly.
 
 I have [already written an article](https://thinktandem.io/blog/2019/09/10/running-legacy-versions-of-drupal-on-lando/) on how we finally got this site to work with Drupal 4.6.  After I wrote that article, there was a small addition or two to handle some DB issues I was having with the site on rebuild.  Here is the final Lando YAML config file I had been using:
 
@@ -94,7 +94,7 @@ Getting the content out of the Drupal 4.6 Site
 
 Drupal was a much different CMS when 4.6 was all the rage.  Views had just came out and none of the awesome data export modules existed yet.  There was no migrate system at all yet either.  So, I headed over to [drupal.org's module search page](https://www.drupal.org/project/project_module) and looked for a CSV export option.  After staring at a few options, I landed on the [Import-export](https://www.drupal.org/project/import_export) module as it seemed to have the basic functionality to suit our needs.  After enabling the module, I went to the config page and was presented with a few options:
 
-<img src="/images/articles/drupal-vuepress/import-export.jpg" alt="Drupal 4.6 Import / Export Screen" /> 
+<img src="/images/articles/drupal-vuepress/import-export.jpg" alt="Drupal 4.6 Import / Export Screen" />
 
 As a side note, the backend of a Drupal 4.6 is not that dissimilar from a Drupal 6 site.  I was able to find what I needed fairly easily.
 
@@ -110,21 +110,21 @@ Why VuePress
 
 Here at Tandem, we have adopted [VueJS](https://vuejs.org/) as our frontend technology.  While everyone in the Drupal community is all about React / Gatsby, we have found VueJS to suit our needs better.  When I first looked at VueJS templating code, it made sense to me right away.  I am mostly a backend developed, but I do have a good amount of experience with various JavaScript front end technologies.  With that said, the simplicity, ease of use, extensibility, and scalability is why we have used VueJS in house.  We have used it to build fully decoupled Drupal 8 sites like [poets.org](https://poets.org/) and partially decoupled components like [GoHealth's robust mapping feature](https://www.gohealthuc.com/nyc).
 
-VuePress is a newer product that is used to build static based sites.  Since the 1.x version of VuePress, a lot of the theming mechanisms are similar-ish to Drupal's inheritance structures and you can build sites easily and quickly without really knowing VueJS.  VuePress can be used to create documentation based site like [Tandem's documentation site](https://docs.thinktandem.io/) or [Lando's documentation site](https://docs.lando.dev/).  You can also use it to make regular sites like [Lando's main site](https://lando.dev/).  
+VuePress is a newer product that is used to build static based sites.  Since the 1.x version of VuePress, a lot of the theming mechanisms are similar-ish to Drupal's inheritance structures and you can build sites easily and quickly without really knowing VueJS.  VuePress can be used to create documentation based site like [Tandem's documentation site](https://docs.thinktandem.io/) or [Lando's documentation site](https://docs.lando.dev/).  You can also use it to make regular sites like [Lando's main site](https://lando.dev/).
 
 ISNA's old site looks very similar to the documentation sites we have already created.  So, it would be very easy to have a similar look and feel to the legacy site but with a modern feel.  The client did not mind that the site would look slightly different in the end either, so this made the choice easy.
 
 ### Lando VuePress Setup
 
-As with almost all the projects we do here at Tandem, we created a [VuePress start state](https://github.com/thinktandem/template-vuepress).  We have a simple way to start all our projects and I followed [this guide to get it going](https://docs.thinktandem.io/guides/spinning-up-new-projects.html).  As an organization, we have standardized on [platform.sh](https://platform.sh/) as represented in this repo and the guide.  However, I just skipped those steps for this repo and stripped that code out since I will be building the site with Netlify. 
+As with almost all the projects we do here at Tandem, we created a [VuePress start state](https://github.com/thinktandem/template-vuepress).  We have a simple way to start all our projects and I followed [this guide to get it going](https://docs.thinktandem.io/guides/spinning-up-new-projects.html).  As an organization, we have standardized on [platform.sh](https://platform.sh/) as represented in this repo and the guide.  However, I just skipped those steps for this repo and stripped that code out since I will be building the site with Netlify.
 
 This starter state is good to go out of the gate.  All I did was change the app name in the lando config file and I was off to the races.  I pushed up my changes to GitHub and now I am ready to spin those out on Netlify.
 
 ### Netlify VuePress Setup
 
-[Netlify](https://www.netlify.com/) is a newer service that embraces the [JAMStack](https://jamstack.org/) movement that is happening on the web right now.  VuePress is one of the many stacks they support with their [Netlify Build](https://www.netlify.com/products/build/) service.  
+[Netlify](https://www.netlify.com/) is a newer service that embraces the [JAMStack](https://jamstack.org/) movement that is happening on the web right now.  VuePress is one of the many stacks they support with their [Netlify Build](https://www.netlify.com/products/build/) service.
 
-You can easily integrate a site from GitHub and it detects what the technology is.  During the setup, it lets you choose your deploy settings.  With our starter state, we changed the default ```docs``` folder to ```src```.  So, we just had to adjust the build and deploy commands in this step.  Once that is done, it deploys the site and you are good to go.  You can change the name of the site to something more readable.  For us we changed it to isna.netlify.com.  
+You can easily integrate a site from GitHub and it detects what the technology is.  During the setup, it lets you choose your deploy settings.  With our starter state, we changed the default ```docs``` folder to ```src```.  So, we just had to adjust the build and deploy commands in this step.  Once that is done, it deploys the site and you are good to go.  You can change the name of the site to something more readable.  For us we changed it to isna.netlify.com.
 
 So now that our VuePress site is setup, we need to get the Drupal 4.6 content into the new site.
 
@@ -132,20 +132,20 @@ So now that our VuePress site is setup, we need to get the Drupal 4.6 content in
 Converting the Exports to Markdown
 -----------------------
 
-In our VuePress setup everything goes into the src folder.  You also can checkout how to [setup directory structure in this doc](https://vuepress.vuejs.org/guide/directory-structure.html#default-page-routing).  Our Drupal 4.6 site had paths like ```node/14``` or ```/faq```.  In VuePress, in order to achieve this structure, I need to have folders and children folders of the same name with a README.md file in them.  So, for the first example, I will need a ```node``` folder and in that folder I need a ```14``` folder with a README.md file in it with the appropriate content to achieve the same path structure.  
+In our VuePress setup everything goes into the src folder.  You also can checkout how to [setup directory structure in this doc](https://vuepress.vuejs.org/guide/directory-structure.html#default-page-routing).  Our Drupal 4.6 site had paths like ```node/14``` or ```/faq```.  In VuePress, in order to achieve this structure, I need to have folders and children folders of the same name with a README.md file in them.  So, for the first example, I will need a ```node``` folder and in that folder I need a ```14``` folder with a README.md file in it with the appropriate content to achieve the same path structure.
 
-So with this in mind, I needed a way to create that structure and then also create the MarkDown files with the appropriate content.  There really wasn't a good tool out there that fit my needs after a lot of Googling.  So I had to create my own.  I achieved this by using [Symfony Console](https://symfony.com/doc/current/components/console.html).  Symfony Console is a powerful tool that allows us to create CLI commands via PHP classes basically.  If you have ever used [Drupal Console](https://drupalconsole.com/) before, it is powered by Symfony Console.  
+So with this in mind, I needed a way to create that structure and then also create the MarkDown files with the appropriate content.  There really wasn't a good tool out there that fit my needs after a lot of Googling.  So I had to create my own.  I achieved this by using [Symfony Console](https://symfony.com/doc/current/components/console.html).  Symfony Console is a powerful tool that allows us to create CLI commands via PHP classes basically.  If you have ever used [Drupal Console](https://drupalconsole.com/) before, it is powered by Symfony Console.
 
 I had never written a Symfony Console command before, but I have written tons of Drush commands, so it was not that different.  If you have done any custom coding in Drupal 8, you can write a Symfony Console command.  They also have a quick and easy way to get started with a new command via:
 
 ```bash
 composer create-project symfony/skeleton myapp
 cd myapp
-composer require console 
+composer require console
 composer require --dev maker var-dumper
 ```
 
-Once I ran that, I was good to.  Now I just needed a way to take the data I had and convert it into the directories and files via PHP.  I have written many Drupal custom modules that have manipulated data in files, especially CSVs.  So I knew I could copy pasta a lot of that and place it into the Console command I was creating.  
+Once I ran that, I was good to.  Now I just needed a way to take the data I had and convert it into the directories and files via PHP.  I have written many Drupal custom modules that have manipulated data in files, especially CSVs.  So I knew I could copy pasta a lot of that and place it into the Console command I was creating.
 
 After a couple hours, the end product is this [CSV to VuePress Markdown](https://github.com/thinktandem/csv-to-vuepress-md).  This is still a work in progress, but it got this job done for us.  To use this, your CSV files need to have a title, body, and url field in it.  Any other fields will be converted into [YAML Frontmatter](https://vuepress.vuejs.org/guide/frontmatter.html#predefined-variables) items.  From there, it creates the directory structure based on the url and generates everything to the ```output``` folder.
 
@@ -210,7 +210,7 @@ VuePress uses a [theme system](https://vuepress.vuejs.org/theme/) to handle styl
 
 ### Layouts
 
-The only requirement from InterACT was to have a banner at the top of every page that signified this was an archived site.  Since VuePress uses a static navbar and sidebar from the default theme, the easiest way to achieve this was to put it right above the body content.  This was fairly easy to do by [extending the VuePress default theme](https://vuepress.vuejs.org/theme/inheritance.html) and [overriding the Layout.vue](https://vuepress.vuejs.org/theme/inheritance.html#override-components) file.  
+The only requirement from InterACT was to have a banner at the top of every page that signified this was an archived site.  Since VuePress uses a static navbar and sidebar from the default theme, the easiest way to achieve this was to put it right above the body content.  This was fairly easy to do by [extending the VuePress default theme](https://vuepress.vuejs.org/theme/inheritance.html) and [overriding the Layout.vue](https://vuepress.vuejs.org/theme/inheritance.html#override-components) file.
 
 When you override a layout in VuePress, you don't need to copy everything.  Instead you can use the ```<ParentLayout>``` tags and slap all your custom stuffs in between those tags.  VuePress is smart enough to know what to do with that.  Also, VuePress has a concept of slots which are similar to hooks in Drupal for placing content in specific parts of a page.  My final layout looked like this:
 
@@ -237,9 +237,9 @@ When you override a layout in VuePress, you don't need to copy everything.  Inst
 </script>
 ```
 
-I have my banner (and also footer) component hooked up.  Since I am using the page-top slot, it will appear [above the content as you can see from the default layout](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/theme-default/layouts/Layout.vue#L37).  
+I have my banner (and also footer) component hooked up.  Since I am using the page-top slot, it will appear [above the content as you can see from the default layout](https://github.com/vuejs/vuepress/blob/master/packages/%40vuepress/theme-default/layouts/Layout.vue#L37).
 
-The layout I created extends the main layout that is used by all pages.  You can also create other layouts for your theme to use if you wanted to.  I did have to create a printable layout that was used on a couple pages.  If you do that, you need to use the ```layout``` YAML frontmatter key to [signify what layout to use](https://vuepress.vuejs.org/theme/default-theme-config.html#custom-layout-for-specific-pages).  
+The layout I created extends the main layout that is used by all pages.  You can also create other layouts for your theme to use if you wanted to.  I did have to create a printable layout that was used on a couple pages.  If you do that, you need to use the ```layout``` YAML frontmatter key to [signify what layout to use](https://vuepress.vuejs.org/theme/default-theme-config.html#custom-layout-for-specific-pages).
 
 ### Components
 
@@ -297,7 +297,7 @@ So as you can see, it's pretty straightforward and easy to use.  This component 
 
 Now with that done, it was time to add system wide styling.
 
-### Styling 
+### Styling
 
 VuePress has two files when creating non components based styling: [index.styl](https://vuepress.vuejs.org/config/#chainwebpack) and [palette.styl](https://vuepress.vuejs.org/config/#palette-styl).  We use the index.styl to write our own system wide CSS.  The palette.styl is used to override [default presets](https://github.com/vuejs/vuepress/blob/master/packages/@vuepress/core/lib/client/style/config.styl) from the default theme.  We used the last one to change a few options as seen below:
 
@@ -335,28 +335,28 @@ So now that we have a list of 404s, we need to fix this content.  In this instan
 
 ### Fixing Missing Content
 
-The way I handled this part of the migration was to look at the old site (while logged out) and grab the missing content between the main div tags.  I then slapped the raw HTML into this super handy [HTML to Markdown converter](https://domchristie.github.io/turndown/).  I used all the default setting with the exception of making the link styles referenced.  This saved me so much time and effort.  All together, it only took a few hours to add in the missing content.  
+The way I handled this part of the migration was to look at the old site (while logged out) and grab the missing content between the main div tags.  I then slapped the raw HTML into this super handy [HTML to Markdown converter](https://domchristie.github.io/turndown/).  I used all the default setting with the exception of making the link styles referenced.  This saved me so much time and effort.  All together, it only took a few hours to add in the missing content.
 
-Once all the missing content was added, I reran all the previous steps to make sure all the content was there and it looked good.  
+Once all the missing content was added, I reran all the previous steps to make sure all the content was there and it looked good.
 
 ### Redirects
 
-There were a bunch of redirects in place on the legacy site.  Also, some content, like the store and donate options were no longer a thing.  I decided to use [Netlify's redirect system](https://docs.netlify.com/routing/redirects/) since I had an issue with VuePress redirecting to external links.  I created the ```_redirects``` file in the public folder of the VuePress structure.  I then added all the redirects and pushed it up.  
+There were a bunch of redirects in place on the legacy site.  Also, some content, like the store and donate options were no longer a thing.  I decided to use [Netlify's redirect system](https://docs.netlify.com/routing/redirects/) since I had an issue with VuePress redirecting to external links.  I created the ```_redirects``` file in the public folder of the VuePress structure.  I then added all the redirects and pushed it up.
 
 With all our content and redirects in place, interACT checked out the site and give me the thumbs up.  It was time to make the switch.
 
 Going Live
 --------
 
-Going Live was fairly easy with Netlify.  It only involved two steps really, adding the [custom domain](https://docs.netlify.com/domains-https/custom-domains/) and then switching the nameservers.  Netlify did the rest from there.  Just like any other modern CDN, the switch happened almost instantly. 
+Going Live was fairly easy with Netlify.  It only involved two steps really, adding the [custom domain](https://docs.netlify.com/domains-https/custom-domains/) and then switching the nameservers.  Netlify did the rest from there.  Just like any other modern CDN, the switch happened almost instantly.
 
 After going live, I did our usual post live performance testing.  I saw that the site has an issue or two in page speed and was able to alleviate those by using the [Asset Optimization](https://www.netlify.com/blog/2019/08/05/control-your-asset-optimization-settings-from-netlify.toml/) setup in Netlify.  Other than that, this site was good to go and we successfully migrated the site to VuePress.
 
 
-Final Thoughts 
+Final Thoughts
 ------------
 
-Taking on this project allowed me to learn new things like custom Lando setups, writing a Symfony Console command, and becoming better at VuePress.  I also learned more about Netlify and its advantages and disadvantages.  The only big disadvantage I saw with Netlify was this site had too much traffic to qualify for the free plan which was a big bummer to me.  The site generates about 150 GBs / month in bandwidth from their CDN.  The site is heavily cached via [Netlify caching file](https://www.netlify.com/blog/2017/02/23/better-living-through-caching/), but it still gets hundreds of thousands of pageviews a month.  However, with the bandwidth overages, it is only $20 / month.  Which is pretty low cost considering what they were paying to keep the site going.  Other than that, Netlify is amazing and I recommend it to anyone creating a static site setup.  
+Taking on this project allowed me to learn new things like custom Lando setups, writing a Symfony Console command, and becoming better at VuePress.  I also learned more about Netlify and its advantages and disadvantages.  The only big disadvantage I saw with Netlify was this site had too much traffic to qualify for the free plan which was a big bummer to me.  The site generates about 150 GBs / month in bandwidth from their CDN.  The site is heavily cached via [Netlify caching file](https://www.netlify.com/blog/2017/02/23/better-living-through-caching/), but it still gets hundreds of thousands of pageviews a month.  However, with the bandwidth overages, it is only $20 / month.  Which is pretty low cost considering what they were paying to keep the site going.  Other than that, Netlify is amazing and I recommend it to anyone creating a static site setup.
 
-Here at Tandem we have migrated all types of sites to various platforms.  If you are looking to migrate your legacy site to archive it, fill out the form below and we can talk to see what it would take.  
+Here at Tandem we have migrated all types of sites to various platforms.  If you are looking to migrate your legacy site to archive it, fill out the form below and we can talk to see what it would take.
 

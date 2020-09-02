@@ -11,7 +11,7 @@ author: "John Ouellet"
 date: "2020-05-12"
 summary: "This webinar dove into Source, Process, & Destination Plugins for Drupal 8/9 Migrations."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 
@@ -96,6 +96,6 @@ Thank you again for attending this webinar.  For easy reference, here are all th
 - [Migrating a Drupal 7 AddressField To a Drupal 8 Address](https://thinktandem.io/blog/2019/07/17/migrating-a-drupal-7-addressfield-to-a-drupal-8-address/)
 - [Migrating a Drupal 8 Multisite to a Standalone Drupal 8 Site](https://thinktandem.io/blog/2020/03/12/migrating-a-drupal-8-multisite-to-a-standalone-drupal-8-site/)
 
-Our next webinar will be held on May 29, 2020; more details to follow on what we will be presenting on.  
+Our next webinar will be held on May 29, 2020; more details to follow on what we will be presenting on.
 
 In the interim, if your organization has any questions with a migration you are performing, please fill out the form below so we can chat more.

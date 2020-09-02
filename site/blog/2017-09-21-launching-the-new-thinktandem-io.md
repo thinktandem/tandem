@@ -9,7 +9,7 @@ date: "2017-09-21"
 summary: "Take a fresh look at what defines Tandem as a bold new digital agency."
 id: alecr
 pic: "/images/people/alecr.png"
-location: California
+location: Oakland
 ---
 
 A few months ago we realized something: our website didn't reflect the work we were doing at Tandem.

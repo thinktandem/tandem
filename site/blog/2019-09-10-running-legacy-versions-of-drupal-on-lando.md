@@ -8,14 +8,14 @@ author: "John Ouellet"
 date: "2019-09-10"
 summary: "This guide is how we got a Drupal 4.6 Site to run on Lando.  You can use this as a guide to run any legacy architecture as well."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 
 Use Case
 --------
 
-We had recently been contracted by a non-profit to migrate their legacy Drupal 4.6 site to [VuePress](https://vuepress.vuejs.org/).   Yes, you read that right, Drupal 4.6.  We needed to get the site setup in [Lando](https://lando.dev/) so that we could get the content out to use in the new static site.  However, the oldest recipe in Lando is the [Drupal 6 recipe](https://docs.lando.dev/config/drupal6.html).  On top of this, the oldest [PHP version](https://docs.lando.dev/config/php.html) that is "supported" is 5.3.  Finally, Lando only supports [MySQL versions 5 & 8](https://docs.lando.dev/config/mysql.html#supported-versions) out of the box.  Considering the [requirements for Drupal 4.6](https://api.drupal.org/api/drupal/INSTALL.txt/4.6.x) are of a time long forgotten, what are we to do? 
+We had recently been contracted by a non-profit to migrate their legacy Drupal 4.6 site to [VuePress](https://vuepress.vuejs.org/).   Yes, you read that right, Drupal 4.6.  We needed to get the site setup in [Lando](https://lando.dev/) so that we could get the content out to use in the new static site.  However, the oldest recipe in Lando is the [Drupal 6 recipe](https://docs.lando.dev/config/drupal6.html).  On top of this, the oldest [PHP version](https://docs.lando.dev/config/php.html) that is "supported" is 5.3.  Finally, Lando only supports [MySQL versions 5 & 8](https://docs.lando.dev/config/mysql.html#supported-versions) out of the box.  Considering the [requirements for Drupal 4.6](https://api.drupal.org/api/drupal/INSTALL.txt/4.6.x) are of a time long forgotten, what are we to do?
 
 > With the constraints of recipes and versions in Lando, how do we get this legacy Drupal site to work?
 
@@ -28,7 +28,7 @@ As the [documentation states](https://docs.lando.dev/config/compose.html#compose
 
 Finding the right Docker Images
 --------------------------------
-  
+
 Based on the requirements of Drupal 4.6, we knew we had to find a PHP 4.x and a MySQL 4.x image.  The easiest way to do this is to hop over to [https://hub.docker.com](https://hub.docker.com) and use their search bar.  I slapped "php4" into the search and filtered through the results until I came upon [this image](https://hub.docker.com/r/misryan/php4).  After looking at the [Dockerfile](https://hub.docker.com/r/misryan/php4/dockerfile) I could see that it it was a Debian based setup that utilized Apache and PHP 4.4.9.  A [Debian based](https://help.ubuntu.com/lts/installation-guide/s390x/ch01s02.html) container is a requirement for this to work easily in Lando.
 
 > Originally when we tried to get this Drupal 4.6 site to work in Lando, we used a PHP 5.2 docker image.  It "worked" but the site did not render properly [due to this fun issue](https://www.drupal.org/forum/support/upgrading-drupal/2006-02-21/drupal-46-on-php5).
@@ -38,7 +38,7 @@ I then followed the same method to find a [MySQL 4 Image](https://hub.docker.com
 Building the .lando.yml
 ------------------------
 
-This site will not utilize any [recipes](https://docs.lando.dev/config/recipes.html#usage) that Lando comes with out of the box.  So that means all the usual config overrides do not apply here.  We are basically building our own legacy recipe to get this Drupal 4.6 site to run locally.  
+This site will not utilize any [recipes](https://docs.lando.dev/config/recipes.html#usage) that Lando comes with out of the box.  So that means all the usual config overrides do not apply here.  We are basically building our own legacy recipe to get this Drupal 4.6 site to run locally.
 
 Every compose service needs 3 keys to function properly: image, ports,  and command.  The image key is just the name of the docker image itself.  The port key is what port you want to expose.  The command key is the entrypoint for the docker image.  I will explain what that is a little more below.
 
@@ -60,7 +60,7 @@ services:
 
 The command key for this is easy to pinpoint on this [Dockerfile](https://github.com/achih/docker-php4/blob/master/Dockerfile#L167).  It is just the concated version of the ENTRYPOINT command in the Dockerfile.  If a Dockerfile does not have a ENTRYPOINT defined then just use the CMD command.  The rest of this config is fairly straight forward to what I talked about before.
 
-When we started this instance up, the appserver failed to start.  After running ```lando logs -s appserver```  I could see that it was trying to use ```/var/www/html``` as the app root.  Lando uses ```/app``` for all the things and so we need to fix this.  I also noticed the [vhost file](https://github.com/achih/docker-php4/blob/master/apache/000-default) was not really Drupal compatible.  Luckily, we can just map our own vhost file via volumes in the setup.  
+When we started this instance up, the appserver failed to start.  After running ```lando logs -s appserver```  I could see that it was trying to use ```/var/www/html``` as the app root.  Lando uses ```/app``` for all the things and so we need to fix this.  I also noticed the [vhost file](https://github.com/achih/docker-php4/blob/master/apache/000-default) was not really Drupal compatible.  Luckily, we can just map our own vhost file via volumes in the setup.
 
 To do this, I changed the .lando.yml to this:
 
@@ -157,7 +157,7 @@ services:
         MYSQL_ROOT_PASSWORD: mysql4
 ```
 
-As mentioned before, I used the ENTRYPOINT form the [Dockerfile](https://github.com/Tommi2Day/mysql4/blob/master/Dockerfile#L36) to allow the compose service to start this up.  When I rebuilt the lando app, the database service did start, so that was great.  
+As mentioned before, I used the ENTRYPOINT form the [Dockerfile](https://github.com/Tommi2Day/mysql4/blob/master/Dockerfile#L36) to allow the compose service to start this up.  When I rebuilt the lando app, the database service did start, so that was great.
 
 I ran ```lando ssh -s database``` and then tried to utilize the mysqladmin command to create a database.  I got a weird MySQL error and after some Google-fu, I figured out that the volume mount was only owned by root which cause the command to fail.  So we needed to change that.  Using the build steps from before I did the following to the .lando.yml:
 
@@ -239,7 +239,7 @@ tooling:
 
 What I did here was create toolings to run php commands like ```lando php --version```.  I also create a way to drop into the database easily with ```lando mysql```.  Finally, I added the tooling needed to import my database via ```lando db-import```.  Obviously the biggest fallback of the last command is the backup will always need to be called DB.sql.  I can let that slide for now since we just need to get this rolling.
 
-When I run the ```lando db-import``` command, the database goes in successfully.  I double check by running ```lando mysql``` and ```SHOW TABLES``` when I am in the mysql shell.  I also change the db connection string in settings.php to the following: ```$db_url = 'mysql://root:mysql4@database/database';```.  
+When I run the ```lando db-import``` command, the database goes in successfully.  I double check by running ```lando mysql``` and ```SHOW TABLES``` when I am in the mysql shell.  I also change the db connection string in settings.php to the following: ```$db_url = 'mysql://root:mysql4@database/database';```.
 
 The should allow Drupal 4.6 to connect to the database.  When I go to the localhost url, I get this fun error:
 
@@ -350,9 +350,9 @@ tooling:
     cmd: mysql -u root -pmysql4 database < /app/DB.sql
 ```
 
-I utilized the [proxy](https://docs.lando.dev/config/proxy.html) tooling within Lando to give me a consistent clean url when using this locally.  I also mapped a lando volume to the database volume defined in the Dockerfile.  I figured this part out by going to ~/.lando/compose/legacydrupal and looking at each of the database yml files in there.  
+I utilized the [proxy](https://docs.lando.dev/config/proxy.html) tooling within Lando to give me a consistent clean url when using this locally.  I also mapped a lando volume to the database volume defined in the Dockerfile.  I figured this part out by going to ~/.lando/compose/legacydrupal and looking at each of the database yml files in there.
 
-Finally, a big thanks to Mike Pirog, creator of Lando and our CTO for helping me get this setup.  
+Finally, a big thanks to Mike Pirog, creator of Lando and our CTO for helping me get this setup.
 
 Conclusion
 -----------

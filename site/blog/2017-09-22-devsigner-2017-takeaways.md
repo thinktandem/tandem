@@ -8,7 +8,7 @@ date: "2017-09-22"
 summary: "Highlights from Portland's Devsigner Conference."
 id: alecr
 pic: "/images/people/alecr.png"
-location: California
+location: Portland
 ---
 
 The following are notes from the 2017 Devsigner Conference in Portland. We're updating this live as we attend sessions.

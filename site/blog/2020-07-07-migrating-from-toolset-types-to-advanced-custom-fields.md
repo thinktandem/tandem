@@ -9,7 +9,7 @@ author: "John Ouellet"
 date: "2020-07-07"
 summary: "A straight forward guide on moving your fields data from Toolset to ACF."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 

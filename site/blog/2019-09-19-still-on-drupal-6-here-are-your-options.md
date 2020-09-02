@@ -8,14 +8,14 @@ author: "John Ouellet"
 date: "2019-09-19"
 summary: "An informative guide for sites still on Drupal 6"
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 
 Overview
 -------------------
 
-According to the [usage statistics for Drupal core](https://www.drupal.org/project/usage/drupal), there are still roughly 40,000 sites on Drupal 6.  This number is most undoubtedly low, since this chart only shows sites that have the update status module enabled.  There could still be well over 100,000 sites on Drupal 6 at the time of this article. So if your site is still running Drupal 6, you're not alone!  
+According to the [usage statistics for Drupal core](https://www.drupal.org/project/usage/drupal), there are still roughly 40,000 sites on Drupal 6.  This number is most undoubtedly low, since this chart only shows sites that have the update status module enabled.  There could still be well over 100,000 sites on Drupal 6 at the time of this article. So if your site is still running Drupal 6, you're not alone!
 
 Unfortunately, Drupal 6 reached "end of life" on February 24th, 2016. This wasn't an arbitrary milestone; on that date the Drupal core community stopped supporting all Drupal 6 sites.  If you're still running Drupal 6, your site will no longer receive security updates and support requests will no longer be answered on [drupal.org](https://www.drupal.org).  Because Drupal 6 isn't compatible with modern PHP out-of-the-box, your [PHP versions](https://www.php.net/supported-versions.php) may be unsupported as well.
 
@@ -28,7 +28,7 @@ There are a [few contributors](https://www.drupal.org/project/d6lts) who are cur
 
 1. We can use the Drupal 6 LTS core and contrib modules to keep your site secure.
 2. We can update your site to a modern PHP version like 7.1.
-3. This will buy you some time possibly until about 2022. 
+3. This will buy you some time possibly until about 2022.
 
 **Advantages**
 
@@ -69,7 +69,7 @@ Migrate to another CMS
 
 Maybe your friends are all talking about new WordPress features or love Webflow. Perhaps you inherited this old Drupal 6 website and don't really care for Drupal. Heck, maybe your Drupal 6 site was built in a way that left a sour taste in your mouth!
 
-We see this from time to time and we understand: Drupal isn't the perfect solution for every organization. If you're not sure what the ideal CMS solution for your organization, we're happy to demo some of our favorites and work through some exercises to find the best fit. You'll have to live with it for a few years, so investing some time in choosing the right thing is important! 
+We see this from time to time and we understand: Drupal isn't the perfect solution for every organization. If you're not sure what the ideal CMS solution for your organization, we're happy to demo some of our favorites and work through some exercises to find the best fit. You'll have to live with it for a few years, so investing some time in choosing the right thing is important!
 
 Out of many good options, [WordPress](https://wordpress.org/) has been a popular destination for old Drupal 6 sites.  Why would you go with WordPress over other CMSs?
 

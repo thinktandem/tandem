@@ -8,7 +8,7 @@ author: "John Ouellet"
 date: "2019-08-02"
 summary: "Setting up Solr is quick and fairly painless with Lando. This guide shall bring you to the promise land."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 
@@ -102,7 +102,7 @@ From here setup your index as you need.  If you created a view, then do what you
 Configuring Solr for platform.sh
 ----------------------------
 
-Platform.sh already has [great documentation on how to setup Solr for Drupal 8](https://docs.platform.sh/frameworks/drupal8/solr.html).  However, it needs some TLC and I let them know as well.  Go ahead and follow the whole guide and setup your platform files and config, etc.  
+Platform.sh already has [great documentation on how to setup Solr for Drupal 8](https://docs.platform.sh/frameworks/drupal8/solr.html).  However, it needs some TLC and I let them know as well.  Go ahead and follow the whole guide and setup your platform files and config, etc.
 
 However we need to do some overrides to make this work on platform.sh. Side Note: to debug your Solr instance on platform.sh, just use the ```platform tunnel:open```.  Then throw whatever port onto the localhost url to see the service in your browser, i.e.: http://localhost:30001.
 
@@ -132,6 +132,6 @@ Push this up and you should be good to go.
 Conclusion
 -----------
 
-Just a few steps to get a Solr server running on both Lando and platform.sh.  Solr is a great and alternative for sites that need the performance boost and scalability.  By jumping through a few hoops, we got this running fairly quickly and somewhat easily on our localdev and our hosting provider.  
+Just a few steps to get a Solr server running on both Lando and platform.sh.  Solr is a great and alternative for sites that need the performance boost and scalability.  By jumping through a few hoops, we got this running fairly quickly and somewhat easily on our localdev and our hosting provider.
 
 If you need help setting up your Lando installiation or have questions about custom Lando config, [Contact Us](https://thinktandem.io/contact/) to chat more!

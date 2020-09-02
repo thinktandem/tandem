@@ -10,7 +10,7 @@ date: "2017-10-27"
 summary: "Why you should pay attention to this new higher education Drupal distribution gaining traction in the University of California system."
 id: alecr
 pic: "/images/people/alecr.png"
-location: California
+location: Oakland
 ---
 
 Chaos on the Campus

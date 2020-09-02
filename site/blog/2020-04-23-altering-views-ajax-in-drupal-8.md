@@ -9,15 +9,15 @@ author: "John Ouellet"
 date: "2020-04-23"
 summary: "A straight forward guide on how to have your JavaScript fire after each Drupal 8 Views AJAX call is made."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 
 ## Overview
 
-We have a client that had a unique situation with one of their views exposed filters setup.  We had a set of checkboxes with a set of corresponding images (that were checkboxes with images for labels) that could also be used in the form.  One you pressed either the checkbox or the image, the reciprocating element was also was selected.  Different flow, but it was quite interesting to set up.  
+We have a client that had a unique situation with one of their views exposed filters setup.  We had a set of checkboxes with a set of corresponding images (that were checkboxes with images for labels) that could also be used in the form.  One you pressed either the checkbox or the image, the reciprocating element was also was selected.  Different flow, but it was quite interesting to set up.
 
-The form used an autosubmit via [AJAX](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX) as well.  The issue I kept running into was after the first time you selected a checkbox or image, they didn't stay paired on subsequent clicks.  After a little research, using the typical [Drupal.behavoir](https://www.drupal.org/docs/8/api/javascript-api/javascript-api-overview) based JavaScript wouldn't cut it in this scenario.  The JS wouldn't fire again after each AJAX call from the view.  I believe this was due to the DOM already having been loaded on initial page setup and the behavior not getting called when AJAX rebuild the page.  
+The form used an autosubmit via [AJAX](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX) as well.  The issue I kept running into was after the first time you selected a checkbox or image, they didn't stay paired on subsequent clicks.  After a little research, using the typical [Drupal.behavoir](https://www.drupal.org/docs/8/api/javascript-api/javascript-api-overview) based JavaScript wouldn't cut it in this scenario.  The JS wouldn't fire again after each AJAX call from the view.  I believe this was due to the DOM already having been loaded on initial page setup and the behavior not getting called when AJAX rebuild the page.
 
 The only way to remedy our dilemma was to have a [Drupal 8 AJAX prototype command](https://www.drupal.org/node/2019879) that can fire after each Views AJAX call.  After some digging, I was able to accomplish this with a combination of [Event Subscribers](https://www.drupal.org/docs/8/creating-custom-modules/subscribe-to-and-dispatch-events) and a [Command Interfaces](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Ajax%21CommandInterface.php/interface/CommandInterface/8.2.x).  Let me show you how I got it all to work.
 
@@ -72,7 +72,7 @@ class ViewsAjaxResponseSubscriber implements EventSubscriberInterface {
 
 ```
 
-As you can see, I am tapping into the [Kernel Response Event](https://api.drupal.org/api/drupal/vendor%21symfony%21http-kernel%21KernelEvents.php/class/KernelEvents/8.4.x) at normal priority.  Lucky for us, Views has a [special Response class](https://api.drupal.org/api/drupal/core%21modules%21views%21src%21Ajax%21ViewAjaxResponse.php/class/ViewAjaxResponse/8.2.x) that extends [Drupal's Ajax Response](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Ajax%21AjaxResponse.php/class/AjaxResponse/8.2.x) class.  That Ajax Response class in turn then extends [Symfony's base Response class](https://symfony.com/doc/current/components/http_foundation.html).  So what all that means is that we have a special response type that we can tap into while using AJAX within Views.  
+As you can see, I am tapping into the [Kernel Response Event](https://api.drupal.org/api/drupal/vendor%21symfony%21http-kernel%21KernelEvents.php/class/KernelEvents/8.4.x) at normal priority.  Lucky for us, Views has a [special Response class](https://api.drupal.org/api/drupal/core%21modules%21views%21src%21Ajax%21ViewAjaxResponse.php/class/ViewAjaxResponse/8.2.x) that extends [Drupal's Ajax Response](https://api.drupal.org/api/drupal/core%21lib%21Drupal%21Core%21Ajax%21AjaxResponse.php/class/AjaxResponse/8.2.x) class.  That Ajax Response class in turn then extends [Symfony's base Response class](https://symfony.com/doc/current/components/http_foundation.html).  So what all that means is that we have a special response type that we can tap into while using AJAX within Views.
 
 In the Views Response class, they add a couple methods so that you can get or set the view.  What this does is allows us to grab the current view object and then slap our special sauce onto it.  So from here, I am checking for my view, then adding our [Ajax Command](https://www.drupal.org/docs/8/api/ajax-api/core-ajax-callback-commands) that will do our magic.  When we use the addCommand method on the AJAX Response, it adds the command to the end of the command chain.  This solves our issue of using something after Drupal Views AJAX command fires.
 
@@ -88,7 +88,7 @@ services:
 
 ## Defining the AJAX Command
 
-So the next part was defining the AJAX command that would contain the command I would use in my own Drupal AJAX prototype command.  Also, I needed to figure out a way to pass the clicked item into the command since I was not using this in a typical fashion like in a form submit handler.  I solved that by setting a cookie whenever an item was clicked on the page.  I will get into that in a little bit. 
+So the next part was defining the AJAX command that would contain the command I would use in my own Drupal AJAX prototype command.  Also, I needed to figure out a way to pass the clicked item into the command since I was not using this in a typical fashion like in a form submit handler.  I solved that by setting a cookie whenever an item was clicked on the page.  I will get into that in a little bit.
 
 For now, here is the command interface I ended up with:
 
@@ -114,9 +114,9 @@ class AfterViewsAjaxCommand implements CommandInterface {
 }
 ```
 
-If you have used [AJAX commands in Drupal 7](https://api.drupal.org/api/drupal/includes%21ajax.inc/group/ajax/7.x), this isn't all the dissimilar.  It is just a different design system with the same methodology as before.  The command key is what we will use in our AJAX prototype.  The clicked key is what I mentioned before, this will be in the response and will help us with our task.  The clicked key is extra and you can technically call it whatever you want.  You can add as many different parameters as key value pairs as well.  For what I have though, it will show up in the JS part as ```response.clicked```.  
+If you have used [AJAX commands in Drupal 7](https://api.drupal.org/api/drupal/includes%21ajax.inc/group/ajax/7.x), this isn't all the dissimilar.  It is just a different design system with the same methodology as before.  The command key is what we will use in our AJAX prototype.  The clicked key is what I mentioned before, this will be in the response and will help us with our task.  The clicked key is extra and you can technically call it whatever you want.  You can add as many different parameters as key value pairs as well.  For what I have though, it will show up in the JS part as ```response.clicked```.
 
-So that is it for the Command Interface.  The next part is setting up the JS for this example.  
+So that is it for the Command Interface.  The next part is setting up the JS for this example.
 
 ## Setting up the Prototype
 
@@ -224,7 +224,7 @@ With all that said, here is the final step for this use case:
 
 The first part of the JS file is your typical Drupal behavior setup.  I decided to use drupal-selector data attribute because the element's id changed on every AJAX submit.  This way we have a static id we can check against.  I am then just setting the cookie to that attribute so I can than use it in the AJAX Command Interface which then sends it to my AJAX prototype.
 
-In my AJAX prototype, I am using the defined command afterViewsAjaxCall that I set in the Command Interface.  This allows us to do whatever we need to the DOM post Views AJAX.  As you can see from the code, I am setting my checkbox and image data selectors.  I am then checking the corresponding element based on which element was clicked.  Not too bad when you look at it all.  
+In my AJAX prototype, I am using the defined command afterViewsAjaxCall that I set in the Command Interface.  This allows us to do whatever we need to the DOM post Views AJAX.  As you can see from the code, I am setting my checkbox and image data selectors.  I am then checking the corresponding element based on which element was clicked.  Not too bad when you look at it all.
 
 ## Conclusion
 

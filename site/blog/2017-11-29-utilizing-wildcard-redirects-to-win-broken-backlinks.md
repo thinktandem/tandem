@@ -10,7 +10,7 @@ author: "John Ouellet"
 date: "2017-11-29"
 summary: "Fixing legacy urls for older domains is crucial to keeping your ranking healthy on search engines.  I will show you how to do this via PHP, but this can be applied to any language."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 

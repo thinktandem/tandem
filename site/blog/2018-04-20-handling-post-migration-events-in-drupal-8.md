@@ -9,7 +9,7 @@ author: "John Ouellet"
 date: "2018-04-20"
 summary: "Sometimes we need to alter data after a Drupal 8 migration has finished.  With the migration events system, you can easily accomplish this."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 

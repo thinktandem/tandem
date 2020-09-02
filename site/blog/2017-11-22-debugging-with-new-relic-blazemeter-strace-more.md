@@ -9,7 +9,7 @@ author: "John Ouellet"
 date: "2017-11-22"
 summary: "This is a start to finish mini case study surrounding a site crashing bug.  I will detail how I found the problems and then how I fixed them."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 

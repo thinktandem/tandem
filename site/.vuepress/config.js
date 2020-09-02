@@ -148,9 +148,9 @@ module.exports = {
         pic: '/images/tags/drupal-logo.png',
       },
       johno: {
-        title: 'I dominate',
-        byline: 'CRUSH CRUSH CRUSH',
-        pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33',
+        title: 'John Ouellet',
+        byline: 'Senior Engineer',
+        pic: '/images/people/john-sm.jpg',
       },
       laravel: {
         title: 'Title about Laravel',
@@ -166,6 +166,11 @@ module.exports = {
         title: 'Mike Pirog',
         byline: 'CTO, Co-Founder',
         pic: '/images/people/mike-sm.jpg',
+      },
+      serundeputy: {
+        title: 'Geoff St. Pierre',
+        byline: 'Senior Engineer',
+        pic: '/images/people/gff-sm.jpg',
       },
       wordpress: {
         title: 'Title about WordPress',

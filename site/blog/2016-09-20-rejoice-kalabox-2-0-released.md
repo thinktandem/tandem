@@ -14,7 +14,7 @@ date: "2016-09-20"
 summary: "Proudly announcing the release of Kalabox 2.0, our open-source Docker-powered local development tool that provides the fastest way to develop WordPress and Drupal applications."
 id: alecr
 pic: "/images/people/alecr.png"
-location: California
+location: Oakland
 ---
 
 Today we released Kalabox 2.0. If you're not familiar with Kalabox, welcome! Kalabox is an open source project created by Tandem to provide WordPress and Drupal developers the fastest way to develop, test, and deploy websites while working on their own computers.

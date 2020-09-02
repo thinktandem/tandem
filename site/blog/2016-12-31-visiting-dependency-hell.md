@@ -9,7 +9,7 @@ date: "2016-12-31"
 summary: "A brief vacation to one of software development's notorious infernos reminded me why containers, Docker, and Kalabox are the way to manage development dependencies."
 id: alecr
 pic: "/images/people/alecr.png"
-location: California
+location: Oakland
 ---
 
 Last night I was (trying) to install a Laravel project (DreamFactory) for evaluation. Normally I'm using Kalabox, a Docker-based project we created to help people quickly start developing and evaluating software. However, we didn't have an app configuration for Laravel. In my haste to "get things moving," I threw caution to the wind and began installing dependencies to run the project locally.

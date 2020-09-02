@@ -8,7 +8,7 @@ date: "2016-09-23"
 summary: "How to run small NodeJS in an efficient, inexpensive, and scalable manner using Docker Cloud."
 id: alecr
 pic: "/images/people/alecr.png"
-location: California
+location: Oakland
 ---
 
 If you're read my [previous article](/blog/2016/09/10/let-s-get-small-introduction-to-microservices) introducing the idea of microservices and discussing why NodeJS and Docker are ideal tools to implement microservices with, then you're probably hungry for some action!

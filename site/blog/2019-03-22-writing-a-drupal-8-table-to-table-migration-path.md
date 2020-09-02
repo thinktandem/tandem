@@ -9,7 +9,7 @@ author: "John Ouellet"
 date: "2019-03-22"
 summary: "Occasionally there may be times where you need to migrate a contrib module's database table or your own schema's data to Drupal 8."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 
@@ -28,7 +28,7 @@ After looking through OneAll Social Login's install file, I knew that there were
 
 <em>Note: for the sake of brevity in this blog post, we will only cover migrating the authmap table since it is the more "complicated" one to move.  However, the oneall_social_login_identities mapping is done exactly the same way, in fact all the columns are one to one.</em>
 
-Before we dive in, I am using my typical Drupal 8 migration [lando](https://docs.devwithlando.io/) setup to handle this migration.  If you want an easy and repeatable way to do migrations with lando, check out my [Florida DrupalCamp presentation](https://www.youtube.com/watch?v=lZ1dzZwcHnU&t=1072s).  If you don't use lando, supplement the commands to coincide with whatever setup you are using.   
+Before we dive in, I am using my typical Drupal 8 migration [lando](https://docs.devwithlando.io/) setup to handle this migration.  If you want an easy and repeatable way to do migrations with lando, check out my [Florida DrupalCamp presentation](https://www.youtube.com/watch?v=lZ1dzZwcHnU&t=1072s).  If you don't use lando, supplement the commands to coincide with whatever setup you are using.
 
 ### Database Investigations
 
@@ -119,7 +119,7 @@ class OneAllAuth extends SqlBase {
 }
 ```
 
-You only need these 3 methods to really grab any data in a Drupal 7 database.  The query is straight forward to understand, it just grabs the fields and their respective data.  The fields method exposes these fields so we can use them in our config.  The getIds is our primary key, which seems to be required to do this.  
+You only need these 3 methods to really grab any data in a Drupal 7 database.  The query is straight forward to understand, it just grabs the fields and their respective data.  The fields method exposes these fields so we can use them in our config.  The getIds is our primary key, which seems to be required to do this.
 
 So with this done, we clear our caches and now we can create our migration yaml.
 
@@ -127,7 +127,7 @@ So with this done, we clear our caches and now we can create our migration yaml.
 Writing Migration Config YAML
 ----------------------------
 
-With any custom migration, the [Migrate Plus](https://www.drupal.org/project/migrate_plus) module is pretty much a requirement.  The module comes with a bunch of extra goodies that I use all the time.  For this use case, we are going to utilize the [table destination plugin](https://cgit.drupalcode.org/migrate_plus/tree/src/Plugin/migrate/destination/Table.php).  This will give us the tool we need to get our data over to just a Drupal 8 database table.  
+With any custom migration, the [Migrate Plus](https://www.drupal.org/project/migrate_plus) module is pretty much a requirement.  The module comes with a bunch of extra goodies that I use all the time.  For this use case, we are going to utilize the [table destination plugin](https://cgit.drupalcode.org/migrate_plus/tree/src/Plugin/migrate/destination/Table.php).  This will give us the tool we need to get our data over to just a Drupal 8 database table.
 
 There really is no documentation on how to use the plugin yet.  Luckily, [I found this issue in their queue](https://www.drupal.org/project/migrate_plus/issues/2981906#comment-12713622) that gave me some headway on how to win this.  Here is the config I came up with after reading through that issue:
 
@@ -161,19 +161,19 @@ destination:
 migration_dependencies: {  }
 ```
 
-As you can see, in the ```source``` key, I have the class I showed you above.  The ```process``` key is just mapping the field as you would in any Drupal 8 migration.  You can also alter the data here, etc.  Finally, the destination plugin is where all the magic happens.  The ```plugin``` and ```table_name``` keys are self-explanatory.  The ```id_fields``` is required and is your primary keys.  The ```fields``` key is basically the same thing as your process plugin minus any processing plugins you may be using.  
+As you can see, in the ```source``` key, I have the class I showed you above.  The ```process``` key is just mapping the field as you would in any Drupal 8 migration.  You can also alter the data here, etc.  Finally, the destination plugin is where all the magic happens.  The ```plugin``` and ```table_name``` keys are self-explanatory.  The ```id_fields``` is required and is your primary keys.  The ```fields``` key is basically the same thing as your process plugin minus any processing plugins you may be using.
 
 So really that is it.  After you run ```lando drush cim -y``` you can run ```lando drush mim upgrade_d7_oneall_auth``` and all your data will come over your ```drush ms``` will look like this:
 
 ```bash
- --------------------------------- ----------------------------------------------------------------- ----------- ------- ---------- ------------- --------------------- 
-  Group                             Migration ID                                                      Status      Total   Imported   Unprocessed   Last Imported        
- --------------------------------- ----------------------------------------------------------------- ----------- ------- ---------- ------------- ---------------------                  
-  system (system)                   upgrade_d7_oneall_auth                                            Idle        3403    3403       0             2019-03-22 
+ --------------------------------- ----------------------------------------------------------------- ----------- ------- ---------- ------------- ---------------------
+  Group                             Migration ID                                                      Status      Total   Imported   Unprocessed   Last Imported
+ --------------------------------- ----------------------------------------------------------------- ----------- ------- ---------- ------------- ---------------------
+  system (system)                   upgrade_d7_oneall_auth                                            Idle        3403    3403       0             2019-03-22
 ```
 
 
 Conclusion
 ---------
 
-You can do just about anything with a Drupal 6 / 7 to Drupal 8 Migration.  The Migration system is very robust and there really has not been an obstacle or data issue I have not been able to solve.  Using the tools out there you can do cool stuff like migrating a Drupal 7 database table to a Drupal 8 database table with ease.  
+You can do just about anything with a Drupal 6 / 7 to Drupal 8 Migration.  The Migration system is very robust and there really has not been an obstacle or data issue I have not been able to solve.  Using the tools out there you can do cool stuff like migrating a Drupal 7 database table to a Drupal 8 database table with ease.

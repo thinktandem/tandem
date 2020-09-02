@@ -9,7 +9,7 @@ author: "John Ouellet"
 date: "2018-09-28"
 summary: "Tips and tricks so you get the most out of your blogging efforts."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 

@@ -4,12 +4,12 @@ tags:
     - development
     - devops
     - drupal
-    - geoffs
+    - serundeputy
 author: "Geoff St. Pierre"
 date: "2017-11-10"
 summary: "Apache Tika allows you to index PDF docs for searching with Solr."
-id: geoffs
-pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
+id: serundeputy
+pic: "/images/people/gff-sm.jpg"
 location: Massachusetts
 ---
 

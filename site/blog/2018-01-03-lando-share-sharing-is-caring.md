@@ -6,12 +6,12 @@ tags:
     - testing
     - drupal
     - wordpress
-    - geoffs
+    - serundeputy
 author: "Geoff St. Pierre"
 date: "2018-01-03"
 summary: "Use the `lando share` command to expose a URL of your local Lando site. For example to view it on actual mobile devices for browser testing before you release it to the world!"
-id: geoffs
-pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
+id: serundeputy
+pic: "/images/people/gff-sm.jpg"
 location: Massachusetts
 ---
 

@@ -5,12 +5,12 @@ tags:
     - api
     - drupal
     - javascript
-    - geoffs
+    - serundeputy
 author: "Geoff St. Pierre"
 date: "2019-02-01"
 summary: "Configure Contenta CMS and Nuxt to communicate"
-id: geoffs
-pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
+id: serundeputy
+pic: "/images/people/gff-sm.jpg"
 location: Massachusetts
 ---
 

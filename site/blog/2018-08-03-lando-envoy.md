@@ -5,19 +5,19 @@ tags:
     - drupal
     - wordpress
     - laravel
-    - geoffs
+    - serundeputy
 author: "Geoff St. Pierre"
 date: "2018-08-03"
 summary: "Learn to automate deploy steps with envoy on affordable hosting."
-id: geoffs
-pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
+id: serundeputy
+pic: "/images/people/gff-sm.jpg"
 location: Massachusetts
 ---
 
 Why Envoy
 ---------
 
-<a href="https://laravel.com/docs/5.6/envoy">Envoy</a> is a task runner put together by the <a href="https://laravel.com">Laravel</a> team. When I can I like to use hosts like Pantheon and Platform.sh that give me a wealth of tools, containers in production, and a lot less DevOps headaches when something like <a href="http://heartbleed.com/">Heartbleed</a> happens 😱. 
+<a href="https://laravel.com/docs/5.6/envoy">Envoy</a> is a task runner put together by the <a href="https://laravel.com">Laravel</a> team. When I can I like to use hosts like Pantheon and Platform.sh that give me a wealth of tools, containers in production, and a lot less DevOps headaches when something like <a href="http://heartbleed.com/">Heartbleed</a> happens 😱.
 
 That said not all clients can afford the hosting costs of these providers 💸. And then <a href="https://linode.com">Linode</a>, <a href="https://www.digitalocean.com">Digital Ocean</a>, or <a href="https://aws.amazon.com/what-is-cloud-computing/?sc_channel=PS&sc_campaign=acquisition_US&sc_publisher=google&sc_medium=ACQ-P%7CPS-GO%7CBrand%7CSU%7CCore%7CCore%7CUS%7CEN%7CText&sc_content=sitelink&sc_detail=aws&sc_category=core&sc_segment=what_is_cloud_computing&sc_matchtype=e&sc_country=US&s_kwcid=AL!4422!3!280392801017!e!!g!!aws&ef_id=WgzYSgAAAGNYiE_V:20180729121503:s">AWS</a> become good choices starting at as little as $5/mo. So when working on your family member or friends website with affordable hosting we can use `envoy` to automate our deploy steps and get some of that deploy consistency that we know and love from the big hosting providers.
 
@@ -75,7 +75,7 @@ To use Envoy you will set up a file in the root of your project called: `Envoy.b
 
 The `Envoy.blade.php` file uses Laravel blade syntax and in it we define `servers` array and some `task`s.  In this example you'll want to replace `USER` with a user that has `ssh` access to the server in question and `SERVER_IP` with the `ip address` of the server you are deploying to.
 
-In the `deploy` task we simply write the shell commands that we want to happen for our app.  In this case move to the app directory, run composer install, and some drush commands. That is it, so simple! 
+In the `deploy` task we simply write the shell commands that we want to happen for our app.  In this case move to the app directory, run composer install, and some drush commands. That is it, so simple!
 
 You don't have to worry about different people doing different steps, forgetting steps, or typing something incorrectly. Consistency and peace of mind ☮️.
 

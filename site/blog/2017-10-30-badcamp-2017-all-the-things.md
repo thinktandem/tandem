@@ -4,13 +4,13 @@ tags:
     - development
     - conferences
     - drupal
-    - geoffs
+    - serundeputy
 author: "Geoff St. Pierre"
 date: "2017-10-30"
 summary: "BADCamp 2017 was packed with fun, sessions, and glory."
-id: geoffs
-pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
-location: Massachusetts
+id: serundeputy
+pic: "/images/people/gff-sm.jpg"
+location: Berkeley
 ---
 
 BADCamp 2017 ~ All the Things

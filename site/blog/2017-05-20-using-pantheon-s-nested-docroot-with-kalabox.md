@@ -9,7 +9,7 @@ date: "2017-05-20"
 summary: "Learn how to use composer-based workflows with your Pantheon site on Kalabox so you can dev like it's 2017."
 id: pirog
 pic: "/images/people/pirog.jpg"
-location: "San Francisco"
+location: "Oakland"
 ---
 
 Background
