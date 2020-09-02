@@ -142,6 +142,11 @@ module.exports = {
         byline: 'Founder, PAIRODIME, Guest Blogger',
         pic: '/images/people/brian-gonzales.jpg',
       },
+      donnab: {
+        title: 'Donna Bungard',
+        byline: 'Project Manager',
+        pic: '/images/people/donna.jpg',
+      },
       drupal: {
         title: '10+ years of Drupal Expertise',
         byline: 'We have seen and done it all in Drupal on sites of every size and complexity.  Let our years or experience help bring your Drupal project to the next level.',
