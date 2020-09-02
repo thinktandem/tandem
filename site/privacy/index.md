@@ -9,21 +9,18 @@ layout: BarePage
 
 **Effective date:** _November 26, 2019_
 
-Kalabox Inc DBA Tandem ("us", "we", or "our") operates the <https://lando.dev> website (hereinafter referred to as the "Service").
+Kalabox Inc DBA Tandem ("us", "we", or "our") operates the <https://thinktandem.io> website (hereinafter referred to as the "Service").
 
 This page informs you of our policies regarding the collection, use and disclosure of personal data when you use our Service and the choices you have associated with that data.
 
-We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from <https://lando.dev>
+We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, the terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, accessible from <https://thinktandem.io>
 
-## Other Policies
-
-If you are looking for the Privacy Policy for the Lando software itself you should [look here](https://github.com/lando/lando/blob/master/PRIVACY.md). For more a human-readable explanation of that Privacy Policy you should check out [our documentation](https://docs.lando.dev/help/data.html)
 
 ## Definitions
 
 *   **Service**
 
-    Service is the <https://lando.dev> website operated by Kalabox Inc DBA Tandem
+    Service is the <https://thinktandem.io> website operated by Kalabox Inc DBA Tandem
 
 *   **Personal Data**
 
@@ -232,5 +229,5 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 
 If you have any questions about this Privacy Policy, please contact us:
 
-*   By email: <support@lando.dev>
-*   By visiting this page on our website: <https://lando.dev/contact>
+*   By email: <support@thinktandem.io>
+*   By visiting this page on our website: <https://thinktandem.io/contact>
