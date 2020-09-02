@@ -137,6 +137,11 @@ module.exports = {
         byline: 'CEO, Co-Founder',
         pic: '/images/people/alec-sm.jpg',
       },
+      bgonz: {
+        title: 'Brian Gonzales',
+        byline: 'Founder, PAIRODIME, Guest Blogger',
+        pic: '/images/people/brian-gonzales.jpg',
+      },
       drupal: {
         title: '10+ years of Drupal Expertise',
         byline: 'We have seen and done it all in Drupal on sites of every size and complexity.  Let our years or experience help bring your Drupal project to the next level.',
