@@ -147,6 +147,11 @@ module.exports = {
         byline: 'We have seen and done it all in Drupal on sites of every size and complexity.  Let our years or experience help bring your Drupal project to the next level.',
         pic: '/images/tags/drupal-logo.png',
       },
+      dustinl: {
+        title: 'Dustin LeBlanc',
+        byline: 'Technical Project Manager',
+        pic: '/images/people/dustin-sm.jpg',
+      },
       johno: {
         title: 'John Ouellet',
         byline: 'Senior Engineer',

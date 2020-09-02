@@ -10,7 +10,7 @@ author: "Dustin LeBlanc"
 date: "2019-02-24"
 summary: "Run end to end javascript tests on a decoupled frontend"
 id: dustinl
-pic: "https://www.gravatar.com/avatar/09ac95f34d11ec00cfd5a26c521d58c5"
+pic: "/images/people/dustin-sm.jpg"
 location: "New York"
 ---
 
