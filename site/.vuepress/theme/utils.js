@@ -18,6 +18,12 @@ const getWorkBackgroundStyles = topper => topper.background ? topper.background 
 // Get case study text color
 const getWorkTextColor = theme => theme.text ? theme.text : 'white';
 
+// Get case study hover color
+const getHoverColor = theme => theme.headerHover ? theme.headerHover : defaultPink;
+
+// Get case study bg color
+const getBgColor = theme => theme.background ? theme.background : defaultPink;
+
 // Parse case study front matter
 const parseWorkFrontMatter = (frontmatter = {}) => {
   // Get the defaults
@@ -55,7 +61,9 @@ const resolveTags = tags => {
 };
 
 export default {
+  getBgColor,
   getColorFilter,
+  getHoverColor,
   getWorkBackgroundStyles,
   getWorkTextColor,
   parseWorkFrontMatter,

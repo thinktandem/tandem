@@ -187,11 +187,12 @@ export default {
           font-weight 300
           font-size 1.33rem
           letter-spacing -1.04px
-          color black
+          color inherit
           small
             font-size .75em
             color $darkTextColor
             font-family "GalaxieCopernicus", PT Serif, Serif
+
 .post-theme-content
   font-size 16px
   letter-spacing 0px
