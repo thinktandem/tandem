@@ -19,7 +19,7 @@ module.exports = {
           itemLayout: 'Post',
           layout: 'Blog',
           pagination: {
-            lengthPerPage: 50,
+            lengthPerPage: 5,
           },
           title: 'Blog',
         },
@@ -31,6 +31,7 @@ module.exports = {
           layout: 'Work',
           pagination: {
             lengthPerPage: 3,
+
           },
           title: 'Work',
         },
@@ -50,6 +51,7 @@ module.exports = {
           keys: ['tags'],
           path: '/tag/',
           scopeLayout: 'Tag',
+          title: 'Content',
           pagination: {
             lengthPerPage: 5,
           },
