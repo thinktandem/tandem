@@ -1,9 +1,10 @@
 ---
 title: "Connecting to a Remote Platform.sh Database"
 tags:
-    - localdev
-    - devops
-    - serundeputy
+  - localdev
+  - devops
+  - development
+  - serundeputy
 author: "Geoff St. Pierre"
 date: "2017-03-03"
 summary: "Connecting to a remote Database on platform.sh is simple (when you know how)!"
@@ -11,6 +12,10 @@ id: serundeputy
 pic: "/images/people/gff-sm.jpg"
 location: Massachusetts
 ---
+
+:::byline
+Connecting to a remote Database on platform.sh is simple (when you know how)!
+:::
 
 It's not complicated to connect to a platform.sh database; here's how!
 

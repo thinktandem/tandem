@@ -151,7 +151,7 @@ export default {
 
 <style lang="stylus">
 .content-wrapper-tandem
-  &.content-wrapper-about
+  &.content-wrapper-post
   .post-content
     margin-top 3.14em
     margin-bottom 3.14em

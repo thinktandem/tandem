@@ -1,10 +1,11 @@
 ---
 title: "Higher Ed Drupal Fun Down on the SiteFarm"
 tags:
-    - development
-    - conferences
-    - drupal
-    - alecr
+  - development
+  - higher-ed
+  - events
+  - drupal
+  - alecr
 author: "Alec Reynolds"
 date: "2017-10-27"
 summary: "Why you should pay attention to this new higher education Drupal distribution gaining traction in the University of California system."
@@ -12,6 +13,10 @@ id: alecr
 pic: "/images/people/alecr.png"
 location: Oakland
 ---
+
+::: byline
+Why you should pay attention to this new higher education Drupal distribution gaining traction in the University of California system.
+:::
 
 Chaos on the Campus
 -------------------

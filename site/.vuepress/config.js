@@ -167,6 +167,11 @@ module.exports = {
         byline: 'Words about laravel.',
         pic: '/images/tags/laravel-logo.png',
       },
+      mikem: {
+        title: 'Mike Milano',
+        byline: 'Senior Architect',
+        pic: '/images/people/milano.jpg',
+      },
       migration: {
         title: 'Masters of Migrating Data',
         byline: 'We have migrated dozens of sites for our clients over the years.  We are a little strange in the fact that we love handling complex migration situations.',

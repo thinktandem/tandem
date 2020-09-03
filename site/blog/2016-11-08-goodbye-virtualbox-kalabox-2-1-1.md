@@ -1,10 +1,11 @@
 ---
 title: "Goodbye VirtualBox: Kalabox 2.1.1"
 tags:
-    - localdev
-    - support
-    - testing
-    - pirog
+  - kalabox
+  - localdev
+  - development
+  - php
+  - pirog
 author: "Mike Pirog"
 date: "2016-11-08"
 summary: "With our newest version of Kalabox, we say goodbye to VirtualBox and hello to better performance and stability with Docker for Mac and Windows."
@@ -13,10 +14,14 @@ pic: "/images/people/pirog.jpg"
 location: "San Francisco"
 ---
 
+::: byline
+With our newest version of Kalabox, we say goodbye to VirtualBox and hello to better performance and stability with Docker for Mac and Windows.
+:::
+
 It's appropriate that today is Election Day in the US because after a few months of shakedown on Kalabox 2.0.x we feel like the **PEOPLE HAVE SPOKEN**:
 
 > FREE US FROM THE SHACKLES OF VIRTUALBOX & SLOW FILE SHARING
-  <small>Vox Populi</small>
+> - Vox Populi
 
 Until recently, this populist upheavel would have been met with elitist consensus **"IT CAN'T BE DONE! YOU ASK THE IMPOSSIBLE!"** The times, however, are a changing and with some great new beta tech from the Docker folks we can now **GIVE THE PEOPLE WHAT THEY WANT**.
 
@@ -26,7 +31,7 @@ So, without further ado, here's what's new in Kalabox 2(.1.x).
 
 We've removed VirtualBox on Mac and Windows as our backend in favor of the new [Docker for Mac](https://docs.docker.com/docker-for-mac/) and [Docker for Windows](https://docs.docker.com/docker-for-windows/) projects. These allow us to run Docker containers "natively" using low level tech bundled into each OS. Specifically what this means is that on macOS (10.10+) you are now running everything inside of a super lightweight [xhyve](https://github.com/mist64/xhyve) VM and on Windows (Windows 10 Pro+) you are using its [Hyper-V](https://en.wikipedia.org/wiki/Hyper-V) engine. Kalabox on Linux is unaffected since we've been running Docker natively for awhile now.
 
-This change has vastly reduced the amount of system resources Kalabox requires. For example my computer went from 40%+ to ~5% CPU usage. If you ever felt like your computer was about to rocket launch to Mars then this update is for you!
+This change has vastly reduced the amount of system resources Kalabox requires. For example my computer went from 40%+ to ~5% CPU usage. If you ever felt like your computer was about to rocket launch to Mars then this update is for you
 
 ## 2. File sharing
 
@@ -70,13 +75,11 @@ With the introduction of the Kalabox 2.1.x series we can finally say that this i
 
 However, we also realize that words are sometimes not the ideal form of communication so I'll close with:
 
-<div class="row">
-  <div class="col-md-6">
-    ![teddy-with-rifle](images/articles/teddy200.jpg "You'll shoot your eye out!")
-  </div>
-  <div class="col-md-6">
-    ![teddy-with-machinegun](images/articles/teddy210.jpg "I AM ALL THAT IS PRESIDENT")
-  </div>
-</div>
+::: thumbnail
+![teddy-with-rifle](/images/articles/teddy200.jpg "You'll shoot your eye out!")
+:::
+::: thumbnail
+![teddy-with-machinegun](/images/articles/teddy210.jpg "I AM ALL THAT IS PRESIDENT")
+:::
 
 **ARE YOU A YETI SLAYER?**

@@ -1,10 +1,10 @@
 ---
 title: "BADCamp 2017 ~ All the Things"
 tags:
-    - development
-    - conferences
-    - drupal
-    - serundeputy
+  - development
+  - events
+  - drupal
+  - serundeputy
 author: "Geoff St. Pierre"
 date: "2017-10-30"
 summary: "BADCamp 2017 was packed with fun, sessions, and glory."
@@ -12,6 +12,10 @@ id: serundeputy
 pic: "/images/people/gff-sm.jpg"
 location: Berkeley
 ---
+
+:::byline
+BADCamp 2017 was packed with fun, sessions, and glory.
+:::
 
 BADCamp 2017 ~ All the Things
 -----------------------------
@@ -31,9 +35,7 @@ Where many warm and insightful words were spoken.  Here are some of my take awa
   * Core enhancemnets, upgrade paths, roadmap for the future
   * View this session here: Two+ Years of Backdrop CMS
 
-<div class="center-youtube-vid">
-youtube|FzOWKV5Itfk
-</div>
+<YouTube url="https://www.youtube.com/watch?v=FzOWKV5Itfk" />
 
   * Fire Alarm!
 

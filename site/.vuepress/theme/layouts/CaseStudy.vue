@@ -242,5 +242,5 @@ export default {
     .section-header
       .section-header-right
         h1
-          font-size 2.33em
+          font-size 2em
 </style>

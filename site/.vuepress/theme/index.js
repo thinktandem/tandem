@@ -6,6 +6,10 @@ module.exports = {
       defaultTitle: '',
     }],
     ['container', {
+      type: 'byline',
+      defaultTitle: '',
+    }],
+    ['container', {
       type: 'caption',
       defaultTitle: '',
     }],

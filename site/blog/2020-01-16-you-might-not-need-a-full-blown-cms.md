@@ -7,8 +7,8 @@ author: "Mike Milano"
 date: "2020-01-16"
 summary: "A case for static sites"
 id: mikem
-pic: "/images/people/donna.jpg"
-location: California
+pic: "/images/people/milano.jpg"
+location: San Diego
 ---
 
 Before deciding on a Content Mangement System (CMS) like [Wordpress](https://wordpress.com/) or

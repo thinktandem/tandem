@@ -1,19 +1,27 @@
 ---
 title: "Journey to Lando: Mistakes, Pivots and Vindication"
 tags:
-    - deployment
-    - development
-    - devops
-    - localdev
-    - testing
-    - pirog
+  - lando
+  - kalabox
+  - business
+  - strategy
+  - development
+  - devops
+  - localdev
+  - pirog
 author: "Mike Pirog"
 date: "2017-10-24"
 summary: "After a Kickstarter campaign, two major versions, tons of feedback, broken promises, blood, sweat, tears and years of making Kalabox 2 we've finally made local dev great again with Lando"
 id: pirog
 pic: "/images/people/pirog.jpg"
 location: "DC"
+link2Original: true
+originalLink: https://blog.lando.dev/2017/10/24/journey-lando/
 ---
+
+:::byline
+After a Kickstarter campaign, two major versions, tons of feedback, broken promises, blood, sweat, tears and years of making Kalabox 2 we've finally made local dev great again with Lando
+:::
 
 The Journey
 -----------
