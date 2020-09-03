@@ -7,11 +7,11 @@ pic: "/images/people/john-sm.jpg"
 location: Florida
 date: "2020-08-11"
 tags:
-    - development
-    - vuepress
-    - johno
-originalLink: "https://google.com"
-link2Original: false
+  - development
+  - vue
+  - javascript
+  - vuepress
+  - johno
 ---
 
 ## Overview

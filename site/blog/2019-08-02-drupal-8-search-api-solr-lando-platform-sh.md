@@ -1,9 +1,13 @@
 ---
 title: "Drupal 8 Search API Solr + Lando + Platform.sh"
 tags:
-    - development
-    - drupal
-    - johno
+  - development
+  - lando
+  - localdev
+  - performance
+  - drupal
+  - platformsh
+  - johno
 author: "John Ouellet"
 date: "2019-08-02"
 summary: "Setting up Solr is quick and fairly painless with Lando. This guide shall bring you to the promise land."
@@ -64,7 +68,11 @@ Configuring Drupal 8 Search API
 
 Setup a Search API server via admin/config/search/search-api as you normally would.  However, select Solr as the backend.  Then you will select Standard under Solr Connector.  Finally, put search as the Solr Host and drupal8 as the Solr Core.  The rest you can leave as is.  Your setup should look like this:
 
-<img src="/images/articles/lando-solr/solr-settings.jpg" alt="Drupal 8 Search API Solr Settings" />
+::: thumbnail
+![Drupal 8 Search API Solr Settings](/images/articles/lando-solr/solr-settings.jpg "Drupal 8 Search API Solr Settings")
+::: caption
+Drupal 8 Search API Solr Settings
+:::
 
 Once you hit save, you may see this message:
 
@@ -104,7 +112,7 @@ Configuring Solr for platform.sh
 
 Platform.sh already has [great documentation on how to setup Solr for Drupal 8](https://docs.platform.sh/frameworks/drupal8/solr.html).  However, it needs some TLC and I let them know as well.  Go ahead and follow the whole guide and setup your platform files and config, etc.
 
-However we need to do some overrides to make this work on platform.sh. Side Note: to debug your Solr instance on platform.sh, just use the ```platform tunnel:open```.  Then throw whatever port onto the localhost url to see the service in your browser, i.e.: http://localhost:30001.
+However we need to do some overrides to make this work on platform.sh. Side Note: to debug your Solr instance on platform.sh, just use the ```platform tunnel:open```.  Then throw whatever port onto the localhost url to see the service in your browser, i.e.: `http://localhost:30001`.
 
 Here are the tweaks we need to do:
 
@@ -119,7 +127,7 @@ Here are the tweaks we need to do:
   ];
 ```
 
-2. If you had to use the config.zip when setting up lando.  Then copy all the files from config/solr-conf/6.x to .platform/solr-conf/6.x.  Then open up solcore.properties and remove the following lines from the end:
+2. If you had to use the config.zip when setting up lando.  Then copy all the files from `config/solr-conf/6.x` to `.platform/solr-conf/6.x`.  Then open up `solcore.properties` and remove the following lines from the end:
 
 ```bash
 solr.install.dir=../../

@@ -6,6 +6,7 @@ tags:
   - devops
   - testing
   - drupal
+  - platformsh
   - pirog
 author: "Mike Pirog"
 date: "2017-10-23"

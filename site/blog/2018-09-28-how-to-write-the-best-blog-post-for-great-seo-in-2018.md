@@ -1,10 +1,11 @@
 ---
 title: "How To Write The Best Blog Post For Great SEO In 2018"
 tags:
-    - strategy
-    - misc
-    - support
-    - johno
+  - strategy
+  - misc
+  - seo
+  - content-strategy
+  - johno
 author: "John Ouellet"
 date: "2018-09-28"
 summary: "Tips and tricks so you get the most out of your blogging efforts."
@@ -12,6 +13,10 @@ id: johno
 pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
+
+:::byline
+Tips and tricks so you get the most out of your blogging efforts.
+:::
 
 Before diving in, I strongly recommend you have either a paid [ahrefs](https://ahrefs.com), [Moz](https://moz.com/), or [SEMrush](https://www.semrush.com/) account.  Each platform gives you a number of robust SEO tools that are well documented and easy to use. They are crucial for any SEO writing effort.
 
@@ -24,7 +29,11 @@ You will need to install the toolbar for your preferred SEO platform.  This allo
 
 Once you have the toolbar installed, head over to Google and type any search.  I searched for the infamous quote "Shampoo is better" and the results looked like this:
 
-<img src="/images/articles/writing-best-seo-post/ahrefs-toolbar-shampoo.jpg" alt="ahrefs Google search toolbar example">
+::: thumbnail
+![ahrefs Google search toolbar example](/images/articles/writing-best-seo-post/ahrefs-toolbar-shampoo.jpg "ahrefs Google search toolbar example")
+::: caption
+ahrefs Google search toolbar example
+:::
 
 As you can see, there are numerous indicators as to why this SEO-friendly content ranks higher than others.  The main factor I usually look at during my research is the DR (Domain Rating) number.  Here is a great blog post on what the [ahrefs Domain Rating](https://ahrefs.com/blog/domain-rating/) is and how to understand the values.  Basically, we only want content from sites that have a higher Domain Rating than 50.  These sites have a good amount of backlinks and ranking power when they get to that level.
 
@@ -35,7 +44,7 @@ Setup
 
 Before you start writing, you need to identify a topic that matches your SEO goals. "What is a SEO goal?" you may ask.  To put this very simply, we want content that ranks well for a phrase, term, or set of keywords.  We also want a subject we know we can write about at length as well.  This will not be a quick or short blog post, so take some time and think about this.
 
-**Picking Keywords**
+### Picking Keywords
 
 You have two paths to pick keywords for your blog post.  Sometimes your knowledge of a topic will lead you to keywords naturally while thinking about your post.  Later you'll investigate these keywords in-depth to evaluate their usefulness to your goals.  The keywords can always be adjusted during the research phase as well.
 
@@ -43,7 +52,7 @@ The other way is to find keywords for a topic that may need some further investi
 
 Although either way may take some time, the effort pays dividends in the end by focusing every element of your article on the keywords you want to compete for in Google search rankings.
 
-**Planning the Title**
+### Planning the Title
 
 Having a proper title is one of the biggest steps in optimizing your blog post for search ranking.  On most CMSs, the blog post title is used in your meta tags and in the blog post's URL.  There are critical ranking factors around those two items, so taking the time to plan out a good title is extremely important.
 
@@ -52,7 +61,7 @@ For the best title, use some [title modifiers](https://www.adamriemer.me/50-modi
 Keyword Planning
 -------------------
 
-**Keyword Explorer**
+### Keyword Explorer
 
 Now begins the real heavy lifting in our SEO blog post writing efforts.  This is where you will need a paid ahrefs account to get the most from your efforts.  If you don't have the budget for a paid tool like ahrefs or Moz, [check out some free resources](https://www.highervisibility.com/blog/top-5-free-keyword-research-tools/) that may help fill the gap, but be warned that results may vary!
 
@@ -67,13 +76,17 @@ Once you have the result from the Keyword Explorer, you need to do the following
 
 Your results should look something like this:
 
-<img src="/images/articles/writing-best-seo-post/keyword-ideas.jpg" alt="ahrefs Keyword Explorer example">
+::: thumbnail
+![ahrefs Keyword Explorer example](/images/articles/writing-best-seo-post/keyword-ideas.jpg "ahrefs Keyword Explorer example")
+::: caption
+ahrefs Keyword Explorer example
+:::
 
 Make sure you are sorting by volume as well.  We want to be picking keywords that have the best SEO results with the lowest competition.  The KD metric is the [Keyword Difficulty](https://ahrefs.com/keyword-difficulty) factor.  The higher the number, the harder it is to rank in Google's top results for that keyword.  We are trying to take the strategic route with this tactic by finding keywords with biggest bang for our buck.
 
 For each main keyword you want to pick 1-2 keywords from the Keyword Explorer.  Be realistic in this part; you don't want to pick words that make no sense to your goals.  Write these new keywords down, as you will be incorporating these into the blog post during the writing phase of this effort.
 
-**Site Explorer**
+### Site Explorer
 
 The [ahrefs Site Explorer](https://ahrefs.com/site-explorer) is a very powerful tool that basically give you all the SEO metrics for a give URL.  We will be using it for the purpose of viewing the top ranking posts in regards to our main keywords phrases.
 
@@ -88,11 +101,15 @@ To begin do the following:
 
 Your results should come out like this:
 
-<img src="/images/articles/writing-best-seo-post/site-explorer-compressor.jpg" alt="ahrefs Site Explorer example">
+::: thumbnail
+![ahrefs Site Explorer example](/images/articles/writing-best-seo-post/site-explorer-compressor.jpg "ahrefs Site Explorer example")
+::: caption
+ahrefs Site Explorer example
+:::
 
 As in our Keyword Explorer step, you want to find the keywords that have the biggest audience with the lowest competition.  The goal of these steps is to have around a dozen keyword phrases / long tail keywords that also contain your main keywords.  This way you can begin to craft your writing sample with metrics I will explain below.
 
-**Content Explorer**
+### Content Explorer
 
 It's also helpful to put your main keywords and keyword phrases into the [ahrefs Content Explorer](https://ahrefs.com/content-explorer) to get a few more keyword ideas. Grab the top three results from the Content Explorer and plug them back through the Site Explorer and repeat the steps from above. This step usually gives us an extra keyword or two for our writing sample.
 
@@ -105,13 +122,13 @@ Copy and paste [this spreadsheet](https://docs.google.com/spreadsheets/d/1x60USJ
 
 Ahrefs toolbar does not have an export feature (the Moz toolbar does).  So if you are using ahrefs, you will have to do this step manually.  However, usually you can install the Moz toolbar for free and grab the export via the button in the top left of the toolbar.  It is so much easier.  Grab the title and the URL of the top 10 domains and put them into the sheet.  I then go through and fill in all the Domain Ratings for each URL.  The DR in this step isn't that important, but it does give you an average of what your site may need to be to rank in the top 10.
 
-**Word Count**
+### Word Count
 
 Now that we have the start of our spreadsheet we just need to grab the word count of each article.  Use [this Word Counter tool](https://wordcounter.net/website-word-count) to grab the word count for each writing sample in your top 10.  I usually throw out one or two results that are way higher or lower than the other results.  Now look at the average number.  That is the word count goal you need to hit with your writing sample.
 
 Longer word count is important because it lets your content rank better, earns the blog post more backlinks, the blog post gets more social shares, etc.  There are [so many other factors](https://www.sweor.com/seocontentlength) that come into play with the length and quality of your blog post.  If your competitors are writing thousands of words, then you need to write even more than them to rank better.
 
-**External Links**
+### External Links
 
 This is a decent [external link counter](https://www.seoreviewtools.com/internal-link-analyzer/).  Again, go through each URL in this website and put the result in the spreadsheet. Similar to exceeding your competitor's average word count, you want to beat the average number of outbound links on your competitor's site when writing your blog post.
 

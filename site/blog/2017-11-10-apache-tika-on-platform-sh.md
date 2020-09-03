@@ -1,10 +1,14 @@
 ---
 title: "Apache Tika on Platform.sh"
 tags:
-    - development
-    - devops
-    - drupal
-    - serundeputy
+  - development
+  - performance
+  - drupal
+  - lando
+  - devops
+  - platformsh
+  - localdev
+  - serundeputy
 author: "Geoff St. Pierre"
 date: "2017-11-10"
 summary: "Apache Tika allows you to index PDF docs for searching with Solr."
@@ -12,6 +16,10 @@ id: serundeputy
 pic: "/images/people/gff-sm.jpg"
 location: Massachusetts
 ---
+
+::: byline
+Apache Tika allows you to index PDF docs for searching with Solr.
+:::
 
 Apache Tika on Platform.sh
 --------------------------
@@ -65,7 +73,11 @@ Configure Search API Attachments
 
 Now that we have the `tika-app-1.16.jar` file in place we are ready to configure the `search_api_attachments` module. Visit `/admin/config/search/search_api_attachments` in your browser and add the method, java executable, and tika paths configuration:
 
-<img src="/images/articles/tika/tika-config.jpg" alt="Search API Configuration Screen" />
+::: thumbnail
+![Search API Configuration Screen](/images/articles/tika/tika-config.jpg "Search API Configuration Screen")
+::: caption
+Search API Configuration Screen
+:::
 
 These paths correspond to the paths you entered in the `.platform.app.yaml` file for the `build` step.
 

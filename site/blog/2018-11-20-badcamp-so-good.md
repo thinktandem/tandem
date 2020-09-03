@@ -1,12 +1,15 @@
 ---
 title: "BADCamp So Good"
 tags:
-    - BADCamp
-    - Drupal
-    - Community
-    - Learning
-    - HigherEducation
-    - donnab
+  - events
+  - drupal
+  - higher-ed
+  - training
+  - donnab
+  - accessibility
+  - responsive
+  - design
+  - strategy
 author: "Donna Bungard"
 date: "2018-11-20"
 summary: "A retrospective on my first BADCamp."
@@ -87,11 +90,9 @@ Lessons Learned
 
 Those of us in the Drupal community are damn lucky. That’s less of a lesson learned than a fact I already knew, but BADCamp made it hit home. We have:
 
-<ul>
-<li>**Opportunities** ...for learning and continuous growth - seriously, in and outside of the sessions I always learn SO MUCH.
-</li><li>**FUN!** We know how to have fun - from waffle bars and circus parties to simply talking to each other at a booth or around a table.
-</li><li>**Community** We take care of each other. I’m not pretending we're all new best friends, but in my experience we DO look out for each other both professionally and personally. We're fortunate to have this caring community, something that many people, like that gentleman on the BART, sadly may not have experienced.
-</li></ul>
+* **Opportunities** ...for learning and continuous growth - seriously, in and outside of the sessions I always learn SO MUCH.
+* **FUN!** We know how to have fun - from waffle bars and circus parties to simply talking to each other at a booth or around a table.
+* **Community** We take care of each other. I’m not pretending we're all new best friends, but in my experience we DO look out for each other both professionally and personally. We're fortunate to have this caring community, something that many people, like that gentleman on the BART, sadly may not have experienced.
 
 On that last day while waiting for a friend I laid down on the patio between the tables and soaked in the sun. Heading back to New Hampshire and remote work I was taking in as much sunshine and community as I could to hold me over until next time.
 

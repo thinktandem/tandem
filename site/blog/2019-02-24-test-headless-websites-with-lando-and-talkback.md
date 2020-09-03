@@ -1,11 +1,12 @@
 ---
 title: "Test Headless Websites with Lando and Talkback"
 tags:
-    - development
-    - api
-    - drupal
-    - javascript
-    - dustinl
+  - development
+  - lando
+  - testing
+  - drupal
+  - javascript
+  - dustinl
 author: "Dustin LeBlanc"
 date: "2019-02-24"
 summary: "Run end to end javascript tests on a decoupled frontend"

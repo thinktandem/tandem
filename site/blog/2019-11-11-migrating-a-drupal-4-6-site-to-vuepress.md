@@ -1,11 +1,15 @@
 ---
 title: "Migrating a Drupal 4.6 Site To VuePress"
 tags:
-    - drupal
-    - development
-    - vuepress
-    - migration
-    - johno
+  - drupal
+  - development
+  - vuepress
+  - vue
+  - strategy
+  - php
+  - business
+  - migrations
+  - johno
 author: "John Ouellet"
 date: "2019-11-11"
 summary: "With Lando and Symfony Console, migrating this legacy Drupal 4.6 site to VuePress was fairly straightforward."
@@ -94,7 +98,11 @@ Getting the content out of the Drupal 4.6 Site
 
 Drupal was a much different CMS when 4.6 was all the rage.  Views had just came out and none of the awesome data export modules existed yet.  There was no migrate system at all yet either.  So, I headed over to [drupal.org's module search page](https://www.drupal.org/project/project_module) and looked for a CSV export option.  After staring at a few options, I landed on the [Import-export](https://www.drupal.org/project/import_export) module as it seemed to have the basic functionality to suit our needs.  After enabling the module, I went to the config page and was presented with a few options:
 
-<img src="/images/articles/drupal-vuepress/import-export.jpg" alt="Drupal 4.6 Import / Export Screen" />
+::: thumbnail
+![Drupal 4.6 Import / Export Screen](/images/articles/drupal-vuepress/import-export.jpg "Drupal 4.6 Import / Export Screen")
+::: caption
+Drupal 4.6 Import / Export Screen
+:::
 
 As a side note, the backend of a Drupal 4.6 is not that dissimilar from a Drupal 6 site.  I was able to find what I needed fairly easily.
 

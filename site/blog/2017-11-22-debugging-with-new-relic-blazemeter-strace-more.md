@@ -1,10 +1,11 @@
 ---
 title: "Debugging with New Relic, BlazeMeter, strace & more"
 tags:
-    - development
-    - support
-    - drupal
-    - johno
+  - development
+  - performance
+  - devops
+  - drupal
+  - johno
 author: "John Ouellet"
 date: "2017-11-22"
 summary: "This is a start to finish mini case study surrounding a site crashing bug.  I will detail how I found the problems and then how I fixed them."
@@ -12,6 +13,10 @@ id: johno
 pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
+
+::: byline
+This is a start to finish mini case study surrounding a site crashing bug.  I will detail how I found the problems and then how I fixed them.
+:::
 
 The Issue Before Us
 -------------------
@@ -74,8 +79,11 @@ Anywho, I knew this information going in but didn't realize how huge of an issue
 
 I made a test that 50 anonymous users that would view about 10 pages on the site with an extreme load.  I hit start and I sat back and watched it run for 20 minutes.I was amazed at how much data it was spitting out.  You can see the results below, but they were not good as you could imagine.  The site performed horribly under load and this is no bueno.
 
-<img src="/images/articles/debugging-with-stuff/blazemeter-before.jpg" alt="BlazeMeter Before Tweaks Results">
-
+::: thumbnail
+![BlazeMeter Before Tweaks Results](/images/articles/debugging-with-stuff/blazemeter-before.jpg "BlazeMeter Before Tweaks Results")
+::: caption
+BlazeMeter Before Tweaks Results
+:::
 
 New Relic
 ---------
@@ -84,7 +92,11 @@ While we we running the BlazeMeter tests, I had [New Relic](https://newrelic.com
 
 New Relic works well with Drupal out of the box.  You can get a general sense of why a site is sad with the free account as well.  So I plugged in the site and watched the Drupal monitor as the site was getting pummeled by BlazeMeter.  No surprise here, the site did not perform well with little caching.  As you can see from the results, the site was taking a long time to do basic page loading:
 
-<img src="/images/articles/debugging-with-stuff/newrelic-before.jpg" alt="New Relic Before Tweaks Results">
+::: thumbnail
+![New Relic Before Tweaks Results](/images/articles/debugging-with-stuff/newrelic-before.jpg "New Relic Before Tweaks Results")
+::: caption
+New Relic Before Tweaks Results
+:::
 
 I knew I had to add more caching and fix the issues at hand.  I needed to roll up my sleeves and start fixing some of the backend issues that was preventing the site from caching.  Client gave the thumbs up to spend the extra time and off I went.
 
@@ -140,11 +152,19 @@ $databases['default']['default']['init_commands']['isolation'] = "SET SESSION tx
 
 With all of this said and done.  I reran the tests (this was pre moving to Cloudflare) on the staging server with my fixes and changes.  As you can see from the BlazeMeter tests, things became exponentially better:
 
-<img src="/images/articles/debugging-with-stuff/blazemeter-after.jpg" alt="BlazeMeter After Tweaks Results">
+::: thumbnail
+![BlazeMeter After Tweaks Results](/images/articles/debugging-with-stuff/blazemeter-after.jpg "BlazeMeter After Tweaks Results")
+::: caption
+BlazeMeter After Tweaks Results
+:::
 
 Here is the full New Relic testing graph.  The two little blips at 8 am and 9 am are when I tested the site again.  As you can see the site drastically improved:
 
-<img src="/images/articles/debugging-with-stuff/newrelic-after.jpg" alt="New Relic After Tweaks Results">
+::: thumbnail
+![New Relic After Tweaks Results](/images/articles/debugging-with-stuff/newrelic-after.jpg "New Relic After Tweaks Results")
+::: caption
+New Relic After Tweaks Results
+:::
 
 So that solved a majority of the issues except the page caching and mobile switching.
 
@@ -192,8 +212,11 @@ I also noticed that on a lot of pages, page caching wasn't kicking in after my f
 
 I ran one more BlazeMeter staging with everything fixed and Cloudflare enabled.  It is like night and day from where I started:
 
-<img src="/images/articles/debugging-with-stuff/blazemeter-final.jpg" alt="BlazeMeter Final Results">
-
+::: thumbnail
+![BlazeMeter Final Results](/images/articles/debugging-with-stuff/blazemeter-final.jpg "BlazeMeter Final Results")
+::: caption
+BlazeMeter Final Results
+:::
 
 cache_form issue
 ----------------

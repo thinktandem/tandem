@@ -3,6 +3,7 @@ title: "Working with Postgres Databases and Platform.sh"
 tags:
   - localdev
   - devops
+  - platformsh
   - serundeputy
 author: "Geoff St. Pierre"
 date: "2017-05-10"

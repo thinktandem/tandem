@@ -149,6 +149,7 @@ export default {
         {name: 'Localdev', tag: 'localdev'},
         {name: 'Testing', tag: 'testing'},
         {name: 'Events', tag: 'events'},
+        {name: 'Webinars', tag: 'webinar'},
       ]],
     };
   },

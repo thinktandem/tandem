@@ -1,9 +1,11 @@
 ---
 title: "Running Legacy Versions of Drupal on Lando"
 tags:
-    - development
-    - drupal
-    - johno
+  - development
+  - drupal
+  - lando
+  - localdev
+  - johno
 author: "John Ouellet"
 date: "2019-09-10"
 summary: "This guide is how we got a Drupal 4.6 Site to run on Lando.  You can use this as a guide to run any legacy architecture as well."
@@ -18,6 +20,7 @@ Use Case
 We had recently been contracted by a non-profit to migrate their legacy Drupal 4.6 site to [VuePress](https://vuepress.vuejs.org/).   Yes, you read that right, Drupal 4.6.  We needed to get the site setup in [Lando](https://lando.dev/) so that we could get the content out to use in the new static site.  However, the oldest recipe in Lando is the [Drupal 6 recipe](https://docs.lando.dev/config/drupal6.html).  On top of this, the oldest [PHP version](https://docs.lando.dev/config/php.html) that is "supported" is 5.3.  Finally, Lando only supports [MySQL versions 5 & 8](https://docs.lando.dev/config/mysql.html#supported-versions) out of the box.  Considering the [requirements for Drupal 4.6](https://api.drupal.org/api/drupal/INSTALL.txt/4.6.x) are of a time long forgotten, what are we to do?
 
 > With the constraints of recipes and versions in Lando, how do we get this legacy Drupal site to work?
+> - Someone whose mind 'bout to be blown
 
 The answer to our dilemea is to utilize a [custom compose service](https://docs.lando.dev/config/compose.html) in Lando.
 
@@ -42,7 +45,7 @@ This site will not utilize any [recipes](https://docs.lando.dev/config/recipes.h
 
 Every compose service needs 3 keys to function properly: image, ports,  and command.  The image key is just the name of the docker image itself.  The port key is what port you want to expose.  The command key is the entrypoint for the docker image.  I will explain what that is a little more below.
 
-**Setting up the appserver service**
+### Setting up the appserver service
 
 I [git cloned](https://git-scm.com/docs/git-clone) the Drupal 4.6 site locally.  I created a basic version of the appserver in .lando.yml that looked like this:
 
@@ -126,7 +129,7 @@ services:
 
 So after a rebuild, this appserver is working.  I get missing database like error on the screen and I know I must setup the DB service now.
 
-**Setting up the database service**
+### Setting up the database service
 
 Using my knowledge from the previous steps, I went ahead and built the database service as follows:
 

@@ -1,12 +1,14 @@
 ---
 title: "Lando Migration Webinar Part 1 Followup"
 tags:
-    - development
-    - drupal
-    - localdev
-    - devops
-    - migration
-    - johno
+  - development
+  - drupal
+  - lando
+  - localdev
+  - devops
+  - migrations
+  - webinar
+  - johno
 author: "John Ouellet"
 date: "2020-04-28"
 summary: "This webinar shows how to setup and debug a Drupal 8/9 Migration with Lando."
@@ -19,7 +21,7 @@ location: Florida
 
 Thank you for everyone who attended our first webinar.  We are extremely appreciative that you decided to spend a Friday afternoon with us.  For those of you who missed it, here is the [YouTube video](https://www.youtube.com/watch?v=C1lhgObpHd8) of the webinar:
 
-<iframe width="750" height="422" src="https://www.youtube.com/embed/C1lhgObpHd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<YouTube vid="C1lhgObpHd8" />
 
 I also made the [slidedeck](https://docs.google.com/presentation/d/1bEbg0I-lumlvWrjZqMhrtHMgwkLEbi8uB2fBjHFCGFE/edit?usp=sharing) public if you wanted to check those out.  The full repo I used during the webinar is [available on GitHub as well](https://github.com/thinktandem/migration-webinar/tree/webinar-1-final).  Finally, [the boilerplate module](https://github.com/thinktandem/migration_boilerplate) is also available.
 

@@ -1,9 +1,14 @@
 ---
 title: "Preparing for Drupal 9 with Lando + PHPStan"
 tags:
-    - development
-    - drupal
-    - johno
+  - development
+  - drupal
+  - performance
+  - testing
+  - lando
+  - localdev
+  - php
+  - johno
 author: "John Ouellet"
 date: "2019-11-21"
 summary: "Drupal 9 is right around the corner.  It is very easy to get your sites ready with Lando + PHPStan."
@@ -118,11 +123,19 @@ That is it, you are now ready to rock and roll and begin testing for all your De
 
 Lets start off by running the default ```lando test``` command on a site with no deprecations:
 
-<img src="/images/articles/drupal9-phpstan/depercations-pass.jpg" alt="PHPStorm Lando Test Deprecations Pass" />
+::: thumbnail
+![PHPStorm Lando Test Deprecations Pass](/images/articles/drupal9-phpstan/depercations-pass.jpg "PHPStorm Lando Test Deprecations Pass")
+::: caption
+PHPStorm Lando Test Deprecations Pass
+:::
 
 Which is great, but let's see what happens when we have a bunch of deprecations.  I will be targeting specific directories using the ```lando phpstan``` command:
 
-<img src="/images/articles/drupal9-phpstan/depercations-fail.jpg" alt="PHPStorm Lando Test Deprecations Fail" />
+::: thumbnail
+![PHPStorm Lando Test Deprecations Fail](/images/articles/drupal9-phpstan/depercations-fail.jpg "PHPStorm Lando Test Deprecations Fail")
+::: caption
+PHPStorm Lando Test Deprecations Fail
+:::
 
 So as you can see, the core Content Moderation module has some deprecations in it still that need to be fixed.  From this point you would go into the code and adjust it as need be per deprecation.  This is the hardest part about this process currently.  Sometimes it is a super simple fix, but every once in awhile, you may have to refactor the code a little bit.  The later is very rare, but it does happen on a more complex code base.
 

@@ -1,10 +1,11 @@
 ---
 title: "Higher Ed. & Accessibility"
 tags:
-    - accessibility
-    - a11y
-    - highereducation
-    - donnab
+  - accessibility
+  - a11y
+  - higher-ed
+  - donnab
+  - strategy
 author: "Donna Bungard"
 date: "2018-08-03"
 summary: "And how to make it a little easier to manage"
@@ -60,8 +61,8 @@ The filing of an OCR complaint starts a legal process. [The ED.gov site](https:/
 
 Yeah, that last one is a mouthful but basically, it’s showing you, the institution, that one of their first steps is to involve you in the investigation and determine if you are in violation. Take note of that: **this is a process in which you are actively involved.** Here, look at this quote regarding next steps:
 
-<blockquote>If OCR determines that a recipient failed to comply with one of the civil rights laws that OCR enforces, OCR will contact the recipient and will attempt to secure the recipient’s willingness to negotiate a voluntary resolution agreement. If the recipient agrees to resolve the complaint, the recipient will negotiate and sign a written resolution agreement that describes the specific remedial actions that the recipient will undertake to address the area(s) of noncompliance identified by OCR.“</blockquote>
-<span style="text-aligh:right;">- [Ed.gov](https://www2.ed.gov/about/offices/list/ocr/complaints-how.htm)</span>
+>If OCR determines that a recipient failed to comply with one of the civil rights laws that OCR enforces, OCR will contact the recipient and will attempt to secure the recipient’s willingness to negotiate a voluntary resolution agreement. If the recipient agrees to resolve the complaint, the recipient will negotiate and sign a written resolution agreement that describes the specific remedial actions that the recipient will undertake to address the area(s) of noncompliance identified by OCR.
+> - [Ed.gov](https://www2.ed.gov/about/offices/list/ocr/complaints-how.htm)
 
 That clearly states that if your organization is willing to find a voluntary resolution they’ll work with you. If you haven’t before now, get your lawyers involved. They can help walk you through that negotiation process. I cannot speak to how it will turn out, I'm sure each case is different, but your web and you legal team working together can help you to negotiate a realistic action plan that puts your group in the best possible place.
 

@@ -1,10 +1,12 @@
 ---
 title: "Drupal 6 LTS + PHP 7 + Platform.sh"
 tags:
-    - development
-    - support
-    - drupal
-    - johno
+  - development
+  - support
+  - drupal
+  - devops
+  - platformsh
+  - johno
 author: "John Ouellet"
 date: "2019-01-22"
 summary: "A quick and easy guide to getting Drupal 6 sites on a stable and secure platform"
@@ -30,7 +32,7 @@ As of right now, it seems most of the individuals will be maintaining Drupal 6 L
 Setup your site
 -----------------------
 
-#### Migrating To Platform.sh
+### Migrating To Platform.sh
 
 We chose [platform.sh](https://platform.sh/) to move the Drupal 6 sites we maintain. This is largely due to the fact that our other go-to hosting provider, [Pantheon](https://pantheon.io/) only allows certain vendors to spin up new Drupal 6 sites.  If you have moved a vanilla Drupal site to platform.sh before, the process is pretty much the same.
 
@@ -143,7 +145,7 @@ if (!empty($_ENV['PLATFORM_RELATIONSHIPS'])) {
 
 You should now have a working Drupal 6 site on platform.sh!  Just move your DB and files up and import like any other hosting provider.
 
-#### Updating Drupal 6 Core and Modules to the Long Term Support Versions.
+### Updating Drupal 6 Core and Modules to the Long Term Support Versions.
 
 This next part is the longest and most tedious of this process.  It isn't overly difficult, just more time consuming than anything.  So grab a snack and let's get this done..
 
@@ -161,7 +163,7 @@ I like to update a handful of modules at a time and check the site to make sure 
 
 You should now have your site to the latest Drupal 6 LTS versions and you are not only secure, but you can go to a higher version of PHP now.
 
-#### Upgrading to PHP 7.1
+### Upgrading to PHP 7.1
 
 The next part usually is pretty quick if you updated all your modules to their LTS versions.  However, sometimes there is a module or two that haven't been patched yet for PHP 7.  Just Google your errors are usually you can pinpoint how to fix these issues really quickly.
 

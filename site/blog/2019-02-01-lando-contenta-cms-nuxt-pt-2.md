@@ -1,11 +1,13 @@
 ---
 title: "Lando + Contenta CMS + Nuxt Pt. 2"
 tags:
-    - development
-    - api
-    - drupal
-    - javascript
-    - serundeputy
+  - development
+  - api
+  - nuxt
+  - vue
+  - drupal
+  - javascript
+  - serundeputy
 author: "Geoff St. Pierre"
 date: "2019-02-01"
 summary: "Configure Contenta CMS and Nuxt to communicate"
@@ -31,35 +33,48 @@ We'll need to configure Contenta to listen for API requests. The three main
 parts required are a consumer, a user, and a role.
 
 
-*** Configure an API role `vue_role` ***
+***Configure an API role `vue_role`***
 
 Set up a role called `vue_role`. You do this the same way you would set up any
 Drupal role. Visit: `/admin/people/roles` and click the `+ ADD ROLE` button.
 Fill out the form for a new role and give it the name `vue_role`.
 
 
-*** Configure an API user `vue_user` ***
+***Configure an API user `vue_user`***
 
 The same goes for the user. Add just like any other Drupal user. Visit:
 `/admin/people` and click the `+ ADD USER` button. When adding the user give it
 the username `vue_user` and check off the rule of `vue_role`.
 
-<img style="width: 100%;" src="/images/articles/headless-pt-2/vueUser.png" alt="Screeenshot of add user configuration page"/>
+
+::: thumbnail
+![Screeenshot of add user configuration page](/images/articles/headless-pt-2/vueUser.png "Screeenshot of add user configuration page")
+::: caption
+Screeenshot of add user configuration page
+:::
 
 Save the form.
 
 
-*** Configure a consumer `vue_consumer` ***
+***Configure a consumer `vue_consumer`***
 
 Let's set up a consumer called `vue_consumer`. Visit `/admin/config/services/consumer`
 and click the `ADD CONSUMER` button:
 
-<img style="width: 100%;" src="/images/articles/headless-pt-2/consumerAdd.png" alt="Screeenshot of add consumer configuration page"/>
+::: thumbnail
+![Screeenshot of add consumer configuration page](/images/articles/headless-pt-2/consumerAdd.png "Screeenshot of add consumer configuration page")
+::: caption
+Screeenshot of add consumer configuration page
+:::
 
 Fill out the add consumer form and be sure to name the consumer `vue_consumer`,
 give the user `vue_user`, and scope of `vue_role`.
 
-<img style="width: 100%;" src="/images/articles/headless-pt-2/vueConsumer.png" alt="Screeenshot of add consumer add form"/>
+::: thumbnail
+![Screeenshot of add consumer add form](/images/articles/headless-pt-2/vueConsumer.png "Screeenshot of add consumer add form")
+::: caption
+Screeenshot of add consumer add form
+:::
 
 Save the form.
 
@@ -76,7 +91,7 @@ about axios as the Guzzle of the javascript world.  In [Part 1](https://thinktan
 of this article when we installed the `mynuxt` app we pulled in the `axios`
 library.
 
-*** Configure ENV vars `.env` ***
+***Configure ENV vars `.env`***
 
 We'll need to tell the `mynuxt` app about some environment variables to be able
 to make requests to the `myapi` backend. In your `mynuxt` app create a file
@@ -91,7 +106,7 @@ CONSUMER_ID={{ GET THE CONSUMER ID from Drupal //admin/config/services/consumer 
 After adding this file you'll need to `lando rebuild` the `mynuxt` app in order
 to load in the environment variables to the app containers.
 
-*** Configure axios `nuxt.config.js` ***
+***Configure axios `nuxt.config.js`***
 
 The set up requires telling `mynuxt` about the axios `baseURL` and optionally
 setting up debugging. Open the file `nuxt.config.js` in your code editor.
@@ -124,7 +139,7 @@ purposes, we'll turn on debugging with the caveat that our `APP_ENV` is not prod
 
 
 
-*** Configure `baseURL` ***
+***Configure `baseURL`***
 
 Also in the `nuxt.config.js` file, we will add in `env` code block to configure
 the `baseURL` telling axios where to make the API calls to Contenta. At the
@@ -162,7 +177,11 @@ mkdir pages/posts
 
 So you should end up with a directory structure like this:
 
-<img style="width: 100%;" src="/images/articles/headless-pt-2/nuxtPages.png" alt="mynuxt app directory structure"/>
+::: thumbnail
+![mynuxt app directory structure](/images/articles/headless-pt-2/nuxtPages.png "mynuxt app directory structure")
+::: caption
+mynuxt app directory structure
+:::
 
 Notice the structure of the `pages/posts/index.vue` file. It has three sections:
 `<template>`, `<script>`, and `<style>`. As you can probably guess `<template>`
@@ -242,10 +261,14 @@ we've referenced the `body` property this time in a `v-html` vue directive. We'v
 used `v-html` to demonstrate passing through data that may contain html. We could
 have referenced it the same way we referenced `title`.
 
-Now visit your page at https://mynuxt.lndo.site and you should see something
+Now visit your page at `https://mynuxt.lndo.site` and you should see something
 like this:
 
-<img style="width: 100%; border: 1px gray solid;" src="/images/articles/headless-pt-2/placeHolderPost.png" alt="Screeenshot of nuxt app with placeholder data"/>
+::: thumbnail
+![Screeenshot of nuxt app with placeholder data](/images/articles/headless-pt-2/placeHolderPost.png "Screeenshot of nuxt app with placeholder data")
+::: caption
+Screeenshot of nuxt app with placeholder data
+:::
 
 Now let's replace the placeholder data with real data from `myapi`.
 
@@ -309,9 +332,11 @@ is hardcoded for a specific post.
 
 Now visiting: https://mynuxt.lndo.site we see real data fetched from Contenta:
 
-
-<img style="width: 100%; border: 1px gray solid;" src="/images/articles/headless-pt-2/asyncDataPost.png" alt="Screeenshot of nuxt app with placeholder data"/>
-
+::: thumbnail
+![Screeenshot of nuxt app with placeholder data](/images/articles/headless-pt-2/asyncDataPost.png "Screeenshot of nuxt app with placeholder data")
+::: caption
+Screeenshot of nuxt app with placeholder data
+:::
 
 Pro Tip
 -------
@@ -321,8 +346,11 @@ While developing in my `*.vue` files I like to have a terminal pane open running
 webpack process. It also reports out errors caught by eslint and any `console.log`
 output you put in for debugging.
 
-
-<img style="width: 100%; border: 1px gray solid;" src="/images/articles/headless-pt-2/logs.png" alt="Screeenshot of terminal top right pane with lando logs"/>
+::: thumbnail
+![Screeenshot of terminal top right pane with lando log](/images/articles/headless-pt-2/logs.png "Screeenshot of terminal top right pane with lando log")
+::: caption
+Screeenshot of terminal top right pane with lando log
+:::
 
 In the top right pane is the output of `lando logs -s appserver -f`.
 

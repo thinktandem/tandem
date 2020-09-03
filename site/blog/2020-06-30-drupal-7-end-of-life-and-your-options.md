@@ -1,9 +1,11 @@
 ---
 title: "Drupal 7 End of Life and Your Options"
 tags:
-    - support
-    - drupal
-    - alecr
+  - support
+  - drupal
+  - strategy
+  - business
+  - alecr
 author: "Alec Reynolds"
 date: "2020-06-30"
 summary: "A guide to Drupal 7 end of life and your options."
@@ -14,27 +16,27 @@ location: California
 
 The end is near! Drupal 7's official end of life date is November 2022, and if you're one of the over [750,000 Drupal site owners](https://www.drupal.org/project/usage/drupal) who haven't made the leap to Drupal 8/9, you're probably wondering what the next step for your Drupal 7 site should be.
 
-### What Does Drupal 7 "End of Life" Mean?
+## What Does Drupal 7 "End of Life" Mean?
 
 Come Drupal 7's end of life date in November of 2022, the Drupal community will stop to formally support Drupal 7. Drupal 7's end of life date was actually supposed to occur on November 2021, but the [Drupal Security Team announced](https://www.drupal.org/psa-2020-06-24) that this date would be extended a whole year to 2022 in an effort to help businesses struck by the the COVID-19 economic crisis have more time to make the investment in a migration.
 
 But what does dropping community support actually mean? Drupal 7 end of life will have 3 major impacts:
 
-#### 1. Drupal.org will stop issuing security updates for Drupal 7.
+### 1. Drupal.org will stop issuing security updates for Drupal 7.
 
 This means any vulnerabilities that are discovered impacting Drupal 7 will no longer receive a formal security announcement and updates.
 
-#### 2. No new modules or updates for existing ones.
+### 2. No new modules or updates for existing ones.
 
 You've probably already noticed that there are very few new Drupal 7 modules and that updates for existing modules have slowed to a crawl, with most effort being made to simply put out security fixes. Since the release of Drupal 8 in 2015, development has almost entirely shifted to the module ecosystem around Drupal 8 + 9. Drupal 7 end of life will mean that this trickle of Drupal 7 module development will cease.
 
-#### 3. Reduced Support
+### 3. Reduced Support
 
 Even after Drupal 8's release, for years most Google searches for Drupal questions came up with articles dealing with Drupal 7. That's no surprise; since its release in 2011, Drupal 7 has been the longest serving and most popular Drupal version  in the CMS's nearly two decade history.
 
 This started to change around 2018 as the tide of new development turned towards Drupal 8. There's still tons of great material on building and supporting Drupal 7 websites, but you'll find that support requests on Drupal.org for Drupal 7-specific questions are harder to get answered. By Drupal 7's end of life date in November 2022, expect finding free assistance from the Drupal community for Drupal 7 websites to be nearly impossible.
 
-### What Are My Options?
+## What Are My Options?
 
 You've acknowledged that in the near future you'll need to update your Drupal 7 website. This might seem kind of scary; if you've been a long-time Drupal site owner, you may remember that Drupal upgrades can be expensive, as can moving to a new CMS like WordPress. It can be daunting to consider such a project, especially if your departmental budget just got slashed or if you've recently redesigned your existing website.
 
@@ -47,7 +49,7 @@ Fortunately, there are options for managing Drupal 7 end of life that fit every 
 
 It's worth mentioning that, when Drupal 8 was released, some members in the Drupal community chose to fork Drupal 7 to create Backdrop CMS. Backdrop preserves much of the Drupal 7 admin and developer experience. We've done some migrations to Backdrop and believe it's a good option for siteowners who have some development experience with Drupal and don't want to learn the (significantly different) standards for Drupal 8 and 9. However, because the Backdrop community is much smaller than the Drupal community, we see less active development of modules, which rules it out as an option for most organizations who want to benefit from Drupal's powerful ecosystem of community developed modules.
 
-### Drupal 7 Long Term Support (LTS)
+## Drupal 7 Long Term Support (LTS)
 
 The Drupal security team has vetted several vendors to help produce security patches for Drupal 7 after its formal end of life. These "Drupal 7 LTS" versions will backport applicable fixes from the active Drupal 9 development and apply fixes to Drupal 7-specific reported vulnerabilities.
 
@@ -67,7 +69,7 @@ We recommend D7 LTS to any organization who wants to "archive" their website for
 
 However, for any modern organization that relies on its website to bring in sales, donations, job prospects, or other vital strategic goals, D7 LTS will be unsatisfactory. Your website needs to stay a lean, mean, conversion-generating machine; without new modules you'll find it harder to develop landing pages and features you need.
 
-### Archiving Your Site
+## Archiving Your Site
 
 Sometimes a website is dead, but you don't want it forgotten. A great example is one of our clients, interACT, who have a legacy domain (ISNA.org) on an old Drupal 5 site(!) that still garnered thousands of visitors each month. interACT had moved on to different advocacy efforts, but the old domain was still an important resource that deserved to exist separate from their new website.
 
@@ -87,7 +89,7 @@ For groups like interACT, we recommend "archiving" the website: using a static s
 
 Archiving is a very special case, not suitable for most site owners. However, we still recommend it for those rare cases where you want to keep a site around forever, but you don't really want to pay for it!
 
-### Migrating to Drupal 9
+## Migrating to Drupal 9
 
 For many Drupal site owners, this is probably the first option you consider.
 
@@ -107,7 +109,7 @@ We recommend any organization that needs a powerful enterprise CMS to move their
 
 However, we talk to many clients who haven't been served well by Drupal. Maybe the company's last CTO or CMO picked Drupal, but the current marketing staff doesn't have experience with it. Perhaps your website is fairly small and centered around content, without much need for custom features (what some people call a "brochureware" site). In these cases, you're probably already looking at moving to a different CMS, which leads us too...
 
-### Migrating to a New CMS
+## Migrating to a New CMS
 
 You might think that moving from Drupal 7 to WordPress or another new CMS is the "nuclear option": throw away the old site, build a new one. While it's definitely true that this type of project shouldn't be taken lightly, it's often more comparable to a Drupal 9 upgrade than you might think.
 
@@ -124,7 +126,7 @@ We recommend any organization that isn't using Drupal's strengths to consider a 
 
 Smaller organizations can benefit from thinking outside the box of traditional CMSs. Hosted, software-as-a-service (SaaS) CMSs like Webflow, Hubspot CMS, and Shopify (for ecommerce) are very compelling for their low cost of ownership and ease-of-use. "Static" site generators like VuePress and Gatsby are a great option for websites where blinding fast performance is the top priority. Both SaaS CMSs and static site generators are ideal for websites that consist of < 30 pages and a blog, putting the emphasis on content over custom functionality.
 
-### How to Make a Decision
+## How to Make a Decision
 
 Largely, your migration decision should be a referendum on Drupal and how well it serves your organization. If you need an enterprise-level CMS that's easy to extend with custom functionality, stick with Drupal and go to Drupal 9. If you're more interested in writing blog posts than coding new features, consider moving your legacy content from Drupal 7 into a new CMS like WordPress. If you're undecided and don't need to make an immediate decision, find a provider who can keep your D7 website updated and move you to Drupal 7 LTS (shameless plug: we have great inexpensive maintenance agreements).
 

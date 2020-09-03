@@ -1,10 +1,11 @@
 ---
 title: "Migrating from Toolset Types to Advanced Custom Fields"
 tags:
-    - development
-    - wordpress
-    - migration
-    - johno
+  - development
+  - wordpress
+  - migrations
+  - php
+  - johno
 author: "John Ouellet"
 date: "2020-07-07"
 summary: "A straight forward guide on moving your fields data from Toolset to ACF."
@@ -12,6 +13,10 @@ id: johno
 pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
+
+:::byline
+A straight forward guide on moving your fields data from Toolset to ACF.
+:::
 
 ## Overview
 

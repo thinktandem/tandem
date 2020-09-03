@@ -5,6 +5,7 @@ tags:
   - development
   - localdev
   - drupal
+  - pantheon
   - bgonz
 author: "Brian Gonzales"
 date: "2016-09-29"

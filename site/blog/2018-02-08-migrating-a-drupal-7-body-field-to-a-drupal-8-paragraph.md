@@ -1,10 +1,10 @@
 ---
 title: "Migrating a Drupal 7 Body Field to a Drupal 8 Paragraph"
 tags:
-    - development
-    - drupal
-    - migration
-    - johno
+  - development
+  - drupal
+  - migrations
+  - johno
 author: "John Ouellet"
 date: "2018-02-08"
 summary: "Migrating A Drupal 7 long text field to a Drupal 8 nested text field in a paragraph is a two step process.  It is quick and easy once you get the basic grasp of the mechanisms involved."
@@ -12,6 +12,10 @@ id: johno
 pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
+
+::: byline
+Migrating A Drupal 7 long text field to a Drupal 8 nested text field in a paragraph is a two step process.  It is quick and easy once you get the basic grasp of the mechanisms involved.
+:::
 
 Why are we doing this?
 ----------------------

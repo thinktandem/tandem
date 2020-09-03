@@ -1,10 +1,10 @@
 ---
 title: "Fixing Stagnant Inline Entity Forms in the Search Index"
 tags:
-    - development
-    - support
-    - drupal
-    - johno
+  - development
+  - support
+  - drupal
+  - johno
 author: "John Ouellet"
 date: "2017-12-08"
 summary: "When using inline entity form to render nodes on a parent node, it can pose a minor problem with the Search API."
@@ -12,6 +12,10 @@ id: johno
 pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
+
+:::byline
+When using inline entity form to render nodes on a parent node, it can pose a minor problem with the Search API.
+:::
 
 The Issue Before Us
 -------------------

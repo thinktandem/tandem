@@ -1,9 +1,11 @@
 ---
 title: "Tandem Named Leading Drupal Developer"
 tags:
-    - drupal
-    - development
-    - alecr
+  - drupal
+  - strategy
+  - design
+  - development
+  - alecr
 author: "Alec Reynolds"
 date: "2018-04-18"
 summary: "Clutch has named Tandem one of the leading Drupal development agencies in SF for 2018."

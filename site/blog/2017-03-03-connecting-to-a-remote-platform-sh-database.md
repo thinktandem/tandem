@@ -4,6 +4,7 @@ tags:
   - localdev
   - devops
   - development
+  - platformsh
   - serundeputy
 author: "Geoff St. Pierre"
 date: "2017-03-03"

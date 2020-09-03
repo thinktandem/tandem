@@ -19,7 +19,7 @@ module.exports = {
           itemLayout: 'Post',
           layout: 'Blog',
           pagination: {
-            lengthPerPage: 5,
+            lengthPerPage: 50,
           },
           title: 'Blog',
         },

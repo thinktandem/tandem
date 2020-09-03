@@ -1,9 +1,12 @@
 ---
 title: "Transparency in Picking a Digital Partner"
 tags:
-    - drupal
-    - misc
-    - alecr
+  - drupal
+  - strategy
+  - business
+  - design
+  - development
+  - alecr
 author: "Alec Reynolds"
 date: "2019-04-18"
 summary: "Why we use services like Clutch.co to help you pick a digital partner faster."
@@ -11,6 +14,10 @@ id: alecr
 pic: "/images/people/alecr.png"
 location: California
 ---
+
+::: byline
+Why we use services like Clutch.co to help you pick a digital partner faster.
+:::
 
 Picking a digital partner is hard. What firm can understand your strategy, translate that into conversion-increasing design, and then develop a website on your chosen technology platform? After reading multiple proposals and sifting through digital agency websites you can feel trapped in a web of buzzwords, less sure than when you started.
 

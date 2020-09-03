@@ -1,9 +1,12 @@
 ---
 title: "Still on Drupal 6? Here are Your Options"
 tags:
-    - support
-    - drupal
-    - johno
+  - support
+  - drupal
+  - migrations
+  - business
+  - strategy
+  - johno
 author: "John Ouellet"
 date: "2019-09-19"
 summary: "An informative guide for sites still on Drupal 6"

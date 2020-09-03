@@ -1,11 +1,14 @@
 ---
 title: "Lando + Envoy"
 tags:
-    - development
-    - drupal
-    - wordpress
-    - laravel
-    - serundeputy
+  - development
+  - drupal
+  - php
+  - localdev
+  - lando
+  - wordpress
+  - laravel
+  - serundeputy
 author: "Geoff St. Pierre"
 date: "2018-08-03"
 summary: "Learn to automate deploy steps with envoy on affordable hosting."
@@ -98,10 +101,8 @@ Conclusion
 Consistency. No need to ssh into the server. No danger of running unwanted commands on the server. No leaving the shell open on a production server session for your cat to walk across your keyboard 🐈. Just the things you want and need to happen for your app.
 
 Tools and Resources:
-<ul>
-<li><a href="https://laravel.com/docs/5.6/envoy">Envoy</a> ~ Run tasks on your remote servers.</li>
-<li><a href="https://docs.devwithlando.io">Lando</a> ~ A flexible local dev environment based on docker.</li>
-</ul>
+
+* <a href="https://laravel.com/docs/5.6/envoy">Envoy</a> ~ Run tasks on your remote servers.
+* <a href="https://docs.devwithlando.io">Lando</a> ~ A flexible local dev environment based on docker.
 
 This post originally appeared on <a href="https://serundeputy.io">serundeputy.io</a>
-

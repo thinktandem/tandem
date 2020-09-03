@@ -1,10 +1,10 @@
 ---
 title: "Migrating a Drupal 8 Multisite to a Standalone Drupal 8 Site"
 tags:
-    - development
-    - drupal
-    - migration
-    - johno
+  - development
+  - drupal
+  - migrations
+  - johno
 author: "John Ouellet"
 date: "2020-03-12"
 summary: "A straighforward guide to doing a  Drupal 8 to Drupal 8 migration."

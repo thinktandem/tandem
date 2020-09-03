@@ -1,10 +1,10 @@
 ---
 title: "Writing a Custom Drupal 8 Module Upgrade Path"
 tags:
-    - development
-    - drupal
-    - migration
-    - johno
+  - development
+  - drupal
+  - migrations
+  - johno
 author: "John Ouellet"
 date: "2018-07-24"
 summary: "There are a few occasions where a contrib module may not have an upgrade path written yet in Drupal 8.  It is a fairly easy and straight forward task to create these to win all your migration efforts."

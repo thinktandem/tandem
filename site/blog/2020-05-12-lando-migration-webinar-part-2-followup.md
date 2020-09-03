@@ -1,12 +1,14 @@
 ---
 title: "Lando Migration Webinar Part 2 Followup"
 tags:
-    - development
-    - drupal
-    - localdev
-    - devops
-    - migration
-    - johno
+  - development
+  - lando
+  - drupal
+  - localdev
+  - devops
+  - migrations
+  - webinar
+  - johno
 author: "John Ouellet"
 date: "2020-05-12"
 summary: "This webinar dove into Source, Process, & Destination Plugins for Drupal 8/9 Migrations."
@@ -19,7 +21,7 @@ location: Florida
 
 Thank you for everyone again who attended our second migration webinar.  For those of you who missed it, here is the [YouTube video](https://www.youtube.com/watch?v=C1lhgObpHd8) of the webinar:
 
-<iframe width="750" height="422" src="https://www.youtube.com/embed/mz0ZeeDEVVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<YouTube vid="mz0ZeeDEVVQ" />
 
 The [slidedeck](https://docs.google.com/presentation/d/1EFoW58JEqpuq7DiSr916DZr3WHlbkVdHeddi62TRHA0/edit?usp=sharing) is available for all those who want to go through it.  The [GitHub repo's branch](https://github.com/thinktandem/migration-webinar/tree/webinar-2-final) has been updated for this webinar with all the examples I showed you during this webinar.
 

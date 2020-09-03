@@ -1,12 +1,13 @@
 ---
 title: "Lando Share ~ Sharing is Caring"
 tags:
-    - development
-    - localdev
-    - testing
-    - drupal
-    - wordpress
-    - serundeputy
+  - development
+  - localdev
+  - lando
+  - testing
+  - drupal
+  - wordpress
+  - serundeputy
 author: "Geoff St. Pierre"
 date: "2018-01-03"
 summary: "Use the `lando share` command to expose a URL of your local Lando site. For example to view it on actual mobile devices for browser testing before you release it to the world!"

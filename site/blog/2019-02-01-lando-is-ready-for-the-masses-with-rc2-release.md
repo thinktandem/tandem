@@ -1,21 +1,28 @@
 ---
 title: "Lando is ready for the masses with RC2 release"
 tags:
-    - development
-    - devops
-    - api
-    - drupal
-    - localdev
-    - wordpress
-    - testing
-    - pirog
+  - development
+  - devops
+  - lando
+  - wordpress
+  - javascript
+  - node
+  - docker
+  - drupal
+  - localdev
+  - testing
+  - pirog
 author: "Mike Pirog"
 date: "2019-02-01"
 summary: "We've waited, we've bided our time, we've gathered data and now we are ready to smite traditional local dev to ruin by unleashing the true power of Lando"
 id: pirog
 pic: "/images/people/pirog.jpg"
-location: "Boston"
+location: "Manchvegas"
 ---
+
+::: byline
+We've waited, we've bided our time, we've gathered data and now we are ready to smite traditional local dev to ruin by unleashing the true power of Lando
+:::
 
 Holla!!! We are super pumped to announce the release of [Lando 3.0.0-rc.2](https://github.com/lando/lando/releases)!.
 
@@ -32,7 +39,11 @@ Since then we've been listening to users and heeding their advice as we try to l
 
 At time of writing Lando has peaked *very close* to 9,000 monthly active users and has averaged around 8,000 for the last quarter or so.
 
-![rc2-active-montly-users](images/rc2users.png "Monthly active users before RC2 release")
+::: thumbnail
+![rc2-active-montly-users](/images/articles/rc2users.png "Monthly active users before RC2 release")
+::: caption
+Monthly active users before RC2 release
+:::
 
 We never dreamed we'd have this many users **before a stable release** and have been working *very hard* to cut a release that lays the foundation for more growth and adoption in the future.
 
@@ -47,7 +58,11 @@ Lando RC2 is in many ways a bottom-up rewrite to address this problem; to consol
 
 But [you don't have to take my word for it](https://www.youtube.com/watch?v=vAvQbEeTafk). Here is a [Code Climate](https://codeclimate.com/) analysis of technical debt over the last 6 months.
 
-![rc2-tech-debt](images/rc2techdebt.png "Pre RC2 technical debt ratio")
+::: thumbnail
+![rc2-tech-debt](/images/articles/rc2techdebt.png "Pre RC2 technical debt ratio")
+::: caption
+The check always comes due
+:::
 
 Believe it or not the technical debt ratio at the beginning of 2018 was actually around **60%!**.
 
@@ -137,7 +152,11 @@ To that end we've implemented both unit and functional tests.
 
 We don't have 100% coverage yet but we are covering the most important things.
 
-![rc2-unit-tests](images/rc2unit.png "RC2 unit test sample")
+::: thumbnail
+![rc2-unit-tests](/images/articles/rc2unit.png "RC2 unit test sample")
+::: caption
+RC2 unit test sample
+:::
 
 ### Functional Tests
 
@@ -145,7 +164,11 @@ We wrote our own functional testing framework called [leia](https://github.com/l
 
 Here is a sample screenshot of one part of one test we run on one of the 10 concurrent CircleCI machines that run on every build.
 
-![rc2-functional-tests](images/rc2func.png "RC2 functional test sample")
+::: thumbnail
+![rc2-unit-tests](/images/articles/rc2func.png "RC2 functional test sample")
+::: caption
+RC2 functional test sample
+:::
 
 This allows us to test all of the things in Lando's [examples directory](https://github.com/lando/lando/tree/master/examples) and by extension most of the code in our [documentation](https://docs.devwithlando.io/).
 
@@ -608,9 +631,13 @@ Here is the complete list of changes in RC2.
 How do I update to use all the magix in RC2?
 --------------------------------------------
 
-https://docs.devwithlando.io/guides/updating-to-rc2.html
+<https://docs.devwithlando.io/guides/updating-to-rc2.html>
 
 Conclusion
 ----------
 
+::: thumbnail
 ![yes-winning](https://media.giphy.com/media/jNdw5Qmy5MOpq/giphy.gif "take a break take a drink")
+::: caption
+Raise your glass!
+:::
