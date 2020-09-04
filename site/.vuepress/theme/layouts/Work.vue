@@ -28,7 +28,7 @@
       <p class="custom-block-title">
         Explore<br> other work.
       </p>
-      <TagGrid prefix="/" />
+      <TagGrid />
     </div>
   </div>
 </template>

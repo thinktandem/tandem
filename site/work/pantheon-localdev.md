@@ -42,7 +42,6 @@ tags:
   - ux
   - design
 
-
 link2Original: true
 originalLink: "https://pantheon.io/localdev"
 ---

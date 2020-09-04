@@ -55,7 +55,7 @@
       </p>
     </div>
 
-    <TagGrid prefix="/" />
+    <TagGrid />
 
     <div class="custom-block important remote-team">
       <p class="custom-block-title">
