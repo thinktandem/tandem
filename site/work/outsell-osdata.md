@@ -33,7 +33,6 @@ tags:
   - startups
   - pantheon
   - localdev
-  - kalabox
   - development
 
 ---

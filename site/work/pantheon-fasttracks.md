@@ -35,6 +35,7 @@ tags:
   - localdev
   - kalabox
   - development
+  - training
 ---
 
 title: "Fast Track Trainings"

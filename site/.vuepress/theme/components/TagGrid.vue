@@ -106,7 +106,6 @@ export default {
         {name: 'Responsive', tag: 'responsive'},
         {name: 'Experience', tag: 'ux'},
         {name: 'Styleguides', tag: 'styleguides'},
-        {name: 'Protyping', tag: 'protyping'},
       ]],
       development: [[
         {name: 'Performance', tag: 'performance'},

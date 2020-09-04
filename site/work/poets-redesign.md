@@ -25,6 +25,7 @@ theme:
 
 date: "2019-11-15"
 tags:
+  - accessibility
   - api
   - business
   - user-research
