@@ -118,7 +118,7 @@ export default {
         {name: 'Finance', tag: 'finance'},
         {name: 'Healthcare', tag: 'healthcare'},
         {name: 'Higher Ed', tag: 'higher-ed'},
-        {name: 'Media', tag: 'media'},
+        // {name: 'Media', tag: 'media'},
         {name: 'Nonprofit', tag: 'non-profit'},
         {name: 'Tech', tag: 'tech'},
       ]],

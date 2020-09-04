@@ -11,7 +11,7 @@ logoMargin: 15
 
 header:
   title: "Building for<br/>the future"
-  image: /images/twinstar.png
+  image: /images/logos/twinstar.png
   background:
     background-color: "#83BCFF"
     background-image: url(/images/ts-bg.jpg)

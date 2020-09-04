@@ -26,6 +26,7 @@ theme:
 
 date: "2020-08-16"
 tags:
+  - javascript
   - docker
   - node
   - drupal
