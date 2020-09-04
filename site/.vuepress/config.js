@@ -30,7 +30,7 @@ module.exports = {
           itemLayout: 'CaseStudy',
           layout: 'Work',
           pagination: {
-            lengthPerPage: 50,
+            lengthPerPage: 3,
 
           },
           title: 'Work',

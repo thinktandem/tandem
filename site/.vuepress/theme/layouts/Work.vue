@@ -86,7 +86,7 @@ export default {
         {name: 'University of San Francisco', link: '/work/usf-d8-migration/', logo: '/images/logos/usf.png'},
         {name: 'Outsell', link: '/work/outsell-tethys/', logo: '/images/logos/outsell.png'},
         {name: 'Chenmed', logo: '/images/logos/chenmed.png'},
-        {name: 'CLMP', logo: '/images/logos/clmp.png'},
+        {name: 'CLMP', link: 'https://www.clmp.org/', logo: '/images/logos/clmp.png'},
         {name: 'Twinstar', link: '/work/twinstar-discovery/', logo: '/images/logos/twinstar.png'},
       ],
       featuredClients: [],

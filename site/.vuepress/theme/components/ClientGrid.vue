@@ -33,7 +33,8 @@ export default {
   },
   methods: {
     goto(link) {
-      if (link) this.$router.push(link);
+      if (link && link.startsWith('/')) this.$router.push(link);
+      else if (link) window.open(link, '_blank');
     },
   },
 };
