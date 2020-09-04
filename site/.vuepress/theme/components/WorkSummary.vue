@@ -58,8 +58,8 @@
           class="work-logo"
         >
           <img
-            :alt="page.frontmatter.client"
             v-if="page.frontmatter.logo"
+            :alt="page.frontmatter.client"
             :src="page.frontmatter.logo"
           >
           <div v-else>
@@ -156,7 +156,7 @@ a
   margin-bottom 2em
   position relative
   .work-wrapper
-    opacity .93
+    opacity .95
     padding 4em
   .work-title, .work-logo
     font-size 2.57em

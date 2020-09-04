@@ -18,6 +18,7 @@ header:
 
 theme:
   background: "#4d9bf3"
+  bgImage: url(/images/poets-bg.png)
   headerColor: white
   headerHover: pink
   headerActive: pink

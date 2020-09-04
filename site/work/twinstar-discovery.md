@@ -14,8 +14,9 @@ header:
   image: /images/twinstar.png
   background:
     background-color: "#83BCFF"
+    background-image: url(/images/ts-bg.jpg)
     background-position: 100% 20%
-    background-size: auto
+    background-size: cover
     background-repeat: no-repeat
 
 theme:

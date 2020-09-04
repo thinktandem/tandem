@@ -15,7 +15,6 @@ header:
     background-image: url(/images/space.jpg)
     background-position: 100% 20%
     background-size: auto
-    opacity: .99
     background-repeat: no-repeat
 
 theme:

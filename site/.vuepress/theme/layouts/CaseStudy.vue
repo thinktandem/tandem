@@ -52,7 +52,10 @@
         <a
           target="_blank"
           :href="topper.link"
-        ><img :alt="$page.frontmatter.client" :src="topper.image"></a>
+        ><img
+          :alt="$page.frontmatter.client"
+          :src="topper.image"
+        ></a>
       </div>
 
       <Content itemprop="articleBody" />
@@ -100,7 +103,10 @@ export default {
       return utils.getBgColor(this.theme);
     },
     bgStylez() {
-      return utils.getWorkBackgroundStyles(this.topper);
+      const styles = utils.getWorkBackgroundStyles(this.topper, this.theme);
+      delete styles['background-image'];
+      if (this.theme.bgImage) styles['background-image'] = this.theme.bgImage;
+      return styles;
     },
     hoverColor() {
       return utils.getHoverColor(this.theme);

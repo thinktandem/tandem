@@ -12,9 +12,9 @@ header:
   image: /images/logos/outsell.png
   background:
     background-color: "#55c2b8"
+    background-image: url(/images/outsell-bg2.png)
     background-position: 100% 20%
-    background-size: auto
-    opacity: .99
+    background-size: cover
     background-repeat: no-repeat
 
 theme:

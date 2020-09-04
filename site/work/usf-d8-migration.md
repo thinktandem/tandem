@@ -13,8 +13,9 @@ header:
   image: /images/case-studies/usf-d8.png
   background:
     background-color: "#FDBB30"
+    background-image: url(/images/usf-campus.jpg)
     background-position: 100% 20%
-    background-size: auto
+    background-size: cover
     background-repeat: no-repeat
 
 theme:
