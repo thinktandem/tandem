@@ -1,5 +1,43 @@
 ---
 title: "Legacy Tech Rescue"
+id: outsell
+client: outsell-data
+summary: "We helped Outsell a third-party vendor dependency with a new Laravel-powered API to feed an ecosystem of Drupal sites."
+link: https://outsellinc.com
+logo: /images/logos/outsell.png
+logoHeight: 1.5
+
+header:
+  title: "Rebuilding<br /> poetry's home on <br />the internet"
+  image: /images/logos/outsell.png
+  background:
+    background-color: "#55c2b8"
+    background-position: 100% 20%
+    background-size: auto
+    opacity: .99
+    background-repeat: no-repeat
+
+theme:
+  background: "#55c2b8"
+  headerColor: white
+  headerHover: black
+  headerActive: black
+  text: white
+
+date: "2016-09-23"
+tags:
+  - docker
+  - node
+  - drupal
+  - wordpress
+  - startups
+  - pantheon
+  - localdev
+  - kalabox
+  - development
+---
+
+title: "Legacy Tech Rescue"
 logo: /images/clients/outsell/outsell.png
 org: "Outsell Inc"
 slug: outsell-legacy-rescue
@@ -28,7 +66,6 @@ tags:
 summary: "We helped <strong>Outsell Inc.</strong> eliminate dependency on a third-party vendor by creating a new <strong>Laravel</strong>-powered API to feed an ecosystem of <strong>Drupal</strong> sites."
 client: "Outsell Inc"
 site: "https://www.outsellinc.com/"
----
 
 Ben Sampson had a problem. As Head of Product, Ben was in charge of Outsell’s Intelligence Platform, where clients can browse the treasure trove of Outsell’s research data. However, despite being a core Outsell service, the Intelligence Platform relied upon a proprietary platform from a 3rd party vendor, which made it hard to add new features and troubleshoot issues.
 

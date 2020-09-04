@@ -1,5 +1,42 @@
 ---
 title: "Auth0 Single Sign-On"
+id: outsell
+client: outsell-sso
+summary: "We helped Outsell move from a legacy SSO provider to Auth0 while simplifying their auth logic and integrating with Salesforce."
+link: https://outsellinc.com
+logo: /images/logos/outsell.png
+logoHeight: 1.5
+
+header:
+  title: "Rebuilding<br /> poetry's home on <br />the internet"
+  image: /images/logos/outsell.png
+  background:
+    background-color: "#55c2b8"
+    background-position: 100% 20%
+    background-size: auto
+    opacity: .99
+    background-repeat: no-repeat
+
+theme:
+  background: "#55c2b8"
+  headerColor: white
+  headerHover: black
+  headerActive: black
+  text: white
+
+date: "2017-03-24"
+tags:
+  - docker
+  - node
+  - drupal
+  - wordpress
+  - startups
+  - pantheon
+  - localdev
+  - kalabox
+  - development
+---
+
 logo: /images/clients/outsell/outsell.png
 org: "Outsell Inc"
 image: /images/case-studies/outsell-auth0.png
@@ -27,7 +64,6 @@ tags:
 summary: "We helped <strong>Outsell Inc.</strong> move from a legacy SSO provider to Auth0 while reducing the complexity of their authentication logic and providing a tight Salesforce integration."
 client: "Outsell Inc"
 site: "https://www.outsellinc.com/"
----
 
 Outsell Inc. was looking to migrate from a costly, proprietary and hard-to-maintain single sign-on solution that made it difficult to alter existing web properties and introduce new ones.
 

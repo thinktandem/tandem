@@ -1,5 +1,44 @@
 ---
 title: "Data Platform"
+id: outsell
+client: outsell-data
+summary: "We helped Outsell increase their data collection abilities by an order of magnitude with Laravel."
+link: https://outsellinc.com
+logo: /images/logos/outsell.png
+logoHeight: 1.5
+
+header:
+  title: "Rebuilding<br /> poetry's home on <br />the internet"
+  image: /images/logos/outsell.png
+  background:
+    background-color: "#55c2b8"
+    background-position: 100% 20%
+    background-size: auto
+    opacity: .99
+    background-repeat: no-repeat
+
+theme:
+  background: "#55c2b8"
+  headerColor: white
+  headerHover: black
+  headerActive: black
+  text: white
+
+date: "2017-04-23"
+tags:
+  - docker
+  - node
+  - drupal
+  - wordpress
+  - startups
+  - pantheon
+  - localdev
+  - kalabox
+  - development
+
+---
+
+title: "Data Platform"
 logo: /images/clients/outsell/outsell.png
 org: "Outsell Inc"
 slug: outsell-osdata
@@ -12,7 +51,7 @@ impact: "Scaling Outsell's data collection and maintenance by an order of magnit
 metrics:
     - key: "Technology Used"
       value: Laravel
-    - key: "Unique Datapoints" 
+    - key: "Unique Datapoints"
       value: 15K+
     - key: "Scale of Data Entry"
       value: 10x
@@ -24,7 +63,6 @@ tags:
 summary: "We helped <strong>Outsell Inc.</strong> increase their data collection abilities by an order of magnitude with Laravel."
 client: "Outsell Inc"
 site: "https://www.outsellinc.com/"
----
 
 Outsell Inc. has maintained a large database businesses in the data, information and technology sectors for over twenty years. However, while the value of their insights had grown, Outsell’s ability to collect and maintain data was bottlenecked by a legacy data entry application.
 

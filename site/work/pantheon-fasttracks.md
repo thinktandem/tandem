@@ -1,5 +1,43 @@
 ---
 title: "Fast Track Trainings"
+id: pantheon
+client: pantheon
+summary: "We traveled the US training digital agencies on Pantheon, Kalabox and good DevOps as part of Pantheon's Fast Track program."
+link: https://pantheon.io
+logo: /images/logos/pantheon-logo.png
+logoHeight: 2
+
+header:
+  title: "Rebuilding<br /> poetry's home on <br />the internet"
+  image: /images/logos/pantheon-logo.png
+  background:
+    background-color: "#ffdc28"
+    background-position: 100% 20%
+    background-size: auto
+    opacity: .99
+    background-repeat: no-repeat
+
+theme:
+  background: "#ffdc28"
+  headerColor: black
+  headerHover: "#1794c7"
+  headerActive: "#1794c7"
+  text: black
+
+date: "2017-01-28"
+tags:
+  - docker
+  - node
+  - drupal
+  - wordpress
+  - startups
+  - pantheon
+  - localdev
+  - kalabox
+  - development
+---
+
+title: "Fast Track Trainings"
 logo: /images/clients/pantheon/pantheon.png
 org: "Pantheon Systems"
 image: /images/case-studies/fasttrack-training.jpg
@@ -28,7 +66,6 @@ tags:
 summary: "We traveled the US training digital agencies on Pantheon, Kalabox and good DevOps as part of <strong>Pantheon Systems'</strong> Fast Track program."
 client: "Pantheon Systems"
 site: "https://pantheon.io"
----
 
 We've been working with Pantheon since they were 8 people in an office under the Bay Bridge. As a result we know their product, platform and team better than most. So, when Pantheon asked us to provide some extra bandwidth for their [Fast Track](https://pantheon.io/agencies/fast-track) training program, we immediately said *"We've got you!"*.
 
