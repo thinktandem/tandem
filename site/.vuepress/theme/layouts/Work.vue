@@ -81,11 +81,11 @@ export default {
   data() {
     return {
       clients: [
-        {name: 'Academy of American Poets', link: '/work/poets-redesign/', logo: '/images/logos/poets.png'},
-        {name: 'Pantheon', link: '/work/pantheon-localdev/', logo: '/images/logos/pantheon-logo.png'},
+        {name: 'Academy of American Poets', link: 'https://poets.org', logo: '/images/logos/poets.png'},
+        {name: 'Pantheon', link: 'https://pantheon.com/localdev', logo: '/images/logos/pantheon-logo.png'},
         {name: 'University of San Francisco', link: '/work/usf-d8-migration/', logo: '/images/logos/usf.png'},
         {name: 'Outsell', link: '/work/outsell-tethys/', logo: '/images/logos/outsell.png'},
-        {name: 'Chenmed', logo: '/images/logos/chenmed.png'},
+        {name: 'Chenmed', link: 'https://www.chenmed.com/', logo: '/images/logos/chenmed.png'},
         {name: 'CLMP', link: 'https://www.clmp.org/', logo: '/images/logos/clmp.png'},
         {name: 'Twinstar', link: '/work/twinstar-discovery/', logo: '/images/logos/twinstar.png'},
       ],

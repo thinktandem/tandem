@@ -50,6 +50,9 @@ tags:
   - design
   - development
   - magic
+
+link2Original: true
+originalLink: "https://poets.org/"
 ---
 
 ::: point Summary.
@@ -81,7 +84,6 @@ Third column
 
 ::: col-half Tech
 Third column
-![Walt Whitman](https://i.pinimg.com/originals/2b/7e/02/2b7e02ed7453da00e776bd594a6d4e3c.png)
 :::
 ::::::
 
