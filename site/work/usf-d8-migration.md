@@ -27,9 +27,13 @@ theme:
 date: "2018-10-31"
 tags:
   - drupal
-  - highereducation
+  - higher-ed
+  - php
+  - performance
+  - support
+  - training
   - development
-  - migration
+  - migrations
 ---
 ::: point Summary.
 Poets.org is a elegant resource that connects users to over a million poets, poems, educational resources, event and more. With a large member-base and many more casual visitors, the site needs to be able to reach a huge audience, keeping our focus on user experience, accessibility and on brand representation.

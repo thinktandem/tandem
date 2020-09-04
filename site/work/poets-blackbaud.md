@@ -1,6 +1,6 @@
 ---
 title: "Blackbaud Integration"
-id: poets
+id: poets-blackbaud
 client: Poets.org
 summary: "We helped The Academy of American Poets centralize their Blackbaud-powered fundraising efforts on their Drupal website."
 link: https://poets.org/
@@ -25,9 +25,9 @@ theme:
 
 date: "2018-08-28"
 tags:
-    - drupal
-    - non-profit
-    - development
+  - drupal
+  - non-profit
+  - development
 ---
 
 The Academy of American Poets had been utilizing various Blackbaud products for well over a decade. The academy’s internal staff had the diligent task of maintaining all records within Blackbaud. This ate up considerable time and they needed to find a better way.

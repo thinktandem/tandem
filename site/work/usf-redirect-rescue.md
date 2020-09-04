@@ -26,9 +26,14 @@ theme:
 
 date: "2017-09-25"
 tags:
-    - drupal
-    - highereducation
-    - rescue
+  - drupal
+  - higher-ed
+  - performance
+  - security
+  - support
+  - php
+  - devops
+  - testing
 ---
 
 For months the University of San Francisco was consistently, but seemingly randomly experiencing major downtime on their main [marketing site](http://usfca.edu). After many frustrating days of troubleshooting, they called on Tandem to isolate and resolve the underlying issue.

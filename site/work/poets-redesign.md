@@ -25,6 +25,20 @@ theme:
 
 date: "2019-11-15"
 tags:
+  - api
+  - business
+  - user-research
+  - content-strategy
+  - seo
+  - accesibility
+  - responsive
+  - ux
+  - styleguides
+  - prototyping
+  - performance
+  - security
+  - migrations
+  - support
   - drupal
   - vue
   - nuxt
@@ -33,6 +47,7 @@ tags:
   - strategy
   - design
   - development
+  - magic
 ---
 
 ::: point Summary.

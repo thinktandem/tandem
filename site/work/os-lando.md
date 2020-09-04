@@ -1,7 +1,7 @@
 ---
 title: "Better Local Dev"
-id: lando
-client: lando.dev
+id: lando-foss
+client: Lando
 summary: "We built one of the most popular free and open source localdev tools in use today with very limited resources"
 link: https://lando.dev
 logo: /images/logos/lando.png
@@ -45,6 +45,7 @@ tags:
   - design
   - development
   - localdev
+  - magic
 
 
 link2Original: true

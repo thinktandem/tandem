@@ -155,7 +155,7 @@ a
   margin-bottom 2em
   position relative
   .work-wrapper
-    opacity .86
+    opacity .93
     padding 4em
   .work-title, .work-logo
     font-size 2.57em

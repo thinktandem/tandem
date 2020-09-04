@@ -1,6 +1,6 @@
 ---
 title: "Fast Track Trainings"
-id: pantheon
+id: pantheon-fts
 client: pantheon
 summary: "We traveled the US training digital agencies on Pantheon, Kalabox and good DevOps as part of Pantheon's Fast Track program."
 link: https://pantheon.io

@@ -1,7 +1,7 @@
 ---
 title: "Legacy Tech Rescue"
-id: outsell
-client: outsell-data
+id: outsell-tethys
+client: outsell
 summary: "We helped Outsell a third-party vendor dependency with a new Laravel-powered API to feed an ecosystem of Drupal sites."
 link: https://outsellinc.com
 logo: /images/logos/outsell.png

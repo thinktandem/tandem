@@ -1,7 +1,7 @@
 ---
 title: "Data Platform"
-id: outsell
-client: outsell-data
+id: outsell-data
+client: outsell
 summary: "We helped Outsell increase their data collection abilities by an order of magnitude with Laravel."
 link: https://outsellinc.com
 logo: /images/logos/outsell.png

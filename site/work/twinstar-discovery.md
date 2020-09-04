@@ -21,15 +21,23 @@ header:
 theme:
   background: "#83BCFF"
   headerColor: "#03045E"
-  headerHover: cyan
-  headerActive: cyan
+  headerHover: black
+  headerActive: black
   text: "#03045E"
-
 
 date: "2019-01-15"
 tags:
   - drupal
-  - corporate
+  - business
+  - branding
+  - seo
+  - content-strategy
+  - responsive
+  - ux
+  - finance
+  - user-research
+  - design
+  - prototypes
   - strategy
 ---
 

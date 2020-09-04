@@ -1,6 +1,6 @@
 ---
 title: "Pantheon on Kalabox"
-id: pantheon
+id: pantheon-kalabox
 client: pantheon
 summary: "We built a plugin for Kalabox that allows you to clone and sync your Pantheon site to your local."
 link: https://github.com/kalabox/kalabox-app-pantheon

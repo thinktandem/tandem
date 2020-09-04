@@ -1,7 +1,7 @@
 ---
 title: "Auth0 Single Sign-On"
-id: outsell
-client: outsell-sso
+id: outsell-sso
+client: outsell
 summary: "We helped Outsell move from a legacy SSO provider to Auth0 while simplifying their auth logic and integrating with Salesforce."
 link: https://outsellinc.com
 logo: /images/logos/outsell.png
@@ -26,15 +26,17 @@ theme:
 
 date: "2017-03-24"
 tags:
-  - docker
   - node
+  - javascript
+  - php
+  - laravel
   - drupal
-  - wordpress
-  - startups
-  - pantheon
-  - localdev
-  - kalabox
-  - development
+  - business
+  - strategy
+  - support
+  - tech
+  - salesforce
+  - auth0
 ---
 
 logo: /images/clients/outsell/outsell.png
