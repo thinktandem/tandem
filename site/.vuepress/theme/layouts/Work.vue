@@ -82,8 +82,9 @@ export default {
     return {
       clients: [
         {name: 'Academy of American Poets', link: '/work/poets-redesign/', logo: '/images/logos/poets.png'},
-        {name: 'Amazee.io', logo: '/images/logos/amazeeio_right.png'},
+        {name: 'Pantheon', link: '/work/pantheon-localdev/', logo: '/images/logos/pantheon-logo.png'},
         {name: 'University of San Francisco', link: '/work/usf-d8-migration/', logo: '/images/logos/usf.png'},
+        {name: 'Outsell', link: '/work/outsell-tethys/', logo: '/images/logos/outsell.png'},
       ],
       featuredClients: [],
     };

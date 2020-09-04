@@ -1,9 +1,9 @@
 ---
-title: "Pantheon on Kalabox"
-id: pantheon-kalabox
+title: "Pantheon Localdev"
+id: pantheon-localdev
 client: pantheon
-summary: "We built a plugin for Kalabox that allows you to clone and sync your Pantheon site to your local."
-link: https://github.com/kalabox/kalabox-app-pantheon
+summary: "We built a native desktop GUI app powered by Electron and Lando so Pantheon users can easily work on their sites locally."
+link: https://pantheon.io
 logo: /images/logos/pantheon-logo.png
 logoHeight: 2
 
@@ -24,20 +24,25 @@ theme:
   headerActive: "#1794c7"
   text: black
 
-date: "2013-09-22"
+date: "2020-08-16"
 tags:
   - docker
   - node
   - drupal
   - wordpress
-  - startups
+  - tech
   - pantheon
-  - localdev
-  - kalabox
+  - electron
+  - vue
   - development
+  - devops
+  - localdev
+  - user-research
+  - ux
+  - design
 
 
 link2Original: true
-originalLink: "https://github.com/kalabox/kalabox-app-pantheon"
+originalLink: "https://pantheon.io/localdev"
 ---
 

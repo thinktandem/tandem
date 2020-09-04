@@ -58,6 +58,7 @@
           class="work-logo"
         >
           <img
+            :alt="page.frontmatter.client"
             v-if="page.frontmatter.logo"
             :src="page.frontmatter.logo"
           >

@@ -52,7 +52,7 @@
         <a
           target="_blank"
           :href="topper.link"
-        ><img :src="topper.image"></a>
+        ><img :alt="$page.frontmatter.client" :src="topper.image"></a>
       </div>
 
       <Content itemprop="articleBody" />
