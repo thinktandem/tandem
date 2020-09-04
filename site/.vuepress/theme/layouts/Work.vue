@@ -82,7 +82,7 @@ export default {
     return {
       clients: [
         {name: 'Academy of American Poets', link: 'https://poets.org', logo: '/images/logos/poets.png'},
-        {name: 'Pantheon', link: 'https://pantheon.com/localdev', logo: '/images/logos/pantheon-logo.png'},
+        {name: 'Pantheon', link: 'https://pantheon.io/localdev', logo: '/images/logos/pantheon-logo.png'},
         {name: 'University of San Francisco', link: '/work/usf-d8-migration/', logo: '/images/logos/usf.png'},
         {name: 'Outsell', link: '/work/outsell-tethys/', logo: '/images/logos/outsell.png'},
         {name: 'Chenmed', link: 'https://www.chenmed.com/', logo: '/images/logos/chenmed.png'},
