@@ -8,8 +8,8 @@ logo: /images/logos/clmp.png
 logoHeight: 2
 
 header:
-  title: "Rebuilding<br /> poetry's home on <br />the internet"
-  image: /images/logos/clmp.png
+  title: "Redesigned.<br />Responsive.<br />WordPress."
+  image: /images/work/clmp-screenshot.png
   background:
     background-color: "#10203a"
     background-image: url(/images/work/clmp-bg.png)
@@ -19,7 +19,7 @@ header:
 
 theme:
   background: "#10203a"
-  headerColor: black
+  headerColor: white
   headerHover: "#cb1414"
   headerActive: "#cb1414"
   text: white
@@ -38,7 +38,25 @@ tags:
   - non-profit
   - performance
 
-link2Original: true
-originalLink: "https://www.clmp.org/"
 ---
 
+::: point Summary.
+The Community of Literary Magazines and Presses had an outdated and poorly functioning WordPress site that no longer easily served their members' needs. Together we went through a thorough discovery phase and overhauled the user experience to focus on simplicity and mobile. The result was a beautiful, responsive, fast and navigable website.
+:::
+
+> Our members were increasingly using mobile and now our site reflects that reality.
+
+:::::: col-wrapper
+::: col-half Migration I:
+We wrote a custom migration plugin to extract and transform all the old data to our new and performance optimized architecture.
+:::
+
+::: col-half Migration II:
+:::big
+50k+ items
+:::
+::::::
+
+::: important UX Overhaul.
+After a close discovery process with CLMP we generated wireframes, component designs, and mockups to help steer the new design.
+:::

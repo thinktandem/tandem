@@ -8,7 +8,7 @@ logo: /images/logos/chenmed.png
 logoHeight: 1.2
 
 header:
-  title: "Better<br>storytelling<br />with components"
+  title: "Better storytelling<br />with components"
   image: /images/work/chenmed-screenshot.png
   background:
     background-color: "#6b1e74"

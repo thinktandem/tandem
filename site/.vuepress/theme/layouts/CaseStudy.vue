@@ -235,9 +235,16 @@ export default {
       font-weight 500
       margin-left 10px
       margin-right 10px
+        font-size 1em
     ul
       li
         font-size 1.4em
+    @media (max-width: $MQMobile)
+      padding 1em 1em
+      p
+        font-size 1em
+      &:before
+        font-size 3em
   .section-header
     .section-header-left
       margin-right 175px
@@ -253,13 +260,14 @@ export default {
         font-size 3.33em
         font-weight 700
         margin 0 0 1em
+        text-align right
         letter-spacing -.19rem
         text-decoration none
   .showcase
     text-align center
     margin-bottom 4em
     img
-      max-width 90%
+      max-width 100%
   .custom-block
     p
       font-weight 300
@@ -331,5 +339,7 @@ export default {
     .section-header
       .section-header-right
         h1
+          margin-top 1em
           font-size 2em
+          text-align center
 </style>

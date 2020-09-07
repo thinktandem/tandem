@@ -2,7 +2,7 @@
 title: "Better Local Dev"
 id: lando-foss
 client: Lando
-summary: "We built one of the most popular free and open source localdev tools in use today with very limited resources"
+summary: "We built one of the most popular free and open source local dev tools in use today on a shoe string budget."
 link: https://lando.dev
 logo: /images/logos/lando.png
 logoHeight: 3
