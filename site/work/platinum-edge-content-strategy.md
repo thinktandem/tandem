@@ -2,11 +2,11 @@
 title: "Content Strategy"
 id: pe-cs
 client: "Platinum Edge"
-summary: "We developed an editorial calendar aimed at Platinum Edge's key audiences that boosted content generation by 300%"
+summary: "We developed an editorial calendar aimed at Platinum Edge's key audiences that boosted content generation by 300%."
 link: "https://platinumedge.com"
 
 header:
-  title: "Building for<br/>the future"
+  title: "Improving<br> Content Creation"
   image: /images/work/pe-hero.jpg
   background:
     background-color: "#113576"

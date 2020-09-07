@@ -7,6 +7,8 @@
   >
     <style>
       h1 {color: {{ textColor }};}
+      a {color: {{ textColor }};}
+      a:hover {color: {{ hoverColor }};}
       blockquote {border-top: 1px solid {{ textColor }}; color: {{ textColor }};}
       blockquote::before {color: {{ hoverColor }};}
       blockquote ul li {color: {{ hoverColor }};}
@@ -217,162 +219,163 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem.case-study-layout
-  max-width 1140px
-  .custom-block.point:first-child
-    border-top 0
-  .custom-block.point:last-child
-    border-bottom 0
-  blockquote
-    background transparent
-    border-left 0
-    padding 2em 2em
-    border-top 0
-    &:before
-      font-size 4em
-    p
-      font-size 1.7em
-      font-weight 500
-      margin-left 10px
-      margin-right 10px
-        font-size 1em
-    ul
-      li
-        font-size 1.4em
-    @media (max-width: $MQMobile)
-      padding 0em
-      p
-        font-size 1em
+.content-wrapper-tandem
+  &.case-study-layout
+    max-width 1140px
+    .custom-block.point:first-child
+      border-top 0
+    .custom-block.point:last-child
+      border-bottom 0
+    blockquote
+      background transparent
+      border-left 0
+      padding 2em 2em
+      border-top 0
       &:before
-        font-size 3em
-      ul
-        position initial
-        li
-          font-size .8em
-  .section-header
-    .section-header-left
-      margin-right 175px
-      a, h1
-        font-weight 600
-        text-decoration none
-      img
-        all unset
-    .section-header-right
-      h1
-        font-family Poppins, Helvetica Neue, Arial, sans-serif
-        line-height 1.04
-        font-size 3.33em
-        font-weight 700
-        margin 0 0 1em
-        text-align right
-        letter-spacing -.19rem
-        text-decoration none
-  .showcase
-    text-align center
-    margin-bottom 4em
-    img
-      max-width 100%
-  .custom-block
-    p
-      font-weight 300
-      font-size 1.33rem
-      letter-spacing -1.04px
-
-    &.big
+        font-size 4em
       p
-        font-size 96px
-        @media (max-width: $MQMobile)
-          font-size 72px
-    &.medium
-      position absolute
-      bottom 7em
-      @media (max-width: $MQMobile)
-        position initial
-      p
-        font-size 72px
-    &.point
-      padding 7em 0
-      p
-        line-height 2em
-      &.tagz
-        margin-bottom 0
-        margin-top 0
-        border-bottom 0
-        .post-tags
-          width 100%
-          ul
-            margin 0
-            list-style none
-            display flex
-            margin 0
-            padding 0
-            flex-wrap wrap
-            @media (max-width: $MQMobile)
-              justify-content center
-            li
-              margin-bottom 1em
-              a
-                border 1px solid inherit
-                color inherit
-                span
-                  font-weight 500
-                  margin 0
-                &:hover
-                  transition none
-                &:before
-                  all unset
-                &:after
-                  all unset
-
-    &.important
-      padding 7em 0
-      p
-        &.custom-block-title
-          font-size 3.64em
-          font-family GalaxieCopernicus, PT Serif, serif
+        font-size 1.7em
+        font-weight 500
+        margin-left 10px
+        margin-right 10px
+          font-size 1em
       ul
         li
-          font-size 1.2em
+          font-size 1.4em
       @media (max-width: $MQMobile)
+        padding 0em
         p
-          &.custom-block-title
-            font-size 2em
-    &.col-full, &.col-half, &.col-third
-      padding 7em 0
-      ul
-        li
-          font-size 1.5em
-          list-style none
-      p
-        &.custom-block-title
-          font-size 2.71828em
-          font-weight 900
-      img
-        position absolute
-        bottom -3.5em
-        right 0
-        opacity .08
-        z-index 0
-
-@media (max-width: $MQMobile)
-  .content-wrapper-tandem.case-study-layout
-    .showcase
-      margin-bottom 1em
-      img
-        max-width 100vw
-        margin-left -20px
-        margin-right -20px
+          font-size 1em
+        &:before
+          font-size 3em
+        ul
+          position initial
+          li
+            font-size .8em
     .section-header
+      .section-header-left
+        margin-right 175px
+        a, h1
+          font-weight 600
+          text-decoration none
+        img
+          all unset
       .section-header-right
         h1
-          margin-top 1em
-          font-size 2em
-          text-align center
+          font-family Poppins, Helvetica Neue, Arial, sans-serif
+          line-height 1.04
+          font-size 3.33em
+          font-weight 700
+          margin 0 0 1em
+          text-align right
+          letter-spacing -.19rem
+          text-decoration none
+    .showcase
+      text-align center
+      margin-bottom 4em
+      img
+        max-width 100%
     .custom-block
-      &.col-full, &.col-half, &.col-third, &.important, &.point
-        padding 3em 0em
-        text-align center
+      p
+        font-weight 300
+        font-size 1.33rem
+        letter-spacing -1.04px
+
+      &.big
+        p
+          font-size 96px
+          @media (max-width: $MQMobile)
+            font-size 72px
+      &.medium
+        position absolute
+        bottom 7em
+        @media (max-width: $MQMobile)
+          position initial
+        p
+          font-size 72px
+      &.point
+        padding 7em 0
+        p
+          line-height 2em
+        &.tagz
+          margin-bottom 0
+          margin-top 0
+          border-bottom 0
+          .post-tags
+            width 100%
+            ul
+              margin 0
+              list-style none
+              display flex
+              margin 0
+              padding 0
+              flex-wrap wrap
+              @media (max-width: $MQMobile)
+                justify-content center
+              li
+                margin-bottom 1em
+                a
+                  border 1px solid inherit
+                  color inherit
+                  span
+                    font-weight 500
+                    margin 0
+                  &:hover
+                    transition none
+                  &:before
+                    all unset
+                  &:after
+                    all unset
+
       &.important
-        text-align left
+        padding 7em 0
+        p
+          &.custom-block-title
+            font-size 3.64em
+            font-family GalaxieCopernicus, PT Serif, serif
+        ul
+          li
+            font-size 1.2em
+        @media (max-width: $MQMobile)
+          p
+            &.custom-block-title
+              font-size 2em
+      &.col-full, &.col-half, &.col-third
+        padding 7em 0
+        ul
+          li
+            font-size 1.5em
+            list-style none
+        p
+          &.custom-block-title
+            font-size 2.71828em
+            font-weight 900
+        img
+          position absolute
+          bottom -3.5em
+          right 0
+          opacity .08
+          z-index 0
+
+  @media (max-width: $MQMobile)
+    .content-wrapper-tandem.case-study-layout
+      .showcase
+        margin-bottom 1em
+        img
+          max-width 100vw
+          margin-left -20px
+          margin-right -20px
+      .section-header
+        .section-header-right
+          h1
+            margin-top 1em
+            font-size 2em
+            text-align center
+      .custom-block
+        &.col-full, &.col-half, &.col-third, &.important, &.point
+          padding 3em 0em
+          text-align center
+        &.important
+          text-align left
 
 </style>
