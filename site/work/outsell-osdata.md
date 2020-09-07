@@ -8,8 +8,8 @@ logo: /images/logos/outsell.png
 logoHeight: 1.5
 
 header:
-  title: "Rebuilding<br /> poetry's home on <br />the internet"
-  image: /images/work/outsell-auth0.png
+  title: "10x More<br>Data Collection<br> with Laravel"
+  image: /images/work/osdata.png
   background:
     background-color: "#55c2b8"
     background-image: url(/images/outsell-bg2.png)
@@ -30,41 +30,25 @@ tags:
   - node
   - drupal
   - wordpress
-  - startups
-  - pantheon
+  - tech
   - localdev
   - development
+  - javascript
+  - laravel
+  - strategy
+  - business
 
 ---
 
-title: "Data Platform"
-logo: /images/clients/outsell/outsell.png
-org: "Outsell Inc"
-slug: outsell-osdata
-background: 8CC63E
-date: "2017-04-23"
-image: /images/case-studies/osdata.png
-challenge: "Build a data platform to enable large-scale data entry and machine learning-driven insights."
-solution: "Use Laravel to build a flexible front-end for a large Postgres DB."
-impact: "Scaling Outsell's data collection and maintenance by an order of magnitude."
-metrics:
-    - key: "Technology Used"
-      value: Laravel
-    - key: "Unique Datapoints"
-      value: 15K+
-    - key: "Scale of Data Entry"
-      value: 10x
-tags:
-    - laravel
-    - corporate
-    - strategy
-    - development
-summary: "We helped <strong>Outsell Inc.</strong> increase their data collection abilities by an order of magnitude with Laravel."
-client: "Outsell Inc"
-site: "https://www.outsellinc.com/"
+::: point Summary.
+Outsell Inc. had accumulated a ton of data on the information and technology sectors over the last twenty years. However, while the value of their insights had grown, thier ability to collect and maintain that data was bottlenecked by a legacy data entry application. Tandem modernized their data collection ability on Laravel allowing them to 10x their entry velocity while drastically reducing their data maintanence costs.
+:::
 
-Outsell Inc. has maintained a large database businesses in the data, information and technology sectors for over twenty years. However, while the value of their insights had grown, Outsell’s ability to collect and maintain data was bottlenecked by a legacy data entry application.
+> From requirements and scoping to development and deployment, Tandem coordinated with all stakeholders to deliver the best solution to support our business needs. I highly recommend Tandem to anyone looking for strategic development.
+> - Ben Sampson, Head of Product
 
-Tandem proposed using Laravel to build a new data entry application. Laravel’s powerful object relational mapping (ORM) layer allowed us to quickly adapt to Outsell’s custom data model and create a front-end for performing CRUD (Create, Read, Update, and Delete) actions the database. Laravel’s extensive ecosystem of libraries made it easy to find the best tools to power search, advanced reporting, and other features.
+::: important Right tool. Right job.
+Using Laravel's powerful object relational mapping (ORM) layer we were able to quickly adapt to Outsell’s custom data model and create a sexy front-end for performing CRUD (Create, Read, Update, and Delete) operations against their legacy database. Laravel’s extensive ecosystem of libraries made it easy to find the best tools to power search, advanced reporting, and other features.
 
-Now Outsell is able to onboard large teams of data entry specialists to increase its ability to collect and maintain records. By conservative estimates, this could lead to records being added and updated 10x more frequently than with the old system. Now Outsell’s customers can expect even more detailed reports and greater self-service access to company records.
+Outsell is now able to onboard large teams of data entry specialists, drastically increasing their ability to collect and maintain records. This means that Outsell’s customers can now expect even more detailed reports and greater self-service access to company records.
+:::

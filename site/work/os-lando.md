@@ -2,7 +2,7 @@
 title: "Better Local Dev"
 id: lando-foss
 client: Lando
-summary: "We built one of the most popular free and open source local dev tools in use today on a shoe string budget."
+summary: "We built one of the most popular free and open source local dev tools. 10,000 developers strong and growing everyday."
 link: https://lando.dev
 logo: /images/logos/lando.png
 logoHeight: 3
@@ -12,7 +12,7 @@ header:
   image: /images/logos/lando.png
   background:
     background-color: "#ed3f7a"
-    background-image: url(/images/space.jpg)
+    background-image: url(/images/work/space.jpg)
     background-position: 100% 20%
     background-size: auto
     background-repeat: no-repeat

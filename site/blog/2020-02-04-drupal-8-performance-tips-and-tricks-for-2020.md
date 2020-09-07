@@ -7,7 +7,6 @@ tags:
   - javascript
   - platformsh
   - performance
-  - platformsh
   - support
   - johno
 author: "John Ouellet"
