@@ -240,11 +240,15 @@ export default {
       li
         font-size 1.4em
     @media (max-width: $MQMobile)
-      padding 1em 1em
+      padding 0em
       p
         font-size 1em
       &:before
         font-size 3em
+      ul
+        position initial
+        li
+          font-size .8em
   .section-header
     .section-header-left
       margin-right 175px
@@ -277,6 +281,15 @@ export default {
     &.big
       p
         font-size 96px
+        @media (max-width: $MQMobile)
+          font-size 72px
+    &.medium
+      position absolute
+      bottom 7em
+      @media (max-width: $MQMobile)
+        position initial
+      p
+        font-size 72px
     &.point
       padding 7em 0
       p
@@ -320,11 +333,16 @@ export default {
       ul
         li
           font-size 1.2em
+      @media (max-width: $MQMobile)
+        p
+          &.custom-block-title
+            font-size 2em
     &.col-full, &.col-half, &.col-third
       padding 7em 0
       ul
         li
           font-size 1.5em
+          list-style none
       p
         &.custom-block-title
           font-size 2.71828em
@@ -339,6 +357,7 @@ export default {
 @media (max-width: $MQMobile)
   .content-wrapper-tandem.case-study-layout
     .showcase
+      margin-bottom 1em
       img
         max-width 100vw
         margin-left -20px
@@ -349,4 +368,11 @@ export default {
           margin-top 1em
           font-size 2em
           text-align center
+    .custom-block
+      &.col-full, &.col-half, &.col-third, &.important, &.point
+        padding 3em 0em
+        text-align center
+      &.important
+        text-align left
+
 </style>

@@ -46,6 +46,10 @@ module.exports = {
       defaultTitle: '',
     }],
     ['container', {
+      type: 'medium',
+      defaultTitle: '',
+    }],
+    ['container', {
       type: 'point',
       defaultTitle: 'Point.',
     }],

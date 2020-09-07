@@ -44,14 +44,6 @@ We've been working with Pantheon since they were 8 people in an office under the
 
 > It was awesome we could turn to Tandem and ramp up our training capacity with almost no onboarding!
 
-::: important Unlocking vender lock-in.
-In our analysis we found that Outsell relied upon their external vendor for two primary services: a Salesforce integration that helped them authenticate users and an API that provided access to Outsell's powerful research database.
-
-After replacing the convoluted Salesforce-tied login with Auth0, we chose to expose Outsell’s primary PostgresDB via a DreamFactory API. Working in concert with Outsell's development team, we refactored the Intelligence Platform to pull data from this new API.
-
-When their contract expired they seamlessly switched over to their new system without a hitch.
-:::
-
 :::::: col-wrapper
 ::: col-half Roadtripping:
 * San Francisco

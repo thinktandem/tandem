@@ -9,7 +9,7 @@ logoHeight: 1.5
 
 header:
   title: "Rebuilding<br /> poetry's home on <br />the internet"
-  image: /images/logos/outsell.png
+  image: /images/work/outsell-auth0.png
   background:
     background-color: "#55c2b8"
     background-image: url(/images/outsell-bg2.png)

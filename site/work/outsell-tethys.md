@@ -64,7 +64,3 @@ DreamFactory
 30k+ items
 :::
 ::::::
-
-::: important UX Overhaul.
-After a close discovery process with CLMP we generated wireframes, component designs, and mockups to help steer the new design.
-:::
