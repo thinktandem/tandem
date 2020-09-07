@@ -12,9 +12,9 @@ header:
   image: /images/logos/pantheon-logo.png
   background:
     background-color: "#ffdc28"
-    background-image: url(/images/whypantheon-resized-4.jpg)
+    background-image: url(/images/work/kalaboxv2-ico.png)
     background-position: 100% 20%
-    background-size: auto
+    background-size: cover
     background-repeat: no-repeat
 
 theme:

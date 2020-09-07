@@ -273,6 +273,7 @@ export default {
       font-weight 300
       font-size 1.33rem
       letter-spacing -1.04px
+
     &.big
       p
         font-size 96px
@@ -316,8 +317,14 @@ export default {
         &.custom-block-title
           font-size 3.64em
           font-family GalaxieCopernicus, PT Serif, serif
+      ul
+        li
+          font-size 1.2em
     &.col-full, &.col-half, &.col-third
       padding 7em 0
+      ul
+        li
+          font-size 1.5em
       p
         &.custom-block-title
           font-size 2.71828em

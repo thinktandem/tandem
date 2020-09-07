@@ -8,11 +8,11 @@ logo: /images/logos/pantheon-logo.png
 logoHeight: 2
 
 header:
-  title: "Rebuilding<br /> poetry's home on <br />the internet"
-  image: /images/logos/pantheon-logo.png
+  title: "Leveling up<br />digital agencies<br />on DevOps"
+  image: /images/work/fasttrack-training.jpg
   background:
     background-color: "#ffdc28"
-    background-image: url(/images/whypantheon-resized-4.jpg)
+    background-image: url(/images/work/fasttrack-training.jpg)
     background-position: 100% 20%
     background-size: auto
     background-repeat: no-repeat
@@ -38,40 +38,36 @@ tags:
   - training
 ---
 
-title: "Fast Track Trainings"
-logo: /images/clients/pantheon/pantheon.png
-org: "Pantheon Systems"
-image: /images/case-studies/fasttrack-training.jpg
-challenge: "Get digital agencies up to speed on the best DevOps practices, workflows and optimizations to use with Pantheon."
-solution: "Two days of on-site, in-your-agency trainings featuring rich presentation material, interactive workshops and lots of coffee."
-impact: "Agencies got up to speed on the latest and greatest features of Pantheon and streamlined their internal workflows, supercharging all the dev."
-metrics:
-    - key: "Agencies Trained"
-      value: 7
-    - key: "AA Miles"
-      value: "23,507"
-    - key: "SPG Nights"
-      value: 23
-    - key: "Level Up"
-      value: "1 Big"
-background: EFD01B
-slug: pantheon-fasttracks
-date: "2017-01-28"
-tags:
-    - drupal
-    - wordpress
-    - startups
-    - agencies
-    - training
-    - devops
-summary: "We traveled the US training digital agencies on Pantheon, Kalabox and good DevOps as part of <strong>Pantheon Systems'</strong> Fast Track program."
-client: "Pantheon Systems"
-site: "https://pantheon.io"
+::: point Summary.
+We've been working with Pantheon since they were 8 people in an office under the Bay Bridge. As a result we know their product, platform and team better than most. So, when Pantheon asked us to provide some extra bandwidth for their Fast Track training program, we immediately said *"We've got you!"*
+:::
 
-We've been working with Pantheon since they were 8 people in an office under the Bay Bridge. As a result we know their product, platform and team better than most. So, when Pantheon asked us to provide some extra bandwidth for their [Fast Track](https://pantheon.io/agencies/fast-track) training program, we immediately said *"We've got you!"*.
+> It was awesome we could turn to Tandem and ramp up our training capacity with almost no onboarding!
 
-Teaming up with a Pantheon regional sales rep and a member of their agency outreach team, we barnstormed to 7 different agencies in San Francisco, Denver, Chicago, Plano TX and Western Massachusetts spreading the good word of both the Pantheon platform and our own Kalabox/Lando product.
+::: important Unlocking vender lock-in.
+In our analysis we found that Outsell relied upon their external vendor for two primary services: a Salesforce integration that helped them authenticate users and an API that provided access to Outsell's powerful research database.
 
+After replacing the convoluted Salesforce-tied login with Auth0, we chose to expose Outsell’s primary PostgresDB via a DreamFactory API. Working in concert with Outsell's development team, we refactored the Intelligence Platform to pull data from this new API.
+
+When their contract expired they seamlessly switched over to their new system without a hitch.
+:::
+
+:::::: col-wrapper
+::: col-half Roadtripping:
+* San Francisco
+* Denver
+* Chicago
+* Dallas
+* Western Mass.
+:::
+
+::: col-half Coffee:
+:::big
+Untold Gallons
+:::
+::::::
+
+::: important DevOps. Workflows. Kalabox. Coffee
 Trainings were typically multi-day and on-site, fueled by rich presentation materials, interactive workshops and lots of coffee. We focused on some combination of the following topics:
 
 * Pantheon basics
@@ -83,3 +79,4 @@ Trainings were typically multi-day and on-site, fueled by rich presentation mate
 * Pantheon Tips and Tricks
 
 At the conclusion of the trainings and as reward for a group job well done we always made sure to reward everyone with a happy hour!
+:::

@@ -50,9 +50,6 @@ tags:
   - design
   - development
   - magic
-
-link2Original: true
-originalLink: "https://poets.org/"
 ---
 
 ::: point Summary.
