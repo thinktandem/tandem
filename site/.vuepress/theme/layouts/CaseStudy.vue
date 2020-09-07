@@ -74,7 +74,7 @@
               :key="tag.name"
               class="tag"
               :tag="tag.name"
-              :link="`/tag/${tag.name}`"
+              :link="`/${tag.name}`"
             />
           </ul>
         </div>

@@ -55,7 +55,7 @@
       </p>
     </div>
 
-    <TagGrid />
+    <TagGrid prefix="/" />
 
     <div class="custom-block important remote-team">
       <p class="custom-block-title">
@@ -173,10 +173,10 @@ export default {
         font-size 1.33rem
         letter-spacing -1.04px
         color black
-        font-weight: 300;
-        font-size: 1.33rem;
-        letter-spacing: -1.04px;
-        color: #000;
+        font-weight 300
+        font-size 1.33rem
+        letter-spacing -1.04px
+        color #000
       &.important
         padding 7em 0
         border-bottom 1px solid $borderColor

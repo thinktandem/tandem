@@ -32,6 +32,7 @@ export default ({ Vue, options, router, siteData, isServer }) => { // eslint-dis
   // Redirect non-existent routes to tag pages if they exist
   router.beforeEach((to, from, next) => {
     const {routes} = router.options;
+    console.log(to, from, next);
 
     // If routes already exist then dont redirect
     if (hasRoute(to.path, routes)) next();
