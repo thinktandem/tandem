@@ -62,7 +62,7 @@ module.exports = {
       },
     },
     '@vuepress/google-analytics': {
-      ga: 'UA-XXXXXXX',
+      ga: 'UA-74237404-2',
     },
     'autometa': {
       site: {
