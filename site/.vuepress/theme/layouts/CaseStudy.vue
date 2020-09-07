@@ -53,7 +53,7 @@
           target="_blank"
           :href="topper.link"
         ><img
-          :alt="$page.frontmatter.client"
+          :alt="`${$page.frontmatter.client} Showcase`"
           :src="topper.image"
         ></a>
       </div>
@@ -106,7 +106,7 @@ export default {
       const styles = utils.getWorkBackgroundStyles(this.topper, this.theme);
       delete styles['background-image'];
       if (this.theme.bgImage) styles['background-image'] = this.theme.bgImage;
-      return styles;
+      return utils.getWorkBackgroundStyles(this.topper, this.theme);
     },
     hoverColor() {
       return utils.getHoverColor(this.theme);

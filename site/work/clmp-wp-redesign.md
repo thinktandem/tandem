@@ -1,6 +1,6 @@
 ---
 title: "WordPress + Redesign"
-id: clmp-redesign
+id: clmp-wp-redesign
 client: clmp
 summary: "We rebuilt Community of Literary Magazines and Presses on WordPress for performance, user experience and mobile."
 link: https://www.clmp.org/
@@ -12,7 +12,7 @@ header:
   image: /images/logos/clmp.png
   background:
     background-color: "#10203a"
-    background-image: url(/images/clmp-bg.png)
+    background-image: url(/images/work/clmp-bg.png)
     background-position: 100% 20%
     background-size: auto
     background-repeat: no-repeat
