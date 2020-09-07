@@ -40,6 +40,7 @@
       .custom-block.col-full {border-top: 1px solid {{ textColor }};}
       .custom-block.col-half {border-top: 1px solid {{ textColor }};}
       .custom-block.col-third {border-top: 1px solid {{ textColor }};}
+      .custom-block.point.tagz {border-top: 1px solid {{ textColor }};}
     </style>
     <div class="content-wrapper-tandem case-study-layout">
       <SectionHeader
