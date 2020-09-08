@@ -31,7 +31,7 @@ tags:
   - wireframes
   - prototyping
   - support
-  - nonprofit
+  - non-profit
   - performance
 
 ---

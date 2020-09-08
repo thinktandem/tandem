@@ -26,7 +26,7 @@ theme:
 date: "2019-11-02"
 tags:
   - drupal
-  - nonprofit
+  - non-profit
   - magic
   - support
 
