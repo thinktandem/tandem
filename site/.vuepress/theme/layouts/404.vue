@@ -14,6 +14,9 @@
         Enjoy a random 404 video.
       </p>
       <div>
+        <ClientOnly>
+          <YouTube :vid="chosen.vid" />
+        </ClientOnly>
       </div>
     </div>
 
