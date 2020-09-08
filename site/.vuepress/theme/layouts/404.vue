@@ -48,7 +48,7 @@ const msgs = [
   },
   {
     author: 'Bono',
-    message: `And I still haven't found what i'm looking for.`,
+    message: `And I still haven't found what I'm looking for.`,
     vid: 'e3-5YC_oHjE',
   },
   {

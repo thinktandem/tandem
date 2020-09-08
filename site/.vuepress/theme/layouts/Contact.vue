@@ -2,9 +2,7 @@
   <div class="content-wrapper-tandem content-wrapper-contact">
     <SectionHeader title="Contact Us.">
       <h2>
-        Get in touch.
-        <br>We'd love to chat.
-        <br>And work together.
+        Get in touch.<br>We'd love to chat.<br>And work together.
       </h2>
       <div>
         <p>
