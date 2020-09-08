@@ -35,6 +35,7 @@
 </template>
 <script>
 import TagGrid from '@theme/components/TagGrid';
+import YouTube from '@theme/../components/YouTube';
 
 // 404 messages
 const msgs = [
