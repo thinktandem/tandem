@@ -69,7 +69,7 @@ const msgs = [
 ];
 
 export default {
-  components: {TagGrid},
+  components: {TagGrid, YouTube},
   data() {
     return {
       chosen: {},
