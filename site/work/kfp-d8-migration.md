@@ -43,11 +43,11 @@ KFP had a Drupal 7 proposal management system that was built haphazardly and the
 > Group based permission workflows allow committee members to quickly and easily vote on proposals.
 
 :::::: col-wrapper
-::: col-half Design:
+::: col-half Fact 1:
 Migrated and restructured over 100k nodes and 5k users.
 :::
 
-::: col-half Tech:
+::: col-half Fact 2:
 :::big
 Drupal 8
 :::
