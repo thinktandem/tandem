@@ -2,7 +2,7 @@
 title: "Drupal 8 Intranet Migration"
 id: kfp-d8-migration
 client: "Kettering Family Philanthropies"
-summary: "Migrated a complex Drupal 7 proposal management intranet into a well architected Drupal 8 system"
+summary: "Migrated a complex Drupal 7 proposal management intranet into a well architected Drupal 8 system."
 link: https://www.cfketteringfamilies.com/
 
 header:

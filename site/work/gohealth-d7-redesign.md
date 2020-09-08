@@ -2,7 +2,7 @@
 title: "Redesign = Better UX"
 id: gohealth-d7-redesign
 client: gohealth
-summary: "We redesigned GoHealth's key landing pages so patients could find centers as quickly as possible"
+summary: "We redesigned GoHealth's key landing pages so patients could find centers as quickly as possible."
 link: https://www.gohealthuc.com/
 logo: /images/logos/gohealth.png
 logoHeight: 2
