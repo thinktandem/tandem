@@ -36,6 +36,7 @@ tags:
   - wireframes
   - prototyping
   - non-profit
+  - magic
   - performance
 
 ---

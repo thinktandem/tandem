@@ -31,6 +31,7 @@ tags:
   - api
   - drupal
   - javascript
+  - magic
   - wordpress
   - tech
   - dreamfactory
