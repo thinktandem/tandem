@@ -1,17 +1,22 @@
 ---
 title: "BADCamp 2017 ~ All the Things"
 tags:
-    - development
-    - conferences
-    - drupal
-    - geoffs
+  - development
+  - events
+  - drupal
+  - lando
+  - serundeputy
 author: "Geoff St. Pierre"
 date: "2017-10-30"
 summary: "BADCamp 2017 was packed with fun, sessions, and glory."
-id: geoffs
-pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
-location: Massachusetts
+id: serundeputy
+pic: "/images/people/gff-sm.jpg"
+location: Berkeley
 ---
+
+:::byline
+BADCamp 2017 was packed with fun, sessions, and glory.
+:::
 
 BADCamp 2017 ~ All the Things
 -----------------------------
@@ -31,14 +36,15 @@ Where many warm and insightful words were spoken.  Here are some of my take awa
   * Core enhancemnets, upgrade paths, roadmap for the future
   * View this session here: Two+ Years of Backdrop CMS
 
-<div class="center-youtube-vid">
-youtube|FzOWKV5Itfk
-</div>
+<YouTube vid="FzOWKV5Itfk" />
 
   * Fire Alarm!
 
-<img src="/images/articles/drud-firetrucks-badcamp2017croped.jpg" alt="BadCamp 2017 - Berkeley fire trucks "/>
+::: thumbnail
+![BadCamp 2017 - Berkeley fire trucks](/images/articles/drud-firetrucks-badcamp2017croped.jpg "Berkeley fire trucks")
+::: caption
 Photo Courtesy of [Drud Technology](https://twitter.com/drud/status/920721386322018304)
+:::
 
 Unexpected, but not a fire!
 We hung out in the court yard, networked and talked about [Backdrop dev](https://github.com/backdrop/backdrop-issues/issues), [Drush](https://github.com/backdrop-contrib/drush), and [Lando](https://docs.devwithlando.io)!
@@ -47,9 +53,8 @@ We hung out in the court yard, networked and talked about [Backdrop dev](https:
 
 Lando is a local development solution and one way in which you can spin up, develop and deliver a Backdrop site.  
 This session was not recorded, but you can see a similar session by Mike Pirog also given at BADCamp: The Future of Dev is Now!!! and you can see the docs about how to spin up a Backdrop site on Lando here: [Backdrop Recipe](https://docs.devwithlando.io/tutorials/backdrop.html).
-<div class="center-youtube-vid">
-youtube|veRpPNaBY14
-</div>
+
+<YouTube vid="veRpPNaBY14" />
 
 * Pantheon ~ Matt Cheney
 
@@ -75,7 +80,11 @@ This excellent presentation made an argument that everything is DevOps and part
   * Outrigger
   * Lando
 
-<img src="/images/articles/docker-dev-panel-cropped.jpg" alt="BadCamp 2017 - DevOps Summit Panel" />
+::: thumbnail
+![BadCamp 2017 - DevOps Summit Panel](/images/articles/docker-dev-panel-cropped.jpg "BadCamp 2017 - DevOps Summit Panel")
+::: caption
+Mike hydrating after the Day 1 party
+:::
 
 Rob fired off questions at the panelists bringing to light some of the similarities, differences and their relation to Drupal of these docker-driven solutions to the local development stack.
 
@@ -88,7 +97,11 @@ Sessions and Networking in the Sponsor Expo & Job Fair
 
 * Manning the booth
 
-<img src="/images/articles/tandem-booth-badcamp2017.jpg" alt="BadCamp 2017 - Tande Booth" />
+::: thumbnail
+![Tandem Booth](/images/articles/tandem-booth-badcamp2017.jpg "BadCamp 2017 - Tandem Booth")
+::: caption
+So PINK!
+:::
 
 I had opportunity to spend some time on the [Sponsor Expo & Job Fair](https://2017.badcamp.net/sponsors) floor representing Tandem my employer and company that sponsored my trip.  This was great opportunity to talk tech, business, and network.  Met many other businesses and people and had great conversations around fostering employment opportunities and business relationships.
 

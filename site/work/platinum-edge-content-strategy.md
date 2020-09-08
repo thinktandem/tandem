@@ -1,46 +1,63 @@
 ---
 title: "Content Strategy"
-org: "Platinum Edge"
-challenge: "Platinum Edge needed engaging content that spoke to its specialized user base."
-solution: "Tandem developed an editorial calendar that would set the Platinum Edge team up for success."
-impact: "Content is regularly being produced and shared!"
+id: pe-cs
+client: "Platinum Edge"
+summary: "We developed an editorial calendar aimed at Platinum Edge's key audiences that boosted content generation by 300%."
+link: "https://platinumedge.com"
 
 header:
-  title: "Building for<br/>the future"
-  image: /images/twinstar.png
+  title: "Improving<br> Content Creation"
+  image: /images/work/pe-hero.jpg
   background:
-    background-color: "#83BCFF"
+    background-color: "#113576"
+    background-image: url(/images/work/pe-hero.jpg)
     background-position: 100% 20%
-    background-size: auto
+    background-size: cover
     background-repeat: no-repeat
 
 theme:
+  background: "#113576"
   headerColor: white
-  headerHover: white
-  headerActive: white
+  headerHover: "#C4AA51"
+  headerActive: "#C4AA51"
   text: white
 
-metrics:
-    - key: "Increase in Content Production"
-      value: ~300%
-    - key: "Increase in Mobile Traffic"
-      value: 15%
-    - key: "Increase in Facebook Referrals"
-      value: 40%
-tags:
-    - drupal
-    - corporate
-    - strategy
-background: 4C4C4C
-slug: platinum-edge-content-strategy
 date: "2018-09-25"
-summary: "We developed an editorial calendar aimed at <strong>Platinum Edge's</strong> key audiences."
-client: "Platinum Edge"
-site: "https://platinumedge.com"
+tags:
+  - drupal
+  - strategy
+  - content-strategy
+  - ux
+  - user-research
+  - development
+  - design
+  - personas
 ---
 
-Platinum Edge literally wrote the book on SCRUM project management methodology...in fact, several books! With training and classes offered nationwide, these experts are as busy as they are knowledgeable. Our team needed to find a content strategy that would allow their team to grow their news/blog despite strict time constraints.
+::: point Summary.
+Platinum Edge literally wrote the book on SCRUM project management methodology...in fact, several books! With training and classes offered nationwide, these experts are as busy as they are knowledgeable. Our team needed to find a content strategy that would allow their team to grow their content despite strict time constraints.
+:::
 
+:::::: col-wrapper
+::: col-full Content Throughput:
+::: big
++300%
+:::
+::::::
+
+:::::: col-wrapper
+::: col-half FB Referrals:
+::: big
++40%
+:::
+
+::: col-half Mobile Traffic:
+::: big
++15%
+:::
+::::::
+
+::: important User Research + Good Design = Better Outcomes
 Tandem started with research. From interviews and industry research, personas were developed to identify who was reading the blog and what information they were looking for. Common areas of interest involved:
 
 - Project management process
@@ -50,13 +67,5 @@ Tandem started with research. From interviews and industry research, personas we
 With this in mind, our content strategists built an editorial calendar template to get the process started. We worked with the Platinum Edge team to customize this calendar to their team’s needs.
 
 Once accepted, the team developed a best case scenario editorial calendar that included due dates, assignments, content ideas and social promotion. Each suggested piece of content was mapped to a persona to help target users and their interests. We then arranged a combination of both internal and outsourced writers to execute the pieces.
+:::
 
-Since the implementation of this process, content production has increased nearly 300% per month and the Platinum Edge team has taken over calendar management. They’ve taken other recommendations such as:
-
-- Social promotion of non-blog media
-- Considering location-based topics
-- Soliciting students for ‘what they want to learn about’
-
-With [Fortune.com](http://fortune.com/2017/06/18/mobile-news-reading-pew/) reporting “85% of U.S. adults now get their news on a mobile device at least some of the time” we are keeping a close eye on mobile traffic. Seeing a near 15% increase, according to Google Analytics, shows the combined team measurable results.
-
-With more content coming, we’ll continue to track this success over the coming year, customizing the approach as needed.

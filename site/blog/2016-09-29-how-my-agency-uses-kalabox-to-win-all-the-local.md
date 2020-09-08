@@ -1,24 +1,30 @@
 ---
 title: "How My Agency uses Kalabox to Win all the Local"
 tags:
-    - deployment
-    - localdev
-    - testing
-    - alecr
-author: "Alec Reynolds"
+  - kalabox
+  - development
+  - localdev
+  - drupal
+  - pantheon
+  - bgonz
+author: "Brian Gonzales"
 date: "2016-09-29"
 summary: "Onboarding new team members to your web project can be complicated with even the most integrated DevOps team. Say hello to Kalabox."
-id: alecr
-pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
-location: California
+id: bgonz
+pic: "/images/people/brian-gonzales.jpg"
+location: PDX
 ---
+
+:::byline
+Onboarding new team members to your web project can be complicated with even the most integrated DevOps team. Say hello to Kalabox.
+:::
 
 ## The Woes of Local Web Development
 
 There's a common phrase heard throughout the web development community and feared by all in our office here at [PAIRODIME](http://www.pairodime.com):
 
 > Well...it worked on my machine.
-  <small>Every developer ever</small>
+> - Every developer ever
 
 Over the years my team and I have tried to settle on common web development tools that would both allow us all to collaborate on digital products and minimize headaches and redundant speach patterns. Local web development environments were especially difficult to master. Even if we all installed MAMP, XAMP, VirtualBox or native web server stacks we could not guarantee we were all working under the same development conditions. Eventually one of us would wind up with the colloquial WSOD. Maybe it was RAM allocation, maybe it was MySQL tuning for large databases, maybe it was my version of SASS that was not the same as my co-workers. Then there was the dreaded moment of truth: pushing changes to our web hosting service. Or, on the flip side of that coin; pulling a website's code, assets and database from our web host to local and the inevitable next half a day trying to get everything working correctly.
 
@@ -46,7 +52,11 @@ First let me say, I do not claim to be an expert on how Kalabox works. Although 
 
 * Use Kalabox from the GUI or CLI to create a new app from scratch or pull directly from an exisiting app on Pantheon
 
-  ![alt text](images/articles/digital-agency-onboarding-with-kalabox/kalabox-pantheon-plugin.png "Kalabox GUI Pantheon Plugin")
+::: thumbnail
+![Kalabox GUI Pantheon Plugin](/images/articles/digital-agency-onboarding-with-kalabox/kalabox-pantheon-plugin.png "Kalabox GUI Pantheon Plugin")
+::: caption
+Kalabox GUI Pantheon Plugin
+:::
 
 * If you pull an app from Pantheon, you have the option of pulling database and files as well as code
 
@@ -144,8 +154,8 @@ $ kbox services
 
 The Drupal community has contributed so many awesome modules to enhanace our websites, but like Uncle Ben said
 
-> "With great power comes great responsibility."
-  <small>Uncle Ben</small>
+> With great power comes great responsibility.
+> - Uncle Ben
 
 By default, Kalabox will synchronize all code files between your virtual machine and your local shared files directory (one splendid file at a time). Let me repeat that... by default, each file in your virtual machine will be replicated into your local shared files directory, and perhaps more impressively vise-versa.
 

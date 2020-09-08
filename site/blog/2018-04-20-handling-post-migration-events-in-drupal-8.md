@@ -1,15 +1,15 @@
 ---
 title: "Handling Post Migration Events in Drupal 8"
 tags:
-    - development
-    - drupal
-    - migration
-    - johno
+  - development
+  - drupal
+  - migrations
+  - johno
 author: "John Ouellet"
 date: "2018-04-20"
 summary: "Sometimes we need to alter data after a Drupal 8 migration has finished.  With the migration events system, you can easily accomplish this."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 
@@ -93,7 +93,7 @@ services:
       - { name: 'event_subscriber' }
 ```
 
-Now, when we run the YOUR_MIGRATION_ID migration, it will then cycle through all our users and flag them when the migration is finished.  In the university client's setup, the YOUR_MIGRATION_ID was the last node migration id that would run so we knew all the nodes would be available.
+Now, when we run the `YOUR_MIGRATION_ID` migration, it will then cycle through all our users and flag them when the migration is finished.  In the university client's setup, the `YOUR_MIGRATION_ID` was the last node migration id that would run so we knew all the nodes would be available.
 
 Conclusion
 ----------

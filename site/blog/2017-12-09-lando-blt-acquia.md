@@ -1,15 +1,18 @@
 ---
 title: "Lando + BLT + Acquia"
 tags:
-    - development
-    - devops
-    - drupal
-    - geoffs
+  - development
+  - devops
+  - localdev
+  - lando
+  - acquia
+  - drupal
+  - serundeputy
 author: "Geoff St. Pierre"
 date: "2017-12-09"
 summary: "Pro workflow with Lando, BLT, and Acquia cloud."
-id: geoffs
-pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
+id: serundeputy
+pic: "/images/people/gff-sm.jpg"
 location: Massachusetts
 ---
 
@@ -182,9 +185,11 @@ git:
 
 Replace the `git` URL with a URL from your Acquia Cloud dashboard.
 
-<center>
-  <img src="/images/articles/lando-blt-acquia/acquia-dash.jpg" alt="Acquia Cloud Dashboard Screenshot" />
-</center>
+::: thumbnail
+![Acquia Cloud Dashboard Screenshot](/images/articles/lando-blt-acquia/acquia-dash.jpg "Acquia Cloud Dashboard Screenshot")
+::: caption
+Acquia Cloud Dashboard Screenshot
+:::
 
 Deploy to Acquia Cloud
 ----------------------

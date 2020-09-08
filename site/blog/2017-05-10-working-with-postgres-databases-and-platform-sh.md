@@ -1,16 +1,21 @@
 ---
 title: "Working with Postgres Databases and Platform.sh"
 tags:
-    - localdev
-    - devops
-    - geoffs
+  - localdev
+  - devops
+  - platformsh
+  - serundeputy
 author: "Geoff St. Pierre"
 date: "2017-05-10"
 summary: "How to work with Postgres Databases on Platform.sh"
-id: geoffs
-pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
+id: serundeputy
+pic: "/images/people/gff-sm.jpg"
 location: Massachusetts
 ---
+
+:::byline
+How to work with Postgres Databases on Platform.sh
+:::
 
 Sharpen your tools!
 
@@ -31,9 +36,9 @@ Commands
 * Make a backups and restore points of `master` and `test` environments.
   * Create a restore point through the Platform.sh dashboard
 
-  <center>
-    <img alt="sequel-pro-connection-screen" src="/images/articles/platform-restore-point.png" width="433" align="center" />
-  </center>
+:::thumbnail
+![sequel-pro-connection-screen](/images/articles/platform-restore-point.png "Platform connect info")
+:::
 
 Navigate to your app's Platform.sh dashboard get into the environment you want to replace the DB for, in my case `test`.  Clicking on the `snapshots` icon in the top right of the dashboard will create a snapshot restorable backup point for your app in case something goes horribly wrong ;).
 
@@ -55,9 +60,11 @@ Here are the `platform` cli commands to make a backup of the databases of the en
   * `platform --environment=test --relationship=pgdatabase sql < {YOUR_PROJECT_ID--master--dump}.sql`
     * Be sure to replace `YOUR_PROJECT_ID` with your Platform apps ID.  This should already be in the filename if you are following along!
 
-    <center>
-      <img alt="sequel-pro-connection-screen" src="/images/articles/psequel-dropdown-schema.png" width="433" align="center" />
-    </center>
+
+:::thumbnail
+![sequel-pro-connection-screen](/images/articles/psequel-dropdown-schema.png "Platform connect info")
+:::
+
 If you see tables in the freshly imported data that don't seem to make sense make sure to check your schema
 (in PSequel top left dropdown) and make sure it is set to the correct schema and that should
 have the tables you expect.

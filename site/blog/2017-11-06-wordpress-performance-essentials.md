@@ -1,18 +1,22 @@
 ---
 title: "WordPress Performance Essentials"
 tags:
-    - development
-    - devops
-    - support
-    - wordpress
-    - johno
+  - development
+  - php
+  - wordpress
+  - performance
+  - johno
 author: "John Ouellet"
 date: "2017-11-06"
 summary: "How to make WordPress run fast and smooth.  A few tips and tricks to make sure your visitors don't get frustrated waiting on pages to load."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
+
+::: byline
+How to make WordPress run fast and smooth.  A few tips and tricks to make sure your visitors don't get frustrated waiting on pages to load."
+:::
 
 Making Your WordPress Site Super Duper Fast
 -----------------------------------------
@@ -20,7 +24,6 @@ Making Your WordPress Site Super Duper Fast
 Having a fast running site is a great feeling.  Your visitors will be happy, Google will be happy, and most of all you will be happy.  So much happiness all around can be achieved with just a little elbow grease and some TLC.  Let me show you some tips and tricks to get your WordPress site performing well.
 
 You can use free resources to test your progress while you are trying these tips.  [KeyCDN](https://tools.keycdn.com/speed) and [Pingdom](https://tools.pingdom.com/) both provide good speed benchmark tools that are fairly straightforward to understand and use.
-
 
 CloudFlare
 ----------
@@ -31,27 +34,28 @@ Once you go through and [setup your site with Cloudflare](https://support.cloudf
 
 Here are the settings you should have on each of the sections/apps of CloudFlare:
 
-##### **DNS**
+### DNS
 
   * Click the orange cloud (http proxy) on all A and CNAME records.
   * You should utilize CNAME flattening as well. To do this create a new CNAME record and put www in the name and then @ in the domain name fields.
 
-<img src="/images/articles/cname-flat.jpg" alt="Cloudflare DNS Screen - CNAME Flattening">
+:::thumbnail
+![Cloudflare DNS Screen - CNAME Flattening](/images/articles/cname-flat.jpg "Cloudflare DNS Screen - CNAME Flattening")
+::: caption
+Cloudflare DNS Screen - CNAME Flattening
+:::
 
-
-##### **Crypto**
+### Crypto
 
   * Dependent on your hosting providers settings, you will chose Flexible or Full in the SSL setting.  Start with Flexible, change all the settings below and then try Full.  If Full causes a 5xx error on your site, change back to Flexible, purge the caches in the Caches app and give it a minute.
   * Go down to Always use HTTPS and click it to on.  Also head down to Automatic HTTPS Rewrites and click it to on. All of these settings will enable https on your site, for free!  Just go back through your site to make sure you have no assets stuck on http.  You will see the mixed content message in the console.  Usually it is one or two assets, but easy enough to fix real quick.
 
-
-##### **Speed**
+### Speed
 
   * In the Auto Minify settings, check all 3 boxes for CSS, JS, and HTML.  This will reduce the page size on top of any other plugins you may be using.
   * You can also try enabling the RocketLoader, but I have always had mixed results with it.  Test it out to see if it helps any.
 
-
-##### **Caching**
+### Caching
 
 Here is where you can purge the CloudFlare cache manually if need be.  It comes in handy when applying these settings or when something goes awry with the cache.
 
@@ -59,8 +63,7 @@ Here is where you can purge the CloudFlare cache manually if need be.  It comes 
   * Browser Cache Expiration can be set to what you feel seems good.  I would recommend at least 14 days, I usually do a month.
   * Make sure Always Online is set to On.
 
-
-##### **Page Rules**
+### Page Rules
 
 This is where you can really customize things.  There are numerous articles out there for different settings.  *Note: a few months ago CloudFlare made https redirection free for all accounts, so you don't need a rule for it anymore.*
 
@@ -82,18 +85,19 @@ CloudFlare is super simple to setup and the performance gains are quite nice.  C
 Nginx
 -----
 
-"Apache is like Microsoft Word, it has a million options but you only need six.  Nginx does those six things, and it does five of them 50 times faster than Apache".
+> Apache is like Microsoft Word, it has a million options but you only need six.  Nginx does those six things, and it does five of them 50 times faster than Apache.
+> - Chris Lea
 
 There are numerous articles out there they weigh the advantages of Nginx over Apache.  We could go on and on about the two of them, but if you want performance, go with Nginx. If you are still curious, [here is an article from the Nginx Community Wiki](https://www.nginx.com/resources/wiki/community/why_use_it/) on the advantages of Nginx.
 
 Most hosting environments come with Nginx ready to go. For example [Pantheon](https://pantheon.io/) and [Platform](https://platform.sh/) both use Nginx. If you are hosting through a do it yourself provider (like [Digital Ocean](https://www.digitalocean.com/), then here are a couple tips and tricks.
 
 
-##### **Cache All Of Your Static Resources**
+### Cache All Of Your Static Resources
 
 Caching static assets like CSS, JS, images, etc has a huge benefit for your site.  You will deliver these assets faster to your end user while reducing the load on the server.  It is a win-win to set this up.  It is pretty simple and easy to do.
 
-Go to /etc/nginx/sites-available folder on your server.  Edit the file which corresponds to your site (usually the default file).  You can do this with the command ```sudo nano default``` or whatever CLI editor you use.  Add the following settings to the file:
+Go to `/etc/nginx/sites-available` folder on your server.  Edit the file which corresponds to your site (usually the default file).  You can do this with the command ```sudo nano default``` or whatever CLI editor you use.  Add the following settings to the file:
 
 ```bash
 server {
@@ -113,8 +117,8 @@ server {
 }
 
 ```
-<br>
-##### **Enable FastCGI**
+
+### Enable FastCGI
 
 FastCGI is a caching mechanism that helps with all the behind the scenes CGI processes on the server. It only take a few seconds to set this up, but is quite powerful.  Here is the recommended method using the same config file from the static resource example:
 
@@ -184,7 +188,11 @@ PHP 7.x
 
 PHP 7 comes with numerous new bells and whistles.  However the hands down best improvement is nearly twice the speed.  As you can see from this infographic below taken from [Zend.com PHP 7 Blog Post](https://www.zend.com/en/resources/php7_infographic):
 
-<img src="/images/articles/wp-php-speed.jpg" alt="WordPress PHP 7 Speed Metrics Graph">
+::: thumbnail
+![WordPress PHP 7 Speed Metrics Graph](/images/articles/wp-php-speed.jpg "WordPress PHP 7 Speed Metrics Graph")
+::: caption
+WordPress PHP 7 Speed Metrics Graph
+:::
 
 On managed hosting platforms like [Pantheon](https://pantheon.io/) and [Platform](https://platform.sh/), there are simple settings to change the PHP version.  However, if you are on your own, then I would do the following to install PHP 7.x:
 
@@ -391,7 +399,6 @@ As before, most managed hosting environments have this setup for you.  However, 
 
 Reboot your server now.  You should have varnish all set and serving content.  You can check with if your site is serving Varnish [with this link](http://www.isvarnishworking.com/). If you are having issues, [see this issue to edit](https://support.cloudflare.com/hc/en-us/articles/200169376-Can-I-use-Cloudflare-and-Varnish-together-) your VCL if need be.
 
-
 WP-Rocket Plugin
 ----------------
 
@@ -399,7 +406,7 @@ The standard go to for caching within WordPress seems to be W3 Total Cache.  How
 
 Here are some basic settings I use with most sites:
 
-##### **Basic Tab**
+### Basic Tab
 
 Check the following options:
   * Enable caching for mobile devices
@@ -408,13 +415,13 @@ Check the following options:
   * Disable WordPress Embeds
   * Set Cache lifespan to at least 7 days.
 
-##### **Static Files Tab**
+### Static Files Tab
 
 Check the following options:
   * HTML
   * Google Fonts
 
-##### **CDN Tab**
+### CDN Tab
   * Enable the CloudFlare settings tab
 
 You can then setup the CloudFlare settings in its respective tab and purge the caches from the WordPress site!  That's it for the settings, really simple yet quite powerful in nature.  Play around with other settings if you want to see what results you may get.

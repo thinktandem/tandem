@@ -1,16 +1,26 @@
 ---
 title: "Launching the New ThinkTandem.io"
 tags:
-    - misc
-    - ux
-    - alecr
+  - strategy
+  - business
+  - branding
+  - user-research
+  - content-strategy
+  - seo
+  - design
+  - experience
+  - alecr
 author: "Alec Reynolds"
 date: "2017-09-21"
 summary: "Take a fresh look at what defines Tandem as a bold new digital agency."
 id: alecr
-pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
-location: California
+pic: "/images/people/alecr.png"
+location: Oakland
 ---
+
+::: byline
+Take a fresh look at what defines Tandem as a bold new digital agency.
+:::
 
 A few months ago we realized something: our website didn't reflect the work we were doing at Tandem.
 

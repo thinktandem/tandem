@@ -1,16 +1,20 @@
 ---
 title: "Handling Dynamic Routes in Drupal 8"
 tags:
-    - development
-    - drupal
-    - johno
+  - development
+  - drupal
+  - johno
 author: "John Ouellet"
 date: "2017-12-03"
 summary: "Handling a dynamic route in Drupal 8 is much different than it was in previous versions of Drupal.  A little more foot work is needed since the routing layer is now Symphony based."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
+
+:::byline
+Handling a dynamic route in Drupal 8 is much different than it was in previous versions of Drupal.  A little more foot work is needed since the routing layer is now Symphony based.
+:::
 
 The issue I faced with my module
 --------------------------------

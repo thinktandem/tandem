@@ -1,12 +1,12 @@
 <template>
   <div
-    v-if="url"
+    v-if="vid"
     class="video-responsive"
   >
     <iframe
       width="560"
       height="315"
-      :src="url"
+      :src="`https://www.youtube.com/embed/${vid}`"
       frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
@@ -19,9 +19,9 @@
 export default {
   name: 'YouTube',
   props: {
-    url: {
+    vid: {
       type: String,
-      default: null,
+      required: true,
     },
   },
 };
@@ -29,7 +29,8 @@ export default {
 
 <style lang="stylus">
 .video-responsive
-  margin-top 1em
+  margin-top 2em
+  margin-bottom 2em
   overflow hidden
   padding-bottom 56.25%
   position relative

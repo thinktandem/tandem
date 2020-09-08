@@ -1,16 +1,23 @@
 ---
 title: "Lando + Heroku + Laravel"
 tags:
-    - development
-    - devops
-    - geoffs
+  - development
+  - devops
+  - lando
+  - localdev
+  - laravel
+  - serundeputy
 author: "Geoff St. Pierre"
 date: "2017-12-01"
 summary: "🚀 ∞ Lando + Heroku + Laravel: take your dev to the next level.  📦 ☄️"
-id: geoffs
-pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
+id: serundeputy
+pic: "/images/people/gff-sm.jpg"
 location: Massachusetts
 ---
+
+::: byline
+🚀 ∞ Lando + Heroku + Laravel: take your dev to the next level.  📦 ☄️
+:::
 
 Lando + Heroku Workflow
 -----------------------
@@ -191,7 +198,11 @@ lando heroku config:set APP_KEY=$(php artisan --no-ansi key:generate --show)
 
 Visit your new site:
 
-<img src="/images/articles/lando-heroku/hello-laravel.jpg" align="center" alt="Laravel Hello Screen" />
+::: thumbnail
+![Laravel Hello Screen](/images/articles/lando-heroku/hello-laravel.jpg "Laravel Hello Screen")
+::: caption
+Laravel Hello Screen
+:::
 
 Conclusion
 ----------

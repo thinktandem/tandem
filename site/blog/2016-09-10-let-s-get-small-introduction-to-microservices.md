@@ -1,18 +1,23 @@
 ---
 title: "Let's Get Small: Introduction to Microservices"
 tags:
-    - devops
-    - alecr
+  - devops
+  - docker
+  - node
+  - alecr
 author: "Alec Reynolds"
 date: "2016-09-10"
 summary: "In software development, things change. Learn how a microservice architecture can help you adapt to changing requirements and scale applications in the cloud."
 id: alecr
-pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
-location: California
+pic: "/images/people/alecr.png"
+location: Oakland
 ---
 
-Let's repeat a mantra together: "change" is the essence of web application development. No sooner have we developed a "complete" web project than does our API datasource change, our business needs grow, or (the best possible problem) our userbase swells beyond the capacity of our system.
+::: byline
+In software development, things change. Learn how a microservice architecture can help you adapt to changing requirements and scale applications in the cloud.
+:::
 
+Let's repeat a mantra together: "change" is the essence of web application development. No sooner have we developed a "complete" web project than does our API datasource change, our business needs grow, or (the best possible problem) our userbase swells beyond the capacity of our system.
 
 > If change is our only constant, we must work with tools that embrace it.
 

@@ -28,7 +28,7 @@
       <p class="custom-block-title">
         Explore<br> other work.
       </p>
-      <TagGrid prefix="/" />
+      <TagGrid />
     </div>
   </div>
 </template>
@@ -82,8 +82,12 @@ export default {
     return {
       clients: [
         {name: 'Academy of American Poets', link: '/work/poets-redesign/', logo: '/images/logos/poets.png'},
-        {name: 'Amazee.io', logo: '/images/logos/amazeeio_right.png'},
+        {name: 'Pantheon', link: 'https://pantheon.io/localdev', logo: '/images/logos/pantheon-logo.png'},
         {name: 'University of San Francisco', link: '/work/usf-d8-migration/', logo: '/images/logos/usf.png'},
+        {name: 'Outsell', link: '/work/outsell-tethys/', logo: '/images/logos/outsell.png'},
+        {name: 'Chenmed', link: '/work/chenmed-d8-redesign/', logo: '/images/logos/chenmed.png'},
+        {name: 'CLMP', link: '/work/clmp-wp-redesign/', logo: '/images/logos/clmp.png'},
+        {name: 'Twinstar', link: '/work/twinstar-discovery/', logo: '/images/logos/twinstar.png'},
       ],
       featuredClients: [],
     };

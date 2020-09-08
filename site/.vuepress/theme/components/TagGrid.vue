@@ -104,9 +104,8 @@ export default {
       design: [[
         {name: 'Accessibility', tag: 'accessibility'},
         {name: 'Responsive', tag: 'responsive'},
-        {name: 'Wireframes', tag: 'wireframes'},
+        {name: 'Experience', tag: 'ux'},
         {name: 'Styleguides', tag: 'styleguides'},
-        {name: 'Protyping', tag: 'protyping'},
       ]],
       development: [[
         {name: 'Performance', tag: 'performance'},
@@ -119,7 +118,7 @@ export default {
         {name: 'Finance', tag: 'finance'},
         {name: 'Healthcare', tag: 'healthcare'},
         {name: 'Higher Ed', tag: 'higher-ed'},
-        {name: 'Media', tag: 'media'},
+        // {name: 'Media', tag: 'media'},
         {name: 'Nonprofit', tag: 'non-profit'},
         {name: 'Tech', tag: 'tech'},
       ]],
@@ -141,10 +140,15 @@ export default {
           {name: 'DevOps', tag: 'devops'},
           {name: 'Docker', tag: 'docker'},
           {name: 'Lando', tag: 'lando'},
+          {name: 'Kalabox', tag: 'kalabox'},
         ],
       ],
       other: [[
         {name: 'Magic', tag: 'magic'},
+        {name: 'Localdev', tag: 'localdev'},
+        {name: 'Testing', tag: 'testing'},
+        {name: 'Events', tag: 'events'},
+        {name: 'Webinars', tag: 'webinar'},
       ]],
     };
   },

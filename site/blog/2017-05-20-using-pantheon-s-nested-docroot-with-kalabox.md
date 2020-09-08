@@ -1,16 +1,23 @@
 ---
 title: "Using Pantheon's Nested Docroot with Kalabox"
 tags:
-    - localdev
-    - support
-    - pirog
+  - localdev
+  - kalabox
+  - devops
+  - php
+  - pantheon
+  - pirog
 author: "Mike Pirog"
 date: "2017-05-20"
 summary: "Learn how to use composer-based workflows with your Pantheon site on Kalabox so you can dev like it's 2017."
 id: pirog
-pic: "https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb"
-location: "New Hampshire"
+pic: "/images/people/pirog.jpg"
+location: "Oakland"
 ---
+
+:::byline
+Learn how to use composer-based workflows with your Pantheon site on Kalabox so you can dev like it's 2017.
+:::
 
 Background
 ----------
@@ -18,7 +25,7 @@ Background
 If you haven't heard; composer-based build steps and workflows are all the php rage these days. Soon, taking the dive into the underlying build machinery other frameworks have been enjoying for (*cough*) years is no longer going to be for the brave and adventurous but for devs across the entire interwebs.
 
   > What took you guys so long?
-  <small>Every other framework</small>
+  > - Every other framework
 
 Best practices around these things are finally starting to converge and as such we are seeing platforms like [Pantheon](http://pantheon.io) add support for [nested docroots](https://pantheon.io/docs/nested-docroot/) and ancilliary tools such as Greg Anderson's amazing [terminus build tools plugin](https://github.com/pantheon-systems/terminus-build-tools-plugin).
 

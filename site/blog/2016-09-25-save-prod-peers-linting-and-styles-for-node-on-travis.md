@@ -1,19 +1,21 @@
 ---
 title: "Save Prod & Peers: Linting and Styles for Node on Travis"
 tags:
-    - deployment
-    - development
-    - localdev
-    - support
-    - testing
-    - pirog
+  - development
+  - testing
+  - node
+  - pirog
 author: "Mike Pirog"
 date: "2016-09-25"
 summary: "Don't be the person that breaks production because of a typo or searches endlessly for that missing closing bracket. Level up with Travis, grunt and node."
 id: pirog
-pic: "https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb"
-location: "New Hampshire"
+pic: "/images/people/pirog.jpg"
+location: "San Francisco"
 ---
+
+::: byline
+Don't be the person that breaks production because of a typo or searches endlessly for that missing closing bracket. Level up with Travis, grunt and node.
+:::
 
 A Variation on a Theme
 ----------------------
@@ -22,20 +24,22 @@ You've been up all night pouring your heart and soul into the **NEXT BIG FEATURE
 
 You're on the final stretch. The code is done. You commit to the repo. You lay on your bed and you are feeling pretty **QUOD ERAT DEMONSTRANDUM.** *"Seriously, I wrote that code like some sort of 24th century android!"*, you think as you drift to sleep.
 
-<div class="row">
-  <div class="col-md-4">
-    ![data-winning](images/articles/linter-is-coming/data.gif "I AM ALL THAT IS ANDROID")
-  </div>
-  <div class="col-md-4">
-    ![data-winning](images/articles/linter-is-coming/data.gif "I AM ALL THAT IS ANDROID")
-  </div>
-  <div class="col-md-4">
-    ![data-winning](images/articles/linter-is-coming/data.gif "I AM ALL THAT IS ANDROID")
-  </div>
-</div>
+:::::: col-wrapper
+::: col-third
+![data-winning](/images/articles/linter-is-coming/data.gif "I AM ALL THAT IS ANDROID")
+:::
+
+::: col-third
+![data-winning](/images/articles/linter-is-coming/data.gif "I AM ALL THAT IS ANDROID")
+:::
+
+::: col-third
+![data-winning](/images/articles/linter-is-coming/data.gif "I AM ALL THAT IS ANDROID")
+:::
+::::::
 
 > YES! TOTAL CODE VICTORY!
-  <small>Commander Data as YOU</small>
+> - Commander Data playing YOU
 
 The sad news is that you didn't write that code like an android and **SPOILER ALERT** you missed that pesky but kind of super critical closing bracket. Now the thousands of people relying on your project are getting fatal errors. They are not impressed. What should have been your finest hour, your finest expression of code art to the world is instead a shameful display of what the code elders call *n00batronix*. Might as well have climbed to the top of a big ole mountain and declared *"I HAVE NO IDEA WHAT I AM DOING!!!"* Certainly looks like you don't.
 
@@ -53,9 +57,11 @@ Of course this is not the only reason to set up basic automatic code quality pro
 
 Interested in going from CodeZero to CodeHero in less than 30 minutes? Yes, you say? Then please read on.
 
-<div class="text-center">
-  ![anakin-wants-to-know](images/articles/linter-is-coming/anakin.gif "NOT FOR A JEDI!")
-</div>
+:::thumbnail
+![anakin-wants-to-know](/images/articles/linter-is-coming/anakin.gif "NOT FOR A JEDI!")
+::: caption
+NOT FOR A JEDI!
+:::
 
 Yes! Now that we are in 2016 it's relatively easy and straightforward to set up basic automated testing both to cover code-based nuclear meltdowns and to ensure your entire team is writing high quality code. If you are familiar with the basics of [Github](http://github.com), [Travis](http://travis-ci.org), [NodeJS](http://nodejs.org) and [Grunt](http://gruntjs.com) you can probably skip ahead to the next section. If not here are the essentials you need to get started:
 
@@ -64,9 +70,11 @@ Yes! Now that we are in 2016 it's relatively easy and straightforward to set up 
 
 Generally, you will want to follow the [GitHub flow](https://guides.github.com/introduction/flow/) development pattern. However, there is one major difference. When you commit code to your feature branch/pull request Travis will make sure your code is both neccesary and proper. If neither of the two aforementioned conditions are met you will get a visually obvious indication of this.
 
-<div class="text-center">
-  ![pull-request-failed](images/articles/linter-is-coming/prfail.png "ALL PULL REQUESTS MUST DIE")
-</div>
+::: thumbnail
+![pull-request-failed](/images/articles/linter-is-coming/prfail.png "ALL PULL REQUESTS MUST DIE")
+::: caption
+PR Fail!
+:::
 
 Travis will report what changes you need to make to your code. Fix those mistakes, push your code again, wait for the build to complete successfully and profit from having great code quality.
 
@@ -300,7 +308,7 @@ git push origin nuclearLinter
 ```
 
 Here is a closed pull request that goes from a failed build to happy.
-https://github.com/thinktandem/metalsmith-swig-helpers/pull/1
+<https://github.com/thinktandem/metalsmith-swig-helpers/pull/1>
 
 Conclusion
 ----------

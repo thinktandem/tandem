@@ -59,6 +59,7 @@
         >
           <img
             v-if="page.frontmatter.logo"
+            :alt="page.frontmatter.client"
             :src="page.frontmatter.logo"
           >
           <div v-else>
@@ -154,11 +155,9 @@ a
 .work
   margin-bottom 2em
   position relative
-
   .work-wrapper
-    opacity .86
+    opacity .95
     padding 4em
-
   .work-title, .work-logo
     font-size 2.57em
     font-weight 600
@@ -170,11 +169,9 @@ a
     cursor pointer
     transition none
     text-decoration none
-
     &:hover
       color inherit
       text-decoration none
-
   .work-summary
     font-size 14px
     color inherit
@@ -182,13 +179,11 @@ a
     font-size 1.68rem
     line-height 2
     letter-spacing -1.04px
-
   .work-logo
     position absolute
     right 1em
     bottom 1em
     font-size .8em
-
   footer
     opacity 0
     height 0

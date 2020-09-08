@@ -1,15 +1,15 @@
 ---
 title: "Changing a Content Type Name During a Drupal 8 Migration"
 tags:
-    - development
-    - drupal
-    - migration
-    - johno
+  - development
+  - drupal
+  - migrations
+  - johno
 author: "John Ouellet"
 date: "2018-07-18"
 summary: "Changing a content type machine name during a Drupal Migration requires a little bit of migration knowledge, but is fairly straight forward to do."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 
@@ -42,7 +42,7 @@ use Drupal\migrate\Plugin\MigrateSourceInterface;
 use Drupal\migrate\Row;
 
 
-/**
+/
  * Implements hook_migrate_prepare_row().
  */
 function YOUR_MIGRATION_MODULE_migrate_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
@@ -117,17 +117,17 @@ function YOUR_MIGRATION_MODULE_migrate_prepare_row(Row $row, MigrateSourceInterf
 }
 ```
 
-**Field ID**
+### Field ID
 
 So as you can see, we are looking for specific source fields that contain our old content type name and are tweaking it during the migration.  One of the main reasons I prefer doing it via this migration api hook is glaringly prevalent in the ```upgrade_d7_field``` migration id.
 
 As you can see from this process, we need to tweak an array key within the instances source field.  This seems to be the identifier for making sure the field is lined up properly with the correct content type.  Failing to change this, makes it so the fields don't get attached post migration.
 
-**Node Type ID**
+### Node Type ID
 
 The node type ID is fairly straight forward and easy to understand.  We are changing both the machine name (type) and the display name (name) during this Drupal 8 migration.  The name was correct on most of the content types we were migrated.  I added it just for extra security during the migration.
 
-**Instance, Widget & Formatter IDs**
+### Instance, Widget & Formatter IDs
 
 Like the node type ID, the identifying factor for these setting lies within the bundle source field.  Fairly straight forward and easy to understand, so I won't go into it further.
 
@@ -139,7 +139,7 @@ Alternate Migration Method for changing the content type machine name
 
 Drupal has a robust migration plugin system that uses the yaml discovery process.  Since all our migrations are in config, you can perform some of the tasks above via yaml files instead.  However, you won't fully be able to do the whole task at hand in the yaml files due to the logic that needs to happen with the ```upgrade_d7_field``` id.
 
-**Node Type YAML Changes**
+### Node Type YAML Changes
 
 Your node type yaml migration has the type and name key in them.  You can use the [static map](https://api.drupal.org/api/drupal/core%21modules%21migrate%21src%21Plugin%21migrate%21process%21StaticMap.php/class/StaticMap) source migration plugin to alter either the name or type during the migration.
 
@@ -156,7 +156,7 @@ type:
 
 After you add these changes, just run ```drush cim``` and you should be good to go.  A little bit easier than the php code and it achieves the same thing.
 
-**Instance, Widget & Formatter YAML Changes**
+### Instance, Widget & Formatter YAML Changes
 
 This one is much easier to do as the bundle key already has the static map plugin in it.  So, you just would add to it as such:
 

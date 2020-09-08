@@ -3,15 +3,15 @@ title: "Using Markdown Containers in VuePress"
 summary: "When using the vuepress-plugin-container plugin for VuePress, you can easily add themed content without using HTML or components."
 id: johno
 author: "John Ouellet"
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 date: "2020-08-11"
 tags:
-    - development
-    - vuepress
-    - johno
-originalLink: "https://google.com"
-link2Original: false
+  - development
+  - vue
+  - javascript
+  - vuepress
+  - johno
 ---
 
 ## Overview

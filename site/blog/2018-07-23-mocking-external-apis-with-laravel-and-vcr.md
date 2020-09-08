@@ -1,14 +1,16 @@
 ---
 title: "Mocking External APIs with Laravel and VCR"
 tags:
-    - development
-    - laravel
-    - dustinl
+  - development
+  - laravel
+  - api
+  - testing
+  - dustinl
 author: "Dustin LeBlanc"
 date: "2018-07-23"
 summary: "Winning unit tests with PHP VCR and Laravel"
 id: dustinl
-pic: "https://www.gravatar.com/avatar/09ac95f34d11ec00cfd5a26c521d58c5"
+pic: "/images/people/dustin-sm.jpg"
 location: "New York"
 ---
 

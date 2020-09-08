@@ -1,15 +1,19 @@
 ---
 title: "There and Back Again"
 tags:
-    - development
-    - devops
-    - drupal
-    - geoffs
+  - development
+  - events
+  - devops
+  - javascript
+  - accessibility
+  - drupal
+  - strategy
+  - serundeputy
 author: "Geoff St. Pierre"
 date: "2020-03-27"
 summary: "NERD Summit, Amherst, MA to MidCamp, Chicago, IL and back again virtual events in the covid-19 era."
-id: geoffs
-pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
+id: serundeputy
+pic: "/images/people/gff-sm.jpg"
 location: Massachusetts
 ---
 
@@ -32,7 +36,7 @@ This was out of the box for me as I typically spend most of my time at technical
 
 The presentation did not dissapoint. I learned how Meghan deals with disruptive incidents in a digital agency framework. It was great to hear the process and management wrapped around the incident. Here is the vid:
 
-<center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VatCYAbrnX0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+<YouTube vid="VatCYAbrnX0" />
 
 The big points for me were:
 
@@ -46,9 +50,7 @@ Backstop JS
 
 Back to Amherst, MA for [BackstopJS: Avoid misery with Visual Regression Testing](https://nerdsummit.org/#14) by Melissa Rossii ([@mrossi113](https://twitter.com/mrossi113)) & Chelsie Johnston ([cj101](https://www.drupal.org/u/cj101)). I was familiar with the idea of visual regression and BackstopJS, but have never tried it. This session was well presented, with concrete ideas about why and how to BackstopJS. vid:
 
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iTX0lOTLmbE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+<YouTube vid="iTX0lOTLmbE" />
 
 Here is an example template repository to get you started:
 
@@ -59,9 +61,7 @@ Improvise Into the Unknown
 
 Onto keynote at NERDS: [Improvise Into the Unknown](https://nerdsummit.org/#16) by [@pamvictor](https://twitter.com/pamvictor). Pam is a great story teller and I was glad to recieve this message. She reminded me to breathe, take my time, and produce my best work. Enough of me blabbing about though here is the vid:
 
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/D0l2Nm1kg1M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+<YouTube vid="D0l2Nm1kg1M" />
 
 My main take aways:
 
@@ -77,9 +77,7 @@ Then I attended a panel talk: [PANEL: Accessibility](https://nerdsummit.org/#17)
 
 This discussion was both informative and comforting. It made me feel like Tandem is on the right track with a11y, but there is more work to do! Video for posterity:
 
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fSdnCKKPYEk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
+<YouTube vid="fSdnCKKPYEk" />
 
 Main take aways:
 

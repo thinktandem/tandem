@@ -1,18 +1,21 @@
 ---
 title: "BADCamp So Good"
 tags:
-    - BADCamp
-    - Drupal
-    - Community
-    - Learning
-    - HigherEducation
-    - donnab
+  - events
+  - drupal
+  - higher-ed
+  - training
+  - donnab
+  - accessibility
+  - responsive
+  - design
+  - strategy
 author: "Donna Bungard"
 date: "2018-11-20"
 summary: "A retrospective on my first BADCamp."
 id: donnab
-pic: "https://www.gravatar.com/avatar/80b0826906351617efdd8dbdf3cee68b"
-location: "New Hampshire"
+pic: "/images/people/donna.jpg"
+location: "Berkeley"
 ---
 
 My Twitter feed seems full of different retrospectives on this year’s Bay Area Drupal Camp (BADCamp), held in Berkeley a few weeks back. I love hearing the different perspectives and lessons learned by my peers. And, of course, not to go unheard, I wanted to share my own thoughts as I look back upon my time in San Francisco.
@@ -57,7 +60,7 @@ Over the day I had the opportunity to attend a few sessions.
 
 **Pivoting in a Project: Strategies for Adjusting to Scope Changes** was presented by two project managers who are deeply committed to their teams. With a focus on how to manage change and help your team through the ups and downs of a project, they offered practical advice to set a project up for success from kickoff to launch.
 
-**Meta and Schema: Defining the Content about Your Content** went deep into meta information and schema. As someone interested in both SEO and accessibility, it was great to see a more developer-focused take on content strategy.  
+**Meta and Schema: Defining the Content about Your Content** went deep into meta information and schema. As someone interested in both SEO and accessibility, it was great to see a more developer-focused take on content strategy.
 
 **The After Parties**
 
@@ -87,11 +90,9 @@ Lessons Learned
 
 Those of us in the Drupal community are damn lucky. That’s less of a lesson learned than a fact I already knew, but BADCamp made it hit home. We have:
 
-<ul>
-<li>**Opportunities** ...for learning and continuous growth - seriously, in and outside of the sessions I always learn SO MUCH.
-</li><li>**FUN!** We know how to have fun - from waffle bars and circus parties to simply talking to each other at a booth or around a table.
-</li><li>**Community** We take care of each other. I’m not pretending we're all new best friends, but in my experience we DO look out for each other both professionally and personally. We're fortunate to have this caring community, something that many people, like that gentleman on the BART, sadly may not have experienced.
-</li></ul>
+* **Opportunities** ...for learning and continuous growth - seriously, in and outside of the sessions I always learn SO MUCH.
+* **FUN!** We know how to have fun - from waffle bars and circus parties to simply talking to each other at a booth or around a table.
+* **Community** We take care of each other. I’m not pretending we're all new best friends, but in my experience we DO look out for each other both professionally and personally. We're fortunate to have this caring community, something that many people, like that gentleman on the BART, sadly may not have experienced.
 
 On that last day while waiting for a friend I laid down on the patio between the tables and soaked in the sun. Heading back to New Hampshire and remote work I was taking in as much sunshine and community as I could to hold me over until next time.
 

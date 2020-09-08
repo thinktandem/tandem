@@ -1,17 +1,22 @@
 ---
 title: "Migrating to a Drupal 8 Date Range"
 tags:
-    - development
-    - drupal
-    - migration
-    - johno
+  - development
+  - drupal
+  - php
+  - migrations
+  - johno
 author: "John Ouellet"
 date: "2018-02-27"
 summary: "Migrating a date range to Drupal 8 is a lot easier now than it was a year ago.  Below I will show you how to transform the data to get the date ranges to migrate to Drupal 8 properly."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
+
+::: byline
+Migrating a date range to Drupal 8 is a lot easier now than it was a year ago.  Below I will show you how to transform the data to get the date ranges to migrate to Drupal 8 properly.
+:::
 
 The Situation before us
 ---------------------

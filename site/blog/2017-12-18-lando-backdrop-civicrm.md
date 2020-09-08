@@ -1,15 +1,18 @@
 ---
 title: "Lando + Backdrop + CiviCRM"
 tags:
-    - development
-    - devops
-    - backdrop
-    - geoffs
+  - development
+  - devops
+  - backdrop
+  - civicrm
+  - localdev
+  - lando
+  - serundeputy
 author: "Geoff St. Pierre"
 date: "2017-12-18"
 summary: "Managing multiple databases and dev tooling with Lando"
-id: geoffs
-pic: "https://www.gravatar.com/avatar/e103c2a2a8f8caf5848b38b80422cdd9"
+id: serundeputy
+pic: "/images/people/gff-sm.jpg"
 location: Massachusetts
 ---
 
@@ -114,20 +117,17 @@ Here is a snippet of the `lando info` command output
 
 You can see we have two database keys now: `database` and `cividatabase` these contain the info that we need to connect to the respective databases. I've also used the `portforward` key in the `.lando.yml` file to give the databases static external ports of `6618` for the Backdrop database and `6619` for CiviCRM database.
 
-<center>
-  <img alt="Sequel Pro Connection Screen" src="/images/articles/lando-backdrop-civicrm/sqlpro-creds.jpg" />
-</center>
+::: thumbnail
+![Sequel Pro Connection Screen](/images/articles/lando-backdrop-civicrm/sqlpro-creds.jpg "Sequel Pro Connection Screen")
+::: caption
+Sequel Pro Connection Screen
+:::
 
 Fill out the database creds with the information from the `cividatabase` key in the output of the `lando info` command.
 
-<div style="border: medium solid yellow;">
-  <div style="background-color: yellow; padding: 6px;">
-    WARNING
-  </div>
-  <div style="padding: 12px;">
-    At the time of this writing the the key `password` in the `.lando.yml` file is not being respected. So regardless of the info in the `lando info` output for `cividatabase` saying `password` I had to use an empty password. I'll file a bug on the [Lando issue queue](https://github.com/lando/lando/issues).
-  </div>
-</div>
+::: warning WARNING
+At the time of this writing the the key `password` in the `.lando.yml` file is not being respected. So regardless of the info in the `lando info` output for `cividatabase` saying `password` I had to use an empty password. I'll file a bug on the [Lando issue queue](https://github.com/lando/lando/issues).
+:::
 
 Resources
 ---------

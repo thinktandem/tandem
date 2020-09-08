@@ -1,17 +1,19 @@
 ---
 title: "Lando Migration Webinar Part 1 Followup"
 tags:
-    - development
-    - drupal
-    - localdev
-    - devops
-    - migration
-    - johno
+  - development
+  - drupal
+  - lando
+  - localdev
+  - devops
+  - migrations
+  - webinar
+  - johno
 author: "John Ouellet"
 date: "2020-04-28"
 summary: "This webinar shows how to setup and debug a Drupal 8/9 Migration with Lando."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 
@@ -19,7 +21,7 @@ location: Florida
 
 Thank you for everyone who attended our first webinar.  We are extremely appreciative that you decided to spend a Friday afternoon with us.  For those of you who missed it, here is the [YouTube video](https://www.youtube.com/watch?v=C1lhgObpHd8) of the webinar:
 
-<iframe width="750" height="422" src="https://www.youtube.com/embed/C1lhgObpHd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<YouTube vid="C1lhgObpHd8" />
 
 I also made the [slidedeck](https://docs.google.com/presentation/d/1bEbg0I-lumlvWrjZqMhrtHMgwkLEbi8uB2fBjHFCGFE/edit?usp=sharing) public if you wanted to check those out.  The full repo I used during the webinar is [available on GitHub as well](https://github.com/thinktandem/migration-webinar/tree/webinar-1-final).  Finally, [the boilerplate module](https://github.com/thinktandem/migration_boilerplate) is also available.
 
@@ -61,7 +63,7 @@ services:
       password: drupal7db
       database: drupal7db
     portforward: true
-```  
+```
 
 **settings.local.php**
 
@@ -132,7 +134,7 @@ This command allows you to rollback your migrations based on the config name.  Y
 
 **drush mrs config_name**
 
-This command resets a migration status back to idle.  This is commonly used when a migration has become stuck.  
+This command resets a migration status back to idle.  This is commonly used when a migration has become stuck.
 
 **drush mmsg config_name**
 
@@ -140,7 +142,7 @@ This is used to display the migration message when a migration fails.  You can a
 
 ## Debugging Migration with XDebug
 
-This final part I should you how to setup XDebug in PHPStorm, debugging via the UI, and debugging via PHPStorm's console.  It is best to watch through the video, because this is the heftier part of the webinar.  
+This final part I should you how to setup XDebug in PHPStorm, debugging via the UI, and debugging via PHPStorm's console.  It is best to watch through the video, because this is the heftier part of the webinar.
 
 Here are some quick takeaways from this part:
 
@@ -183,6 +185,6 @@ I am very glad that you decided to attend this webinar.  As I mentioned I have w
 - [Migrating a Drupal 7 AddressField To a Drupal 8 Address](https://thinktandem.io/blog/2019/07/17/migrating-a-drupal-7-addressfield-to-a-drupal-8-address/)
 - [Migrating a Drupal 8 Multisite to a Standalone Drupal 8 Site](https://thinktandem.io/blog/2020/03/12/migrating-a-drupal-8-multisite-to-a-standalone-drupal-8-site/)
 
-Our next webinar will be held on May 8, 2020; [sign up here to attend](https://us02web.zoom.us/webinar/register/WN_xWFjNrQtTNK2ZeAMu6ePmw).  I will be diving into Source, Process and Destination plugins in great detail.  I will also be showing you how to handle some of the usual cases of complex data transformations as well.  
+Our next webinar will be held on May 8, 2020; [sign up here to attend](https://us02web.zoom.us/webinar/register/WN_xWFjNrQtTNK2ZeAMu6ePmw).  I will be diving into Source, Process and Destination plugins in great detail.  I will also be showing you how to handle some of the usual cases of complex data transformations as well.
 
 In the interim, if your organization has any questions with a migration you are performing, please fill out the form below so we can chat more.

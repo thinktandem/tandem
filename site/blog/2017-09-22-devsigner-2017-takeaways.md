@@ -1,15 +1,22 @@
 ---
 title: "Devsigner 2017 Takeaways"
 tags:
-    - conferences
-    - alecr
+  - events
+  - lando
+  - design
+  - business
+  - alecr
 author: "Alec Reynolds"
 date: "2017-09-22"
 summary: "Highlights from Portland's Devsigner Conference."
 id: alecr
-pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
-location: California
+pic: "/images/people/alecr.png"
+location: Portland
 ---
+
+::: byline
+Highlights from Portland's Devsigner Conference.
+:::
 
 The following are notes from the 2017 Devsigner Conference in Portland. We're updating this live as we attend sessions.
 

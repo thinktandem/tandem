@@ -1,17 +1,19 @@
 ---
 title: "Lando Migration Webinar Part 2 Followup"
 tags:
-    - development
-    - drupal
-    - localdev
-    - devops
-    - migration
-    - johno
+  - development
+  - lando
+  - drupal
+  - localdev
+  - devops
+  - migrations
+  - webinar
+  - johno
 author: "John Ouellet"
 date: "2020-05-12"
 summary: "This webinar dove into Source, Process, & Destination Plugins for Drupal 8/9 Migrations."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 
@@ -19,7 +21,7 @@ location: Florida
 
 Thank you for everyone again who attended our second migration webinar.  For those of you who missed it, here is the [YouTube video](https://www.youtube.com/watch?v=C1lhgObpHd8) of the webinar:
 
-<iframe width="750" height="422" src="https://www.youtube.com/embed/mz0ZeeDEVVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<YouTube vid="mz0ZeeDEVVQ" />
 
 The [slidedeck](https://docs.google.com/presentation/d/1EFoW58JEqpuq7DiSr916DZr3WHlbkVdHeddi62TRHA0/edit?usp=sharing) is available for all those who want to go through it.  The [GitHub repo's branch](https://github.com/thinktandem/migration-webinar/tree/webinar-2-final) has been updated for this webinar with all the examples I showed you during this webinar.
 
@@ -96,6 +98,6 @@ Thank you again for attending this webinar.  For easy reference, here are all th
 - [Migrating a Drupal 7 AddressField To a Drupal 8 Address](https://thinktandem.io/blog/2019/07/17/migrating-a-drupal-7-addressfield-to-a-drupal-8-address/)
 - [Migrating a Drupal 8 Multisite to a Standalone Drupal 8 Site](https://thinktandem.io/blog/2020/03/12/migrating-a-drupal-8-multisite-to-a-standalone-drupal-8-site/)
 
-Our next webinar will be held on May 29, 2020; more details to follow on what we will be presenting on.  
+Our next webinar will be held on May 29, 2020; more details to follow on what we will be presenting on.
 
 In the interim, if your organization has any questions with a migration you are performing, please fill out the form below so we can chat more.

@@ -1,18 +1,27 @@
 ---
 title: "2019 Development Workflow Essentials"
 tags:
-    - deployment
-    - development
-    - localdev
-    - devops
-    - alecr
+  - deployment
+  - development
+  - localdev
+  - lando
+  - devops
+  - seo
+  - testing
+  - performance
+  - accessibility
+  - alecr
 author: "Alec Reynolds"
 date: "2019-02-04"
 summary: "Don't get caught wearing last year's dev workflow, see all the essentials for 2019."
 id: alecr
-pic: "https://www.gravatar.com/avatar/f274dbe2c9fbaac8339c01d918ba50b5"
+pic: "/images/people/alecr.png"
 location: California
 ---
+
+::: byline
+Don't get caught wearing last year's dev workflow, see all the essentials for 2019.
+:::
 
 ## SVN is so 2009.
 

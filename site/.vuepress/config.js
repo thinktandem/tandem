@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Tandem',
-  description: 'Tandem uses open-source tools like Drupal, Laravel, and Docker to transform your complex workflows and technical debt into elegant web applications.',
+  description: 'Tandem is a full service digital agency that works closely with you to get shit done and get it done right.',
   head: [
     ['link', {rel: 'icon', href: '/favicon.png'}],
     ['link', {rel: 'stylesheet', href: '/styles/overrides.css'}],
@@ -31,6 +31,7 @@ module.exports = {
           layout: 'Work',
           pagination: {
             lengthPerPage: 3,
+
           },
           title: 'Work',
         },
@@ -50,6 +51,7 @@ module.exports = {
           keys: ['tags'],
           path: '/tag/',
           scopeLayout: 'Tag',
+          title: 'Content',
           pagination: {
             lengthPerPage: 5,
           },
@@ -60,7 +62,7 @@ module.exports = {
       },
     },
     '@vuepress/google-analytics': {
-      ga: 'UA-XXXXXXX',
+      ga: 'UA-74237404-2',
     },
     'autometa': {
       site: {
@@ -124,16 +126,68 @@ module.exports = {
         desc: 'Get in touch!',
       },
     ],
+    locations: [
+      {airport: 'OAK', name: 'Oakland', email: 'oak@thinktandem.io', background: '#EFB21E', text: '#003831'},
+      {airport: 'BOS', name: 'Boston', email: 'bos@thinktandem.io', background: '#BD3039', text: '#0C2340'},
+      {airport: 'SRQ', name: 'Sarasota', email: 'srq@thinktandem.io', background: '#8FBCE6', text: '#092C5C'},
+      {airport: 'DCA', name: 'DC', email: 'dc@thinktandem.io', background: '#AB0003', text: '#14225A'},
+      {airport: 'SAN', name: 'San Diego', email: 'san@thinktandem.io', background: '#FFC425', text: '#2F241D'},
+    ],
     tags: {
+      alecr: {
+        title: 'Alec Reynolds',
+        byline: 'CEO, Co-Founder',
+        pic: '/images/people/alec-sm.jpg',
+      },
+      bgonz: {
+        title: 'Brian Gonzales',
+        byline: 'Founder, PAIRODIME, Guest Blogger',
+        pic: '/images/people/brian-gonzales.jpg',
+      },
+      donnab: {
+        title: 'Donna Bungard',
+        byline: 'Project Manager',
+        pic: '/images/people/donna.jpg',
+      },
       drupal: {
         title: '10+ years of Drupal expertise.',
         byline: 'We have seen and done it all in Drupal on sites of every size and complexity.  Let our years of experience help bring your Drupal project to the next level.',
         pic: '/images/tags/drupal-logo.png',
       },
+      dustinl: {
+        title: 'Dustin LeBlanc',
+        byline: 'Technical Project Manager',
+        pic: '/images/people/dustin-sm.jpg',
+      },
+      johno: {
+        title: 'John Ouellet',
+        byline: 'Senior Engineer',
+        pic: '/images/people/john-sm.jpg',
+      },
+      laravel: {
+        title: 'Title about Laravel',
+        byline: 'Words about laravel.',
+        pic: '/images/tags/laravel-logo.png',
+      },
+      mikem: {
+        title: 'Mike Milano',
+        byline: 'Senior Architect',
+        pic: '/images/people/milano.jpg',
+      },
       migration: {
         title: 'We move the web.',
         byline: 'We\'ve migrated millions of web pages, helping move complicated, large websites for world-renowned brands.',
         pic: '/images/tags/double-arrows.png',
+      },
+      pirog: {
+        title: 'Mike Pirog',
+        byline: 'CTO, Co-Founder',
+        pic: '/images/people/mike-sm.jpg',
+      },
+      serundeputy: {
+        title: 'Geoff St. Pierre',
+        byline: 'Senior Engineer',
+        pic: '/images/people/gff-sm.jpg',
       },
       wordpress: {
         title: 'Make content management easy.',
@@ -201,5 +255,47 @@ module.exports = {
         pic: 'https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33',
       },
     },
+    vibes: [
+      'Budweiser in a can',
+      ['Swimming in lake baikal', 'https://en.wikipedia.org/wiki/Olkhon_Island'],
+      ['Miley Cyrus', 'https://www.youtube.com/watch?v=wOwblaKmyVw'],
+      'Nightclubs in Belarus',
+      'Retro gaming',
+      'Vivaldi',
+      ['Christopher Hitchens', 'https://www.youtube.com/watch?v=ZDTObha5lUE'],
+      'Sour beers',
+      ['The larch', 'https://www.youtube.com/watch?v=H0zVsxUbbjM'],
+      'Todd Snider',
+      'The Scream',
+      'Miracle',
+      'Wayne White',
+      'Bertrand Russell',
+      ['Super Mario Bros.', 'https://www.youtube.com/watch?v=4CgC2g43smA'],
+      'The Badlands',
+      'String instruments',
+      ['Sturgill Simpson', 'https://en.wikipedia.org/wiki/Sturgill_Simpson'],
+      'homebrewed cider',
+      'The Englischer Garten',
+      ['Wallace Stegner', 'https://en.wikipedia.org/wiki/Wallace_Stegner'],
+      'Lawrence Halprin',
+      'Orchard planting',
+      'Thrice',
+      ['Old Fashions', 'https://www.allrecipes.com/recipe/162397/classic-old-fashioned/'],
+      'Albrecht Duerer',
+      'Empire Strikes Back',
+      'Chrono Trigger',
+      'The guitar',
+      ['pretty much all 90s music actually', 'https://www.cosmopolitan.com/entertainment/music/g32585720/best-90s-songs/'],
+      'Coffee',
+      ['The Matrix', 'https://www.youtube.com/watch?v=0YhJxJZOWBw'],
+      'Scuba',
+      'Coffee by day/Wine by night',
+      'The Office',
+      ['Ticket to Ride', 'https://www.daysofwonder.com/tickettoride/en/usa/'],
+      ['Euchre', 'https://en.wikipedia.org/wiki/Euchre'],
+      'Hiking',
+      'Biking',
+      'Beach volleyball',
+    ],
   },
 };

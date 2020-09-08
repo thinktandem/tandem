@@ -1,20 +1,24 @@
 ---
 title: "Killer D8 Workflow Using Lando and Platform.sh"
 tags:
-    - deployment
-    - development
-    - devops
-    - localdev
-    - testing
-    - drupal
-    - pirog
+  - lando
+  - localdev
+  - devops
+  - testing
+  - drupal
+  - platformsh
+  - pirog
 author: "Mike Pirog"
 date: "2017-10-23"
 summary: "Leverage the ease of Lando, Platform.sh, GitHub and Travis to quickly spin up an ultra pro workflow"
 id: pirog
-pic: "https://www.gravatar.com/avatar/dc1322b3ddd0ef682862d7f281c821bb"
-location: "New Hampshire"
+pic: "/images/people/pirog.jpg"
+location: "Siberia"
 ---
+
+::: byline
+Leverage the ease of Lando, Platform.sh, GitHub and Travis to quickly spin up an ultra pro workflow
+:::
 
 At Tandem we are super serious about designing (and using) best-practice development worklows that:
 

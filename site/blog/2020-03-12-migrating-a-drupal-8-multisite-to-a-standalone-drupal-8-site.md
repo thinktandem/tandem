@@ -1,15 +1,15 @@
 ---
 title: "Migrating a Drupal 8 Multisite to a Standalone Drupal 8 Site"
 tags:
-    - development
-    - drupal
-    - migration
-    - johno
+  - development
+  - drupal
+  - migrations
+  - johno
 author: "John Ouellet"
 date: "2020-03-12"
 summary: "A straighforward guide to doing a  Drupal 8 to Drupal 8 migration."
 id: johno
-pic: "https://www.gravatar.com/avatar/36cf0d0492681818218bb36b6fdd6e33"
+pic: "/images/people/john-sm.jpg"
 location: Florida
 ---
 
@@ -17,11 +17,11 @@ location: Florida
 
 One of our health care clients has an older Drupal 8 multisite that needed some TLC.  They wanted to rebrand and relaunch the main site of the bunch as a stand alone version.  We also only needed to move some of the content, but not all.  Finally, we needed a repeatable process as new content would be added the whole time we were retheming the new site.  The right choice it seemed for the project was to use the Drupal 8 Migrate module suite to get the job done.
 
-If you have done a D6/D7 migration to D8, then the process is very similar in nature.  However, there are some twists to the process that I will go over below.  
+If you have done a D6/D7 migration to D8, then the process is very similar in nature.  However, there are some twists to the process that I will go over below.
 
 ## Getting Started
 
-To get started, you will need the [Migrate Plus](https://www.drupal.org/project/migrate_plus), [Migrate Tools](https://www.drupal.org/project/migrate_tools), & [Migrate Drupal D8](https://www.drupal.org/project/migrate_drupal_d8) modules with this project. Take note that we are not using the [Migrate Upgrade](https://www.drupal.org/project/migrate_upgrade) module as it is only intended for D6/D7 migrations.  
+To get started, you will need the [Migrate Plus](https://www.drupal.org/project/migrate_plus), [Migrate Tools](https://www.drupal.org/project/migrate_tools), & [Migrate Drupal D8](https://www.drupal.org/project/migrate_drupal_d8) modules with this project. Take note that we are not using the [Migrate Upgrade](https://www.drupal.org/project/migrate_upgrade) module as it is only intended for D6/D7 migrations.
 
 You can install these modules via:
 
@@ -58,15 +58,15 @@ Since we can't use the Migrate Upgrade module, there is no quick and easy way to
 3. Use the [Config Development](https://www.drupal.org/project/config_devel) module to identify and move config manually.
 4. Use our good old friend [Features](https://www.drupal.org/project/features).
 
-I decided to go with option #4 as it seemed up front that I could quickly and easily grab what I needed and go.  While this probably was the best choice for this use case, I ran into some weird issues with the Features module in general.  I was able to get all the config I needed over fairly easily.  However, Features in Drupal 8 did some weird things like: not include the field storage config, add blocks and views config when I selected a node, and added erroneous config in general.  
+I decided to go with option #4 as it seemed up front that I could quickly and easily grab what I needed and go.  While this probably was the best choice for this use case, I ran into some weird issues with the Features module in general.  I was able to get all the config I needed over fairly easily.  However, Features in Drupal 8 did some weird things like: not include the field storage config, add blocks and views config when I selected a node, and added erroneous config in general.
 
 There was a lot of back and forth initially to figure out why I kept getting red messages of config sadness.  However, I ended up winning it in the end, but it was an interesting journey thats for sure. Regardless, features did get the job done, it took way longer than it should of though due to those issues I listed.
 
 ## Setting up the migration.
 
-Now that the old Drupal 8 config was in the new Drupal 8 site, the fun could begin.  One downside to using the Migrate Drupal D8 Module is that there are no example config yamls provided.  My inner lazy child was sad that I had to manually create these files.  However since I have done dozens of migrations, I had plenty of examples to pull from.  
+Now that the old Drupal 8 config was in the new Drupal 8 site, the fun could begin.  One downside to using the Migrate Drupal D8 Module is that there are no example config yamls provided.  My inner lazy child was sad that I had to manually create these files.  However since I have done dozens of migrations, I had plenty of examples to pull from.
 
-To get started, we need to name our migrations yaml files like this: ```migrate_plus.migration.migration_ENTITY_BUNDLE```.  This way the config importer knows how to basically assign these files to Migrate Plus and all our migration magixs will work gloriously.  
+To get started, we need to name our migrations yaml files like this: ```migrate_plus.migration.migration_ENTITY_BUNDLE```.  This way the config importer knows how to basically assign these files to Migrate Plus and all our migration magixs will work gloriously.
 
 When I do migrations, I always do them in groups in the following order:
 
@@ -77,7 +77,7 @@ When I do migrations, I always do them in groups in the following order:
 5. Nodes
 6. Misc Entities
 
-We have no paragraphs or misc entities in this migration.  If you do have have custom entities, and need to know what destination to choose, run ```drupal dpl migrate.destination```.  So now lets truck forward with the files migration.  
+We have no paragraphs or misc entities in this migration.  If you do have have custom entities, and need to know what destination to choose, run ```drupal dpl migrate.destination```.  So now lets truck forward with the files migration.
 
 ### Migrating the Files
 

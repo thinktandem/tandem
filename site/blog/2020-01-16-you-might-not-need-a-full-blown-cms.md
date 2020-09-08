@@ -1,14 +1,19 @@
 ---
 title: "You Might Not Need a Full Blown CMS"
 tags:
-    - seo
-    - mikem
+  - seo
+  - strategy
+  - business
+  - development
+  - performance
+  - security
+  - mikem
 author: "Mike Milano"
 date: "2020-01-16"
 summary: "A case for static sites"
 id: mikem
-pic: "https://www.gravatar.com/avatar/80b0826906351617efdd8dbdf3cee68b"
-location: California
+pic: "/images/people/milano.jpg"
+location: San Diego
 ---
 
 Before deciding on a Content Mangement System (CMS) like [Wordpress](https://wordpress.com/) or
@@ -37,24 +42,23 @@ you will be invested in for years to come.
 
 Consider for a moment maintaining, and improving each of these properties.
 
-<table border="0" style="width: 100%;margin: 20px 0;border-top: 1px solid #ccc;">
-<tr><td style="width:50%;valign:top">
-<b>Estate De La CMS</b>
-<div><img style="border: 10px solid #ccc;" src="/images/articles/cms-vs-static/property-estate.jpg" /></div>
-<li> 5 acres of land, extensively landscaped</li>
-<li> 7,500 sqft 8 bdrm Main House</li>
-<li> 3,000 sqft  2 bdrm Guest House</li>
-<li> Tennis Court & Putting Green</li>
-</td>
-<td style="valign:top">
-<b>Track Home on Static Circle</b>
-<div><img style="border: 10px solid #ccc;" src="/images/articles/cms-vs-static/property-track.jpg" /></div>
-<li> .25 acre, small front lawn</li>
-<li> 1850 sqft 3 bdrm Main House</li>
-<li> No Guest House</li>
-<li> No Tennis Court or Putting Green</li>
-</td></tr>
-</table>
+:::::: col-wrapper
+::: col-half Estate De La CMS
+![property-estate](/images/articles/cms-vs-static/property-estate.jpg "property-estate")
+* 5 acres of land, extensively landscaped
+* 7,500 sqft 8 bdrm Main House
+* 3,000 sqft  2 bdrm Guest House
+* Tennis Court & Putting Green
+:::
+
+::: col-half Track Home on Static Circle
+![property-track](/images/articles/cms-vs-static/property-track.jpg "property-track")
+* .25 acre, small front lawn
+* 1850 sqft 3 bdrm Main House
+* No Guest House
+* No Tennis Court or Putting Green
+:::
+::::::
 
 No doubt *Estate De La CMS* will be a handful to maintain. With more plumbing comes
 more potential for leaks. More doors and windows makes for more points of entry
@@ -131,74 +135,18 @@ to hackers. This is why it is especially important to take CMS maintenance serio
 
 Let's take a look at the infrastructure and maintenance required to run a static website vs a CMS like Drupal or Wordpress:
 
-<h4>Static vs CMS Hosting and Maintenance Requirements</h4>
+#### Static vs CMS Hosting and Maintenance Requirements
 
-<style>
-    #static-vs-cms-table {
-        margin: 0 auto;
-        width: 80%;
-        border: 1px solid #ccc;
-    }
-    #static-vs-cms-table {
-        font-size: 1.1em;
-    }
-    #static-vs-cms-table td {
-        border: 1px solid #ccc;
-        text-align: center;
-    }
-     #static-vs-cms-table td.header {
-        font-weight: bold;
-    }
-    #static-vs-cms-table td.requirement {
-        text-align: right;
-        font-weight: bold;
-    }
-    #static-vs-cms-table td.value {
-        text-align: center;
-    }
-
-</style>
-
-<table id="static-vs-cms-table">
-<tr>
-    <td class="header">&nbsp;</td>
-    <td class="header">Static Site</td>
-    <td class="header">CMS (Drupal/Wordpress)</td>
-</tr>
-<tr>
-  <td class="requirement">Web Server</td>
-  <td class="value">☑️</td>
-  <td class="value">☑️</td>
-</tr><tr>
-  <td class="requirement">Database (MySQL)</td>
-  <td class="value"></td>
-  <td class="value">☑️</td>
-</tr><tr>
-  <td class="requirement">Server-side Language Support (PHP)</td>
-  <td class="value"></td>
-  <td class="value">☑️</td>
-</tr><tr>
-  <td class="requirement">Framework Updates (Drupal/Wordpress)</td>
-  <td class="value"></td>
-  <td class="value">☑️</td>
-</tr><tr>
-  <td class="requirement">PHP Updates</td>
-  <td class="value"></td>
-  <td class="value">☑️</td>
-</tr><tr>
-  <td class="requirement">MySQL Updates</td>
-  <td class="value"></td>
-  <td class="value">☑️</td>
-</tr><tr>
-  <td class="requirement">Database Backups</td>
-  <td class="value"></td>
-  <td class="value">☑️</td>
-</tr><tr>
-   <td class="requirement">Uploaded File Backups</td>
-   <td class="value"></td>
-   <td class="value">☑️</td>
- </tr>
-</table>
+|                                       | Static Site             | CMS (Drupal/WordPress) |
+| ------------------------------------- | ------------------------| -------------------------------- |
+| Web Server                            | :ballot_box_with_check: | :ballot_box_with_check:          |
+| Database (MySQL)                      |                         | :ballot_box_with_check:          |
+| Server-side Language Support (PHP)    |                         | :ballot_box_with_check:          |
+| Framework Updates (Drupal/Wordpress)  |                         | :ballot_box_with_check:          |
+| PHP Updates                           |                         | :ballot_box_with_check:          |
+| MySQL Updates                         |                         | :ballot_box_with_check:          |
+| Database Backups                      |                         | :ballot_box_with_check:          |
+| Uploaded File Backupsl                |                         | :ballot_box_with_check:          |
 
 Once again, we're not trying to sway you from using a CMS. We're just saying it's important to make sure
 a static site isn't a good fit before committing to a CMS.

@@ -2,73 +2,72 @@
 title: "Drupal 8 Intranet Migration"
 id: usf
 client: "University of San Francisco"
-summary: "We helped USF migrate their intranet and redid all of their custom functionality."
+summary: "We helped USF migrate their existing intranet and rebuilt their custom functionality from the ground up to optimize performance."
 link: "https://www.usfca.edu"
 logo: /images/logos/usf.png
 logoHeight: 2
 logoMargin: 15
 
 header:
-  title: "Building for<br/>the future"
-  image: /images/case-studies/usf-d8.png
+  title: "A Faster<br/>Stronger<br />Intranet"
+  image: /images/work/usf-d8.png
   background:
     background-color: "#FDBB30"
+    background-image: url(/images/work/usf-campus.jpg)
     background-position: 100% 20%
-    background-size: auto
+    background-size: cover
     background-repeat: no-repeat
 
 theme:
   background: "#FDBB30"
   headerColor: "#00543C"
-  headerHover: "#00543C"
-  headerActive: "#00543C"
+  headerHover: "#2A2A2A"
+  headerActive: "#2A2A2A"
   text: "#00543C"
 
 date: "2018-10-31"
 tags:
   - drupal
-  - highereducation
+  - higher-ed
+  - php
+  - performance
+  - support
+  - training
   - development
-  - migration
+  - migrations
+  - new-relic
+  - blazemeter
+  - blackfire
 ---
 ::: point Summary.
-Poets.org is a elegant resource that connects users to over a million poets, poems, educational resources, event and more. With a large member-base and many more casual visitors, the site needs to be able to reach a huge audience, keeping our focus on user experience, accessibility and on brand representation.
+The University of San Francisco (USF) intranet was having issues with usability, performance, extensibility, and maintainability. This can often be the case when you maintain a complex and big site built on Drupal 7 Open Atrium over an extended period of time. USF needed to take a step back and plan for the next iteration of their intranet so they called Tandem.
 :::
 
-> Coffee. The finest organic suspension ever devised... I beat the Borg with it.
-> - Captain Janeway
+::: important Challenge 1: Complex Migration
+One of the biggest challenges identified was migrating the existing Drupal 7 Organic Groups setup to utilize Drupal 8 Groups. Previously, there was no migration path that existed for this, however, [now there is](https://thinktandem.io/blog/2018/03/30/migrating-drupal-7-organic-groups-to-drupal-8-group/). :)
+:::
 
 :::::: col-wrapper
 ::: col-half Tech:
-Headless Drupal 8 Contenta CMS API powering a decoupled Nuxt/VueJS frontend
+* Drupal 8
+* Groups Module
+* Custom Modules
 :::
 
-::: col-half Top Listed SERPs:
+::: col-half Entities Migrated:
 :::big
-1000+
+250K
 :::
 ::::::
 
-::: important Ageless poetry. No boundaries.
-Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better.
+::: important Challenge 2: Custom Functionality
+On top of the Organic Group to Group migration, there was numerous other internal functionality that needed to rebuilt.  Some of this included, but not limited to:
+
+* Custom user weighted draggable tables
+* Integration and functionality with two internal APIs
+* Custom CAS integration with the Group module.
 :::
 
-:::::: col-wrapper
-::: col-half Tech
-Third column
+::: important Challenge 3: Performance
+Tandem also went through rigorous performance testing and tweaking of the custom functionality via New Relic, Blazemeter and Blackfire.
 :::
-
-::: col-half Tech
-Third column
-![Walt Whitman](https://i.pinimg.com/originals/2b/7e/02/2b7e02ed7453da00e776bd594a6d4e3c.png)
-:::
-::::::
-
-The University of San Francisco (USF) intranet was functional but possessed many issues with usability, performance, extensibility, and maintainability.  The intranet was originally built off of Open Atrium in Drupal 7 and had been continually tweaked and added onto. This lead to shortcuts being taken, pieces of functionality started to be built but never worked right, and all in all a bad user experience.  USF needed to take a step back and reevaluate what the intranet and how they could fix it.
-
-Tandem was brought on to supplement their current development staff in rebuilding in migrating the intranet. Tandem evaluated all of their current functionality and had numerous stand-ups to discuss what needed to change.  One of the biggest challenges identified was migrating the existing Drupal 7 Organic Groups setup to utilize Drupal 8 Group.  There was no migration path that existed for this, however, Tandem used their years of Drupal expertise and was able to get the task done. [Tandem also wrote up how to perform the migration](https://thinktandem.io/blog/2018/03/30/migrating-drupal-7-organic-groups-to-drupal-8-group/) for others that were faced with a similar challenge.
-
-USF’s migration was very complex in nature.  Ontop the Organic Group to Group migration, there was numerous other internal functionality that needed to rebuilt.  Some of this included, but not limited to: custom user weighted draggable tables, integration and functionality with two internal APIs, and custom CAS integration with the Group module.  Tandem also went through rigorous performance testing and tweaking of the custom functionality via New Relic, Blazemeter and Blackfire.
-
-The migration was rolled out in a few phases before the start of the 2018-2019 school year.  Tandem worked with USF in sprint based efforts.  Tandem was able to help USF reach their goal and launch the new intranet before the start of the term.  In the end, Tandem migrated well over 100,000 different types of entities, helped rebuild the site from the ground up, and helped USF development team succeed.  The new intranet is a streamlined, easy to maintain, user-friendly system that USF can use for many years to come.
-

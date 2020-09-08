@@ -1,14 +1,13 @@
 <template>
   <div
     v-if="name"
-    class="post-meta-author"
+    class="post-meta-data"
     itemprop="publisher author"
     itemtype="http://schema.org/Person"
     itemscope
   >
     <div class="written-by">
       <a
-        v-if="picAlign === 'left'"
         :href="authorLink"
         class="pic-left"
         :target="linkTarget"
@@ -22,37 +21,25 @@
         :target="linkTarget"
         itemprop="name"
       >{{ name }}</a>
-      from <NavigationIcon />
-
+    </div>
+    <div class="other-meta">
+      <span class="meta-prefix">FROM </span>
       <span itemprop="address">{{ location }}</span>
-
-      on <ClockIcon />
+      <span class="meta-prefix">ON </span>
       <time
         pubdate
         itemprop="datePublished"
         :datetime="date"
       >{{ resolvedDate }}</time>
-
-      <a
-        v-if="picAlign !== 'left'"
-        :href="authorLink"
-        class="pic-right"
-        :target="linkTarget"
-      ><img
-        :src="pic"
-        :alt="name"
-      ></a>
     </div>
   </div>
 </template>
 
 <script>
 import dayjs from 'dayjs';
-import {ClockIcon, NavigationIcon} from 'vue-feather-icons';
 
 export default {
   name: 'PostMeta',
-  components: {ClockIcon, NavigationIcon},
   props: {
     id: {
       type: String,
@@ -79,10 +66,6 @@ export default {
       type: String,
       default: '/images/logo-tandem-svg.svg',
     },
-    picAlign: {
-      type: String,
-      default: 'left',
-    },
   },
   computed: {
     authorLink() {
@@ -101,28 +84,43 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.written-by
-  font-size .85em
-  padding-bottom: 1rem
-  border-bottom 1px solid $borderColor
-  img
-    width 24px
-    border-radius: 100%
+.post-meta-data
+  margin-top 1em
+  display flex
+  width 100%
+  justify-content flex-start
+  .written-by, .other-meta
+    display flex
+    padding-bottom .5rem
+    font-size .9em
+    img
+      width 24px
+      border-radius: 100%
+      position relative
+      bottom: 6px
+    svg
+      width 14px
+      height 14px
+      color lighten($landoBlue, 50%)
+      margin-left 10px
+      margin-right 3px
+  .other-meta
+    align-items baseline
+    .meta-prefix
+      margin-left 5px
+      margin-right 5px
+      font-size .67em
+      font-weight 500
+      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+  .pic-left
+    margin-right 10px
     position relative
-    bottom: 6px
-  svg
-    width 14px
-    height 14px
-    color lighten($landoBlue, 50%)
-    position: relative
-    top 3px
-    margin-left: 3px
-    margin-right: 3px
-.pic-left
-  float left
-  margin-right 10px
-  position relative
-  top 5px
-.pic-right
-  float right
+    top 5px
+  @media (max-width: $MQMobile)
+    align-items center
+    display block
+    .written-by, .other-meta
+      font-size .9em
+
+
 </style>

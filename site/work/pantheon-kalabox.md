@@ -1,42 +1,43 @@
 ---
 title: "Pantheon on Kalabox"
-logo: /images/clients/pantheon/pantheon.png
-org: "Pantheon Systems"
-image: /images/case-studies/kalabox.png
-challenge: "Provide a one-click, push-button solution that gets a user developing their Pantheon site locally in a matter of minutes."
-solution: "Use Kalabox and Docker technology to replicate the Pantheon development environment locally."
-impact: "Allow users of all skill levels to start developing a Pantheon-hosted site almost instantly."
+id: pantheon-kalabox
+client: pantheon
+summary: "We built a plugin for Kalabox that allows you to clone and sync your Pantheon site to your local."
+link: https://github.com/kalabox/kalabox-app-pantheon
+logo: /images/logos/pantheon-logo.png
+logoHeight: 2
 
-metrics:
-    - key: "Active Monthly Users"
-      value: 1500+
-    - key: "Spin Up Time"
-      value: "5 Minutes"
-    - key: "You Bet!"
-      value: "Cross Platfrom"
-background: EFD01B
-slug: pantheon-kalabox
+header:
+  title: "Rebuilding<br /> poetry's home on <br />the internet"
+  image: /images/logos/pantheon-logo.png
+  background:
+    background-color: "#ffdc28"
+    background-image: url(/images/work/kalaboxv2-ico.png)
+    background-position: 100% 20%
+    background-size: cover
+    background-repeat: no-repeat
+
+theme:
+  background: "#ffdc28"
+  headerColor: black
+  headerHover: "#1794c7"
+  headerActive: "#1794c7"
+  text: black
+
 date: "2013-09-22"
 tags:
-    - docker
-    - nodejs
-    - drupal
-    - wordpress
-    - startups
-    - development
-summary: "We built <strong>Pantheon Systems</strong> an integration for our Kalabox GUI that allows their users to easily clone their sites onto their computer."
-client: "Pantheon Systems"
-link: "https://pantheon.io"
+  - docker
+  - node
+  - drupal
+  - wordpress
+  - startups
+  - pantheon
+  - localdev
+  - kalabox
+  - development
+
+
+link2Original: true
+originalLink: "https://github.com/kalabox/kalabox-app-pantheon"
 ---
 
-Pantheon was looking for a local development environment that, like Pantheon itself, was able to take a complicated problem and make it easily accessible to a wide set of users. Our [Kalabox](http://kalabox.io) GUI and CLI product fit the bill nicely.
-
-We were able to leverage Kalabox's pluggable [nodejs](https://nodejs.org) architecture to build a sophisticated integration that:
-
-* Uses Pantheon's Machine Tokens for authentication
-* Gives push-button *get my site* and *deploy my changes* functionality
-* Uses [Docker](https://www.docker.com/) to closely mimic the [powerful](https://pantheon.io/how-it-works) Pantheon runtime and toolchain
-* Packages in developer power tools like Terminus, [Drush](http://www.drush.org/), [WP-CLI](http://wp-cli.org/) and [xdebug](https://xdebug.org/)
-* Ships in a cross-platform, easy-to-use, one-click installer via [nw.js](https://github.com/nwjs/nw.js/)
-
-This allowed Pantheon to easily streamline their user onboarding and agency training with a go-to standard for local development. Now they have another killer app in their product lineup.

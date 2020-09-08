@@ -1,14 +1,15 @@
 <template>
-  <div class="values-container">
+  <div :class="`values-container ${id}`">
     <style>
-      .values-container .values-item {width: {{ columnWidth }}%;}
+      .{{ id }} .values-item {width: {{ columnWidth }}%;}
     </style>
     <div
       v-for="item in items"
-      :key="item"
-      class="values-item"
+      :key="getContent(item)"
+      :class="{'values-item': true, 'values-link': !!getLink(item)}"
+      @click="goto(getLink(item))"
     >
-      <h2 v-html="item" />
+      <h2 v-html="getContent(item)" />
     </div>
   </div>
 </template>
@@ -18,6 +19,10 @@
 export default {
   name: 'ValuesGrid',
   props: {
+    id: {
+      type: String,
+      default: 'values-grid',
+    },
     items: {
       type: Array,
       required: true,
@@ -30,6 +35,35 @@ export default {
   computed: {
     columnWidth() {
       return (100 / this.columns) - 1;
+    },
+  },
+  methods: {
+    goto(link) {
+      if (link) window.open(link, '_blank');
+    },
+    getContent(item) {
+      // If array then assume its the first value
+      if (item && typeof item === 'object' && item.constructor === Array) {
+        return item[0];
+      // Or an object and then assume its named something
+      } else if (item && typeof item === 'object' && item.constructor === Object) {
+        return item.content || item.html || item.markup;
+      // Otherwise assumes its stringy and just return as is
+      } else {
+        return item;
+      }
+    },
+    getLink(item) {
+      // If array then assume its the first value
+      if (item && typeof item === 'object' && item.constructor === Array) {
+        return item[1];
+      // Or an object and then assume its named something
+      } else if (item && typeof item === 'object' && item.constructor === Object) {
+        return item.link;
+      // Otherwise assume we have no link
+      } else {
+        return false;
+      }
     },
   },
 };
@@ -59,10 +93,16 @@ export default {
       content ""
       float left
       padding-top 100%
-
     @media (max-width: $MQMobile)
       width 49%
-
       margin .5em 0em
       min-height 125px
+  .values-link
+    cursor pointer
+    &:hover
+      background $tandemPink
+      h2
+        color #ffffff
+    h2
+      color $tandemPink
 </style>
