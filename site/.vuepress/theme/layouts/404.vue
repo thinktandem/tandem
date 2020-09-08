@@ -63,8 +63,28 @@ const msgs = [
   },
   {
     author: 'BSB',
-    message: `Tell me why I can't be there where you are?`,
+    message: `'Tell me why I can't be there where you are?`,
     vid: 'aBt8fN7mJNg',
+  },
+  {
+    author: 'Lisa Loeb',
+    message: 'No no no, bad',
+    vid: 'i9HGwRbMiVY',
+  },
+  {
+    author: 'David Hasselhoff',
+    message: 'The phoenix rise again',
+    vid: 'ZTidn2dBYbY',
+  },
+  {
+    author: 'Björk',
+    message: `It's oh so quiet, It's oh so still`,
+    vid: 'MNdFYbe1XoM',
+  },
+  {
+    author: 'The Beatles',
+    message: `He's a real nowhere man`,
+    vid: '8scSwaKbE64',
   },
 ];
 
