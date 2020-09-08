@@ -358,8 +358,9 @@ export default {
           opacity .08
           z-index 0
 
-  @media (max-width: $MQMobile)
-    .content-wrapper-tandem.case-study-layout
+@media (max-width: $MQMobile)
+  .content-wrapper-tandem
+    &.case-study-layout
       .showcase
         margin-bottom 1em
         img
