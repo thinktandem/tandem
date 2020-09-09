@@ -60,7 +60,7 @@
       </p>
       <div class="recent-posts-wrapper">
         <PostSummary
-          v-for="page in recentPosts"
+          v-for="page in recentPosts.reverse()"
           :key="page.key"
           :page="page"
           itemprop="blogPost"
@@ -68,6 +68,7 @@
           itemtype="https://schema.org/BlogPosting"
         />
         <div
+          v-if="(posts.length - postsSize) >= ((postsIndex * postsSize) + 1)"
           class="load-more"
           @click="incrementPosts"
         >
