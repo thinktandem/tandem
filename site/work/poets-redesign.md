@@ -42,6 +42,7 @@ tags:
   - migrations
   - support
   - drupal
+  - php
   - vue
   - nuxt
   - decoupled

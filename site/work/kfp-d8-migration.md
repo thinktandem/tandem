@@ -25,6 +25,8 @@ date: "2018-05-25"
 tags:
   - migrations
   - drupal
+  - php
+  - development
   - ux
   - user-research
   - responsive

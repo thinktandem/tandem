@@ -28,6 +28,8 @@ date: "2020-05-02"
 tags:
   - migrations
   - drupal
+  - php
+  - development
   - design
   - ux
   - strategy

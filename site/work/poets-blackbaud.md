@@ -27,6 +27,8 @@ theme:
 date: "2018-08-28"
 tags:
   - drupal
+  - php
+  - development
   - non-profit
   - development
   - crm

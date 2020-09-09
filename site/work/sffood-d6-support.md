@@ -26,6 +26,8 @@ theme:
 date: "2019-08-02"
 tags:
   - drupal
+  - php
+  - development
   - non-profit
   - magic
   - support

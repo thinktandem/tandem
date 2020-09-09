@@ -27,6 +27,8 @@ theme:
 date: "2018-11-02"
 tags:
   - drupal
+  - php
+  - development
   - design
   - ux
   - user-research
