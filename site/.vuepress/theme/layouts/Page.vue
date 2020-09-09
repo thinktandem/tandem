@@ -60,7 +60,7 @@
       </p>
       <div class="recent-posts-wrapper">
         <PostSummary
-          v-for="page in recentPosts.reverse()"
+          v-for="page in recentPosts"
           :key="page.key"
           :page="page"
           itemprop="blogPost"
@@ -166,11 +166,11 @@ export default {
     // Get all content tagged with the tag
     const content = this.$tags.map[this.tag].pages;
     // Separate content into posts and works
-    this.posts = content.filter(page => page.id === 'blog');
+    this.posts = content.filter(page => page.id === 'blog').reverse();
     this.recentWork = content.filter(page => page.id === 'work');
     // Set "page 1" inititially
     this.featuredWork = [this.recentWork[this.workIndex]];
-    this.recentPosts = this.posts.slice(-1 * this.postsSize);
+    this.recentPosts = this.posts.slice(0, this.postsSize);
   },
   methods: {
     incrementFeaturedWork() {
@@ -185,7 +185,7 @@ export default {
       // Increment the posts
       this.postsIndex++;
       // Calculate start and end
-      const start = this.posts.length - (this.postsIndex * this.postsSize) - 1;
+      const start = 0 + (this.postsIndex * this.postsSize);
       const end = start + this.postsSize;
       // Return the slice
       this.recentPosts = this.posts.slice(start, end);
