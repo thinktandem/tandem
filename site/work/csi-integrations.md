@@ -14,7 +14,7 @@ header:
     background-color: "#9ebfd1"
     background-image: url(/images/work/csi-bg.jpg)
     background-position: 100% 20%
-    background-size: auto
+    background-size: cover
     background-repeat: no-repeat
 
 theme:
@@ -53,5 +53,5 @@ Secure single sign on
 ::::::
 
 ::: important Lando
-We introduced their development team to [Lando](https://lando.dev/) to aid and easily spin up development environments.  
+We introduced their development team to [Lando](https://lando.dev/) to aid and easily spin up development environments.
 :::
