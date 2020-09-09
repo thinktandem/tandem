@@ -41,6 +41,8 @@ tags:
   - user-research
   - ux
   - design
+  - magic
+
 
 link2Original: true
 originalLink: "https://pantheon.io/localdev"

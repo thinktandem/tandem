@@ -287,7 +287,7 @@ module.exports = {
       'magic': {
         title: 'We make magic.',
         byline: 'Here are some Tandem greatest hits for which we are particularly proud.',
-        pic: '/images/tags/magic-logo.webp',
+        pic: '/images/tags/magic-logo.gif',
       },
       'testing': {
         title: 'Test. Test. Test.',

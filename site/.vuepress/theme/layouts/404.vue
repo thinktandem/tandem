@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-fourohfour">
-    <h1>404</h1>
+    <h1>404 - Not found</h1>
 
     <blockquote>
       <p>{{ chosen.message }}</p>
@@ -63,7 +63,7 @@ const msgs = [
   },
   {
     author: 'BSB',
-    message: `'Tell me why I can't be there where you are?`,
+    message: `Tell me why I can't be there where you are?`,
     vid: 'aBt8fN7mJNg',
   },
   {
@@ -85,6 +85,11 @@ const msgs = [
     author: 'The Beatles',
     message: `He's a real nowhere man`,
     vid: '8scSwaKbE64',
+  },
+  {
+    author: 'The Zombies',
+    message: `She's not there`,
+    vid: 'it68QbUWVPM',
   },
 ];
 

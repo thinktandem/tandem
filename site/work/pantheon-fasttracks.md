@@ -36,7 +36,6 @@ tags:
   - kalabox
   - development
   - training
-  - magic
 ---
 
 ::: point Summary.
