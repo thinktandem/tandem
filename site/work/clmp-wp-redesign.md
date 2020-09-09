@@ -28,6 +28,8 @@ date: "2020-04-02"
 tags:
   - migrations
   - wordpress
+  - php
+  - development
   - design
   - ux
   - user-research

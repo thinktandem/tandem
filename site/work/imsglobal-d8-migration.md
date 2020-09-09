@@ -26,6 +26,8 @@ theme:
 date: "2019-10-31"
 tags:
   - drupal
+  - php
+  - development
   - higher-ed
   - non-profit
   - support
