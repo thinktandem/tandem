@@ -83,13 +83,14 @@ export default {
         fields: [
           {name: 'email', value: this.email},
           {name: 'interests_last_form_submittal', value: this.tags},
+          {name: 'hs_lead_status', value: 'Passive Interest'},
+          {name: 'lead_source', value: 'Mailing List'},
         ],
         context: {
           pageUri: `https://thinktandem.io${this.$page.path}`,
           pageName: this.$page.title,
         },
       });
-
       // Prepare the request and response
       xhr.open('POST', url);
       xhr.setRequestHeader('Content-Type', 'application/json');

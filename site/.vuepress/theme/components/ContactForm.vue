@@ -86,6 +86,7 @@ export default {
       name: null,
       message: null,
       showForm: true,
+      tag: null,
     };
   },
   methods: {
@@ -95,6 +96,11 @@ export default {
       this.buttonText = 'Sending...';
       this.error = [];
 
+      // Add in tags if we can
+      if (this.$page.frontmatter && this.$page.frontmatter.tag) {
+        this.tag = Array.isArray(this.$page.frontmatter.tag) ? this.$page.frontmatter.tag.join(', ') : this.$page.frontmatter.tag;
+      }
+
       // Get ready
       const xhr = new XMLHttpRequest();
       const url = 'https://api.hsforms.com/submissions/v3/integration/submit/6864374/07fc0cf1-4a35-4d3d-b2ec-d1586a4494da';
@@ -103,10 +109,14 @@ export default {
           {name: 'email', value: this.email},
           {name: 'firstname', value: this.name},
           {name: 'message', value: this.message},
+          {name: 'hs_lead_status', value: 'Lead'},
+          {name: 'lead_source', value: 'Contact Form'},
+          {name: 'interests_last_form_submittal', value: this.tag},
+          {name: 'last_conversion_point', value: this.$page.title},
         ],
         context: {
-          pageUri: 'https://thinktandem.io/contact',
-          pageName: 'Contact Us',
+          pageUri: `https://thinktandem.io${this.$page.path}`,
+          pageName: this.$page.title,
         },
       });
 

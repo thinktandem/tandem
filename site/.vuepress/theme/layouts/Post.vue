@@ -152,46 +152,46 @@ export default {
 <style lang="stylus">
 .content-wrapper-tandem
   &.content-wrapper-post
-  table
-    margin-top 2em
-    margin-bottom 2em
-  .post-content
-    margin-top 3.14em
-    margin-bottom 3.14em
-  .custom-block
-    margin-top 2em
-    margin-bottom 2em
-    &.point
-      border-bottom 1px solid $borderColor
-      border-top 0
-      padding 2em 0
-      &.tagz
-        margin-bottom 0
-        margin-top 0
-        border-bottom 0
-        .post-tags
-          width 100%
-          ul
-            margin 0
-            list-style none
-            display flex
-            margin 0
-            padding 0
-            flex-wrap wrap
-            @media (max-width: $MQMobile)
-              justify-content center
-            li
-              margin-bottom 1em
-      p
-        &.custom-block-title
-          font-weight 300
-          font-size 1.33rem
-          letter-spacing -1.04px
-          color inherit
-          small
-            font-size .75em
-            color $darkTextColor
-            font-family "GalaxieCopernicus", PT Serif, Serif
+    table
+      margin-top 2em
+      margin-bottom 2em
+    .post-content
+      margin-top 3.14em
+      margin-bottom 3.14em
+    .custom-block
+      margin-top 2em
+      margin-bottom 2em
+      &.point
+        border-bottom 1px solid $borderColor
+        border-top 0
+        padding 2em 0
+        &.tagz
+          margin-bottom 0
+          margin-top 0
+          border-bottom 0
+          .post-tags
+            width 100%
+            ul
+              margin 0
+              list-style none
+              display flex
+              margin 0
+              padding 0
+              flex-wrap wrap
+              @media (max-width: $MQMobile)
+                justify-content center
+              li
+                margin-bottom 1em
+        p
+          &.custom-block-title
+            font-weight 300
+            font-size 1.33rem
+            letter-spacing -1.04px
+            color inherit
+            small
+              font-size .75em
+              color $darkTextColor
+              font-family "GalaxieCopernicus", PT Serif, Serif
 
 .post-theme-content
   font-size 16px

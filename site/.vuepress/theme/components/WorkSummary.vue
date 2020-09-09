@@ -12,6 +12,7 @@
     >
       <style>
         .work.{{ page.key }} .work-title {color: {{ textColor }};}
+        .work.{{ page.key }} p.work-summary {color: {{ textColor }};}
         .work.{{ page.key }} .work-logo img {filter: {{ logoChanger }}; height: {{ logoHeight }}px;}
         .work.{{ page.key }}:hover img {filter: {{ logoHover }}; height: {{ logoHeight }}px;}
         .work.{{ page.key }}:hover .work-title {color: {{ theme.headerHover }};}

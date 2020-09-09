@@ -81,6 +81,8 @@ export default {
       font-family GalaxieCopernicus, PT Serif, serif
       font-weight 400
       width 75%
+      @media (max-width: $MQMobile)
+        font-size 1.2rem
     position relative
     background $lightGrey
     text-align center
