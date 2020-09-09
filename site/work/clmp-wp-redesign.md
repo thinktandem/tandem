@@ -44,22 +44,22 @@ tags:
 ---
 
 ::: point Summary.
-The Community of Literary Magazines and Presses had an outdated and poorly functioning WordPress site that no longer easily served their members' needs. Together we went through a thorough discovery phase and overhauled the user experience to focus on simplicity and mobile. The result was a beautiful, responsive, fast and navigable website.
+The Community of Literary Magazines and Presses (CLMP) had an outdated and poorly functioning WordPress site that no longer served their members' needs. Through interactive discovery exercises, we crafted an elegant, mobile-friendly user experience. The result was a beautiful, responsive, fast and navigable website.
 :::
 
-> Our members were increasingly using mobile and now our site reflects that reality.
+> Our members are increasingly using mobile. Now our site reflects that reality.
 
 :::::: col-wrapper
-::: col-half Migration I:
-We wrote a custom migration plugin to extract and transform all the old data to our new and performance optimized architecture.
+::: col-half Step 1
+We wrote a custom migration plugin to extract and transform old data to our new performance-optimized architecture.
 :::
 
-::: col-half Migration II:
+::: col-half Step 2
 :::big
-50k+ items
+50k+ items migrated
 :::
 ::::::
 
 ::: important UX Overhaul.
-After a close discovery process with CLMP we generated wireframes, component designs, and mockups to help steer the new design.
+After an intimate discovery process with CLMP we generated wireframes, component designs, and mockups to help steer the new design.
 :::
