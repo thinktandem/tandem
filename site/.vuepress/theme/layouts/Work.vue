@@ -82,12 +82,15 @@ export default {
     return {
       clients: [
         {name: 'Academy of American Poets', link: '/work/poets-redesign/', logo: '/images/logos/poets.png'},
-        {name: 'Pantheon', link: 'https://pantheon.io/localdev', logo: '/images/logos/pantheon-logo.png'},
-        {name: 'University of San Francisco', link: '/work/usf-d8-migration/', logo: '/images/logos/usf.png'},
-        {name: 'Outsell', link: '/work/outsell-tethys/', logo: '/images/logos/outsell.png'},
+        {name: 'Brandywine Conservancy & Museum of Art', link: '/work/brandywine-d7-support/', logo: '/images/logos/brandywine.png'},
         {name: 'Chenmed', link: '/work/chenmed-d8-redesign/', logo: '/images/logos/chenmed.png'},
         {name: 'CLMP', link: '/work/clmp-wp-redesign/', logo: '/images/logos/clmp.png'},
+        {name: 'Outsell', link: '/work/outsell-tethys/', logo: '/images/logos/outsell.png'},
+        {name: 'Pantheon', link: 'https://pantheon.io/localdev', logo: '/images/logos/pantheon-logo.png'},
+        {name: 'Platform.sh', logo: '/images/logos/platform.sh.png'},
+        {name: 'SF-Marin Food Bank', link: '/work/sffood-d6-support/', logo: '/images/logos/sfmfb.png'},
         {name: 'Twinstar', link: '/work/twinstar-discovery/', logo: '/images/logos/twinstar.png'},
+        {name: 'University of San Francisco', link: '/work/usf-d8-migration/', logo: '/images/logos/usf.png'},
       ],
       featuredClients: [],
     };
