@@ -140,7 +140,6 @@ export default {
           {name: 'DevOps', tag: 'devops'},
           {name: 'Docker', tag: 'docker'},
           {name: 'Lando', tag: 'lando'},
-          {name: 'Kalabox', tag: 'kalabox'},
         ],
       ],
       other: [[
