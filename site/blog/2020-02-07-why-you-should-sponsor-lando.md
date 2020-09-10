@@ -15,6 +15,7 @@ tags:
   - development
   - lando
   - workflows
+  - pirog
 ---
 
 Sponsoring Lando is more than just supporting a free and open source local development tool. It's supporting a community and alliance of developers dedicated to making #devlife easier for us all.

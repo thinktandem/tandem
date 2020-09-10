@@ -6,9 +6,10 @@ date: 2020-06-30
 summary: Setting up, testing, and writing Drupal patches can be a confusing gauntlet to the uninitiated.
 
 tags:
-- devops
-- development
-- lando
+  - devops
+  - development
+  - lando
+  - serundeputy
 
 author: "Geoff St. Pierre"
 id: serundeputy
