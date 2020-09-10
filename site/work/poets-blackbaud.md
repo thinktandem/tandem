@@ -36,9 +36,9 @@ tags:
 ---
 
 ::: point Summary.
-The Academy of American Poets had been utilizing various Blackbaud products for well over a decade. The academy’s internal staff had the diligent task of maintaining all records within Blackbaud. This ate up considerable time and they needed to find a better way; insert Tandem.
+Maintaining member records within the Blackbaud donor management suite was eating up hundreds staff hours for the Academy of American Poets. Tandem found a way to end the busy work by automating membership updates via the Blackbaud SKY API.
 :::
 
 ::: important Consolidated User Management.
-Tandem built the [Blackbaud SKY API module](https://www.drupal.org/project/blackbaud_sky_api) to provide a universal way for Drupal sites to communicate and sync with a Blackbaud instance. This module has allowed Poets staff and constituents to update their user data in single place, the poets.org website, knowing data is two-way synced to Blackbaud freeing up tons of time to focus more on growing memberships.
+Tandem built the [Blackbaud SKY API module](https://www.drupal.org/project/blackbaud_sky_api) to provide a universal way for Drupal sites to communicate and sync with a Blackbaud instance. This module has allowed Poets staff and constituents to update their user data in single place, the Poets.org website, knowing data is two-way synced to Blackbaud freeing up tons of time to focus more on growing memberships.
 :::

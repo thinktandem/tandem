@@ -36,17 +36,17 @@ tags:
   - migrations
 ---
 ::: point Summary.
-IMS Global had a complicated Drupal 7 site that they planned to migrate to Drupal 8.  The site would be completely rearchitected on the backend and their development needed to bring in an agency with expertise in the area.  We took the information architecture plans from their development and executed one of the most complicated Drupal 8 migrations we have done to date.  Hundreds of thousands of nodes were split into varying data structures in the end. 
+The talented IMS Global development team was well on its way to rebuilding their complicated Drupal 7 site in Drupal 8, but knew that building expertise in Drupal data migrations might extend their project by months. Working hand-in-hand, Tandem was able to take IMS's information architecture plans and complete an intricate Drupal 8 migration. In the process, hundreds of thousands of node objects were split into varying Drupal 8 data structures.
 :::
 
 :::::: col-wrapper
 ::: col-half Fact 1:
-Complicated migration of hundreds of thousands of entities
+We provided IMS's development team with a programmatic migration process that could be run on demand. The code was transparent enough that, with little Drupal 8 migration experience, the IMS team was able to modify it as needed and use it to complete their project.
 :::
 
 ::: col-half Fact 2:
 :::big
-Handed off repeatable migration workflow
+200K+ entities
 :::
 ::::::
 
