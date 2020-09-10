@@ -107,7 +107,7 @@ export default {
     .hero-right-content
       width 49%
       .video-responsive
-        margin 0
+        margin-top 17%
     .hero-left-content
       width 80%
       .hero-summary
