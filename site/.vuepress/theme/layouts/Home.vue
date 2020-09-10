@@ -65,12 +65,6 @@
 <script>
 import HeroFlex from '@theme/components/HeroFlex';
 
-// LAZY LOAD VIA: <img data-src="image.png">
-
-/*
-  when moving up from bottom move to last slide and reset autoScroll/fitToSection
-*/
-
 export default {
   components: {HeroFlex},
   data() {
@@ -141,7 +135,7 @@ export default {
           },
           props: {
             title: 'Drupal Migration Webinar.',
-            byline: 'Learn how to debug a Drupal 8 to 9 migration with Lando.',
+            byline: 'Learn how to debug a Drupal 7 to 9 migration with Lando.',
             video: 'C1lhgObpHd8',
             link: '/blog/2020/04/28/lando-migration-webinar-part-1-followup/',
             type: 'recent webinar',
@@ -210,9 +204,12 @@ export default {
     const toggle = document.getElementById('nav_toggle');
     toggle.classList.remove('greybeard');
     // Get a random message every 5000 seconds
+    /*
     setInterval(() => {
       this.message = Math.floor(Math.random() * 2);
     }, 5000);
+    */
+    this.message = 0;
   },
   methods: {
     afterLoad(origin, destination, direction) {
