@@ -34,19 +34,19 @@ tags:
 ---
 
 ::: point Summary.
-Brandywine already had a well built site.  They were looking for an agency to help them with small adjustments and security updates.  We keep their site up to date with all security and regular updates.  We help them with any changes they may need with the site on request.  We also converted their site to use https and got their site on a CDN as well.
+Brandywine needed a reliable partner for ongoing development and security updates. Tandem proactively updates Brandywine's Drupal 7 website to ensure security, but also helps with on-demand requests for support.  In the process, we also converted their site to use SSL and improved performance by installing a CDN.
 :::
 
-> Keeping our site up to date ensures our visitors have a good experience with our site.
+> Keeping our site up-to-date ensures we don't get hacked and that our visitors have a good experience.
 
 :::::: col-wrapper
-::: col-half Fact I:
-Core and Module Updates
+::: col-half Secure the Perimeter
+Proactive security updates for the Drupal CMS and encrypted traffic with SSL.
 :::
 
-::: col-half Fact II:
+::: col-half Performance Boost
 :::big
-Converted site to use HTTPS
+20% faster page loads.
 :::
 ::::::
 

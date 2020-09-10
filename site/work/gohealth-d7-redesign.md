@@ -43,15 +43,14 @@ tags:
 ---
 
 ::: point Summary.
-GoHealth's site was designed to help patients find centers as quickly as possible, but failed to communicate why GoHealth should be their urgent care provider of choice. With a targeted redesign of their home page, regional landing pages, and center pages, GoHealth planned to not only make it easier to find their centers, but better inform patients on the benefits of their modern urgent care services.  After vetting wireframes and mockups with GoHealth's team, prototypes validated by user testing, development began.  The launch was released in phases to deliver value to GoHealth and its patients as quickly as possible.
+GoHealth's site was designed to help patients find centers as quickly as possible, but failed to communicate why GoHealth should be their urgent care provider of choice. With a targeted redesign of their home page, regional landing pages, and center pages, GoHealth planned to not only make it easier to find their centers, but better inform patients on the benefits of their modern urgent care services.
 :::
 
-> Patients can now easily locate services and clinics close to them
+> Patients can now easily locate services and clinics close to them.
 
 :::::: col-wrapper
 ::: col-half Fact I:
 -15%+ Bounce Rate Since Launch
-
 :::
 
 ::: col-half Fact II:
