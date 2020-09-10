@@ -54,11 +54,14 @@ tags:
 ---
 
 ::: point Summary.
-Poets.org is a elegant resource that connects users to over a million poets, poems, educational resources, event and more. With a large member-base and many more casual visitors, the site needs to be able to reach a huge audience, keeping our focus on user experience, accessibility and on brand representation.
+Poets.org needed a redesign to better connect with its dedicated members and casual visitors. Tandem delivered with a Nuxt.js/Drupal 8-powered website, with a new design focused on user experience, accessibility and modern brand representation.
 :::
 
+> Our first challenge was understanding Poets.org's audience. Poets.org had a huge emerging audience of younger millenial and Gen Z browsers; this influence our focus on some of the more dynamic colors in the Poets.org palette.
+> - Alec Reynolds, Lead Strategist
+
 ::: important Ageless poetry. No boundaries.
-Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better.
+The old Poets.org site lacked a responsive design and suffered from crippling performance problems. After supporting the legacy site for a couple years, we knew that a bottom-up rebuild was necessary. We chose the NuxtJS as a frontend framework that could serve content to all devices with lightning-fast speed. With a Drupal 8 content API, future upgrades to the website should be much less costly. Poetry lovers everywhere, rejoice: your home on the internet just got a lot better.
 :::
 
 :::::: col-wrapper
@@ -74,5 +77,5 @@ Poetry lovers everywhere, rejoice: your home on the internet just got a lot bett
 ::::::
 
 ::: important Research.
-Before design and development Tandem did tons of stakeholder interviws, crafter used personas and did competitive analysis to figure out the quickest way to reach a broader audience.
+Before design and development Tandem did tons of stakeholder interviews, crafting user personas and performing competitive analysis to figure out the quickest way to reach a broader audience.
 :::

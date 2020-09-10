@@ -34,7 +34,7 @@ tags:
 ---
 
 ::: point Summary.
-InterACT’s website was slow and had a few small bugs.  They needed an agency to help them on an as needed basis with their WordPress site.  We moved the hosting of the site from GoDaddy to Pantheon to better manage the site and help with performance.  We fixed a few small bugs on the site and helped keep the core and plugins up to date.
+InterACT’s website was slow and had a few small bugs.  They needed an agency to help them with ongoing development of their WordPress site.  We moved the hosting of the site from GoDaddy to [Pantheon](https://pantheon.io/) to better manage the site and help with performance.  We fixed a few small bugs on the site and helped keep their website updated.
 :::
 
 > Our site is so much faster after moving it to Pantheon!
@@ -51,5 +51,5 @@ Migrated site to Pantheon
 ::::::
 
 ::: important Bug Fixes
-We were able to address and fix numerous bug fixes that came with their all in one theme kit. 
+We were able to address and fix numerous bug fixes that came with their all in one theme kit.
 :::

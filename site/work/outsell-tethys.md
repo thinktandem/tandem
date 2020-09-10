@@ -50,14 +50,14 @@ Outsell’s Intelligence Platform relied upon a proprietary platform from a 3rd 
 ::: important Unlocking vender lock-in.
 In our analysis we found that Outsell relied upon their external vendor for two primary services: a Salesforce integration that helped them authenticate users and an API that provided access to Outsell's powerful research database.
 
-After replacing the convoluted Salesforce-tied login with Auth0, we chose to expose Outsell’s primary PostgresDB via a DreamFactory API. Working in concert with Outsell's development team, we refactored the Intelligence Platform to pull data from this new API.
+After replacing the convoluted [Salesforce-tied login with Auth0](/work/outsell-auth0), we chose to expose Outsell’s primary PostgresDB via the open source DreamFactory API. Working in concert with Outsell's development team, we refactored the Intelligence Platform to pull data from this new API.
 
 When their contract expired they seamlessly switched over to their new system without a hitch.
 :::
 
 :::::: col-wrapper
 ::: col-half Plug-and-play API:
-DreamFactory
+DreamFactory provided an easy way to expose Outsell's legacy database via a modern API, no licensing fees required.
 :::
 
 ::: col-half Content Migrated:

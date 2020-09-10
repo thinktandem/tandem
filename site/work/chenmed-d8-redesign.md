@@ -45,7 +45,7 @@ tags:
 ---
 
 ::: point Summary.
-ChenMed is on a mission to restore the doctor-patient relationship in modern healthcare however their flagship web property wasn’t doing a good enough job communicating that mission to physicians and patients. To fix this we developed a robust components driven site that better incorporated ChenMed’s brand and mission while allowing the marketing team far more flexibility in building landing pages and resources to tell the Value-Based Care story.
+ChenMed is on a mission to restore the doctor-patient relationship in modern healthcare, but their flagship web property wasn’t doing a good enough job communicating that mission to physicians and patients. We worked with ChenMed to design and develop a robust component-driven site that better incorporated ChenMed’s brand, while allowing the marketing team far more flexibility in building new pages to tell ChenMed's value-based care story.
 :::
 
 > Components empower our marketing team to better tell our story the way we want while always maintaining brand consistency.
@@ -57,10 +57,10 @@ ChenMed is on a mission to restore the doctor-patient relationship in modern hea
 
 ::: col-half Tech:
 :::big
-Drupal 8
+Drupal 8 + Vue.js
 :::
 ::::::
 
 ::: important Doing it fast and right.
-ChenMed needed results fast so we worked closely with their marketing and IT deparments to redesign the site visually, architecturally and technically.
+ChenMed needed results fast so we worked closely with their marketing and IT departments to redesign the site visually, architecturally and technically.
 :::

@@ -42,7 +42,7 @@ tags:
 ---
 
 ::: point Summary.
-Outsell Inc. was looking to migrate from a costly, proprietary and hard-to-maintain single sign-on solution that made it difficult to alter existing web properties and introduce new ones. We standardized their stack on Auth0's SSO as a service solution, allowing Outsell to focus on their own business logic instead of continually reinventing the wheel.
+Outsell Inc. was looking to migrate from a costly, proprietary and hard-to-maintain single sign-on solution (SSO) that made it difficult to alter existing web properties and introduce new ones. We standardized their stack on Auth0's SSO-as-a-service solution, allowing Outsell to focus on their own business logic instead of continually reinventing the wheel.
 :::
 
 > Tandem has been instrumental in helping us find a better path forward with our technology.
@@ -55,7 +55,7 @@ After an extensive discovery and audit of Outsell's existing web properties, we 
 2. **Consolidate authorization logic** - This reduced the overhead of maintaining Salesforce driven authorization logic on a per-client basis in favor of a single and consistent authorization pipeline that could be ingested immediately by *any* client without massive set up costs.
 3. **Write test suite** - This provided the dual benefit of limiting the introduction of bugs into a *BUSINESS CRITICAL* part of Outsell's tech stack and providing a mechanism to easily diagnose and banish any bugs that slipped through the cracks.
 
-The benefits of this engagement were immediately obvious when we built Outsell's Data Platform nd were able to immediately use this new authorization pipeline.
+The benefits of this engagement were immediately obvious when we built Outsell's Data Platform and were able to immediately use this new authorization pipeline.
 :::
 
 :::::: col-wrapper
