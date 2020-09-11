@@ -88,7 +88,7 @@ module.exports = {
         image: 'https://thinktandem.io/images/hero-tandem-pink.png',
       },
     },
-    'vuepress-plugin-canonical': {
+    'canonical': {
       baseURL: 'https://thinktandem.io',
       stripExtension: true
     },
