@@ -249,12 +249,17 @@ export default {
         color #000
       &.important
         padding 7em 0
-        margin-bottom 2em
         border-top 1px solid $borderColor
+        margin-bottom 2em
+        @media (max-width: $MQMobile)
+          padding 4em 0
+          margin-bottom 0
         p
           &.custom-block-title
             font-size 3.64em
             font-family GalaxieCopernicus, PT Serif, serif
+            @media (max-width: $MQMobile)
+              font-size 2.1em
         &.remote-team
           margin-top 2em
           border-top 1px solid $borderColor

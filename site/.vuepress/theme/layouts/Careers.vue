@@ -26,23 +26,15 @@
 
     <div class="custom-block important values-text">
       <p class="custom-block-title">
-        The above five. In five sentences.
+        The above five. <br>In five sentences.
       </p>
-      <p>
-        1. Putting employees first means investing in their success and well being so they can invest the same in our clients.
-        <br>
-        <br>
-        2. Building common purpose means more than just rowing in the same direction it means committing to one another even if you disagree.
-        <br>
-        <br>
-        3. Maximizing flow means limiting distractions like unneccesary meetings so you can focus on what matters: <em>the actual work.</em>
-        <br>
-        <br>
-        4. Acting like an adult means giving people the benefit of the doubt, speaking honestly and directly with another and apologizing when you've made a mistake.
-        <br>
-        <br>
-        5. Giving a shit means taking pride in your work and pulling your own weight while also helping others who are having an off-day.
-      </p>
+      <ol>
+        <li>Putting employees first means investing in their success and well-being so they can invest the same in our clients.</li>
+        <li>Building common purpose means more than just rowing in the same direction it means committing to one another even if you disagree.</li>
+        <li>Maximizing flow means limiting distractions like unneccesary meetings so you can focus on what matters: <em>the actual work.</em></li>
+        <li>Acting like an adult means giving people the benefit of the doubt, speaking honestly and directly with another and apologizing when you've made a mistake.</li>
+        <li>Giving a shit means taking pride in your work and pulling your own weight while also helping others who are having an off-day.</li>
+      </ol>
     </div>
 
     <div class="custom-block important remote-team">
@@ -187,14 +179,21 @@ export default {
         padding 7em 0
         border-bottom 1px solid $borderColor
         margin-bottom 2em
+        @media (max-width: $MQMobile)
+          padding 4em 0
+          margin-bottom 0
         p
           &.custom-block-title
             font-size 3.64em
             font-family GalaxieCopernicus, PT Serif, serif
+            @media (max-width: $MQMobile)
+              font-size 2.1em
         &.remote-team
           margin-top 2em
           border-top 0
           border-bottom 0
+          br
+            display block
       &.point
         border-bottom 1px solid $borderColor
         margin-bottom 2em

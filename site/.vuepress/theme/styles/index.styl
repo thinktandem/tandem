@@ -232,6 +232,20 @@ ul
       &.custom-block-title
         font-size 3.64em
         font-family GalaxieCopernicus, PT Serif, serif
+        @media (max-width: $MQMobile)
+          font-size 3em
+    ol, ul
+      margin 1em 1em
+      li
+        margin-bottom 1em
+        font-weight 300
+        font-size 1.44rem
+        letter-spacing -1.04px
+    br
+      display contents
+      @media (max-width: $MQMobile)
+        display block
+
 
   &.byline
     p
