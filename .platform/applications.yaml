@@ -17,7 +17,7 @@
         root: "_docs"
         index:
           - "index.html"
-        expires: 24h
+        expires: 1y
         passthru: "/404.html"
         scripts: true
         allow: false
@@ -79,7 +79,7 @@
         root: "_site"
         index:
           - "index.html"
-        expires: 24h
+        expires: 1y
         passthru: "/404.html"
         scripts: true
         allow: false
