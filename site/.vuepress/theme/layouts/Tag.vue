@@ -3,6 +3,7 @@
     <SectionHeader
       :title="`${tag}.`"
       :pic="pic"
+      :radius="radius"
     >
       <h2>{{ title }}</h2>
       <div v-if="hasByline">
@@ -42,6 +43,13 @@ export default {
     },
     pic() {
       return (this.hasPic) ? this.$themeConfig.tags[this.tag].pic : null;
+    },
+    radius() {
+      if (this.hasMeta && this.$themeConfig.tags[this.tag].radius) {
+        return this.$themeConfig.tags[this.tag].radius;
+      } else {
+        return '0%';
+      }
     },
     tag() {
       return this.$currentTags.key;

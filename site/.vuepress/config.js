@@ -146,41 +146,49 @@ module.exports = {
         title: 'Alec Reynolds',
         byline: 'CEO, Co-Founder',
         pic: '/images/people/alec-sm.jpg',
+        radius: '100%',
       },
       'bgonz': {
         title: 'Brian Gonzales',
         byline: 'Founder, PAIRODIME, Guest Blogger',
         pic: '/images/people/brian-gonzales.jpg',
+        radius: '100%',
       },
       'donnab': {
         title: 'Donna Bungard',
         byline: 'Project Manager',
         pic: '/images/people/donna.jpg',
+        radius: '100%',
       },
       'dustinl': {
         title: 'Dustin LeBlanc',
         byline: 'Technical Project Manager',
         pic: '/images/people/dustin-sm.jpg',
+        radius: '100%',
       },
       'johno': {
         title: 'John Ouellet',
         byline: 'Senior Engineer',
         pic: '/images/people/john-sm.jpg',
+        radius: '100%',
       },
       'mikem': {
         title: 'Mike Milano',
         byline: 'Senior Architect',
         pic: '/images/people/milano.jpg',
+        radius: '100%',
       },
       'pirog': {
         title: 'Mike Pirog',
         byline: 'CTO, Co-Founder',
         pic: '/images/people/mike-sm.jpg',
+        radius: '100%',
       },
       'serundeputy': {
         title: 'Geoff St. Pierre',
         byline: 'Senior Engineer',
         pic: '/images/people/gff-sm.jpg',
+        radius: '100%',
       },
 
       // Strategy
@@ -339,7 +347,7 @@ module.exports = {
       'lando': {
         title: 'Over 11,000 strong and growing.',
         byline: 'We built one of the world\'s most popular local dev tools and help hosting companies, Fortune 500 companies, and efficiency-minded teams use it.',
-        pic: '/images/logo-lando-pink-icon.png',
+        pic: '/images/tags/lando-logo.png',
       },
       'laravel': {
         title: 'Making complex applications with beautiful code.',

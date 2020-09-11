@@ -3,6 +3,7 @@
     <SectionHeader
       :title="`${tag}.`"
       :pic="pic"
+      :radius="radius"
     >
       <h2>{{ title }}</h2>
       <div>
@@ -145,6 +146,9 @@ export default {
     },
     gridExists(index) {
       return !this.grids[index] !== undefined;
+    },
+    radius() {
+      return this.$frontmatter.imageRadius || '0%';
     },
     relatedTags() {
       return this.$frontmatter.relatedTags.map(tag => ({name: tag}));
