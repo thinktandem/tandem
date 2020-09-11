@@ -48,7 +48,7 @@
           v-for="slide in slides"
           :key="slide.id"
           class="section"
-          :style="checkWebP(slide.background)"
+          :style="slide.background"
         >
           <component
             :is="slide.component"
@@ -211,6 +211,11 @@ export default {
     }, 5000);
     */
     this.message = 0;
+
+    for (let i = 0; i < this.slides.length; i++) {
+      let img = this.slides[i].background["background-image"];
+      this.slides[i].background["background-image"] = utils.checkForWebp(img);
+    }
   },
   methods: {
     afterLoad(origin, destination, direction) {
@@ -242,10 +247,6 @@ export default {
     breakFree() {
       this.options.autoScrolling = false;
       this.options.fitToSection = false;
-    },
-    checkWebP(styles) {
-      styles['background-image'] = utils.checkForWebp(styles['background-image']);
-      return styles;
     },
   },
   jsonld() {
