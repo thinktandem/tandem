@@ -3,11 +3,14 @@ module.exports = {
   description: 'Tandem is a full service digital agency that works closely with you to get shit done and get it done right.',
   head: [
     ['link', {rel: 'icon', href: '/favicon.png'}],
-    ['link', {rel: 'stylesheet', href: '/styles/overrides.css'}],
     ['link', {rel: 'stylesheet', href: '//unpkg.com/fullpage.js/dist/fullpage.min.css'}],
-    ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap'}],
-    ['script', {src: '//js.hs-scripts.com/6864374.js'}],
-    ['script', {src: '/js/mautic-tracking.js'}],
+    ['link', {rel: 'preload', href: '/fonts/poppins-v12-latin-600.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
+    ['link', {rel: 'preload', href: '/fonts/poppins-v12-latin-900.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
+    ['link', {rel: 'preload', href: '/fonts/GalaxieCopernicus-Book.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
+    ['link', {rel: 'preload', href: '/fonts/GalaxieCopernicus-Medium.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
+    ['link', {rel: 'preconnect', href: '//js.hs-scripts.com/6864374.js', crossorigin: 'true'}],
+    ['link', {rel: 'preconnect', href: 'https://www.google-analytics.com/analytics.js', crossorigin: 'true'}],
+    ['script', {src: '//js.hs-scripts.com/6864374.js', defer: true, async: true}],
   ],
   plugins: {
     '@vuepress/blog': {
@@ -90,6 +93,10 @@ module.exports = {
         favicon: 'https://thinktandem.io/favicon.png',
         image: 'https://thinktandem.io/images/hero-tandem-pink.png',
       },
+    },
+    'canonical': {
+      baseURL: 'https://thinktandem.io',
+      stripExtension: true,
     },
   },
   theme: '@vuepress/theme-blog',

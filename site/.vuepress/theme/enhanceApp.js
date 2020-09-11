@@ -3,10 +3,16 @@
  */
 
 import VueJsonLD from 'vue-jsonld';
+import VueLazyload from 'vue-lazyload';
 
 export default ({ Vue, options, router, siteData, isServer }) => { // eslint-disable-line
   // Load in JSONLD
   Vue.use(VueJsonLD);
+
+  // Add in lazyload
+  Vue.use(VueLazyload, {
+    lazyComponent: true,
+  });
 
   // We have to do this non-import to obey eslint and also
   // https://github.com/alvarotrigo/vue-fullpage.js/issues/126
