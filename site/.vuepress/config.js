@@ -90,7 +90,7 @@ module.exports = {
     },
     'canonical': {
       baseURL: 'https://thinktandem.io',
-      stripExtension: true
+      stripExtension: true,
     },
   },
   theme: '@vuepress/theme-blog',
