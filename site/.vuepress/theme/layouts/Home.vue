@@ -64,6 +64,7 @@
 
 <script>
 import HeroFlex from '@theme/components/HeroFlex';
+import utils from '@theme/utils.js';
 
 export default {
   components: {HeroFlex},
@@ -84,7 +85,7 @@ export default {
           component: HeroFlex,
           id: 'clmp',
           background: {
-            'background-image': this.checkWebP('url(/images/work/clmp-bg.png)'),
+            'background-image': this.checkWebP('url(/images/work/clmp-bg.png)', new Image()),
             'background-position': '100% 20%',
             'background-size': 'cover',
             'background-repeat': 'no-repeat',
@@ -106,7 +107,7 @@ export default {
           component: HeroFlex,
           id: 'chenmed',
           background: {
-            'background-image': this.checkWebP('url(/images/work/chenmed-bg.png)'),
+            'background-image': this.checkWebP('url(/images/work/chenmed-bg.png)', new Image()),
             'background-position': '100% 20%',
             'background-size': 'cover',
             'background-repeat': 'no-repeat',
@@ -128,7 +129,7 @@ export default {
           component: HeroFlex,
           id: 'webinar',
           background: {
-            'background-image': this.checkWebP('url(/images/work/space.jpg)'),
+            'background-image': this.checkWebP('url(/images/work/space.jpg)', new Image()),
             'background-position': '100% 20%',
             'background-size': 'cover',
             'background-repeat': 'no-repeat',
@@ -151,7 +152,7 @@ export default {
           component: HeroFlex,
           id: 'localdev',
           background: {
-            'background-image': this.checkWebP('url(/images/work/whypantheon-resized-4.jpg)'),
+            'background-image': this.checkWebP('url(/images/work/whypantheon-resized-4.jpg)', new Image()),
             'background-position': '100% 20%',
             'background-size': 'cover',
             'background-repeat': 'no-repeat',
@@ -173,7 +174,7 @@ export default {
           component: HeroFlex,
           id: 'careers',
           background: {
-            'background-image': this.checkWebP('url(/images/work/space.jpg)'),
+            'background-image': this.checkWebP('url(/images/work/space.jpg)', new Image()),
             'background-position': '100% 20%',
             'background-size': 'cover',
             'background-repeat': 'no-repeat',
@@ -242,9 +243,8 @@ export default {
       this.options.autoScrolling = false;
       this.options.fitToSection = false;
     },
-    checkWebP(image) {
-      let supported = document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') === 0;
-      return supported ? image.replace(/.png|.jpg|.jpeg/gi, '.webp') : image;
+    checkWebP(url, image) {
+      return utils.checkForWebp(url, image);
     },
   },
   jsonld() {
