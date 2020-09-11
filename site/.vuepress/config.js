@@ -254,7 +254,7 @@ module.exports = {
       },
       'migrations': {
         title: 'We move the web.',
-        byline: 'We\'ve migrated millions of web pages, helping move complex, big websites for world-renowned brands to the next best thing.',
+        byline: 'We\'ve migrated millions of web pages, helping move complex enterprise websites for world-renowned brands to the next big thing.',
         pic: '/images/tags/double-arrows.png',
       },
       'support': {
