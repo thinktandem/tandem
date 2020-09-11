@@ -3,11 +3,8 @@ module.exports = {
   description: 'Tandem is a full service digital agency that works closely with you to get shit done and get it done right.',
   head: [
     ['link', {rel: 'icon', href: '/favicon.png'}],
-    ['link', {rel: 'stylesheet', href: '/styles/overrides.css'}],
     ['link', {rel: 'stylesheet', href: '//unpkg.com/fullpage.js/dist/fullpage.min.css'}],
-    ['link', {rel: 'stylesheet', href: '//fonts.googleapis.com/css2?family=Poppins:wght@600;900&display=swap'}],
-    ['script', {src: '//js.hs-scripts.com/6864374.js'}],
-    ['script', {src: '/js/mautic-tracking.js'}],
+    ['script', {src: '//js.hs-scripts.com/6864374.js', defer: true, async: true}],
   ],
   plugins: {
     '@vuepress/blog': {
