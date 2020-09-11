@@ -61,13 +61,8 @@ const resolveTags = tags => {
 };
 
 // Checks if webP is supported.
-const checkForWebp = (image) => {
-  let img = new Image();
-  // Checks for lossy webp.
-  img.src = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA';
-  let supported = img.onload = () => {
-    return (img.width > 0) && (img.height > 0);
-  };
+const checkForWebp = image => {
+  let supported = document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') === 0;
   return supported ? image.replace(/.png|.jpg|.jpeg/gi, '.webp') : image;
 };
 
