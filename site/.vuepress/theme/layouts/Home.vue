@@ -213,8 +213,8 @@ export default {
     this.message = 0;
 
     for (let i = 0; i < this.slides.length; i++) {
-      let img = this.slides[i].background["background-image"];
-      this.slides[i].background["background-image"] = utils.checkForWebp(img);
+      let img = this.slides[i].background['background-image'];
+      this.slides[i].background['background-image'] = utils.checkForWebp(img);
     }
   },
   methods: {
