@@ -149,7 +149,10 @@ export default {
   },
   mounted() {
     // Add a scroll watcher
-    window.addEventListener('scroll', this.onScroll, {passive: true});
+    window.addEventListener('scroll', this.onScroll, {
+      capture: true,
+      passive: true,
+    });
     // Set to window.pageYOffset
     this.lastScrollPos = window.pageYOffset;
   },
