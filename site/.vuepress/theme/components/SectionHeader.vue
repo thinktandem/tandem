@@ -5,6 +5,7 @@
         v-if="pic"
         :alt="title"
         :src="pic"
+        :style="`border-radius: ${radius};`"
       >
       <a
         v-if="link && !picOnly"
@@ -33,6 +34,10 @@ export default {
     link: {
       type: String,
       default: null,
+    },
+    radius: {
+      type: String,
+      default: '0%',
     },
     pic: {
       type: String,
@@ -71,10 +76,9 @@ h2
     margin-right 100px
     width 20%
     img
-      width 100px
-      border-radius: 100%
+      width 150px
       position relative
-      bottom: 6px
+      bottom 6px
   .section-header-right
     color black
     font-weight 300

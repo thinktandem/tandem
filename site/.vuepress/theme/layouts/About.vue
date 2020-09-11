@@ -30,7 +30,7 @@
 
     <div class="custom-block important values-text">
       <p class="custom-block-title">
-        The above four. In four sentences.
+        The above four. <br>In four sentences.
       </p>
       <p>
         Working closely together means allows us to distill your goals into their most important components.
@@ -181,14 +181,22 @@ export default {
         padding 7em 0
         border-bottom 1px solid $borderColor
         margin-bottom 2em
+        @media (max-width: $MQMobile)
+          padding 4em 0
+          margin-bottom 0
         p
           &.custom-block-title
             font-size 3.64em
             font-family GalaxieCopernicus, PT Serif, serif
+            @media (max-width: $MQMobile)
+              font-size 2.1em
+
         &.remote-team
           margin-top 2em
           border-top 1px solid $borderColor
           border-bottom 0
+          br
+            display block
       &.point
         border-bottom 1px solid $borderColor
         margin-bottom 2em
