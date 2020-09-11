@@ -60,12 +60,6 @@ const resolveTags = tags => {
   return [tags];
 };
 
-// Checks if webP is supported.
-const checkForWebp = image => {
-  let supported = document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') === 0;
-  return supported ? image.replace(/.png|.jpg|.jpeg/gi, '.webp') : image;
-};
-
 export default {
   getBgColor,
   getColorFilter,
@@ -75,5 +69,4 @@ export default {
   parseWorkFrontMatter,
   resolveLink,
   resolveTags,
-  checkForWebp,
 };

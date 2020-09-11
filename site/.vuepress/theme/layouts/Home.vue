@@ -64,7 +64,6 @@
 
 <script>
 import HeroFlex from '@theme/components/HeroFlex';
-import utils from '@theme/utils.js';
 
 export default {
   components: {HeroFlex},
@@ -244,7 +243,8 @@ export default {
       this.options.fitToSection = false;
     },
     checkWebP(image) {
-      return utils.checkForWebp(image);
+      let supported = document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') === 0;
+      return supported ? image.replace(/.png|.jpg|.jpeg/gi, '.webp') : image;
     },
   },
   jsonld() {
