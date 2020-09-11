@@ -17,14 +17,14 @@
         root: "_docs"
         index:
           - "index.html"
-        expires: 24h
+        expires: 1y
         passthru: "/404.html"
         scripts: true
         allow: false
         rules:
           \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|svg?)$:
             allow: true
-            expires: 4w
+            expires: 1y
           ^/robots\.txt$:
             allow: true
           search_index\.json$:
@@ -79,14 +79,14 @@
         root: "_site"
         index:
           - "index.html"
-        expires: 24h
+        expires: 1y
         passthru: "/404.html"
         scripts: true
         allow: false
         rules:
           \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|svg?)$:
             allow: true
-            expires: 4w
+            expires: 1y
           ^/robots\.txt$:
             allow: true
           ^/ads\.txt$:

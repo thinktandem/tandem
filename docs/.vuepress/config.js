@@ -14,16 +14,16 @@ module.exports = {
         name: 'Tandem',
         twitter: 'thinktandem',
       },
-      canonical_base: 'https://thinktandem.io',
+      canonical_base: 'https://docs.thinktandem.io',
     },
     'canonical': {
-      baseURL: 'https://thinktandem.io',
+      baseURL: 'https://docs.thinktandem.io',
     },
     'robots': {
-      host: 'https://thinktandem.io',
+      host: 'https://docs.thinktandem.io',
     },
     'sitemap': {
-      hostname: 'https://thinktandem.io',
+      hostname: 'https://docs.thinktandem.io',
       exclude: ['/404.html'],
     },
   },
