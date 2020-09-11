@@ -17,7 +17,7 @@
         root: "_docs"
         index:
           - "index.html"
-        expires: 300s
+        expires: 1y
         passthru: "/404.html"
         scripts: true
         allow: false
@@ -61,8 +61,8 @@
           /app/.platformsh/bin/platform redeploy --yes --no-wait
         fi
 
-- # Tandem website
-  name: site
+# Tandem website
+- name: site
   source:
     root: "/"
 
@@ -78,7 +78,7 @@
         root: "_site"
         index:
           - "index.html"
-        expires: 300s
+        expires: 1y
         passthru: "/404.html"
         scripts: true
         allow: false
