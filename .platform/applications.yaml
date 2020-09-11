@@ -24,7 +24,7 @@
         rules:
           \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|svg?)$:
             allow: true
-            expires: 4w
+            expires: 1y
           ^/robots\.txt$:
             allow: true
           search_index\.json$:
@@ -86,7 +86,7 @@
         rules:
           \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|svg?)$:
             allow: true
-            expires: 4w
+            expires: 1y
           ^/robots\.txt$:
             allow: true
           ^/ads\.txt$:
