@@ -3,19 +3,20 @@
     v-if="vid"
     class="video-responsive"
   >
-    <iframe
-      width="560"
-      height="315"
-      :src="`https://www.youtube.com/embed/${vid}`"
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    />
+    <lazy-component tag="div">
+      <iframe
+        width="560"
+        height="315"
+        :src="`https://www.youtube.com/embed/${vid}`"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
+    </lazy-component>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'YouTube',
   props: {
