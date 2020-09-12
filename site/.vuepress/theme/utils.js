@@ -60,8 +60,28 @@ const resolveTags = tags => {
   return [tags];
 };
 
+// Used with webP, iOS has issues.
+const iOS = () => {
+  return [
+        'iPad Simulator',
+        'iPhone Simulator',
+        'iPod Simulator',
+        'iPad',
+        'iPhone',
+        'iPod',
+      ].includes(navigator.platform)
+      // iPad on iOS 13 detection
+      || (navigator.userAgent.includes('Mac') && 'ontouchend' in document);
+};
+
 // Checks if webP is supported.
 const checkForWebp = url => {
+  // iOS devices have webP issues right now.
+  if (iOS()) {
+    return url;
+  }
+
+  // All other devices.
   let image = new Image();
   // Checks for lossy webp.
   image.src = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA';
