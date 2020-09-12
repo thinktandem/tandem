@@ -29,15 +29,7 @@ https://{default}/:
         to: "https://thinktandem.io/feed-tags-drupal.xml"
       "/services":
         to: "https://thinktandem.io/about"
-      "^/services/*":
-        to: "https://thinktandem.io/$1"
-        regexp: true
-      "^/blog/*/":
-        to: "https://thinktandem.io/tag/$1"
-        regexp: true
-      "^/work/*/":
-        to: "https://thinktandem.io/$1"
-        regexp: true
+
 https://www.{default}/:
   type: redirect
   to: https://{default}/
