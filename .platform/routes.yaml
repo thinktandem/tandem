@@ -38,12 +38,7 @@ https://{default}/:
       "^/work/*/":
         to: "https://thinktandem.io/$1"
         regexp: true
-
 https://www.{default}/:
   type: redirect
   to: https://{default}/
 
-# V2 redirects
-https://www.{default}/:
-  type: redirect
-  to: https://{default}/
