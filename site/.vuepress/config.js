@@ -194,7 +194,7 @@ module.exports = {
       // Strategy
       'strategy': {
         title: 'Strategy.',
-        byline: 'We\'ve migrated millions of web pages, helping move complex, big websites for world-renowned brands to the next best thing.',
+        byline: 'Measure twice, cut once. Here\'s how we help organizations make the right moves with their digital strategy.',
       },
       'business': {
         title: 'Business.',
@@ -254,7 +254,7 @@ module.exports = {
       },
       'migrations': {
         title: 'We move the web.',
-        byline: 'We\'ve migrated millions of web pages, helping move complex, big websites for world-renowned brands to the next best thing.',
+        byline: 'We\'ve migrated millions of web pages, helping move complex enterprise websites for world-renowned brands to the next big thing.',
         pic: '/images/tags/double-arrows.png',
       },
       'support': {
@@ -278,10 +278,12 @@ module.exports = {
       'higher-ed': {
         title: 'Higher Education.',
         byline: 'Here\'s some work we\'ve done for higher ed.',
+        pic: '/images/tags/higher-ed-logo.png',
       },
       'non-profit': {
         title: 'Non Profit.',
         byline: 'Here\'s some work we\'ve done for non profits.',
+        pic: '/images/tags/non-profit-logo.png',
       },
       'tech': {
         title: 'Startups. Hosting. Agencies.',
