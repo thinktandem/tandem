@@ -64,6 +64,7 @@
 
 <script>
 import HeroFlex from '@theme/components/HeroFlex';
+import utils from '@theme/utils.js';
 
 export default {
   components: {HeroFlex},
@@ -210,6 +211,11 @@ export default {
     }, 5000);
     */
     this.message = 0;
+
+    for (let i = 0; i < this.slides.length; i++) {
+      let img = this.slides[i].background['background-image'];
+      this.slides[i].background['background-image'] = utils.checkForWebp(img);
+    }
   },
   methods: {
     afterLoad(origin, destination, direction) {

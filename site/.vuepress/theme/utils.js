@@ -60,6 +60,17 @@ const resolveTags = tags => {
   return [tags];
 };
 
+// Checks if webP is supported.
+const checkForWebp = url => {
+  let image = new Image();
+  // Checks for lossy webp.
+  image.src = 'data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEADsD+JaQAA3AAAAAA';
+  let supported = image.onload = () => {
+    return (image.width > 0) && (image.height > 0);
+  };
+  return supported ? url.replace(/.png|.jpg|.jpeg/gi, '.webp') : url;
+};
+
 export default {
   getBgColor,
   getColorFilter,
@@ -69,4 +80,5 @@ export default {
   parseWorkFrontMatter,
   resolveLink,
   resolveTags,
+  checkForWebp,
 };

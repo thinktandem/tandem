@@ -22,7 +22,7 @@
         scripts: true
         allow: false
         rules:
-          \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|svg?)$:
+          \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|svg|webp?)$:
             allow: true
             expires: 1y
           ^/robots\.txt$:
@@ -84,7 +84,7 @@
         scripts: true
         allow: false
         rules:
-          \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|svg?)$:
+          \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|svg|webp?)$:
             allow: true
             expires: 1y
           ^/robots\.txt$:
