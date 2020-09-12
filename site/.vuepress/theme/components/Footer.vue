@@ -119,6 +119,7 @@ export default {};
 @media (max-width $MQMobile)
   .footer-container
     flex-direction column-reverse
+    margin auto 0.5em
     .footer-copyright, .footer-links
       flex 1 1
       text-align center
@@ -127,6 +128,7 @@ export default {};
     .footer-copyright
       width 75%
     .footer-links
+      width 75%
       .menu-primary
         ul
           justify-content center
