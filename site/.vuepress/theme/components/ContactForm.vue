@@ -104,6 +104,8 @@ export default {
       // Get ready
       const xhr = new XMLHttpRequest();
       const url = 'https://api.hsforms.com/submissions/v3/integration/submit/6864374/07fc0cf1-4a35-4d3d-b2ec-d1586a4494da';
+
+
       const data = JSON.stringify({
         fields: [
           {name: 'email', value: this.email},
@@ -111,8 +113,8 @@ export default {
           {name: 'message', value: this.message},
           {name: 'hs_lead_status', value: 'Lead'},
           {name: 'lead_source', value: 'Contact Form'},
-          {name: 'interests_last_form_submittal', value: this.tag},
-          {name: 'last_conversion_point', value: this.$page.title},
+          {name: 'interests_last_form_submittal', value: this.tag || 'contact'},
+          {name: 'last_conversion_point', value: this.$page.title || 'contact'},
         ],
         context: {
           pageUri: `https://thinktandem.io${this.$page.path}`,
