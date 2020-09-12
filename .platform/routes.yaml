@@ -1,5 +1,5 @@
 # Docs
-https://{default}/:
+https://docs.{default}/:
   type: upstream
   upstream: docs:http
   cache:
@@ -8,15 +8,12 @@ https://{default}/:
     enabled: true
   ssi:
     enabled: false
-https://docs.v2.thinktandem.io/:
-  type: redirect
-  to: https://{default}/
 https://handbook.thinktandem.io/:
   type: redirect
-  to: https://{default}/
+  to: https://docs.{default}/
 
-# New Beta Site
-http://beta.thinktandem.io/:
+# Site
+https://{default}/:
   type: upstream
   upstream: site:http
   cache:
@@ -25,3 +22,7 @@ http://beta.thinktandem.io/:
     enabled: true
   ssi:
     enabled: false
+
+https://www.{default}/:
+  type: redirect
+  to: https://{default}/
