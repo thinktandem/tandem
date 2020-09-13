@@ -1,0 +1,150 @@
+"/drupal-feed.xml":
+  to: "https://thinktandem.io/feed-tags-drupal.xml"
+"/services":
+  to: "https://thinktandem.io/about"
+"/services/":
+  to: "https://thinktandem.io/about"
+
+# Industries
+"/work/industry/agencies":
+  to: "https://thinktandem.io/tech"
+"/work/industry/agencies/":
+  to: "https://thinktandem.io/tech"
+"/work/industry/agencies/index.html":
+  to: "https://thinktandem.io/tech"
+"/work/industry/corporate":
+  to: "https://thinktandem.io/finance"
+"/work/industry/corporate/":
+  to: "https://thinktandem.io/finance"
+"/work/industry/corporate/index.html":
+  to: "https://thinktandem.io/finance"
+"/work/industry/higher-education":
+  to: "https://thinktandem.io/higher-ed"
+"/work/industry/higher-education/":
+  to: "https://thinktandem.io/higher-ed"
+"/work/industry/higher-education/index.html":
+  to: "https://thinktandem.io/higher-ed"
+"/work/industry/startups":
+  to: "https://thinktandem.io/tech"
+"/work/industry/startups/":
+  to: "https://thinktandem.io/tech"
+"/work/industry/startups/index.html":
+  to: "https://thinktandem.io/tech"
+"/work/industry/startups":
+  to: "https://thinktandem.io/tech"
+"/work/industry/startups/":
+  to: "https://thinktandem.io/tech"
+"/work/industry/startups/index.html":
+  to: "https://thinktandem.io/tech"
+"/work/industry/non-profit":
+  to: "https://thinktandem.io/non-profit"
+"/work/industry/non-profit/":
+  to: "https://thinktandem.io/non-profit"
+"/work/industry/non-profit/index.html":
+  to: "https://thinktandem.io/non-profit"
+
+# Services
+"/work/service/development":
+  to: "https://thinktandem.io/development"
+"/work/service/development/":
+  to: "https://thinktandem.io/development"
+"/work/service/development/index.html":
+  to: "https://thinktandem.io/development"
+"/work/service/devops":
+  to: "https://thinktandem.io/devops"
+"/work/service/devops/":
+  to: "https://thinktandem.io/devops"
+"/work/service/devops/index.html":
+  to: "https://thinktandem.io/devops"
+"/work/service/rescue":
+  to: "https://thinktandem.io/support"
+"/work/service/rescue/":
+  to: "https://thinktandem.io/support"
+"/work/service/rescue/index.html":
+  to: "https://thinktandem.io/support"
+"/work/service/strategy":
+  to: "https://thinktandem.io/strategy"
+"/work/service/strategy/":
+  to: "https://thinktandem.io/strategy"
+"/work/service/strategy/index.html":
+  to: "https://thinktandem.io/strategy"
+"/work/service/training":
+  to: "https://thinktandem.io/training"
+"/work/service/training/":
+  to: "https://thinktandem.io/training"
+"/work/service/training/index.html":
+  to: "https://thinktandem.io/training"
+"/work/service/design":
+  to: "https://thinktandem.io/design"
+"/work/service/design/":
+  to: "https://thinktandem.io/design"
+"/work/service/design/index.html":
+  to: "https://thinktandem.io/design"
+"/services/accessibility":
+  to: "https://thinktandem.io/accessibility"
+"/services/accessibility/":
+  to: "https://thinktandem.io/accessibility"
+"/services/accessibility/index.html":
+  to: "https://thinktandem.io/accessibility"
+"/services/development":
+  to: "https://thinktandem.io/development"
+"/services/development/":
+  to: "https://thinktandem.io/development"
+"/services/development/index.html":
+  to: "https://thinktandem.io/development"
+"/services/devops":
+  to: "https://thinktandem.io/devops"
+"/services/devops/":
+  to: "https://thinktandem.io/devops"
+"/services/devops/index.html":
+  to: "https://thinktandem.io/devops"
+"/services/strategy":
+  to: "https://thinktandem.io/strategy"
+"/services/strategy/":
+  to: "https://thinktandem.io/strategy"
+"/services/strategy/index.html":
+  to: "https://thinktandem.io/strategy"
+"/services/support":
+  to: "https://thinktandem.io/support"
+"/services/support/":
+  to: "https://thinktandem.io/support"
+"/services/support/index.html":
+  to: "https://thinktandem.io/support"
+"/services/training":
+  to: "https://thinktandem.io/training"
+"/services/training/":
+  to: "https://thinktandem.io/training"
+"/services/training/index.html":
+  to: "https://thinktandem.io/training"
+
+# Tech
+"/work/technology/docker":
+  to: "https://thinktandem.io/docker"
+"/work/technology/docker/":
+  to: "https://thinktandem.io/docker"
+"/work/technology/docker/index.html":
+  to: "https://thinktandem.io/docker"
+"/work/technology/drupal":
+  to: "https://thinktandem.io/drupal"
+"/work/technology/drupal/":
+  to: "https://thinktandem.io/drupal"
+"/work/technology/drupal/index.html":
+  to: "https://thinktandem.io/drupal"
+"/work/technology/laravel":
+  to: "https://thinktandem.io/laravel"
+"/work/technology/laravel/":
+  to: "https://thinktandem.io/laravel"
+"/work/technology/laravel/index.html":
+  to: "https://thinktandem.io/laravel"
+"/work/technology/wordpress":
+  to: "https://thinktandem.io/wordpress"
+"/work/technology/wordpress/":
+  to: "https://thinktandem.io/wordpress"
+"/work/technology/wordpress/index.html":
+  to: "https://thinktandem.io/wordpress"
+"/work/technology/nodejs":
+  to: "https://thinktandem.io/node"
+"/work/technology/nodejs/":
+  to: "https://thinktandem.io/node"
+"/work/technology/nodejs/index.html":
+  to: "https://thinktandem.io/node"

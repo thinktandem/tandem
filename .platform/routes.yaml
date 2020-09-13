@@ -12,7 +12,7 @@ https://handbook.thinktandem.io/:
   type: redirect
   to: https://docs.{default}/
 
-# Site
+# Website
 https://{default}/:
   type: upstream
   upstream: site:http
@@ -22,14 +22,12 @@ https://{default}/:
     enabled: true
   ssi:
     enabled: false
+
+  # Redirects from old v2.thinktandem.io
   redirects:
     expires: 1d
-    paths:
-      "/drupal-feed.xml":
-        to: "https://thinktandem.io/feed-tags-drupal.xml"
-      "/services":
-        to: "https://thinktandem.io/about"
+    paths: !include "redirects.yaml"
+
 https://www.{default}/:
   type: redirect
   to: https://{default}/
-
