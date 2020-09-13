@@ -2,6 +2,7 @@ module.exports = {
   title: 'Tandem',
   description: 'Tandem is a full service digital agency that works closely with you to get shit done and get it done right.',
   head: [
+    ['meta', {name: 'viewport', content: 'width=device-width, initial-scale=1'}],
     ['link', {rel: 'icon', href: '/favicon.png'}],
     ['link', {rel: 'stylesheet', href: '//unpkg.com/fullpage.js/dist/fullpage.min.css'}],
     ['link', {rel: 'preload', href: '/fonts/poppins-v12-latin-600.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],

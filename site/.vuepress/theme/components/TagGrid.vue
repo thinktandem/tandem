@@ -160,6 +160,8 @@ export default {
   flex-wrap wrap
   justify-content space-between
   width 100%
+  @media (max-width: $MQMobile)
+    width 99%
   .tag-item
     position relative
     background $lightGrey

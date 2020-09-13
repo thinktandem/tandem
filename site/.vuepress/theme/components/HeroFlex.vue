@@ -111,7 +111,6 @@ export default {
     .hero-left-content
       width 80%
       .hero-summary
-        font-size 14px
         font-weight 500
         font-size 1.28rem
         line-height 2
@@ -139,7 +138,7 @@ export default {
           color inherit
           text-decoration none
       @media (max-width: $MQMobile)
-        width 100%
+        width 97%
         margin 0 1em
         h2
           font-size 3em
