@@ -92,6 +92,12 @@
   to: "https://thinktandem.io/tag/devops"
 "/services/devops/index.html":
   to: "https://thinktandem.io/tag/devops"
+"/services/seo":
+  to: "https://thinktandem.io/tag/seo"
+"/services/seo/":
+  to: "https://thinktandem.io/tag/seo"
+"/services/seo/index.html":
+  to: "https://thinktandem.io/tag/seo"
 "/services/strategy":
   to: "https://thinktandem.io/tag/strategy"
 "/services/strategy/":
