@@ -1,3 +1,5 @@
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 module.exports = {
   title: 'Tandem',
   description: 'Tandem is a full service digital agency that works closely with you to get shit done and get it done right.',
@@ -15,6 +17,9 @@ module.exports = {
     ['link', {rel: 'preconnect', href: 'https://www.google-analytics.com/analytics.js', crossorigin: 'true'}],
     ['script', {src: '//js.hs-scripts.com/6864374.js', defer: true, async: true}],
   ],
+  configureWebpack: {
+    plugins: [new BundleAnalyzerPlugin()],
+  },
   plugins: {
     '@vuepress/blog': {
       directories: [
