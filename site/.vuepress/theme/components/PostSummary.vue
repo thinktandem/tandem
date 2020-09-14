@@ -58,7 +58,6 @@
             class="post-meta post-tag"
             itemprop="keywords"
           >
-            <TagIcon />
             <router-link
               v-for="tag in resolveTags(page.frontmatter.tags)"
               :key="tag"
@@ -74,13 +73,12 @@
 </template>
 
 <script>
-import {TagIcon} from 'vue-feather-icons';
 import PostMeta from '@theme/components/PostMeta.vue';
 import utils from '@theme/utils.js';
 
 export default {
   name: 'PostSummary',
-  components: {PostMeta, TagIcon},
+  components: {PostMeta},
   props: {
     page: {
       type: Object,

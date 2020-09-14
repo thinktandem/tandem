@@ -30,7 +30,6 @@ tags:
   - development
   - vue
   - non-profit
-  - development
   - migrations
 ---
 ::: point Summary.

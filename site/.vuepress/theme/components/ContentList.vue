@@ -13,7 +13,7 @@
       itemtype="https://schema.org/BlogPosting"
     />
     <div
-      v-if="(this.$pagination.paginationIndex + 1) < this.$pagination.length"
+      v-if="(this.paginationIndex * this.paginator) < this.$pagination.pages.length"
       class="load-more"
       @click="more"
     >
@@ -27,25 +27,29 @@
 </template>
 
 <script>
-import {TagIcon} from 'vue-feather-icons';
 import PostSummary from '@theme/components/PostSummary.vue';
 import WorkSummary from '@theme/components/WorkSummary.vue';
 
 export default {
-  components: {PostSummary, TagIcon, WorkSummary},
+  components: {PostSummary, WorkSummary},
   props: {
-    sortOrder: {
-      type: Array,
-      default: () => ([]),
-    },
     moreText: {
       type: String,
       default: 'Load more stuff',
+    },
+    paginator: {
+      type: Number,
+      default: 5,
+    },
+    sortOrder: {
+      type: Array,
+      default: () => ([]),
     },
   },
   data() {
     return {
       paginationComponent: null,
+      paginationIndex: 1,
       pages: [],
     };
   },
@@ -57,10 +61,8 @@ export default {
   },
   methods: {
     more() {
-      this.$pagination.paginationIndex++;
-      let next = this.$pagination._paginationPages[this.$pagination.paginationIndex];
-      let nextPages = this.$pagination._matchedPages.slice(next.interval[0], next.interval[1] + 1);
-      for (let i = 0; i < nextPages.length; i++) this.pages.push(nextPages[i]);
+      this.paginationIndex++;
+      this.pages = this.sort(this.$pagination.pages);
     },
     sortByType(a, b) {
       if (this.sortOrder.indexOf(a.id) > this.sortOrder.indexOf(b.id)) {
@@ -72,7 +74,7 @@ export default {
       }
     },
     sort(data) {
-      return data.sort(this.sortByType);
+      return data.sort(this.sortByType).slice(0, this.paginator * this.paginationIndex);
     },
   },
 
