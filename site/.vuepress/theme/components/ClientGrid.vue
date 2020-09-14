@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import {ArrowUpRightIcon} from 'vue-feather-icons';
+import ArrowUpRightIcon from 'vue-feather-icons/icons/ArrowUpRightIcon';
 
 export default {
   name: 'ClientGrid',

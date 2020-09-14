@@ -105,7 +105,8 @@
 </template>
 
 <script>
-import {MenuIcon, XIcon} from 'vue-feather-icons';
+import MenuIcon from 'vue-feather-icons/icons/MenuIcon';
+import XIcon from 'vue-feather-icons/icons/XIcon';
 
 export default {
   components: {MenuIcon, XIcon},

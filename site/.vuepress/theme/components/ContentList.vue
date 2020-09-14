@@ -27,12 +27,11 @@
 </template>
 
 <script>
-import {TagIcon} from 'vue-feather-icons';
 import PostSummary from '@theme/components/PostSummary.vue';
 import WorkSummary from '@theme/components/WorkSummary.vue';
 
 export default {
-  components: {PostSummary, TagIcon, WorkSummary},
+  components: {PostSummary, WorkSummary},
   props: {
     sortOrder: {
       type: Array,
