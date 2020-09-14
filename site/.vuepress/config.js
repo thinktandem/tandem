@@ -25,7 +25,7 @@ module.exports = {
           itemLayout: 'Post',
           layout: 'Blog',
           pagination: {
-            lengthPerPage: 5,
+            lengthPerPage: 1000,
           },
           title: 'Blog',
         },
@@ -36,8 +36,7 @@ module.exports = {
           itemLayout: 'CaseStudy',
           layout: 'Work',
           pagination: {
-            lengthPerPage: 5,
-
+            lengthPerPage: 1000,
           },
           title: 'Work',
         },
@@ -48,6 +47,9 @@ module.exports = {
           itemPermalink: '/:slug',
           itemLayout: 'Page',
           layout: 'About',
+          pagination: {
+            lengthPerPage: 1000,
+          },
           title: 'About',
         },
       ],
@@ -59,7 +61,7 @@ module.exports = {
           scopeLayout: 'Tag',
           title: 'Content',
           pagination: {
-            lengthPerPage: 5,
+            lengthPerPage: 1000,
           },
         },
       ],

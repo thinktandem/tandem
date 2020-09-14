@@ -30,7 +30,6 @@ tags:
   - php
   - development
   - non-profit
-  - development
   - crm
   - blackbaud
 ---

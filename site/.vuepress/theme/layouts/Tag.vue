@@ -10,10 +10,7 @@
         <p>{{ byline }}</p>
       </div>
     </SectionHeader>
-    <ContentList
-      v-if="$pagination"
-      :sort-order="sortOrder"
-    />
+    <ContentList v-if="$pagination" />
     <Content v-else />
   </div>
 </template>
