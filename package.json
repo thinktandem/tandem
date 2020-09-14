@@ -40,7 +40,6 @@
     "vuepress-plugin-container": "^2.1.2",
     "vuepress-plugin-frontmatters-feed": "https://github.com/thinktandem/vuepress-plugin-frontmatters-feed",
     "vuepress-plugin-robots": "^1.0.1",
-    "vuepress-plugin-sitemap": "https://github.com/thinktandem/vuepress-plugin-sitemap",
-    "webpack-bundle-analyzer": "^3.8.0"
+    "vuepress-plugin-sitemap": "https://github.com/thinktandem/vuepress-plugin-sitemap"
   }
 }
