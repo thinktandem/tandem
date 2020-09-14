@@ -11,7 +11,7 @@
         v-if="link && !picOnly"
         :href="link"
         target="_blank"
-      ><h1>{{ title }}</h1></a>
+      ><h1 v-if="link && !picOnly">{{ title }}</h1></a>
       <h1 v-else-if="!link && !picOnly">
         {{ title }}
       </h1>

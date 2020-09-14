@@ -49,7 +49,7 @@
         :pic-only="topper.logo"
         :link="topper.link"
       >
-        <h2 v-html="topper.title" />
+        <h1 v-html="topper.title" />
       </SectionHeader>
       <div class="showcase">
         <a
