@@ -46,7 +46,7 @@
       <SectionHeader
         :title="topper.client"
         :pic="topper.logo"
-        :pic-only="topper.logo"
+        :no-header="true"
         :link="topper.link"
       >
         <h1 v-html="topper.title" />
