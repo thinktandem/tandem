@@ -33,7 +33,7 @@
         The above four. <br>In four sentences.
       </p>
       <p>
-        Working closely together means allows us to distill your goals into their most important components.
+        Working closely together allows us to distill your goals into their most important components.
 
         Knowing what's important means we can craft a solution that minimizes moving parts while maximizing impact.
 
