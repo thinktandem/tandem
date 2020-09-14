@@ -1,18 +1,20 @@
 <template>
   <div class="section-header">
-    <div class="section-header-left">
+    <div
+      class="section-header-left"
+      :class="{linked: link}"
+    >
       <img
         v-if="pic"
         :alt="title"
         :src="pic"
         :style="`border-radius: ${radius};`"
+        @click="goto(link)"
       >
-      <a
-        v-if="link && !picOnly"
-        :href="link"
-        target="_blank"
-      ><h1>{{ title }}</h1></a>
-      <h1 v-else-if="!link && !picOnly">
+      <h1
+        v-if="title && !noHeader"
+        @click="goto(link)"
+      >
         {{ title }}
       </h1>
     </div>
@@ -35,6 +37,10 @@ export default {
       type: String,
       default: null,
     },
+    noHeader: {
+      type: Boolean,
+      default: false,
+    },
     radius: {
       type: String,
       default: '0%',
@@ -43,9 +49,10 @@ export default {
       type: String,
       default: null,
     },
-    picOnly: {
-      type: String,
-      default: null,
+  },
+  methods: {
+    goto(link) {
+      if (link) window.open(link, '_blank');
     },
   },
 };
@@ -79,6 +86,8 @@ h2
       width 150px
       position relative
       bottom 6px
+    &.linked
+      cursor pointer
   .section-header-right
     color black
     font-weight 300

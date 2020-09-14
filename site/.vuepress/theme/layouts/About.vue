@@ -48,7 +48,7 @@
         What we do.
       </p>
       <p>
-        We offer <strong>strategy</strong>, <strong>design</strong> and <strong>development</strong> services across industries and using a wide array of tech.
+        We offer <a href="/strategy"><strong>strategy</strong></a>, <a href="/design"><strong>design</strong></a> and <a href="/development"><strong>development</strong></a> services across industries and using a wide array of tech.
         <br>
         <br>
         Read more about each below.
