@@ -16,14 +16,14 @@
               v-if="message === 0"
               class="message message-one"
             >
-              <span class="better">
+              <span class="first-text">
                 Better
               </span>
-              <span class="together">
+              <span class="second-text">
                 Together.
               </span>
-              <div class="home-summary">
-                Tandem is the full-service digital agency that cares as much as you do.
+              <div>
+                <h1 class="home-summary">Tandem is the full-service digital agency that cares as much as you do.</h1>
               </div>
             </div>
 
@@ -31,10 +31,10 @@
               v-if="message === 1"
               class="message message-two"
             >
-              <span class="future">
+              <span class="first-text">
                 Future
               </span>
-              <span class="friendly">
+              <span class="second-text">
                 Friendly.
               </span>
               <div class="home-summary">
@@ -307,21 +307,14 @@ export default {
         line-height .85
         font-weight 600
         letter-spacing -.07em
-        .better
+        .first-text
           font-size 1.3em
-        .together
+        .second-text
           text-transform uppercase
           color $tandemPink
           font-size 1.5em
           font-weight 800
-        .future
-          font-size 1.3em
-        .friendly
-          text-transform uppercase
-          color $tandemPink
-          font-size 1.5em
-          font-weight 800
-        .home-summary
+        .home-summary, h1
           margin auto
           margin-top 1em
           width 100%
