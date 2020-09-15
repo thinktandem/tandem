@@ -44,12 +44,12 @@
     </style>
     <div class="content-wrapper-tandem case-study-layout">
       <SectionHeader
-        :title="topper.client"
-        :pic="topper.logo"
+        :title="topper.client || this.$frontmatter.client"
+        :pic="topper.logo || this.$frontmatter.logo"
         :no-header="true"
-        :link="topper.link"
+        :link="topper.link || this.$frontmatter.link"
       >
-        <h1 v-html="topper.title" />
+        <h1 v-html="topper.title || this.$frontmatter.title" />
       </SectionHeader>
       <div class="showcase">
         <a
