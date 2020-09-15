@@ -8693,7 +8693,7 @@ vuepress-plugin-sitemap@^2.3.1:
 
 "vuepress-plugin-sitemap@https://github.com/thinktandem/vuepress-plugin-sitemap":
   version "2.3.1"
-  resolved "https://github.com/thinktandem/vuepress-plugin-sitemap#f19dc3da19b150c1f6428814ff74444094fff0d3"
+  resolved "https://github.com/thinktandem/vuepress-plugin-sitemap#4dc038f4e9aa7f0cddb8b26a666c2f1e967a09b9"
   dependencies:
     sitemap "^3.0.0"
 
