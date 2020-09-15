@@ -5,7 +5,9 @@
         .nav-link {color: {{ color }};}
         .nav-link:hover {color: {{ hover }};}
         .nav-link.router-link-active {color: {{ active }};}
-        .home-link {color: {{ color }};}
+        .nav-link.home-link {color: {{ color }};}
+        .nav-link.home-link:hover {color: {{ color }};}
+        .nav-link.home-link.router-link-active {color: {{ color }};}
       </style>
       <button
         id="nav_toggle"
@@ -117,7 +119,7 @@ export default {
     },
     active: {
       type: String,
-      default: '#47474a',
+      default: '#ed3f7a',
     },
     color: {
       type: String,
@@ -125,7 +127,7 @@ export default {
     },
     hover: {
       type: String,
-      default: '#47474a',
+      default: '#ed3f7a',
     },
   },
   data() {
