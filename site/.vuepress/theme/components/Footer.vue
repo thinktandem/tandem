@@ -70,7 +70,7 @@ export default {};
     text-align left
     font-family "GalaxieCopernicus", PT Serif, Serif
     color $tandemGrey
-    font-size .8em
+    font-size .9em
     align-self center
     .copyright
       color $tandemPink
@@ -102,9 +102,9 @@ export default {};
       margin-top .5em
       margin-right -12px
       a
-        font-size .76em
+        font-size .8em
         text-transform uppercase
-        margin-left 0em
+        margin-left 0
         color $middleGrey
         &:after
           content '\00a0\00a0'
@@ -124,9 +124,11 @@ export default {};
       flex 1 1
       text-align center
       margin auto
-      padding 1em 2em
+      padding 0 0.5em
     .footer-copyright
+      margin-top 25px
       width 75%
+      font-size .9em
     .footer-links
       width 75%
       .menu-primary
@@ -135,4 +137,20 @@ export default {};
           margin-left -20px
           li
             margin-left 20px
+      .menu-secondary
+        margin 25px 0 0
+        a
+          font-size .9em
+          line-height 2
+@media (max-width $MQMobileNarrow)
+  .footer-container
+    .footer-links
+      .menu-primary
+        ul
+          justify-content center
+          margin-left -10px
+          li
+            margin-left 15px
+        a
+          font-size 18px
 </style>
