@@ -136,7 +136,7 @@ module.exports = lando => {
       const author = siteTags[options.author].title;
 
       // Build The basic data
-      const data = _.merge({}, {
+      const data = {
         filePath: path.join(blogPath, `${year}-${month}-${day}-${_.kebabCase(options.title)}.md`),
         title: options.title,
         summary: options.summary,
@@ -146,7 +146,7 @@ module.exports = lando => {
         location: options.location,
         date: dayjs().format('YYYY-MM-DD'),
         parsedTags: _.map(options.tags, tag => `- ${tag}`).join(os.EOL),
-      }, options);
+      };
 
       // Dump the new guide
       const compiled = _.template(fs.readFileSync(templateFile, 'utf8'));
