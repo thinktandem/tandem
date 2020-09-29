@@ -8,7 +8,7 @@ const os = require('os');
 const path = require('path');
 
 // Local stuff
-const config = require(__dirname + "/../../../site/.vuepress/config.js");
+const config = require(__dirname + '/../../../site/.vuepress/config.js');
 const siteTags = config.themeConfig.tags;
 const siteLocations = config.themeConfig.locations;
 
@@ -18,39 +18,39 @@ module.exports = lando => {
   const templateFile = path.resolve(__dirname, '..', 'templates', 'post.template');
 
   // Get the authors
-  const authors = [ 
+  const authors = [
     {
       name: 'Dustin LeBlanc',
-      value: 'dustinl'
+      value: 'dustinl',
     },
     {
       name: 'Mike Milano',
-      value: 'mikem'
+      value: 'mikem',
     },
     {
       name: 'John Ouellet',
-      value: 'johno'
+      value: 'johno',
     },
     {
       name: 'Mike Pirog',
-      value: 'pirog'
+      value: 'pirog',
     },
     {
       name: 'Alec Reynolds',
-      value: 'alecr'
+      value: 'alecr',
     },
     {
       name: 'Geoff St. Pierre',
-      value: 'serundeputy'
+      value: 'serundeputy',
     },
   ];
 
   // Get the locations
   const locations = [];
-  _.each(siteLocations, (i) => {
+  _.each(siteLocations, i => {
     locations.push({
       name: i.name,
-      value: i.name
+      value: i.name,
     });
   });
 
@@ -59,7 +59,7 @@ module.exports = lando => {
   _.each(siteTags, (val, key) => {
     tags.push({
       name: val.title,
-      value: key
+      value: key,
     });
   });
 
@@ -113,8 +113,8 @@ module.exports = lando => {
           type: 'list',
           message: 'Choose your location:',
           default: 'The Internet',
-          choices: locations
-        }
+          choices: locations,
+        },
       },
       tags: {
         describe: 'Tags',
