@@ -42,7 +42,7 @@ $config['migrate_booster.settings']['modules'] = [
 ];
 ```
 
-Pathauto and Search API are notorious for being resource hogs during a migration.  Since our site was already setup, we just couldn't uninstall the modules.  Instead, we can just disable them during our migrations when we run them via drush.  This alone gave me an enormous performance boost when running my migration commands.
+Pathauto and Search API are notorious for being resource hogs during a migration.  Since our site was already setup, we couldn't uninstall the modules.  Instead, we can just disable them during our migrations when we run them via drush.  This alone gave me an enormous performance boost when running my migration commands.
 
 I added the other modules by searching through my contrib folder for modules with the docblock that contained ```Implements hook_entity_```.  I looked at each hook's functionality and added the modules to the settings array as needed.  
 
@@ -113,7 +113,7 @@ Your site should be updated to the latest versions of core and contrib modules a
 
 ### Running in a Script with the --limit flag
 
-If you are having a lot of memory issues, then I recommend creating a bash script and loop your migrations through ith with the --limit flag on your migration. The fine people's over at Chromatiq [created a gist](https://gist.github.com/adamzimmermann/e0f730425d0876991f1891a02bf372a4) that contains a good bash script already.  You can use that and tweak it to your needs.
+If you are having a lot of memory issues, then I recommend creating a bash script and loop your migrations through it with the --limit flag on your migration. The fine people's over at Chromatiq [created a gist](https://gist.github.com/adamzimmermann/e0f730425d0876991f1891a02bf372a4) that contains a good bash script already.  You can use that and tweak it to your needs.
 
 ### Run Migration in Drush
 
