@@ -1,0 +1,13 @@
+---
+title: <%= title %>
+summary: <%= summary %>
+id: <%= id %>
+author: <%= author %>
+pic: <%= pic %>
+location: <%= location %>
+date: <%= date %>
+tags:
+<%= parsedTags %>
+---
+
+YOUR POST DOTH GOES HITHER
