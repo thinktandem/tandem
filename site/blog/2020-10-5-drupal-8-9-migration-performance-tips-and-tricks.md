@@ -1,5 +1,5 @@
 ---
-title: "Drupal 8/9 Migration Performance Tip and Tricks"
+title: "Drupal 8/9 Migration Performance Tips and Tricks"
 tags:
   - development
   - drupal
