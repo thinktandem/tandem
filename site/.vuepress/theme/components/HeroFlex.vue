@@ -117,7 +117,7 @@ export default {
         letter-spacing -1.04px
         margin 2em 0
       .hero-type
-        font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+        font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
         text-transform uppercase
         letter-spacing -0.0587654321em
         font-size 1.2em
@@ -130,7 +130,7 @@ export default {
         letter-spacing -0.0587654321em
         line-height .85
         margin-top 0
-        font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+        font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
         cursor pointer
         transition none
         text-decoration none

@@ -67,7 +67,7 @@ export default {
     h2
       color inherit
       font-size 1.2em
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
       font-weight 400
       text-transform uppercase
       margin 0

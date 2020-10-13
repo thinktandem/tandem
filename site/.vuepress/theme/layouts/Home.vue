@@ -301,7 +301,7 @@ export default {
       @media (max-width: $MQMobile)
         width 90%
       &.section-31
-        font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+        font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
         color black
         font-size 6em
         padding 0
@@ -325,8 +325,8 @@ export default {
           color black
           font-weight 300
           font-size .5em
-          line-height 1.8
-          letter-spacing -1.04px
+          letter-spacing -0.0265em
+          line-height 1.265
         @media (max-width: $MQMobile)
           text-align center
           font-size 2.5em

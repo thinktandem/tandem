@@ -99,5 +99,7 @@ export default {
         p
           &.custom-block-title
             font-size 3.64em
+            letter-spacing -0.0265em
+            line-height 1.265
             font-family GalaxieCopernicus, PT Serif, serif
 </style>

@@ -111,7 +111,7 @@ export default {
       margin-right 5px
       font-size .67em
       font-weight 500
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
   .pic-left
     margin-right 10px
     position relative

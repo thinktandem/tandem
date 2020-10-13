@@ -49,7 +49,7 @@ export default {
       -webkit-box-sizing border-box
       -moz-box-sizing border-box
       box-sizing border-box
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
       font-size 16px
       @media (max-width: $MQMobile)
         width 100%

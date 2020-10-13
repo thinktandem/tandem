@@ -182,13 +182,13 @@ export default {
       -moz-box-sizing border-box
       box-sizing border-box
       font-size 1em
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
       &:focus
         outline 1px solid $borderColor
         outline-offset 5px
     textarea
       height 216px
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
     input[type=button]
       padding 1.2em 3em
       width 25%
@@ -197,7 +197,7 @@ export default {
       -webkit-box-sizing border-box
       -moz-box-sizing border-box
       box-sizing border-box
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
       font-size 16px
       &.busy
         background-color $tandemPink
@@ -217,7 +217,7 @@ export default {
       font-weight 700
       ul
         li
-          font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+          font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
           font-size .8em
           font-weight 300
           margin-left 1em

@@ -193,7 +193,7 @@ export default {
         font-weight 300
         font-size 1.13rem
         letter-spacing -1.44px
-        font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+        font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
         color $middleGrey
     &.tag-third
       width 32%

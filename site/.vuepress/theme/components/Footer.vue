@@ -68,6 +68,8 @@ export default {};
   .footer-copyright
     width 32%
     text-align left
+    letter-spacing -0.0265em
+    line-height 1.265
     font-family "GalaxieCopernicus", PT Serif, Serif
     color $tandemGrey
     font-size .9em
@@ -79,7 +81,7 @@ export default {};
     width 70%
     text-align right
     a
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
       text-decoration none
 
     .menu-primary

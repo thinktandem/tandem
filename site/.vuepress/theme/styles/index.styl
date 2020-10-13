@@ -5,7 +5,7 @@
   src url('/fonts/AvenirNext-Heavy.woff') format('woff'), url('/fonts/AvenirNext-Heavy.woff2') format('woff2')
   font-style normal
   font-display swap
-  font-weight 600
+  font-weight 900
 
 @font-face
   font-family GalaxieCopernicus
@@ -23,22 +23,6 @@
   font-display swap
   font-weight 400
 
-@font-face
-  font-family 'Poppins'
-  src url('/fonts/poppins-v12-latin-600.eot')
-  src url('/fonts/poppins-v12-latin-600.woff') format('woff'), url('/fonts/poppins-v12-latin-600.woff2') format('woff2')
-  font-style normal
-  font-display swap
-  font-weight 600
-
-@font-face
-  font-family 'Poppins'
-  src url('/fonts/poppins-v12-latin-900.eot')
-  src url('/fonts/poppins-v12-latin-900.woff') format('woff'), url('/fonts/poppins-v12-latin-900.woff2') format('woff2')
-  font-style normal
-  font-display swap
-  font-weight 900
-
 body
   font-family GalaxieCopernicus, PT Serif, serif
   font-weight 300
@@ -48,10 +32,11 @@ h2,
 h3,
 h4
   color $landoGrey
-  font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+  font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
   font-size 3em
   border 0
-  letter-spacing -1px
+  letter-spacing -0.0265em !important
+  line-height 0.85 !important
 h2
   font-size 2em
 h3
@@ -64,28 +49,29 @@ a
   transition all 0.2s
 
 blockquote
+  font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
   margin 2em 0
   padding 2em
-  font-size 1.5rem
-  color $darkTextColor
+  font-size 2rem
+  color $landoPink
   border-left 0
   background $lightGrey
   font-style italic
   display flex
   flex-wrap wrap
   position relative
+  line-height 0.865em
   &:before
     display flex
     font-size 2em
     content '"'
     color $tandemPink
+    position absolute
+    top 0.05em
+    left -0.35em
 
   p
     width 90%
-    line-height 2
-    padding-left 10px
-    padding-right 10px
-    margin-bottom 1em
   ul
     position absolute
     right 1em
@@ -176,7 +162,7 @@ ul
     font-size 1.33rem
     letter-spacing -1.04px
     &.custom-block-title
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
       font-size 28px
       font-weight 600
       letter-spacing -1.68px
@@ -184,7 +170,7 @@ ul
       margin-top -5px
   &.big, &.medium
     p
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
       font-weight 900
       font-size 96px
       padding 0
@@ -201,7 +187,7 @@ ul
       color $textColor
       font-size .9em
       font-weight 300
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
 
   &.thumbnail
     border 1px solid $lightGrey

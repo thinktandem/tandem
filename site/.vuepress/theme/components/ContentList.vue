@@ -92,7 +92,7 @@ export default {
     color $darkTextColor
     margin 0em
     cursor pointer
-    font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+    font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
     button
       all unset
   .written-by, .work-for

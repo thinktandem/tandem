@@ -5,8 +5,6 @@ module.exports = {
     ['meta', {name: 'viewport', content: 'width=device-width, initial-scale=1'}],
     ['link', {rel: 'icon', href: '/favicon.png'}],
     ['link', {rel: 'stylesheet', href: '//unpkg.com/fullpage.js/dist/fullpage.min.css'}],
-    ['link', {rel: 'preload', href: '/fonts/poppins-v12-latin-600.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
-    ['link', {rel: 'preload', href: '/fonts/poppins-v12-latin-900.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
     ['link', {rel: 'preload', href: '/fonts/GalaxieCopernicus-Book.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
     ['link', {rel: 'preload', href: '/fonts/GalaxieCopernicus-Medium.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],
     ['link', {rel: 'preload', href: '/fonts/AvenirNext-Heavy.woff', as: 'font', type: 'font/woff', crossorigin: 'true'}],

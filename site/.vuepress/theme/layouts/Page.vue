@@ -222,7 +222,7 @@ export default {
       color $darkTextColor
       margin 0em
       cursor pointer
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
       button
         all unset
     .section-header
@@ -246,11 +246,7 @@ export default {
         font-weight 300
         font-size 1.33rem
         letter-spacing -1.04px
-        color black
-        font-weight 300
-        font-size 1.33rem
         letter-spacing -1.04px
-        color #000
       &.important
         padding 7em 0
         border-top 1px solid $borderColor
@@ -261,6 +257,8 @@ export default {
         p
           &.custom-block-title
             font-size 3.64em
+            letter-spacing -0.0265em
+            line-height 1.265
             font-family GalaxieCopernicus, PT Serif, serif
             @media (max-width: $MQMobile)
               font-size 2.1em
@@ -276,6 +274,8 @@ export default {
             small
               font-size .75em
               color $darkTextColor
+              letter-spacing -0.0265em
+              line-height 1.265
               font-family "GalaxieCopernicus", PT Serif, Serif
             @media (max-width: $MQMobile)
               width 100%

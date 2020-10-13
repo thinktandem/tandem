@@ -165,7 +165,7 @@ a
     letter-spacing -0.0987654321em
     margin-top 0
     border-bottom 0
-    font-family "Poppins", "Helvetica Neue", Arial, sans-seri
+    font-family "AvenirNext", "Helvetica Neue", Arial, sans-seri
     color inherit
     cursor pointer
     transition none

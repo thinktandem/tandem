@@ -78,6 +78,8 @@ export default {
   .values-item
     h2
       font-size 1.3em
+      letter-spacing -0.0265em
+      line-height 1.265
       font-family GalaxieCopernicus, PT Serif, serif
       font-weight 400
       width 75%

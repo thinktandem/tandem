@@ -68,10 +68,10 @@ h2
   color black
   font-family GalaxieCopernicus, PT Serif, serif
   font-weight 500
-  line-height 1.33
   margin 0
   margin-bottom 1em
-  letter-spacing -0.19rem
+  letter-spacing -0.0265em
+  line-height 1.265
   font-size 2em
 .section-header
   display flex

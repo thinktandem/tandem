@@ -24,7 +24,8 @@ export default {
   margin-top 0.14em
 .bare-page-theme-content
   font-size 16px
-  letter-spacing 0px
+  letter-spacing -0.0265em
+  line-height 1.265
   font-family "GalaxieCopernicus", PT Serif, Serif
   color $textColor
   position relative
@@ -33,5 +34,5 @@ export default {
 .vuepress-toc
   right 5%
   margin-top 120px
-  font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+  font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
 </style>

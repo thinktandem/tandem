@@ -191,11 +191,14 @@ export default {
             small
               font-size .75em
               color $darkTextColor
+              letter-spacing -0.0265em
+              line-height 1.265
               font-family "GalaxieCopernicus", PT Serif, Serif
 
 .post-theme-content
   font-size 16px
-  letter-spacing 0px
+  letter-spacing -0.0265em
+  line-height 1.265
   font-family "GalaxieCopernicus", PT Serif, Serif
   color $textColor
   position relative
@@ -225,7 +228,7 @@ export default {
 .vuepress-toc
   right 5%
   margin-top 120px
-  font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+  font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
 @media (max-width: $MQMobile)
   .post-theme-content
     padding-top 0

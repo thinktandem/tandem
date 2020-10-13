@@ -275,7 +275,7 @@ header
             a
               text-decoration none
               font-size .86em
-              font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+              font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
               text-transform uppercase
               margin-left 1em
               color $middleGrey
@@ -369,7 +369,7 @@ nav
       .nav-item
         margin-left 20px
         a
-          font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+          font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
           font-size 20px
           text-decoration none
           letter-spacing -1.67px
