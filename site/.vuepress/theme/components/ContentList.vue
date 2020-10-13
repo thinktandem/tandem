@@ -87,14 +87,28 @@ export default {
     border 0
   .load-more
     text-align center
-    background $lightGrey
     padding 1em
-    color $darkTextColor
-    margin 0em
+    color $tandemPink
     cursor pointer
     font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
     button
       all unset
+      display inline-block
+      width 50%
+      margin 0 auto
+      font-size 2em
+      font-weight 900
+      padding-bottom 0.333em
+      border-bottom 0.333em $tandemPink solid
+      padding-top 0.5em
+      line-height 1.75
+      transition-property background-color, width, color
+      transition-duration 0.25s
+      white-space nowrap
+      &:hover
+        width 100%
+        color white
+        background-color $tandemPink
   .written-by, .work-for
     border 0
 </style>

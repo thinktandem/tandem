@@ -2,7 +2,7 @@
   <div class="content-wrapper-tandem content-wrapper-work">
     <SectionHeader title="Work.">
       <h2>
-        Simple or complex.<br>Big or small.<br>We've seen it all.<br>
+        Simple or complex,<br>big or small,<br>we've seen it all.<br>
       </h2>
       <div>
         <p>

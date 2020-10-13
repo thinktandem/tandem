@@ -2,7 +2,7 @@
   <div class="content-wrapper-tandem content-wrapper-about">
     <SectionHeader title="About.">
       <h2>
-        Let us build.<br>Something great.<br>Together.<br>
+        Let us build<br>something great,<br>together.<br>
       </h2>
       <div>
         <p>
@@ -19,8 +19,7 @@
           class="hidden-link"
           target="_blank"
           href="https://www.youtube.com/watch?v=0hiUuL5uTKc"
-        >This.</a>
-        <br>Is how we do it.
+        >This</a> is how we do it.
       </p>
       <ValuesGrid
         id="work-values"
@@ -172,11 +171,7 @@ export default {
         font-weight 300
         font-size 1.33rem
         letter-spacing -1.04px
-        color black
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color #000
+        white-space: break-spaces
       &.important
         padding 7em 0
         border-bottom 1px solid $borderColor
