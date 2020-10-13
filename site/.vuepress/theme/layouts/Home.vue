@@ -20,7 +20,7 @@
                 Better
               </span>
               <span class="second-text">
-                Together.
+                Together
               </span>
               <div>
                 <h1 class="home-summary">
@@ -303,19 +303,12 @@ export default {
       &.section-31
         font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
         color black
-        font-size 6em
+        font-size 8em
         padding 0
         text-align center
         line-height .85
-        font-weight 600
-        letter-spacing -.07em
-        .first-text
-          font-size 1.3em
         .second-text
-          text-transform uppercase
           color $tandemPink
-          font-size 1.5em
-          font-weight 800
         .home-summary, h1
           margin auto
           margin-top 1em
@@ -324,9 +317,9 @@ export default {
           font-family GalaxieCopernicus, PT Serif, serif
           color black
           font-weight 300
-          font-size .5em
+          font-size .4em
           letter-spacing -0.0265em
-          line-height 1.2
+          line-height 1.2 !important
         @media (max-width: $MQMobile)
           text-align center
           font-size 2.5em

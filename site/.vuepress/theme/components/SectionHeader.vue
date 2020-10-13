@@ -60,10 +60,10 @@ export default {
 
 <style lang="stylus" scoped>
 h1
-  font-size 30px
-  font-weight 900
-  letter-spacing -2.32px
-  text-decoration underline
+  font-size 32px
+  border-bottom 0.5rem solid #000
+  display inline-block
+  padding-bottom 0.5em
 h2
   color black
   font-family GalaxieCopernicus, PT Serif, serif
@@ -71,8 +71,8 @@ h2
   margin 0
   margin-bottom 1em
   letter-spacing -0.0265em
-  line-height 1.265
-  font-size 2em
+  line-height 1.265 !important
+  font-size 3em
 .section-header
   display flex
   justify-content center

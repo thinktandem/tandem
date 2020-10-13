@@ -16,7 +16,7 @@
         .hero-left-content.{{ id }}:hover h2 {color: {{ hover }};}
         .hero-left-content.{{ id }}:hover hr {border-color: {{ hover }};}
         .hero-left-content.{{ id }}:hover .hero-summary {color: {{ hover }};}
-        .hero-left-content.{{ id }}:hover .hero-type {color: {{ hover }};}
+        .hero-left-content.{{ id }}:hover .hero-type {color: {{ hover }}; border-bottom: 0.25em solid {{ hover }}}
       </style>
       <div :class="`hero-right-content ${id}`">
         <YouTube
@@ -30,11 +30,9 @@
       >
         <div :class="`hero-left-content ${id}`">
           <h2>{{ title }}</h2>
-          <hr align="left">
           <div class="hero-summary">
             {{ byline }}
           </div>
-          <hr align="left">
           <div class="hero-type">
             {{ type }}
           </div>
@@ -124,6 +122,11 @@ export default {
         letter-spacing -0.0587654321em
         font-size 1.2em
         margin-top 2em
+        letter-spacing -0.0265em
+        border-bottom 0.25em solid #fff
+        display inline-block
+        clear both
+        padding-bottom 0.25em
       hr
         width 33%
       h2

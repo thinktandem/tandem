@@ -174,7 +174,6 @@ a
       color inherit
       text-decoration none
   .work-summary
-    font-size 14px
     color inherit
     font-weight 300
     font-size 1.68rem
@@ -185,6 +184,7 @@ a
     right 1em
     bottom 1em
     font-size .8em
+    padding-right 2em
   footer
     opacity 0
     height 0

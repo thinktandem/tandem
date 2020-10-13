@@ -86,9 +86,11 @@ export default {};
 
     .menu-primary
       a
-        font-size 20px
-        letter-spacing -1.67px
+        font-size inherit
         color $tandemGrey
+        font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
+        text-decoration none
+        letter-spacing normal
         &:hover
           color $tandemPink
       ol, ul
