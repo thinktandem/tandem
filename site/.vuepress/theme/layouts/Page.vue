@@ -55,7 +55,10 @@
       </div>
     </div>
 
-    <div class="custom-block point recent-posts">
+    <div
+      v-if="posts.length > 0"
+      class="custom-block point recent-posts"
+    >
       <p class="custom-block-title">
         Recent {{ upperTag }}<br>content.
       </p>
