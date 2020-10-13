@@ -171,7 +171,6 @@ export default {
         font-weight 300
         font-size 1.33rem
         letter-spacing -1.04px
-        white-space: break-spaces
       &.important
         padding 7em 0
         border-bottom 1px solid $borderColor
@@ -182,8 +181,6 @@ export default {
         p
           &.custom-block-title
             font-size 3.64em
-            letter-spacing -0.0265em
-            line-height 1.265
             font-family GalaxieCopernicus, PT Serif, serif
             @media (max-width: $MQMobile)
               font-size 2.1em

@@ -6,11 +6,12 @@
         v-for="(tagGroup, index) in strategy"
         :key="index"
       >
-        <a
+        <li
           v-for="tag in tagGroup"
           :key="tag.tag"
-          :href="`${prefix}${tag.tag}`"
-        ><li>{{ tag.name }}</li></a>
+        >
+          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+        </li>
       </ul>
     </div>
     <div class="tag-item tag-third">
@@ -19,11 +20,12 @@
         v-for="(tagGroup, index) in design"
         :key="index"
       >
-        <a
+        <li
           v-for="tag in tagGroup"
           :key="tag.tag"
-          :href="`${prefix}${tag.tag}`"
-        ><li>{{ tag.name }}</li></a>
+        >
+          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+        </li>
       </ul>
     </div>
     <div class="tag-item tag-third">
@@ -32,11 +34,12 @@
         v-for="(tagGroup, index) in development"
         :key="index"
       >
-        <a
+        <li
           v-for="tag in tagGroup"
           :key="tag.tag"
-          :href="`${prefix}${tag.tag}`"
-        ><li>{{ tag.name }}</li></a>
+        >
+          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+        </li>
       </ul>
     </div>
     <div class="tag-item tag-full">
@@ -45,11 +48,12 @@
         v-for="(tagGroup, index) in industry"
         :key="index"
       >
-        <a
+        <li
           v-for="tag in tagGroup"
           :key="tag.tag"
-          :href="`${prefix}${tag.tag}`"
-        ><li>{{ tag.name }}</li></a>
+        >
+          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+        </li>
       </ul>
     </div>
     <div class="tag-item tag-full-columns">
@@ -58,11 +62,12 @@
         v-for="(tagGroup, index) in technology"
         :key="index"
       >
-        <a
+        <li
           v-for="tag in tagGroup"
           :key="tag.tag"
-          :href="`${prefix}${tag.tag}`"
-        ><li>{{ tag.name }}</li></a>
+        >
+          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+        </li>
       </ul>
     </div>
 
@@ -72,11 +77,12 @@
         v-for="(tagGroup, index) in other"
         :key="index"
       >
-        <a
+        <li
           v-for="tag in tagGroup"
           :key="tag.tag"
-          :href="`${prefix}${tag.tag}`"
-        ><li>{{ tag.name }}</li></a>
+        >
+          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -180,21 +186,20 @@ export default {
       line-height inherit
     ol, ul
       list-style none
-      padding 0em .5em
-      a
-        text-decoration none
-        border-bottom solid 1px $borderColor
-        :hover
-          color $tandemPink
-          transition all .2s
+      padding 0 .5em
       li
-        border-bottom solid 1px $borderColor
         margin 1.5em 2em
+        border-bottom solid 1px $borderColor
+      a
+        font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
         font-weight 300
         font-size 1.13rem
         letter-spacing -1.44px
-        font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
         color $middleGrey
+        text-decoration none
+        &:hover
+          color $tandemPink
+          transition all .2s
     &.tag-third
       width 32%
       padding-bottom 1em
