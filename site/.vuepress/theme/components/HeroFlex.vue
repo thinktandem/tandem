@@ -92,6 +92,8 @@ export default {
 .hero-flex-wrapper
   height 100%
   display flex
+  @media (min-width: $MQNarrow) and (max-width: $MQSmall)
+    padding 4em
   a
     text-decoration none
     width 49%
@@ -114,7 +116,7 @@ export default {
         font-weight 500
         font-size 1.28rem
         line-height 2
-        letter-spacing -1.04px
+        letter-spacing -0.025em
         margin 2em 0
       .hero-type
         font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif

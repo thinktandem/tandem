@@ -10,7 +10,7 @@
         ref="fullpage"
         :options="options"
       >
-        <div class="section">
+        <section class="section">
           <div class="home-section-container section-31">
             <div
               v-if="message === 0"
@@ -44,9 +44,9 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div
+        <section
           v-for="slide in slides"
           :key="slide.id"
           class="section"
@@ -57,7 +57,7 @@
             :key="slide.id"
             v-bind="Object.assign({}, slide.props, {id: slide.id})"
           />
-        </div>
+        </section>
       </full-page>
     </ClientOnly>
     <Content />
@@ -96,7 +96,7 @@ export default {
             title: 'WordPress + Redesign.',
             byline: 'We rebuilt Community of Literary Magazines and Presses on WordPress for performance, user experience and mobile.',
             link: '/work/clmp-wp-redesign/',
-            type: 'recent wordpress work',
+            type: 'view our recent wordpress work',
             color: 'white',
             hover: '#cb1414',
             styles: {
@@ -118,7 +118,7 @@ export default {
             title: 'Drupal 8 + Redesign.',
             byline: 'We quickly rebuilt Chenmed with a modern design that allowed their marketing team to quickly add high quality content.',
             link: '/work/chenmed-d8-redesign/',
-            type: 'recent drupal work',
+            type: 'view out recent drupal work',
             color: 'white',
             hover: '#0083c1',
             styles: {
@@ -326,7 +326,7 @@ export default {
           font-weight 300
           font-size .5em
           letter-spacing -0.0265em
-          line-height 1.265
+          line-height 1.2
         @media (max-width: $MQMobile)
           text-align center
           font-size 2.5em

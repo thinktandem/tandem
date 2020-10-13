@@ -214,7 +214,7 @@ header
   top 0
   box-sizing border-box
   background-color transparent
-  padding 20px
+  padding 2em
   margin auto
   transition all 1s cubic-bezier(0.25, 0.8, 0.25, 1)
   &.fadeout
@@ -360,6 +360,8 @@ nav
     display flex
     justify-content flex-end
     align-items center
+    position: relative;
+    top: 0.25rem
     .menu-secondary
       display none
     .nav
@@ -370,7 +372,7 @@ nav
         margin-left 20px
         a
           font-family "AvenirNext", "Helvetica Neue", Arial, sans-serif
-          font-size 20px
+          font-size 24px
           text-decoration none
           letter-spacing -1.67px
 
