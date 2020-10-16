@@ -2,7 +2,7 @@
   <div class="content-wrapper-tandem content-wrapper-blog">
     <SectionHeader title="LeBlog.">
       <h2>
-        Content demands.<br>A simple design.<br>Like this.
+        Content demands<br>a simple design.<br>Like this.
       </h2>
       <div>
         <p>

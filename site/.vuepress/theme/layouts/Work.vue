@@ -2,11 +2,11 @@
   <div class="content-wrapper-tandem content-wrapper-work">
     <SectionHeader title="Work.">
       <h2>
-        Simple or complex.<br>Big or small.<br>We've seen it all.<br>
+        Simple or complex,<br>big or small.<br>We've seen it all.<br>
       </h2>
       <div>
         <p>
-          Our team has helped re-design large non-profits, developed native desktop applications, created popular open source projects, trained worldclass agencies and built some really cool websites for some really cool brands.
+          Our team has helped re-design large non-profits, developed native desktop applications, created popular open source projects, trained world-class agencies and built some really cool websites for some really cool brands.
           <br><strong>We've done it all.</strong>
         </p>
       </div>

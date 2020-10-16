@@ -2,13 +2,13 @@
   <div class="content-wrapper-tandem content-wrapper-about">
     <SectionHeader title="About.">
       <h2>
-        Let us build.<br>Something great.<br>Together.<br>
+        Let us build<br>something great<br>together.<br>
       </h2>
       <div>
         <p>
           We love achieving great things by working together.<br>
           Combine your goals with our experience, expertise and passion and<br>
-          <strong>Let's build your best.</strong>
+          <strong>let's build your best.</strong>
         </p>
       </div>
     </SectionHeader>

@@ -2,11 +2,11 @@
   <div class="content-wrapper-tandem content-wrapper-contact">
     <SectionHeader title="Contact Us.">
       <h2>
-        Get in touch.<br>We'd love to chat.<br>And work together.
+        Get in touch.<br>We'd love to chat<br>and work together.
       </h2>
       <div>
         <p>
-          We have a distributed team that is primarily located in the United States but we would love to connect any time, place or timezone. Let's connect and do great things together.
+          We have a distributed team located in the United States but available any timezone or place. Let's connect and do great things together.
           <br><strong>Let's talk!</strong>
         </p>
       </div>
