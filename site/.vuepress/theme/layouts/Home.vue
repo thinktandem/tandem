@@ -116,7 +116,7 @@ export default {
           },
           props: {
             title: 'Drupal 8 + Redesign.',
-            byline: 'We quickly rebuilt Chenmed with a modern design that allowed their marketing team to quickly add high quality content.',
+            byline: 'We quickly rebuilt ChenMed with a modern design that allowed their marketing team to quickly add high quality content.',
             link: '/work/chenmed-d8-redesign/',
             type: 'recent drupal work',
             color: 'white',
