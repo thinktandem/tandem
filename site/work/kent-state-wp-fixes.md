@@ -52,4 +52,3 @@ Taxonomy Relationship Field
 ::: important Editorial Overhaul.
 By utilizing ACF's Relationship Fields, we were able to link Donor and Case Studies together via the Case Study's Taxonomy Terms.  This allowed for a streamlined editorial experience and alleviated any erroneous entries.
 :::
-
