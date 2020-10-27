@@ -9,7 +9,7 @@ logoHeight: 2
 logoMargin: 15
 
 header:
-  title: "Streamlined Editorial Experience"
+  title: "Streamlined<br />Editorial<br />Experience"
   image: /images/work/kent-state-screenshot.png
   background:
     background-color: "#003976"
