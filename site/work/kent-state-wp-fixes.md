@@ -34,7 +34,7 @@ tags:
   - development
 ---
 ::: point Summary.
-Kent State's Forever Brighter Microsite was composed mainly of two custom post types, Case Studies and Donors.  The Donor CPT was designed to manually reference Case Studies via copying and pasting the case study title and taxonomy term.  This lead to a cumbersome editorial experience that could produce erroneous results.  To fix this, we streamlined the editorial experience with relationship based Advanced Custom Fields.   
+Kent State's "Forever Brighter" campaign provides prospective donors with a customized content experience, showing them case studies related to their interests. Unfortunately, the WordPress site powering this experience was difficult to use. Kent State fundraising professionals had to go through a cumbersome process of referencing specific donors to relevant case studies, a process that could produce erroneous results.  To fix this, we streamlined the editorial experience with the Advanced Custom Fields WordPress plugin, providing as more intuitive way to link donors with relevant case study information.
 :::
 
 > This is EXACTLY what I was hoping for – thank you so much!
@@ -45,10 +45,10 @@ Kent State's Forever Brighter Microsite was composed mainly of two custom post t
 * Advanced Custom Fields
 :::
 
-::: col-half ACF:
-Taxonomy Relationship Field
+::: col-half Methodology
+Interview the key fundraising stakeholder, agree upon a solution, and use Advanced Custom Fields' Taxonomy Relationship Field to streamline editorial experience.
 ::::::
 
 ::: important Editorial Overhaul.
-By utilizing ACF's Relationship Fields, we were able to link Donor and Case Studies together via the Case Study's Taxonomy Terms.  This allowed for a streamlined editorial experience and alleviated any erroneous entries.
+By utilizing Advanced Custom Fields' Relationship Fields, we were able to link Donor and Case Studies together via the Case Study's Taxonomy Terms.  This allowed for a streamlined editorial experience and alleviated any erroneous entries.
 :::
