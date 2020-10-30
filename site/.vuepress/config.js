@@ -221,6 +221,10 @@ module.exports = {
         title: 'Search Engine Optimization.',
         byline: 'Here\'s some work we\'ve done in seo.',
       },
+      'personalization': {
+        title: 'Personalization.',
+        byline: 'Content made just for YOU.'
+      },
 
       // Design
       'design': {
@@ -318,6 +322,10 @@ module.exports = {
       'webinar': {
         title: 'Giving back with webinars.',
         byline: 'Every now and then we also host webinars so we can open source some of the knowledge we\'ve gained.',
+      },
+      'member-portals': {
+        title: 'Member Portals.',
+        byline: 'Creating an engaging logged-in experience for donors, patients, or members of your organization.'
       },
 
       // Tech
