@@ -1,5 +1,5 @@
 ---
-title: "IA + Drupal Development"
+title: "IA + Drupal 7"
 id: ucsf-memory-and-aging-center
 client: "UCSF Memory and Aging Center"
 summary: "We clarified the Memory and Aging Center's site structure and developed new Drupal features."
