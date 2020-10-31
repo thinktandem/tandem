@@ -223,7 +223,7 @@ module.exports = {
       },
       'personalization': {
         title: 'Personalization.',
-        byline: 'Content made just for YOU.'
+        byline: 'Content made just for YOU.',
       },
 
       // Design
@@ -325,7 +325,7 @@ module.exports = {
       },
       'member-portals': {
         title: 'Member Portals.',
-        byline: 'Creating an engaging logged-in experience for donors, patients, or members of your organization.'
+        byline: 'Creating an engaging logged-in experience for donors, patients, or members of your organization.',
       },
 
       // Tech
