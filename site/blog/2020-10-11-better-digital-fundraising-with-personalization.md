@@ -11,6 +11,7 @@ tags:
   - strategy
   - user-research
   - events
+  - personalization
 ---
 
 ## Overview
