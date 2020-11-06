@@ -24,11 +24,11 @@ We are able to achieve this with the [Members plugin](https://wordpress.org/plug
 
 The Members plugin allows us to add a level of granularity that is not easily available in WordPress core.   We can add roles via the UI, set their permissions via the UI, allows us to set multiple roles on a user, and much more.  This plugin makes it easy for a non development type admin to manage all these settings.  I could of used WordPress core hooks and filters to do this, but we don't build sites for developers when it is all said and done.
 
-When you [add a Custom Post Type](https://developer.wordpress.org/reference/functions/register_post_type/) in WordPress, it inherits the basic Post type permissions.  On most sites we build, the Post type is typically blog like content.  So in our case, everyone can access the Blog, but not everyone should access a certain CPT.  This is achievable with a little bit of coding.  
+When you [add a Custom Post Type](https://developer.wordpress.org/reference/functions/register_post_type/) in WordPress, it inherits the basic Post type permissions.  On most sites we build, the Post type is typically blog like content.  So in our case, everyone can access the Blog, but not everyone should access a certain CPT.  This is where the Members plugin comes in handy on top of a little bit of coding.  
 
 ## Register Post Type Tweaks
 
-There are 3 additional arguments we need to set when we setup our CPT via ```register_post_type```.  Let's go over each one:
+There are 3 additional arguments we need to add when we setup our CPT via ```register_post_type``` function.  Let's go over each one:
 
 ### map_meta_cap
 
@@ -40,7 +40,7 @@ The [capability_type](https://developer.wordpress.org/reference/functions/regist
 
 ### capabilities
 
-As mentioned above, the [capabilities](https://developer.wordpress.org/reference/functions/register_post_type/#capabilities) argument allows us to granular define all our primitive capabilities.  You technically don't have to do this if you just set the capability_type argument. However, in order for this to work well with the Members plugin, you do need to set this up in this use case.
+As mentioned above, the [capabilities](https://developer.wordpress.org/reference/functions/register_post_type/#capabilities) argument allows us to granularly define all our primitive capabilities.  You technically don't have to do this if you just set the capability_type argument. However, in order for this to work well with the Members plugin, you do need to set this up in this use case.
 
 ### Altering register_post_type()
 
