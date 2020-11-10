@@ -5,7 +5,7 @@ client: bentley
 summary: "We trained the Bentley University web team on digital accessibility best practices."
 link: https://www.bentley.edu/
 logo: /images/logos/bentley-logo.png
-logoHeight: 5
+logoHeight: 3
 
 header:
   title: "WCAG 2.0<br />Accessibility<br />Training"
