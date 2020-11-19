@@ -79,4 +79,4 @@ After testing the integration for a month we know it's ready for primetime, but 
 
 ## What's Next?
 
-We look forward to continuing to offer deeper support for more application frameworks on Platform.sh and improving the stability of the Lando integration. Contributions from Platform.sh and our other sponsors is what helps make Lando successful for all of us. We rely upon you to support Lando's continued growth; [sponsor today](https://github.com/sponsors/lando) if you have't already!
+We look forward to continuing to offer deeper support for more application frameworks on Platform.sh and improving the stability of the Lando integration. Contributions from Platform.sh and our other sponsors is what helps make Lando successful for all of us. We rely upon you to support Lando's continued growth; [sponsor today](https://github.com/sponsors/lando) if you haven't already!
