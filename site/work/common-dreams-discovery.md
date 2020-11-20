@@ -2,7 +2,7 @@
 title: "Strategic Discovery"
 id: common-dreams-discovery
 client: common-dreams
-summary: "Finding the best way forward for a progressive news website."
+summary: "In depth deep dive to find the best way forward for a progressive news website."
 link: https://www.commondreams.org
 logo: /images/logos/common-dreams-logo.png
 logoHeight: 2
@@ -12,7 +12,7 @@ header:
   image: /images/work/common-dreams-discovery.png
   background:
     background-color: "#113B63"
-    background-image: url(/images/work/common-dreams-discovery.png)
+    background-image: url(/images/work/common-dreams-bg.png)
     background-position: 100% 20%
     background-size: auto
     background-repeat: no-repeat
