@@ -23,7 +23,7 @@ There's no shame in saying it: sometimes even the most hardcore "neckbeard" deve
 
 > Pantheon Localdev is the local development experience you've been waiting for.
 
-Now, for all of you who love the power of Lando but want it in a delicious GUI wrapper, the folks at Pantheon have something special for you: Pantheon LocalDev.
+Now, for all of you who love the power of Lando but want it in a delicious GUI wrapper, the folks at Pantheon have something special for you: Pantheon Localdev.
 
 ## What is Pantheon Localdev?
 
