@@ -15,6 +15,7 @@ All Tandem team members shall use the designated encrypted password storage util
 1.  To the greatest extent possible, team members should only have access to client credentials for the projects they are currently working on.
 2.  Tandem team members should be removed from access to project materials in a reasonable time after the cease working on a project.
 3.  Never store credentials in plain text or share them via plain text. Always utilize our password management system. If you share a resource in a public space unintentionally, immediately notify your project manager of the security breach.
+4. Use the LastPass password generator and make sure that all passwords conform to NIST SP800-63b standards.
 4. Where applications support it, Tandem staff are expected to use two-factor authentication.
 
 ## Managing Personal/Confidential Information
