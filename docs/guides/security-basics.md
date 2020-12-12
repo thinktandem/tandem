@@ -7,6 +7,7 @@
 3. Reset your firmware password: Restart your Mac while holding cmd+r. This should boot you into the recovery hard drive. Once there, you should be able to find a utility called "Firmware Password Utility," which will allow you to enable a firmware password.
 4. Enable any "remote erase" (ie Find my Mac) feature your computer might have. You'll sleep better knowing the bad guys only got your computer, not the volumes of personal and client data on it.
 5. Install antivirus software that updates virus definitions at least weekly.
+6. Apply security releases for all software (including your operating system and applications) immediately. Enable automatic updates wherever possible. Subscribe to security reporting and patch release services where automated updates are not possible.
 
 ## Password and Credential Management
 
