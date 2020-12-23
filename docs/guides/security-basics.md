@@ -25,6 +25,7 @@ All Tandem team members shall use the designated encrypted password storage util
     1. In the case that the client is unable to provide a sanitized data source or when such a data source would be impossible to create, obtain permission from the client to handle this data on your computer. Discuss with your project manager if you have questions.
 2.  Consult the project manager before handling ANY sensitive personal information and question its necessity in the project.
 3. Use a secure mechanism to transfer sensitive files. Google Drive data is transmitted over SSL and is protected by a BAA (in the case of health data) that we have with them. Create a shared folder and send it as a link. Be aware of who else has access to the space. Once you have retrieved the file, delete it from Drive unless it is needed.
+4. Never store personal or confidential information on removable media (DVD/thumb drives/etc.)
 
 ## For Project Managers
 
