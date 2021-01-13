@@ -123,38 +123,35 @@ export default {
       h1, h2, p
         color black
       .section-header-right
-        text-align right
-        @media (max-width: $MQMobile)
-          text-align center
-
+        text-align center
+        @media (min-width: $MQMobile)
+          text-align right
     .load-more
       margin-bottom 2em
     .hot-tags
       width 100%
       ul
         margin 0
+        padding 0
         list-style none
         display flex
-        justify-content space-between
+        flex-wrap wrap
+        justify-content center
     .custom-block
       p
         font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
+        { bodyType }
+        border 1px #000 solid
+        font-size typeScale.g
         color black
       &.point
+        border-top 1px solid $borderColor
         border-bottom 1px solid $borderColor
         margin-bottom 2em
-        border-top 1px solid $borderColor
         padding 2em 0
         &.tags
           border-bottom 0
-
-    @media (max-width: $MQMobile)
+    @media (min-width: $MQMobile)
       .hot-tags
-        ul
-          margin 0
-          padding 0
-          flex-wrap wrap
-          justify-content center
+        justify-content space-between
 </style>
