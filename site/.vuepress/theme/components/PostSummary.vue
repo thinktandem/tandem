@@ -100,10 +100,10 @@ export default {
 a
   text-decoration none
 .post
-  margin-bottom 2em
   position relative
   padding 4em 4em
   background $lightGrey
+  margin-bottom 1em
   &:hover
     color $tandemPink
     .post-summary, .post-title, .written-by
@@ -112,46 +112,45 @@ a
       transition none
   .post-wrapper
     opacity .86
-    padding 4em
+    padding 1em
 
   .post-title
-    font-size 3.18em
+    { displayType }
+    font-size typeScale.e
     font-weight 600
-    letter-spacing -0.0987654321em
+    text-decoration none
     margin-top 0
     border-bottom 0
-    font-family "Poppins", "Helvetica Neue", Arial, sans-seri
     color $textColor
     cursor pointer
     transition none
-    text-decoration none
 
   .post-summary
-    font-size 14px
-    color $tandemGrey
+    { bodyType }
+    font-size typeScale.i
     font-weight 300
-    font-size 1.68rem
-    line-height 2
-    letter-spacing -1.04px
+    color $tandemGrey
 
   .post-meta-author
     margin-top 1em
+
   footer
     opacity 0
     height 0
     display none
-@media (max-width: $MQMobile)
+
+@media (min-width: $MQMobile)
   .post
     padding 1em
-    margin-bottom 1em
+    margin-bottom 2em
     .post-wrapper
-      padding 1em
+      padding 4em
   .content-wrapper-tandem.content-wrapper-blog,
   .content-wrapper-tandem.content-wrapper-tag
     .post-title
-      font-size 2em
+      font-size typeScale.c
     .post-summary
-      font-size 1.2em
+      font-size typeScale.f
       margin-bottom 3em
     .post-logo
       right .4em

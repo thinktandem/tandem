@@ -184,36 +184,29 @@ export default {
                 margin-bottom 1em
         p
           &.custom-block-title
+            { bodyType }
+            font-size typeScale.g
             font-weight 300
-            font-size 1.33rem
-            letter-spacing -1.04px
             color inherit
             small
-              font-size .75em
+              { bodyType }
+              font-size typeScale.i
               color $darkTextColor
-              font-family "GalaxieCopernicus", PT Serif, Serif
 
 .post-theme-content
-  font-size 16px
-  letter-spacing 0px
-  font-family "GalaxieCopernicus", PT Serif, Serif
+  { bodyType }
   color $textColor
   position relative
   h1
-    font-size 4.57em
+    font-size typeScale.b
     font-weight 600
-    letter-spacing -0.0987654321em
     margin-top 0
     margin-bottom .5em
   h2
-    font-size 2.5em
+    font-size typeScale.d
     font-weight 600
-    letter-spacing -0.0987654321em
   p
     font-weight 300
-    line-height 1.712
-    letter-spacing -0.56px
-    font-size 1.0987654321em
   footer
     margin-bottom 2em
   .post-title
@@ -225,7 +218,7 @@ export default {
 .vuepress-toc
   right 5%
   margin-top 120px
-  font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+  { displayType }
 @media (max-width: $MQMobile)
   .post-theme-content
     padding-top 0
@@ -236,5 +229,5 @@ export default {
     margin-top 2em
   .post-theme-content
     h1
-      font-size 3em
+      font-size typeScale.c
 </style>

@@ -55,7 +55,10 @@
       </div>
     </div>
 
-    <div class="custom-block point recent-posts">
+    <div
+      v-if="posts.length > 0"
+      class="custom-block point recent-posts"
+    >
       <p class="custom-block-title">
         Recent {{ upperTag }}<br>content.
       </p>
@@ -216,13 +219,13 @@ export default {
           @media (max-width: $MQMobile)
             padding-bottom 5em
     .load-more
+      { displayType }
       text-align center
       background $lightGrey
       padding 1em
       color $darkTextColor
       margin 0em
       cursor pointer
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
       button
         all unset
     .section-header
@@ -246,11 +249,7 @@ export default {
         font-weight 300
         font-size 1.33rem
         letter-spacing -1.04px
-        color black
-        font-weight 300
-        font-size 1.33rem
         letter-spacing -1.04px
-        color #000
       &.important
         padding 7em 0
         border-top 1px solid $borderColor
@@ -261,7 +260,7 @@ export default {
         p
           &.custom-block-title
             font-size 3.64em
-            font-family GalaxieCopernicus, PT Serif, serif
+            { bodyType }
             @media (max-width: $MQMobile)
               font-size 2.1em
         &.remote-team
@@ -274,9 +273,9 @@ export default {
           &.custom-block-title
             width 20%
             small
+              { bodyType }
               font-size .75em
               color $darkTextColor
-              font-family "GalaxieCopernicus", PT Serif, Serif
             @media (max-width: $MQMobile)
               width 100%
         border-top 1px solid $borderColor

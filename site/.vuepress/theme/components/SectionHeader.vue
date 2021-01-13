@@ -43,7 +43,7 @@ export default {
     },
     radius: {
       type: String,
-      default: '0%',
+      default: '0',
     },
     pic: {
       type: String,
@@ -60,27 +60,24 @@ export default {
 
 <style lang="stylus" scoped>
 h1
-  font-size 30px
+  { displayType }
+  font-size typeScale.e
   font-weight 900
-  letter-spacing -2.32px
   text-decoration underline
 h2
   color black
-  font-family GalaxieCopernicus, PT Serif, serif
-  font-weight 500
-  line-height 1.33
-  margin 0
+  { bodyType }
+  font-size typeScale.e
+  // margin 0
   margin-bottom 1em
-  letter-spacing -0.19rem
-  font-size 2em
 .section-header
   display flex
   justify-content center
   margin-bottom 2em
-  .section-header-left, .section-header-right
+  .section-header-left
     display inline-block
   .section-header-left
-    margin-right 100px
+    // margin-right 100px
     width 20%
     img
       width 150px
@@ -88,13 +85,15 @@ h2
       bottom 6px
     &.linked
       cursor pointer
-  .section-header-right
-    color black
-    font-weight 300
-    font-size 1.33rem
-    letter-spacing -1.04px
-    width 70%
-    display inline-block
+/*
+      .section-header-right
+        color black
+        font-weight 300
+        font-size 1.33rem
+        letter-spacing -1.04px
+        width 70%
+        display inline-block
+*/
 
 @media (max-width: $MQMobile)
   h2
@@ -102,7 +101,7 @@ h2
   .section-header
     text-align center
     flex-direction column
-    .section-header-left, .section-header-right
+    .section-header-left /* , .section-header-right */
       width 100%
 
 </style>

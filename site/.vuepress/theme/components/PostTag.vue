@@ -29,51 +29,35 @@ export default {
 
 <style scoped lang="stylus">
 .post-tag
-    height 26px
-
+  // height 26px
   &:not(:last-child)
     margin-right 10px
-
   a
     background-color $postTagBgColor
     border-radius 3px 0 0 3px
-    padding 0 20px 0 23px
+    padding 0.5rem 0.725rem 0.5rem 1.5rem
     position relative
     text-decoration none
-    height 26px
+    height 2.5rem
+    font-size typeScale.h
     display inline-block
-
+    white-space nowrap
     span
       color $postTagColor
       transition color 0.2s
-
-    &:before
-      position absolute
-      left 10px
-      top 10px
-      background #fff
-      border-radius 50%
-      box-shadow inset 0 1px rgba(0, 0, 0, 0.25)
-      content ''
-      height 6px
-      width 6px
-
     &:after
       position absolute
       right 0
       top 0
       background $bgColor
-      border-bottom 13px solid transparent
-      border-left 10px solid $postTagBgColor
-      border-top 13px solid transparent
+      border-bottom 1.125rem solid transparent
+      border-left 0.875rem solid $postTagBgColor
+      border-top 1.125rem solid transparent
       content ''
-
     &:hover
       background-color $accentColor
-
       &:after
         border-left-color $accentColor
-
       span
         color #fff
 </style>

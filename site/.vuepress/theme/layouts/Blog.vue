@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-blog">
-    <SectionHeader title="LeBlog.">
+    <SectionHeader title="LeBlog">
       <h2>
         Content demands<br>a simple design.<br>Like this.
       </h2>

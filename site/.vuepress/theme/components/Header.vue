@@ -279,7 +279,7 @@ $menu-secondary
     flex 1 100%
     a
       { displayType }
-      font-size typeScale.h
+      font-size typeScale.i
       text-decoration none
       text-transform uppercase
       margin-left 1em

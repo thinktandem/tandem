@@ -205,7 +205,7 @@ export default {
   mounted() {
     // If we start at the top make sure we pink
     const toggle = document.getElementById('nav_toggle');
-    toggle.classList.remove('greybeard');
+    // toggle.classList.remove('greybeard');
     // Get a random message every 5000 seconds
     /*
     setInterval(() => {
@@ -237,13 +237,13 @@ export default {
       const toggle = document.getElementById('nav_toggle');
       if (!destination.isFirst) {
         header.classList.add('fadeout');
-        toggle.classList.add('togglein', 'greybeard');
+        // toggle.classList.add('togglein', 'greybeard');
         header.classList.remove('fadein', 'dehamburger');
       } else {
         header.classList.add('dehamburger', 'fadein');
         header.classList.remove('fadeout', 'open');
         header.classList.remove('not-first');
-        toggle.classList.remove('greybeard');
+        // toggle.classList.remove('greybeard');
       }
     },
     breakFree() {
@@ -301,36 +301,32 @@ export default {
       @media (max-width: $MQMobile)
         width 90%
       &.section-31
-        font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-        color black
-        font-size 6em
+        { displayType }
+        color $textColor
+        font-size 2.5em
         padding 0
         text-align center
-        line-height .85
-        font-weight 600
-        letter-spacing -.07em
         .first-text
-          font-size 1.3em
         .second-text
           text-transform uppercase
           color $tandemPink
           font-size 1.5em
-          font-weight 800
+        .second-text
+          color $textColor
         .home-summary, h1
+          { bodyType }
           margin auto
           margin-top 1em
           width 100%
           text-align center
-          font-family GalaxieCopernicus, PT Serif, serif
           color black
           font-weight 300
           font-size .5em
-          line-height 1.8
-          letter-spacing -1.04px
-        @media (max-width: $MQMobile)
-          text-align center
-          font-size 2.5em
-          .home-summary
-            text-align center
-            font-size .6em
+        .home-summary
+          line-height 1.2
+        @media (min-width: $MQMobile)
+          font-size 4em
+        @media (min-width: $MQSmall)
+          font-size 6em
+
 </style>
