@@ -90,14 +90,15 @@ export default {
   width 100%
   justify-content flex-start
   .written-by, .other-meta
+    position relative
     display flex
     padding-bottom .5rem
     font-size .9em
     img
-      width 24px
-      border-radius: 100%
+      width 42px
+      border-radius 100%
       position relative
-      bottom: 6px
+      bottom 6px
     svg
       width 14px
       height 14px
@@ -107,20 +108,18 @@ export default {
   .other-meta
     align-items baseline
     .meta-prefix
-      margin-left 5px
-      margin-right 5px
-      font-size .67em
+      margin-left 0.5rem
+      margin-right 0.5rem
+      {displayType}
+      font-size typeScale.j
       font-weight 500
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
   .pic-left
-    margin-right 10px
-    position relative
-    top 5px
+    position absolute
+    left -3.25rem
+    top -0.5rem
   @media (max-width: $MQMobile)
     align-items center
     display block
     .written-by, .other-meta
       font-size .9em
-
-
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="tag-container">
     <div class="tag-item tag-third">
-      <a :href="`${prefix}strategy`"><h2>Strategy.</h2></a>
+      <a :href="`${prefix}strategy`"><h2>Strategy</h2></a>
       <ul
         v-for="(tagGroup, index) in strategy"
         :key="index"
@@ -14,7 +14,7 @@
       </ul>
     </div>
     <div class="tag-item tag-third">
-      <a :href="`${prefix}design`"><h2>Design.</h2></a>
+      <a :href="`${prefix}design`"><h2>Design</h2></a>
       <ul
         v-for="(tagGroup, index) in design"
         :key="index"
@@ -27,7 +27,7 @@
       </ul>
     </div>
     <div class="tag-item tag-third">
-      <a :href="`${prefix}development`"><h2>Development.</h2></a>
+      <a :href="`${prefix}development`"><h2>Development</h2></a>
       <ul
         v-for="(tagGroup, index) in development"
         :key="index"
@@ -40,7 +40,7 @@
       </ul>
     </div>
     <div class="tag-item tag-full">
-      <h2>Industry.</h2>
+      <h2>Industry</h2>
       <ul
         v-for="(tagGroup, index) in industry"
         :key="index"
@@ -53,7 +53,7 @@
       </ul>
     </div>
     <div class="tag-item tag-full-columns">
-      <h2>Technology.</h2>
+      <h2>Technology</h2>
       <ul
         v-for="(tagGroup, index) in technology"
         :key="index"
@@ -67,7 +67,7 @@
     </div>
 
     <div class="tag-item tag-full">
-      <h2>Other.</h2>
+      <h2>Other</h2>
       <ul
         v-for="(tagGroup, index) in other"
         :key="index"
@@ -174,9 +174,8 @@ export default {
         transition all .2s
     h2
       margin 1em
-      font-size 1.5em
+      font-size typeScale.f
       font-weight 600
-      letter-spacing -1.68px
       line-height inherit
     ol, ul
       list-style none
@@ -188,12 +187,10 @@ export default {
           color $tandemPink
           transition all .2s
       li
-        border-bottom solid 1px $borderColor
-        margin 1.5em 2em
+        font-size typeScale.h
         font-weight 300
-        font-size 1.13rem
-        letter-spacing -1.44px
-        font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+        border-bottom solid 1px $boderColor
+        margin 1.5em 2em
         color $middleGrey
     &.tag-third
       width 32%

@@ -212,7 +212,6 @@ export default {
   .post-title
     padding-top 0
   .post-meta-data
-    border-bottom 1px solid $borderColor
     justify-content space-between
 
 .vuepress-toc

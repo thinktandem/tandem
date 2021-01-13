@@ -65,43 +65,45 @@ h1
   font-weight 900
   text-decoration underline
 h2
-  color black
   { bodyType }
-  font-size typeScale.e
-  // margin 0
+  font-size typeScale.f
+  color black
   margin-bottom 1em
 .section-header
-  display flex
-  justify-content center
+  text-align center
+  flex-direction column
   margin-bottom 2em
+  padding-top 8rem
+  .section-header-left , .section-header-right
+    width 100%
   .section-header-left
     display inline-block
-  .section-header-left
-    // margin-right 100px
-    width 20%
     img
       width 150px
       position relative
       bottom 6px
     &.linked
       cursor pointer
-/*
-      .section-header-right
-        color black
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        width 70%
-        display inline-block
-*/
+  .section-header-right
+    color black
+    font-weight 300
+    font-size 1.33rem
+    letter-spacing -1.04px
+    display inline-block
 
-@media (max-width: $MQMobile)
+@media (min-width: $MQMobile)
   h2
-    font-size 1.4em
+    font-size typeScale.e
   .section-header
-    text-align center
-    flex-direction column
-    .section-header-left /* , .section-header-right */
-      width 100%
-
+    display flex
+    justify-content center
+    flex-direction row
+    padding-top 0
+    .section-header-left, .section-header-right
+      width auto
+    .section-header-left
+      width 20vw
+      text-align left
+    .section-header-right
+      flex-grow 1
 </style>

@@ -209,15 +209,15 @@ export default {
       &.post
         .post-wrapper
           padding 3em
-        padding 0em
         .post-title
-          font-size 2em
+          font-size typeScale.e
         .post-summary
           display none
       &.work
         .work-summary
-          @media (max-width: $MQMobile)
-            padding-bottom 5em
+          padding-bottom 5em
+          @media (min-width: $MQMobile)
+            padding-bottom 0
     .load-more
       { displayType }
       text-align center
@@ -232,37 +232,37 @@ export default {
       h1, h2, p
         color black
       .section-header-right
-        text-align right
-        @media (max-width: $MQMobile)
-          text-align center
+        text-align center
+        @media (min-width: $MQMobile)
+          text-align right
     .related-tags
       width 100%
       ul
+        display flex
         margin 0
         list-style none
-        display flex
         flex-wrap wrap
+        justify-content center
         li
           margin-top 1em
     .custom-block
       p
+        { bodyType }
+        font-size typeScale.g
         font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        letter-spacing -1.04px
       &.important
-        padding 7em 0
+        padding 4em 0
         border-top 1px solid $borderColor
-        margin-bottom 2em
-        @media (max-width: $MQMobile)
-          padding 4em 0
-          margin-bottom 0
+        margin-bottom 0
+        @media (min-width: $MQMobile)
+          padding 7em 0
+          margin-bottom 2em
         p
           &.custom-block-title
-            font-size 3.64em
             { bodyType }
-            @media (max-width: $MQMobile)
-              font-size 2.1em
+            font-size typeScale.e
+            @media (min-width: $MQMobile)
+              font-size typeScale.c
         &.remote-team
           margin-top 2em
           border-top 1px solid $borderColor
@@ -271,13 +271,13 @@ export default {
         p
           width 100%
           &.custom-block-title
-            width 20%
+            width 100%
             small
               { bodyType }
-              font-size .75em
+              font-size typeScale.g
               color $darkTextColor
-            @media (max-width: $MQMobile)
-              width 100%
+            @media (min-width: $MQMobile)
+              width 20%
         border-top 1px solid $borderColor
         padding 4em 0
         &.recent-work
@@ -294,11 +294,4 @@ export default {
                 all unset
               @media (max-width: $MQMobile)
                 width 100%
-    @media (max-width: $MQMobile)
-      .related-tags
-        ul
-          margin 0
-          padding 0
-          flex-wrap wrap
-          justify-content center
 </style>
