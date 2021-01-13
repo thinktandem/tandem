@@ -1,5 +1,5 @@
 <template>
-  <div
+  <article
     :class="`hero-flex-wrapper ${id}`"
     :style="styles"
   >
@@ -7,14 +7,11 @@
       <style>
         .hero-left-content.{{ id }} a {color: {{ color }};}
         .hero-left-content.{{ id }} h2 {color: {{ color }};}
-        .hero-left-content.{{ id }} hr {border-color: {{ color }};}
         .hero-left-content.{{ id }} .hero-summary {color: {{ color }};}
         .hero-left-content.{{ id }} .hero-type {color: {{ color }};}
-
         .hero-left-content.{{ id }} a:hover {color: {{ hover }};}
         .hero-left-content.{{ id }}:hover {color: {{ hover }};}
         .hero-left-content.{{ id }}:hover h2 {color: {{ hover }};}
-        .hero-left-content.{{ id }}:hover hr {border-color: {{ hover }};}
         .hero-left-content.{{ id }}:hover .hero-summary {color: {{ hover }};}
         .hero-left-content.{{ id }}:hover .hero-type {color: {{ hover }};}
       </style>
@@ -25,23 +22,22 @@
         />
       </div>
 
+      <div :class="`hero-left-content ${id}`">
+        <h2>{{ title }}</h2>
+        <div class="hero-summary">
+          {{ byline }}
+        </div>
+        <div class="hero-type">
+          {{ type }}
+        </div>
+      </div>
+
       <NavLink
         :link="link"
-      >
-        <div :class="`hero-left-content ${id}`">
-          <h2>{{ title }}</h2>
-          <hr align="left">
-          <div class="hero-summary">
-            {{ byline }}
-          </div>
-          <hr align="left">
-          <div class="hero-type">
-            {{ type }}
-          </div>
-        </div>
-      </NavLink>
+        :class="cta"
+      />
     </div>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -83,6 +79,9 @@ export default {
       type: Object,
       default: () => ({}),
     },
+    cta: {
+
+    }
   },
 };
 
@@ -90,47 +89,46 @@ export default {
 
 <style lang="stylus">
 .hero-flex-wrapper
-  height 100%
   display flex
+  height 100vh
+  padding 4rem
   a
+    display block
+    border 1px #f0f solid
     text-decoration none
-    width 49%
   .hero-flex-container
     width 1140px
     margin auto
     display flex
     flex-direction row-reverse
-    @media (max-width: $MQMobile)
-      display block
-      .hero-right-content
-        display none
+    display block
     .hero-right-content
-      width 49%
-      .video-responsive
-        margin-top 17%
+      display none
+      @media (max-width: $MQMobile)
+        width 49%
+        .video-responsive
+          margin-top 17%
     .hero-left-content
       width 80%
       .hero-summary
         font-weight 500
         font-size 1.28rem
         line-height 2
-        letter-spacing -1.04px
+        letter-spacing -0.025em
         margin 2em 0
       .hero-type
-        font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+        { displayType }
         text-transform uppercase
-        letter-spacing -0.0587654321em
         font-size 1.2em
         margin-top 2em
-      hr
-        width 33%
+        display inline-block
+        clear both
+        padding-bottom 0.25em
       h2
-        font-size 4.57em
+        { displayType }
+        font-size typeScale.b
         font-weight 600
-        letter-spacing -0.0587654321em
-        line-height .85
         margin-top 0
-        font-family "Poppins", "Helvetica Neue", Arial, sans-serif
         cursor pointer
         transition none
         text-decoration none

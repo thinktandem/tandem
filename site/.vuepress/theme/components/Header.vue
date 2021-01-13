@@ -1,6 +1,6 @@
 <template>
   <header id="header">
-    <nav id="nav">
+    <nav id="nav" class="nav-primary">
       <style v-if="!isOpen">
         .nav-link {color: {{ color }};}
         .nav-link:hover {color: {{ hover }};}
@@ -9,55 +9,30 @@
         .nav-link.home-link:hover {color: {{ color }};}
         .nav-link.home-link.router-link-active {color: {{ color }};}
       </style>
+      <div class="title">
+        <NavLink
+          link="/"
+          class="home-link"
+        >
+          <TandemLogo />
+          <div class="site-title">{{ $site.title }}</div>
+        </NavLink>
+      </div>
       <button
         id="nav_toggle"
         type="button"
         aria-label="Toggle navigation"
-        class="toggle collapsed"
+        class="toggle collapsed hamburger"
         aria-expanded="false"
         aria-controls="nav-collapse"
       >
-        <svg
-          version="1.1"
-          class="logo"
-          baseProfile="full"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img"
-          :aria-label="`${$siteTitle}: ${$site.description}`"
-          height="100"
-          width="100"
-        >
-          <title>{{ $siteTitle }}</title>
-          <desc>{{ $site.description }}</desc>
-          <circle
-            cx="25"
-            cy="25"
-            r="20"
-            fill="#ed3f7a"
-          />
-        </svg>
         <component
           :is="isOpen ? 'XIcon' : 'MenuIcon'"
           class="menu-toggle"
           @click="$emit('toggle-sidebar')"
         />
       </button>
-      <div class="left-title">
-        <NavLink
-          link="/"
-          class="home-link"
-        >
-          {{ $site.title }}
-        </NavLink>
-      </div>
-      <div class="right-title">
-        <NavLink
-          link="/"
-          class="home-link"
-        >
-          {{ $site.title }}
-        </NavLink>
-      </div>
+
       <div
         id="menu"
         class="menu"
@@ -107,11 +82,16 @@
 </template>
 
 <script>
+//import TandemLogo from '@theme/components/TandemLogo';
+import TandemLogo from '@theme/components/TandemLogo';
 import MenuIcon from 'vue-feather-icons/icons/MenuIcon';
 import XIcon from 'vue-feather-icons/icons/XIcon';
-
 export default {
-  components: {MenuIcon, XIcon},
+  components: {
+    TandemLogo,
+    MenuIcon,
+    XIcon
+  },
   props: {
     isOpen: {
       type: Boolean,
@@ -207,6 +187,106 @@ export default {
 </script>
 
 <style lang="stylus">
+
+$hamburger-button
+  border 0
+  outline none
+  padding 0
+  margin 0
+  position absolute
+  background-color transparent
+  z-index 30
+  width typeScale.e
+  height typeScale.e
+  transition-property: top
+  transition-duration: 0.5s
+  transition-timing-function: ease-out
+  &.toggleout
+    .menu-toggle
+      top -20rem
+  &.togglein
+    .menu-toggle
+      top 2.75rem
+  .menu-toggle
+    color #ffffff
+    width typeScale.e
+    height typeScale.e
+    position relative
+    top 2.75rem
+    left 2.5rem
+    cursor pointer
+  @media (min-width $MQMobile)
+    display none
+
+$nav-primary
+  width 100vw
+  position relative
+  display flex
+
+$menu--primary
+  position absolute
+  box-sizing border-box
+  transition-duration 0.5s
+  transition-property top
+  transition-timing-function cubic-bezier(0.25, 0.8, 0.25, 1)
+  top -105vh
+  height 100vh
+  width 100%
+  align-items center
+  background-color white
+  box-shadow 0 0rem 2.5rem rgba(black, 0.2)
+  margin 0
+  padding 11rem 2rem 2rem 2rem
+  .nav
+    width 100%
+    margin 0
+    padding 0
+    .nav-item
+      display: block
+      margin 0 0 2rem 4.5rem
+      padding 0
+      a
+        { displayType }
+        text-decoration none
+        font-weight 900
+        font-size typeScale.f
+  @media (min-width $MQMobile)
+    box-shadow none
+    top 0
+    flex-direction row
+    height auto
+    padding 2rem 0 0 0
+    .nav
+      width auto
+      flex 0 0 auto
+      display flex
+      .nav-item
+        margin-left: 0
+        margin-right 2rem
+        display inline-block
+        text-align left
+        padding-top 1.125rem
+        .nav-item-desc
+          { visuallyHidden }
+
+$menu-secondary
+  display flex
+  flex 1 100%
+  flex-direction row
+  .links
+    padding 1em
+    border-top 1px solid $borderColor
+    flex 1 100%
+    a
+      { displayType }
+      font-size typeScale.h
+      text-decoration none
+      text-transform uppercase
+      margin-left 1em
+      color $middleGrey
+      &:hover
+        color $tandemPink
+
 header
   z-index 100
   position fixed
@@ -214,215 +294,52 @@ header
   top 0
   box-sizing border-box
   background-color transparent
-  padding 20px
-  margin auto
-  transition all 1s cubic-bezier(0.25, 0.8, 0.25, 1)
+  display flex
   &.fadeout
-    margin-top -600px
-    transition margin-top 0.5s
-    -webkit-transition margin-top 0.5s
+    .menu
+      top -106vh
   &.fadein
-    margin-top 0
-    transition margin-top 0.5s
-    -webkit-transition margin-top 0.5s
-    button
-      &.togglein
-        margin-top 0
-  &.dehamburger
-    button
-      cursor pointer
-      pointer-events none
-      svg
-      .menu-toggle
-        color $tandemPink
-        transition color 0.5s
-        -webkit-transition color 0.5s
+    .menu
+      top: 0
   &.open
-    nav
-      height 400px
+    .nav-primary
+      height 100vh
       background-color transparent
       flex-wrap wrap
-      button, .left-title, .right-title
-        width 100%
-      .home-link
-        background-color $lightGrey
-        padding 5px
-      .menu
-        margin-top 50px
-        width 100vw
-        background-color $lightGrey
-        flex-direction column
-        ul
-          margin auto
-          padding 100px 90px
-          text-align center
-          .nav-item
-            margin 20px
-            a
-              font-size 1.67em
-              letter-spacing -2.54px
-              font-weight 600
-            .nav-item-desc
-              letter-spacing -1.04px
-        .menu-secondary
-          display flex
-          flex 1 100%
-          flex-direction column
-          .links
-            padding 1em
-            border-top 1px solid $borderColor
-            flex 1 100%
-            a
-              text-decoration none
-              font-size .86em
-              font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-              text-transform uppercase
-              margin-left 1em
-              color $middleGrey
-              &:hover
-                color $tandemPink
-
-button
-  border 0
-  background-color transparent
-  outline none
-  padding 0
-  margin 0
-  position absolute
-  display flex
-  svg
-    height 50px
-    width 50px
-    margin-right 0
-    margin-top -3px
-    circle
-      transition fill 0.5s
-      -webkit-transition fill 0.5s
-    &.logo, &.menu-toggle
-      position absolute
-    &.menu-toggle
-      cursor pointer
-      color #ffffff
-      height 30px
-      width 30px
-      top 10px
-      left 10px
-      display none
-      transition color 0.5s, color 0.5s
-      -webkit-transition color 0.5s, color 0.5s
-  &.toggleout
-    margin-top -600px
-    transition margin-top 0.5s
-    -webkit-transition margin-top 0.5s
-  &.togglein
-    margin-top 600px
-    transition margin-top 0.5s
-    -webkit-transition margin-top 0.5s
-    svg
-      &.menu-toggle
-        display block
-
-.fp-enabled
-  .greybeard
-    svg
-      circle
-        fill $lightGrey
-      &.menu-toggle
-        color black
-
-nav
-  display flex
-  line-height 40px
-  height 40px
-
-  ol, ul
-    list-style none
-    margin 0
-    padding 0
-  .left-title, .right-title
-    font-size 30px
-    letter-spacing 2px
-    display block
-    text-transform uppercase
-    a
-      font-weight bold
-      font-family "AvenirNext", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
-      text-decoration none
-      letter-spacing -0.2px
-
-  .right-title
-    display none
-  .left-title
-    position absolute
-    margin-left 50px
+  .title
+    { logoDimensions }
+    padding 2rem
+    z-index 20
+  .site-title
+    { visuallyHidden }
+  .hamburger
+    @extends $hamburger-button
+  .nav-primary
+    @extends $nav-primary
   .menu
-    flex 1
-    display flex
-    justify-content flex-end
-    align-items center
-    .menu-secondary
-      display none
-    .nav
-      flex 0 0 auto
-      display flex
-      margin 0
-      .nav-item
-        margin-left 20px
-        a
-          font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-          font-size 20px
-          text-decoration none
-          letter-spacing -1.67px
+    @extends $menu--primary
+  .menu-secondary
+    @extends $menu-secondary
 
-
-@media (min-width $MQSmall)
-  header
-    &.open
-      nav
-        .menu
-          ul
-            .nav-item
-              margin 32px
-              a
-                font-size 2.5em
-
-@media (max-width $MQMobile)
-  header
-    padding 10px
+  @media (min-width $MQMobile)
     &.dehamburger
-      button
-        pointer-events all
-        svg
-        .menu-toggle
-          color #ffffff
-    &.open
-      nav
-        .right-title
-          flex none
-        .menu
-          display flex
-          margin-top 10px
-          flex-direction column
-          ul
-            flex-direction column
-            padding 50px 20px
-            .nav-item
-              margin 10px
-
-  nav
+      border 2px #000 solid
+      .hamburger
+        pointer-events none
+      .menu-toggle
+        display none
+        color $tandemPink
+    .nav-primary
+      .menu
+        display flex
+        flex 1
+        justify-content flex-end
+      .menu-secondary
+        { visuallyHidden }
+// &.fadeout
     .menu
-      display none
-    .left-title
-      display none
-    .right-title
-      flex 1
-      display flex
-      justify-content flex-end
-      align-items center
-  button
-    &.toggle
-      display flex
-      svg.menu-toggle
-        display block
-
+      top 0
+    // &.fadein
+    // &.open
+    //   border 4px #000 solid
 </style>
