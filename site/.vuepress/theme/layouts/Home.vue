@@ -16,16 +16,10 @@
               v-if="message === 0"
               class="message message-one"
             >
-              <span class="first-text">
-                Better
-              </span>
-              <span class="second-text">
-                Together.
-              </span>
+              <span class="first-text">Better</span>
+              <span class="second-text">Together.</span>
               <div>
-                <h1 class="home-summary">
-                  Tandem is the full-service digital agency that cares as much as you do.
-                </h1>
+                <h1 class="home-summary">Tandem is the full-service digital agency that cares as much as you do.</h1>
               </div>
             </div>
 
@@ -205,7 +199,7 @@ export default {
   mounted() {
     // If we start at the top make sure we pink
     const toggle = document.getElementById('nav_toggle');
-    // toggle.classList.remove('greybeard');
+    toggle.classList.remove('greybeard');
     // Get a random message every 5000 seconds
     /*
     setInterval(() => {
@@ -237,13 +231,13 @@ export default {
       const toggle = document.getElementById('nav_toggle');
       if (!destination.isFirst) {
         header.classList.add('fadeout');
-        // toggle.classList.add('togglein', 'greybeard');
+        toggle.classList.add('togglein', 'greybeard');
         header.classList.remove('fadein', 'dehamburger');
       } else {
         header.classList.add('dehamburger', 'fadein');
         header.classList.remove('fadeout', 'open');
         header.classList.remove('not-first');
-        // toggle.classList.remove('greybeard');
+        toggle.classList.remove('greybeard');
       }
     },
     breakFree() {
@@ -296,37 +290,44 @@ export default {
 .content-wrapper-home
   .section
     .home-section-container
-      width 1140px
+      width 90%
       margin auto
-      @media (max-width: $MQMobile)
-        width 90%
-      &.section-31
+      @media (min-width: $MQMobile)
+        width 1140px
+    .message-one
+      text-align center
+      padding 0 1rem
+      .first-text, .second-text
+        color $tandemPink
+        display inline-block
         { displayType }
-        color $textColor
-        font-size 2.5em
-        padding 0
         text-align center
-        .first-text
-        .second-text
-          text-transform uppercase
-          color $tandemPink
-          font-size 1.5em
-        .second-text
-          color $textColor
-        .home-summary, h1
-          { bodyType }
-          margin auto
-          margin-top 1em
-          width 100%
-          text-align center
-          color black
-          font-weight 300
-          font-size .5em
+        text-transform uppercase
+        font-size typeScale.b
+        white-space nowrap
+      .second-text
+        color $textColor
+      .home-summary
+        margin auto
+        margin-top 1em
+        width 100%
+        text-align center
+        color black
+        { bodyType }
+        font-weight 300
+        font-size typeScale.e
+      @media (min-width: $MQMobile)
+        padding 0 2rem
         .home-summary
-          line-height 1.2
-        @media (min-width: $MQMobile)
-          font-size 4em
-        @media (min-width: $MQSmall)
-          font-size 6em
-
+          max-width 58rem
+          font-size typeScale.e
+        .first-text, .second-text
+          font-size typeScale.a
+      @media (min-width: $MQSmall)
+        padding 0 4rem
+        .home-summary
+          max-width 40rem
+          font-size typeScale.e
+        .first-text, .second-text
+          font-size typeScale.bigboi
 </style>
