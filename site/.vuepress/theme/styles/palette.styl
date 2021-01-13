@@ -8,17 +8,17 @@ $lightGrey = #f8f8f8
 
 // Backwards compat
 $landoPink = #ed3f7a
-$landoGrey = #47474A
+$landoGrey = #47474a
 $landoBlue = #035785
-$landoOrange = #FF7042
-$landoGreen = #00A38F
+$landoOrange = #ff7042
+$landoGreen = #00a38f
 $landoGrey = #2c3e50
 $newsletterBgColor = $lightGrey
 
-// colors
+// Colors
 $accentColor = $tandemPink
 $textColor = $tandemGrey
-$darkTextColor = #47474A
+$darkTextColor = #47474a
 $middleGrey = lighten($darkTextColor, 15%)
 $borderColor = darken($lightGrey, 15%)
 $darkBorderColor = $tandemGrey
@@ -31,15 +31,69 @@ $headerBgColor = $bgColor;
 $footerBgColor = $darkTextColor
 $footerColor = #828282
 
-// layout
+// Layout
 $contentWidth = 740px
 
-// responsive breakpoints
+// Breakpoints
 $MQSmall = 1200px
-$MQNarrow = 959px
+$MQNarrow = 768px
 $MQMobile = 959px
 $MQMobileNarrow = 419px
 
-// code
+// Code
 $lineNumbersWrapperWidth = 3.5rem
 $codeLang = js ts html md vue css sass scss less stylus go java c sh yaml py docker dockerfile makefile
+
+// Type
+$font--body = "GalaxieCopernicus", "PT Serif", serif
+$font--display = "AvenirNext", "Helvetica Neue", Arial, sans-serif
+
+bodyType = @block {
+  font-family $font--body
+  font-weight 900
+  letter-spacing -0.0265em
+  line-height 1.265
+  color $textColor
+}
+
+displayType = @block {
+  font-family $font--display
+  font-weight 500
+  letter-spacing -0.0265em;
+  line-height 0.85
+}
+
+visuallyHidden = @block {
+  position fixed
+  top -200vh
+  left -200vw
+  visibility hidden
+  opacity 0
+  width 1
+  height 1
+  overflow hidden
+}
+
+$logoWidth = 280
+$logoHeight = 56
+logoDimensions = @block {
+  width $logoWidth px
+  height $logoHeight px
+}
+
+/*
+Type Scale | Major Third
+https://type-scale.com/?size=16&scale=1.250&text=A%20Visual%20Type%20Scale&font=Poppins&fontweight=400&bodyfont=Poppins&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false
+*/
+typeScale = {
+  'a': 5.96rem,   // 95.37
+  'b': 4.768rem,  // 76.29px
+  'c': 3.052rem,  // 48.83
+  'd': 2.441rem,  // 39.06
+  'e': 1.953rem,  // 31.25
+  'f': 1.563rem,  // 25
+  'g': 1.25rem,   // 20
+  'h': 0.8rem,     // 12.8
+  'i': 0.64rem,     // 8.19
+  'body': 1rem
+}

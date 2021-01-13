@@ -48,35 +48,34 @@ h2,
 h3,
 h4
   color $landoGrey
-  font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-  font-size 3em
+  { displayType }
+  font-size typeScale.d
   border 0
-  letter-spacing -1px
 h2
-  font-size 2em
+  font-size typeScale.e
 h3
-  font-size 1.4em
+  font-size typeScale.f
 h4
-  font-size 1.2em
+  font-size typeScale.g
+
 a.header-anchor
   padding-right 0
 a
   transition all 0.2s
 
 blockquote
+  display flex
+  position relative
+  flex-wrap wrap
   margin 2em 0
   padding 2em
-  font-size 1.5rem
-  color $darkTextColor
   border-left 0
   background $lightGrey
-  font-style italic
-  display flex
-  flex-wrap wrap
-  position relative
+  font-size typeScale.f
+  color $darkTextColor
   &:before
     display flex
-    font-size 2em
+    font-size typeScale.e
     content '"'
     color $tandemPink
 
@@ -94,22 +93,19 @@ blockquote
     li
       list-style none
       font-style normal
-      font-size .65em
+      font-size typeScale.i
       color $tandemPink
       &:before
         content '~'
   small
       list-style none
       font-style normal
-      font-size .65em
+      font-size typeScale.i
       color $tandemPink
 
 article
   header
     all unset
-
-#mobile-header
-  display none
 
 .content-wrapper
   padding 0
@@ -123,19 +119,20 @@ article
       min-height calc(100vh - 20px - 60px - 100px)
 
 .content-wrapper-tandem
-  padding 160px 15px 80px 15px
-  min-height calc(100vh - 80px - 60px - 160px)
+  padding: 10rem 2rem 5rem 2rem
   max-width $contentWidth
   margin 0 auto
-
-  @media (max-width: $MQMobile)
+  min-height calc(100vh - 20px - 60px - 100px)
+  @media (min-width: $MQMobile)
     &
-      padding 100px 15px 20px 15px
-      min-height calc(100vh - 20px - 60px - 100px)
+      min-height calc(100vh - 80px - 60px - 160px)
 ul
   &.tags, &.post-meta-tags
-    @media (max-width: $MQMobile)
-      display block
+    /*
+    // display block // reduntant
+    @media (min-width: $MQMobile)
+      display inline-block
+    */
   li
     &.post-tag
       &.tag
@@ -143,9 +140,8 @@ ul
       a
         border-radius 0
         background $lightGrey
+        font-size typeScale.g
         font-weight 300
-        font-size 1.13rem
-        letter-spacing -1.44px
         padding 1em 2em
         transition none
         span
@@ -173,35 +169,32 @@ ul
   position relative
   p
     font-weight 300
-    font-size 1.33rem
-    letter-spacing -1.04px
+    { bodyType }
+    font-size typeScale.g
     &.custom-block-title
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-      font-size 28px
+      { dsplayType }
+      font-size typeScale.f
       font-weight 600
-      letter-spacing -1.68px
-      line-height inherit
-      margin-top -5px
+      // margin-top -5px
   &.big, &.medium
     p
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      { dsplayType }
+      font-size typeScale.a
       font-weight 900
-      font-size 96px
       padding 0
       margin 0
-      line-height 1
   &.medium
     p
-      font-size 64px
+      font-size typeScale.b
 
   &.caption
     background-color $lightGrey
     padding .1em 1em
     p
+      { displayType }
       color $textColor
-      font-size .9em
+      font-size typeScale.h
       font-weight 300
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
 
   &.thumbnail
     border 1px solid $lightGrey
@@ -233,26 +226,22 @@ ul
 
   &.important, &.byline
     p
+      { bodyType }
+      font-size typeScale.g
       font-weight 300
-      font-size 1.33rem
-      letter-spacing -1.04px
       &.custom-block-title
-        font-size 3.64em
-        font-family GalaxieCopernicus, PT Serif, serif
-        @media (max-width: $MQMobile)
-          font-size 3em
+        font-size typeScale.c
     ol, ul
       margin 1em 1em
       li
         margin-bottom 1em
+        { bodyType }
+        font-size typeScale.f
         font-weight 300
-        font-size 1.44rem
-        letter-spacing -1.04px
     br
-      display contents
-      @media (max-width: $MQMobile)
-        display block
-
+      display block
+      @media (min-width: $MQMobile)
+        display contents
 
   &.byline
     p
@@ -267,19 +256,17 @@ ul
   &.col-full, &.col-half, &.col-third
     justify-content space-between
     p
-      font-weight 300
-      font-size 1rem
+      font-weight 30
       &.custom-block-title
-        font-size 1.5em
+        font-size typeScale.f
 
   &.warning, &.tip, &.danger, &.error, &.info
     background-color $lightGrey
-    padding 2em
+    padding 2rem
     p
-      font-size 1em
       &.custom-block-title
         text-transform uppercase
-        font-size 1.1em
+        font-size typeScale.g
   &.warning
     background-color mix($lightGrey, yellow, 70%)
   &.danger, &.error
@@ -304,4 +291,3 @@ ul
       &
         flex 0 0 32%
         max-width 32%
-
