@@ -1,14 +1,6 @@
 <template>
   <header id="header">
     <nav id="nav" class="nav-primary">
-      <style v-if="!isOpen">
-        .nav-link {color: {{ color }};}
-        .nav-link:hover {color: {{ hover }};}
-        .nav-link.router-link-active {color: {{ active }};}
-        .nav-link.home-link {color: {{ color }};}
-        .nav-link.home-link:hover {color: {{ color }};}
-        .nav-link.home-link.router-link-active {color: {{ color }};}
-      </style>
       <div class="title">
         <NavLink
           link="/"
@@ -18,20 +10,19 @@
           <div class="site-title">{{ $site.title }}</div>
         </NavLink>
       </div>
+
       <button
         id="nav_toggle"
-        type="button"
-        aria-label="Toggle navigation"
         class="toggle collapsed hamburger"
-        aria-expanded="false"
+        type="button"
         aria-controls="nav-collapse"
-      >
-        <component
-          :is="isOpen ? 'XIcon' : 'MenuIcon'"
-          class="menu-toggle"
-          @click="$emit('toggle-sidebar')"
-        />
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="hamburger-box">
+          <span class="menu-toggle hamburger-inner" @click="$emit('toggle-sidebar')"></span>
+        </span>
       </button>
+
       <div
         id="menu"
         class="menu"
@@ -95,19 +86,7 @@ export default {
     isOpen: {
       type: Boolean,
       required: true,
-    },
-    active: {
-      type: String,
-      default: '#ed3f7a',
-    },
-    color: {
-      type: String,
-      default: '#47474a',
-    },
-    hover: {
-      type: String,
-      default: '#ed3f7a',
-    },
+    }
   },
   data() {
     return {
@@ -255,11 +234,19 @@ $menu--primary
     .nav-item
       display: block
       margin 0 0 2rem 4.5rem
+      font-size typeScale.f
       padding 0
-      a
+      .nav-link
         { displayType }
-        font-size typeScale.f
+        display inline-block
         text-decoration none
+        border none
+        color $textColor
+        // border 1px #f00 solid
+        &:focus, &:hover, &:active, &.router-link-active
+          color $tandemPink
+        &:active
+          outline none
   @media (min-width $MQMobile)
     box-shadow none
     top 0
@@ -289,7 +276,7 @@ $menu-secondary
     flex 1 100%
     a
       { displayType }
-      font-size typeScale.i
+      font-size typeScale.h
       text-decoration none
       text-transform uppercase
       margin-left 1em
@@ -329,7 +316,6 @@ header
     @extends $nav-primary
   .menu
     @extends $menu--primary
-    padding-right 2rem
   .menu-secondary
     @extends $menu-secondary
 
