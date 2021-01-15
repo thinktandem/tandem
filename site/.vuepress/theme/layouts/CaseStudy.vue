@@ -6,41 +6,45 @@
     :style="bgStylez"
   >
     <style>
-      h1 {color: {{ textColor }};}
-      a {color: {{ textColor }};}
-      a:hover {color: {{ hoverColor }};}
-      blockquote {border-top: 1px solid {{ textColor }}; color: {{ textColor }};}
-      blockquote::before {color: {{ hoverColor }};}
-      blockquote ul li {color: {{ hoverColor }};}
+      /* I recommend, settng a class in the js logic, for "inverse" or something, specially if it's more
+      "dark/light" rather than specific colors, this method is a bit of a rube goldberg */
+      h1 { color: {{ textColor }} !important;}
+      a { color: {{ textColor }} !important;}
+      a:hover { color: {{ hoverColor }} !important;}
+      blockquote { color: {{ textColor }} !important;}
+      blockquote::before { color: {{ hoverColor }} !important;}
+      blockquote ul li { color: {{ hoverColor }} !important;}
       .content-wrapper-tandem.case-study-layout .section-header .section-header-left img {
       filter: {{ logoChanger }};
       height: {{ logoHeight }}px;
       margin-top: {{ logoMargin }}px;
       }
       .post-tags ul li a {
-      background-color: {{ bgColor }};
-      border: 1px solid {{ textColor }};
+      background-color: {{ bgColor }}  !important;
+      border: 1px solid {{ textColor }}  !important;
       }
       .post-tags ul li a:hover {
-      background-color: {{ bgColor }};
-      border: 1px solid {{ hoverColor }};
-      color: {{ hoverColor }};
+      background-color: {{ bgColor }} !important;
+      border: 1px solid {{ hoverColor }} !important;
+      color: {{ hoverColor }} !important;
       }
       .post-tags ul li a:hover span {
-      color: {{ hoverColor }};
+      color: {{ hoverColor }}!important;
       }
       .post-tags ul li a span {
-      color: {{ textColor }};
+      color: {{ textColor }} !important;
       }
-      .section-header .section-header-right h2 {color: {{ textColor }};}
-      .content-wrapper {color: {{ textColor }}; border-color: {{ textColor }};}
-      .custom-block.point {border-top: 1px solid {{ textColor }}; color: {{ textColor }};}
-      .custom-block.point {border-bottom: 1px solid {{ textColor }}; color {{ textColor }};}
-      .custom-block.important {border-top: 1px solid {{ textColor }};}
-      .custom-block.col-full {border-top: 1px solid {{ textColor }};}
-      .custom-block.col-half {border-top: 1px solid {{ textColor }};}
-      .custom-block.col-third {border-top: 1px solid {{ textColor }};}
-      .custom-block.point.tagz {border-top: 1px solid {{ textColor }};}
+      .section-header .section-header-right h2 { color: {{ textColor }} !important; }
+      .content-wrapper { color: {{ textColor }} !important; border-color: {{ textColor }} !important; }
+      .custom-block.point {border-top: 1px solid {{ textColor }} !important; color: {{ textColor }} !important; }
+      .custom-block.point {border-bottom: 1px solid {{ textColor }} !important; color {{ textColor }} !important; }
+      .custom-block.important {border-top: 1px solid {{ textColor }} !important; }
+      .custom-block.col-full {border-top: 1px solid {{ textColor }} !important; }
+      .custom-block.col-half {border-top: 1px solid {{ textColor }} !important; }
+      .custom-block.col-third {border-top: 1px solid {{ textColor }} !important; }
+      .custom-block.point.tagz { color: {{ textColor }}; border-top: 1px solid {{ textColor }} !important; }
+      .custom-block.point.tagz h2 { color: {{ textColor }} !important; }
+      .custom-block p { color: {{ textColor }} !important; }
     </style>
     <div class="content-wrapper-tandem case-study-layout">
       <SectionHeader
@@ -235,11 +239,10 @@ export default {
       &:before
         font-size 4em
       p
-        font-size 1.7em
+        font-size typeScale.g
         font-weight 500
         margin-left 10px
         margin-right 10px
-          font-size 1em
       ul
         li
           font-size 1.4em
