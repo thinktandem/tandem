@@ -89,8 +89,7 @@ export default {
             color: 'white',
             hover: '#cb1414',
             styles: {
-              'background-color': '#10203a',
-              'opacity': .76,
+              'background-color': '#10203aba',
             },
           },
         },
@@ -111,9 +110,8 @@ export default {
             color: 'white',
             hover: '#0083c1',
             styles: {
-              'background-color': '#6b1e74',
-              'opacity': .7,
-            },
+              'background-color': '#6b1e74ba',
+            }
           },
         },
         {
@@ -134,8 +132,7 @@ export default {
             color: 'white',
             hover: 'white',
             styles: {
-              'background-color': '#ed3f7a',
-              'opacity': .95,
+              'background-color': '#ed3f7aba',
             },
           },
         },
@@ -155,9 +152,9 @@ export default {
             type: 'recent electron work',
             color: 'black',
             hover: '#1794c7',
+
             styles: {
-              'background-color': '#ffdc28',
-              'opacity': .88,
+              'background-color': '#ffdc28ba',
             },
           },
         },
@@ -178,8 +175,7 @@ export default {
             color: 'white',
             hover: 'white',
             styles: {
-              'background-color': '#ed3f7a',
-              'opacity': .95,
+              'background-color': '#ed3f7aba',
             },
           },
         },
