@@ -106,8 +106,6 @@ export default {
   &.content-wrapper-work
     max-width 1140px
     .section-header
-      h1, h2, p
-        color black
       .section-header-right
         text-align right
         @media (max-width: $MQMobile)
@@ -115,11 +113,6 @@ export default {
     .work-grid
       { workGrid }
     .custom-block
-      p
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color black
       &.point
         border-bottom 1px solid $borderColor
         margin-bottom 2em
