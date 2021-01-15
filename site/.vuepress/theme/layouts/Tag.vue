@@ -77,13 +77,10 @@ export default {
       { workGrid }
     .work-title
       font-size 2em
-
     .custom-block
       p
         font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color black
+        font-size typeScale.e
       &.important
         padding 7em 0
         border-top 1px solid black
