@@ -13,9 +13,9 @@
     </SectionHeader>
 
     <div class="custom-block point metro-locations">
-      <p class="custom-block-title">
+      <h3>
         Email a metro area.
-      </p>
+      </h3>
       <LocationGrid
         :locations="locations"
         :columns="5"
@@ -23,16 +23,16 @@
     </div>
 
     <div class="custom-block point contact-us">
-      <p class="custom-block-title">
+      <h3>
         Message us via form.
-      </p>
+      </h3>
       <ContactForm />
     </div>
 
     <div class="custom-block point carrier-pigeon">
-      <p class="custom-block-title">
+      <h3>
         Or dispatch carrier pigeon.
-      </p>
+      </h3>
       <DispatchPigeon>
         1300 Clay Street #600<br>
         Oakland, CA 94612

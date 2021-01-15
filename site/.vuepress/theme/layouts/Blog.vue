@@ -13,9 +13,9 @@
     </SectionHeader>
 
     <div class="custom-block point clients">
-      <p class="custom-block-title">
+      <h3>
         Hot tags.
-      </p>
+      </h3>
       <div class="hot-tags">
         <ul
           v-if="hotTags"
@@ -34,9 +34,9 @@
     <ContentList />
 
     <div class="custom-block point tags">
-      <p class="custom-block-title">
+      <h3>
         Explore<br> other content.
-      </p>
+      </h3>
       <TagGrid />
     </div>
   </div>

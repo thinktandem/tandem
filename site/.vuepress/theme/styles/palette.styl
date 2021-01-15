@@ -22,80 +22,90 @@ $darkTextColor = #47474a
 $middleGrey = lighten($darkTextColor, 15%)
 $borderColor = darken($lightGrey, 15%)
 $darkBorderColor = $tandemGrey
-
 $codeBgColor = #000
-
 $bgColor = #fff
 $headerBgColor = $bgColor;
 
 $footerBgColor = $darkTextColor
 $footerColor = #828282
-
+//
 // Layout
-$contentWidth = 740px
-
+$contentWidth   = 740px
+//
 // Breakpoints
-$MQSmall = 1200px
-$MQNarrow = 768px
-$MQMobile = 959px
+$MQLarge        = 1348px
+$MQSmall        = 1200px
+$MQNarrow       = 768px
+$MQMobile       = 959px
 $MQMobileNarrow = 419px
-
+//
 // Code
 $lineNumbersWrapperWidth = 3.5rem
 $codeLang = js ts html md vue css sass scss less stylus go java c sh yaml py docker dockerfile makefile
-
+//
 // Type
 $font--body = "GalaxieCopernicus", "PT Serif", serif
 $font--display = "AvenirNext", "Helvetica Neue", Arial, sans-serif
 
-bodyType = @block {
+bodyType = @block
   font-family $font--body
   font-weight 900
   letter-spacing -0.0265em
   line-height 1.265
   color $textColor
-}
 
-displayType = @block {
+displayType = @block
   font-family $font--display
-  font-weight 500
+  font-weight 900
   letter-spacing -0.0265em;
   line-height 0.85
-}
 
-visuallyHidden = @block {
+visuallyHidden = @block
   position fixed
   top -200vh
   left -200vw
   visibility hidden
   opacity 0
-  width 1
-  height 1
+  width 1px
+  height 1px
   overflow hidden
-}
+
+contentWrapper = @block
+  padding 0
+  margin 0 auto
+  max-width none
+  min-height calc(100vh - 20px - 60px - 100px)
+  @media (min-width: $MQMobile)
+    padding 0
+    min-height calc(100vh - 80px - 60px - 160px)
+
+contentWrapperTandem = @block
+  padding: 10rem 2rem 5rem 2rem
+  @media (min-width: $MQMobile)
+    padding: 10rem 2rem 5rem 2rem
 
 $logoWidth = 280
 $logoHeight = 56
-logoDimensions = @block {
+
+logoDimensions = @block
   width $logoWidth px
   height $logoHeight px
-}
 
 /*
 Type Scale | Major Third
 https://type-scale.com/?size=16&scale=1.250&text=A%20Visual%20Type%20Scale&font=Poppins&fontweight=400&bodyfont=Poppins&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false
 */
 typeScale = {
-  'bigboi': 7.451rem,  // 119.21px
-  'a': 5.96rem,   // 95.37
-  'b': 4.768rem,  // 76.29px
-  'c': 3.052rem,  // 48.83
-  'd': 2.441rem,  // 39.06
-  'e': 1.953rem,  // 31.25
-  'f': 1.563rem,  // 25
-  'g': 1.25rem,   // 20
-  'h': 1rem,      // 16
-  'i': 0.8rem,    // 12.8
-  'j': 0.64rem,   // 8.19
-  'body': 1rem
+  'a':      5.96rem,   // 95.37
+  'b':      4.768rem,  // 76.29px
+  'c':      3.052rem,  // 48.83
+  'd':      2.441rem,  // 39.06
+  'e':      1.953rem,  // 31.25
+  'f':      1.563rem,  // 25
+  'g':      1.25rem,   // 20
+  'h':      1rem,      // 16
+  'i':      0.8rem,    // 12.8
+  'j':      0.64rem,   // 8.19
+  'body':   1rem,
+  'bigboi': 7.451rem  // 119.21px
 }

@@ -32,17 +32,17 @@
       <hr>
       <footer>
         <div class="custom-block point newsletter">
-          <p class="custom-block-title">
+          <h2>
             Subscribe.<br>
             <small>Get updates for new and similiar content.</small>
-          </p>
+          </h2>
           <Newsletter />
         </div>
 
         <div class="custom-block point tagz">
-          <p class="custom-block-title">
+          <h2>
             Learn more about.
-          </p>
+          </h2>
           <div class="post-tags">
             <ul
               v-if="tags"
@@ -182,16 +182,6 @@ export default {
                 justify-content center
               li
                 margin-bottom 1em
-        p
-          &.custom-block-title
-            { bodyType }
-            font-size typeScale.g
-            font-weight 300
-            color inherit
-            small
-              { bodyType }
-              font-size typeScale.i
-              color $darkTextColor
 
 .post-theme-content
   { bodyType }

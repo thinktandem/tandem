@@ -67,8 +67,8 @@ export default {
     h2
       color inherit
       { displayType }
-      font-size 1.2em
       font-weight 400
+      font-size 1.2em
       text-transform uppercase
       margin 0
       padding 0

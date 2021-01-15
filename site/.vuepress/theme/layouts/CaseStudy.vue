@@ -64,9 +64,9 @@
       <Content itemprop="articleBody" />
 
       <div class="custom-block point tagz">
-        <p class="custom-block-title">
+        <h2>
           Learn more about what we've done with:
-        </p>
+        </h2>
         <div class="post-tags">
           <ul
             v-if="tags"
@@ -263,13 +263,11 @@ export default {
           all unset
       .section-header-right
         h1
-          font-family Poppins, Helvetica Neue, Arial, sans-serif
-          line-height 1.04
-          font-size 3.33em
-          font-weight 700
           margin 0 0 1em
+          { displayType }
+          font-weight 700
+          font-size typeScale.c
           text-align right
-          letter-spacing -.19rem
           text-decoration none
     .showcase
       text-align center
@@ -279,21 +277,21 @@ export default {
     .custom-block
       p
         font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
+        { bodyType }
+        font-size typeScale.g
 
       &.big
         p
-          font-size 96px
-          @media (max-width: $MQMobile)
-            font-size 72px
+          font-size typeScale.a
+          @media (min-width: $MQMobile)
+            font-size typeScale.b
       &.medium
         position absolute
-        bottom 7em
-        @media (max-width: $MQMobile)
-          position initial
+        position initial
+        @media (min-width: $MQMobile)
+          bottom 7em
         p
-          font-size 72px
+          font-size typeScale.b
       &.point
         padding 7em 0
         p
@@ -330,27 +328,15 @@ export default {
 
       &.important
         padding 7em 0
-        p
-          &.custom-block-title
-            font-size 3.64em
-            font-family GalaxieCopernicus, PT Serif, serif
         ul
           li
             font-size 1.2em
-        @media (max-width: $MQMobile)
-          p
-            &.custom-block-title
-              font-size 2em
       &.col-full, &.col-half, &.col-third
         padding 7em 0
         ul
           li
-            font-size 1.5em
+            font-size typeScale.f
             list-style none
-        p
-          &.custom-block-title
-            font-size 2.71828em
-            font-weight 900
         img
           position absolute
           bottom -3.5em

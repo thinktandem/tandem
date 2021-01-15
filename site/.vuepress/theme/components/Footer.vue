@@ -2,7 +2,8 @@
   <footer id="footer">
     <div class="footer-container">
       <div class="footer-copyright">
-        <span class="copyright">© 2020</span> TANDEM
+        <
+        <span class="copyright">© 2021</span> Tandem
       </div>
       <div class="footer-links">
         <div
@@ -68,9 +69,7 @@ export default {};
   .footer-copyright
     width 32%
     text-align left
-    font-family "GalaxieCopernicus", PT Serif, Serif
-    color $tandemGrey
-    font-size .9em
+    font-size typeScale.small
     align-self center
     .copyright
       color $tandemPink
@@ -79,13 +78,13 @@ export default {};
     width 70%
     text-align right
     a
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      { displayType }
       text-decoration none
 
     .menu-primary
       a
-        font-size 20px
-        letter-spacing -1.67px
+        { displayType }
+        font-size typeScale.g
         color $tandemGrey
         &:hover
           color $tandemPink
@@ -102,8 +101,7 @@ export default {};
       margin-top .5em
       margin-right -12px
       a
-        font-size .8em
-        text-transform uppercase
+        font-size typeScale.small
         margin-left 0
         color $middleGrey
         &:after
@@ -128,19 +126,19 @@ export default {};
     .footer-copyright
       margin-top 25px
       width 75%
-      font-size .9em
+      font-size typeScale.small
     .footer-links
       width 75%
       .menu-primary
         ul
           justify-content center
-          margin-left -20px
+          margin-left -1.25rem
           li
-            margin-left 20px
+            margin-left 1.25rem
       .menu-secondary
         margin 25px 0 0
         a
-          font-size .9em
+          font-size typeScale.small
           line-height 2
 @media (max-width $MQMobileNarrow)
   .footer-container

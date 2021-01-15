@@ -13,9 +13,9 @@
     </SectionHeader>
 
     <div class="custom-block point clients">
-      <p class="custom-block-title">
+      <h3>
         Featured Clients.
-      </p>
+      </h3>
       <ClientGrid :clients="featuredClients" />
     </div>
 
@@ -25,9 +25,9 @@
     />
 
     <div class="custom-block point tags">
-      <p class="custom-block-title">
+      <h3>
         Explore<br> other work.
-      </p>
+      </h3>
       <TagGrid prefix="/" />
     </div>
   </div>

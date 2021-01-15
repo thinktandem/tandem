@@ -116,8 +116,8 @@ a
 
   .post-title
     { displayType }
-    font-size typeScale.e
     font-weight 600
+    font-size typeScale.e
     text-decoration none
     margin-top 0
     border-bottom 0

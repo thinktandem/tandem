@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-about">
-    <SectionHeader title="About.">
+    <SectionHeader title="About">
       <h2>
         Let us build<br>something great<br>together.<br>
       </h2>
@@ -14,14 +14,14 @@
     </SectionHeader>
 
     <div class="custom-block point values">
-      <p class="custom-block-title">
+      <h3>
         <a
           class="hidden-link"
           target="_blank"
           href="https://www.youtube.com/watch?v=0hiUuL5uTKc"
         >This.</a>
         <br>Is how we do it.
-      </p>
+      </h3>
       <ValuesGrid
         id="work-values"
         :items="values"
@@ -29,9 +29,9 @@
     </div>
 
     <div class="custom-block important values-text">
-      <p class="custom-block-title">
+      <h3>
         The above four. <br>In four sentences.
-      </p>
+      </h3>
       <p>
         Working closely together allows us to distill your goals into their most important components.
 
@@ -44,9 +44,9 @@
     </div>
 
     <div class="custom-block point what-we-do">
-      <p class="custom-block-title">
+      <h3>
         What we do.
-      </p>
+      </h3>
       <p>
         We offer <a href="/strategy"><strong>strategy</strong></a>, <a href="/design"><strong>design</strong></a> and <a href="/development"><strong>development</strong></a> services across industries and using a wide array of tech.
         <br>
@@ -58,11 +58,11 @@
     <TagGrid prefix="/" />
 
     <div class="custom-block important remote-team">
-      <p class="custom-block-title">
+      <h3>
         Primarily remote.
         <br>Primarily USA.
         <br>Prone to wanderlust.
-      </p>
+      </h3>
       <p>
         We have a distributed team that is primarily located in the United States and is primarily remote. We've also been known send emails from cabins in Siberia and beaches in Thailand. We also have reps in the below metro areas. <strong>Email one and say hello!</strong>
         <LocationGrid
@@ -73,9 +73,9 @@
     </div>
 
     <div class="custom-block point interests">
-      <p class="custom-block-title">
+      <h3>
         Some current team vibes.
-      </p>
+      </h3>
       <ValuesGrid
         id="team-values"
         :items="featuredVibes"
@@ -159,9 +159,9 @@ export default {
       h1, h2, p
         color black
       .section-header-right
-        text-align right
-        @media (max-width: $MQMobile)
-          text-align center
+        text-align center
+        @media (min-width: $MQMobile)
+          text-align right
     .hidden-link
       color inherit
       text-decoration none
@@ -169,28 +169,16 @@ export default {
       margin-top 2em
     .custom-block
       p
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
         color black
         font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
         color #000
       &.important
-        padding 7em 0
+        padding 4em 0
         border-bottom 1px solid $borderColor
-        margin-bottom 2em
-        @media (max-width: $MQMobile)
-          padding 4em 0
-          margin-bottom 0
-        p
-          &.custom-block-title
-            font-size 3.64em
-            font-family GalaxieCopernicus, PT Serif, serif
-            @media (max-width: $MQMobile)
-              font-size 2.1em
-
+        margin-bottom 0
+        @media (min-width: $MQMobile)
+          padding 7em 0
+          margin-bottom 2rem
         &.remote-team
           margin-top 2em
           border-top 1px solid $borderColor

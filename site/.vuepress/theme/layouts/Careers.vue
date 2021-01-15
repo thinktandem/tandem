@@ -14,9 +14,9 @@
     </SectionHeader>
 
     <div class="custom-block point values">
-      <p class="custom-block-title">
+      <h3>
         Our team<br> values.
-      </p>
+      </h3>
       <ValuesGrid
         id="team-values"
         :items="values"
@@ -25,9 +25,9 @@
     </div>
 
     <div class="custom-block important values-text">
-      <p class="custom-block-title">
+      <h3>
         The above five. <br>In five sentences.
-      </p>
+      </h3>
       <ol>
         <li>Putting employees first means investing in their success and well-being so they can invest the same in our clients.</li>
         <li>Building common purpose means more than just rowing in the same direction it means committing to one another even if you disagree.</li>
@@ -38,11 +38,11 @@
     </div>
 
     <div class="custom-block important remote-team">
-      <p class="custom-block-title">
+      <h3>
         Primarily remote.
         <br>Primarily USA.
         <br>Prone to wanderlust.
-      </p>
+      </h3>
       <p>
         We have a distributed team that is primarily located in the United States and is primarily remote. We've also been known send emails from cabins in Siberia and beaches in Thailand. We also have reps in the below metro areas. <strong>Email one and say hello!</strong>
         <LocationGrid
@@ -53,9 +53,9 @@
     </div>
 
     <div class="custom-block point interests">
-      <p class="custom-block-title">
+      <h3>
         Some current team vibes.
-      </p>
+      </h3>
       <ValuesGrid
         id="team-vibes"
         :items="featuredVibes"
@@ -64,9 +64,9 @@
     </div>
 
     <div class="custom-block point connect-jobs">
-      <p class="custom-block-title">
+      <h3>
         Get in touch.
-      </p>
+      </h3>
       <div class="get-in-touch">
         <p>We are always looking to meet new people so drop us an email at <a href="mailto:jobs@thinktandem.io">jobs@thinktandem.io</a> and let's set up a time to talk!</p>
         <p>
@@ -170,11 +170,6 @@ export default {
       p
         width 100%
     .custom-block
-      p
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color black
       &.important
         padding 7em 0
         border-bottom 1px solid $borderColor
@@ -182,12 +177,6 @@ export default {
         @media (max-width: $MQMobile)
           padding 4em 0
           margin-bottom 0
-        p
-          &.custom-block-title
-            font-size 3.64em
-            font-family GalaxieCopernicus, PT Serif, serif
-            @media (max-width: $MQMobile)
-              font-size 2.1em
         &.remote-team
           margin-top 2em
           border-top 0

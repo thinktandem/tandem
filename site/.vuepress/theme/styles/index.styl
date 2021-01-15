@@ -108,24 +108,12 @@ article
     all unset
 
 .content-wrapper
-  padding 0
-  min-height calc(100vh - 80px - 60px - 160px)
-  max-width none
-  margin 0 auto
-
-  @media (max-width: $MQMobile)
-    &
-      padding 0
-      min-height calc(100vh - 20px - 60px - 100px)
+  { contentWrapper }
 
 .content-wrapper-tandem
-  padding: 10rem 2rem 5rem 2rem
-  max-width $contentWidth
-  margin 0 auto
-  min-height calc(100vh - 20px - 60px - 100px)
-  @media (min-width: $MQMobile)
-    &
-      min-height calc(100vh - 80px - 60px - 160px)
+  { contentWrapper }
+  { contentWrapperTandem }
+
 ul
   &.tags, &.post-meta-tags
     /*
@@ -167,15 +155,8 @@ ul
 
 .custom-block
   position relative
-  p
-    font-weight 300
-    { bodyType }
-    font-size typeScale.g
-    &.custom-block-title
-      { dsplayType }
-      font-size typeScale.f
-      font-weight 600
-      // margin-top -5px
+  box-sizing border-box
+  padding 2rem
   &.big, &.medium
     p
       { dsplayType }
@@ -186,7 +167,6 @@ ul
   &.medium
     p
       font-size typeScale.b
-
   &.caption
     background-color $lightGrey
     padding .1em 1em
@@ -204,33 +184,42 @@ ul
       width 100%
 
   &.point
-    display flex
+    text-align center
+    flex-direction column
     justify-content center
-
-    p, p.custom-block-title
-      display inline-block
-    p
-      width 70%
-      margin-top 0
-      &.custom-block-title
-        margin-right 100px
+    > h2, > h3
+      width 100%
+    @media (min-width: $MQSmall)
+      display flex
+      > h2, > h3
         width 20%
-
-    @media (max-width: $MQMobile)
+        padding-right: 1em
+      > p
+        width 70%
+        margin-top 0
       &.point
-        text-align center
-        flex-direction column
-        p, p.custom-block-title
-          display inline-block
-          width 100%
+        text-align left
+        flex-direction row
 
+  > h2, > h3
+    { dsplayType }
+    font-size typeScale.e
+    font-weight 900
+    line-height 1.25
+  p
+    { bodyType }
+    font-size typeScale.g
+    line-height 2
+.important
   &.important, &.byline
-    p
-      { bodyType }
-      font-size typeScale.g
-      font-weight 300
-      &.custom-block-title
+    > h2, > h3
+      border 1px #0f0 solids
+      { displayType }
+      font-size typeScale.e
+      @media (min-width: $MQMobile)
         font-size typeScale.c
+    p
+      font-size typeScale.g
     ol, ul
       margin 1em 1em
       li
@@ -253,6 +242,7 @@ ul
   &.col-wrapper, &.col-full, &.col-half, &.col-third
     width 100%
     justify-content space-between
+
   &.col-full, &.col-half, &.col-third
     justify-content space-between
     p
@@ -267,8 +257,10 @@ ul
       &.custom-block-title
         text-transform uppercase
         font-size typeScale.g
+
   &.warning
     background-color mix($lightGrey, yellow, 70%)
+
   &.danger, &.error
     background-color mix($lightGrey, red, 80%)
 
@@ -276,18 +268,24 @@ ul
     @media (min-width: $MQMobile)
       &
         display flex
+
   &.col-full
     @media (min-width: $MQMobile)
       &
         flex 0 0 100%
         max-width 100%
+
   &.col-half
     @media (min-width: $MQMobile)
       &
         flex 0 0 49%
         max-width 49%
+
   &.col-third
     @media (min-width: $MQMobile)
       &
         flex 0 0 32%
         max-width 32%
+
+.small
+  font-size typeScale.g

@@ -14,9 +14,9 @@
     <Content />
 
     <div class="custom-block point recent-work work-grid">
-      <p class="custom-block-title">
+      <h3>
         Recent {{ upperTag }}<br>work.
-      </p>
+      </h3>
       <div class="recent-work-wrapper">
         <WorkSummary
           v-for="page in featuredWork"
@@ -43,9 +43,9 @@
         :key="grid.id"
         class="custom-block point grid"
       >
-        <p class="custom-block-title">
+        <h3>
           {{ grid.caption }}
-        </p>
+        </h3>
         <ValuesGrid
           :id="grid.id"
           :class="`columns-${grid.columns}`"
@@ -59,9 +59,9 @@
       v-if="posts.length > 0"
       class="custom-block point recent-posts"
     >
-      <p class="custom-block-title">
+      <h3>
         Recent {{ upperTag }}<br>content.
-      </p>
+      </h3>
       <div class="recent-posts-wrapper">
         <PostSummary
           v-for="page in recentPosts"
@@ -84,17 +84,17 @@
     </div>
 
     <div class="custom-block point contact-us">
-      <p class="custom-block-title">
+      <h3>
         Let's make some great {{ upperTag }} together.<br>
         <small>Get in touch!</small>
-      </p>
+      </h3>
       <ContactForm />
     </div>
 
     <div class="custom-block point clients">
-      <p class="custom-block-title">
+      <h3>
         You might also want to check out.
-      </p>
+      </h3>
       <div class="related-tags">
         <ul
           v-if="relatedTags"
@@ -257,12 +257,6 @@ export default {
         @media (min-width: $MQMobile)
           padding 7em 0
           margin-bottom 2em
-        p
-          &.custom-block-title
-            { bodyType }
-            font-size typeScale.e
-            @media (min-width: $MQMobile)
-              font-size typeScale.c
         &.remote-team
           margin-top 2em
           border-top 1px solid $borderColor
@@ -272,10 +266,6 @@ export default {
           width 100%
           &.custom-block-title
             width 100%
-            small
-              { bodyType }
-              font-size typeScale.g
-              color $darkTextColor
             @media (min-width: $MQMobile)
               width 20%
         border-top 1px solid $borderColor

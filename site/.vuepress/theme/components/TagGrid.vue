@@ -2,81 +2,50 @@
   <div class="tag-container">
     <div class="tag-item tag-third">
       <a :href="`${prefix}strategy`"><h2>Strategy</h2></a>
-      <ul
-        v-for="(tagGroup, index) in strategy"
-        :key="index"
-      >
-        <a
-          v-for="tag in tagGroup"
-          :key="tag.tag"
-          :href="`${prefix}${tag.tag}`"
-        ><li>{{ tag.name }}</li></a>
+      <ul v-for="(tagGroup, index) in strategy" :key="index">
+        <li v-for="tag in tagGroup" :key="tag.tag">
+          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+        </li>
       </ul>
     </div>
     <div class="tag-item tag-third">
       <a :href="`${prefix}design`"><h2>Design</h2></a>
-      <ul
-        v-for="(tagGroup, index) in design"
-        :key="index"
-      >
-        <a
-          v-for="tag in tagGroup"
-          :key="tag.tag"
-          :href="`${prefix}${tag.tag}`"
-        ><li>{{ tag.name }}</li></a>
+      <ul v-for="(tagGroup, index) in design" :key="index">
+        <li v-for="tag in tagGroup" :key="tag.tag">
+          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+        </li>
       </ul>
     </div>
     <div class="tag-item tag-third">
       <a :href="`${prefix}development`"><h2>Development</h2></a>
-      <ul
-        v-for="(tagGroup, index) in development"
-        :key="index"
-      >
-        <a
-          v-for="tag in tagGroup"
-          :key="tag.tag"
-          :href="`${prefix}${tag.tag}`"
-        ><li>{{ tag.name }}</li></a>
+      <ul v-for="(tagGroup, index) in development" :key="index">
+        <li v-for="tag in tagGroup" :key="tag.tag">
+          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+        </li>
       </ul>
     </div>
     <div class="tag-item tag-full">
       <h2>Industry</h2>
-      <ul
-        v-for="(tagGroup, index) in industry"
-        :key="index"
-      >
-        <a
-          v-for="tag in tagGroup"
-          :key="tag.tag"
-          :href="`${prefix}${tag.tag}`"
-        ><li>{{ tag.name }}</li></a>
+      <ul v-for="(tagGroup, index) in industry" :key="index">
+        <li v-for="tag in tagGroup" :key="tag.tag">
+          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+        </li>
       </ul>
     </div>
     <div class="tag-item tag-full-columns">
       <h2>Technology</h2>
-      <ul
-        v-for="(tagGroup, index) in technology"
-        :key="index"
-      >
-        <a
-          v-for="tag in tagGroup"
-          :key="tag.tag"
-          :href="`${prefix}${tag.tag}`"
-        ><li>{{ tag.name }}</li></a>
+      <ul v-for="(tagGroup, index) in technology" :key="index">
+        <li v-for="tag in tagGroup" :key="tag.tag">
+          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+        </li>
       </ul>
     </div>
-
     <div class="tag-item tag-full">
       <h2>Other</h2>
-      <ul
-        v-for="(tagGroup, index) in other"
-        :key="index"
-      >
-        <a
-          v-for="tag in tagGroup"
-          :key="tag.tag"
-          :href="`${prefix}${tag.tag}`"
-        ><li>{{ tag.name }}</li></a>
+      <ul v-for="(tagGroup, index) in other" :key="index">
+        <li v-for="tag in tagGroup" :key="tag.tag">
+          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -155,6 +124,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+
+$tagMargins = 1em 1em
 .tag-container
   display flex
   flex-wrap wrap
@@ -167,78 +138,69 @@ export default {
     background $lightGrey
     text-align left
     padding 0
+    margin-bottom: 2rem
+    padding 2rem
+    box-sizing border-box
     a
+      display block
+      color $textColor
       text-decoration none
-      :hover
+      &:hover
         color $tandemPink
         transition all .2s
     h2
-      margin 1em
       font-size typeScale.f
       font-weight 600
       line-height inherit
+      min-width 16rem
+      margin 0
     ol, ul
       list-style none
-      padding 0em .5em
-      a
-        text-decoration none
-        border-bottom solid 1px $borderColor
-        :hover
-          color $tandemPink
-          transition all .2s
+      padding 0
+      margin 0
       li
+        padding: 1rem 2rem 1rem 0
+        margin: 0
         font-size typeScale.h
         font-weight 300
         border-bottom solid 1px $boderColor
-        margin 1.5em 2em
         color $middleGrey
+        a
+          :hover
+            color $tandemPink
+            transition all .2s
     &.tag-third
       width 32%
-      padding-bottom 1em
-      li
-        margin 1.5em 1em
       @media (max-width: $MQMobile)
         width 100%
         margin-top 1em
     &.tag-full, &.tag-full-columns
       width 100%
-      margin-top 1em
       display flex
       ul
         display flex
         width 100%
-        justify-content space-evenly
+        justify-content left
+        li
+          padding-top 1.4rem
       @media (max-width: $MQMobile)
         display block
         ul
           display block
           text-align left
-          li
-            margin 1.5em 1em
-            margin-right 30px
-
     &.tag-full
       ul
-        justify-content flex-end
-        a
-          border none
         li
-          margin-right 10px
           border none
           text-decoration none
       h2
         align-self center
-      @media (max-width: $MQMobile)
-        ul
-          li
-            margin 1.5em 1em
-            margin-right 30px
-            border-bottom solid 1px $borderColor
     &.tag-full-columns
       ul
         display block
-        text-align right
         margin-right 1em
-        @media (max-width: $MQMobile)
-          text-align left
+        padding-top 0
+        li:first-of-type
+          padding-top 0.2875rem
+
 </style>

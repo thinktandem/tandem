@@ -32,7 +32,6 @@
           @click="$emit('toggle-sidebar')"
         />
       </button>
-
       <div
         id="menu"
         class="menu"
@@ -213,7 +212,7 @@ $hamburger-button
     height typeScale.e
     position relative
     top 2.75rem
-    left 2.5rem
+    left 3.425rem
     cursor pointer
   @media (min-width $MQMobile)
     display none
@@ -222,6 +221,18 @@ $nav-primary
   width 100vw
   position relative
   display flex
+  @media (min-width $MQMobile)
+    .menu
+      display flex
+      flex 1
+      justify-content flex-end
+      padding-right 2rem
+    .menu-secondary
+      { visuallyHidden }
+      display none !important
+  @media (min-width $MQLarge)
+    .menu
+      padding-right 3rem
 
 $menu--primary
   position absolute
@@ -247,9 +258,8 @@ $menu--primary
       padding 0
       a
         { displayType }
-        text-decoration none
-        font-weight 900
         font-size typeScale.f
+        text-decoration none
   @media (min-width $MQMobile)
     box-shadow none
     top 0
@@ -305,10 +315,11 @@ header
     .nav-primary
       height 100vh
       background-color transparent
-      flex-wrap wrap
+      flex-wrap border 1px #000 solid
+    wrap
   .title
     { logoDimensions }
-    padding 2rem
+    padding 2rem 0 2rem 3rem
     z-index 20
   .site-title
     { visuallyHidden }
@@ -318,28 +329,22 @@ header
     @extends $nav-primary
   .menu
     @extends $menu--primary
+    padding-right 2rem
   .menu-secondary
     @extends $menu-secondary
 
   @media (min-width $MQMobile)
     &.dehamburger
-      border 2px #000 solid
       .hamburger
         pointer-events none
       .menu-toggle
         display none
         color $tandemPink
-    .nav-primary
+  @media (min-width $MQLarge)
+    &.fadeout
       .menu
-        display flex
-        flex 1
-        justify-content flex-end
-      .menu-secondary
-        { visuallyHidden }
-// &.fadeout
-    .menu
-      top 0
-    // &.fadein
-    // &.open
-    //   border 4px #000 solid
+        top 0
+      &.fadein
+      &.open
+        border 4px #000 solid
 </style>

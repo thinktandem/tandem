@@ -60,21 +60,19 @@ export default {
 
 <style lang="stylus" scoped>
 h1
-  { displayType }
   font-size typeScale.e
   font-weight 900
   text-decoration underline
 h2
   { bodyType }
   font-size typeScale.f
-  color black
+  color $textColor
   margin-bottom 1em
 .section-header
   text-align center
   flex-direction column
   margin-bottom 2em
-  padding-top 8rem
-  .section-header-left , .section-header-right
+  .section-header-left, .section-header-right
     width 100%
   .section-header-left
     display inline-block
@@ -106,4 +104,10 @@ h2
       text-align left
     .section-header-right
       flex-grow 1
+    h1
+      padding-left 5.5rem
+@media (min-width: $MQSmall)
+  .section-header
+    h1
+      padding-left 0
 </style>

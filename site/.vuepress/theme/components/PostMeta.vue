@@ -110,9 +110,9 @@ export default {
     .meta-prefix
       margin-left 0.5rem
       margin-right 0.5rem
-      {displayType}
-      font-size typeScale.j
+      { displayType }
       font-weight 500
+      font-size typeScale.j
   .pic-left
     position absolute
     left -3.25rem

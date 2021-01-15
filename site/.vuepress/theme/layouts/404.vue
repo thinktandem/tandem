@@ -10,9 +10,9 @@
     </blockquote>
 
     <div class="custom-block point vids">
-      <p class="custom-block-title">
+      <h2>
         Enjoy a random 404 video.
-      </p>
+      </h2>
       <div>
         <ClientOnly>
           <YouTube :vid="chosen.vid" />
@@ -21,9 +21,9 @@
     </div>
 
     <div class="custom-block point what-we-do">
-      <p class="custom-block-title">
+      <h2>
         Or explore more of what we do.
-      </p>
+      </h2>
       <p>
         We offer <strong>strategy</strong>, <strong>design</strong> and <strong>development</strong> services across industries and using a wide array of tech.
         <br>

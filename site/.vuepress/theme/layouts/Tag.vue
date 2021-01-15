@@ -96,8 +96,4 @@ export default {
         padding 7em 0
         border-top 1px solid black
         border-bottom 1px solid black
-        p
-          &.custom-block-title
-            font-size 3.64em
-            font-family GalaxieCopernicus, PT Serif, serif
 </style>
