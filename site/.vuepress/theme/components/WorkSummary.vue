@@ -11,12 +11,12 @@
       itemtype="https://schema.org/BlogPosting"
     >
       <style>
-        .work.{{ page.key }} .work-title {color: {{ textColor }};}
-        .work.{{ page.key }} p.work-summary {color: {{ textColor }};}
+        .work.{{ page.key }} .work-title { color: {{ textColor }};}
+        .work.{{ page.key }} p.work-summary { color: {{ textColor }};}
         .work.{{ page.key }} .work-logo img {filter: {{ logoChanger }}; height: {{ logoHeight }}px;}
         .work.{{ page.key }}:hover img {filter: {{ logoHover }}; height: {{ logoHeight }}px;}
-        .work.{{ page.key }}:hover .work-title {color: {{ theme.headerHover }};}
-        .work.{{ page.key }}:hover .work-summary {color: {{ theme.headerHover }};}
+        .work.{{ page.key }}:hover .work-title { color: {{ theme.headerHover }};}
+        .work.{{ page.key }}:hover .work-summary { color: {{ theme.headerHover }};}
       </style>
       <div
         class="work-wrapper"
@@ -154,18 +154,18 @@ export default {
 a
   text-decoration none
 .work
-  margin-bottom 2em
+  margin-bottom 1em
   position relative
   .work-wrapper
     opacity .95
-    padding 4em
-  .work-title, .work-logo
-    font-size 2.57em
+    padding 1em
+    padding 2em 2em 4em 2em
+   .work-title, .work-logo
+    { displayType }
+    font-size typeScale.i
     font-weight 600
-    letter-spacing -0.0987654321em
     margin-top 0
     border-bottom 0
-    font-family "Poppins", "Helvetica Neue", Arial, sans-seri
     color inherit
     cursor pointer
     transition none
@@ -173,13 +173,12 @@ a
     &:hover
       color inherit
       text-decoration none
+  .work-title
+    font-size typeScale.d
   .work-summary
-    font-size 14px
     color inherit
+    font-size typeScale.g
     font-weight 300
-    font-size 1.68rem
-    line-height 2
-    letter-spacing -1.04px
   .work-logo
     position absolute
     right 1em
@@ -189,19 +188,17 @@ a
     opacity 0
     height 0
     display none
-@media (max-width: $MQMobile)
+@media (min-width: $MQMobile)
   .work
-    margin-bottom 1em
+    margin-bottom 0.5em
     .work-wrapper
-      padding 1em
-  .content-wrapper-tandem.content-wrapper-work,
-  .content-wrapper-tandem.content-wrapper-tag
+      padding 4em
     .work-title
-      font-size 1.68em
+      font-size typeScale.e
     .work-summary
-      font-size .76em
+      font-size typeScale.f
       margin-bottom 3em
     .work-logo
-      right .4em
-      bottom .4em
+      right .5rem
+      bottom .5rem
 </style>

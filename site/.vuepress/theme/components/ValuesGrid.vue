@@ -76,17 +76,10 @@ export default {
   justify-content space-between
   width 100%
   .values-item
-    h2
-      font-size 1.3em
-      font-family GalaxieCopernicus, PT Serif, serif
-      font-weight 400
-      width 75%
-      @media (max-width: $MQMobile)
-        font-size 1.2rem
+    padding 2rem
     position relative
     background $lightGrey
     text-align center
-    padding 0
     margin-bottom 1em
     display flex
     justify-content center
@@ -95,10 +88,16 @@ export default {
       content ""
       float left
       padding-top 100%
+    h2
+      { bodyType }
+      font-size typeScale.g
+      font-weight normal
     @media (max-width: $MQMobile)
       width 49%
       margin .5em 0em
       min-height 125px
+      h2
+        font-size typeScale.g
   .values-link
     cursor pointer
     &:hover

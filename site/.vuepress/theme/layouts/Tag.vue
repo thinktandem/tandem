@@ -74,15 +74,7 @@ export default {
         @media (max-width: $MQMobile)
           text-align center
     .work-grid
-      display flex-grid
-      article
-        width 100%
-        height 500px
-        display inline-flex
-        @media (max-width: $MQMobile)
-          width 100%
-          height 100%
-          display block
+      { workGrid }
     .work-title
       font-size 2em
 
