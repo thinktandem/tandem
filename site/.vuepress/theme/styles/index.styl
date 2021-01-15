@@ -58,10 +58,11 @@ h3
 h4
   font-size typeScale.g
 
-a.header-anchor
-  padding-right 0
 a
   transition all 0.2s
+
+a.header-anchor
+  padding-right 0
 
 blockquote
   display flex
@@ -78,7 +79,6 @@ blockquote
     font-size typeScale.e
     content '"'
     color $tandemPink
-
   p
     width 90%
     line-height 2
@@ -108,19 +108,22 @@ article
     all unset
 
 .content-wrapper
-  { contentWrapper }
+  padding 0
+  margin 0 auto
+  max-width none
+  min-height calc(100vh - 20px - 60px - 100px)
+  @media (min-width: $MQMobile)
+    padding 0
+    min-height calc(100vh - 80px - 60px - 160px)
 
 .content-wrapper-tandem
-  { contentWrapper }
-  { contentWrapperTandem }
+  @extend .content-wrapper
+  padding: 10rem 2rem 5rem 2rem
+  @media (min-width: $MQMobile)
+    padding: 10rem 2rem 5rem 2rem
 
 ul
   &.tags, &.post-meta-tags
-    /*
-    // display block // reduntant
-    @media (min-width: $MQMobile)
-      display inline-block
-    */
   li
     &.post-tag
       &.tag
@@ -210,6 +213,7 @@ ul
     { bodyType }
     font-size typeScale.g
     line-height 2
+
 .important
   &.important, &.byline
     > h2, > h3

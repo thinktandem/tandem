@@ -27,12 +27,7 @@
               v-if="message === 1"
               class="message message-two"
             >
-              <span class="first-text">
-                Future
-              </span>
-              <span class="second-text">
-                Friendly.
-              </span>
+              <span class="first-text">Future</span> <span class="second-text">Friendly.</span>
               <div class="home-summary">
                 Tandem is the full-service digital agency that builds things to last.
               </div>
@@ -300,10 +295,10 @@ export default {
       .first-text, .second-text
         color $tandemPink
         display inline-block
-        { displayType }
         text-align center
         text-transform uppercase
-        font-size typeScale.b
+        { displayType }
+        font-size typeScale.c
         white-space nowrap
       .second-text
         color $textColor
@@ -315,19 +310,28 @@ export default {
         color black
         { bodyType }
         font-weight 300
-        font-size typeScale.e
+        font-size typeScale.f
+      @media (min-width: $MQMobileNarrow)
+        .first-text, .second-text
+          font-size typeScale.b
+        .home-summary
+          font-size typeScale.f
       @media (min-width: $MQMobile)
         padding 0 2rem
+        .first-text, .second-text
+          font-size typeScale.bigboi
         .home-summary
           max-width 58rem
           font-size typeScale.e
-        .first-text, .second-text
-          font-size typeScale.a
-      @media (min-width: $MQSmall)
+      @media (min-width: $MQNarrow)
         padding 0 4rem
+        .first-text, .second-text
+          display inline-block
+          font-size typeScale.bigboi
         .home-summary
           max-width 40rem
           font-size typeScale.e
+      @media (min-width: $MQXL)
         .first-text, .second-text
-          font-size typeScale.bigboi
+          font-size typeScale.biggestboi
 </style>

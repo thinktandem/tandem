@@ -1,11 +1,11 @@
 // .vuepress/override.styl, SHOULD ONLY contain "stylus constants override".
 // $accentColor = #ed3f7a
-
+//
 // More things
 $tandemPink = #ed3f7a
-$tandemGrey = #47474A
+$tandemGrey = #47474a
 $lightGrey = #f8f8f8
-
+//
 // Backwards compat
 $landoPink = #ed3f7a
 $landoGrey = #47474a
@@ -14,7 +14,7 @@ $landoOrange = #ff7042
 $landoGreen = #00a38f
 $landoGrey = #2c3e50
 $newsletterBgColor = $lightGrey
-
+//
 // Colors
 $accentColor = $tandemPink
 $textColor = $tandemGrey
@@ -25,7 +25,6 @@ $darkBorderColor = $tandemGrey
 $codeBgColor = #000
 $bgColor = #fff
 $headerBgColor = $bgColor;
-
 $footerBgColor = $darkTextColor
 $footerColor = #828282
 //
@@ -33,11 +32,12 @@ $footerColor = #828282
 $contentWidth   = 740px
 //
 // Breakpoints
+$MQXL           = 1600px
 $MQLarge        = 1348px
-$MQSmall        = 1200px
+$MQSmall        = 1184px
 $MQNarrow       = 768px
 $MQMobile       = 959px
-$MQMobileNarrow = 419px
+$MQMobileNarrow = 450px
 //
 // Code
 $lineNumbersWrapperWidth = 3.5rem
@@ -46,6 +46,10 @@ $codeLang = js ts html md vue css sass scss less stylus go java c sh yaml py doc
 // Type
 $font--body = "GalaxieCopernicus", "PT Serif", serif
 $font--display = "AvenirNext", "Helvetica Neue", Arial, sans-serif
+
+// usng these block declatations for reused content
+// seems to play better with vue and stylus than stylus
+// $placeholders https://stylus-lang.com/docs/extend.html#extending-placeholder-selectors
 
 bodyType = @block
   font-family $font--body
@@ -70,26 +74,25 @@ visuallyHidden = @block
   height 1px
   overflow hidden
 
-contentWrapper = @block
-  padding 0
-  margin 0 auto
-  max-width none
-  min-height calc(100vh - 20px - 60px - 100px)
-  @media (min-width: $MQMobile)
-    padding 0
-    min-height calc(100vh - 80px - 60px - 160px)
-
-contentWrapperTandem = @block
-  padding: 10rem 2rem 5rem 2rem
-  @media (min-width: $MQMobile)
-    padding: 10rem 2rem 5rem 2rem
-
 $logoWidth = 280
 $logoHeight = 56
-
 logoDimensions = @block
   width $logoWidth px
   height $logoHeight px
+
+workGrid = @block
+  margin-top 4rem
+  display flex-grid
+  article
+    width 100%
+    height 100%
+    display block
+    @media (max-width: $MQMobile)
+      width 100%
+      height 500px
+      display inline-flex
+  .load-more
+    margin-bottom 2em
 
 /*
 Type Scale | Major Third
@@ -97,7 +100,7 @@ https://type-scale.com/?size=16&scale=1.250&text=A%20Visual%20Type%20Scale&font=
 */
 typeScale = {
   'a':      5.96rem,   // 95.37
-  'b':      4.768rem,  // 76.29px
+  'b':      4.768rem,  // 76.29
   'c':      3.052rem,  // 48.83
   'd':      2.441rem,  // 39.06
   'e':      1.953rem,  // 31.25
@@ -106,6 +109,7 @@ typeScale = {
   'h':      1rem,      // 16
   'i':      0.8rem,    // 12.8
   'j':      0.64rem,   // 8.19
-  'body':   1rem,
-  'bigboi': 7.451rem  // 119.21px
+  'body':   1rem,      // 16
+  'bigboi': 7.451rem,  // 119.21
+  'biggestboi': 12rem
 }
