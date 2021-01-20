@@ -50,6 +50,7 @@ export default {
   mounted() {
     this.$router.afterEach(() => {
       this.isMobileHeaderOpen = false;
+      console.log( 'isMobileHeaderOpen', this.isMobileHeaderOpen )
       this.$updateTheme({});
     });
   },

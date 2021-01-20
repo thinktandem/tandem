@@ -5,15 +5,15 @@
   >
     <div class="hero-flex-container">
       <style>
-        .hero-left-content.{{ id }} a {color: {{ color }};}
-        .hero-left-content.{{ id }} h2 {color: {{ color }};}
-        .hero-left-content.{{ id }} .hero-summary {color: {{ color }};}
-        .hero-left-content.{{ id }} .hero-type {color: {{ color }};}
-        .hero-left-content.{{ id }} a:hover {color: {{ hover }};}
-        .hero-left-content.{{ id }}:hover {color: {{ hover }};}
-        .hero-left-content.{{ id }}:hover h2 {color: {{ hover }};}
-        .hero-left-content.{{ id }}:hover .hero-summary {color: {{ hover }};}
-        .hero-left-content.{{ id }}:hover .hero-type {color: {{ hover }};}
+        .hero-left-content.{{ id }} a { color: {{ color }};}
+        .hero-left-content.{{ id }} h2 { color: {{ color }};}
+        .hero-left-content.{{ id }} .hero-summary { color: {{ color }};}
+        .hero-left-content.{{ id }} .hero-type { color: {{ color }};}
+        .hero-left-content.{{ id }} a:hover { color: {{ hover }};}
+        .hero-left-content.{{ id }}:hover { color: {{ hover }};}
+        .hero-left-content.{{ id }}:hover h2 { color: {{ hover }};}
+        .hero-left-content.{{ id }}:hover .hero-summary { color: {{ hover }};}
+        .hero-left-content.{{ id }}:hover .hero-type { color: {{ hover }};}
       </style>
       <div :class="`hero-right-content ${id}`">
         <YouTube
@@ -34,7 +34,7 @@
 
       <NavLink
         :link="link"
-        :class="cta"
+        :class="'cta'"
       />
     </div>
   </article>
@@ -78,9 +78,6 @@ export default {
     styles: {
       type: Object,
       default: () => ({}),
-    },
-    cta: {
-
     }
   },
 };
@@ -92,10 +89,12 @@ export default {
   display flex
   height 100vh
   padding 4rem
-  a
+  a.nav-link
+    position absolute
     display block
-    border 1px #f0f solid
     text-decoration none
+    left 0
+    bottom 0
   .hero-flex-container
     width 1140px
     margin auto

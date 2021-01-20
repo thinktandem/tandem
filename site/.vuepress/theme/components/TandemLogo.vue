@@ -85,16 +85,28 @@ $reg-initscale = scale(0.125)
   }
 }
 
+
+/*
+// making two animations
+// it's sadly just way easier
+// https://css-tricks.com/restart-css-animation/
+*/
 @keyframes text {
   0% {
-    fill-opacity 1
-    fill rgb(237, 63, 122)
-    transform translate(-50%, 0)
+    transform translate(-100%, 0)
   }
   100% {
     fill-opacity 1
-    fill rgb(237, 63, 122)
     transform translate(38px, 0)
+  }
+}
+@keyframes textReverse {
+  0% {
+    fill-opacity 1
+    transform translate(38px, 0)
+  }
+  100% {
+    transform translate(-100%, 0)
   }
 }
 
@@ -120,6 +132,23 @@ $reg-initscale = scale(0.125)
   .circle:nth-child(2)
     animation: circb 1.3s 0s 1 forwards
   .text
-    animation text .75s cubic-bezier(0.580, 0.385, 0.360, 1.000) 0.425s 1 forwards
     fill-opacity 0
+    fill $tandemPink
+    animation-name text
+    animation-duration 0.75s
+    animation-timing-function cubic-bezier(0.58, 0.385, 0.36, 1)
+    animation-delay 0.425s
+    animation-iteration-count 1
+    animation-fill-mode forwards
+    aniamation-direction normal
+  .fadeout &
+    .text
+      fill-opacity 1
+      transform translate(38px, 0)
+      animation-name textReverse
+      animation-duration 0.5s
+      animation-timing-function cubic-bezier(0.58, 0.385, 0.36, 1)
+      animation-delay 0
+      animation-iteration-count 1
+      aniamation-direction reverse
 </style>

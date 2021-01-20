@@ -11,17 +11,7 @@
         </NavLink>
       </div>
 
-      <button
-        id="nav_toggle"
-        class="toggle collapsed hamburger"
-        type="button"
-        aria-controls="nav-collapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="hamburger-box">
-          <span class="menu-toggle hamburger-inner" @click="$emit('toggle-sidebar')"></span>
-        </span>
-      </button>
+      <HamburgerButton @click="$emit('toggle-sidebar')" />
 
       <div
         id="menu"
@@ -74,15 +64,21 @@
 <script>
 //import TandemLogo from '@theme/components/TandemLogo';
 import TandemLogo from '@theme/components/TandemLogo';
+import HamburgerButton from '@theme/components/HamburgerButton';
 import MenuIcon from 'vue-feather-icons/icons/MenuIcon';
 import XIcon from 'vue-feather-icons/icons/XIcon';
 export default {
   components: {
     TandemLogo,
+    HamburgerButton,
     MenuIcon,
     XIcon
   },
   props: {
+    isHamburgerVisible: {
+      type: Boolean,
+      required: false
+    },
     isOpen: {
       type: Boolean,
       required: true,
@@ -166,36 +162,6 @@ export default {
 
 <style lang="stylus">
 
-$hamburger-button
-  border 0
-  outline none
-  padding 0
-  margin 0
-  position absolute
-  background-color transparent
-  z-index 30
-  width typeScale.e
-  height typeScale.e
-  transition-property: top
-  transition-duration: 0.5s
-  transition-timing-function: ease-out
-  &.toggleout
-    .menu-toggle
-      top -20rem
-  &.togglein
-    .menu-toggle
-      top 2.75rem
-  .menu-toggle
-    color #ffffff
-    width typeScale.e
-    height typeScale.e
-    position relative
-    top 2.75rem
-    left 3.425rem
-    cursor pointer
-  @media (min-width $MQMobile)
-    display none
-
 $nav-primary
   width 100vw
   position relative
@@ -223,10 +189,10 @@ $menu--primary
   height 100vh
   width 100%
   align-items center
-  background-color white
+  background-color #ffffff
   box-shadow 0 0rem 2.5rem rgba(black, 0.2)
   margin 0
-  padding 11rem 2rem 2rem 2rem
+  padding 11rem 2rem 2rem 2.625rem
   .nav
     width 100%
     margin 0
@@ -253,6 +219,7 @@ $menu--primary
     flex-direction row
     height auto
     padding 2rem 0 0 0
+    background-color transparent
     .nav
       width auto
       flex 0 0 auto
@@ -300,6 +267,7 @@ header
       top: 0
   &.open
     .nav-primary
+      border 0.25rem solid #f00
       height 100vh
       background-color transparent
       flex-wrap border 1px #000 solid
@@ -310,26 +278,28 @@ header
     z-index 20
   .site-title
     { visuallyHidden }
-  .hamburger
-    @extends $hamburger-button
   .nav-primary
     @extends $nav-primary
   .menu
     @extends $menu--primary
   .menu-secondary
     @extends $menu-secondary
-
+  .hamburger
+    top 2rem
+    left 2.675rem
+    opacity 1
   @media (min-width $MQMobile)
     &.dehamburger
+      .menu
+        top 0rem
+        padding-top 1.475rem
       .hamburger
         pointer-events none
-      .menu-toggle
-        display none
-        color $tandemPink
+        opacity 0
   @media (min-width $MQLarge)
     &.fadeout
       .menu
-        top 0
+        top -8rem
       &.fadein
       &.open
         border 4px #000 solid

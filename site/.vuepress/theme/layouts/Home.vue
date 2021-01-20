@@ -190,7 +190,7 @@ export default {
   mounted() {
     // If we start at the top make sure we pink
     const toggle = document.getElementById('nav_toggle');
-    toggle.classList.remove('greybeard');
+    // toggle.classList.remove('greybeard');
     // Get a random message every 5000 seconds
     /*
     setInterval(() => {
@@ -222,13 +222,13 @@ export default {
       const toggle = document.getElementById('nav_toggle');
       if (!destination.isFirst) {
         header.classList.add('fadeout');
-        toggle.classList.add('togglein', 'greybeard');
+        // toggle.classList.add('togglein', 'greybeard');
         header.classList.remove('fadein', 'dehamburger');
       } else {
         header.classList.add('dehamburger', 'fadein');
         header.classList.remove('fadeout', 'open');
         header.classList.remove('not-first');
-        toggle.classList.remove('greybeard');
+        // toggle.classList.remove('greybeard');
       }
     },
     breakFree() {
