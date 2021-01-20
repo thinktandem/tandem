@@ -8,12 +8,12 @@
       :active="theme.headerActive"
       :color="theme.headerColor"
       :hover="theme.headerHover"
-      @toggle-sidebar="isMobileHeaderOpen = !isMobileHeaderOpen"
+      @toggle-sidebar="this.toggleSidebar"
     />
     <div
       class="content-wrapper"
       @click="isMobileHeaderOpen = false"
-    >
+    >isMobileHeaderOpen = !isMobileHeaderOpen
       <DefaultGlobalLayout />
     </div>
     <Footer />
@@ -46,6 +46,12 @@ export default {
     this.$themeListener(theme => {
       this.theme = Object.assign({}, theme);
     });
+  },
+  methods {
+    toggleSidebar: function() {
+      console.log("toggleSidebar!")
+      isMobileHeaderOpen = !isMobileHeaderOpen
+    }
   },
   mounted() {
     this.$router.afterEach(() => {
