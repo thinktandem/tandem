@@ -21,21 +21,22 @@
           :vid="video"
         />
       </div>
-
       <div :class="`hero-left-content ${id}`">
+        <div class="post-tag">
+          <span>{{ type }}</span>
+        </div>
         <h2>{{ title }}</h2>
         <div class="hero-summary">
           {{ byline }}
         </div>
-        <div class="hero-type">
-          {{ type }}
-        </div>
       </div>
-
       <NavLink
-        :link="link"
-        :class="'cta'"
-      />
+        v-if="cta"
+        class="cta"
+        :link="title"
+      >
+        {{ cta }}
+      </NavLink>
     </div>
   </article>
 </template>
@@ -62,6 +63,10 @@ export default {
     link: {
       type: String,
       required: true,
+    },
+    cta: {
+      type: String,
+      required: false,
     },
     color: {
       type: String,
@@ -99,14 +104,30 @@ export default {
     width 1140px
     margin auto
     display flex
+    position relative
     flex-direction row-reverse
     display block
+    .post-tag
+      { tagWrapper }
+      margin-bottom 1.5rem
+      background-color rgba(black, 0.3)
+      color white !important
+      &::after
+        border-left-color rgba(black, 0.3)
+      font-family typeScale.tiny
     .hero-right-content
       display none
       @media (max-width: $MQMobile)
         width 49%
         .video-responsive
           margin-top 17%
+    .cta
+      display block
+      position absolute
+      left 0
+      bottom -2rem
+      background-color white
+      padding 0.75rem 0.75rem 0.5rem 0.75rem
     .hero-left-content
       width 80%
       .hero-summary
@@ -114,20 +135,14 @@ export default {
         font-size 1.28rem
         line-height 2
         letter-spacing -0.025em
-        margin 2em 0
-      .hero-type
-        { displayType }
-        text-transform uppercase
-        font-size 1.2em
-        margin-top 2em
-        display inline-block
-        clear both
-        padding-bottom 0.25em
+        margin 1rem 0 3rem 0
       h2
         { displayType }
         font-size typeScale.b
         font-weight 600
+        line-height 1.2
         margin-top 0
+        margin-bottom 0.5em
         cursor pointer
         transition none
         text-decoration none
