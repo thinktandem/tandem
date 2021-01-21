@@ -5,6 +5,7 @@
     class="post-layout content-wrapper-tandem content-wrapper-post"
   >
     <article
+      class="post-wrapper"
       itemscope
       itemtype="https://schema.org/BlogPosting"
     >
@@ -162,25 +163,9 @@ export default {
       margin-top 2em
       margin-bottom 2em
       &.point
-        border-bottom 1px solid $borderColor
-        border-top 0
-        padding 2em 0
-        &.tagz
-          margin-bottom 0
-          margin-top 0
-          border-bottom 0
-          .post-tags
-            width 100%
-            ul
-              margin 0
-              list-style none
-              display flex
-              margin 0
-              padding 0
-              flex-wrap wrap
-              @media (max-width: $MQMobile)
-                justify-content center
-
+        { cb_point }
+    .post-wrapper
+      max-width 55rem
 .post-theme-content
   { bodyType }
   color $textColor

@@ -101,7 +101,7 @@ export default {
     left 0
     bottom 0
   .hero-flex-container
-    width 1140px
+    max-width $contentMaxWidth
     margin auto
     display flex
     position relative
@@ -125,9 +125,17 @@ export default {
       display block
       position absolute
       left 0
-      bottom -2rem
+      bottom -4rem
       background-color white
-      padding 0.75rem 0.75rem 0.5rem 0.75rem
+      padding 0.75rem
+      { displayType }
+      transition-property padding, background-color, color
+      transition-duration 0.25s
+      transiton-timing-function ease-out
+      &:hover, &:focus, &:active
+        padding 1rem 0.75rem
+        background-color $tandemPink
+        color white
     .hero-left-content
       width 80%
       .hero-summary

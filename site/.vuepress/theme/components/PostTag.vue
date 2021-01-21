@@ -29,8 +29,23 @@ export default {
 
 <style scoped lang="stylus">
 .post-tag
-  &:not(:last-child)
-    margin-right 10px
-  a
-    {tagWrapper}
+  margin-right 1rem
+  margin-bottom 1rem
+  { tagWrapper }
+  .case-study-layout &
+    background-color transparent
+    a
+      display inline-block
+      text-decoration none
+      border 1px white solid
+      border-right-width  1px
+      border-left-width 1px
+      &:hover, &:focus, &:active
+        color black
+        background-color white
+      span
+        display inline-block
+        padding 1rem
+    &::before, &::after
+      display none
 </style>

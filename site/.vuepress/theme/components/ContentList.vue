@@ -86,15 +86,7 @@ export default {
   .section-header
     border 0
   .load-more
-    text-align center
-    background $lightGrey
-    padding 1em
-    color $darkTextColor
-    margin 0em
-    cursor pointer
-    font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-    button
-      all unset
+    { loadMore }
   .written-by, .work-for
     border 0
 </style>

@@ -8,12 +8,12 @@
     <style>
       /* I recommend, settng a class in the js logic, for "inverse" or something, specially if it's more
       "dark/light" rather than specific colors, this method is a bit of a rube goldberg */
-      h1 { color: {{ textColor }} !important;}
-      a { color: {{ textColor }} !important;}
-      a:hover { color: {{ hoverColor }} !important;}
-      blockquote { color: {{ textColor }} !important;}
-      blockquote::before { color: {{ hoverColor }} !important;}
-      blockquote ul li { color: {{ hoverColor }} !important;}
+      .case-study-layout h1 { color: {{ textColor }} !important;}
+      .case-study-layout a { color: {{ textColor }} !important;}
+      .case-study-layout a:hover { color: {{ hoverColor }} !important;}
+      .case-study-layout blockquote { color: {{ textColor }} !important;}
+      .case-study-layout blockquote::before { color: {{ hoverColor }} !important;}
+      .case-study-layout blockquote ul li { color: {{ hoverColor }} !important;}
       .content-wrapper-tandem.case-study-layout .section-header .section-header-left img {
       filter: {{ logoChanger }};
       height: {{ logoHeight }}px;
@@ -68,9 +68,7 @@
       <Content itemprop="articleBody" />
 
       <div class="custom-block point tagz">
-        <h2>
-          Learn more about what we've done with:
-        </h2>
+        <h2>Learn more about what we've done with:</h2>
         <div class="post-tags">
           <ul
             v-if="tags"
@@ -226,7 +224,6 @@ export default {
 <style lang="stylus">
 .content-wrapper-tandem
   &.case-study-layout
-    max-width 1140px
     .custom-block.point:first-child
       border-top 0
     .custom-block.point:last-child
@@ -296,39 +293,9 @@ export default {
         p
           font-size typeScale.b
       &.point
-        padding 7em 0
+        { cb_point }
         p
           line-height 2em
-        &.tagz
-          margin-bottom 0
-          margin-top 0
-          border-bottom 0
-          .post-tags
-            width 100%
-            ul
-              margin 0
-              list-style none
-              display flex
-              margin 0
-              padding 0
-              flex-wrap wrap
-              @media (max-width: $MQMobile)
-                justify-content center
-              li
-                margin-bottom 1em
-                a
-                  border 1px solid inherit
-                  color inherit
-                  span
-                    font-weight 500
-                    margin 0
-                  &:hover
-                    transition none
-                  &:before
-                    all unset
-                  &:after
-                    all unset
-
       &.important
         padding 7em 0
         ul
@@ -344,7 +311,7 @@ export default {
           position absolute
           bottom -3.5em
           right 0
-          opacity .08
+          opacity 0.08
           z-index 0
 
 @media (max-width: $MQMobile)

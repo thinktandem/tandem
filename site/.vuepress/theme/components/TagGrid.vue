@@ -134,7 +134,6 @@ $tagMargins = 1em 1em
   @media (max-width: $MQMobile)
     width 99%
   .tag-item
-    border 1px #f00 solid
     position relative
     background $lightGrey
     text-align left
@@ -160,7 +159,6 @@ $tagMargins = 1em 1em
       padding 0
       margin 0.325rem 0 0 0
       li a
-        tagWrapper(transparent)
         padding: 1rem 3rem 1rem 0
     &.tag-third
       width 32%

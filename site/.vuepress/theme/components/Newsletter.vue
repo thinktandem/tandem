@@ -160,23 +160,15 @@ export default {
         outline 1px solid $borderColor
         outline-offset 5px
     input[type=button]
-      width 100%
-      padding 1.2em 3em
-      margin auto
-      border 0 solid $borderColor
-      -webkit-box-sizing border-box
-      -moz-box-sizing border-box
-      box-sizing border-box
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-      font-size 16px
+      all unset
+      { loadMore }
+      &:hover
+        padding-left 2rem
+        padding-right 2rem
       &.busy
         background-color $tandemPink
         color #ffffff
         opacity .50
-      &:hover
-        background-color $tandemPink
-        color #ffffff
-        transition all 0.2s
     input
       &:focus
         outline none

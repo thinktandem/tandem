@@ -104,7 +104,6 @@ export default {
 <style lang="stylus">
 .content-wrapper-tandem
   &.content-wrapper-work
-    max-width 1140px
     .section-header
       .section-header-right
         text-align right
@@ -114,10 +113,7 @@ export default {
       { workGrid }
     .custom-block
       &.point
-        border-bottom 1px solid $borderColor
-        margin-bottom 2em
-        border-top 1px solid $borderColor
-        padding 2em 0
+        { cb_point }
         &.tags
           border-bottom 0
 

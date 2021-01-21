@@ -150,7 +150,6 @@ export default {
 <style lang="stylus">
 .content-wrapper-tandem
   &.content-wrapper-careers
-    max-width 1140px
     .section-header
       h1, h2, p
         color black
@@ -184,10 +183,7 @@ export default {
           br
             display block
       &.point
-        border-bottom 1px solid $borderColor
-        margin-bottom 2em
-        border-top 1px solid $borderColor
-        padding 2em 0
+        { cb_point }
         &.interests
           margin-top 2em
           border-bottom 0

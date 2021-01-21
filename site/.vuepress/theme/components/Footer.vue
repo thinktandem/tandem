@@ -55,7 +55,6 @@ export default {};
   background-color white
   padding 3rem 2rem
   display flex
-  max-width 1140px
   margin auto
   border-top 1px solid $borderColor
   .copyright, .footer-links
@@ -77,9 +76,9 @@ export default {};
       a
         { displayType }
         font-size typeScale.g
-        color $tandemGrey
+        color $textColor
         &:hover
-          color $tandemPink
+          color $textColor
       ol, ul
         list-style none
         margin 0

@@ -118,6 +118,7 @@ a
     { displayType }
     font-weight 600
     font-size typeScale.e
+    line-height 1.2
     text-decoration none
     margin-top 0
     border-bottom 0
@@ -129,7 +130,7 @@ a
     { bodyType }
     font-size typeScale.i
     font-weight 300
-    color $tandemGrey
+    color $textColor
 
   .post-meta-author
     margin-top 1em

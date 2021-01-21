@@ -70,6 +70,7 @@ export default {
     text-decoration underline
     padding-top 0.35rem
     white-space nowrap
+    color $textColor
   h2
     { bodyType }
     font-size typeScale.f
@@ -88,7 +89,7 @@ export default {
     &.linked
       cursor pointer
   .section-header-right
-    color black
+    color $textColor
     font-weight 300
     font-size 1.33rem
     letter-spacing -1.04px

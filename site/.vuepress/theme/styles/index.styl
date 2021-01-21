@@ -51,6 +51,8 @@ h4
   { displayType }
   font-size typeScale.d
   border 0
+  &.post-title
+    line-height 1.125
 h2
   font-size typeScale.e
 h3
@@ -110,7 +112,6 @@ article
 .content-wrapper
   padding 0
   margin 0 auto
-  max-width none
   min-height calc(100vh - 20px - 60px - 100px)
   @media (min-width: $MQMobile)
     padding 0
@@ -120,12 +121,22 @@ article
   @extend .content-wrapper
   padding: 10rem 2rem 5rem 2rem
   @media (min-width: $MQMobile)
-    padding: 10rem 2rem 5rem 2rem
+    padding: 13rem 5rem 5rem 5rem
+
+.content-wrapper-work
+  max-width $MQXL
+
+#tandem-content
+  &.content-wrapper-home
+    max-width none !important
+    margin 0
+    @media (min-width: $MQLarge)
+      max-width none !important
 
 .custom-block
   position relative
   box-sizing border-box
-  padding 2rem
+  padding 2rem 0
   &.big, &.medium
     p
       { dsplayType }
@@ -153,22 +164,7 @@ article
       width 100%
 
   &.point
-    text-align center
-    flex-direction column
-    justify-content center
-    > h2, > h3
-      width 100%
-    @media (min-width: $MQSmall)
-      display flex
-      > h2, > h3
-        width 20%
-        padding-right: 1em
-      > p
-        width 70%
-        margin-top 0
-      &.point
-        text-align left
-        flex-direction row
+    { cb_point }
 
   > h2, > h3
     { dsplayType }

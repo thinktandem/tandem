@@ -65,7 +65,6 @@ export default {
 <style lang="stylus">
 .content-wrapper-tandem
   &.content-wrapper-tag
-    max-width 1140px
     .section-header
       h1, h2, p
         color black

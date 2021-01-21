@@ -163,7 +163,7 @@ $nav-primary
   display flex
   @media (min-width $MQSmall)
     .menu
-      padding-right 2rem
+      padding-right 3rem
       padding-left 30vw
 $menu--primary
   position absolute
@@ -263,7 +263,7 @@ header
   transition-duration 0.25s
   transition-timing-funciton ease-out
 
-  &.fadeout
+  &.fadeout,  &.dehamburger.fadein:not(.open)
     .menu
       top -106vh
   &.fadein
@@ -300,8 +300,11 @@ header
     &.fadein:not(&.dehamburger)
       background-color #eee
       box-shadow 0 -0.25rem 1rem rgba(0,0,0,0.4)
+    &.dehamburger.fadein, &.dehamburger.fadein:not(.open)
+      .menu
+        //top 0.625rem
+        top 2.525rem
     &.fadein
-      padding 2rem
       .menu
         height 4rem
         top 0.625rem
@@ -312,6 +315,7 @@ header
       .nav-primary
         height 9.5rem
     &.open.fadein
+      padding 2rem
       .menu-secondary
         {visuallyShown}
     &.dehamburger

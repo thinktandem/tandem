@@ -118,7 +118,6 @@ export default {
 <style lang="stylus">
 .content-wrapper-tandem
   &.content-wrapper-blog
-    max-width 1140px
     .section-header
       h1, h2, p
         color black
@@ -145,12 +144,7 @@ export default {
         font-size typeScale.g
         color black
       &.point
-        border-top 1px solid $borderColor
-        border-bottom 1px solid $borderColor
-        margin-bottom 2em
-        padding 2em 0
-        &.tags
-          border-bottom 0
+        { cb_point }
     @media (min-width: $MQMobile)
       .hot-tags
         justify-content space-between

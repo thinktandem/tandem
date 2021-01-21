@@ -100,7 +100,6 @@ export default {
 <style lang="stylus">
 .content-wrapper-tandem
   &.content-wrapper-contact
-    max-width 1140px
     .section-header
       h1, h2, p
         color black
@@ -115,10 +114,7 @@ export default {
         letter-spacing -1.04px
         color black
       &.point
-        border-bottom 1px solid $borderColor
-        margin-bottom 2em
-        border-top 1px solid $borderColor
-        padding 2em 0
+        { cb_point }
         &.metro-locations
           margin-top 2em
         &.contact-us

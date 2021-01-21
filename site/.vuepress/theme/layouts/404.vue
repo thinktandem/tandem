@@ -115,7 +115,6 @@ export default {
 <style lang="stylus">
 .content-wrapper-tandem
   &.content-wrapper-fourohfour
-    max-width 1140px
     .custom-block
       p
         font-weight 300
@@ -127,10 +126,7 @@ export default {
         letter-spacing -1.04px
         color #000
       &.point
-        border-bottom 1px solid $borderColor
-        margin-bottom 2em
-        border-top 1px solid $borderColor
-        padding 2em 0
+        { cb_point }
         &.what-we-do
           border 0
         &.vids

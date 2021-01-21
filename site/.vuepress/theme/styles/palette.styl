@@ -28,9 +28,6 @@ $headerBgColor = $bgColor;
 $footerBgColor = $darkTextColor
 $footerColor = #828282
 //
-// Layout
-$contentWidth   = 740px
-//
 // Breakpoints
 $MQXL           = 1600px
 $MQLarge        = 1348px
@@ -38,6 +35,9 @@ $MQSmall        = 1000px
 $MQNarrow       = 768px
 $MQMobile       = 959px
 $MQMobileNarrow = 450px
+//
+// Layout
+$contentMaxWidth = $MQSmall
 //
 // Code
 $lineNumbersWrapperWidth = 3.5rem
@@ -123,25 +123,62 @@ workGrid = @block
       height 500px
       display inline-flex
   .load-more
+    margin-top 2em
     margin-bottom 2em
+
+//
+// Custom Block - point - should be a component or variant thereof
+cb_point = @block
+  margin-bottom 0
+  margin-top 0
+  border-bottom 0
+  text-align center
+  flex-direction column
+  justify-content center
+  > h2, > h3
+    width 100%
+  ul
+    justify-content center
+    li
+      margin-bottom 0.75rem
+  @media (min-width: $MQMobile)
+    display flex
+    text-align left
+    flex-direction row
+    > h2, > h3
+      justify-content left
+      width 40vw
+      padding-right: 1em
+      margin-top 0
+    > p
+      width 70%
+      margin-top 0
+    .post-tags
+      width 100%
+      ul
+        margin 0
+        list-style none
+        display flex
+        margin 0  background $lightGrey
+        padding 0
+        flex-wrap wrap
+        justify-content left
 
 tagWrapper = @block
   position relative
-  border-top-left-radius 0.125em
-  border-bottom-left-radius 0.125em
   display inline-block
   background $lightGrey
   transition none
   border none
+  margin-right 1rem
+  padding 0 0.5rem
   span
     display inline-block
     box-sizing border-box
     margin 0
-    padding 0.625em
     border none
     font-size typeScale.i
     font-weight 300
-    color white
   &::after
     content " "
     position absolute
@@ -149,3 +186,23 @@ tagWrapper = @block
     border-bottom 0.875em solid transparent
     border-top    0.875em solid transparent
     border-left   0.7em solid $lightGrey
+
+loadMore = @block
+  background $tandemPink
+  padding 1.5em 1em
+  margin 1em
+  border-radius 0.25rem
+  cursor pointer
+  text-align center
+  color black
+  { displayType }
+  text-size typeScale.d
+  transition-property background-color, color, padding
+  transition-timing-function ease-out
+  transition-duration 0.25s
+  &:hover, &:focus, &:active
+    background-color #000
+    padding 2em 1em
+    color white
+  button
+    all unset

@@ -204,7 +204,6 @@ export default {
 <style lang="stylus">
 .content-wrapper-tandem
   &.content-wrapper-landing-page
-    max-width 1140px
     article
       &.post
         .post-wrapper
@@ -219,15 +218,7 @@ export default {
           @media (min-width: $MQMobile)
             padding-bottom 0
     .load-more
-      { displayType }
-      text-align center
-      background $lightGrey
-      padding 1em
-      color $darkTextColor
-      margin 0em
-      cursor pointer
-      button
-        all unset
+      { loadMore }
     .section-header
       h1, h2, p
         color black
@@ -262,14 +253,13 @@ export default {
           border-top 1px solid $borderColor
           border-bottom 0
       &.point
+        { cb_point }
         p
           width 100%
           &.custom-block-title
             width 100%
             @media (min-width: $MQMobile)
-              width 20%
-        border-top 1px solid $borderColor
-        padding 4em 0
+              width 35%
         &.recent-work
           .recent-work-wrapper
             width 100%

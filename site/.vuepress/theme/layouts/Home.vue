@@ -284,8 +284,8 @@ export default {
     .home-section-container
       width 90%
       margin auto
-      @media (min-width: $MQMobile)
-        width 1140px
+      // @media (min-width: $MQMobile)
+        //width 1140px
     .message-one
       text-align center
       padding 0 1rem
