@@ -9,6 +9,7 @@
       /* I recommend, settng a class in the js logic, for "inverse" or something, specially if it's more
       "dark/light" rather than specific colors, this method is a bit of a rube goldberg */
       .case-study-layout h1 { color: {{ textColor }} !important;}
+      nav a { color: {{ textColor }} !important;}
       .case-study-layout a { color: {{ textColor }} !important;}
       .case-study-layout a:hover { color: {{ hoverColor }} !important;}
       .case-study-layout blockquote { color: {{ textColor }} !important;}
