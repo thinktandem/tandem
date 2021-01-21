@@ -1,19 +1,16 @@
 <template>
   <div
     id="vuepress-theme-blog__global-layout"
-    :style="wrapperTheme"
-  >
+    :style="wrapperTheme">
     <Header
       :is-open="isMobileHeaderOpen"
       :active="theme.headerActive"
       :color="theme.headerColor"
       :hover="theme.headerHover"
-      @toggle-sidebar="this.toggleSidebar"
-    />
+      @toggle-sidebar="toggleSidebar()" />
     <div
       class="content-wrapper"
-      @click="isMobileHeaderOpen = false"
-    >isMobileHeaderOpen = !isMobileHeaderOpen
+      @click="isMobileHeaderOpen = false">
       <DefaultGlobalLayout />
     </div>
     <Footer />
@@ -33,7 +30,7 @@ export default {
   },
   data() {
     return {
-      isMobileHeaderOpen: false,
+      isMobileHeaderOpen: false,llll
       theme: {},
     };
   },
@@ -47,24 +44,22 @@ export default {
       this.theme = Object.assign({}, theme);
     });
   },
-  methods {
-    toggleSidebar: function() {
-      console.log("toggleSidebar!")
-      isMobileHeaderOpen = !isMobileHeaderOpen
-    }
-  },
   mounted() {
     this.$router.afterEach(() => {
       this.isMobileHeaderOpen = false;
-      console.log( 'isMobileHeaderOpen', this.isMobileHeaderOpen )
       this.$updateTheme({});
     });
   },
+  methods: {
+    toggleSidebar() {
+      this.isMobileHeaderOpen = !this.isMobileHeaderOpen
+    }
+  }
 };
 </script>
 
 <style lang="stylus">
-#vuepress-theme-blog__global-layout
+#vuepress-t$eventheme-blog__global-layout
   word-wrap break-word
 .content-wrapper
   padding 160px 15px 80px 15px

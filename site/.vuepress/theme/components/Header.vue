@@ -1,18 +1,13 @@
 <template>
-  <header id="header">
+  <header id="header" >
     <nav id="nav" class="nav-primary">
       <div class="title">
-        <NavLink
-          link="/"
-          class="home-link"
-        >
+        <NavLink link="/" class="home-link">
           <TandemLogo />
           <div class="site-title">{{ $site.title }}</div>
         </NavLink>
       </div>
-
-      <HamburgerButton @click="$emit('toggle-sidebar')" />
-
+      <HamburgerButton :is-open="isOpen" @toggle-sidebar="toggleSidebar($event)" />
       <div
         id="menu"
         class="menu"
@@ -114,6 +109,9 @@ export default {
     this.lastScrollPos = window.pageYOffset;
   },
   methods: {
+    toggleSidebar() {
+      this.$emit('toggle-sidebar')
+    },
     expandMenu() {
       this.classChange('header', ['open']);
     },
@@ -134,12 +132,10 @@ export default {
     onScroll(e) {
       // If the menu is open then just stay with that
       if (this.isOpen) return;
-
       // Fade out header after 50
       if (window.top.scrollY > 50) this.hideHeader();
       // Reset to normal "top" of page configuration
       else this.resetHeader();
-
       // Handle the menu toggle UX after 100 px
       if (window.top.scrollY > 50) {
         // Show navtoggle on scroll up
@@ -147,7 +143,6 @@ export default {
         // And hide on scroll down
         else this.hideToggle();
       }
-
       // Reset the previous position
       this.lastScrollPos = window.pageYOffset;
     },
@@ -208,11 +203,12 @@ $menu--primary
         text-decoration none
         border none
         color $textColor
-        // border 1px #f00 solid
         &:focus, &:hover, &:active, &.router-link-active
           color $tandemPink
         &:active
           outline none
+      .nav-item-desc
+        font-size typeScale.h
   @media (min-width $MQMobile)
     box-shadow none
     top 0
@@ -267,11 +263,8 @@ header
       top: 0
   &.open
     .nav-primary
-      border 0.25rem solid #f00
       height 100vh
       background-color transparent
-      flex-wrap border 1px #000 solid
-    wrap
   .title
     { logoDimensions }
     padding 2rem 0 2rem 3rem
