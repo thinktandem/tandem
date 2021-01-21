@@ -161,19 +161,10 @@ $nav-primary
   width 100vw
   position relative
   display flex
-  @media (min-width $MQMobile)
+  @media (min-width $MQSmall)
     .menu
-      display flex
-      flex 1
-      justify-content flex-end
       padding-right 2rem
-    .menu-secondary
-      { visuallyHidden }
-      display none !important
-  @media (min-width $MQLarge)
-    .menu
-      padding-right 3rem
-
+      padding-left 30vw
 $menu--primary
   position absolute
   box-sizing border-box
@@ -187,7 +178,7 @@ $menu--primary
   background-color #ffffff
   box-shadow 0 0rem 2.5rem rgba(black, 0.2)
   margin 0
-  padding 11rem 2rem 2rem 2.625rem
+  padding 11rem 2rem 2rem 3rem
   .nav
     width 100%
     margin 0
@@ -209,7 +200,8 @@ $menu--primary
           outline none
       .nav-item-desc
         font-size typeScale.h
-  @media (min-width $MQMobile)
+        white-space nowrap
+  @media (min-width $MQSmall)
     box-shadow none
     top 0
     flex-direction row
@@ -220,33 +212,45 @@ $menu--primary
       width auto
       flex 0 0 auto
       display flex
+      justify-content flex-end
       .nav-item
         margin-left: 0
         margin-right 2rem
+        margin-bottom 1rem
         display inline-block
         text-align left
-        padding-top 1.125rem
+        padding-top 0.57  5rem
         .nav-item-desc
           { visuallyHidden }
+      .nav-item:last-of-type
+        margin-right 1rem
 
 $menu-secondary
   display flex
   flex 1 100%
   flex-direction row
+  flex-basis 100%
   .links
-    padding 1em
+    padding-top 1em
+    padding-left 4.5rem
     border-top 1px solid $borderColor
     flex 1 100%
-    a
+    .nav-link
       { displayType }
-      font-size typeScale.h
+      letter-spacing 0.025rem
+      font-size typeScale.i
       text-decoration none
-      text-transform uppercase
-      margin-left 1em
-      color $middleGrey
+      margin-right 1rem
+      color $textColor
       &:hover
         color $tandemPink
-
+  @media (min-width $MQSmall)
+    .links
+      display flex
+      justify-content flex-end
+      padding-left 0
+      { visuallyShown }
+      border-top none !important
 header
   z-index 100
   position fixed
@@ -255,6 +259,10 @@ header
   box-sizing border-box
   background-color transparent
   display flex
+  transition-property padding background-color
+  transition-duration 0.25s
+  transition-timing-funciton ease-out
+
   &.fadeout
     .menu
       top -106vh
@@ -265,10 +273,16 @@ header
     .nav-primary
       height 100vh
       background-color transparent
+      display block
+      flex-wrap wrap
+      @media (min-width $MQLarge)
+        .menu
+          justify-content center
   .title
     { logoDimensions }
     padding 2rem 0 2rem 3rem
-    z-index 20
+    position relative
+    z-index 50
   .site-title
     { visuallyHidden }
   .nav-primary
@@ -281,19 +295,37 @@ header
     top 2rem
     left 2.675rem
     opacity 1
-  @media (min-width $MQMobile)
+
+  @media (min-width $MQSmall)
+    &.fadein:not(&.dehamburger)
+      background-color #eee
+      box-shadow 0 -0.25rem 1rem rgba(0,0,0,0.4)
+    &.fadein
+      padding 2rem
+      .menu
+        height 4rem
+        top 0.625rem
+      .nav .nav-item .nav-item-desc
+        display block
+        { visuallyShown }
+        font-size typeScale.i
+      .nav-primary
+        height 9.5rem
+    &.open.fadein
+      .menu-secondary
+        {visuallyShown}
     &.dehamburger
       .menu
-        top 0rem
-        padding-top 1.475rem
+        top 2.625rem
+        padding-top 0
       .hamburger
         pointer-events none
         opacity 0
+    &.open
+      .nav-primary
+        height 9.5rem
   @media (min-width $MQLarge)
     &.fadeout
       .menu
-        top -8rem
-      &.fadein
-      &.open
-        border 4px #000 solid
+        top -12rem
 </style>
