@@ -180,8 +180,6 @@ export default {
               flex-wrap wrap
               @media (max-width: $MQMobile)
                 justify-content center
-              li
-                margin-bottom 1em
 
 .post-theme-content
   { bodyType }

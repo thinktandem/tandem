@@ -122,40 +122,6 @@ article
   @media (min-width: $MQMobile)
     padding: 10rem 2rem 5rem 2rem
 
-ul
-  &.tags, &.post-meta-tags
-  li
-    &.post-tag
-      &.tag
-        height inherit
-      a
-        border-radius 0
-        background $lightGrey
-        font-size typeScale.g
-        font-weight 300
-        padding 1em 2em
-        transition none
-        span
-          color black
-          margin-left -.5em
-          margin-right .5em
-        &:hover
-          transition none
-        &:before
-          all unset
-        &:after
-          border-bottom 1.725em solid transparent
-          border-left 1.725em solid $lightGrey
-          border-top 1.725em solid transparent
-        @media (max-width: $MQMobile)
-          padding 1em 1em
-          margin 0
-          margin-bottom 1em
-          span
-            margin 0
-          &:after
-            border 0
-
 .custom-block
   position relative
   box-sizing border-box
@@ -217,7 +183,6 @@ ul
 .important
   &.important, &.byline
     > h2, > h3
-      border 1px #0f0 solids
       { displayType }
       font-size typeScale.e
       @media (min-width: $MQMobile)

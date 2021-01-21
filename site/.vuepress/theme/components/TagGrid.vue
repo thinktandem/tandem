@@ -134,6 +134,7 @@ $tagMargins = 1em 1em
   @media (max-width: $MQMobile)
     width 99%
   .tag-item
+    border 1px #f00 solid
     position relative
     background $lightGrey
     text-align left
@@ -157,18 +158,10 @@ $tagMargins = 1em 1em
     ol, ul
       list-style none
       padding 0
-      margin 0
-      li
-        padding: 1rem 2rem 1rem 0
-        margin: 0
-        font-size typeScale.h
-        font-weight 300
-        border-bottom solid 1px $boderColor
-        color $middleGrey
-        a
-          :hover
-            color $tandemPink
-            transition all .2s
+      margin 0.325rem 0 0 0
+      li a
+        tagWrapper(transparent)
+        padding: 1rem 3rem 1rem 0
     &.tag-third
       width 32%
       @media (max-width: $MQMobile)
@@ -179,10 +172,11 @@ $tagMargins = 1em 1em
       display flex
       ul
         display flex
-        width 100%
         justify-content left
         li
-          padding-top 1.4rem
+          padding-top 0
+          a
+            padding-top: 0
       @media (max-width: $MQMobile)
         display block
         ul
@@ -193,14 +187,12 @@ $tagMargins = 1em 1em
         li
           border none
           text-decoration none
-      h2
-        align-self center
     &.tag-full-columns
       ul
         display block
         margin-right 1em
         padding-top 0
         li:first-of-type
-          padding-top 0.2875rem
+          padding-top 0.125rem
 
 </style>

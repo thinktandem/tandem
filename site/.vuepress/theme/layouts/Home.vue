@@ -85,6 +85,7 @@ export default {
             title: 'WordPress + Redesign.',
             byline: 'We rebuilt Community of Literary Magazines and Presses on WordPress for performance, user experience and mobile.',
             link: '/work/clmp-wp-redesign/',
+            cta: 'Optional CTA Goes Here!',
             type: 'recent wordpress work',
             color: 'white',
             hover: '#cb1414',

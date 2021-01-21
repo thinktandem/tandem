@@ -137,16 +137,27 @@ $reg-initscale = scale(0.125)
     animation-name text
     animation-duration 0.75s
     animation-timing-function cubic-bezier(0.58, 0.385, 0.36, 1)
-    animation-delay 0.425s
+    animation-delay 0.275s
     animation-iteration-count 1
     animation-fill-mode forwards
     aniamation-direction normal
+  // Below: bad form to use selectors outside the component, but alas
+  .fadeout &
+    .text
+      fill-opacity 1
+      transform translate(38px, 0)
+      animation-name text
+      animation-duration 0.125s
+      animation-timing-function cubic-bezier(0.58, 0.385, 0.36, 1)
+      animation-delay 0
+      animation-iteration-count 1
+      aniamation-direction reverse
   .fadeout &
     .text
       fill-opacity 1
       transform translate(38px, 0)
       animation-name textReverse
-      animation-duration 0.5s
+      animation-duration 0.125s
       animation-timing-function cubic-bezier(0.58, 0.385, 0.36, 1)
       animation-delay 0
       animation-iteration-count 1

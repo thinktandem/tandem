@@ -34,7 +34,7 @@ $contentWidth   = 740px
 // Breakpoints
 $MQXL           = 1600px
 $MQLarge        = 1348px
-$MQSmall        = 1184px
+$MQSmall        = 1000px
 $MQNarrow       = 768px
 $MQMobile       = 959px
 $MQMobileNarrow = 450px
@@ -46,6 +46,29 @@ $codeLang = js ts html md vue css sass scss less stylus go java c sh yaml py doc
 // Type
 $font--body = "GalaxieCopernicus", "PT Serif", serif
 $font--display = "AvenirNext", "Helvetica Neue", Arial, sans-serif
+
+/*
+Type Scale | Major Third
+https://type-scale.com/?size=16&scale=1.250&text=A%20Visual%20Type%20Scale&font=Poppins&fontweight=400&bodyfont=Poppins&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false
+*/
+typeScale = {
+  'a':      5.96rem,   // 95.37
+  'b':      4.768rem,  // 76.29
+  'c':      3.052rem,  // 48.83
+  'd':      2.441rem,  // 39.06
+  'e':      1.953rem,  // 31.25
+  'f':      1.563rem,  // 25
+  'g':      1.25rem,   // 20
+  'h':      1rem,      // 16
+  'i':      0.8rem,    // 12.8
+  'j':      0.64rem,   // 8.19
+  'small':  0.8rem,    // 12.8
+  'tiny':   0.64rem,   // 8.19
+  'body':   1rem,      // 16
+  'bigboi': 7.451rem,  // 119.21
+  'biggestboi': 12rem
+}
+
 
 // usng these block declatations for reused content
 // seems to play better with vue and stylus than stylus
@@ -74,6 +97,14 @@ visuallyHidden = @block
   height 1px
   overflow hidden
 
+visuallyShown = @block
+  opacity 1
+  width auto
+  height auto
+  position static
+  overflow visible
+  visibility visible
+
 $logoWidth = 280
 $logoHeight = 56
 logoDimensions = @block
@@ -94,22 +125,27 @@ workGrid = @block
   .load-more
     margin-bottom 2em
 
-/*
-Type Scale | Major Third
-https://type-scale.com/?size=16&scale=1.250&text=A%20Visual%20Type%20Scale&font=Poppins&fontweight=400&bodyfont=Poppins&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false
-*/
-typeScale = {
-  'a':      5.96rem,   // 95.37
-  'b':      4.768rem,  // 76.29
-  'c':      3.052rem,  // 48.83
-  'd':      2.441rem,  // 39.06
-  'e':      1.953rem,  // 31.25
-  'f':      1.563rem,  // 25
-  'g':      1.25rem,   // 20
-  'h':      1rem,      // 16
-  'i':      0.8rem,    // 12.8
-  'j':      0.64rem,   // 8.19
-  'body':   1rem,      // 16
-  'bigboi': 7.451rem,  // 119.21
-  'biggestboi': 12rem
-}
+tagWrapper = @block
+  position relative
+  border-top-left-radius 0.125em
+  border-bottom-left-radius 0.125em
+  display inline-block
+  background $lightGrey
+  transition none
+  border none
+  span
+    display inline-block
+    box-sizing border-box
+    margin 0
+    padding 0.625em
+    border none
+    font-size typeScale.i
+    font-weight 300
+    color white
+  &::after
+    content " "
+    position absolute
+    right -0.68rem
+    border-bottom 0.875em solid transparent
+    border-top    0.875em solid transparent
+    border-left   0.7em solid $lightGrey

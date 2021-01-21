@@ -30,7 +30,7 @@ export default {
   },
   data() {
     return {
-      isMobileHeaderOpen: false,llll
+      isMobileHeaderOpen: false,
       theme: {},
     };
   },

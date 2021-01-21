@@ -76,6 +76,7 @@ export default {
   justify-content space-between
   width 100%
   .values-item
+    box-sizing border-box
     padding 2rem
     position relative
     background $lightGrey
