@@ -31,8 +31,8 @@
 .hamburger
   z-index 50
   position absolute
-  top 2rem
-  left 2.3975rem
+  top 2.125rem
+  left 2.45rem
   border none
   display inline-block
   cursor pointer
@@ -51,7 +51,7 @@
     &:hover
       opacity 1
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
-      background-color transparent
+      background-color white
 
 .hamburger-box
   box-sizing border-box
@@ -70,12 +70,6 @@
   height 1.75rem
   transition-duration 0.275s
   transition-timing-function cubic-bezier(0.68, -0.55, 0.265, 1.55)
-  &::before
-    top 0.575rem
-    transition opacity 0.125s 0.275s ease
-  &::after
-    bottom 0.575rem
-    transition transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55)
   &, &::before, &::after
     width 1.75rem
     height 0.25rem
@@ -83,19 +77,28 @@
     border-radius 0.25rem
     position absolute
     transition-property transform
-    transition-duration 0.15s
-    transition-timing-function ease
+    transition-duration 0.125s
+    transition-timing-function cubic-bezier(0.175, 0.885, 0.32, 1.275)
+  &::before
+    top 0.575rem
+    
+    transition opacity 0.125s 0.275s ease
+  &::after
+    bottom 0.575rem
+    color #000
+    transition transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55)
   &::before, &::after
     content ""
     display block
 &.is-active
   .hamburger-inner
-    transform: translate3d(0, 10px, 0) rotate(-135deg);
+    transform: translate3d(-0.785rem, -0.125rem, 0) rotate(-135deg);
     transition-delay: 0.075s;
     &::before
       transition-delay: 0s;
       opacity: 0;
+      transform: translate3d(-0rem, -0.5675rem, 0) rotate(0);
     &::after
-      transform: translate3d(0, 8px, 0) rotate(270deg);
+      transform: translate3d(0, 9px, 0) rotate(270deg);
       transition-delay: 0.075s;
 </style>
