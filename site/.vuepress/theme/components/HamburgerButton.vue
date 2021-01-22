@@ -27,6 +27,10 @@
 </script>
 
 <style lang="stylus" scoped>
+#nav_toggle
+  outline none
+  &:focus, &:hover, &:active
+    outline none
 .hamburger
   z-index 50
   position absolute
@@ -51,14 +55,12 @@
       opacity 1
     .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
       background-color white
-
 .hamburger-box
   box-sizing border-box
   width 3rem
   height 3rem
   display inline-block
   position relative
-
 .hamburger-inner
   display block
   position relative
@@ -90,13 +92,13 @@
     display block
 &.is-active
   .hamburger-inner
-    transform: translate3d(-0.785rem, -0.125rem, 0) rotate(-135deg);
-    transition-delay: 0.075s;
+    transform translate3d(-0.785rem, -0.125rem, 0) rotate(-135deg)
+    transition-delay 0.075s
     &::before
-      transition-delay: 0s;
-      opacity: 0;
-      transform: translate3d(-0rem, -0.5675rem, 0) rotate(0);
+      transition-delay 0s
+      opacity 0
+      transform translate3d(-0rem, -0.5675rem, 0) rotate(0)
     &::after
-      transform: translate3d(0, 9px, 0) rotate(270deg);
-      transition-delay: 0.075s;
+      transform translate3d(0, 9px, 0) rotate(270deg)
+      transition-delay 0.075s
 </style>

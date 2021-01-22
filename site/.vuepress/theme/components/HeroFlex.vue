@@ -112,7 +112,13 @@ export default {
       margin-bottom 1.5rem
       background-color rgba(black, 0.3)
       color white !important
+      box-sizing border-box
+      span
+        display blockquote
+        padding-top 0.5rem
+        padding-bottom 0.5rem
       &::after
+        left 100%
         border-left-color rgba(black, 0.3)
       font-family typeScale.tiny
     .hero-right-content
