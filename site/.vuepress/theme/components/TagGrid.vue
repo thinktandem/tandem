@@ -2,48 +2,84 @@
   <div class="tag-container">
     <div class="tag-item tag-third">
       <a :href="`${prefix}strategy`"><h2>Strategy</h2></a>
-      <ul v-for="(tagGroup, index) in strategy" :key="index">
-        <li v-for="tag in tagGroup" :key="tag.tag">
+      <ul
+        v-for="(tagGroup, index) in strategy"
+        :key="index"
+      >
+        <li
+          v-for="tag in tagGroup"
+          :key="tag.tag"
+        >
           <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
         </li>
       </ul>
     </div>
     <div class="tag-item tag-third">
       <a :href="`${prefix}design`"><h2>Design</h2></a>
-      <ul v-for="(tagGroup, index) in design" :key="index">
-        <li v-for="tag in tagGroup" :key="tag.tag">
+      <ul
+        v-for="(tagGroup, index) in design"
+        :key="index"
+      >
+        <li
+          v-for="tag in tagGroup"
+          :key="tag.tag"
+        >
           <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
         </li>
       </ul>
     </div>
     <div class="tag-item tag-third">
       <a :href="`${prefix}development`"><h2>Development</h2></a>
-      <ul v-for="(tagGroup, index) in development" :key="index">
-        <li v-for="tag in tagGroup" :key="tag.tag">
+      <ul
+        v-for="(tagGroup, index) in development"
+        :key="index"
+      >
+        <li
+          v-for="tag in tagGroup"
+          :key="tag.tag"
+        >
           <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
         </li>
       </ul>
     </div>
     <div class="tag-item tag-full">
       <h2>Industry</h2>
-      <ul v-for="(tagGroup, index) in industry" :key="index">
-        <li v-for="tag in tagGroup" :key="tag.tag">
+      <ul
+        v-for="(tagGroup, index) in industry"
+        :key="index"
+      >
+        <li
+          v-for="tag in tagGroup"
+          :key="tag.tag"
+        >
           <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
         </li>
       </ul>
     </div>
     <div class="tag-item tag-full-columns">
       <h2>Technology</h2>
-      <ul v-for="(tagGroup, index) in technology" :key="index">
-        <li v-for="tag in tagGroup" :key="tag.tag">
+      <ul
+        v-for="(tagGroup, index) in technology"
+        :key="index"
+      >
+        <li
+          v-for="tag in tagGroup"
+          :key="tag.tag"
+        >
           <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
         </li>
       </ul>
     </div>
     <div class="tag-item tag-full">
       <h2>Other</h2>
-      <ul v-for="(tagGroup, index) in other" :key="index">
-        <li v-for="tag in tagGroup" :key="tag.tag">
+      <ul
+        v-for="(tagGroup, index) in other"
+        :key="index"
+      >
+        <li
+          v-for="tag in tagGroup"
+          :key="tag.tag"
+        >
           <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
         </li>
       </ul>

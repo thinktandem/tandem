@@ -1,30 +1,29 @@
 <template>
-  <button id="nav_toggle"
+  <button
+    id="nav_toggle"
     class="toggle collapsed hamburger"
     :class="isOpen? 'is-active' : ''"
     type="button"
     aria-controls="nav-collapse"
     aria-expanded="false"
     aria-label="Toggle navigation"
-    @click="$emit('toggle-sidebar', $event)">
-      <div class="hamburger-box">
-        <div class="menu-toggle hamburger-inner"></div>
-      </div>
+    @click="$emit('toggle-sidebar', $event)"
+  >
+    <div class="hamburger-box">
+      <div class="menu-toggle hamburger-inner" />
+    </div>
   </button>
 </template>
 
 <script>
   export default {
-    components: {
-      name: "HamburgerButton"
-    },
     props: {
       isOpen: {
         type: Boolean,
-        required: true
-      }
+        required: true,
+      },
     },
-  }
+  };
 </script>
 
 <style lang="stylus" scoped>
@@ -81,7 +80,6 @@
     transition-timing-function cubic-bezier(0.175, 0.885, 0.32, 1.275)
   &::before
     top 0.575rem
-    
     transition opacity 0.125s 0.275s ease
   &::after
     bottom 0.575rem

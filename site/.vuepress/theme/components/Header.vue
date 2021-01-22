@@ -1,13 +1,24 @@
 <template>
-  <header id="header" >
-    <nav id="nav" class="nav-primary">
+  <header id="header">
+    <nav
+      id="nav"
+      class="nav-primary"
+    >
       <div class="title">
-        <NavLink link="/" class="home-link">
+        <NavLink
+          link="/"
+          class="home-link"
+        >
           <TandemLogo />
-          <div class="site-title">{{ $site.title }}</div>
+          <div class="site-title">
+            {{ $site.title }}
+          </div>
         </NavLink>
       </div>
-      <HamburgerButton :is-open="isOpen" @toggle-sidebar="toggleSidebar($event)" />
+      <HamburgerButton
+        :is-open="isOpen"
+        @toggle-sidebar="toggleSidebar($event)"
+      />
       <div
         id="menu"
         class="menu"
@@ -57,27 +68,23 @@
 </template>
 
 <script>
-//import TandemLogo from '@theme/components/TandemLogo';
+// import TandemLogo from '@theme/components/TandemLogo';
 import TandemLogo from '@theme/components/TandemLogo';
 import HamburgerButton from '@theme/components/HamburgerButton';
-import MenuIcon from 'vue-feather-icons/icons/MenuIcon';
-import XIcon from 'vue-feather-icons/icons/XIcon';
 export default {
   components: {
     TandemLogo,
     HamburgerButton,
-    MenuIcon,
-    XIcon
   },
   props: {
     isHamburgerVisible: {
       type: Boolean,
-      required: false
+      required: false,
     },
     isOpen: {
       type: Boolean,
       required: true,
-    }
+    },
   },
   data() {
     return {
@@ -110,7 +117,7 @@ export default {
   },
   methods: {
     toggleSidebar() {
-      this.$emit('toggle-sidebar')
+      this.$emit('toggle-sidebar');
     },
     expandMenu() {
       this.classChange('header', ['open']);

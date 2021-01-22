@@ -83,7 +83,7 @@ export default {
     styles: {
       type: Object,
       default: () => ({}),
-    }
+    },
   },
 };
 

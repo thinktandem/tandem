@@ -19,7 +19,9 @@
               <span class="first-text">Better</span>
               <span class="second-text">Together.</span>
               <div>
-                <h1 class="home-summary">Tandem is the full-service digital agency that cares as much as you do.</h1>
+                <h1 class="home-summary">
+                  Tandem is the full-service digital agency that cares as much as you do.
+                </h1>
               </div>
             </div>
 
@@ -112,7 +114,7 @@ export default {
             hover: '#0083c1',
             styles: {
               'background-color': '#6b1e74ba',
-            }
+            },
           },
         },
         {
@@ -189,15 +191,6 @@ export default {
     },
   },
   mounted() {
-    // If we start at the top make sure we pink
-    const toggle = document.getElementById('nav_toggle');
-    // toggle.classList.remove('greybeard');
-    // Get a random message every 5000 seconds
-    /*
-    setInterval(() => {
-      this.message = Math.floor(Math.random() * 2);
-    }, 5000);
-    */
     this.message = 0;
 
     for (let i = 0; i < this.slides.length; i++) {
@@ -220,16 +213,13 @@ export default {
     onLeave(origin, destination, direction) {
       // Smooth out the header animation
       const header = document.getElementById('header');
-      const toggle = document.getElementById('nav_toggle');
       if (!destination.isFirst) {
         header.classList.add('fadeout');
-        // toggle.classList.add('togglein', 'greybeard');
         header.classList.remove('fadein', 'dehamburger');
       } else {
         header.classList.add('dehamburger', 'fadein');
         header.classList.remove('fadeout', 'open');
         header.classList.remove('not-first');
-        // toggle.classList.remove('greybeard');
       }
     },
     breakFree() {
