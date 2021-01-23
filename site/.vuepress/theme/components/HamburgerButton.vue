@@ -28,17 +28,17 @@
 </script>
 
 <style lang="stylus" scoped>
-#nav_toggle
-  outline none
-  &:focus, &:hover, &:active
-    outline none
 .hamburger
-  z-index 50
   position absolute
-  top 2.125rem
-  left 2.45rem
+  z-index 50
+  outline none
+  top 2rem
+  left 2.675rem
+  width 3.5rem
+  height 3.5rem
   border none
   display inline-block
+  box-sizing border-box
   cursor pointer
   transition-property opacity, filter
   transition-duration 0.15s
@@ -48,7 +48,10 @@
   text-transform none
   background-color transparent
   margin 0
+  padding 0
   overflow visible
+  &:focus, &:hover, &:active
+    outline none
   &:hover
     opacity 0.8
   &.is-active
@@ -58,15 +61,15 @@
       background-color white
 .hamburger-box
   box-sizing border-box
-  width 3rem
-  height 3rem
-  display inline-block
-  position relative
+  width 3.5rem
+  height 3.5rem
+  display block
+  //border 1px #fff solid
 .hamburger-inner
   display block
   position relative
   transform translate(-50%, -50%)
-  top 55%
+  top 50%
   left 50%
   width 1.75rem
   height 1.75rem
