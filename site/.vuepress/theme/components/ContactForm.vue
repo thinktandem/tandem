@@ -169,7 +169,7 @@ export default {
     margin 2em
     width 100%
     @media (max-width: $MQMobile)
-      font-size 1.2em
+      font-size typeScale.g
     margin 3em
     width 100%
     input[type=text], input[type=email], textarea
@@ -181,33 +181,25 @@ export default {
       -webkit-box-sizing border-box
       -moz-box-sizing border-box
       box-sizing border-box
-      font-size 1em
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      { displayType }
       &:focus
         outline 1px solid $borderColor
         outline-offset 5px
     textarea
       height 216px
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+      { displayType }
     input[type=button]
-      padding 1.2em 3em
+      { loadMore }
       width 25%
-      margin auto
-      border 0 solid $borderColor
-      -webkit-box-sizing border-box
-      -moz-box-sizing border-box
-      box-sizing border-box
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-      font-size 16px
       &.busy
         background-color $tandemPink
-        color #ffffff
-        opacity .50
+        color #fff
+        opacity 0.50
       @media (max-width: $MQMobile)
         width 100%
       &:hover
         background-color $tandemPink
-        color #ffffff
+        color #fff
         transition all 0.2s
     input
       &:focus
@@ -217,20 +209,20 @@ export default {
       font-weight 700
       ul
         li
-          font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-          font-size .8em
+          { displayType }
+          font-size typeScale.small
           font-weight 300
           margin-left 1em
     .thanks
       display flex
-      font-size 2.2em
+      font-size typeScale.d
       line-height 2
       letter-spacing -0.19rem
       justify-content space-evenly
       align-items center
       @media (max-width: $MQMobile)
         display block
-        font-size 1.2em
+        font-size typeScale.g
         letter-spacing -0.09rem
     @media (max-width: $MQMobile)
       margin 1.67em

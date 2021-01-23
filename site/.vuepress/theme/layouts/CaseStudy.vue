@@ -249,11 +249,11 @@ export default {
         p
           font-size 1em
         &:before
-          font-size 3em
+          font-size typeScale.c
         ul
           position initial
           li
-            font-size .8em
+            font-size typeScale.small
     .section-header
       .section-header-left
         margin-right 175px
@@ -301,7 +301,7 @@ export default {
         padding 7em 0
         ul
           li
-            font-size 1.2em
+            font-size typeScale.g
       &.col-full, &.col-half, &.col-third
         padding 7em 0
         ul

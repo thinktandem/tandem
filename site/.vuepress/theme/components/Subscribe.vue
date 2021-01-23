@@ -380,88 +380,87 @@ export default {
 
 <style lang="stylus">
 .subscribe
-  margin: auto
-  width: 90%
-  padding: 2em 0
-  text-align: center
+  margin auto
+  width 90%
+  padding 2em 0
+  text-align center
   h3
-    color: $landoPink
+    color $landoPink
   &.subscribe-dark
-    background-color: darken($landoBlue, 12%)
+    background-color darken($landoBlue, 12%)
     h3
-      color: lighten($landoBlue, 90%)
+      color lighten($landoBlue, 90%)
   .button
-    text-transform: uppercase
-    background-color: $landoPink
-    margin: 1em 0
-    font-size: 1.2em
-    font-weight: 500
-    letter-spacing: .05em
-    min-width: 8em
-    text-align: center
+    text-transform uppercase
+    background-color $landoPink
+    margin 1em 0
+    font-size typeScale.g
+    font-weight 500
+    letter-spacing .05em
+    min-width 8em
+    text-align center
     &:not(:last-child)
-      margin-right: 1%
+      margin-right 1%
     &.disabled
-      opacity: .5
+      opacity 0.5
   .hidden-field
-    visibility: hidden
+    visibility hidden
   .subscribe-alliance,
   .subscribe-devnetwork,
   .subscribe-sponsors
-    padding-top: 2em
-    padding-bottom: 2em
+    padding-top 2em
+    padding-bottom 2em
     p
-      color: lighten($landoBlue, 90%)
-      font-size: 1.2em
+      color lighten($landoBlue, 90%)
+      font-size typeScale.g
     .subscribe-alliance-wrapper,
     .subscribe-devnetwork-checkbox,
     .subscribe-sponsors-wrapper
-      padding-top: 1em
-      padding-bottom: 1em
+      padding-top 1em
+      padding-bottom 1em
       input.subscribe-alliance-checkbox
-        font-size: 16px
+        font-size typeScale.g
       label
-        cursor: pointer
-        color: lighten($landoBlue, 90%)
-        font-size: 2em
-        font-weight: 800
+        cursor pointer
+        color lighten($landoBlue, 90%)
+        font-size typeScale.e
+        font-weight 800
       small
-        font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
-        color: lighten($landoBlue, 90%)
-        text-align: center;
-        font-size: 1.4em;
-        letter-spacing: 0;
+        { bodyType }
+        font-size typeScale.f
+        color lighten($landoBlue, 90%)
+        text-align center
     .subscribe-devnetwork-checkbox
-      padding-top: .5em
-      padding-bottom: .5em
+      padding-top 0.5em
+      padding-bottom 0.5em
       label
-        font-size: 1em
+        font-size typeScale.g
   .subscribe-input
-    width: 100%
-    box-sizing: border-box
-    padding: 10px 80px 10px 20px
-    margin-bottom: 1em
-    height: 50px
-    border-radius: 50px
-    border: 1px solid #ccc
-    font-size: 16px
-    background-color: lighten($landoBlue, 96%)
+    width 100%
+    box-sizing border-box
+    padding 10px 80px 10px 20px
+    margin-bottom 1em
+    height 50px
+    border-radius 50px
+    border 1px solid #ccc
+    font-size typeScale.g
+    background-color lighten($landoBlue, 96%)
     &:focus
-      outline: none
-      border-color: lighten($landoPink, 18%)
+      outline none
+      border-color lighten($landoPink, 18%)
     &.disabled
-      opacity: .5
+      opacity 0.5
   .subscribe-error,
   .subscribe-success
-    padding: 1em;
-    color: red;
-    text-transform: uppercase
-    font-weight: 800
-    font-size: 0.75rem
+    padding 1em
+    color red
+    text-transform uppercase
+    font-weight 800
+    font-size typeScale.small
   .subscribe-success
-    color: $landoPink
+    color $landoPink
 @media (max-width: $MQMobile)
   .subscribe
     .subscribe-input
-      width: 90%
+      width 90%
 </style>

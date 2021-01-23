@@ -157,7 +157,7 @@ a
   margin-bottom 1em
   position relative
   .work-wrapper
-    opacity .95
+    opacity 0.95
     padding 1em
     padding 2em 2em 4em 2em
    .work-title, .work-logo
@@ -183,7 +183,7 @@ a
     position absolute
     right 1em
     bottom 1em
-    font-size .8em
+    font-size typeScale.small
   footer
     opacity 0
     height 0

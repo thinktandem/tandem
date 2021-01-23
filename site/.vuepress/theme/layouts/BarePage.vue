@@ -33,5 +33,5 @@ export default {
 .vuepress-toc
   right 5%
   margin-top 120px
-  font-family "Poppins", "Helvetica Neue", Arial, sans-serif
+  { displayTYpe }
 </style>

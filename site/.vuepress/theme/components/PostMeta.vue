@@ -121,5 +121,5 @@ export default {
     align-items center
     display block
     .written-by, .other-meta
-      font-size .9em
+      font-size typeScale.small
 </style>

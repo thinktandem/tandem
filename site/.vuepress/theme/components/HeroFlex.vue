@@ -146,7 +146,7 @@ export default {
       width 80%
       .hero-summary
         font-weight 500
-        font-size 1.28rem
+        font-size typeScale.g
         line-height 2
         letter-spacing -0.025em
         margin 1rem 0 3rem 0
@@ -167,7 +167,7 @@ export default {
         width 97%
         margin 0 1em
         h2
-          font-size 3em
+          font-size typeScale.c
         .hero-summary
           width 90%
 </style>

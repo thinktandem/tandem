@@ -68,12 +68,12 @@ export default {
       color inherit
       { displayType }
       font-weight 400
-      font-size 1.2em
+      font-size typeScale.g
       text-transform uppercase
       margin 0
       padding 0
     a
-      font-size .67em
+      font-size typeScale.tiny
       color black
       text-decoration none
       &:hover
