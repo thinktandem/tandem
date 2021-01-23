@@ -302,7 +302,6 @@ header
       box-shadow 0 -0.25rem 1rem rgba(0,0,0,0.4)
     &.dehamburger.fadein, &.dehamburger.fadein:not(.open)
       .menu
-        //top 0.625rem
         top 2.525rem
     &.fadein
       .menu
@@ -316,6 +315,8 @@ header
         height 9.5rem
     &.open.fadein
       padding 2rem
+      background-color #eee
+      box-shadow 0 -0.25rem 1rem rgba(0,0,0,0.4)
       .menu-secondary
         {visuallyShown}
     &.dehamburger
