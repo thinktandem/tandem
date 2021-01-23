@@ -235,19 +235,15 @@ export default {
       padding 2em 2em
       border-top 0
       &:before
-        font-size 4em
+        font-size typeScale.b /* 4em */
       p
-        font-size typeScale.g
-        font-weight 500
-        margin-left 10px
-        margin-right 10px
+        margin-left 0.75rem
+        margin-right 0.75rem
       ul
         li
-          font-size 1.4em
+          font-size typeScale.e
       @media (max-width: $MQMobile)
         padding 0em
-        p
-          font-size 1em
         &:before
           font-size typeScale.c
         ul
@@ -257,44 +253,20 @@ export default {
     .section-header
       .section-header-left
         margin-right 175px
-        a, h1
-          font-weight 600
-          text-decoration none
         img
           all unset
-      .section-header-right
-        h1
-          margin 0 0 1em
-          { displayType }
-          font-weight 700
-          font-size typeScale.c
-          text-align right
-          text-decoration none
     .showcase
       text-align center
       margin-bottom 4em
       img
         max-width 100%
     .custom-block
-      p
-        font-weight 300
-        { bodyType }
-        font-size typeScale.g
-
-      &.big
-        p
-          font-size typeScale.a
-          @media (min-width: $MQMobile)
-            font-size typeScale.b
       &.medium
         position absolute
         position initial
         @media (min-width: $MQMobile)
           bottom 7em
-        p
-          font-size typeScale.b
       &.point
-        { cb_point }
         p
           line-height 2em
       &.important
@@ -324,12 +296,6 @@ export default {
           max-width 100vw
           margin-left -20px
           margin-right -20px
-      .section-header
-        .section-header-right
-          h1
-            margin-top 1em
-            font-size 2em
-            text-align center
       .custom-block
         &.col-full, &.col-half, &.col-third, &.important, &.point
           padding 3em 0em

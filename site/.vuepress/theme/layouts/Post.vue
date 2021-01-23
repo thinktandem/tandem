@@ -163,7 +163,6 @@ export default {
       margin-top 2em
       margin-bottom 2em
       &.point
-        { cb_point }
     .post-wrapper
       max-width 55rem
 .post-theme-content

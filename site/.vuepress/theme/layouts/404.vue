@@ -115,16 +115,12 @@ export default {
 <style lang="stylus">
 .content-wrapper-tandem
   &.content-wrapper-fourohfour
-    .custom-block
+    .custom-bloc
       p
+        { bodyType }
         font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color black
+        font-size typeScale.f
         font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color #000
       &.point
         { cb_point }
         &.what-we-do

@@ -189,7 +189,7 @@ export default {
       height 216px
       { displayType }
     input[type=button]
-      { loadMore }
+      { tandemButton }
       width 25%
       &.busy
         background-color $tandemPink

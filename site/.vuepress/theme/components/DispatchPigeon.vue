@@ -35,20 +35,10 @@ export default {
   .pigeon-form-wrapper
     margin 2em
     width 100%
-    font-size typeScale.d
-    line-height 2
-    letter-spacing -0.19rem
     @media (max-width: $MQMobile)
       font-size typeScale.g
     input[type=button]
-      { loadMore }
-      width 40%
-      margin-top 2em
-      @media (max-width: $MQMobile)
-        width 100%
-      &:hover
-        background-color $tandemPink
-        color #ffffff
+      { tandemButton }
     input
       &:focus
         outline none

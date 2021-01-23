@@ -118,15 +118,6 @@ export default {
 <style lang="stylus">
 .content-wrapper-tandem
   &.content-wrapper-blog
-    .section-header
-      h1, h2, p
-        color black
-      .section-header-right
-        text-align center
-        @media (min-width: $MQMobile)
-          text-align right
-    .load-more
-      margin-bottom 2em
     .hot-tags
       width 100%
       ul
@@ -136,16 +127,10 @@ export default {
         display flex
         flex-wrap wrap
         justify-content center
-    .custom-block
-      p
-        font-weight 300
-        { bodyType }
-        border 1px #000 solid
-        font-size typeScale.g
-        color black
-      &.point
-        { cb_point }
     @media (min-width: $MQMobile)
       .hot-tags
         justify-content space-between
+        padding-top 0.765rem
+        ul
+          justify-content flex-start
 </style>

@@ -85,8 +85,6 @@ export default {
 .content-list-layout
   .section-header
     border 0
-  .load-more
-    { loadMore }
   .written-by, .work-for
     border 0
 </style>

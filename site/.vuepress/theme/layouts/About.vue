@@ -154,41 +154,9 @@ export default {
 <style lang="stylus">
 .content-wrapper-tandem
   &.content-wrapper-about
-    .section-header
-      h1, h2, p
-        color black
-      .section-header-right
-        text-align center
-        @media (min-width: $MQMobile)
-          text-align right
     .hidden-link
       color inherit
       text-decoration none
     .location-container
       margin-top 2em
-    .custom-block
-      p
-        color black
-        font-weight 300
-        color #000
-      &.important
-        padding 4em 0
-        border-bottom 1px solid $borderColor
-        margin-bottom 0
-        @media (min-width: $MQMobile)
-          padding 7em 0
-          margin-bottom 2rem
-        &.remote-team
-          margin-top 2em
-          border-top 1px solid $borderColor
-          border-bottom 0
-          br
-            display block
-      &.point
-        { cb_point }
-        &.interests
-          margin-top 2em
-          border-bottom 0
-        &.what-we-do
-          border 0
 </style>

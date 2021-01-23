@@ -160,15 +160,7 @@ export default {
         outline 1px solid $borderColor
         outline-offset 5px
     input[type=button]
-      all unset
-      { loadMore }
-      &:hover
-        padding-left 2rem
-        padding-right 2rem
-      &.busy
-        background-color $tandemPink
-        color #ffffff
-        opacity .50
+      { tandemButton }
     input
       &:focus
         outline none

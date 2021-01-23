@@ -100,21 +100,10 @@ export default {
 <style lang="stylus">
 .content-wrapper-tandem
   &.content-wrapper-contact
-    .section-header
-      h1, h2, p
-        color black
-      .section-header-right
-        text-align right
-        @media (max-width: $MQMobile)
-          text-align center
     .custom-block
       p
-        font-weight 300
         font-size 1.33rem
-        letter-spacing -1.04px
-        color black
       &.point
-        { cb_point }
         &.metro-locations
           margin-top 2em
         &.contact-us

@@ -102,12 +102,12 @@ article
 
 .content-wrapper-tandem
   @extend .content-wrapper
+  max-width $MQLarge
   padding: 10rem 2rem 5rem 2rem
   @media (min-width: $MQMobile)
     padding: 13rem 5rem 5rem 5rem
 
-.content-wrapper-work
-  max-width $MQXL
+//.content-wrapper-work
 
 #tandem-content
   &.content-wrapper-home
@@ -120,6 +120,12 @@ article
   position relative
   box-sizing border-box
   padding 2rem 0
+  p
+    font-weight 300
+    { bodyType }
+    font-size typeScale.g
+  &.point
+    { cb_point }
   &.big, &.medium
     p
       { dsplayType }
@@ -138,26 +144,17 @@ article
       color $textColor
       font-size typeScale.i
       font-weight 300
-
   &.thumbnail
     border 1px solid $lightGrey
     padding 1em
     margin 2em 0
     img
       width 100%
-
-  &.point
-    { cb_point }
-
   > h2, > h3
     { dsplayType }
     font-size typeScale.e
     font-weight 900
     line-height 1.25
-  p
-    { bodyType }
-    font-size typeScale.g
-    line-height 2
 
 .important
   &.important, &.byline
@@ -237,3 +234,12 @@ article
 
 .small
   font-size typeScale.g
+
+.load-more
+  { tandemButton }
+  display block
+  width 100%
+  height 100%
+  text-align center
+  margin-top 2rem
+  margin-bottom 2rem

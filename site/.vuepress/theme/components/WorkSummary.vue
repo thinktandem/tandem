@@ -194,11 +194,11 @@ a
     .work-wrapper
       padding 4em
     .work-title
-      font-size typeScale.e
+      font-size typeScale.d
     .work-summary
-      font-size typeScale.f
+      font-size typeScale.g
       margin-bottom 3em
     .work-logo
-      right .5rem
-      bottom .5rem
+      right 2rem
+      bottom 2rem
 </style>

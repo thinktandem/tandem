@@ -29,8 +29,6 @@ export default {
 
 <style scoped lang="stylus">
 .post-tag
-  margin-right 1rem
-  margin-bottom 1rem
   { tagWrapper }
   .case-study-layout &
     background-color transparent

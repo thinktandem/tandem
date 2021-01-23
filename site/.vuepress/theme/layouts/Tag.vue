@@ -65,21 +65,9 @@ export default {
 <style lang="stylus">
 .content-wrapper-tandem
   &.content-wrapper-tag
-    .section-header
-      h1, h2, p
-        color black
-      .section-header-right
-        text-align right
-        @media (max-width: $MQMobile)
-          text-align center
     .work-grid
       { workGrid }
-    .work-title
-      font-size 2em
     .custom-block
-      p
-        font-weight 300
-        font-size typeScale.e
       &.important
         padding 7em 0
         border-top 1px solid black

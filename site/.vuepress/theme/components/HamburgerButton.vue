@@ -64,7 +64,6 @@
   width 3.5rem
   height 3.5rem
   display block
-  //border 1px #fff solid
 .hamburger-inner
   display block
   position relative

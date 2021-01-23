@@ -217,15 +217,6 @@ export default {
           padding-bottom 5em
           @media (min-width: $MQMobile)
             padding-bottom 0
-    .load-more
-      { loadMore }
-    .section-header
-      h1, h2, p
-        color black
-      .section-header-right
-        text-align center
-        @media (min-width: $MQMobile)
-          text-align right
     .related-tags
       width 100%
       ul
@@ -237,10 +228,6 @@ export default {
         li
           margin-top 1em
     .custom-block
-      p
-        { bodyType }
-        font-size typeScale.g
-        font-weight 300
       &.important
         padding 4em 0
         border-top 1px solid $borderColor
@@ -253,13 +240,6 @@ export default {
           border-top 1px solid $borderColor
           border-bottom 0
       &.point
-        { cb_point }
-        p
-          width 100%
-          &.custom-block-title
-            width 100%
-            @media (min-width: $MQMobile)
-              width 35%
         &.recent-work
           .recent-work-wrapper
             width 100%
