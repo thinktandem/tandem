@@ -162,7 +162,6 @@ export default {
     .custom-block
       margin-top 2em
       margin-bottom 2em
-      &.point
     .post-wrapper
       max-width 55rem
 .post-theme-content

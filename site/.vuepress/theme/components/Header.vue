@@ -251,7 +251,7 @@ $menu-secondary
       padding-left 0
       { visuallyShown }
       border-top none !important
-header
+#header
   z-index 100
   position fixed
   width 100vw

@@ -13,9 +13,9 @@
     </SectionHeader>
 
     <div class="custom-block point clients">
-      <h3>
-        Hot tags.
-      </h3>
+      <h4>
+        Hot tags
+      </h4>
       <div class="hot-tags">
         <ul
           v-if="hotTags"

@@ -190,6 +190,7 @@ tagWrapper = @block
 
 tandemButton = @block
   all unset
+  box-sizing border-box
   background $textColor
   margin-top 1rem
   margin-bottom 1rem
@@ -213,3 +214,38 @@ tandemButton = @block
       opacity .50
   button
     all unset
+
+summaryWrapper = @block
+  margin-bottom 1rem
+  position relative
+  a
+    text-decoration none
+  .wrapper
+    padding 4em
+    position relative
+  .headline
+    .title
+      { displayType }
+      font-weight 600
+      font-size typeScale.d
+      line-height 1.2
+      text-decoration none
+      margin-top 0
+      border-bottom 0
+      cursor pointer
+      transition none
+  .description
+    { bodyCopy }
+    color inherit
+    font-size typeScale.g
+    font-weight 300
+  @media (min-width: $MQMobile)
+    margin-bottom 0.5em
+    .wrapper
+      padding 4em
+    .headline
+      .title
+        font-size typeScale.c
+    .desceription
+      font-size typeScale.f
+      margin-bottom 1em
