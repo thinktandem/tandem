@@ -87,7 +87,7 @@ export default {
     justify-content space-evenly
     .location-item
       width auto
-      width auto
+      width 19.25%
       padding-top 2.25rem
       min-height 10rem
       .location-wrapper:before
