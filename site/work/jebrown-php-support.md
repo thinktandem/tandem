@@ -1,7 +1,7 @@
 ---
 title: "Refactoring PHP Application"
 id: jebrown-php-support
-client: jebrown 
+client: jebrown
 summary: "We refactored and migrated their applications to a cloud provider on an account owned by JEB."
 link: https://www.jebrown.net/
 logo: /images/logos/jebrown.png
@@ -17,7 +17,7 @@ header:
     background-repeat: no-repeat
 
 theme:
-  background: "#604536"
+  background: "#604536df"
   headerColor: white
   headerHover: "#B8B8AA"
   headerActive: "#B8B8AA"

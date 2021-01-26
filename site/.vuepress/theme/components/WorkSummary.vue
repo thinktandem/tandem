@@ -104,6 +104,7 @@ export default {
       return {background: this.theme.background, color: this.theme.text};
     },
     bgImgStylez() {
+      console.log(utils.getWorkBackgroundStyles(this.topper))
       return utils.getWorkBackgroundStyles(this.topper);
     },
     logoChanger() {
@@ -133,6 +134,7 @@ export default {
   },
   methods: {
     getTopper() {
+      console.log('getTopper', this.page.frontmatter.title, utils.parseWorkFrontMatter(this.page.frontmatter))
       return utils.parseWorkFrontMatter(this.page.frontmatter);
     },
     resolveLink(page) {
@@ -149,7 +151,7 @@ export default {
 .summary
   { summaryWrapper }
   .wrapper
-    bottom 4rem
+    padding-bottom 4rem
   .work-logo
     position absolute
     right 1em

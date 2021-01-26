@@ -13,7 +13,7 @@
       <h2>
         Enjoy a random 404 video.
       </h2>
-      <div>
+      <div class='content'>
         <ClientOnly>
           <YouTube :vid="chosen.vid" />
         </ClientOnly>
@@ -24,12 +24,12 @@
       <h2>
         Or explore more of what we do.
       </h2>
-      <p>
+      <div class="content">
         We offer <strong>strategy</strong>, <strong>design</strong> and <strong>development</strong> services across industries and using a wide array of tech.
         <br>
         <br>
         Read more about each below.
-      </p>
+      </div>
     </div>
 
     <TagGrid prefix="/" />
@@ -113,21 +113,13 @@ export default {
 
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-fourohfour
-    .custom-bloc
-      p
-        { bodyType }
-        font-weight 300
-        font-size typeScale.f
-        font-weight 300
-      &.point
-        { cb_point }
-        &.what-we-do
-          border 0
-        &.vids
-          div
-            width 100%
-          .video-responsive
-            margin-top 0
+.content-wrapper-tandem.content-wrapper-fourohfour
+  .custom-block.point
+    &.what-we-do
+      border 0
+    &.vids
+      div
+        width 100%
+      .video-responsive
+        margin-top 0
 </style>

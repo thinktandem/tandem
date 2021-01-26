@@ -13,9 +13,9 @@
     </SectionHeader>
 
     <div class="custom-block point clients">
-      <h4>
+      <h3>
         Hot tags
-      </h4>
+      </h3>
       <div class="hot-tags">
         <ul
           v-if="hotTags"
@@ -116,21 +116,19 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-blog
-    .hot-tags
-      width 100%
-      ul
-        margin 0
-        padding 0
-        list-style none
-        display flex
-        flex-wrap wrap
-        justify-content center
+.content-wrapper-tandem.content-wrapper-blog
+  .hot-tags
+    width 100%
+    ul
+      margin 0
+      padding 0
+      list-style none
+      display flex
+      flex-wrap wrap
+      justify-content center
     @media (min-width: $MQMobile)
-      .hot-tags
-        justify-content space-between
-        padding-top 0.765rem
-        ul
-          justify-content flex-start
+      justify-content space-between
+      padding-top 0.875rem
+      ul
+        justify-content flex-start
 </style>

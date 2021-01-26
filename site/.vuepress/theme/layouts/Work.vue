@@ -14,7 +14,7 @@
 
     <div class="custom-block point clients">
       <h3>
-        Featured Clients.
+        Featured Clients
       </h3>
       <ClientGrid :clients="featuredClients" />
     </div>
@@ -102,16 +102,13 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-work
-    .work-grid
-      { workGrid }
+.content-wrapper-tandem.content-wrapper-work
+  .work-grid
+    { workGrid }
+  .custom-block.point.tags
+    border-bottom 0
+  .tag-wrapper
     .custom-block
-      &.point
-        &.tags
-          border-bottom 0
-    .tag-wrapper
-      .custom-block
-        background $lightGrey
-        margin 1em
+      background $lightGrey
+      margin 1em
 </style>

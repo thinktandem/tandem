@@ -10,7 +10,7 @@ header:
   title: "Consolidated<br>Blackbaud<br>User Management"
   image: /images/work/poets-blackbaud.png
   background:
-    background-color: "#4d9bf3"
+    background-color: "#4d9bf3df"
     background-image: url(/images/poets-bg.png)
     background-position: 100% 20%
     background-size: auto

@@ -15,7 +15,7 @@
 
     <div class="custom-block point recent-work work-grid">
       <h3>
-        Recent {{ upperTag }}<br>work.
+        Recent {{ upperTag }}<br>work
       </h3>
       <div class="recent-work-wrapper">
         <WorkSummary
@@ -26,17 +26,14 @@
           itemscope
           itemtype="https://schema.org/BlogPosting"
         />
-        <div
+        <a
           class="load-more"
           @click="incrementFeaturedWork"
         >
-          <button class="btn btn-load-more">
-            Next
-          </button>
-        </div>
+          Next
+        </a>
       </div>
     </div>
-
     <div v-if="grids.length > 0">
       <div
         v-for="grid in grids"
@@ -202,8 +199,7 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-landing-page
+.content-wrapper-tandem.content-wrapper-landing-page
     article
       &.post
         .post-wrapper
@@ -228,30 +224,16 @@ export default {
         li
           margin-top 1em
     .custom-block
-      &.important
-        padding 4em 0
+      &.remote-team
+        margin-top 2em
         border-top 1px solid $borderColor
-        margin-bottom 0
-        @media (min-width: $MQMobile)
-          padding 7em 0
-          margin-bottom 2em
-        &.remote-team
-          margin-top 2em
-          border-top 1px solid $borderColor
-          border-bottom 0
-      &.point
-        &.recent-work
-          .recent-work-wrapper
-            width 100%
-        &.recent-posts
-          .recent-posts-wrapper
-            width 100%
-        &.grid
-          .columns-1
-            .values-item
-              padding 1em 2em
-              &:before
-                all unset
-              @media (max-width: $MQMobile)
-                width 100%
+        border-bottom 0
+      &.point.grid
+        .columns-1
+          .values-item
+            padding 1em 2em
+            &:before
+              all unset
+            @media (max-width: $MQMobile)
+              width 100%
 </style>

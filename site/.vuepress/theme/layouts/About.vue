@@ -24,6 +24,7 @@
       </h3>
       <ValuesGrid
         id="work-values"
+        class="content"
         :items="values"
       />
     </div>
@@ -32,7 +33,7 @@
       <h3>
         The above four. <br>In four sentences.
       </h3>
-      <p>
+      <div class="content">
         Working closely together allows us to distill your goals into their most important components.
 
         Knowing what's important means we can craft a solution that minimizes moving parts while maximizing impact.
@@ -40,19 +41,19 @@
         Combining expertise with the right tool means a solution that lasts over time.
 
         Caring about the outcome means even if everything else goes astray we still get it done.
-      </p>
+      </div>
     </div>
 
     <div class="custom-block point what-we-do">
       <h3>
-        What we do.
+        What we do
       </h3>
-      <p>
+      <div class="content">
         We offer <a href="/strategy"><strong>strategy</strong></a>, <a href="/design"><strong>design</strong></a> and <a href="/development"><strong>development</strong></a> services across industries and using a wide array of tech.
         <br>
         <br>
         Read more about each below.
-      </p>
+      </div>
     </div>
 
     <TagGrid prefix="/" />
@@ -63,13 +64,13 @@
         <br>Primarily USA.
         <br>Prone to wanderlust.
       </h3>
-      <p>
+      <div class="content">
         We have a distributed team that is primarily located in the United States and is primarily remote. We've also been known send emails from cabins in Siberia and beaches in Thailand. We also have reps in the below metro areas. <strong>Email one and say hello!</strong>
         <LocationGrid
           :locations="locations"
           :columns="5"
         />
-      </p>
+      </div>
     </div>
 
     <div class="custom-block point interests">
@@ -78,6 +79,7 @@
       </h3>
       <ValuesGrid
         id="team-values"
+        class="content"
         :items="featuredVibes"
         :columns="4"
       />
@@ -152,11 +154,15 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-about
-    .hidden-link
-      color inherit
-      text-decoration none
-    .location-container
-      margin-top 2em
+.content-wrapper-tandem.content-wrapper-about
+  .hidden-link
+    color inherit
+    text-decoration none
+  .location-container
+    margin-top 2em
+  .values-text, .what-we-do
+    margin-top 3rem
+    margin-bottom 3rem
+    .content
+      padding-top 2.65rem
 </style>

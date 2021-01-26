@@ -162,9 +162,7 @@ export default {
 
 <style lang="stylus">
 .contact-form
-  display flex
-  width 98%
-  background-color $lightGrey
+  { cb_form }
   .contact-form-wrapper
     margin 2em
     width 100%

@@ -63,13 +63,7 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-tag
-    .work-grid
-      { workGrid }
-    .custom-block
-      &.important
-        padding 7em 0
-        border-top 1px solid black
-        border-bottom 1px solid black
+.content-wrapper-tandem.content-wrapper-tag
+  .work-grid
+    { workGrid }
 </style>

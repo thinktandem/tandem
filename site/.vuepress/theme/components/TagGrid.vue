@@ -159,7 +159,7 @@ $tagMargins = 1em 1em
       padding 0
       margin 0.325rem 0 0 0
       li a
-        padding: 1rem 3rem 1rem 0
+        padding: 1rem 3rem 0.5rem 0
     &.tag-third
       width 32%
       @media (max-width: $MQMobile)

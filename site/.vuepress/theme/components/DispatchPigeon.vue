@@ -29,9 +29,7 @@ export default {
 
 <style lang="stylus">
 .pigeon-form
-  display flex
-  width 98%
-  background-color $lightGrey
+  { cb_form }
   .pigeon-form-wrapper
     margin 2em
     width 100%

@@ -131,9 +131,7 @@ export default {
 
 <style lang="stylus">
 .newsletter-form
-  display flex
-  width 98%
-  background-color $lightGrey
+  { cb_form }
   .newsletter-form-wrapper
     @media (max-width: $MQMobile)
       font-size typeScale.g

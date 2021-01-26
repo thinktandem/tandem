@@ -6,6 +6,7 @@
     itemtype="https://schema.org/BlogPosting"
   >
     <NavLink
+    class="link-flex-container"
       :link="resolveLink(page)"
     >
       <div

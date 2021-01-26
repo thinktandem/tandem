@@ -66,7 +66,7 @@ export default {
   margin-bottom 2em
   h1
     font-size typeScale.d
-    font-weight 900
+    display inline-block
     text-decoration underline
     padding-top 0.35rem
     white-space nowrap
@@ -76,13 +76,18 @@ export default {
   .section-header-left
     display inline-block
     img
-      width 150px
+      display inline-block
+      width 3rem
       position relative
-      bottom 6px
+      top 0.75rem
     &.linked
       cursor pointer
   .section-header-right
     text-align center;
+    h1
+      text-decoration none
+      line-height 1
+      margin-top 0.775rem
     p
       font-size typeScale.g
       font-weight 300
@@ -93,11 +98,6 @@ export default {
       font-size typeScale.f
       color $textColor
       margin-bottom 1em
-    @media (min-width: $MQMobile)
-      text-align right
-      h2
-        font-size typeScale.c
-
   @media (min-width: $MQMobile)
     display flex
     justify-content center
@@ -108,10 +108,15 @@ export default {
     .section-header-left, .section-header-right
       width auto
     .section-header-left
-      width 20vw
+      width 40vw
       text-align left
     .section-header-right
       flex-grow 1
+      text-align right
+      h2
+        font-size typeScale.c
+    p
+      max-width 55em
   @media (min-width: $MQSmall)
     h1
       padding-left 0

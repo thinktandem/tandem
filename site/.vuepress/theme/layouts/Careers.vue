@@ -148,40 +148,16 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-careers
-    .hidden-link
-      color inherit
-      text-decoration none
-    .location-container
-      margin-top 2em
-    .get-in-touch
+.content-wrapper-tandem.content-wrapper-careers
+  .hidden-link
+    color inherit
+    text-decoration none
+  .location-container
+    margin-top 2em
+  .get-in-touch
+    width 100%
+    font-size 1.33rem
+    letter-spacing -1.04px
+    p
       width 100%
-      font-size 1.33rem
-      letter-spacing -1.04px
-      p
-        width 100%
-// .custom-block
-//   &.important
-//     padding 7em 0
-//     border-bottom 1px solid $borderColor
-//     margin-bottom 2em
-//     @media (max-width: $MQMobile)
-//       padding 4em 0
-//       margin-bottom 0
-//     &.remote-team
-//       margin-top 2em
-//       border-top 0
-//       border-bottom 0
-//       br
-//         display block
-//   &.point
-//     { cb_point }
-//     &.interests
-//       margin-top 2em
-//       border-bottom 0
-//     &.what-we-do
-//       border 0
-//     &.connect-jobs
-//       border-bottom 0
 </style>

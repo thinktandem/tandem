@@ -70,7 +70,7 @@
 
       <div class="custom-block point tagz">
         <h2>Learn more about what we've done with:</h2>
-        <div class="post-tags">
+        <div class="post-tags content">
           <ul
             v-if="tags"
             class="tags"
@@ -223,84 +223,73 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.case-study-layout
-    .custom-block.point:first-child
-      border-top 0
-    .custom-block.point:last-child
-      border-bottom 0
-    blockquote
-      background transparent
-      border-left 0
-      padding 2em 2em
-      border-top 0
-      &:before
-        font-size typeScale.b /* 4em */
+.case-study-layout
+  blockquote
+    background transparent
+    padding 4em 2em
+    border-top 0
+    border-left 0
+    position relative
+    &:before
+      font-size typeScale.b
+      font-style italic
+      position absolute
+      top 2rem
+      left 0rem
+      display flex
+      content '"'
+      color $tandemPink
+    p
+      font-size typeScale.e
+      font-style italic
+      line-height 1.5
+      font-weight 300
+    ul
+      li
+        font-size typeScale.small
+    @media (min-width: $MQMobile)
       p
-        margin-left 0.75rem
-        margin-right 0.75rem
+        padding 2rem 3rem 2rem 6rem
+        font-size typeScale.c
+      &:before
+        top 4rem
+        left 4.75rem
+        font-size typeScale.b
+
+  .custom-block.point >:first-child
+    border-top 0
+  .custom-block.point:last-child
+    border-bottom 0
+  .section-header
+    .section-header-left
+      margin-right 175px
+      img
+        all unset
+  .showcase
+    text-align center
+    margin-bottom 4em
+    img
+      max-width 100%
+  .custom-block.medium
+      position absolute
+      position initial
+    &.col-full, &.col-half, &.col-third
+      padding 7em 0
       ul
         li
-          font-size typeScale.e
-      @media (max-width: $MQMobile)
-        padding 0em
-        &:before
-          font-size typeScale.c
-        ul
-          position initial
-          li
-            font-size typeScale.small
-    .section-header
-      .section-header-left
-        margin-right 175px
-        img
-          all unset
+          font-size typeScale.f
+          list-style none
+      img
+        position absolute
+        bottom -3.5em
+        right 0
+        opacity 0.08
+        z-indexs 0
+  @media (min-width: $MQMobile)
     .showcase
-      text-align center
-      margin-bottom 4em
+      margin-bottom 1em
       img
         max-width 100%
-    .custom-block
-      &.medium
-        position absolute
-        position initial
-        @media (min-width: $MQMobile)
-          bottom 7em
-      &.point
-        p
-          line-height 2em
-      &.important
-        padding 7em 0
-        ul
-          li
-            font-size typeScale.g
-      &.col-full, &.col-half, &.col-third
-        padding 7em 0
-        ul
-          li
-            font-size typeScale.f
-            list-style none
-        img
-          position absolute
-          bottom -3.5em
-          right 0
-          opacity 0.08
-          z-index 0
-
-@media (max-width: $MQMobile)
-  .content-wrapper-tandem
-    &.case-study-layout
-      .showcase
-        margin-bottom 1em
-        img
-          max-width 100vw
-          margin-left -20px
-          margin-right -20px
-      .custom-block
-        &.col-full, &.col-half, &.col-third, &.important, &.point
-          padding 3em 0em
-          text-align center
-        &.important
-          text-align left
-
+        margin-left -20px
+        margin-right -20px
 </style>

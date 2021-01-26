@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-contact">
-    <SectionHeader title="Contact Us.">
+    <SectionHeader title="Contact Us">
       <h2>
         Get in touch.<br>We'd love to chat<br>and work together.
       </h2>
@@ -98,17 +98,12 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-contact
-    .custom-block
-      p
-        font-size 1.33rem
-      &.point
-        &.metro-locations
-          margin-top 2em
-        &.contact-us
-          border 0
-        &.carrier-pigeon
-          border-bottom 0
-
+.content-wrapper-tandem.content-wrapper-contact
+  .custom-block
+    &.metro-locations
+      margin-top 2em
+    &.contact-us
+      border 0
+    &.carrier-pigeon
+      border-bottom 0
 </style>

@@ -17,6 +17,7 @@
               class="message message-one"
             >
               <span class="first-text">Better</span>
+              &nbsp;
               <span class="second-text">Together.</span>
               <div>
                 <h1 class="home-summary">Tandem is the full-service digital agency that cares as much as you do.</h1>

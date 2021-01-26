@@ -12,7 +12,7 @@ header:
   title: "Maximizing uptime<br> squashing bugs<br> quickly"
   image: /images/work/usf-screenshot.png
   background:
-    background-color: "#FDBB30"
+    background-color: "#FDBB30df"
     background-image: url(/images/work/usf-campus.jpg)
     background-position: 100% 20%
     background-size: cover
@@ -73,4 +73,3 @@ To provide resolution we switched from CloudFront to Pantheon's own global CDN. 
 
 **Less stack complexity + Less dependencies + More stability = Mission Accomplished!**
 :::
-

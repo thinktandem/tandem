@@ -52,98 +52,81 @@ export default {};
 
 <style lang="stylus">
 .site__footer
-  background-color white
   padding 3rem 2rem
-  display flex
-  margin auto
+  background-color white
   border-top 1px solid $borderColor
+  a
+    { displayType }
+    text-align left
+    text-decoration none
   .copyright, .footer-links
     padding 0
     margin 0
   .copyright
-    { displayType }
-    font-size typeScale.small
-    color $tandemPink
     width 30vw
-  .footer-links
-    width 70vw
+    margin-bottom 1rem
+    white-space nowrap
+    font-size typeScale.tiny
+  .menu-primary
     a
       { displayType }
-      text-align right
-      text-decoration none
-
-    .menu-primary
-      a
-        { displayType }
-        font-size typeScale.g
+      font-size typeScale.h
+      color $textColor
+      &:hover
         color $textColor
-        &:hover
-          color $textColor
-      ol, ul
-        list-style none
-        margin 0
-        padding 0
-      ul
-        display flex
-        justify-content flex-end
-        li
-          margin-left 30px
+    ol, ul
+      list-style none
+      margin 0
+      padding 0
+    ul
+      display flex
+      justify-content flex-start
+      li
+        margin-right 1rem
+  .menu-secondary
+    margin-top .5em
+    .nav-link
+      display inline-block
+      font-size typeScale.tiny
+      position relative
+      left -0.75rem
+      margin-left 0
+      color $middleGrey
+      white-space nowrap
+      &::before, &::after
+        display inline-block
+        width 0.5rem
+        content '\00a0\00a0'
+      &:hover
+        color $tandemPink
+        &::after
+          content " ]"
+        &::before
+          content "[ "
+  @media (min-width: $MQNarrow)
+    display flex
+    a
+      text-align right
+    .copyright, .footer-links
+      text-align left
+    .copyright
+      { displayType }
+      margin-bottom 0
+      padding-top 0.5875rem
+    .footer-links
+      width 70vw
+    .menu-primary ul, .menu-secondary
+      justify-content flex-end
+      text-align right
+    .menu-primary
+      li
+        margin-right 0
+        margin-left 1rem
+      .nav-link
+        font-size typeScale.g
     .menu-secondary
-      margin-top .5em
       display flex
       justify-content flex-end
-      .nav-link
-        font-size typeScale.small
-        margin-left 0
-        color $middleGrey
-        text-align right
-        position relative
-        left 0.75rem
-        &::before, &::after
-          display inline-block
-          width 0.5rem
-        &::after
-          content '\00a0\00a0'
-        &::before
-          content '\00a0\00a0'
-        &:hover
-          color $tandemPink
-          &::after
-            content " ]"
-          &::before
-            content "[ "
-@media (max-width $MQMobile)
-  flex-direction column-reverse
-  margin auto 0.5em
-  .copyright, .footer-links
-    flex 1 1
-    justify-content flex-end
-    text-align center
-    margin auto
-    padding 0 0.5em
-  .copyright
-    margin-top 25px
-    font-size typeScale.small
-  .footer-links
-    .menu-primary
-      ul
-        justify-content center
-        margin-left -1.25rem
-        li
-          margin-left 1.25rem
-    .menu-secondary
-      margin 25px 0 0 0
-      a
-        font-size typeScale.small
-        line-height 2
-@media (max-width $MQMobileNarrow)
-  .footer-links
-    .menu-primary
-      ul
-        justify-content center
-        margin-left -10px
-        li
-          margin-left 15px
-      a
-        font-size 18px
+        a
+          font-size typeScale.f
 </style>
