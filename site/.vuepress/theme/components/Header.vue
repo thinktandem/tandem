@@ -2,7 +2,6 @@
   <header
     id="header"
   >
-  <header id="header">
     <nav
       id="nav"
       class="nav-primary"
@@ -10,7 +9,6 @@
       <div
         class="title"
       >
-      <div class="title">
         <NavLink
           link="/"
           class="home-link"
@@ -19,7 +17,6 @@
           <div
             class="site-title"
           >
-          <div class="site-title">
             {{ $site.title }}
           </div>
         </NavLink>
@@ -56,17 +53,27 @@
           id="menu-secondary"
           class="menu-secondary"
         >
-          <div class="links">
-            <NavLink link="/careers/">
+          <div
+            class="links"
+          >
+            <NavLink
+              link="/careers/"
+            >
               Careers
             </NavLink>
-            <NavLink link="https://handbook.thinktandem.io">
+            <NavLink
+              link="https://handbook.thinktandem.io"
+            >
               Handbook
             </NavLink>
-            <NavLink link="https://twitter.com/thinktandem">
+            <NavLink
+              link="https://twitter.com/thinktandem"
+            >
               Twitter
             </NavLink>
-            <NavLink link="https://github.com/thinktandem">
+            <NavLink
+              link="https://github.com/thinktandem"
+            >
               GitHub
             </NavLink>
           </div>
@@ -196,15 +203,14 @@ $menu--primary
   background-color #ffffff
   box-shadow 0 0rem 2.5rem rgba(black, 0.2)
   margin 0
-  padding 11rem 2rem 2rem 3rem
+  padding 8rem 2rem 2rem 3rem
   .nav
     width 100%
     margin 0
     padding 0
     .nav-item
       display: block
-      margin 0 0 2rem 4.5rem
-      font-size typeScale.f
+      margin 0 0 1rem 4.5rem
       padding 0
       .nav-link
         { displayType }
@@ -212,12 +218,13 @@ $menu--primary
         text-decoration none
         border none
         color $textColor
+        font-size typeScale.f
         &:focus, &:hover, &:active, &.router-link-active
           color $tandemPink
         &:active
           outline none
       .nav-item-desc
-        font-size typeScale.h
+        font-size typeScale.i
         white-space nowrap
   @media (min-width: $MQSmall)
     box-shadow none
@@ -250,7 +257,7 @@ $menu-secondary
   flex-basis 100%
   .links
     padding-top 1em
-    padding-left 4.5rem
+    padding-left 0
     border-top 1px solid $borderColor
     flex 1 100%
     .nav-link
