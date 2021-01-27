@@ -90,7 +90,7 @@ export default {
   .written-by
     margin-top 2rem
     .pic
-      display inline-bllock
+      display inline-block
       margin-right 0.75rem
       padding-left 0.25rem
       img
@@ -98,7 +98,7 @@ export default {
         border-radius 100%
         position relative
         bottom 1rem
-  .written-by, .other-meta
+  .written-by
     position relative
     padding-bottom 0
     display flex
@@ -106,13 +106,6 @@ export default {
     padding-bottom 0
     a
       white-space nowrap
-    svg
-      width 14px
-      height 14px
-      color lighten($landoBlue, 50%)
-      margin-left 10px
-      margin-right 3px
-
   .other-meta
     align-items baseline
     .meta-prefix

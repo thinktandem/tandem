@@ -13,7 +13,7 @@
       itemtype="https://schema.org/BlogPosting"
     />
     <div
-      v-if="(this.paginationIndex * this.paginator) < this.$pagination.pages.length"
+      v-if="(paginationIndex * paginator) < $pagination.pages.length"
       class="load-more"
       @click="more"
     >

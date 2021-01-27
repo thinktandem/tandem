@@ -31,7 +31,11 @@
           class="headline"
           itemprop="name headline"
         >
-          <h4 class="title">{{ page.title }}</h4>
+          <h4
+            class="title"
+          >
+            {{ page.title }}
+          </h4>
         </header>
         <client-only>
           <!-- eslint-disable vue/no-v-html -->
@@ -104,7 +108,6 @@ export default {
       return {background: this.theme.background, color: this.theme.text};
     },
     bgImgStylez() {
-      console.log(utils.getWorkBackgroundStyles(this.topper))
       return utils.getWorkBackgroundStyles(this.topper);
     },
     logoChanger() {
@@ -134,7 +137,6 @@ export default {
   },
   methods: {
     getTopper() {
-      console.log('getTopper', this.page.frontmatter.title, utils.parseWorkFrontMatter(this.page.frontmatter))
       return utils.parseWorkFrontMatter(this.page.frontmatter);
     },
     resolveLink(page) {

@@ -1,11 +1,16 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-fourohfour">
-    <h1>404 - Not found</h1>
-
+    <h1>
+      404 - Not found
+    </h1>
     <blockquote>
-      <p>{{ chosen.message }}</p>
+      <p>
+        {{ chosen.message }}
+      </p>
       <ul>
-        <li>{{ chosen.author }}</li>
+        <li>
+          {{ chosen.author }}
+        </li>
       </ul>
     </blockquote>
 
@@ -13,7 +18,7 @@
       <h2>
         Enjoy a random 404 video.
       </h2>
-      <div class='content'>
+      <div class="content">
         <ClientOnly>
           <YouTube :vid="chosen.vid" />
         </ClientOnly>

@@ -9,7 +9,7 @@
       <div class="location-wrapper">
         <div class="location-email">
           <h2 :style="{'color': location.text}">
-             {{ location.name }}
+            {{ location.name }}
           </h2>
           <a :href="`mailto:${location.email}`"><span>{{ emailAddressOnly(location.email) }}</span><span class="email-domain">@thinktandem.io</span></a>
         </div>
@@ -18,8 +18,7 @@
   </div>
 </template>
 
-<script>location.email
-
+<script>
 export default {
   name: 'LocationGrid',
   props: {
@@ -35,8 +34,8 @@ export default {
   methods: {
     emailAddressOnly(email) {
       return email.split('@')[0];
-    }
-  }
+    },
+  },
 };
 </script>
 

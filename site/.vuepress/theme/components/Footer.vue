@@ -1,5 +1,8 @@
 <template>
-  <footer id="footer" class="site__footer">
+  <footer
+    id="footer"
+    class="site__footer"
+  >
     <div class="copyright">
       © 2021 Tandem
     </div>

@@ -1,13 +1,30 @@
 <template>
-  <header id="header" >
-    <nav id="nav" class="nav-primary">
-      <div class="title">
-        <NavLink link="/" class="home-link">
+  <header
+    id="header"
+  >
+    <nav
+      id="nav"
+      class="nav-primary"
+    >
+      <div
+        class="title"
+      >
+        <NavLink
+          link="/"
+          class="home-link"
+        >
           <TandemLogo />
-          <div class="site-title">{{ $site.title }}</div>
+          <div
+            class="site-title"
+          >
+            {{ $site.title }}
+          </div>
         </NavLink>
       </div>
-      <HamburgerButton :is-open="isOpen" @toggle-sidebar="toggleSidebar($event)" />
+      <HamburgerButton
+        :is-open="isOpen"
+        @toggle-sidebar="toggleSidebar($event)"
+      />
       <div
         id="menu"
         class="menu"
@@ -57,27 +74,22 @@
 </template>
 
 <script>
-//import TandemLogo from '@theme/components/TandemLogo';
 import TandemLogo from '@theme/components/TandemLogo';
 import HamburgerButton from '@theme/components/HamburgerButton';
-import MenuIcon from 'vue-feather-icons/icons/MenuIcon';
-import XIcon from 'vue-feather-icons/icons/XIcon';
 export default {
   components: {
     TandemLogo,
     HamburgerButton,
-    MenuIcon,
-    XIcon
   },
   props: {
     isHamburgerVisible: {
       type: Boolean,
-      required: false
+      required: false,
     },
     isOpen: {
       type: Boolean,
       required: true,
-    }
+    },
   },
   data() {
     return {
@@ -92,7 +104,7 @@ export default {
         this.resetHeader();
       } else {
         this.hideHeader();
-      }
+      };
     },
   },
   beforeDestroy() {
@@ -105,12 +117,15 @@ export default {
       capture: true,
       passive: true,
     });
-    // Set to window.pageYOffset
     this.lastScrollPos = window.pageYOffset;
   },
   methods: {
     toggleSidebar() {
-      this.$emit('toggle-sidebar')
+      /*
+        moved this to methods, since I thought
+        I may wanna "do more stuff, but so far no"
+      */
+      this.$emit('toggle-sidebar');
     },
     expandMenu() {
       this.classChange('header', ['open']);
@@ -142,7 +157,7 @@ export default {
         if (this.lastScrollPos > window.pageYOffset) this.showToggle();
         // And hide on scroll down
         else this.hideToggle();
-      }
+      };
       // Reset the previous position
       this.lastScrollPos = window.pageYOffset;
     },
@@ -156,7 +171,6 @@ export default {
 </script>
 
 <style lang="stylus">
-
 $nav-primary
   width 100vw
   position relative
@@ -255,7 +269,7 @@ $menu-secondary
   z-index 100
   position fixed
   width 100vw
-  top 0
+  top 0cta
   box-sizing border-box
   background-color transparent
   display flex

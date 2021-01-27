@@ -70,6 +70,7 @@ export default {
     cta: {
       type: String,
       required: false,
+      default: undefined,
     },
     color: {
       type: String,
@@ -86,7 +87,7 @@ export default {
     styles: {
       type: Object,
       default: () => ({}),
-    }
+    },
   },
 };
 </script>

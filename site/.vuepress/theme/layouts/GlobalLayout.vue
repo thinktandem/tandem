@@ -1,16 +1,19 @@
 <template>
   <div
     id="vuepress-theme-blog__global-layout"
-    :style="wrapperTheme">
+    :style="wrapperTheme"
+  >
     <Header
       :is-open="isMobileHeaderOpen"
       :active="theme.headerActive"
       :color="theme.headerColor"
       :hover="theme.headerHover"
-      @toggle-sidebar="toggleSidebar()" />
+      @toggle-sidebar="toggleSidebar()"
+    />
     <div
       class="content-wrapper"
-      @click="isMobileHeaderOpen = false">
+      @click="isMobileHeaderOpen = false"
+    >
       <DefaultGlobalLayout />
     </div>
     <Footer />
@@ -52,9 +55,9 @@ export default {
   },
   methods: {
     toggleSidebar() {
-      this.isMobileHeaderOpen = !this.isMobileHeaderOpen
-    }
-  }
+      this.isMobileHeaderOpen = !this.isMobileHeaderOpen;
+    },
+  },
 };
 </script>
 

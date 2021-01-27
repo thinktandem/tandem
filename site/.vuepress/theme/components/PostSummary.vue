@@ -6,7 +6,7 @@
     itemtype="https://schema.org/BlogPosting"
   >
     <NavLink
-    class="link-flex-container"
+      class="link-flex-container"
       :link="resolveLink(page)"
     >
       <div
@@ -20,7 +20,9 @@
           class="headline"
           itemprop="name headline"
         >
-          <h4 class="title">{{ page.title }}</h4>
+          <h4 class="title">
+            {{ page.title }}
+          </h4>
         </header>
         <client-only>
           <!-- eslint-disable vue/no-v-html -->
@@ -97,12 +99,10 @@ export default {
   background $lightGrey
   &:hover
     color $tandemPink
-    .post-summary, .post-title, .written-by
+    .post-summary
       color $tandemPink
       text-decoration none
       transition none
-  .post-meta-author
-    margin-top 1em
   footer
     opacity 0
     height 0
