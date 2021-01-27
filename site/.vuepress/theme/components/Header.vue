@@ -2,6 +2,7 @@
   <header
     id="header"
   >
+  <header id="header">
     <nav
       id="nav"
       class="nav-primary"
@@ -9,6 +10,7 @@
       <div
         class="title"
       >
+      <div class="title">
         <NavLink
           link="/"
           class="home-link"
@@ -17,6 +19,7 @@
           <div
             class="site-title"
           >
+          <div class="site-title">
             {{ $site.title }}
           </div>
         </NavLink>
@@ -74,6 +77,7 @@
 </template>
 
 <script>
+// import TandemLogo from '@theme/components/TandemLogo';
 import TandemLogo from '@theme/components/TandemLogo';
 import HamburgerButton from '@theme/components/HamburgerButton';
 export default {
