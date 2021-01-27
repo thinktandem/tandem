@@ -175,7 +175,7 @@ $nav-primary
   width 100vw
   position relative
   display flex
-  @media (min-width $MQSmall)
+  @media (min-width: $MQSmall)
     .menu
       padding-right 3rem
       padding-left 30vw
@@ -215,7 +215,7 @@ $menu--primary
       .nav-item-desc
         font-size typeScale.h
         white-space nowrap
-  @media (min-width $MQSmall)
+  @media (min-width: $MQSmall)
     box-shadow none
     top 0
     flex-direction row
@@ -258,7 +258,7 @@ $menu-secondary
       color $textColor
       &:hover
         color $tandemPink
-  @media (min-width $MQSmall)
+  @media (min-width: $MQSmall)
     .links
       display flex
       justify-content flex-end
@@ -276,7 +276,6 @@ $menu-secondary
   transition-property padding background-color
   transition-duration 0.25s
   transition-timing-funciton ease-out
-
   &.fadeout,  &.dehamburger.fadein:not(.open)
     .menu
       top -106vh
@@ -289,7 +288,7 @@ $menu-secondary
       background-color transparent
       display block
       flex-wrap wrap
-      @media (min-width $MQLarge)
+      @media (min-width: $MQLarge)
         .menu
           justify-content center
   .title
@@ -309,8 +308,7 @@ $menu-secondary
     top 2rem
     left 2.675rem
     opacity 1
-
-  @media (min-width $MQSmall)
+  @media (min-width: $MQSmall)
     &.fadein:not(&.dehamburger)
       background-color #eee
       box-shadow 0 -0.25rem 1rem rgba(0,0,0,0.4)
@@ -332,7 +330,7 @@ $menu-secondary
       background-color #eee
       box-shadow 0 -0.25rem 1rem rgba(0,0,0,0.4)
       .menu-secondary
-        {visuallyShown}
+        { visuallyShown }
     &.dehamburger
       .menu
         top 2.625rem
@@ -343,7 +341,7 @@ $menu-secondary
     &.open
       .nav-primary
         height 9.5rem
-  @media (min-width $MQLarge)
+  @media (min-width: $MQLarge)
     &.fadeout
       .menu
         top -12rem
