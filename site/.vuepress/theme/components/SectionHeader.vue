@@ -103,8 +103,6 @@ export default {
     justify-content center
     flex-direction row
     padding-top 0
-    h1
-      padding-left 5.5rem
     .section-header-left, .section-header-right
       width auto
     .section-header-left
