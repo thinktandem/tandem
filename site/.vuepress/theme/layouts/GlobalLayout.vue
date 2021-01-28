@@ -62,6 +62,6 @@ export default {
 </script>
 
 <style lang="stylus">
-#vuepress-t$eventheme-blog__global-layout
+#vuepress-theme-blog__global-layout
   word-wrap break-word
 </style>

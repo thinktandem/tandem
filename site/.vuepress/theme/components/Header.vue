@@ -93,10 +93,6 @@ export default {
     HamburgerButton,
   },
   props: {
-    isHamburgerVisible: {
-      type: Boolean,
-      required: false,
-    },
     isOpen: {
       type: Boolean,
       required: true,
@@ -132,10 +128,8 @@ export default {
   },
   methods: {
     toggleSidebar() {
-      /*
-        moved this to methods, since I thought
-        I may wanna "do more stuff, but so far no"
-      */
+      // Moved this to methods, since I thought
+      // I may wanna "do more stuff, but so far no"
       this.$emit('toggle-sidebar');
     },
     expandMenu() {
@@ -182,15 +176,8 @@ export default {
 </script>
 
 <style lang="stylus">
-$nav-primary
-  width 100vw
-  position relative
-  display flex
-  @media (min-width: $MQSmall)
-    .menu
-      padding-right 3rem
-      padding-left 30vw
-$menu--primary
+// Test
+block_menu = @block
   position absolute
   box-sizing border-box
   transition-duration 0.5s
@@ -200,7 +187,7 @@ $menu--primary
   height 100vh
   width 100%
   align-items center
-  background-color #ffffff
+  background-color #fff
   box-shadow 0 0rem 2.5rem rgba(black, 0.2)
   margin 0
   padding 8rem 2rem 2rem 3rem
@@ -244,13 +231,13 @@ $menu--primary
         margin-bottom 1rem
         display inline-block
         text-align left
-        padding-top 0.57  5rem
+        padding-top 0.57 5rem
         .nav-item-desc
           { visuallyHidden }
       .nav-item:last-of-type
         margin-right 1rem
 
-$menu-secondary
+menu-secondary = @block
   display flex
   flex 1 100%
   flex-direction row
@@ -287,7 +274,7 @@ $menu-secondary
   transition-property padding background-color
   transition-duration 0.25s
   transition-timing-funciton ease-out
-  &.fadeout,  &.dehamburger.fadein:not(.open)
+  &.fadeout, &.dehamburger.fadein:not(.open)
     .menu
       top -106vh
   &.fadein
@@ -310,9 +297,15 @@ $menu-secondary
   .site-title
     { visuallyHidden }
   .nav-primary
-    @extends $nav-primary
+    width 100vw
+    position relative
+    display flex
+    @media (min-width: $MQSmall)
+      .menu
+        padding-right 3rem
+        padding-left 30vw
   .menu
-    @extends $menu--primary
+    { menu }
   .menu-secondary
     @extends $menu-secondary
   .hamburger
@@ -322,7 +315,7 @@ $menu-secondary
   @media (min-width: $MQSmall)
     &.fadein:not(&.dehamburger)
       background-color #eee
-      box-shadow 0 -0.25rem 1rem rgba(0,0,0,0.4)
+      box-shadow 0 -0.25rem 1rem rgba(0, 0, 0, 0.4)
     &.dehamburger.fadein, &.dehamburger.fadein:not(.open)
       .menu
         top 2.525rem
@@ -339,7 +332,7 @@ $menu-secondary
     &.open.fadein
       padding 2rem
       background-color #eee
-      box-shadow 0 -0.25rem 1rem rgba(0,0,0,0.4)
+      box-shadow 0 -0.25rem 1rem rgba(0, 0, 0, 0.4)
       .menu-secondary
         { visuallyShown }
     &.dehamburger
