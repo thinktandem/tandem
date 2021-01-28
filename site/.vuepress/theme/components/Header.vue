@@ -177,7 +177,7 @@ export default {
 
 <style lang="stylus">
 // Test
-block_menu = @block
+menu = @block
   position absolute
   box-sizing border-box
   transition-duration 0.5s
@@ -237,7 +237,7 @@ block_menu = @block
       .nav-item:last-of-type
         margin-right 1rem
 
-menu-secondary = @block
+menuSecondary = @block
   display flex
   flex 1 100%
   flex-direction row
@@ -307,7 +307,7 @@ menu-secondary = @block
   .menu
     { menu }
   .menu-secondary
-    @extends $menu-secondary
+    { menuSecondary }
   .hamburger
     top 2rem
     left 2.675rem
