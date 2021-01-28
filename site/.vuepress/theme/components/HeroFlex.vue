@@ -9,9 +9,9 @@
         .hero-flex-wrapper.{{ id }} h2 { color: {{ color }};}
         .hero-flex-wrapper.{{ id }} .hero-summary { color: {{ color }};}
         .hero-flex-wrapper.{{ id }} a:hover { color: {{ hover }};}
-        .hero-flex-wrapper.{{ id }}:hover { color: {{ hover }};}
-        .hero-flex-wrapper.{{ id }}:hover h2 { color: {{ hover }};}
-        .hero-flex-wrapper.{{ id }}:hover .hero-summary { color: {{ hover }};}
+        .hero-flex-wrapper.{{ id }} a:hover h2 { color: {{ hover }};}
+        .hero-flex-wrapper.{{ id }} a:hover .hero-summary { color: {{ hover }};}
+        .hero-flex-wrapper.{{ id }}:hover .cta { color: {{ hover }};}
       </style>
       <NavLink
         class="link--wrapper"
@@ -23,12 +23,22 @@
             :vid="video"
           />
         </div>
-        <div class="hero-left-content">
-          <div class="post-tag">
-            <span>{{ type }}</span>
+        <div
+          class="hero-left-content"
+        >
+          <div
+            class="post-tag"
+          >
+            <span>
+              {{ type }}
+            </span>
           </div>
-          <h2>{{ title }}</h2>
-          <div class="hero-summary">
+          <h2>
+            {{ title }}
+          </h2>
+          <div
+            class="hero-summary"
+          >
             {{ byline }}
           </div>
         </div>
