@@ -232,6 +232,8 @@ menu = @block
         display inline-block
         text-align left
         padding-top 0.57 5rem
+        .nav-link
+          font-size typeScale.g
         .nav-item-desc
           { visuallyHidden }
       .nav-item:last-of-type
@@ -291,9 +293,11 @@ menuSecondary = @block
           justify-content center
   .title
     { logoDimensions }
-    padding 2rem 0 2rem 3rem
+    padding 2rem 0 2rem 2rem
     position relative
     z-index 50
+    @media (min-width: $MQSmall)
+      padding 2rem 0 2rem 3rem
   .site-title
     { visuallyHidden }
   .nav-primary
@@ -310,19 +314,24 @@ menuSecondary = @block
     { menuSecondary }
   .hamburger
     top 2rem
-    left 2.675rem
+    left 1.675rem
     opacity 1
   @media (min-width: $MQSmall)
+    .hamburger
+      top 2rem
+      left 2.675rem
     &.fadein:not(&.dehamburger)
       background-color #eee
       box-shadow 0 -0.25rem 1rem rgba(0, 0, 0, 0.4)
     &.dehamburger.fadein, &.dehamburger.fadein:not(.open)
       .menu
         top 2.525rem
+        padding-top 0.625rem
     &.fadein
       .menu
         height 4rem
         top 0.625rem
+        // padding-top 2.25rem
       .nav .nav-item .nav-item-desc
         display block
         { visuallyShown }
@@ -333,6 +342,8 @@ menuSecondary = @block
       padding 2rem
       background-color #eee
       box-shadow 0 -0.25rem 1rem rgba(0, 0, 0, 0.4)
+      .menu
+        padding-top 2.575rem
       .menu-secondary
         { visuallyShown }
     &.dehamburger
