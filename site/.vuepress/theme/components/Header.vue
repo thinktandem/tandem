@@ -231,7 +231,7 @@ $menu--primary
     top 0
     flex-direction row
     height auto
-    padding 2rem 0 0 0
+    padding 3.25rem 0 0 0
     background-color transparent
     .nav
       width auto
