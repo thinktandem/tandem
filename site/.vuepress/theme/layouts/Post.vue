@@ -165,7 +165,7 @@ export default {
     margin-bottom 2em
     padding-top 3rem
     padding-bottom 3rem
-    max-width 55rem
+    max-width 60rem
 .post-theme-content
   { bodyType }
   color $textColor

@@ -106,7 +106,7 @@ export default {
     .section-header-left, .section-header-right
       width auto
     .section-header-left
-      width 40vw
+      white-space nowrap
       text-align left
     .section-header-right
       flex-grow 1
