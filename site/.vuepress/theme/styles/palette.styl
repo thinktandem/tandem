@@ -132,7 +132,7 @@ customBlock = @block
   padding-top 2rem
   padding-bottom 2rem
   text-align center
-  &:not(&.col-wrapper, &.col-half, &.important, &.big)
+  &:not(.col-wrapper), &:not(.col-half), &:not(.important), &:not(.big)
     display flex
     flex-direction column
     justify-content center
@@ -146,16 +146,9 @@ customBlock = @block
     width 100%
   @media (min-width: $MQMobile)
     text-align left
-    &:not(&.col-half, &.important, &.big)
+    &:not(.col-half), &:not(.important), &:not(.big)
       display flex
       flex-direction row
-      &.point
-        > *:first-child
-          width 30vw
-          padding-right: 1em
-          margin-top 2.325rem
-        > *:nth-child(2), > *:nth-child(3)
-          width 70vw
     &.point
       > *:first-child
         text-align left
@@ -165,11 +158,20 @@ customBlock = @block
       > *:nth-child(2), > *:nth-child(3)
         text-align left
         line-height 1.5
+      &:not(.col-half), &:not(.important), &:not(.big)
+        > *:first-child
+          width 30vw
+          text-align left
+          padding-right: 1em
+          margin-top 2.325rem
+        & > *:nth-child(2), > *:nth-child(3)
+          width 70vw
     &.col-half
       box-sizing border-box
       text-align left
       > *:first-child
         font-size typeScale.e
+
 cb_important = @block
   @media (min-width $MQMobile)
     display block

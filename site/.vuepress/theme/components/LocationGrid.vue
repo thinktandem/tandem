@@ -81,7 +81,6 @@ export default {
       margin 0
       padding 0
   @media (min-width: $MQSmall)
-    width 70vw
     flex-direction row
     justify-content space-evenly
     .location-item
