@@ -54,6 +54,8 @@ h4
   border 0
   &.post-title
     line-height 1.125
+  a
+    font-weight inherit
 h2
   font-size typeScale.e
 h3
@@ -134,23 +136,11 @@ article
     margin 2em 0
     img
       width 100%
-  &.important
-    > :first-child
-      font-size typeScale.c
   &.important, &.byline
     ol, ul
       margin 1em 1em
-    br
-      display block
-      @media (min-width: $MQMobile)
-        display contents
-  &.important
-    padding 4em 0
-    border-top 1px solid $borderColor
-    margin-bottom 0
-    @media (min-width: $MQMobile)
-      padding 7em 0
-      margin-bottom 2em
+      li
+        margin-bottom 1rem
   &.byline
     p
       font-style italic

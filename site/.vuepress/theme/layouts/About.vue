@@ -160,6 +160,8 @@ export default {
     text-decoration none
   .location-container
     margin-top 2em
+  .values, .values-text
+    border-top 1px $borderColor solid
   .values-text, .what-we-do
     margin-top 3rem
     margin-bottom 3rem
