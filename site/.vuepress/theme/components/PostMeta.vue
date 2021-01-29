@@ -9,7 +9,7 @@
     <div class="written-by">
       <a
         :href="authorLink"
-        class="pic-left"
+        class="pic"
         :target="linkTarget"
       ><img
         :src="pic"
@@ -86,25 +86,26 @@ export default {
 <style lang="stylus" scoped>
 .post-meta-data
   margin-top 1em
-  display flex
   width 100%
-  justify-content flex-start
-  .written-by, .other-meta
+  .written-by
+    margin-top 2rem
+    .pic
+      display inline-block
+      margin-right 0.75rem
+      padding-left 0.25rem
+      img
+        width 42px
+        border-radius 100%
+        position relative
+        bottom 1rem
+  .written-by
     position relative
+    padding-bottom 0
     display flex
-    padding-bottom .5rem
-    font-size .9em
-    img
-      width 42px
-      border-radius 100%
-      position relative
-      bottom 6px
-    svg
-      width 14px
-      height 14px
-      color lighten($landoBlue, 50%)
-      margin-left 10px
-      margin-right 3px
+    font-size typeScale.tiny
+    padding-bottom 0
+    a
+      white-space nowrap
   .other-meta
     align-items baseline
     .meta-prefix
@@ -113,13 +114,18 @@ export default {
       { displayType }
       font-weight 500
       font-size typeScale.j
-  .pic-left
-    position absolute
-    left -3.25rem
-    top -0.5rem
-  @media (max-width: $MQMobile)
-    align-items center
-    display block
+  @media (min-width: $MQSmall)
+    align-items left
+    display flex
+    justify-content flex-start
+    .written-by
+      .pic
+        margin-right 0.75rem
+        position absolute
+        left -3.25rem
+        top 0
+        bottom auto
     .written-by, .other-meta
-      font-size .9em
+      margin-top 0
+      font-size typeScale.small
 </style>

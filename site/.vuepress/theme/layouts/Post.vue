@@ -151,55 +151,48 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-post
-    table
-      margin-top 2em
-      margin-bottom 2em
-    .post-content
-      margin-top 3.14em
-      margin-bottom 3.14em
-    .custom-block
-      margin-top 2em
-      margin-bottom 2em
-      &.point
-        { cb_point }
-    .post-wrapper
-      max-width 55rem
+.content-wrapper-tandem.content-wrapper-post
+  .post-wrapper
+    max-width 53rem
+  table
+    margin-top 2em
+    margin-bottom 2em
+  .post-content
+    margin-top 3.14em
+    margin-bottom 3.14em
+  .custom-block
+    margin-top 2em
+    margin-bottom 2em
+    padding-top 3rem
+    padding-bottom 3rem
+    max-width 55rem
 .post-theme-content
   { bodyType }
   color $textColor
   position relative
   h1
-    font-size typeScale.b
-    font-weight 600
-    margin-top 0
-    margin-bottom .5em
-  h2
     font-size typeScale.d
-    font-weight 600
-  p
-    font-weight 300
+    margin-top 0
+    margin-bottom 0.5em
+  h2
+    font-size typeScale.e
   footer
     margin-bottom 2em
   .post-title
     padding-top 0
-  .post-meta-data
-    justify-content space-between
-
 .vuepress-toc
   right 5%
   margin-top 120px
   { displayType }
-@media (max-width: $MQMobile)
+@media (min-width: $MQMobileNarrow)
+  .post-theme-content
+    h1
+      font-size typeScale.c
+    h2
+      font-size typeScale.d
+@media (min-width: $MQMobile)
   .post-theme-content
     padding-top 0
   .post-title
     margin-top 0
-@media (max-width: $MQMobileNarrow)
-  .post-content
-    margin-top 2em
-  .post-theme-content
-    h1
-      font-size typeScale.c
 </style>

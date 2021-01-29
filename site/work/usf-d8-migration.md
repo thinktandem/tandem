@@ -12,7 +12,7 @@ header:
   title: "A Faster<br/>Stronger<br />Intranet"
   image: /images/work/usf-d8.png
   background:
-    background-color: "#FDBB30"
+    background-color: "#FDBB30df"
     background-image: url(/images/work/usf-campus.jpg)
     background-position: 100% 20%
     background-size: cover

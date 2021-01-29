@@ -11,7 +11,7 @@ header:
   title: "Stopped Hacks from taking down sites"
   image: /images/work/sfmfb-screenshot.png
   background:
-    background-color: "#006225"
+    background-color: "#006225df"
     background-position: 100% 20%
     background-size: auto
     background-repeat: no-repeat

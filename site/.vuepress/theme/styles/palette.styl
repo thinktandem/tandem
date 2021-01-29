@@ -18,8 +18,8 @@ $newsletterBgColor = $lightGrey
 // Colors
 $accentColor = $tandemPink
 $textColor = $tandemGrey
-$darkTextColor = #47474a
-$middleGrey = lighten($darkTextColor, 15%)
+$darkTextColor = $landoGrey
+$middleGrey = lighten($tandemGrey, 15%)
 $borderColor = darken($lightGrey, 15%)
 $darkBorderColor = $tandemGrey
 $codeBgColor = #000
@@ -52,20 +52,20 @@ Type Scale | Major Third
 https://type-scale.com/?size=16&scale=1.250&text=A%20Visual%20Type%20Scale&font=Poppins&fontweight=400&bodyfont=Poppins&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false
 */
 typeScale = {
-  'a':      5.96rem,   // 95.37
-  'b':      4.768rem,  // 76.29
-  'c':      3.052rem,  // 48.83
-  'd':      2.441rem,  // 39.06
-  'e':      1.953rem,  // 31.25
-  'f':      1.563rem,  // 25
-  'g':      1.25rem,   // 20
-  'h':      1rem,      // 16
-  'i':      0.8rem,    // 12.8
-  'j':      0.64rem,   // 8.19
-  'small':  0.8rem,    // 12.8
-  'tiny':   0.64rem,   // 8.19
-  'body':   1rem,      // 16
-  'bigboi': 7.451rem,  // 119.21
+  'a': 5.96rem, // 95.37
+  'b': 4.768rem, // 76.29
+  'c': 3.052rem, // 48.83
+  'd': 2.441rem, // 39.06
+  'e': 1.953rem, // 31.25
+  'f': 1.563rem, // 25
+  'g': 1.25rem, // 20
+  'h': 1rem, // 16
+  'i': 0.8rem, // 12.8
+  'j': 0.64rem, // 8.19
+  'small': 0.8rem, // 12.8
+  'tiny': 0.64rem, // 8.19
+  'body': 1rem, // 16
+  'bigboi': 7.451rem, // 119.21
   'biggestboi': 12rem
 }
 
@@ -76,10 +76,9 @@ typeScale = {
 
 bodyType = @block
   font-family $font--body
-  font-weight 900
+  font-weight 500
   letter-spacing -0.0265em
   line-height 1.265
-  color $textColor
 
 displayType = @block
   font-family $font--display
@@ -111,6 +110,7 @@ logoDimensions = @block
   width $logoWidth px
   height $logoHeight px
 
+// Most of the stuff below here should probably be a component
 workGrid = @block
   margin-top 4rem
   display flex-grid
@@ -122,35 +122,78 @@ workGrid = @block
       width 100%
       height 500px
       display inline-flex
-  .load-more
-    margin-top 2em
-    margin-bottom 2em
 
 //
 // Custom Block - point - should be a component or variant thereof
-cb_point = @block
+customBlock = @block
   margin-bottom 0
   margin-top 0
   border-bottom 0
+  padding-top 2rem
+  padding-bottom 2rem
   text-align center
-  flex-direction column
-  justify-content center
-  > h2, > h3
+  &:not(&.col-wrapper, &.col-half, &.important, &.big)
+    display flex
+    flex-direction column
+    justify-content center
+  &.col-half
+    padding-top 7rem
+    padding-right 2rem
+  > *:fist-child
+    font-size typeScale.f
     width 100%
+  .content
+    width 100%
+  @media (min-width: $MQMobile)
+    text-align left
+    &:not(&.col-half, &.important, &.big)
+      display flex
+      flex-direction row
+      &.point
+        > *:first-child
+          width 30vw
+          padding-right: 1em
+          margin-top 2.325rem
+        > *:nth-child(2), > *:nth-child(3)
+          width 70vw
+    &.point
+      > *:first-child
+        text-align left
+        line-height 1
+        font-size typeScale.g
+        margin-top 0.925rem !important
+      > *:nth-child(2), > *:nth-child(3)
+        text-align left
+        line-height 1.5
+    &.col-half
+      box-sizing border-box
+      text-align left
+      > *:first-child
+        font-size typeScale.e
+cb_important = @block
+  @media (min-width $MQMobile)
+    display block
+    > *:first-child
+      width 100% !important
+    > *:nth-child(2)
+      border 1px #0af solid
+      width 100%
+
+cb_form = @block
+  display flex
+  width 100%
+  background-color $lightGrey
+
+cb_point = @block
+  { customBlock }
+  >:first-child
+    { displayType }
+    font-size typeScale.d
   ul
     justify-content center
     li
       margin-bottom 0.75rem
-  @media (min-width: $MQMobile)
-    display flex
-    text-align left
-    flex-direction row
-    > h2, > h3
-      justify-content left
-      width 40vw
-      padding-right: 1em
-      margin-top 0
-    > p
+    .cb__content
       width 70%
       margin-top 0
     .post-tags
@@ -170,7 +213,7 @@ tagWrapper = @block
   background $lightGrey
   transition none
   border none
-  margin-right 1rem
+  margin-right 0
   padding 0 0.5rem
   span
     display inline-block
@@ -179,30 +222,75 @@ tagWrapper = @block
     border none
     font-size typeScale.i
     font-weight 300
+  a
+    color $textColor
   &::after
     content " "
     position absolute
     right -0.68rem
-    border-bottom 0.875em solid transparent
-    border-top    0.875em solid transparent
+    line-height 1
+    border-bottom 0.9875em solid transparent
+    border-top    0.9875em solid transparent
     border-left   0.7em solid $lightGrey
 
-loadMore = @block
-  background $tandemPink
-  padding 1.5em 1em
-  margin 1em
+tandemButton = @block
+  all unset
+  box-sizing border-box
+  background-color black
+  margin-top 1rem
+  margin-bottom 1rem
+  padding 2em 1em
   border-radius 0.25rem
   cursor pointer
   text-align center
-  color black
+  color white
   { displayType }
   text-size typeScale.d
   transition-property background-color, color, padding
   transition-timing-function ease-out
   transition-duration 0.25s
   &:hover, &:focus, &:active
-    background-color #000
-    padding 2em 1em
-    color white
+    box-sizing padding-box
+    padding 4em 1em 4em 1em
+    color $tandemPink
+    &.busy
+      background-color $tandemPink
+      color #ffffff
+      opacity .50
   button
     all unset
+
+summaryWrapper = @block
+  margin-bottom 1rem
+  position relative
+  a
+    text-decoration none
+  .wrapper
+    padding 2em
+    position relative
+  .headline
+    .title
+      { displayType }
+      font-weight 600
+      font-size typeScale.d
+      line-height 1.2
+      text-decoration none
+      margin-top 0
+      border-bottom 0
+      cursor pointer
+      transition none
+  .description
+    { bodyCopy }
+    color inherit
+    font-size typeScale.g
+    font-weight 300
+  @media (min-width: $MQMobile)
+    margin-bottom 0.5em
+    .wrapper
+      padding 4em
+    .headline
+      .title
+        font-size typeScale.c
+    .desceription
+      font-size typeScale.f
+      margin-bottom 1em

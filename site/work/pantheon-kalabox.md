@@ -18,7 +18,7 @@ header:
     background-repeat: no-repeat
 
 theme:
-  background: "#ffdc28"
+  background: "#ffdc28df"
   headerColor: black
   headerHover: "#1794c7"
   headerActive: "#1794c7"
@@ -40,4 +40,3 @@ tags:
 link2Original: true
 originalLink: "https://github.com/kalabox/kalabox-app-pantheon"
 ---
-

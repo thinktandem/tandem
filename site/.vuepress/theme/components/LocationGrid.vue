@@ -1,20 +1,17 @@
 <template>
   <div class="location-container">
-    <style>
-      .location-container .location-item {width: {{ columnWidth }}%;}
-    </style>
     <div
       v-for="location in locations"
       :key="location.airport"
       class="location-item"
-      :style="{'color': location.text, 'background-color': location.background}"
+      :style="{'color': location.text, 'border-bottom-color': location.background}"
     >
       <div class="location-wrapper">
         <div class="location-email">
           <h2 :style="{'color': location.text}">
-            {{ location.name }}.
+            {{ location.name }}
           </h2>
-          <a :href="`mailto:${location.email}`">{{ location.email }}</a>
+          <a :href="`mailto:${location.email}`"><span>{{ emailAddressOnly(location.email) }}</span><span class="email-domain">@thinktandem.io</span></a>
         </div>
       </div>
     </div>
@@ -22,7 +19,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'LocationGrid',
   props: {
@@ -35,54 +31,71 @@ export default {
       default: 4,
     },
   },
-  computed: {
-    columnWidth() {
-      return (100 / this.columns) - 1;
+  methods: {
+    emailAddressOnly(email) {
+      return email.split('@')[0];
     },
   },
 };
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
 .location-container
-  display flex
-  flex-wrap wrap
-  justify-content space-between
-  width 100%
-  .location-wrapper
-    background-color $lightGrey
-    position relative
-    text-align center
-    padding 0
-    opacity 1
-    margin-bottom 2px
-    display flex
-    justify-content center
-    align-items center
-    &:before
-      content ""
-      float left
-      padding-top 100%
   .location-item
+    display inline-block
+    box-sizing border-box
+    background-color $lightGrey
+    border-bottom 0.25rem #000 solid
+    margin 0
+    margin-right 0.25rem
+    margin-bottom 2rem
+    width 45%
+    .location-wrapper
+      box-sizing border-box
+      background-color $lightGrey
+      position relative
+      text-align center
+      padding 2rem
+      opacity 1
+      margin-bottom 0.25rem
+      display flex
+      justify-content center
+      align-items center
+      overflow hidden
+      &:before
+        content: "";
+        float: left;
+        padding-top: 100%;
+    a
+      font-size typeScale.tiny
+      text-decoration none
+      color $textColor
+    a:hover, a:focus, a:active
+      color $tandemPink
     h2
       color inherit
       { displayType }
       font-weight 400
-      font-size 1.2em
+      font-size typeScale.g
       text-transform uppercase
       margin 0
       padding 0
-    a
-      font-size .67em
-      color black
-      text-decoration none
-      &:hover
-        color $tandemPink
-
-
-    @media (max-width: $MQMobile)
-      width 45%
-
-      margin .5em 0em
-      min-height 125px
+  @media (min-width: $MQSmall)
+    width 70vw
+    flex-direction row
+    justify-content space-evenly
+    .location-item
+      width auto
+      width 19.25%
+      padding-top 2.25rem
+      min-height 10rem
+      .location-wrapper:before
+        display none
+      h2
+        font-size typeScale.g
+      .location-wrapper
+        padding 1rem
+    @media (min-width: $MQLarge)
+      a
+        font-size typeScale.small
 </style>

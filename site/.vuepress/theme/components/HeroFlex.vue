@@ -5,31 +5,44 @@
   >
     <div class="hero-flex-container">
       <style>
-        .hero-left-content.{{ id }} a { color: {{ color }};}
-        .hero-left-content.{{ id }} h2 { color: {{ color }};}
-        .hero-left-content.{{ id }} .hero-summary { color: {{ color }};}
-        .hero-left-content.{{ id }} .hero-type { color: {{ color }};}
-        .hero-left-content.{{ id }} a:hover { color: {{ hover }};}
-        .hero-left-content.{{ id }}:hover { color: {{ hover }};}
-        .hero-left-content.{{ id }}:hover h2 { color: {{ hover }};}
-        .hero-left-content.{{ id }}:hover .hero-summary { color: {{ hover }};}
-        .hero-left-content.{{ id }}:hover .hero-type { color: {{ hover }};}
+        .hero-flex-wrapper.{{ id }} a { color: {{ color }};}
+        .hero-flex-wrapper.{{ id }} h2 { color: {{ color }};}
+        .hero-flex-wrapper.{{ id }} .hero-summary { color: {{ color }};}
+        .hero-flex-wrapper.{{ id }} a:hover { color: {{ hover }};}
+        .hero-flex-wrapper.{{ id }} a:hover h2 { color: {{ hover }};}
+        .hero-flex-wrapper.{{ id }} a:hover .hero-summary { color: {{ hover }};}
+        .hero-flex-wrapper.{{ id }}:hover .cta { color: {{ hover }};}
       </style>
-      <div :class="`hero-right-content ${id}`">
-        <YouTube
-          v-if="video"
-          :vid="video"
-        />
-      </div>
-      <div :class="`hero-left-content ${id}`">
-        <div class="post-tag">
-          <span>{{ type }}</span>
+      <NavLink
+        class="link--wrapper"
+        :link="title"
+      >
+        <div class="hero-right-content">
+          <YouTube
+            v-if="video"
+            :vid="video"
+          />
         </div>
-        <h2>{{ title }}</h2>
-        <div class="hero-summary">
-          {{ byline }}
+        <div
+          class="hero-left-content"
+        >
+          <div
+            class="post-tag"
+          >
+            <span>
+              {{ type }}
+            </span>
+          </div>
+          <h2>
+            {{ title }}
+          </h2>
+          <div
+            class="hero-summary"
+          >
+            {{ byline }}
+          </div>
         </div>
-      </div>
+      </NavLink>
       <NavLink
         v-if="cta"
         class="cta"
@@ -67,6 +80,7 @@ export default {
     cta: {
       type: String,
       required: false,
+      default: undefined,
     },
     color: {
       type: String,
@@ -86,27 +100,33 @@ export default {
     },
   },
 };
-
 </script>
 
 <style lang="stylus">
 .hero-flex-wrapper
-  display flex
+  box-sizing border-box
+  width 100vw
   height 100vh
-  padding 4rem
-  a.nav-link
-    position absolute
-    display block
+  display flex
+  text-decoration none
+  left 0
+  bottom 0
+  padding 3rem
+  @media (min-width: $MQMobile)
+    padding 2rem
+  @media (min-width: $MQSmall)
+    padding 0
+  a
     text-decoration none
-    left 0
-    bottom 0
   .hero-flex-container
     max-width $contentMaxWidth
     margin auto
+    padding-bottom 6rem
     display flex
     position relative
     flex-direction row-reverse
-    display block
+    .link--wrapper
+      display block
     .post-tag
       { tagWrapper }
       margin-bottom 1.5rem
@@ -128,28 +148,18 @@ export default {
         .video-responsive
           margin-top 17%
     .cta
-      display block
+      { tandemButton }
+      font-weight 300
       position absolute
+      bottom 0
       left 0
-      bottom -4rem
-      background-color white
-      padding 0.75rem
-      { displayType }
-      transition-property padding, background-color, color
-      transition-duration 0.25s
-      transiton-timing-function ease-out
-      &:hover, &:focus, &:active
-        padding 1rem 0.75rem
-        background-color $tandemPink
-        color white
+      padding 0.75em 1.25em
+      &:hover
+        padding 0.75em 3em 0.75em 1.5em
     .hero-left-content
-      width 80%
       .hero-summary
-        font-weight 500
-        font-size 1.28rem
-        line-height 2
-        letter-spacing -0.025em
-        margin 1rem 0 3rem 0
+        { bodyType }
+        margin 0 0 3rem 0
       h2
         { displayType }
         font-size typeScale.b
@@ -157,17 +167,12 @@ export default {
         line-height 1.2
         margin-top 0
         margin-bottom 0.5em
-        cursor pointer
         transition none
         text-decoration none
         &:hover
           color inherit
           text-decoration none
       @media (max-width: $MQMobile)
-        width 97%
-        margin 0 1em
         h2
-          font-size 3em
-        .hero-summary
-          width 90%
+          font-size typeScale.c
 </style>

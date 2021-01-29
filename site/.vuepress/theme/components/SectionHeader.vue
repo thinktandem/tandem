@@ -65,50 +65,56 @@ export default {
   flex-direction column
   margin-bottom 2em
   h1
-    font-size typeScale.e
-    font-weight 900
+    font-size typeScale.d
+    display inline-block
     text-decoration underline
     padding-top 0.35rem
     white-space nowrap
     color $textColor
-  h2
-    { bodyType }
-    font-size typeScale.f
-    color $textColor
-    margin-bottom 1em
-    @media (min-width: $MQMobile)
-      font-size typeScale.e
   .section-header-left, .section-header-right
     width 100%
   .section-header-left
     display inline-block
     img
-      width 150px
+      display inline-block
+      width 3rem
       position relative
-      bottom 6px
+      top 0.75rem
     &.linked
       cursor pointer
   .section-header-right
-    color $textColor
-    font-weight 300
-    font-size 1.33rem
-    letter-spacing -1.04px
-    display inline-block
-
+    text-align center;
+    h1
+      text-decoration none
+      line-height 1
+      margin-top 0.775rem
+    p
+      font-size typeScale.g
+      font-weight 300
+    h2
+      { bodyType }
+      margin-top 0.425em
+      font-weight 300
+      font-size typeScale.f
+      color $textColor
+      margin-bottom 1em
   @media (min-width: $MQMobile)
     display flex
     justify-content center
     flex-direction row
     padding-top 0
-    h1
-      padding-left 5.5rem
     .section-header-left, .section-header-right
       width auto
     .section-header-left
-      width 20vw
+      width 40vw
       text-align left
     .section-header-right
       flex-grow 1
+      text-align right
+      h2
+        font-size typeScale.c
+    p
+      max-width 55em
   @media (min-width: $MQSmall)
     h1
       padding-left 0

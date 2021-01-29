@@ -131,12 +131,10 @@ export default {
 
 <style lang="stylus">
 .newsletter-form
-  display flex
-  width 98%
-  background-color $lightGrey
+  { cb_form }
   .newsletter-form-wrapper
     @media (max-width: $MQMobile)
-      font-size 1.2em
+      font-size typeScale.g
     margin 2em
     width 100%
     align-self center
@@ -154,21 +152,13 @@ export default {
       -webkit-box-sizing border-box
       -moz-box-sizing border-box
       box-sizing border-box
+      { displayType }
       font-size 1em
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
       &:focus
         outline 1px solid $borderColor
         outline-offset 5px
     input[type=button]
-      all unset
-      { loadMore }
-      &:hover
-        padding-left 2rem
-        padding-right 2rem
-      &.busy
-        background-color $tandemPink
-        color #ffffff
-        opacity .50
+      { tandemButton }
     input
       &:focus
         outline none
@@ -177,9 +167,8 @@ export default {
       font-weight 700
       ul
         li
-          font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-          font-size .8em
-          font-weight 300
+          { displayType }
+          font-size typeScale.small
           margin-left 1em
     .email, .submit
       width 48%
@@ -190,15 +179,14 @@ export default {
         margin-bottom 1em
     .thanks
       display flex
-      font-size 2.2em
+      font-size typeScale.d
       line-height 2
       letter-spacing -0.19rem
       justify-content space-evenly
       align-items center
       @media (max-width: $MQMobile)
         display block
-        font-size 1.2em
-        letter-spacing -0.09rem
+        font-size typeScale.g
     @media (max-width: $MQMobile)
       margin 1.67em
 

@@ -14,7 +14,7 @@
 
     <div class="custom-block point clients">
       <h3>
-        Hot tags.
+        Hot tags
       </h3>
       <div class="hot-tags">
         <ul
@@ -116,36 +116,19 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-blog
-    .section-header
-      h1, h2, p
-        color black
-      .section-header-right
-        text-align center
-        @media (min-width: $MQMobile)
-          text-align right
-    .load-more
-      margin-bottom 2em
-    .hot-tags
-      width 100%
-      ul
-        margin 0
-        padding 0
-        list-style none
-        display flex
-        flex-wrap wrap
-        justify-content center
-    .custom-block
-      p
-        font-weight 300
-        { bodyType }
-        border 1px #000 solid
-        font-size typeScale.g
-        color black
-      &.point
-        { cb_point }
+.content-wrapper-tandem.content-wrapper-blog
+  .hot-tags
+    width 100%
+    ul
+      margin 0
+      padding 0
+      list-style none
+      display flex
+      flex-wrap wrap
+      justify-content center
     @media (min-width: $MQMobile)
-      .hot-tags
-        justify-content space-between
+      justify-content space-between
+      padding-top 0.875rem
+      ul
+        justify-content flex-start
 </style>

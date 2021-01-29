@@ -1,54 +1,53 @@
 <template>
-  <NavLink
-    class="work-title"
-    :link="resolveLink(page)"
+  <article
+    class="summary work"
+    :class="wrapperClasses"
+    :style="bgImgStylez"
+    itemprop="blogPost"
+    itemscope
+    itemtype="https://schema.org/BlogPosting"
   >
-    <article
-      :class="wrapperClasses"
-      :style="bgImgStylez"
-      itemprop="blogPost"
-      itemscope
-      itemtype="https://schema.org/BlogPosting"
+    <style>
+      .work.{{ page.key }} .title { color: {{ textColor }};}
+      .work.{{ page.key }} .description { color: {{ textColor }};}
+      .work.{{ page.key }} .work-logo img {filter: {{ logoChanger }}; height: {{ logoHeight }}px;}
+      .work.{{ page.key }}:hover img {filter: {{ logoHover }}; height: {{ logoHeight }}px;}
+      .work.{{ page.key }}:hover .title { color: {{ theme.headerHover }};}
+      .work.{{ page.key }}:hover .description { color: {{ theme.headerHover }};}
+    </style>
+    <NavLink
+      class=""
+      :link="resolveLink(page)"
     >
-      <style>
-        .work.{{ page.key }} .work-title { color: {{ textColor }};}
-        .work.{{ page.key }} p.work-summary { color: {{ textColor }};}
-        .work.{{ page.key }} .work-logo img {filter: {{ logoChanger }}; height: {{ logoHeight }}px;}
-        .work.{{ page.key }}:hover img {filter: {{ logoHover }}; height: {{ logoHeight }}px;}
-        .work.{{ page.key }}:hover .work-title { color: {{ theme.headerHover }};}
-        .work.{{ page.key }}:hover .work-summary { color: {{ theme.headerHover }};}
-      </style>
       <div
-        class="work-wrapper"
+        class="wrapper"
         :style="bgStylez"
       >
         <meta
           itemprop="mainEntityOfPage"
           :content="resolveLink(page)"
         >
-
         <header
+          class="headline"
           itemprop="name headline"
         >
-          <NavLink
-            class="work-title"
-            :link="resolveLink(page)"
+          <h4
+            class="title"
           >
             {{ page.title }}
-          </NavLink>
+          </h4>
         </header>
-
         <client-only>
           <!-- eslint-disable vue/no-v-html -->
           <p
             v-if="page.excerpt"
-            class="work-summary"
+            class="description"
             itemprop="description"
             v-html="page.excerpt"
           />
           <p
             v-else
-            class="work-summary"
+            class="description"
             itemprop="description"
             v-html="page.frontmatter.summary || page.summary"
           />
@@ -83,8 +82,8 @@
           </div>
         </footer>
       </div>
-    </article>
-  </NavLink>
+    </NavLink>
+  </article>
 </template>
 
 <script>
@@ -151,54 +150,21 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-a
-  text-decoration none
-.work
-  margin-bottom 1em
-  position relative
-  .work-wrapper
-    opacity .95
-    padding 1em
-    padding 2em 2em 4em 2em
-   .work-title, .work-logo
-    { displayType }
-    font-size typeScale.i
-    font-weight 600
-    margin-top 0
-    border-bottom 0
-    color inherit
-    cursor pointer
-    transition none
-    text-decoration none
-    &:hover
-      color inherit
-      text-decoration none
-  .work-title
-    font-size typeScale.d
-  .work-summary
-    color inherit
-    font-size typeScale.g
-    font-weight 300
+.summary
+  { summaryWrapper }
+  .wrapper
+    padding-bottom 4rem
   .work-logo
     position absolute
     right 1em
     bottom 1em
-    font-size .8em
+    font-size typeScale.small
   footer
     opacity 0
     height 0
     display none
-@media (min-width: $MQMobile)
-  .work
-    margin-bottom 0.5em
-    .work-wrapper
-      padding 4em
-    .work-title
-      font-size typeScale.e
-    .work-summary
-      font-size typeScale.f
-      margin-bottom 3em
+  @media (min-width: $MQMobile)
     .work-logo
-      right .5rem
-      bottom .5rem
+      right 2rem
+      bottom 2rem
 </style>

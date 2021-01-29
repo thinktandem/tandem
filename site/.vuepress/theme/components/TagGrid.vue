@@ -1,7 +1,17 @@
 <template>
-  <div class="tag-container">
-    <div class="tag-item tag-third">
-      <a :href="`${prefix}strategy`"><h2>Strategy</h2></a>
+  <div
+    class="tag-container"
+  >
+    <div
+      class="tag-item tag-third"
+    >
+      <a
+        :href="`${prefix}strategy`"
+      >
+        <h2>
+          Strategy
+        </h2>
+      </a>
       <ul
         v-for="(tagGroup, index) in strategy"
         :key="index"
@@ -10,12 +20,24 @@
           v-for="tag in tagGroup"
           :key="tag.tag"
         >
-          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+          <a
+            :href="`${prefix}${tag.tag}`"
+          >
+            {{ tag.name }}
+          </a>
         </li>
       </ul>
     </div>
-    <div class="tag-item tag-third">
-      <a :href="`${prefix}design`"><h2>Design</h2></a>
+    <div
+      class="tag-item tag-third"
+    >
+      <a
+        :href="`${prefix}design`"
+      >
+        <h2>
+          Design
+        </h2>
+      </a>
       <ul
         v-for="(tagGroup, index) in design"
         :key="index"
@@ -24,12 +46,24 @@
           v-for="tag in tagGroup"
           :key="tag.tag"
         >
-          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+          <a
+            :href="`${prefix}${tag.tag}`"
+          >
+            {{ tag.name }}
+          </a>
         </li>
       </ul>
     </div>
-    <div class="tag-item tag-third">
-      <a :href="`${prefix}development`"><h2>Development</h2></a>
+    <div
+      class="tag-item tag-third"
+    >
+      <a
+        :href="`${prefix}development`"
+      >
+        <h2>
+          Development
+        </h2>
+      </a>
       <ul
         v-for="(tagGroup, index) in development"
         :key="index"
@@ -38,12 +72,20 @@
           v-for="tag in tagGroup"
           :key="tag.tag"
         >
-          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+          <a
+            :href="`${prefix}${tag.tag}`"
+          >
+            {{ tag.name }}
+          </a>
         </li>
       </ul>
     </div>
-    <div class="tag-item tag-full">
-      <h2>Industry</h2>
+    <div
+      class="tag-item tag-full"
+    >
+      <h2>
+        Industry
+      </h2>
       <ul
         v-for="(tagGroup, index) in industry"
         :key="index"
@@ -52,12 +94,20 @@
           v-for="tag in tagGroup"
           :key="tag.tag"
         >
-          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+          <a
+            :href="`${prefix}${tag.tag}`"
+          >
+            {{ tag.name }}
+          </a>
         </li>
       </ul>
     </div>
-    <div class="tag-item tag-full-columns">
-      <h2>Technology</h2>
+    <div
+      class="tag-item tag-full-columns"
+    >
+      <h2>
+        Technology
+      </h2>
       <ul
         v-for="(tagGroup, index) in technology"
         :key="index"
@@ -66,12 +116,20 @@
           v-for="tag in tagGroup"
           :key="tag.tag"
         >
-          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+          <a
+            :href="`${prefix}${tag.tag}`"
+          >
+            {{ tag.name }}
+          </a>
         </li>
       </ul>
     </div>
-    <div class="tag-item tag-full">
-      <h2>Other</h2>
+    <div
+      class="tag-item tag-full"
+    >
+      <h2>
+        Other
+      </h2>
       <ul
         v-for="(tagGroup, index) in other"
         :key="index"
@@ -80,7 +138,11 @@
           v-for="tag in tagGroup"
           :key="tag.tag"
         >
-          <a :href="`${prefix}${tag.tag}`">{{ tag.name }}</a>
+          <a
+            :href="`${prefix}${tag.tag}`"
+          >
+            {{ tag.name }}
+          </a>
         </li>
       </ul>
     </div>
@@ -190,12 +252,12 @@ $tagMargins = 1em 1em
       line-height inherit
       min-width 16rem
       margin 0
-    ol, ul
+    ul
       list-style none
       padding 0
       margin 0.325rem 0 0 0
       li a
-        padding: 1rem 3rem 1rem 0
+        padding: 1rem 3rem 0.5rem 0
     &.tag-third
       width 32%
       @media (max-width: $MQMobile)

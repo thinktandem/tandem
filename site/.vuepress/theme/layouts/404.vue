@@ -1,11 +1,16 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-fourohfour">
-    <h1>404 - Not found</h1>
-
+    <h1>
+      404 - Not found
+    </h1>
     <blockquote>
-      <p>{{ chosen.message }}</p>
+      <p>
+        {{ chosen.message }}
+      </p>
       <ul>
-        <li>{{ chosen.author }}</li>
+        <li>
+          {{ chosen.author }}
+        </li>
       </ul>
     </blockquote>
 
@@ -13,7 +18,7 @@
       <h2>
         Enjoy a random 404 video.
       </h2>
-      <div>
+      <div class="content">
         <ClientOnly>
           <YouTube :vid="chosen.vid" />
         </ClientOnly>
@@ -24,12 +29,12 @@
       <h2>
         Or explore more of what we do.
       </h2>
-      <p>
+      <div class="content">
         We offer <strong>strategy</strong>, <strong>design</strong> and <strong>development</strong> services across industries and using a wide array of tech.
         <br>
         <br>
         Read more about each below.
-      </p>
+      </div>
     </div>
 
     <TagGrid prefix="/" />
@@ -113,25 +118,13 @@ export default {
 
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-fourohfour
-    .custom-block
-      p
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color black
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color #000
-      &.point
-        { cb_point }
-        &.what-we-do
-          border 0
-        &.vids
-          div
-            width 100%
-          .video-responsive
-            margin-top 0
+.content-wrapper-tandem.content-wrapper-fourohfour
+  .custom-block.point
+    &.what-we-do
+      border 0
+    &.vids
+      div
+        width 100%
+      .video-responsive
+        margin-top 0
 </style>

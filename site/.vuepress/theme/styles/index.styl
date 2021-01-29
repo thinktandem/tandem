@@ -5,7 +5,23 @@
   src url('/fonts/AvenirNext-Heavy.woff') format('woff'), url('/fonts/AvenirNext-Heavy.woff2') format('woff2')
   font-style normal
   font-display swap
-  font-weight 600
+  font-weight 900
+
+@font-face
+  font-family 'AvenirNext'
+  src url('/fonts/poppins-v12-latin-600.eot')
+  src url('/fonts/poppins-v12-latin-600.woff') format('woff'), url('/fonts/poppins-v12-latin-600.woff2') format('woff2')
+  font-style normal
+  font-display swap
+  font-weight 300
+
+@font-face
+  font-family GalaxieCopernicus
+  src url("/fonts/GalaxieCopernicus-Book.eot")
+  src url("/fonts/GalaxieCopernicus-Book.woff") format("woff"),url("/fonts/GalaxieCopernicus-Book.woff2") format("woff2")
+  font-style normal
+  font-display swap
+  font-weight 300
 
 @font-face
   font-family GalaxieCopernicus
@@ -23,25 +39,10 @@
   font-display swap
   font-weight 400
 
-@font-face
-  font-family 'Poppins'
-  src url('/fonts/poppins-v12-latin-600.eot')
-  src url('/fonts/poppins-v12-latin-600.woff') format('woff'), url('/fonts/poppins-v12-latin-600.woff2') format('woff2')
-  font-style normal
-  font-display swap
-  font-weight 600
-
-@font-face
-  font-family 'Poppins'
-  src url('/fonts/poppins-v12-latin-900.eot')
-  src url('/fonts/poppins-v12-latin-900.woff') format('woff'), url('/fonts/poppins-v12-latin-900.woff2') format('woff2')
-  font-style normal
-  font-display swap
-  font-weight 900
-
 body
-  font-family GalaxieCopernicus, PT Serif, serif
-  font-weight 300
+  { bodyType }
+  line-height 1.25
+  color $textColor
 
 h1,
 h2,
@@ -66,48 +67,11 @@ a
 a.header-anchor
   padding-right 0
 
-blockquote
-  display flex
-  position relative
-  flex-wrap wrap
-  margin 2em 0
-  padding 2em
-  border-left 0
-  background $lightGrey
-  font-size typeScale.f
-  color $darkTextColor
-  &:before
-    display flex
-    font-size typeScale.e
-    content '"'
-    color $tandemPink
-  p
-    width 90%
-    line-height 2
-    padding-left 10px
-    padding-right 10px
-    margin-bottom 1em
-  ul
-    position absolute
-    right 1em
-    bottom 1em
-    margin 0
-    li
-      list-style none
-      font-style normal
-      font-size typeScale.j
-      color $tandemPink
-      &:before
-        content '~'
-  small
-      list-style none
-      font-style normal
-      font-size typeScale.j
-      color $tandemPink
-
 article
   header
     all unset
+  p, ul, ol
+    line-height 1.75
 
 .content-wrapper
   padding 0
@@ -119,34 +83,43 @@ article
 
 .content-wrapper-tandem
   @extend .content-wrapper
+  max-width $MQSmall
   padding: 10rem 2rem 5rem 2rem
   @media (min-width: $MQMobile)
     padding: 13rem 5rem 5rem 5rem
 
-.content-wrapper-work
-  max-width $MQXL
-
-#tandem-content
-  &.content-wrapper-home
+.content-wrapper-home
     max-width none !important
     margin 0
     @media (min-width: $MQLarge)
       max-width none !important
 
+.small
+  font-size typeScale.g
+
+.load-more
+  { tandemButton }
+  display block
+  width 100%
+  text-align center
+  margin-top 2rem
+  margin-bottom 2rem
+
 .custom-block
-  position relative
-  box-sizing border-box
-  padding 2rem 0
-  &.big, &.medium
-    p
-      { dsplayType }
-      font-size typeScale.a
-      font-weight 900
-      padding 0
-      margin 0
+  { customBlock }
+  &.point
+    { cb_point }
+  &.big, &.medium, &.big > p
+    padding 0
+    margin 0
+    { displayType }
+    line-height 1
+    font-weight 300
+    font-size typeScale.d
+  &.big > p:first-child
+    font-size typeScale.b
   &.medium
-    p
-      font-size typeScale.b
+    font-size typeScale.c
   &.caption
     background-color $lightGrey
     padding .1em 1em
@@ -155,102 +128,62 @@ article
       color $textColor
       font-size typeScale.i
       font-weight 300
-
   &.thumbnail
     border 1px solid $lightGrey
     padding 1em
     margin 2em 0
     img
       width 100%
-
-  &.point
-    { cb_point }
-
-  > h2, > h3
-    { dsplayType }
-    font-size typeScale.e
-    font-weight 900
-    line-height 1.25
-  p
-    { bodyType }
-    font-size typeScale.g
-    line-height 2
-
-.important
+  &.important
+    > :first-child
+      font-size typeScale.c
   &.important, &.byline
-    > h2, > h3
-      { displayType }
-      font-size typeScale.e
-      @media (min-width: $MQMobile)
-        font-size typeScale.c
-    p
-      font-size typeScale.g
     ol, ul
       margin 1em 1em
-      li
-        margin-bottom 1em
-        { bodyType }
-        font-size typeScale.f
-        font-weight 300
     br
       display block
       @media (min-width: $MQMobile)
         display contents
-
+  &.important
+    padding 4em 0
+    border-top 1px solid $borderColor
+    margin-bottom 0
+    @media (min-width: $MQMobile)
+      padding 7em 0
+      margin-bottom 2em
   &.byline
     p
       font-style italic
       margin 2em 0
       line-height 2
       color black
-
   &.col-wrapper, &.col-full, &.col-half, &.col-third
     width 100%
     justify-content space-between
-
   &.col-full, &.col-half, &.col-third
-    justify-content space-between
-    p
-      font-weight 30
-      &.custom-block-title
-        font-size typeScale.f
-
+    >:first-child
+      { displayType }
   &.warning, &.tip, &.danger, &.error, &.info
     background-color $lightGrey
     padding 2rem
-    p
-      &.custom-block-title
-        text-transform uppercase
-        font-size typeScale.g
-
+    .custom-block-title
+      text-transform uppercase
   &.warning
     background-color mix($lightGrey, yellow, 70%)
-
   &.danger, &.error
     background-color mix($lightGrey, red, 80%)
-
   &.col-wrapper
     @media (min-width: $MQMobile)
-      &
-        display flex
-
+      display flex
   &.col-full
     @media (min-width: $MQMobile)
-      &
-        flex 0 0 100%
-        max-width 100%
-
+      flex 0 0 100%
+      max-width 100%
   &.col-half
     @media (min-width: $MQMobile)
-      &
-        flex 0 0 49%
-        max-width 49%
-
+      flex 0 0 49%
+      max-width 49%
   &.col-third
     @media (min-width: $MQMobile)
-      &
-        flex 0 0 32%
-        max-width 32%
-
-.small
-  font-size typeScale.g
+      flex 0 0 32%
+      max-width 32%

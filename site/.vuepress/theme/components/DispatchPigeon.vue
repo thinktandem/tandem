@@ -29,33 +29,14 @@ export default {
 
 <style lang="stylus">
 .pigeon-form
-  display flex
-  width 98%
-  background-color $lightGrey
+  { cb_form }
   .pigeon-form-wrapper
     margin 2em
     width 100%
-    font-size 2.2em
-    line-height 2
-    letter-spacing -0.19rem
     @media (max-width: $MQMobile)
-      font-size 1.2em
+      font-size typeScale.g
     input[type=button]
-      padding 1.2em 3em
-      width 40%
-      margin auto
-      margin-top 2em
-      border 0 solid $borderColor
-      -webkit-box-sizing border-box
-      -moz-box-sizing border-box
-      box-sizing border-box
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-      font-size 16px
-      @media (max-width: $MQMobile)
-        width 100%
-      &:hover
-        background-color $tandemPink
-        color #ffffff
+      { tandemButton }
     input
       &:focus
         outline none

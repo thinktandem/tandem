@@ -1,16 +1,22 @@
 <template>
-  <header id="header">
+  <header
+    id="header"
+  >
     <nav
       id="nav"
       class="nav-primary"
     >
-      <div class="title">
+      <div
+        class="title"
+      >
         <NavLink
           link="/"
           class="home-link"
         >
           <TandemLogo />
-          <div class="site-title">
+          <div
+            class="site-title"
+          >
             {{ $site.title }}
           </div>
         </NavLink>
@@ -47,17 +53,27 @@
           id="menu-secondary"
           class="menu-secondary"
         >
-          <div class="links">
-            <NavLink link="/careers/">
+          <div
+            class="links"
+          >
+            <NavLink
+              link="/careers/"
+            >
               Careers
             </NavLink>
-            <NavLink link="https://handbook.thinktandem.io">
+            <NavLink
+              link="https://handbook.thinktandem.io"
+            >
               Handbook
             </NavLink>
-            <NavLink link="https://twitter.com/thinktandem">
+            <NavLink
+              link="https://twitter.com/thinktandem"
+            >
               Twitter
             </NavLink>
-            <NavLink link="https://github.com/thinktandem">
+            <NavLink
+              link="https://github.com/thinktandem"
+            >
               GitHub
             </NavLink>
           </div>
@@ -77,10 +93,6 @@ export default {
     HamburgerButton,
   },
   props: {
-    isHamburgerVisible: {
-      type: Boolean,
-      required: false,
-    },
     isOpen: {
       type: Boolean,
       required: true,
@@ -99,7 +111,7 @@ export default {
         this.resetHeader();
       } else {
         this.hideHeader();
-      }
+      };
     },
   },
   beforeDestroy() {
@@ -112,11 +124,12 @@ export default {
       capture: true,
       passive: true,
     });
-    // Set to window.pageYOffset
     this.lastScrollPos = window.pageYOffset;
   },
   methods: {
     toggleSidebar() {
+      // Moved this to methods, since I thought
+      // I may wanna "do more stuff, but so far no"
       this.$emit('toggle-sidebar');
     },
     expandMenu() {
@@ -149,7 +162,7 @@ export default {
         if (this.lastScrollPos > window.pageYOffset) this.showToggle();
         // And hide on scroll down
         else this.hideToggle();
-      }
+      };
       // Reset the previous position
       this.lastScrollPos = window.pageYOffset;
     },
@@ -163,16 +176,8 @@ export default {
 </script>
 
 <style lang="stylus">
-
-$nav-primary
-  width 100vw
-  position relative
-  display flex
-  @media (min-width $MQSmall)
-    .menu
-      padding-right 3rem
-      padding-left 30vw
-$menu--primary
+// Test
+menu = @block
   position absolute
   box-sizing border-box
   transition-duration 0.5s
@@ -182,18 +187,17 @@ $menu--primary
   height 100vh
   width 100%
   align-items center
-  background-color #ffffff
+  background-color #fff
   box-shadow 0 0rem 2.5rem rgba(black, 0.2)
   margin 0
-  padding 11rem 2rem 2rem 3rem
+  padding 8rem 2rem 2rem 3rem
   .nav
     width 100%
     margin 0
     padding 0
     .nav-item
       display: block
-      margin 0 0 2rem 4.5rem
-      font-size typeScale.f
+      margin 0 0 1rem 4.5rem
       padding 0
       .nav-link
         { displayType }
@@ -201,19 +205,20 @@ $menu--primary
         text-decoration none
         border none
         color $textColor
+        font-size typeScale.f
         &:focus, &:hover, &:active, &.router-link-active
           color $tandemPink
         &:active
           outline none
       .nav-item-desc
-        font-size typeScale.h
+        font-size typeScale.i
         white-space nowrap
-  @media (min-width $MQSmall)
+  @media (min-width: $MQSmall)
     box-shadow none
     top 0
     flex-direction row
     height auto
-    padding 2rem 0 0 0
+    padding 3.25rem 0 0 0
     background-color transparent
     .nav
       width auto
@@ -226,20 +231,22 @@ $menu--primary
         margin-bottom 1rem
         display inline-block
         text-align left
-        padding-top 0.57  5rem
+        padding-top 0.57 5rem
+        .nav-link
+          font-size typeScale.g
         .nav-item-desc
           { visuallyHidden }
       .nav-item:last-of-type
         margin-right 1rem
 
-$menu-secondary
+menuSecondary = @block
   display flex
   flex 1 100%
   flex-direction row
   flex-basis 100%
   .links
     padding-top 1em
-    padding-left 4.5rem
+    padding-left 0
     border-top 1px solid $borderColor
     flex 1 100%
     .nav-link
@@ -251,26 +258,25 @@ $menu-secondary
       color $textColor
       &:hover
         color $tandemPink
-  @media (min-width $MQSmall)
+  @media (min-width: $MQSmall)
     .links
       display flex
       justify-content flex-end
       padding-left 0
       { visuallyShown }
       border-top none !important
-header
+#header
   z-index 100
   position fixed
   width 100vw
-  top 0
+  top 0cta
   box-sizing border-box
   background-color transparent
   display flex
   transition-property padding background-color
   transition-duration 0.25s
   transition-timing-funciton ease-out
-
-  &.fadeout,  &.dehamburger.fadein:not(.open)
+  &.fadeout, &.dehamburger.fadein:not(.open)
     .menu
       top -106vh
   &.fadein
@@ -282,39 +288,50 @@ header
       background-color transparent
       display block
       flex-wrap wrap
-      @media (min-width $MQLarge)
+      @media (min-width: $MQLarge)
         .menu
           justify-content center
   .title
     { logoDimensions }
-    padding 2rem 0 2rem 3rem
+    padding 2rem 0 2rem 2rem
     position relative
     z-index 50
+    @media (min-width: $MQSmall)
+      padding 2rem 0 2rem 3rem
   .site-title
     { visuallyHidden }
   .nav-primary
-    @extends $nav-primary
+    width 100vw
+    position relative
+    display flex
+    @media (min-width: $MQSmall)
+      .menu
+        padding-right 3rem
+        padding-left 30vw
   .menu
-    @extends $menu--primary
+    { menu }
   .menu-secondary
-    @extends $menu-secondary
+    { menuSecondary }
   .hamburger
     top 2rem
-    left 2.675rem
+    left 1.675rem
     opacity 1
-
-  @media (min-width $MQSmall)
+  @media (min-width: $MQSmall)
+    .hamburger
+      top 2rem
+      left 2.675rem
     &.fadein:not(&.dehamburger)
       background-color #eee
-      box-shadow 0 -0.25rem 1rem rgba(0,0,0,0.4)
+      box-shadow 0 -0.25rem 1rem rgba(0, 0, 0, 0.4)
     &.dehamburger.fadein, &.dehamburger.fadein:not(.open)
       .menu
-        //top 0.625rem
         top 2.525rem
+        padding-top 0.625rem
     &.fadein
       .menu
         height 4rem
         top 0.625rem
+        // padding-top 2.25rem
       .nav .nav-item .nav-item-desc
         display block
         { visuallyShown }
@@ -323,8 +340,12 @@ header
         height 9.5rem
     &.open.fadein
       padding 2rem
+      background-color #eee
+      box-shadow 0 -0.25rem 1rem rgba(0, 0, 0, 0.4)
+      .menu
+        padding-top 2.575rem
       .menu-secondary
-        {visuallyShown}
+        { visuallyShown }
     &.dehamburger
       .menu
         top 2.625rem
@@ -335,7 +356,7 @@ header
     &.open
       .nav-primary
         height 9.5rem
-  @media (min-width $MQLarge)
+  @media (min-width: $MQLarge)
     &.fadeout
       .menu
         top -12rem

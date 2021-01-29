@@ -27,11 +27,16 @@ export default {
 };
 </script>
 
-<style scoped lang="stylus">
+<style lang="stylus">
 .post-tag
-  margin-right 1rem
-  margin-bottom 1rem
   { tagWrapper }
+  margin-bottom 1rem
+  .hot-tags &
+    margin-right 1.25rem
+    line-height 2
+    padding 0
+    a
+      padding 0.25rem 0.325rem 0.25rem 0.325rem!important
   .case-study-layout &
     background-color transparent
     a

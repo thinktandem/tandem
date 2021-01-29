@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-work">
-    <SectionHeader title="Work.">
+    <SectionHeader title="Work">
       <h2>
         Simple or complex,<br>big or small.<br>We've seen it all.<br>
       </h2>
@@ -14,7 +14,7 @@
 
     <div class="custom-block point clients">
       <h3>
-        Featured Clients.
+        Featured Clients
       </h3>
       <ClientGrid :clients="featuredClients" />
     </div>
@@ -102,23 +102,13 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-work
-    .section-header
-      .section-header-right
-        text-align right
-        @media (max-width: $MQMobile)
-          text-align center
-    .work-grid
-      { workGrid }
+.content-wrapper-tandem.content-wrapper-work
+  .work-grid
+    { workGrid }
+  .custom-block.point.tags
+    border-bottom 0
+  .tag-wrapper
     .custom-block
-      &.point
-        { cb_point }
-        &.tags
-          border-bottom 0
-
-    .tag-wrapper
-      .custom-block
-        background $lightGrey
-        margin 1em
+      background $lightGrey
+      margin 1em
 </style>
