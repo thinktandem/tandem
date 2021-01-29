@@ -153,7 +153,7 @@ export default {
 .summary
   { summaryWrapper }
   .wrapper
-    padding-bottom 4rem
+    padding-bottom 8rem
   .work-logo
     position absolute
     right 1em
