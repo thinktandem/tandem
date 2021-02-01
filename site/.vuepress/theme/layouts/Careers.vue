@@ -15,7 +15,7 @@
 
     <div class="custom-block point values">
       <h3>
-        Our team<br> values.
+        Our team values.
       </h3>
       <ValuesGrid
         id="team-values"
@@ -149,6 +149,10 @@ export default {
 
 <style lang="stylus">
 .content-wrapper-tandem.content-wrapper-careers
+  .values
+    border-top 1px $borderColor solid
+  .remote-team, .interests
+    border-bottom 1px $borderColor solid
   .hidden-link
     color inherit
     text-decoration none

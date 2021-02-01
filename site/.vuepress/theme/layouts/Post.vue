@@ -154,9 +154,6 @@ export default {
 .content-wrapper-tandem.content-wrapper-post
   .post-wrapper
     max-width 53rem
-  table
-    margin-top 2em
-    margin-bottom 2em
   .post-content
     margin-top 3.14em
     margin-bottom 3.14em
@@ -165,7 +162,10 @@ export default {
     margin-bottom 2em
     padding-top 3rem
     padding-bottom 3rem
-    max-width 55rem
+    max-width 60rem
+  table
+    margin-top 2em
+    margin-bottom 2em
 .post-theme-content
   { bodyType }
   color $textColor
