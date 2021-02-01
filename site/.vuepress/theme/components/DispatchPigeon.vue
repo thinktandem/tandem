@@ -31,12 +31,16 @@ export default {
 .pigeon-form
   { cb_form }
   .pigeon-form-wrapper
-    margin 2em
+    margin 3em
     width 100%
     @media (max-width: $MQMobile)
       font-size typeScale.g
     input[type=button]
       { tandemButton }
+      &:hover
+        background-color $tandemPink
+        color #fff
+        transition all 0.2s
     input
       &:focus
         outline none
