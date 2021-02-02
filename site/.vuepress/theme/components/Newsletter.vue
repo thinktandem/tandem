@@ -164,7 +164,7 @@ export default {
         outline none
     .error
       color red
-      font-weight 700
+      font-weight 900
       ul
         li
           { displayType }

@@ -105,8 +105,11 @@ export default {
 .content-wrapper-tandem.content-wrapper-work
   .work-grid
     { workGrid }
-  .custom-block.point.tags
-    border-bottom 0
+  .custom-block.point
+    &.tags, &.clients
+      border-bottom 0
+      > *:first-child
+        margin-top 2.625rem
   .tag-wrapper
     .custom-block
       background $lightGrey

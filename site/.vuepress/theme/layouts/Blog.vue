@@ -117,6 +117,8 @@ export default {
 
 <style lang="stylus">
 .content-wrapper-tandem.content-wrapper-blog
+  .point.clients
+    { borderTop }
   .hot-tags
     width 100%
     ul
@@ -126,9 +128,14 @@ export default {
       display flex
       flex-wrap wrap
       justify-content center
+    .post-tag
+      { tagWrapper }
+      { arrowHead }
+      background-color $lightGrey
+      margin-right 1.25rem
     @media (min-width: $MQMobile)
       justify-content space-between
-      padding-top 0.875rem
+      padding-top 0.5rem
       ul
         justify-content flex-start
 </style>

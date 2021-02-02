@@ -226,7 +226,7 @@ export default {
     .custom-block
       &.remote-team
         margin-top 2em
-        border-top 1px solid $borderColor
+        { borderBottom }
         border-bottom 0
       &.point.grid
         .columns-1

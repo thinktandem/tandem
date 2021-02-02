@@ -89,12 +89,12 @@ export default {
       line-height 1
       margin-top 0.775rem
     p
-      font-size typeScale.g
+      font-size typeScale.f
       font-weight 300
     h2
       { bodyType }
       margin-top 0.425em
-      font-weight 300
+      font-weight 500
       font-size typeScale.f
       color $textColor
       margin-bottom 1em

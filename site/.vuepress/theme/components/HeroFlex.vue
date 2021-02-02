@@ -129,18 +129,15 @@ export default {
       display block
     .post-tag
       { tagWrapper }
+      { arrowHead }
+      font-family typeScale.tiny
       margin-bottom 1.5rem
       background-color rgba(black, 0.3)
-      color white !important
-      box-sizing border-box
       span
-        display blockquote
-        padding-top 0.5rem
-        padding-bottom 0.5rem
-      &::after
-        left 100%
-        border-left-color rgba(black, 0.3)
-      font-family typeScale.tiny
+        color white
+        font-size typeScale.i
+        &::after
+          border-left-color rgba(black, 0.3) !important
     .hero-right-content
       display none
       @media (max-width: $MQMobile)
@@ -149,7 +146,7 @@ export default {
           margin-top 17%
     .cta
       { tandemButton }
-      font-weight 300
+      font-weight 600
       position absolute
       bottom 0
       left 0
