@@ -57,7 +57,7 @@ export default {};
 .site__footer
   padding 3rem 2rem
   background-color white
-  border-top 1px solid $borderColor
+  { borderBottom }
   a
     { displayType }
     text-align left

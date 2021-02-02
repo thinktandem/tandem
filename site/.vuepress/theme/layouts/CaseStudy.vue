@@ -224,6 +224,14 @@ export default {
 
 <style lang="stylus">
 .case-study-layout
+  .post-tag
+    background-color transparent
+    a
+      border 1px white solid
+      padding 1.5rem
+      &:hover, &:focus, &:active
+        color black
+        background-color white
   blockquote
     background transparent
     padding 4em 2em

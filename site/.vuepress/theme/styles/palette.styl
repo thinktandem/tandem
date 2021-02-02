@@ -66,7 +66,8 @@ typeScale = {
   'tiny': 0.64rem, // 8.19
   'body': 1rem, // 16
   'bigboi': 7.451rem, // 119.21
-  'biggestboi': 12rem
+  'biggestboi': 12rem,
+  'csharp': 3.64063rem // 58.25 titles for .custom-block.important
 }
 
 
@@ -146,11 +147,17 @@ customBlock = @block
     width 100%
   &.important
     padding 4em 0
-    border-top 1px solid $borderColor
+    { borderBottom }
     margin-bottom 0
     > :first-child
       { bodyType }
       font-size typeScale.e
+    > :nth-child(n+2)
+      line-height 2
+      margin-top 0
+      padding-top 0
+      font-size typeScale.g
+      font-weight 300
   @media (min-width: $MQMobileNarrow)
     &.important
       > :first-child
@@ -160,17 +167,21 @@ customBlock = @block
     &:not(.col-half), &:not(.important), &:not(.big)
       display flex
       flex-direction row
+      > *:nth-child(n+2)
+        font-size typeScale.f
+        line-height 2
+        font-weight 300
     &.point
       > *:first-child
         text-align left
-        line-height 1
-        font-size typeScale.g
+        font-size typeScale.f
+        font-weight 600
         width 20vw
         padding-right: 1em
-        margin-top 0.925rem !important
-      > *:nth-child(2), > *:nth-child(3)
+        line-height 1.2
+        margin-top 0.575rem
+      > *:nth-child(n+2)
         text-align left
-        line-height 1.5
         width 80vw
     &.col-half
       box-sizing border-box
@@ -181,14 +192,20 @@ customBlock = @block
       display block
       padding 7em 0
       margin-bottom 2em
+  @media (min-width $MQSmall)
+    &.important
+      > *:first-child
+        font-size typeScale.csharp !important
+        font-weight 300
+        br
+          display contents
 
 cb_important = @block
   @media (min-width $MQMobile)
     display block
     > *:first-child
       width 100% !important
-    > *:nth-child(2)
-      border 1px #0af solid
+    > *:nth-child(n+2)
       width 100%
 
 cb_form = @block
@@ -219,30 +236,24 @@ cb_point = @block
         flex-wrap wrap
         justify-content left
 
-tagWrapper = @block
+borderTop = @block
+  border-top 1px solid $borderColor
+
+borderBottom = @block
+  border-bottom 1px solid $borderColor
+
+arrowHead = @block
   position relative
   display inline-block
-  background $lightGrey
-  transition none
-  border none
-  margin-right 0
-  padding 0 0.5rem
-  span
-    display inline-block
-    box-sizing border-box
-    margin 0
-    border none
-    font-size typeScale.i
-    font-weight 300
-  a
-    color $textColor
-  &::after
+  > a::after, > span::after
     content " "
     position absolute
-    right -0.68rem
+    left 100%
+    top 0
     line-height 1
-    border-bottom 0.9875em solid transparent
-    border-top    0.9875em solid transparent
+    font-size typeScale.h
+    border-bottom 1em solid transparent
+    border-top    1em solid transparent
     border-left   0.7em solid $lightGrey
 
 tandemButton = @block

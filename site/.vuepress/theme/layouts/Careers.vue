@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-careers">
-    <SectionHeader title="Careers.">
+    <SectionHeader title="Careers">
       <h2>
         Always looking.<br>For another.<br>Great teammate.<br>
       </h2>
@@ -15,7 +15,7 @@
 
     <div class="custom-block point values">
       <h3>
-        Our team values.
+        Our team values
       </h3>
       <ValuesGrid
         id="team-values"
@@ -54,7 +54,7 @@
 
     <div class="custom-block point interests">
       <h3>
-        Some current team vibes.
+        Some current team vibes
       </h3>
       <ValuesGrid
         id="team-vibes"
@@ -152,7 +152,7 @@ export default {
   .values
     border-top 1px $borderColor solid
   .remote-team, .interests
-    border-bottom 1px $borderColor solid
+    { borderBottom }
   .hidden-link
     color inherit
     text-decoration none
@@ -160,8 +160,6 @@ export default {
     margin-top 2em
   .get-in-touch
     width 100%
-    font-size 1.33rem
-    letter-spacing -1.04px
     p
       width 100%
 </style>

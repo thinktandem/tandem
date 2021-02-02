@@ -245,11 +245,13 @@ menuSecondary = @block
   flex-direction row
   flex-basis 100%
   .links
-    padding-top 1em
+    padding-top 3em
     padding-left 0
-    border-top 1px solid $borderColor
+    display flex
+    justify-content space-between
     flex 1 100%
     .nav-link
+      display inline-block
       { displayType }
       letter-spacing 0.025rem
       font-size typeScale.i
@@ -261,10 +263,10 @@ menuSecondary = @block
   @media (min-width: $MQSmall)
     .links
       display flex
+      padding-top 1em
       justify-content flex-end
       padding-left 0
       { visuallyShown }
-      border-top none !important
 #header
   z-index 100
   position fixed

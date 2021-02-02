@@ -1,7 +1,7 @@
 <template>
   <li class="post-tag">
     <router-link :to="getLink(tag)">
-      <span>{{ tag }}</span>
+      {{ tag }}
     </router-link>
   </li>
 </template>
@@ -29,28 +29,26 @@ export default {
 
 <style lang="stylus">
 .post-tag
-  { tagWrapper }
+  display inline-block
+  position relative
+  background black //lightGrey
+  transition none
+  border none
+  margin-right 0
   margin-bottom 1rem
-  .hot-tags &
-    margin-right 1.25rem
-    line-height 2
-    padding 0
-    a
-      padding 0.25rem 0.325rem 0.25rem 0.325rem!important
-  .case-study-layout &
-    background-color transparent
-    a
-      display inline-block
-      text-decoration none
-      border 1px white solid
-      border-right-width  1px
-      border-left-width 1px
-      &:hover, &:focus, &:active
-        color black
-        background-color white
-      span
-        display inline-block
-        padding 1rem
-    &::before, &::after
-      display none
+  padding 0 0.5rem
+  line-height 1.2
+  a, span
+    display inline-block
+    box-sizing border-box
+    margin 0
+    border none
+    padding 0.5rem
+    line-height inherit
+    color $textColor
+    font-size typeScale.i
+    font-weight 300
+    text-decoration none
+  a:hover
+    color: $tandemPink
 </style>

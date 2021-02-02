@@ -100,6 +100,8 @@ export default {
 <style lang="stylus">
 .content-wrapper-tandem.content-wrapper-contact
   .custom-block
+    > :first-child
+      margin-top 2.625rem
     &.metro-locations
       margin-top 2em
     &.contact-us

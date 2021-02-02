@@ -75,7 +75,7 @@
 
     <div class="custom-block point interests">
       <h3>
-        Some current team vibes.
+        Some current team vibes
       </h3>
       <ValuesGrid
         id="team-values"
@@ -165,6 +165,6 @@ export default {
   .values-text, .what-we-do
     margin-top 3rem
     margin-bottom 3rem
-    .content
-      padding-top 2.65rem
+  .values-text
+    { borderBottom }
 </style>

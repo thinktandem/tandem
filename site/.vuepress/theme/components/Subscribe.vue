@@ -424,7 +424,7 @@ export default {
         cursor pointer
         color lighten($landoBlue, 90%)
         font-size typeScale.e
-        font-weight 800
+        font-weight 900
       small
         { bodyType }
         font-size typeScale.f
@@ -455,7 +455,7 @@ export default {
     padding 1em
     color red
     text-transform uppercase
-    font-weight 800
+    font-weight 900
     font-size typeScale.small
   .subscribe-success
     color $landoPink

@@ -204,12 +204,12 @@ export default {
         outline none
     .error
       color red
-      font-weight 700
+      font-weight 900
       ul
         li
           { displayType }
           font-size typeScale.small
-          font-weight 300
+          font-weight 600
           margin-left 1em
     .thanks
       display flex
