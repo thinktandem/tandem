@@ -239,8 +239,11 @@ $tagMargins = 1em 1em
     margin-bottom: 2rem
     padding 2rem
     box-sizing border-box
+    font-size typeScale.h
+    font-weight 300
     a
       display block
+      box-sizing border-box
       color $textColor
       text-decoration none
       &:hover
