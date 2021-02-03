@@ -49,7 +49,7 @@ Common Dreams has been a pioneer in online, reader-supported news since the Clin
 
 ::: col-half What's at Stake?
 :::big
-110M+ Pageviews
+110M+ Views 
 :::
 ::::::
 

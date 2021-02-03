@@ -111,7 +111,7 @@ export default {
   text-decoration none
   left 0
   bottom 0
-  padding 3rem
+  padding 5rem
   @media (min-width: $MQMobile)
     padding 2rem
   @media (min-width: $MQSmall)
@@ -138,6 +138,8 @@ export default {
         font-size typeScale.i
         &::after
           border-left-color rgba(black, 0.3) !important
+      @media (max-width: $MQMobile)
+        display none
     .hero-right-content
       display none
       @media (max-width: $MQMobile)
