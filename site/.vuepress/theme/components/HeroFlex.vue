@@ -17,12 +17,7 @@
         class="link--wrapper"
         :link="title"
       >
-        <div class="hero-right-content">
-          <YouTube
-            v-if="video"
-            :vid="video"
-          />
-        </div>
+        <div class="hero-right-content" />
         <div
           class="hero-left-content"
         >
