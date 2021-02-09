@@ -15,7 +15,7 @@
       </style>
       <NavLink
         class="link--wrapper"
-        :link="title"
+        :link="link"
       >
         <div class="hero-right-content" />
         <div
@@ -41,7 +41,7 @@
       <NavLink
         v-if="cta"
         class="cta"
-        :link="title"
+        :link="link"
       >
         {{ cta }}
       </NavLink>
