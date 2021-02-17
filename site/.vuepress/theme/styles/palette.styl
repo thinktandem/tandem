@@ -132,13 +132,14 @@ customBlock = @block
   padding-top 2rem
   padding-bottom 2rem
   text-align center
-  &:not(.col-wrapper), &:not(.col-half), &:not(.important), &:not(.big)
+  &.point // hmmm maybe :not(.col-wrapper), &:not(.col-half), &:not(.important), &:not(.big)
     display flex
     flex-direction column
     justify-content center
   &.col-half
-    padding-top 7rem
+    padding-top 4rem
     padding-right 2rem
+    flex-direction column
   > *:fist-child
     font-size typeScale.f
     width 100%
@@ -146,7 +147,6 @@ customBlock = @block
     width 100%
   &.important
     padding 4em 0
-    { borderBottom }
     margin-bottom 0
     > :first-child
       { bodyType }
@@ -189,7 +189,6 @@ customBlock = @block
         font-size typeScale.e
     &.important
       display block
-      padding 7em 0
       margin-bottom 2em
   @media (min-width $MQSmall)
     &.important
