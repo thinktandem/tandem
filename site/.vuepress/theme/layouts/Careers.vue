@@ -32,7 +32,7 @@
         <li>Putting employees first means investing in their success and well-being so they can invest the same in our clients.</li>
         <li>Building common purpose means more than just rowing in the same direction it means committing to one another even if you disagree.</li>
         <li>Maximizing flow means limiting distractions like unneccesary meetings so you can focus on what matters: <em>the actual work.</em></li>
-        <li>Acting like an adult means giving people the benefit of the doubt, speaking honestly and directly with another and apologizing when you've made a mistake.</li>
+        <li>Acting like an adult means giving people the benefit of the doubt, speaking honestly and directly with one another and apologizing when you've made a mistake.</li>
         <li>Giving a shit means taking pride in your work and pulling your own weight while also helping others who are having an off-day.</li>
       </ol>
     </div>
