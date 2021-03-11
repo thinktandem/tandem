@@ -224,6 +224,9 @@ export default {
 
 <style lang="stylus">
 .case-study-layout
+  .point:not(.col-half)
+    > *:first-child
+      margin-top 2.125rem !important
   .post-tag
     background-color transparent
     a
@@ -253,17 +256,28 @@ export default {
       line-height 1.5
       font-weight 300
     ul
+      font-size typeScale.e
+      list-style none
+      text-align right
       li
-        font-size typeScale.small
+        text-align right
+        &::before
+          display inline-block
+          content "–"
+          margin-right 0.5rem
     @media (min-width: $MQMobile)
+      padding 4rem 3rem 2rem 6rem
       p
-        padding 2rem 3rem 2rem 6rem
-        font-size typeScale.c
+        font-size typeScale.d
+        line-height 1.75
+        font-weight 500
+      ul
+        list-style none
+        font-size typeScale.e
       &:before
         top 4rem
-        left 4.75rem
+        left 3rem
         font-size typeScale.b
-
   .custom-block.point >:first-child
     border-top 0
   .custom-block.point:last-child
@@ -294,6 +308,9 @@ export default {
         opacity 0.08
         z-indexs 0
   @media (min-width: $MQMobile)
+    .section-header
+      h1
+        font-size typeScale.b
     .showcase
       margin-bottom 1em
       img

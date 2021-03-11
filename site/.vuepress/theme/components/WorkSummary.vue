@@ -16,7 +16,7 @@
       .work.{{ page.key }}:hover .description { color: {{ theme.headerHover }};}
     </style>
     <NavLink
-      class=""
+      class="link--wrapper"
       :link="resolveLink(page)"
     >
       <div
@@ -152,6 +152,8 @@ export default {
 <style lang="stylus" scoped>
 .summary
   { summaryWrapper }
+  .link--wrapper
+    display block
   .wrapper
     padding-bottom 8rem
   .work-logo

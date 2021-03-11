@@ -121,7 +121,7 @@ article
     font-weight 300
     font-size typeScale.d
   &.big > p:first-child
-    font-size typeScale.b
+    font-size typeScale.a
   &.medium
     font-size typeScale.c
   &.caption
@@ -149,7 +149,7 @@ article
       margin 2em 0
       line-height 2
       color black
-  &.col-wrapper, &.col-full, &.col-half, &.col-third
+  &.col-wrapper, &.col-full, &.col-third
     width 100%
     justify-content space-between
   &.col-full, &.col-half, &.col-third
@@ -175,6 +175,7 @@ article
     @media (min-width: $MQMobile)
       flex 0 0 49%
       max-width 49%
+      flex-direction column
   &.col-third
     @media (min-width: $MQMobile)
       flex 0 0 32%
