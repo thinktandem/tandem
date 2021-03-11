@@ -10,6 +10,5 @@ Hi there! We're very glad you're working with us. Tandem strives to make the wor
     * All hosting services (Platform.sh, Pantheon, etc.)
     * Github (both Tandem and Lando)
     * Harvest
-    * Expensify
 4. Change passwords for any shared accounts.
 5. Remove SSH key access from any remote systems.
