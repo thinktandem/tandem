@@ -38,7 +38,6 @@ You should have invites in your new email inbox for the below applicable service
 * [Your new email added to our Gusto service (for getting paid)](https://manage.gusto.com/kalabox-inc)
 * [Your new email added to our Slack channel(s)](https://thinktandem.slack.com)
 * [A PeopleKeep account created for you (for benefits)](https://tandem.peoplekeep.com)
-* [An Expensify account for reimbursements](https://www.expensify.com)
 * [Have your GitHub Account added to Tandem’s GitHub org](https://github.com/orgs/thinktandem/people)
 * [Have your GitHub Account added to the Lando GitHub org](https://github.com/orgs/lando/people)
 * Tandem's per-client password folders shared with your personal LastPass account as needed.
