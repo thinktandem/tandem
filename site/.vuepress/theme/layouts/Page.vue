@@ -14,9 +14,9 @@
     <Content />
 
     <div class="custom-block point recent-work work-grid">
-      <p class="custom-block-title">
-        Recent {{ upperTag }}<br>work.
-      </p>
+      <h3>
+        Recent {{ upperTag }}<br>work
+      </h3>
       <div class="recent-work-wrapper">
         <WorkSummary
           v-for="page in featuredWork"
@@ -26,26 +26,23 @@
           itemscope
           itemtype="https://schema.org/BlogPosting"
         />
-        <div
+        <a
           class="load-more"
           @click="incrementFeaturedWork"
         >
-          <button class="btn btn-load-more">
-            Next
-          </button>
-        </div>
+          Next
+        </a>
       </div>
     </div>
-
     <div v-if="grids.length > 0">
       <div
         v-for="grid in grids"
         :key="grid.id"
         class="custom-block point grid"
       >
-        <p class="custom-block-title">
+        <h3>
           {{ grid.caption }}
-        </p>
+        </h3>
         <ValuesGrid
           :id="grid.id"
           :class="`columns-${grid.columns}`"
@@ -55,10 +52,13 @@
       </div>
     </div>
 
-    <div class="custom-block point recent-posts">
-      <p class="custom-block-title">
+    <div
+      v-if="posts.length > 0"
+      class="custom-block point recent-posts"
+    >
+      <h3>
         Recent {{ upperTag }}<br>content.
-      </p>
+      </h3>
       <div class="recent-posts-wrapper">
         <PostSummary
           v-for="page in recentPosts"
@@ -81,17 +81,17 @@
     </div>
 
     <div class="custom-block point contact-us">
-      <p class="custom-block-title">
+      <h3>
         Let's make some great {{ upperTag }} together.<br>
         <small>Get in touch!</small>
-      </p>
+      </h3>
       <ContactForm />
     </div>
 
     <div class="custom-block point clients">
-      <p class="custom-block-title">
+      <h3>
         You might also want to check out.
-      </p>
+      </h3>
       <div class="related-tags">
         <ul
           v-if="relatedTags"
@@ -199,107 +199,41 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-landing-page
-    max-width 1140px
+.content-wrapper-tandem.content-wrapper-landing-page
     article
       &.post
         .post-wrapper
           padding 3em
-        padding 0em
         .post-title
-          font-size 2em
+          font-size typeScale.e
         .post-summary
           display none
       &.work
         .work-summary
-          @media (max-width: $MQMobile)
-            padding-bottom 5em
-    .load-more
-      text-align center
-      background $lightGrey
-      padding 1em
-      color $darkTextColor
-      margin 0em
-      cursor pointer
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-      button
-        all unset
-    .section-header
-      h1, h2, p
-        color black
-      .section-header-right
-        text-align right
-        @media (max-width: $MQMobile)
-          text-align center
+          padding-bottom 5em
+          @media (min-width: $MQMobile)
+            padding-bottom 0
     .related-tags
       width 100%
       ul
+        display flex
         margin 0
         list-style none
-        display flex
         flex-wrap wrap
+        justify-content center
         li
           margin-top 1em
     .custom-block
-      p
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color black
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color #000
-      &.important
-        padding 7em 0
-        border-top 1px solid $borderColor
-        margin-bottom 2em
-        @media (max-width: $MQMobile)
-          padding 4em 0
-          margin-bottom 0
-        p
-          &.custom-block-title
-            font-size 3.64em
-            font-family GalaxieCopernicus, PT Serif, serif
-            @media (max-width: $MQMobile)
-              font-size 2.1em
-        &.remote-team
-          margin-top 2em
-          border-top 1px solid $borderColor
-          border-bottom 0
-      &.point
-        p
-          width 100%
-          &.custom-block-title
-            width 20%
-            small
-              font-size .75em
-              color $darkTextColor
-              font-family "GalaxieCopernicus", PT Serif, Serif
+      &.remote-team
+        margin-top 2em
+        { borderBottom }
+        border-bottom 0
+      &.point.grid
+        .columns-1
+          .values-item
+            padding 1em 2em
+            &:before
+              all unset
             @media (max-width: $MQMobile)
               width 100%
-        border-top 1px solid $borderColor
-        padding 4em 0
-        &.recent-work
-          .recent-work-wrapper
-            width 100%
-        &.recent-posts
-          .recent-posts-wrapper
-            width 100%
-        &.grid
-          .columns-1
-            .values-item
-              padding 1em 2em
-              &:before
-                all unset
-              @media (max-width: $MQMobile)
-                width 100%
-    @media (max-width: $MQMobile)
-      .related-tags
-        ul
-          margin 0
-          padding 0
-          flex-wrap wrap
-          justify-content center
 </style>

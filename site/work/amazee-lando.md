@@ -16,7 +16,7 @@ header:
     background-repeat: no-repeat
 
 theme:
-  background: "#0e1821"
+  background: "#0e1821df"
   headerColor: "#2bc0e4"
   headerHover: "#2bc0e4"
   headerActive: "#1794c7"
@@ -45,4 +45,3 @@ tags:
 link2Original: true
 originalLink: "https://docs.lando.dev/config/lagoon.html"
 ---
-

@@ -10,7 +10,7 @@ header:
   title: "Rebuilding<br /> poetry's home on <br />the internet"
   image: /images/work/poets.png
   background:
-    background-color: "#4d9bf3"
+    background-color: "#4d9bf3df"
     background-image: url(/images/poets-bg.png)
     background-position: 100% 20%
     background-size: auto

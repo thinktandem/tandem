@@ -1,45 +1,316 @@
 // .vuepress/override.styl, SHOULD ONLY contain "stylus constants override".
 // $accentColor = #ed3f7a
-
+//
 // More things
 $tandemPink = #ed3f7a
-$tandemGrey = #47474A
+$tandemGrey = #47474a
 $lightGrey = #f8f8f8
-
+//
 // Backwards compat
 $landoPink = #ed3f7a
-$landoGrey = #47474A
+$landoGrey = #47474a
 $landoBlue = #035785
-$landoOrange = #FF7042
-$landoGreen = #00A38F
+$landoOrange = #ff7042
+$landoGreen = #00a38f
 $landoGrey = #2c3e50
 $newsletterBgColor = $lightGrey
-
-// colors
+//
+// Colors
 $accentColor = $tandemPink
 $textColor = $tandemGrey
-$darkTextColor = #47474A
-$middleGrey = lighten($darkTextColor, 15%)
+$darkTextColor = $landoGrey
+$middleGrey = lighten($tandemGrey, 15%)
 $borderColor = darken($lightGrey, 15%)
 $darkBorderColor = $tandemGrey
-
 $codeBgColor = #000
-
 $bgColor = #fff
 $headerBgColor = $bgColor;
-
 $footerBgColor = $darkTextColor
 $footerColor = #828282
-
-// layout
-$contentWidth = 740px
-
-// responsive breakpoints
-$MQSmall = 1200px
-$MQNarrow = 959px
-$MQMobile = 959px
-$MQMobileNarrow = 419px
-
-// code
+//
+// Breakpoints
+$MQXL           = 1600px
+$MQLarge        = 1348px
+$MQSmall        = 1070px
+$MQNarrow       = 768px
+$MQMobile       = 959px
+$MQMobileNarrow = 450px
+//
+// Layout
+$contentMaxWidth = $MQSmall
+//
+// Code
 $lineNumbersWrapperWidth = 3.5rem
 $codeLang = js ts html md vue css sass scss less stylus go java c sh yaml py docker dockerfile makefile
+//
+// Type
+$font--body = "GalaxieCopernicus", "PT Serif", serif
+$font--display = "AvenirNext", "Helvetica Neue", Arial, sans-serif
+
+/*
+Type Scale | Major Third
+https://type-scale.com/?size=16&scale=1.250&text=A%20Visual%20Type%20Scale&font=Poppins&fontweight=400&bodyfont=Poppins&bodyfontweight=400&lineheight=1.65&backgroundcolor=white&fontcolor=%23333&preview=false
+*/
+typeScale = {
+  'a': 5.96rem, // 95.37
+  'b': 4.768rem, // 76.29
+  'c': 3.052rem, // 48.83
+  'd': 2.441rem, // 39.06
+  'e': 1.953rem, // 31.25
+  'f': 1.563rem, // 25
+  'g': 1.25rem, // 20
+  'h': 1rem, // 16
+  'i': 0.8rem, // 12.8
+  'j': 0.64rem, // 8.19
+  'small': 0.8rem, // 12.8
+  'tiny': 0.64rem, // 8.19
+  'body': 1rem, // 16
+  'bigboi': 7.451rem, // 119.21
+  'biggestboi': 12rem,
+  'csharp': 3.64063rem // 58.25 titles for .custom-block.important
+}
+
+
+// usng these block declatations for reused content
+// seems to play better with vue and stylus than stylus
+// $placeholders https://stylus-lang.com/docs/extend.html#extending-placeholder-selectors
+
+bodyType = @block
+  font-family $font--body
+  font-weight 500
+  letter-spacing -0.0265em
+  line-height 1.265
+
+displayType = @block
+  font-family $font--display
+  font-weight 900
+  letter-spacing -0.0265em;
+  line-height 0.85
+
+visuallyHidden = @block
+  position fixed
+  top -200vh
+  left -200vw
+  visibility hidden
+  opacity 0
+  width 1px
+  height 1px
+  overflow hidden
+
+visuallyShown = @block
+  opacity 1
+  width auto
+  height auto
+  position static
+  overflow visible
+  visibility visible
+
+$logoWidth = 280
+$logoHeight = 56
+logoDimensions = @block
+  width $logoWidth px
+  height $logoHeight px
+
+// Most of the stuff below here should probably be a component
+workGrid = @block
+  margin-top 4rem
+  display flex-grid
+  article
+    width 100%
+    height 100%
+    display block
+    @media (max-width: $MQMobile)
+      width 100%
+      display inline-flex
+
+//
+// Custom Block - point - should be a component or variant thereof
+customBlock = @block
+  margin-bottom 0
+  margin-top 0
+  border-bottom 0
+  padding-top 2rem
+  padding-bottom 2rem
+  text-align center
+  &.point // hmmm maybe :not(.col-wrapper), &:not(.col-half), &:not(.important), &:not(.big)
+    display flex
+    flex-direction column
+    justify-content center
+  &.col-half
+    padding-top 4rem
+    padding-right 2rem
+    flex-direction column
+  > *:fist-child
+    font-size typeScale.f
+    width 100%
+  .content
+    width 100%
+  &.important
+    padding 4em 0
+    margin-bottom 0
+    > :first-child
+      { bodyType }
+      font-size typeScale.e
+    > :nth-child(n+2)
+      line-height 2
+      margin-top 0
+      padding-top 0
+      font-size typeScale.g
+      font-weight 300
+  @media (min-width: $MQMobileNarrow)
+    &.important
+      > :first-child
+        font-size typeScale.c
+  @media (min-width: $MQMobile)
+    text-align left
+    &:not(.col-half), &:not(.important), &:not(.big)
+      display flex
+      flex-direction row
+      > *:nth-child(n+2)
+        font-size typeScale.f
+        line-height 2
+        font-weight 300
+    &.point
+      > *:first-child
+        text-align left
+        font-size typeScale.f
+        font-weight 600
+        width 20vw
+        padding-right: 1em
+        line-height 1.2
+        margin-top 0.575rem
+      > *:nth-child(n+2)
+        text-align left
+        width 80vw
+    &.col-half
+      box-sizing border-box
+      text-align left
+      > *:first-child
+        font-size typeScale.e
+    &.important
+      display block
+      margin-bottom 2em
+  @media (min-width $MQSmall)
+    &.important
+      > *:first-child
+        font-size typeScale.csharp !important
+        font-weight 300
+        br
+          display contents
+
+cb_important = @block
+  @media (min-width $MQMobile)
+    display block
+    > *:first-child
+      width 100% !important
+    > *:nth-child(n+2)
+      width 100%
+
+cb_form = @block
+  display flex
+  width 100%
+  background-color $lightGrey
+
+cb_point = @block
+  { customBlock }
+  >:first-child
+    { displayType }
+    font-size typeScale.d
+  ul
+    justify-content center
+    li
+      margin-bottom 0.75rem
+    .cb__content
+      width 70%
+      margin-top 0
+    .post-tags
+      width 100%
+      ul
+        margin 0
+        list-style none
+        display flex
+        margin 0  background $lightGrey
+        padding 0
+        flex-wrap wrap
+        justify-content left
+
+borderTop = @block
+  border-top 1px solid $borderColor
+
+borderBottom = @block
+  border-bottom 1px solid $borderColor
+
+arrowHead = @block
+  position relative
+  display inline-block
+  > a::after, > span::after
+    content " "
+    position absolute
+    left 100%
+    top 0
+    line-height 1
+    font-size typeScale.h
+    border-bottom 1em solid transparent
+    border-top    1em solid transparent
+    border-left   0.7em solid $lightGrey
+
+tandemButton = @block
+  all unset
+  box-sizing border-box
+  background-color black
+  margin-top 1rem
+  margin-bottom 1rem
+  padding 2em 1em
+  border-radius 0.25rem
+  cursor pointer
+  text-align center
+  color white
+  { displayType }
+  text-size typeScale.d
+  transition-property background-color, color, padding
+  transition-timing-function ease-out
+  transition-duration 0.25s
+  &:hover, &:focus, &:active
+    box-sizing padding-box
+    color $tandemPink
+    &.busy
+      background-color $tandemPink
+      color #ffffff
+      opacity .50
+  button
+    all unset
+
+summaryWrapper = @block
+  margin-bottom 1rem
+  position relative
+  a
+    text-decoration none
+  .wrapper
+    padding 2em
+    position relative
+  .headline
+    .title
+      { displayType }
+      font-weight 600
+      font-size typeScale.d
+      line-height 1.2
+      text-decoration none
+      margin-top 0
+      border-bottom 0
+      cursor pointer
+      transition none
+  .description
+    { bodyCopy }
+    color inherit
+    font-size typeScale.g
+    font-weight 300
+  @media (min-width: $MQMobile)
+    margin-bottom 0.5em
+    .wrapper
+      padding 4em
+    .headline
+      .title
+        font-size typeScale.c
+    .desceription
+      font-size typeScale.f
+      margin-bottom 1em

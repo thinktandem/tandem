@@ -5,7 +5,22 @@
   src url('/fonts/AvenirNext-Heavy.woff') format('woff'), url('/fonts/AvenirNext-Heavy.woff2') format('woff2')
   font-style normal
   font-display swap
+  font-weight 900
+
+@font-face
+  font-family 'AvenirNext'
+  src url('/fonts/Metropolis-SemiBold.woff2') format('woff2')
+  font-style normal
+  font-display swap
   font-weight 600
+
+@font-face
+  font-family GalaxieCopernicus
+  src url("/fonts/GalaxieCopernicus-Book.eot")
+  src url("/fonts/GalaxieCopernicus-Book.woff") format("woff"),url("/fonts/GalaxieCopernicus-Book.woff2") format("woff2")
+  font-style normal
+  font-display swap
+  font-weight 300
 
 @font-face
   font-family GalaxieCopernicus
@@ -23,285 +38,145 @@
   font-display swap
   font-weight 400
 
-@font-face
-  font-family 'Poppins'
-  src url('/fonts/poppins-v12-latin-600.eot')
-  src url('/fonts/poppins-v12-latin-600.woff') format('woff'), url('/fonts/poppins-v12-latin-600.woff2') format('woff2')
-  font-style normal
-  font-display swap
-  font-weight 600
-
-@font-face
-  font-family 'Poppins'
-  src url('/fonts/poppins-v12-latin-900.eot')
-  src url('/fonts/poppins-v12-latin-900.woff') format('woff'), url('/fonts/poppins-v12-latin-900.woff2') format('woff2')
-  font-style normal
-  font-display swap
-  font-weight 900
-
 body
-  font-family GalaxieCopernicus, PT Serif, serif
-  font-weight 300
+  { bodyType }
+  line-height 1.25
+  color $textColor
 
 h1,
 h2,
 h3,
 h4
   color $landoGrey
-  font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-  font-size 3em
+  { displayType }
+  font-size typeScale.d
   border 0
-  letter-spacing -1px
+  &.post-title
+    line-height 1.125
+  a
+    font-weight inherit
 h2
-  font-size 2em
+  font-size typeScale.e
 h3
-  font-size 1.4em
+  font-size typeScale.f
 h4
-  font-size 1.2em
-a.header-anchor
-  padding-right 0
+  font-size typeScale.g
+
 a
   transition all 0.2s
 
-blockquote
-  margin 2em 0
-  padding 2em
-  font-size 1.5rem
-  color $darkTextColor
-  border-left 0
-  background $lightGrey
-  font-style italic
-  display flex
-  flex-wrap wrap
-  position relative
-  &:before
-    display flex
-    font-size 2em
-    content '"'
-    color $tandemPink
-
-  p
-    width 90%
-    line-height 2
-    padding-left 10px
-    padding-right 10px
-    margin-bottom 1em
-  ul
-    position absolute
-    right 1em
-    bottom 1em
-    margin 0
-    li
-      list-style none
-      font-style normal
-      font-size .65em
-      color $tandemPink
-      &:before
-        content '~'
-  small
-      list-style none
-      font-style normal
-      font-size .65em
-      color $tandemPink
+a.header-anchor
+  padding-right 0
 
 article
   header
     all unset
-
-#mobile-header
-  display none
+  p, ul, ol
+    line-height 1.75
 
 .content-wrapper
   padding 0
-  min-height calc(100vh - 80px - 60px - 160px)
-  max-width none
   margin 0 auto
-
-  @media (max-width: $MQMobile)
-    &
-      padding 0
-      min-height calc(100vh - 20px - 60px - 100px)
+  min-height calc(100vh - 20px - 60px - 100px)
+  @media (min-width: $MQMobile)
+    padding 0
+    min-height calc(100vh - 80px - 60px - 160px)
 
 .content-wrapper-tandem
-  padding 160px 15px 80px 15px
-  min-height calc(100vh - 80px - 60px - 160px)
-  max-width $contentWidth
-  margin 0 auto
+  @extend .content-wrapper
+  max-width $MQSmall
+  padding: 10rem 2rem 5rem 2rem
+  @media (min-width: $MQMobile)
+    padding: 13rem 5rem 5rem 5rem
 
-  @media (max-width: $MQMobile)
-    &
-      padding 100px 15px 20px 15px
-      min-height calc(100vh - 20px - 60px - 100px)
-ul
-  &.tags, &.post-meta-tags
-    @media (max-width: $MQMobile)
-      display block
-  li
-    &.post-tag
-      &.tag
-        height inherit
-      a
-        border-radius 0
-        background $lightGrey
-        font-weight 300
-        font-size 1.13rem
-        letter-spacing -1.44px
-        padding 1em 2em
-        transition none
-        span
-          color black
-          margin-left -.5em
-          margin-right .5em
-        &:hover
-          transition none
-        &:before
-          all unset
-        &:after
-          border-bottom 1.725em solid transparent
-          border-left 1.725em solid $lightGrey
-          border-top 1.725em solid transparent
-        @media (max-width: $MQMobile)
-          padding 1em 1em
-          margin 0
-          margin-bottom 1em
-          span
-            margin 0
-          &:after
-            border 0
+.content-wrapper-home
+    max-width none !important
+    margin 0
+    @media (min-width: $MQLarge)
+      max-width none !important
+
+.small
+  font-size typeScale.g
+
+.load-more
+  { tandemButton }
+  display block
+  width 100%
+  text-align center
+  margin-top 2rem
+  margin-bottom 2rem
+  &:hover, &:focus, &:active
+    padding 4em 1em 4em 1em
+
 
 .custom-block
-  position relative
-  p
+  { customBlock }
+  &.point
+    { cb_point }
+  &.big, &.medium, &.big > p
+    padding 0
+    margin 0
+    { displayType }
+    line-height 1
     font-weight 300
-    font-size 1.33rem
-    letter-spacing -1.04px
-    &.custom-block-title
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-      font-size 28px
-      font-weight 600
-      letter-spacing -1.68px
-      line-height inherit
-      margin-top -5px
-  &.big, &.medium
-    p
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-      font-weight 900
-      font-size 96px
-      padding 0
-      margin 0
-      line-height 1
+    font-size typeScale.d
+  &.big > p:first-child
+    font-size typeScale.a
   &.medium
-    p
-      font-size 64px
-
+    font-size typeScale.c
   &.caption
     background-color $lightGrey
     padding .1em 1em
     p
+      { displayType }
       color $textColor
-      font-size .9em
+      font-size typeScale.i
       font-weight 300
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-
   &.thumbnail
     border 1px solid $lightGrey
     padding 1em
     margin 2em 0
     img
       width 100%
-
-  &.point
-    display flex
-    justify-content center
-
-    p, p.custom-block-title
-      display inline-block
-    p
-      width 70%
-      margin-top 0
-      &.custom-block-title
-        margin-right 100px
-        width 20%
-
-    @media (max-width: $MQMobile)
-      &.point
-        text-align center
-        flex-direction column
-        p, p.custom-block-title
-          display inline-block
-          width 100%
-
   &.important, &.byline
-    p
-      font-weight 300
-      font-size 1.33rem
-      letter-spacing -1.04px
-      &.custom-block-title
-        font-size 3.64em
-        font-family GalaxieCopernicus, PT Serif, serif
-        @media (max-width: $MQMobile)
-          font-size 3em
     ol, ul
       margin 1em 1em
       li
-        margin-bottom 1em
-        font-weight 300
-        font-size 1.44rem
-        letter-spacing -1.04px
-    br
-      display contents
-      @media (max-width: $MQMobile)
-        display block
-
-
+        margin-bottom 1rem
   &.byline
     p
       font-style italic
       margin 2em 0
       line-height 2
       color black
-
-  &.col-wrapper, &.col-full, &.col-half, &.col-third
+  &.col-wrapper, &.col-full, &.col-third
     width 100%
     justify-content space-between
   &.col-full, &.col-half, &.col-third
-    justify-content space-between
-    p
-      font-weight 300
-      font-size 1rem
-      &.custom-block-title
-        font-size 1.5em
-
+    >:first-child
+      { displayType }
   &.warning, &.tip, &.danger, &.error, &.info
     background-color $lightGrey
-    padding 2em
-    p
-      font-size 1em
-      &.custom-block-title
-        text-transform uppercase
-        font-size 1.1em
+    padding 2rem
+    .custom-block-title
+      text-transform uppercase
   &.warning
     background-color mix($lightGrey, yellow, 70%)
   &.danger, &.error
     background-color mix($lightGrey, red, 80%)
-
   &.col-wrapper
     @media (min-width: $MQMobile)
-      &
-        display flex
+      display flex
   &.col-full
     @media (min-width: $MQMobile)
-      &
-        flex 0 0 100%
-        max-width 100%
+      flex 0 0 100%
+      max-width 100%
   &.col-half
     @media (min-width: $MQMobile)
-      &
-        flex 0 0 49%
-        max-width 49%
+      flex 0 0 49%
+      max-width 49%
+      flex-direction column
   &.col-third
     @media (min-width: $MQMobile)
-      &
-        flex 0 0 32%
-        max-width 32%
-
+      flex 0 0 32%
+      max-width 32%

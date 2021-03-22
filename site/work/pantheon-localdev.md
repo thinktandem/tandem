@@ -14,11 +14,11 @@ header:
     background-color: "#ffdc28"
     background-image: url(/images/work/whypantheon-resized-4.jpg)
     background-position: 100% 20%
-    background-size: auto
+    background-size: cover
     background-repeat: no-repeat
 
 theme:
-  background: "#ffdc28"
+  background: "#ffdc28df"
   headerColor: black
   headerHover: "#1794c7"
   headerActive: "#1794c7"
@@ -48,4 +48,3 @@ tags:
 link2Original: true
 originalLink: "https://pantheon.io/localdev"
 ---
-

@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-about">
-    <SectionHeader title="About.">
+    <SectionHeader title="About">
       <h2>
         Let us build<br>something great<br>together.<br>
       </h2>
@@ -14,25 +14,26 @@
     </SectionHeader>
 
     <div class="custom-block point values">
-      <p class="custom-block-title">
+      <h3>
         <a
           class="hidden-link"
           target="_blank"
           href="https://www.youtube.com/watch?v=0hiUuL5uTKc"
         >This.</a>
         <br>Is how we do it.
-      </p>
+      </h3>
       <ValuesGrid
         id="work-values"
+        class="content"
         :items="values"
       />
     </div>
 
     <div class="custom-block important values-text">
-      <p class="custom-block-title">
+      <h3>
         The above four. <br>In four sentences.
-      </p>
-      <p>
+      </h3>
+      <div class="content">
         Working closely together allows us to distill your goals into their most important components.
 
         Knowing what's important means we can craft a solution that minimizes moving parts while maximizing impact.
@@ -40,44 +41,45 @@
         Combining expertise with the right tool means a solution that lasts over time.
 
         Caring about the outcome means even if everything else goes astray we still get it done.
-      </p>
+      </div>
     </div>
 
     <div class="custom-block point what-we-do">
-      <p class="custom-block-title">
-        What we do.
-      </p>
-      <p>
+      <h3>
+        What we do
+      </h3>
+      <div class="content">
         We offer <a href="/strategy"><strong>strategy</strong></a>, <a href="/design"><strong>design</strong></a> and <a href="/development"><strong>development</strong></a> services across industries and using a wide array of tech.
         <br>
         <br>
         Read more about each below.
-      </p>
+      </div>
     </div>
 
     <TagGrid prefix="/" />
 
     <div class="custom-block important remote-team">
-      <p class="custom-block-title">
+      <h3>
         Primarily remote.
         <br>Primarily USA.
         <br>Prone to wanderlust.
-      </p>
-      <p>
+      </h3>
+      <div class="content">
         We have a distributed team that is primarily located in the United States and is primarily remote. We've also been known send emails from cabins in Siberia and beaches in Thailand. We also have reps in the below metro areas. <strong>Email one and say hello!</strong>
         <LocationGrid
           :locations="locations"
           :columns="5"
         />
-      </p>
+      </div>
     </div>
 
     <div class="custom-block point interests">
-      <p class="custom-block-title">
-        Some current team vibes.
-      </p>
+      <h3>
+        Some current team vibes
+      </h3>
       <ValuesGrid
         id="team-values"
+        class="content"
         :items="featuredVibes"
         :columns="4"
       />
@@ -152,59 +154,17 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-about
-    max-width 1140px
-    .section-header
-      h1, h2, p
-        color black
-      .section-header-right
-        text-align right
-        @media (max-width: $MQMobile)
-          text-align center
-    .hidden-link
-      color inherit
-      text-decoration none
-    .location-container
-      margin-top 2em
-    .custom-block
-      p
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color black
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color #000
-      &.important
-        padding 7em 0
-        border-bottom 1px solid $borderColor
-        margin-bottom 2em
-        @media (max-width: $MQMobile)
-          padding 4em 0
-          margin-bottom 0
-        p
-          &.custom-block-title
-            font-size 3.64em
-            font-family GalaxieCopernicus, PT Serif, serif
-            @media (max-width: $MQMobile)
-              font-size 2.1em
-
-        &.remote-team
-          margin-top 2em
-          border-top 1px solid $borderColor
-          border-bottom 0
-          br
-            display block
-      &.point
-        border-bottom 1px solid $borderColor
-        margin-bottom 2em
-        border-top 1px solid $borderColor
-        padding 2em 0
-        &.interests
-          margin-top 2em
-          border-bottom 0
-        &.what-we-do
-          border 0
+.content-wrapper-tandem.content-wrapper-about
+  .hidden-link
+    color inherit
+    text-decoration none
+  .location-container
+    margin-top 2em
+  .values, .values-text
+    border-top 1px $borderColor solid
+  .values-text, .what-we-do
+    margin-top 3rem
+    margin-bottom 3rem
+  .values-text
+    { borderBottom }
 </style>

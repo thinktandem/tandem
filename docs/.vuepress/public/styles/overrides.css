@@ -1,20 +1,18 @@
-body {
-}
-
+/* @TODO REPLAE THESE WITH REAL COLOR VARS FROM PALATTE.STYL */
 .hero h1 {
-  color: #2c3e50;
+  color: $landoGrey;
 }
 
 h1 {
-  color: #ef3f7a;
+  color: $tandemPink;
 }
 
 h2, h3, h4, h5 {
-  color: #035785;
+  color: $textColor;
 }
 
 .home .feature h2 {
-  color: #035785 !important;
+  color: $landoBlue !important;
 }
 
 .video-responsive {

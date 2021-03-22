@@ -1,19 +1,24 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-fourohfour">
-    <h1>404 - Not found</h1>
-
+    <h1>
+      404 - Not found
+    </h1>
     <blockquote>
-      <p>{{ chosen.message }}</p>
+      <p>
+        {{ chosen.message }}
+      </p>
       <ul>
-        <li>{{ chosen.author }}</li>
+        <li>
+          {{ chosen.author }}
+        </li>
       </ul>
     </blockquote>
 
     <div class="custom-block point vids">
-      <p class="custom-block-title">
+      <h2>
         Enjoy a random 404 video.
-      </p>
-      <div>
+      </h2>
+      <div class="content">
         <ClientOnly>
           <YouTube :vid="chosen.vid" />
         </ClientOnly>
@@ -21,15 +26,15 @@
     </div>
 
     <div class="custom-block point what-we-do">
-      <p class="custom-block-title">
+      <h2>
         Or explore more of what we do.
-      </p>
-      <p>
+      </h2>
+      <div class="content">
         We offer <strong>strategy</strong>, <strong>design</strong> and <strong>development</strong> services across industries and using a wide array of tech.
         <br>
         <br>
         Read more about each below.
-      </p>
+      </div>
     </div>
 
     <TagGrid prefix="/" />
@@ -113,29 +118,13 @@ export default {
 
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-fourohfour
-    max-width 1140px
-    .custom-block
-      p
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color black
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color #000
-      &.point
-        border-bottom 1px solid $borderColor
-        margin-bottom 2em
-        border-top 1px solid $borderColor
-        padding 2em 0
-        &.what-we-do
-          border 0
-        &.vids
-          div
-            width 100%
-          .video-responsive
-            margin-top 0
+.content-wrapper-tandem.content-wrapper-fourohfour
+  .custom-block.point
+    &.what-we-do
+      border 0
+    &.vids
+      div
+        width 100%
+      .video-responsive
+        margin-top 0
 </style>

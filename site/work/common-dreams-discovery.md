@@ -18,7 +18,7 @@ header:
     background-repeat: no-repeat
 
 theme:
-  background: "#113B63"
+  background: "#113B63df"
   headerColor: white
   headerHover: "#60BB46"
   headerActive: "#60BB46"
@@ -49,7 +49,7 @@ Common Dreams has been a pioneer in online, reader-supported news since the Clin
 
 ::: col-half What's at Stake?
 :::big
-110M+ Pageviews
+110M+ Views 
 :::
 ::::::
 

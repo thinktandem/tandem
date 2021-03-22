@@ -1,48 +1,49 @@
 <template>
-  <footer id="footer">
-    <div class="footer-container">
-      <div class="footer-copyright">
-        <span class="copyright">© 2020</span> TANDEM
-      </div>
-      <div class="footer-links">
-        <div
-          class="menu-primary"
+  <footer
+    id="footer"
+    class="site__footer"
+  >
+    <div class="copyright">
+      © 2021 Tandem
+    </div>
+    <div class="footer-links">
+      <div
+        class="menu-primary"
+      >
+        <ul
+          v-if="$themeConfig.nav"
         >
-          <ul
-            v-if="$themeConfig.nav"
+          <li
+            v-for="item in $themeConfig.nav"
+            :key="item.text"
           >
-            <li
-              v-for="item in $themeConfig.nav"
-              :key="item.text"
-            >
-              <NavLink :link="item.link">
-                {{ item.text }}
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-        <div
-          class="menu-secondary"
-        >
-          <NavLink link="/careers/">
-            Careers
-          </NavLink>
-          <NavLink link="https://handbook.thinktandem.io">
-            Handbook
-          </NavLink>
-          <NavLink link="https://twitter.com/thinktandem">
-            Twitter
-          </NavLink>
-          <NavLink link="https://github.com/thinktandem">
-            GitHub
-          </NavLink>
-          <NavLink link="/terms/">
-            Terms of Use
-          </NavLink>
-          <NavLink link="/privacy/">
-            Privacy Policy
-          </NavLink>
-        </div>
+            <NavLink :link="item.link">
+              {{ item.text }}
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="menu-secondary"
+      >
+        <NavLink link="/careers/">
+          Careers
+        </NavLink>
+        <NavLink link="https://handbook.thinktandem.io">
+          Handbook
+        </NavLink>
+        <NavLink link="https://twitter.com/thinktandem">
+          Twitter
+        </NavLink>
+        <NavLink link="https://github.com/thinktandem">
+          GitHub
+        </NavLink>
+        <NavLink link="/terms/">
+          Terms of Use
+        </NavLink>
+        <NavLink link="/privacy/">
+          Privacy Policy
+        </NavLink>
       </div>
     </div>
   </footer>
@@ -53,104 +54,82 @@ export default {};
 </script>
 
 <style lang="stylus">
-#footer
+.site__footer
+  padding 3rem 2rem
   background-color white
-.footer-container
-  padding 3em 0em
-  display flex
-  max-width 1140px
-  margin auto
-  border-top 1px solid $borderColor
-  background-color white
-  .footer-copyright, .footer-links
+  { borderBottom }
+  a
+    { displayType }
+    text-align left
+    text-decoration none
+  .copyright, .footer-links
     padding 0
     margin 0
-  .footer-copyright
-    width 32%
-    text-align left
-    font-family "GalaxieCopernicus", PT Serif, Serif
-    color $tandemGrey
-    font-size .9em
-    align-self center
-    .copyright
-      color $tandemPink
-      font-weight 900
-  .footer-links
-    width 70%
-    text-align right
+  .copyright
+    width 30vw
+    margin-bottom 1rem
+    white-space nowrap
+    font-size typeScale.tiny
+  .menu-primary
     a
-      font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-      text-decoration none
-
+      { displayType }
+      font-size typeScale.h
+      color $textColor
+      &:hover
+        color $textColor
+    ol, ul
+      list-style none
+      margin 0
+      padding 0
+    ul
+      display flex
+      justify-content flex-start
+      li
+        margin-right 1rem
+  .menu-secondary
+    margin-top .5em
+    .nav-link
+      display inline-block
+      font-size typeScale.tiny
+      position relative
+      left -0.75rem
+      margin-left 0
+      color $middleGrey
+      white-space nowrap
+      &::before, &::after
+        display inline-block
+        width 0.5rem
+        content '\00a0\00a0'
+      &:hover
+        color $tandemPink
+        &::after
+          content " ]"
+        &::before
+          content "[ "
+  @media (min-width: $MQNarrow)
+    display flex
+    a
+      text-align right
+    .copyright, .footer-links
+      text-align left
+    .copyright
+      { displayType }
+      margin-bottom 0
+      padding-top 0.5875rem
+    .footer-links
+      width 70vw
+    .menu-primary ul, .menu-secondary
+      justify-content flex-end
+      text-align right
     .menu-primary
-      a
-        font-size 20px
-        letter-spacing -1.67px
-        color $tandemGrey
-        &:hover
-          color $tandemPink
-      ol, ul
-        list-style none
-        margin 0
-        padding 0
-      ul
-        display flex
-        justify-content flex-end
-        li
-          margin-left 30px
+      li
+        margin-right 0
+        margin-left 1rem
+      .nav-link
+        font-size typeScale.g
     .menu-secondary
-      margin-top .5em
-      margin-right -12px
-      a
-        font-size .8em
-        text-transform uppercase
-        margin-left 0
-        color $middleGrey
-        &:after
-          content '\00a0\00a0'
-        &:before
-          content '\00a0\00a0'
-        &:hover
-          color $tandemPink
-          &:after
-            content: " ]"
-          &:before
-            content: "[ "
-@media (max-width $MQMobile)
-  .footer-container
-    flex-direction column-reverse
-    margin auto 0.5em
-    .footer-copyright, .footer-links
-      flex 1 1
-      text-align center
-      margin auto
-      padding 0 0.5em
-    .footer-copyright
-      margin-top 25px
-      width 75%
-      font-size .9em
-    .footer-links
-      width 75%
-      .menu-primary
-        ul
-          justify-content center
-          margin-left -20px
-          li
-            margin-left 20px
-      .menu-secondary
-        margin 25px 0 0
+      display flex
+      justify-content flex-end
         a
-          font-size .9em
-          line-height 2
-@media (max-width $MQMobileNarrow)
-  .footer-container
-    .footer-links
-      .menu-primary
-        ul
-          justify-content center
-          margin-left -10px
-          li
-            margin-left 15px
-        a
-          font-size 18px
+          font-size typeScale.f
 </style>

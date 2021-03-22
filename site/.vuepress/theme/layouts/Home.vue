@@ -19,6 +19,7 @@
               <span class="first-text">
                 Better
               </span>
+              &nbsp;
               <span class="second-text">
                 Together.
               </span>
@@ -33,12 +34,7 @@
               v-if="message === 1"
               class="message message-two"
             >
-              <span class="first-text">
-                Future
-              </span>
-              <span class="second-text">
-                Friendly.
-              </span>
+              <span class="first-text">Future</span> <span class="second-text">Friendly.</span>
               <div class="home-summary">
                 Tandem is the full-service digital agency that builds things to last.
               </div>
@@ -96,12 +92,12 @@ export default {
             title: 'WordPress + Redesign.',
             byline: 'We rebuilt Community of Literary Magazines and Presses on WordPress for performance, user experience and mobile.',
             link: '/work/clmp-wp-redesign/',
+            cta: 'Read More',
             type: 'recent wordpress work',
             color: 'white',
             hover: '#cb1414',
             styles: {
-              'background-color': '#10203a',
-              'opacity': .76,
+              'background-color': '#10203aba',
             },
           },
         },
@@ -118,12 +114,12 @@ export default {
             title: 'Drupal 8 + Redesign.',
             byline: 'We quickly rebuilt ChenMed with a modern design that allowed their marketing team to quickly add high quality content.',
             link: '/work/chenmed-d8-redesign/',
+            cta: 'Read More',
             type: 'recent drupal work',
             color: 'white',
             hover: '#0083c1',
             styles: {
-              'background-color': '#6b1e74',
-              'opacity': .7,
+              'background-color': '#6b1e74ba',
             },
           },
         },
@@ -141,12 +137,12 @@ export default {
             byline: 'Learn how to debug a Drupal 7 to 9 migration with Lando.',
             video: 'C1lhgObpHd8',
             link: '/blog/2020/04/28/lando-migration-webinar-part-1-followup/',
+            cta: 'Watch Now',
             type: 'recent webinar',
             color: 'white',
             hover: 'white',
             styles: {
-              'background-color': '#ed3f7a',
-              'opacity': .95,
+              'background-color': '#ed3f7aba',
             },
           },
         },
@@ -163,12 +159,13 @@ export default {
             title: 'Pantheon Localdev.',
             byline: 'We built a native desktop GUI app powered by Electron and Lando so Pantheon users can easily work on their sites locally.',
             link: '/work/',
+            cta: 'Read More',
             type: 'recent electron work',
             color: 'black',
             hover: '#1794c7',
+
             styles: {
-              'background-color': '#ffdc28',
-              'opacity': .88,
+              'background-color': '#ffdc28ba',
             },
           },
         },
@@ -185,12 +182,12 @@ export default {
             title: 'Join our team!',
             byline: 'We are always looking for new and awesome people to make new and awesome stuff with.',
             link: '/careers/',
+            cta: 'Explore the Tandemverse',
             type: 'careers',
             color: 'white',
             hover: 'white',
             styles: {
-              'background-color': '#ed3f7a',
-              'opacity': .95,
+              'background-color': '#ed3f7aba',
             },
           },
         },
@@ -203,15 +200,6 @@ export default {
     },
   },
   mounted() {
-    // If we start at the top make sure we pink
-    const toggle = document.getElementById('nav_toggle');
-    toggle.classList.remove('greybeard');
-    // Get a random message every 5000 seconds
-    /*
-    setInterval(() => {
-      this.message = Math.floor(Math.random() * 2);
-    }, 5000);
-    */
     this.message = 0;
 
     for (let i = 0; i < this.slides.length; i++) {
@@ -234,16 +222,13 @@ export default {
     onLeave(origin, destination, direction) {
       // Smooth out the header animation
       const header = document.getElementById('header');
-      const toggle = document.getElementById('nav_toggle');
       if (!destination.isFirst) {
         header.classList.add('fadeout');
-        toggle.classList.add('togglein', 'greybeard');
         header.classList.remove('fadein', 'dehamburger');
       } else {
         header.classList.add('dehamburger', 'fadein');
         header.classList.remove('fadeout', 'open');
         header.classList.remove('not-first');
-        toggle.classList.remove('greybeard');
       }
     },
     breakFree() {
@@ -296,41 +281,53 @@ export default {
 .content-wrapper-home
   .section
     .home-section-container
-      width 1140px
+      width 90%
       margin auto
-      @media (max-width: $MQMobile)
-        width 90%
-      &.section-31
-        font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-        color black
-        font-size 6em
-        padding 0
+      // @media (min-width: $MQMobile)
+        //width 1140px
+    .message-one
+      text-align center
+      padding 0 1rem
+      .first-text, .second-text
+        color $tandemPink
+        display inline-block
         text-align center
-        line-height .85
-        font-weight 600
-        letter-spacing -.07em
-        .first-text
-          font-size 1.3em
-        .second-text
-          text-transform uppercase
-          color $tandemPink
-          font-size 1.5em
-          font-weight 800
-        .home-summary, h1
-          margin auto
-          margin-top 1em
-          width 100%
-          text-align center
-          font-family GalaxieCopernicus, PT Serif, serif
-          color black
-          font-weight 300
-          font-size .5em
-          line-height 1.8
-          letter-spacing -1.04px
-        @media (max-width: $MQMobile)
-          text-align center
-          font-size 2.5em
-          .home-summary
-            text-align center
-            font-size .6em
+        text-transform uppercase
+        { displayType }
+        font-size typeScale.c
+        white-space nowrap
+      .second-text
+        color $textColor
+      .home-summary
+        margin auto
+        margin-top 1em
+        width 100%
+        text-align center
+        color black
+        { bodyType }
+        font-weight 300
+        font-size typeScale.f
+      @media (min-width: $MQMobileNarrow)
+        .first-text, .second-text
+          font-size typeScale.b
+        .home-summary
+          font-size typeScale.f
+      @media (min-width: $MQMobile)
+        padding 0 2rem
+        .first-text, .second-text
+          font-size typeScale.bigboi
+        .home-summary
+          max-width 58rem
+          font-size typeScale.e
+      @media (min-width: $MQNarrow)
+        padding 0 4rem
+        .first-text, .second-text
+          display inline-block
+          font-size typeScale.bigboi
+        .home-summary
+          max-width 40rem
+          font-size typeScale.e
+      @media (min-width: $MQXL)
+        .first-text, .second-text
+          font-size typeScale.biggestboi
 </style>

@@ -5,6 +5,7 @@
     class="post-layout content-wrapper-tandem content-wrapper-post"
   >
     <article
+      class="post-wrapper"
       itemscope
       itemtype="https://schema.org/BlogPosting"
     >
@@ -32,17 +33,17 @@
       <hr>
       <footer>
         <div class="custom-block point newsletter">
-          <p class="custom-block-title">
+          <h2>
             Subscribe.<br>
             <small>Get updates for new and similiar content.</small>
-          </p>
+          </h2>
           <Newsletter />
         </div>
 
         <div class="custom-block point tagz">
-          <p class="custom-block-title">
+          <h2>
             Learn more about.
-          </p>
+          </h2>
           <div class="post-tags">
             <ul
               v-if="tags"
@@ -150,91 +151,48 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-post
-    table
-      margin-top 2em
-      margin-bottom 2em
-    .post-content
-      margin-top 3.14em
-      margin-bottom 3.14em
-    .custom-block
-      margin-top 2em
-      margin-bottom 2em
-      &.point
-        border-bottom 1px solid $borderColor
-        border-top 0
-        padding 2em 0
-        &.tagz
-          margin-bottom 0
-          margin-top 0
-          border-bottom 0
-          .post-tags
-            width 100%
-            ul
-              margin 0
-              list-style none
-              display flex
-              margin 0
-              padding 0
-              flex-wrap wrap
-              @media (max-width: $MQMobile)
-                justify-content center
-              li
-                margin-bottom 1em
-        p
-          &.custom-block-title
-            font-weight 300
-            font-size 1.33rem
-            letter-spacing -1.04px
-            color inherit
-            small
-              font-size .75em
-              color $darkTextColor
-              font-family "GalaxieCopernicus", PT Serif, Serif
-
+.content-wrapper-tandem.content-wrapper-post
+  .post-wrapper
+    max-width 53rem
+  .post-content
+    margin-top 3.14em
+    margin-bottom 3.14em
+  .custom-block
+    margin-top 2em
+    margin-bottom 2em
+    padding-top 3rem
+    padding-bottom 3rem
+    max-width 60rem
+  table
+    margin-top 2em
+    margin-bottom 2em
 .post-theme-content
-  font-size 16px
-  letter-spacing 0px
-  font-family "GalaxieCopernicus", PT Serif, Serif
+  { bodyType }
   color $textColor
   position relative
   h1
-    font-size 4.57em
-    font-weight 600
-    letter-spacing -0.0987654321em
+    font-size typeScale.d
     margin-top 0
-    margin-bottom .5em
+    margin-bottom 0.5em
   h2
-    font-size 2.5em
-    font-weight 600
-    letter-spacing -0.0987654321em
-  p
-    font-weight 300
-    line-height 1.712
-    letter-spacing -0.56px
-    font-size 1.0987654321em
+    font-size typeScale.e
   footer
     margin-bottom 2em
   .post-title
     padding-top 0
-  .post-meta-data
-    border-bottom 1px solid $borderColor
-    justify-content space-between
-
 .vuepress-toc
   right 5%
   margin-top 120px
-  font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-@media (max-width: $MQMobile)
+  { displayType }
+@media (min-width: $MQMobileNarrow)
+  .post-theme-content
+    h1
+      font-size typeScale.c
+    h2
+      font-size typeScale.d
+@media (min-width: $MQMobile)
   .post-theme-content
     padding-top 0
   .post-title
     margin-top 0
-@media (max-width: $MQMobileNarrow)
-  .post-content
-    margin-top 2em
-  .post-theme-content
-    h1
-      font-size 3em
 </style>

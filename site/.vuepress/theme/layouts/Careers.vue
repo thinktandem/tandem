@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-careers">
-    <SectionHeader title="Careers.">
+    <SectionHeader title="Careers">
       <h2>
         Always looking.<br>For another.<br>Great teammate.<br>
       </h2>
@@ -14,9 +14,9 @@
     </SectionHeader>
 
     <div class="custom-block point values">
-      <p class="custom-block-title">
-        Our team<br> values.
-      </p>
+      <h3>
+        Our team values
+      </h3>
       <ValuesGrid
         id="team-values"
         :items="values"
@@ -25,9 +25,9 @@
     </div>
 
     <div class="custom-block important values-text">
-      <p class="custom-block-title">
+      <h3>
         The above five. <br>In five sentences.
-      </p>
+      </h3>
       <ol>
         <li>Putting employees first means investing in their success and well-being so they can invest the same in our clients.</li>
         <li>Building common purpose means more than just rowing in the same direction it means committing to one another even if you disagree.</li>
@@ -38,11 +38,11 @@
     </div>
 
     <div class="custom-block important remote-team">
-      <p class="custom-block-title">
+      <h3>
         Primarily remote.
         <br>Primarily USA.
         <br>Prone to wanderlust.
-      </p>
+      </h3>
       <p>
         We have a distributed team that is primarily located in the United States and is primarily remote. We've also been known send emails from cabins in Siberia and beaches in Thailand. We also have reps in the below metro areas. <strong>Email one and say hello!</strong>
         <LocationGrid
@@ -53,9 +53,9 @@
     </div>
 
     <div class="custom-block point interests">
-      <p class="custom-block-title">
-        Some current team vibes.
-      </p>
+      <h3>
+        Some current team vibes
+      </h3>
       <ValuesGrid
         id="team-vibes"
         :items="featuredVibes"
@@ -64,9 +64,9 @@
     </div>
 
     <div class="custom-block point connect-jobs">
-      <p class="custom-block-title">
+      <h3>
         Get in touch.
-      </p>
+      </h3>
       <div class="get-in-touch">
         <p>We are always looking to meet new people so drop us an email at <a href="mailto:jobs@thinktandem.io">jobs@thinktandem.io</a> and let's set up a time to talk!</p>
         <p>
@@ -148,62 +148,18 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-careers
-    max-width 1140px
-    .section-header
-      h1, h2, p
-        color black
-      .section-header-right
-        text-align right
-        @media (max-width: $MQMobile)
-          text-align center
-    .hidden-link
-      color inherit
-      text-decoration none
-    .location-container
-      margin-top 2em
-    .get-in-touch
+.content-wrapper-tandem.content-wrapper-careers
+  .values
+    border-top 1px $borderColor solid
+  .remote-team, .interests
+    { borderBottom }
+  .hidden-link
+    color inherit
+    text-decoration none
+  .location-container
+    margin-top 2em
+  .get-in-touch
+    width 100%
+    p
       width 100%
-      font-size 1.33rem
-      letter-spacing -1.04px
-      p
-        width 100%
-    .custom-block
-      p
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color black
-      &.important
-        padding 7em 0
-        border-bottom 1px solid $borderColor
-        margin-bottom 2em
-        @media (max-width: $MQMobile)
-          padding 4em 0
-          margin-bottom 0
-        p
-          &.custom-block-title
-            font-size 3.64em
-            font-family GalaxieCopernicus, PT Serif, serif
-            @media (max-width: $MQMobile)
-              font-size 2.1em
-        &.remote-team
-          margin-top 2em
-          border-top 0
-          border-bottom 0
-          br
-            display block
-      &.point
-        border-bottom 1px solid $borderColor
-        margin-bottom 2em
-        border-top 1px solid $borderColor
-        padding 2em 0
-        &.interests
-          margin-top 2em
-          border-bottom 0
-        &.what-we-do
-          border 0
-        &.connect-jobs
-          border-bottom 0
 </style>

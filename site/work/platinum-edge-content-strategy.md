@@ -9,7 +9,7 @@ header:
   title: "Improving<br> Content Creation"
   image: /images/work/pe-hero.jpg
   background:
-    background-color: "#113576"
+    background-color: "#113576df"
     background-image: url(/images/work/pe-hero.jpg)
     background-position: 100% 20%
     background-size: cover
@@ -68,4 +68,3 @@ With this in mind, our content strategists built an editorial calendar template 
 
 Once accepted, the team developed a best case scenario editorial calendar that included due dates, assignments, content ideas and social promotion. Each suggested piece of content was mapped to a persona to help target users and their interests. We then arranged a combination of both internal and outsourced writers to execute the pieces.
 :::
-

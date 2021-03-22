@@ -1,47 +1,52 @@
 <template>
-  <div
+  <article
     :class="`hero-flex-wrapper ${id}`"
     :style="styles"
   >
     <div class="hero-flex-container">
       <style>
-        .hero-left-content.{{ id }} a {color: {{ color }};}
-        .hero-left-content.{{ id }} h2 {color: {{ color }};}
-        .hero-left-content.{{ id }} hr {border-color: {{ color }};}
-        .hero-left-content.{{ id }} .hero-summary {color: {{ color }};}
-        .hero-left-content.{{ id }} .hero-type {color: {{ color }};}
-
-        .hero-left-content.{{ id }} a:hover {color: {{ hover }};}
-        .hero-left-content.{{ id }}:hover {color: {{ hover }};}
-        .hero-left-content.{{ id }}:hover h2 {color: {{ hover }};}
-        .hero-left-content.{{ id }}:hover hr {border-color: {{ hover }};}
-        .hero-left-content.{{ id }}:hover .hero-summary {color: {{ hover }};}
-        .hero-left-content.{{ id }}:hover .hero-type {color: {{ hover }};}
+        .hero-flex-wrapper.{{ id }} a { color: {{ color }};}
+        .hero-flex-wrapper.{{ id }} h2 { color: {{ color }};}
+        .hero-flex-wrapper.{{ id }} .hero-summary { color: {{ color }};}
+        .hero-flex-wrapper.{{ id }} a:hover { color: {{ hover }};}
+        .hero-flex-wrapper.{{ id }} a:hover h2 { color: {{ hover }};}
+        .hero-flex-wrapper.{{ id }} a:hover .hero-summary { color: {{ hover }};}
+        .hero-flex-wrapper.{{ id }}:hover .cta { color: {{ hover }};}
       </style>
-      <div :class="`hero-right-content ${id}`">
-        <YouTube
-          v-if="video"
-          :vid="video"
-        />
-      </div>
-
       <NavLink
+        class="link--wrapper"
         :link="link"
       >
-        <div :class="`hero-left-content ${id}`">
-          <h2>{{ title }}</h2>
-          <hr align="left">
-          <div class="hero-summary">
-            {{ byline }}
+        <div class="hero-right-content" />
+        <div
+          class="hero-left-content"
+        >
+          <div
+            class="post-tag"
+          >
+            <span>
+              {{ type }}
+            </span>
           </div>
-          <hr align="left">
-          <div class="hero-type">
-            {{ type }}
+          <h2>
+            {{ title }}
+          </h2>
+          <div
+            class="hero-summary"
+          >
+            {{ byline }}
           </div>
         </div>
       </NavLink>
+      <NavLink
+        v-if="cta"
+        class="cta"
+        :link="link"
+      >
+        {{ cta }}
+      </NavLink>
     </div>
-  </div>
+  </article>
 </template>
 
 <script>
@@ -67,6 +72,11 @@ export default {
       type: String,
       required: true,
     },
+    cta: {
+      type: String,
+      required: false,
+      default: undefined,
+    },
     color: {
       type: String,
       default: 'black',
@@ -85,63 +95,78 @@ export default {
     },
   },
 };
-
 </script>
 
 <style lang="stylus">
 .hero-flex-wrapper
-  height 100%
+  box-sizing border-box
+  width 100vw
+  height 100vh
   display flex
+  text-decoration none
+  left 0
+  bottom 0
+  padding 5rem
+  @media (min-width: $MQMobile)
+    padding 2rem
+  @media (min-width: $MQSmall)
+    padding 0
   a
     text-decoration none
-    width 49%
   .hero-flex-container
-    width 1140px
+    max-width $contentMaxWidth
     margin auto
+    padding-bottom 6rem
     display flex
+    position relative
     flex-direction row-reverse
-    @media (max-width: $MQMobile)
+    .link--wrapper
       display block
-      .hero-right-content
+    .post-tag
+      { tagWrapper }
+      { arrowHead }
+      font-family typeScale.tiny
+      margin-bottom 1.5rem
+      background-color rgba(black, 0.3)
+      span
+        color white
+        font-size typeScale.i
+        &::after
+          border-left-color rgba(black, 0.3) !important
+      @media (max-width: $MQMobile)
         display none
     .hero-right-content
-      width 49%
-      .video-responsive
-        margin-top 17%
+      display none
+      @media (max-width: $MQMobile)
+        width 49%
+        .video-responsive
+          margin-top 17%
+    .cta
+      { tandemButton }
+      font-weight 600
+      position absolute
+      bottom 0
+      left 0
+      padding 0.75em 1.25em
+      &:hover
+        padding 0.75em 3em 0.75em 1.5em
     .hero-left-content
-      width 80%
       .hero-summary
-        font-weight 500
-        font-size 1.28rem
-        line-height 2
-        letter-spacing -1.04px
-        margin 2em 0
-      .hero-type
-        font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-        text-transform uppercase
-        letter-spacing -0.0587654321em
-        font-size 1.2em
-        margin-top 2em
-      hr
-        width 33%
+        { bodyType }
+        margin 0 0 3rem 0
       h2
-        font-size 4.57em
+        { displayType }
+        font-size typeScale.b
         font-weight 600
-        letter-spacing -0.0587654321em
-        line-height .85
+        line-height 1.2
         margin-top 0
-        font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-        cursor pointer
+        margin-bottom 0.5em
         transition none
         text-decoration none
         &:hover
           color inherit
           text-decoration none
       @media (max-width: $MQMobile)
-        width 97%
-        margin 0 1em
         h2
-          font-size 3em
-        .hero-summary
-          width 90%
+          font-size typeScale.c
 </style>

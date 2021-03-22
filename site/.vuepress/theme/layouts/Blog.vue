@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-blog">
-    <SectionHeader title="LeBlog.">
+    <SectionHeader title="LeBlog">
       <h2>
         Content demands<br>a simple design.<br>Like this.
       </h2>
@@ -13,9 +13,9 @@
     </SectionHeader>
 
     <div class="custom-block point clients">
-      <p class="custom-block-title">
-        Hot tags.
-      </p>
+      <h3>
+        Hot tags
+      </h3>
       <div class="hot-tags">
         <ul
           v-if="hotTags"
@@ -34,9 +34,9 @@
     <ContentList />
 
     <div class="custom-block point tags">
-      <p class="custom-block-title">
+      <h3>
         Explore<br> other content.
-      </p>
+      </h3>
       <TagGrid />
     </div>
   </div>
@@ -116,45 +116,26 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-blog
-    max-width 1140px
-    .section-header
-      h1, h2, p
-        color black
-      .section-header-right
-        text-align right
-        @media (max-width: $MQMobile)
-          text-align center
-
-    .load-more
-      margin-bottom 2em
-    .hot-tags
-      width 100%
+.content-wrapper-tandem.content-wrapper-blog
+  .point.clients
+    { borderTop }
+  .hot-tags
+    width 100%
+    ul
+      margin 0
+      padding 0
+      list-style none
+      display flex
+      flex-wrap wrap
+      justify-content center
+    .post-tag
+      { tagWrapper }
+      { arrowHead }
+      background-color $lightGrey
+      margin-right 1.25rem
+    @media (min-width: $MQMobile)
+      justify-content space-between
+      padding-top 0.5rem
       ul
-        margin 0
-        list-style none
-        display flex
-        justify-content space-between
-    .custom-block
-      p
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color black
-      &.point
-        border-bottom 1px solid $borderColor
-        margin-bottom 2em
-        border-top 1px solid $borderColor
-        padding 2em 0
-        &.tags
-          border-bottom 0
-
-    @media (max-width: $MQMobile)
-      .hot-tags
-        ul
-          margin 0
-          padding 0
-          flex-wrap wrap
-          justify-content center
+        justify-content flex-start
 </style>

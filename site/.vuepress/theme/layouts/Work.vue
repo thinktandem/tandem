@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-work">
-    <SectionHeader title="Work.">
+    <SectionHeader title="Work">
       <h2>
         Simple or complex,<br>big or small.<br>We've seen it all.<br>
       </h2>
@@ -13,9 +13,9 @@
     </SectionHeader>
 
     <div class="custom-block point clients">
-      <p class="custom-block-title">
-        Featured Clients.
-      </p>
+      <h3>
+        Featured Clients
+      </h3>
       <ClientGrid :clients="featuredClients" />
     </div>
 
@@ -25,9 +25,9 @@
     />
 
     <div class="custom-block point tags">
-      <p class="custom-block-title">
+      <h3>
         Explore<br> other work.
-      </p>
+      </h3>
       <TagGrid prefix="/" />
     </div>
   </div>
@@ -102,47 +102,16 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-work
-    max-width 1140px
-    .section-header
-      h1, h2, p
-        color black
-      .section-header-right
-        text-align right
-        @media (max-width: $MQMobile)
-          text-align center
-    .work-grid
-      display flex-grid
-      article
-        width 100%
-        height 500px
-        display inline-flex
-        @media (max-width: $MQMobile)
-          width 100%
-          height 100%
-          display block
-      .load-more
-        margin-bottom 2em
-
-    .work-title
-      font-size 2em
+.content-wrapper-tandem.content-wrapper-work
+  .work-grid
+    { workGrid }
+  .custom-block.point
+    &.tags, &.clients
+      border-bottom 0
+      > *:first-child
+        margin-top 2.625rem
+  .tag-wrapper
     .custom-block
-      p
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color black
-      &.point
-        border-bottom 1px solid $borderColor
-        margin-bottom 2em
-        border-top 1px solid $borderColor
-        padding 2em 0
-        &.tags
-          border-bottom 0
-
-    .tag-wrapper
-      .custom-block
-        background $lightGrey
-        margin 1em
+      background $lightGrey
+      margin 1em
 </style>

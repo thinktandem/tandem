@@ -12,7 +12,7 @@ header:
   title: "Simplifying<br />Dementia"
   image: /images/work/ucsf-mac-screenshot.png
   background:
-    background-color: "#0071ad"
+    background-color: "#0071addf"
     background-image: url(/images/work/kent-state-bg.jpg)
     background-position: 100% 20%
     background-size: cover

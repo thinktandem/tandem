@@ -13,7 +13,7 @@ header:
   title: "Building for<br/>the future"
   image: /images/work/twinstar.png
   background:
-    background-color: "#83BCFF"
+    background-color: "#83BCFFdf"
     background-image: url(/images/work/ts-bg.jpg)
     background-position: 100% 20%
     background-size: cover

@@ -13,7 +13,7 @@
       itemtype="https://schema.org/BlogPosting"
     />
     <div
-      v-if="(this.paginationIndex * this.paginator) < this.$pagination.pages.length"
+      v-if="(paginationIndex * paginator) < $pagination.pages.length"
       class="load-more"
       @click="more"
     >
@@ -85,16 +85,6 @@ export default {
 .content-list-layout
   .section-header
     border 0
-  .load-more
-    text-align center
-    background $lightGrey
-    padding 1em
-    color $darkTextColor
-    margin 0em
-    cursor pointer
-    font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-    button
-      all unset
   .written-by, .work-for
     border 0
 </style>

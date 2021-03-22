@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper-tandem content-wrapper-contact">
-    <SectionHeader title="Contact Us.">
+    <SectionHeader title="Contact Us">
       <h2>
         Get in touch.<br>We'd love to chat<br>and work together.
       </h2>
@@ -13,9 +13,9 @@
     </SectionHeader>
 
     <div class="custom-block point metro-locations">
-      <p class="custom-block-title">
+      <h3>
         Email a metro area.
-      </p>
+      </h3>
       <LocationGrid
         :locations="locations"
         :columns="5"
@@ -23,16 +23,16 @@
     </div>
 
     <div class="custom-block point contact-us">
-      <p class="custom-block-title">
+      <h3>
         Message us via form.
-      </p>
+      </h3>
       <ContactForm />
     </div>
 
     <div class="custom-block point carrier-pigeon">
-      <p class="custom-block-title">
+      <h3>
         Or dispatch carrier pigeon.
-      </p>
+      </h3>
       <DispatchPigeon>
         1300 Clay Street #600<br>
         Oakland, CA 94612
@@ -98,32 +98,14 @@ export default {
 </script>
 
 <style lang="stylus">
-.content-wrapper-tandem
-  &.content-wrapper-contact
-    max-width 1140px
-    .section-header
-      h1, h2, p
-        color black
-      .section-header-right
-        text-align right
-        @media (max-width: $MQMobile)
-          text-align center
-    .custom-block
-      p
-        font-weight 300
-        font-size 1.33rem
-        letter-spacing -1.04px
-        color black
-      &.point
-        border-bottom 1px solid $borderColor
-        margin-bottom 2em
-        border-top 1px solid $borderColor
-        padding 2em 0
-        &.metro-locations
-          margin-top 2em
-        &.contact-us
-          border 0
-        &.carrier-pigeon
-          border-bottom 0
-
+.content-wrapper-tandem.content-wrapper-contact
+  .custom-block
+    > :first-child
+      margin-top 2.625rem
+    &.metro-locations
+      margin-top 2em
+    &.contact-us
+      border 0
+    &.carrier-pigeon
+      border-bottom 0
 </style>

@@ -19,7 +19,7 @@ header:
     background-repeat: no-repeat
 
 theme:
-  background: "#003976"
+  background: "#003976df"
   headerColor: white
   headerHover: "#EFAB00"
   headerActive: "#EFAB00"
@@ -28,7 +28,8 @@ theme:
 date: "2020-04-30"
 tags:
   - wordpress
-  - higher-ed
+  - higher-ed    { customBlock }
+
   - php
   - support
   - development

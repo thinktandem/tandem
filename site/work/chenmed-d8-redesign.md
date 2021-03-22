@@ -18,7 +18,7 @@ header:
     background-repeat: no-repeat
 
 theme:
-  background: "#6b1e74"
+  background: "#6b1e74df"
   headerColor: white
   headerHover: "#0083c1"
   headerActive: "#0083c1"

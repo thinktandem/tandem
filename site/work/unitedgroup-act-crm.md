@@ -11,7 +11,7 @@ header:
   title: "Automatic user updates with custom API integration"
   image: /images/work/united-screenshot.png
   background:
-    background-color: "#3e6ea4"
+    background-color: "#3e6ea4df"
     background-position: 100% 20%
     background-size: auto
     background-repeat: no-repeat
