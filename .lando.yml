@@ -25,13 +25,6 @@ services:
       - yarn install
     command: yarn run dev:site
     port: 8011
-  platform:
-    type: php:7.3
-    via: cli
-    build:
-      - mkdir -p /var/www/.platformsh/bin
-      - curl -fsSL -o /var/www/.platformsh/bin/platform https://github.com/platformsh/platformsh-cli/releases/download/v3.40.4/platform.phar
-      - chmod ug+x /var/www/.platformsh/bin/platform
 tooling:
   docs:
     service: docs
@@ -43,10 +36,6 @@ tooling:
     description: Launch the marketing site
   node:
     service: docs
-  platform:
-    service: platform
-    description: Run Platform CLI commands
-    cmd: /var/www/.platformsh/bin/platform
   vuepress:
     service: docs
   yarn:
