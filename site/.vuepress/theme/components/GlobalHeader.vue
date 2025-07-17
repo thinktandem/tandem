@@ -207,10 +207,11 @@ export default {
 </script>
 
 <style lang="stylus">
-header#header {
-  box-shadow: none;
-  background-color: transparent;
-}
+header#header
+  box-shadow none
+  background-color transparent
+  &:hover
+    box-shadow none
 #header
   z-index 100
   position fixed
@@ -222,10 +223,12 @@ header#header {
   margin auto
   transition all 1s cubic-bezier(0.25, 0.8, 0.25, 1)
   &.fadeout
+    box-shadow: none;
     margin-top -600px
     transition margin-top 0.5s
     -webkit-transition margin-top 0.5s
   &.fadein
+    box-shadow: none;
     margin-top 0
     transition margin-top 0.5s
     -webkit-transition margin-top 0.5s
@@ -392,6 +395,7 @@ nav
 
 @media (max-width $MQMobile)
   #header
+    display block
     padding 10px
     &.dehamburger
       button
