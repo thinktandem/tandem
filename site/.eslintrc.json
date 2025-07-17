@@ -1,0 +1,24 @@
+{
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 6
+  },
+  "extends": [
+    "plugin:vue/recommended",
+    "plugin:vue-scoped-css/all",
+    "google"
+  ],
+  "rules": {
+    "linebreak-style": 0,
+    "arrow-parens": ["error",
+      "as-needed"
+    ],
+    "max-len": ["error", {
+      "code": 12000,
+      "ignoreComments": true
+    }],
+    "vue/multi-word-component-names": 0,
+    "vue-scoped-css/require-scoped": 0
+
+  }
+}

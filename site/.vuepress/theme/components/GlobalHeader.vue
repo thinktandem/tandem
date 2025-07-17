@@ -146,7 +146,7 @@ export default {
       }
     },
   },
-  beforeDestroy() {
+  beforeDestroy() { // eslint-disable-line vue/no-deprecated-destroyed-lifecycle
     // Remove the scroll event
     window.removeEventListener('scroll', this.onScroll);
   },

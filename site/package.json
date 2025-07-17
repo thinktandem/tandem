@@ -1,8 +1,8 @@
 {
-  "name": "tandem",
-  "description": "All repos for thinktandem.io.",
+  "name": "@tandem/site",
+  "description": "Main marketing website for Tandem",
   "license": "MIT",
-  "version": "3.0.0-rc1",
+  "version": "3.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/thinktandem/tandem"
@@ -12,12 +12,9 @@
     "url": "https://github.com/thinktandem/tandem/issues"
   },
   "scripts": {
-    "build:docs": "vuepress build docs -d _docs",
-    "build:site": "vuepress build site -d _site",
-    "dev:docs": "vuepress dev --temp /tmp/tandem-docs --cache /tmp/tandem-docs-cache --port 8010 docs",
-    "dev:site": "vuepress dev --temp /tmp/tandem-site --cache /tmp/tandem-site-cache --port 8011 site",
-    "lint:docs": "eslint --ext .js,.vue --config .eslintrc.json docs/.vuepress",
-    "lint:site": "eslint --ext .js,.vue --config .eslintrc.json site/.vuepress",
+    "build": "vuepress build .",
+    "dev": "vuepress dev --temp /tmp/tandem-site --cache /tmp/tandem-site-cache --port 8011 .",
+    "lint": "eslint --ext .js,.vue --config .eslintrc.json .vuepress",
     "lint:plugins": "eslint --no-ignore --config .eslintrc.lando.json plugins"
   },
   "devDependencies": {
@@ -26,9 +23,9 @@
     "@vuepress/theme-blog": "^2.0.0",
     "axios": "^0.21.1",
     "convert-css-color-name-to-hex": "^0.1.1",
-    "eslint": "^6.1.0",
+    "eslint": "^8.57.1",
     "eslint-config-google": "^0.9.1",
-    "eslint-plugin-vue": "^5.2.3",
+    "eslint-plugin-vue": "^10.3.0",
     "eslint-plugin-vue-scoped-css": "^1.0.0",
     "hex-to-css-filter": "^3.1.2",
     "vue-fullpage.js": "^0.1.5",
