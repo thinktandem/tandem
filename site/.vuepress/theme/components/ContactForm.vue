@@ -3,6 +3,7 @@
     <div class="contact-form-wrapper">
       <form
         name="contact"
+        id="contact-form"
         v-if="showForm"
         netlify
       >
@@ -103,6 +104,10 @@ export default {
       this.busy = true;
       this.buttonText = 'Sending...';
 
+      const fid = document.getElementById('contact-form');
+      const fdata = new FormData(fid);
+      const body = new URLSearchParams(fdata).toString()
+
       // Build payload
       const payload = new URLSearchParams();
       Object.entries({name, email, message}).forEach(([key, val]) => {
@@ -110,12 +115,12 @@ export default {
       });
 
       try {
-        const res = await fetch('/', {
+        const res = await fetch(window.location.pathname, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
           },
-          body: payload.toString(),
+          body,
         });
 
         if (res.ok) {
