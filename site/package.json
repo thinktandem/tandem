@@ -21,7 +21,7 @@
     "@vuepress/plugin-blog": "^1.9.2",
     "@vuepress/plugin-google-analytics": "^1.0.0-rc.1",
     "@vuepress/theme-blog": "^2.0.0",
-    "axios": "^0.21.1",
+    "axios": "^0.30.0",
     "convert-css-color-name-to-hex": "^0.1.1",
     "eslint": "^8.57.1",
     "eslint-config-google": "^0.9.1",
