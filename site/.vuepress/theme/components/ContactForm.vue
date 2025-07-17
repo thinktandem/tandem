@@ -18,6 +18,11 @@
         </div>
         <div class="name">
           <input
+            type="hidden"
+            name="form-name"
+            value="contact"
+          >
+          <input
             id="name"
             v-model="name"
             type="text"
@@ -49,7 +54,7 @@
         </div>
         <div class="submit">
           <input
-            type="button"
+            type="submit"
             :disabled="busy"
             :value="buttonText"
             :class="{busy: busy}"
