@@ -95,11 +95,10 @@ export default {
     };
   },
   methods: {
-    contactUs() {
-      // Busy UX
+    contactUs(event) {
+      event.target.form.submit();
       this.busy = true;
       this.buttonText = 'Sending...';
-      this.error = [];
 
       setTimeout(() => {
         this.resetForm();
