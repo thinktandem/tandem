@@ -383,6 +383,8 @@ nav
 
 
 @media (min-width $MQSmall)
+  header#header
+    display block
   #header
     &.open
       nav
@@ -394,7 +396,7 @@ nav
                 font-size 2.5em
 
 @media (max-width $MQMobile)
-  #header
+  header#header
     display block
     padding 10px
     &.dehamburger
