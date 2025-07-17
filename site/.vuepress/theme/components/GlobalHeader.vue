@@ -207,7 +207,7 @@ export default {
 </script>
 
 <style lang="stylus">
-header
+#header
   z-index 100
   position fixed
   width 100vw
@@ -376,7 +376,7 @@ nav
 
 
 @media (min-width $MQSmall)
-  header
+  #header
     &.open
       nav
         .menu
@@ -387,7 +387,7 @@ nav
                 font-size 2.5em
 
 @media (max-width $MQMobile)
-  header
+  #header
     padding 10px
     &.dehamburger
       button
