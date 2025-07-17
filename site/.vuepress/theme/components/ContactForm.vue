@@ -1,7 +1,11 @@
 <template>
   <div class="contact-form">
     <div class="contact-form-wrapper">
-      <form name="contact" method="POST" netlify v-if="showForm">
+      <form
+        name="contact"
+        v-if="showForm"
+        netlify
+      >
         <div
           v-if="error && error.message"
           class="error"
@@ -54,7 +58,7 @@
         </div>
         <div class="submit">
           <input
-            type="submit"
+            type="button"
             :disabled="busy"
             :value="buttonText"
             :class="{busy: busy}"
@@ -95,14 +99,34 @@ export default {
     };
   },
   methods: {
-    contactUs(event) {
-      event.target.form.submit();
+    async contactUs() {
       this.busy = true;
       this.buttonText = 'Sending...';
 
-      setTimeout(() => {
-        this.resetForm();
-      }, 1000)
+      // Build payload
+      const payload = new URLSearchParams();
+      Object.entries({name, email, message}).forEach(([key, val]) => {
+        payload.append(key, val);
+      });
+
+      try {
+        const res = await fetch('/', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          body: payload.toString(),
+        });
+
+        if (res.ok) {
+          setTimeout(() => {
+            this.resetForm();
+          }, 1000);
+        }
+      } catch (err) {
+        error = err;
+        console.error(error);
+      }
     },
     resetForm() {
       this.showForm = false;

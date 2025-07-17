@@ -75,9 +75,7 @@ export default {
       return (this.link === null) ? '_self' : '_blank';
     },
     resolvedDate() {
-      return dayjs(this.date).format(
-        this.$themeConfig.dateFormat || 'ddd MMM DD YYYY'
-      );
+      return dayjs(this.date).format(this.$themeConfig.dateFormat || 'ddd MMM DD YYYY');
     },
   },
 };
