@@ -1,6 +1,6 @@
 [build]
   base = "./site"
-  publish = ".site/.vuepress/dist"
+  publish = "/.vuepress/dist"
   command = "npm run build"
 
 # Sets our asset optimization
