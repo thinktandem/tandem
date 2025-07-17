@@ -207,6 +207,10 @@ export default {
 </script>
 
 <style lang="stylus">
+header#header {
+  box-shadow: none;
+  background-color: transparent;
+}
 #header
   z-index 100
   position fixed
