@@ -1,7 +1,7 @@
 <template>
   <div class="contact-form">
     <div class="contact-form-wrapper">
-      <form v-if="showForm">
+      <form name="contact" method="POST" netlify v-if="showForm">
         <div
           v-if="error && error.message"
           class="error"
@@ -101,54 +101,9 @@ export default {
       this.buttonText = 'Sending...';
       this.error = [];
 
-      // Add in tags if we can
-      if (this.$page.frontmatter && this.$page.frontmatter.tag) {
-        this.tag = Array.isArray(this.$page.frontmatter.tag) ? this.$page.frontmatter.tag.join(', ') : this.$page.frontmatter.tag;
-      }
-
-      // Get ready
-      const xhr = new XMLHttpRequest();
-      const url = 'https://api.hsforms.com/submissions/v3/integration/submit/6864374/07fc0cf1-4a35-4d3d-b2ec-d1586a4494da';
-
-
-      const data = JSON.stringify({
-        fields: [
-          {name: 'email', value: this.email},
-          {name: 'firstname', value: this.name},
-          {name: 'message', value: this.message},
-          {name: 'hs_lead_status', value: 'Lead'},
-          {name: 'lead_source', value: 'Contact Form'},
-          {name: 'interests_last_form_submittal', value: this.tag || 'contact'},
-          {name: 'last_conversion_point', value: this.$page.title || 'contact'},
-        ],
-        context: {
-          pageUri: `https://thinktandem.io${this.$page.path}`,
-          pageName: this.$page.title,
-        },
-      });
-
-      // Prepare the request and response
-      xhr.open('POST', url);
-      xhr.setRequestHeader('Content-Type', 'application/json');
-      xhr.onreadystatechange = () => {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-          this.resetForm();
-        } else if (xhr.readyState == 4 && xhr.status == 400) {
-          this.errorForm(JSON.parse(xhr.responseText));
-        } else if (xhr.readyState == 4 && xhr.status == 403) {
-          this.errorForm(JSON.parse(xhr.responseText));
-        } else if (xhr.readyState == 4 && xhr.status == 404) {
-          this.errorForm(JSON.parse(xhr.responseText));
-        }
-       };
-
-      // Do it
-      xhr.send(data);
-    },
-    errorForm(errors) {
-      this.error = errors;
-      this.busy = false;
-      this.buttonText = 'Try again';
+      setTimeout(() => {
+        this.resetForm();
+      }, 1000)
     },
     resetForm() {
       this.showForm = false;
@@ -194,7 +149,7 @@ export default {
     textarea
       height 216px
       font-family "Poppins", "Helvetica Neue", Arial, sans-serif
-    input[type=button]
+    input[type=button], input[type=submit]
       padding 1.2em 3em
       width 25%
       margin auto

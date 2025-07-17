@@ -3,7 +3,7 @@
     id="vuepress-theme-blog__global-layout"
     :style="wrapperTheme"
   >
-    <Header
+    <GlobalHeader
       :is-open="isMobileHeaderOpen"
       :active="theme.headerActive"
       :color="theme.headerColor"
@@ -16,20 +16,20 @@
     >
       <DefaultGlobalLayout />
     </div>
-    <Footer />
+    <GlobalFooter />
   </div>
 </template>
 
 <script>
 import GlobalLayout from '@app/components/GlobalLayout.vue';
-import Header from '@theme/components/Header.vue';
-import Footer from '@theme/components/Footer.vue';
+import GlobalHeader from '@theme/components/GlobalHeader.vue';
+import GlobalFooter from '@theme/components/GlobalFooter.vue';
 
 export default {
   components: {
     DefaultGlobalLayout: GlobalLayout,
-    Header,
-    Footer,
+    GlobalHeader,
+    GlobalFooter,
   },
   data() {
     return {
