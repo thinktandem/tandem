@@ -229,7 +229,7 @@ export default {
       type: Boolean,
       default: false,
     },
-    showDevNetwork: {
+    showDevNet: {
       type: Boolean,
       default: false,
     },
@@ -338,7 +338,7 @@ export default {
       return defaults;
     },
     getGroups() {
-      if (this.sponsor) this.groups.push(this.sponsor);
+      if (this.sponsor) this.groups.push(this.sponsor); // eslint-disable-line vue/no-mutating-props
       return this.groups.concat(this.userGroups);
     },
     today() {
