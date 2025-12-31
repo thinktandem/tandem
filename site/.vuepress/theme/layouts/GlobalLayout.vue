@@ -3,7 +3,8 @@
     id="vuepress-theme-blog__global-layout"
     :style="wrapperTheme"
   >
-    <GlobalHeader
+    <ClosureBanner />
+    <Header
       :is-open="isMobileHeaderOpen"
       :active="theme.headerActive"
       :color="theme.headerColor"
@@ -16,20 +17,22 @@
     >
       <DefaultGlobalLayout />
     </div>
-    <GlobalFooter />
+    <Footer />
   </div>
 </template>
 
 <script>
 import GlobalLayout from '@app/components/GlobalLayout.vue';
-import GlobalHeader from '@theme/components/GlobalHeader.vue';
-import GlobalFooter from '@theme/components/GlobalFooter.vue';
+import Header from '@theme/components/Header.vue';
+import Footer from '@theme/components/Footer.vue';
+import ClosureBanner from '@theme/components/ClosureBanner.vue';
 
 export default {
   components: {
     DefaultGlobalLayout: GlobalLayout,
-    GlobalHeader,
-    GlobalFooter,
+    Header,
+    Footer,
+    ClosureBanner,
   },
   data() {
     return {
@@ -59,13 +62,18 @@ export default {
 <style lang="stylus">
 #vuepress-theme-blog__global-layout
   word-wrap break-word
+  #header
+    top 50px
+  @media (max-width: $MQMobile)
+    #header
+      top 45px
 .content-wrapper
-  padding 160px 15px 80px 15px
-  min-height calc(100vh - 80px - 60px - 160px)
+  padding 210px 15px 80px 15px
+  min-height calc(100vh - 80px - 60px - 210px)
   max-width $contentWidth
   margin 0 auto
   @media (max-width: $MQMobile)
     &
-      padding 100px 15px 20px 15px
-      min-height calc(100vh - 20px - 60px - 100px)
+      padding 145px 15px 20px 15px
+      min-height calc(100vh - 20px - 60px - 145px)
 </style>
