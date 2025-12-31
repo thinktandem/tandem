@@ -12,10 +12,10 @@
     "url": "https://github.com/thinktandem/tandem/issues"
   },
   "scripts": {
-    "build:docs": "vuepress build docs -d _docs",
-    "build:site": "vuepress build site -d _site",
-    "dev:docs": "vuepress dev --temp /tmp/tandem-docs --cache /tmp/tandem-docs-cache --port 8010 docs",
-    "dev:site": "vuepress dev --temp /tmp/tandem-site --cache /tmp/tandem-site-cache --port 8011 site",
+    "build:docs": "NODE_OPTIONS=--openssl-legacy-provider vuepress build docs -d _docs",
+    "build:site": "NODE_OPTIONS=--openssl-legacy-provider vuepress build site -d _site",
+    "dev:docs": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev --temp /tmp/tandem-docs --cache /tmp/tandem-docs-cache --port 8010 docs",
+    "dev:site": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev --temp /tmp/tandem-site --cache /tmp/tandem-site-cache --port 8011 site",
     "lint:docs": "eslint --ext .js,.vue --config .eslintrc.json docs/.vuepress",
     "lint:site": "eslint --ext .js,.vue --config .eslintrc.json site/.vuepress",
     "lint:plugins": "eslint --no-ignore --config .eslintrc.lando.json plugins"

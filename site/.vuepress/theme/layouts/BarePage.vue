@@ -19,7 +19,7 @@ export default {
 
 <style lang="stylus" scoped>
 .content-wrapper-tandem
-  padding-top calc(80px + 0.5rem);
+  padding-top calc(130px + 0.5rem);
 .content
   margin-top 0.14em
 .bare-page-theme-content

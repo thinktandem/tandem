@@ -211,7 +211,7 @@ header
   z-index 100
   position fixed
   width 100vw
-  top 0
+  top 50px
   box-sizing border-box
   background-color transparent
   padding 20px
